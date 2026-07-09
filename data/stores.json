@@ -1,0 +1,6691 @@
+{
+  "generated_note": "built by pipeline/, do not edit by hand",
+  "stores": [
+    {
+      "id": "abc-toys-wholesale-323",
+      "slug": "abc-toys-wholesale-323",
+      "name": "Abc Toys Wholesale",
+      "name_es": null,
+      "address": {
+        "line1": "323 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2445
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "1979-07-16",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "americas-favors-405",
+      "slug": "americas-favors-405",
+      "name": "Americas Favors",
+      "name_es": null,
+      "address": {
+        "line1": "405 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2452
+      },
+      "block": "wall",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2014-09-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "ampro-marketing-corporation-339",
+      "slug": "ampro-marketing-corporation-339",
+      "name": "Ampro Marketing Corporation",
+      "name_es": null,
+      "address": {
+        "line1": "339 Wall St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2442
+      },
+      "block": "wall",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "451120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "1994-03-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "camila-s-toys-417",
+      "slug": "camila-s-toys-417",
+      "name": "Camila's Toys",
+      "name_es": null,
+      "address": {
+        "line1": "417 Wall St",
+        "unit": "27",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2452
+      },
+      "block": "wall",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2022-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "casa-manga-218",
+      "slug": "casa-manga-218",
+      "name": "Casa Manga",
+      "name_es": null,
+      "address": {
+        "line1": "218 Boyd St",
+        "unit": "D",
+        "zip": "90013",
+        "lat": 34.0473,
+        "lng": -118.2449
+      },
+      "block": "boyd",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2000-10-16",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "chill-trading-inc-225",
+      "slug": "chill-trading-inc-225",
+      "name": "Chill Trading, INC",
+      "name_es": null,
+      "address": {
+        "line1": "225 Winston St",
+        "unit": "1",
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2461
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2025-05-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "cl-toys-trading-inc-409",
+      "slug": "cl-toys-trading-inc-409",
+      "name": "Cl Toys Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "409 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0462,
+        "lng": -118.2447
+      },
+      "block": "wall",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2011-01-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "dio-amusements-llc-325",
+      "slug": "dio-amusements-llc-325",
+      "name": "Dio Amusements LLC",
+      "name_es": null,
+      "address": {
+        "line1": "325 Winston St",
+        "unit": "5",
+        "zip": "90013",
+        "lat": 34.0455,
+        "lng": -118.2442
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2025-08-06",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "flowers-and-beyond-international-inc-334",
+      "slug": "flowers-and-beyond-international-inc-334",
+      "name": "Flowers & Beyond International INC",
+      "name_es": null,
+      "address": {
+        "line1": "334 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0458,
+        "lng": -118.2435
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2018-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "funland-toys-inc-468",
+      "slug": "funland-toys-inc-468",
+      "name": "Funland Toys INC",
+      "name_es": null,
+      "address": {
+        "line1": "468 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0452,
+        "lng": -118.242
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "1997-04-02",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "funtastic-256",
+      "slug": "funtastic-256",
+      "name": "Funtastic",
+      "name_es": null,
+      "address": {
+        "line1": "256 Winston St",
+        "unit": "F",
+        "zip": "90013",
+        "lat": 34.0457,
+        "lng": -118.2457
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "451120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2010-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "global-light-401",
+      "slug": "global-light-401",
+      "name": "Global Light",
+      "name_es": null,
+      "address": {
+        "line1": "401 S Los Angeles St",
+        "unit": "5",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2461
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": null,
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "han-s-wholesale-inc-256",
+      "slug": "han-s-wholesale-inc-256",
+      "name": "Han's Wholesale INC",
+      "name_es": null,
+      "address": {
+        "line1": "256 Winston St",
+        "unit": "H",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2023-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "jese-trading-inc-424",
+      "slug": "jese-trading-inc-424",
+      "name": "Jese Trading, INC",
+      "name_es": null,
+      "address": {
+        "line1": "424 S Los Angeles St",
+        "unit": "12B",
+        "zip": "90013",
+        "lat": 34.0467,
+        "lng": -118.2468
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2007-01-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "kcn-enterprises-inc-411",
+      "slug": "kcn-enterprises-inc-411",
+      "name": "Kcn Enterprises INC",
+      "name_es": null,
+      "address": {
+        "line1": "411 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0461,
+        "lng": -118.2448
+      },
+      "block": "wall",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "1987-05-06",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "l-d-c-toys-380",
+      "slug": "l-d-c-toys-380",
+      "name": "L D C Toys",
+      "name_es": null,
+      "address": {
+        "line1": "380 S Los Angeles St",
+        "unit": "P-23",
+        "zip": "90013",
+        "lat": 34.0473,
+        "lng": -118.2455
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "1997-06-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "lacwin-corp-516",
+      "slug": "lacwin-corp-516",
+      "name": "Lacwin CORP",
+      "name_es": null,
+      "address": {
+        "line1": "516 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0448,
+        "lng": -118.2413
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": null,
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "little-tokyo-wholesale-256",
+      "slug": "little-tokyo-wholesale-256",
+      "name": "Little Tokyo Wholesale",
+      "name_es": null,
+      "address": {
+        "line1": "256 Winston St",
+        "unit": "D",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2017-05-22",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "lovely-trading-llc-216",
+      "slug": "lovely-trading-llc-216",
+      "name": "Lovely Trading LLC",
+      "name_es": null,
+      "address": {
+        "line1": "216 E 3rd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0482,
+        "lng": -118.2441
+      },
+      "block": "3rd",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2008-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "lp-gifts-inc-238",
+      "slug": "lp-gifts-inc-238",
+      "name": "Lp Gifts INC",
+      "name_es": null,
+      "address": {
+        "line1": "238 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0467,
+        "lng": -118.2451
+      },
+      "block": "4th",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "451120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2015-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "m-and-m-toys-241",
+      "slug": "m-and-m-toys-241",
+      "name": "M & M Toys",
+      "name_es": null,
+      "address": {
+        "line1": "241 Winston St",
+        "unit": "27",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2457
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2017-08-30",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "maple-co-218",
+      "slug": "maple-co-218",
+      "name": "Maple CO",
+      "name_es": null,
+      "address": {
+        "line1": "218 Winston St",
+        "unit": "D2",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2463
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2004-01-05",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "noveltyzone-500",
+      "slug": "noveltyzone-500",
+      "name": "Noveltyzone",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "84",
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2474
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2017-10-25",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "ocean-toys-241",
+      "slug": "ocean-toys-241",
+      "name": "Ocean Toys",
+      "name_es": null,
+      "address": {
+        "line1": "241 Winston St",
+        "unit": "2",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2457
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2020-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "paty-s-trading-230",
+      "slug": "paty-s-trading-230",
+      "name": "Paty's Trading",
+      "name_es": null,
+      "address": {
+        "line1": "230 Winston St",
+        "unit": "18",
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2467
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2008-10-24",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "s-j-s-toys-325",
+      "slug": "s-j-s-toys-325",
+      "name": "S J's Toys",
+      "name_es": null,
+      "address": {
+        "line1": "325 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2436
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2015-01-12",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "season-toys-232",
+      "slug": "season-toys-232",
+      "name": "Season Toys",
+      "name_es": null,
+      "address": {
+        "line1": "232 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "1992-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "tom-s-model-501",
+      "slug": "tom-s-model-501",
+      "name": "Tom's Model",
+      "name_es": null,
+      "address": {
+        "line1": "501 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0449,
+        "lng": -118.2415
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2013-11-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "toy-time-la-255",
+      "slug": "toy-time-la-255",
+      "name": "Toy Time La",
+      "name_es": null,
+      "address": {
+        "line1": "255 E 5th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0452,
+        "lng": -118.2461
+      },
+      "block": "5th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2021-06-18",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "toys-4-less-218",
+      "slug": "toys-4-less-218",
+      "name": "Toys 4 Less",
+      "name_es": null,
+      "address": {
+        "line1": "218 Winston St",
+        "unit": "D1",
+        "zip": "90013",
+        "lat": 34.0461,
+        "lng": -118.2465
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2021-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "toys-capital-inc-340",
+      "slug": "toys-capital-inc-340",
+      "name": "Toys Capital INC",
+      "name_es": null,
+      "address": {
+        "line1": "340 S San Pedro St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0462,
+        "lng": -118.2427
+      },
+      "block": "san-pedro",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": null,
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "toystop-259",
+      "slug": "toystop-259",
+      "name": "Toystop",
+      "name_es": null,
+      "address": {
+        "line1": "259 Winston Streets",
+        "unit": "B",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "winston",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2026-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "tpn-products-inc-300",
+      "slug": "tpn-products-inc-300",
+      "name": "Tpn Products INC",
+      "name_es": null,
+      "address": {
+        "line1": "300 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2446
+      },
+      "block": "4th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "1994-02-02",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "van-thai-inc-400",
+      "slug": "van-thai-inc-400",
+      "name": "Van Thai INC",
+      "name_es": null,
+      "address": {
+        "line1": "400 S San Pedro St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0458,
+        "lng": -118.2429
+      },
+      "block": "san-pedro",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2012-06-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "viva-wholesale-inc-339",
+      "slug": "viva-wholesale-inc-339",
+      "name": "Viva Wholesale INC",
+      "name_es": null,
+      "address": {
+        "line1": "339 Wall St",
+        "unit": "C",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2442
+      },
+      "block": "wall",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "both",
+      "naics": "451120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2012-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "viva-wholesale-inc-417",
+      "slug": "viva-wholesale-inc-417",
+      "name": "Viva Wholesale INC",
+      "name_es": null,
+      "address": {
+        "line1": "417 Wall St",
+        "unit": "3",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2448
+      },
+      "block": "wall",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "both",
+      "naics": "451120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2012-05-24",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "young-hee-kim-500",
+      "slug": "young-hee-kim-500",
+      "name": "Young Hee Kim",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "44",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2475
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": null,
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "yuchu-li-410",
+      "slug": "yuchu-li-410",
+      "name": "Yuchu Li",
+      "name_es": null,
+      "address": {
+        "line1": "410 S Los Angeles St",
+        "unit": "145",
+        "zip": "90013",
+        "lat": 34.0468,
+        "lng": -118.2463
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423920",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "high",
+      "since": "2009-02-05",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "2449-hyperion-llc-231",
+      "slug": "2449-hyperion-llc-231",
+      "name": "2449 Hyperion LLC",
+      "name_es": null,
+      "address": {
+        "line1": "231 E 3rd St",
+        "unit": "G106",
+        "zip": "90013",
+        "lat": 34.0482,
+        "lng": -118.2442
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1998-07-16",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "3-kids-toys-500",
+      "slug": "3-kids-toys-500",
+      "name": "3 Kids Toys",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "60-61",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2475
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "unknown",
+      "naics": null,
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2006-11-20",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "300-s-los-angeles-st-partnership-lp-300",
+      "slug": "300-s-los-angeles-st-partnership-lp-300",
+      "name": "300 S Los Angeles St Partnership Lp",
+      "name_es": null,
+      "address": {
+        "line1": "300 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0485,
+        "lng": -118.2446
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1997-04-29",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "3rd-st-distro-inc-306",
+      "slug": "3rd-st-distro-inc-306",
+      "name": "3rd St Distro INC",
+      "name_es": null,
+      "address": {
+        "line1": "306 E 3rd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-02-16",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "a-and-a-crafts-454",
+      "slug": "a-and-a-crafts-454",
+      "name": "A & A Crafts",
+      "name_es": null,
+      "address": {
+        "line1": "454 E 4th St Building",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2423
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2015-10-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "a-and-r-party-and-general-accessories-222",
+      "slug": "a-and-r-party-and-general-accessories-222",
+      "name": "A & R Party & General Accessories",
+      "name_es": null,
+      "address": {
+        "line1": "222 Winston St",
+        "unit": "A9",
+        "zip": "90013",
+        "lat": 34.0461,
+        "lng": -118.2464
+      },
+      "block": "winston",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2013-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "a-d-cash-and-carry-218",
+      "slug": "a-d-cash-and-carry-218",
+      "name": "A D Cash & Carry",
+      "name_es": null,
+      "address": {
+        "line1": "218 E 3rd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0479,
+        "lng": -118.2443
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2019-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "a-and-pe-560",
+      "slug": "a-and-pe-560",
+      "name": "A&Pe",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": "36B",
+        "zip": "90013",
+        "lat": 34.0445,
+        "lng": -118.2481
+      },
+      "block": "los-angeles",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2016-10-19",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "aa-wholesale-516",
+      "slug": "aa-wholesale-516",
+      "name": "Aa Wholesale",
+      "name_es": null,
+      "address": {
+        "line1": "516 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0448,
+        "lng": -118.2413
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2003-10-27",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "adrian-jefferson-llc-303",
+      "slug": "adrian-jefferson-llc-303",
+      "name": "Adrian Jefferson LLC",
+      "name_es": null,
+      "address": {
+        "line1": "303 E 5th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0451,
+        "lng": -118.2451
+      },
+      "block": "5th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2015-08-29",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "american-new-century-co-c-223",
+      "slug": "american-new-century-co-c-223",
+      "name": "American New Century CO/C",
+      "name_es": null,
+      "address": {
+        "line1": "223 Boyd St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0475,
+        "lng": -118.2448
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2002-12-09",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "american-silk-inc-340",
+      "slug": "american-silk-inc-340",
+      "name": "American Silk INC",
+      "name_es": null,
+      "address": {
+        "line1": "340 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0461,
+        "lng": -118.244
+      },
+      "block": "4th",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2018-07-02",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "amore-perfume-inc-448",
+      "slug": "amore-perfume-inc-448",
+      "name": "Amore Perfume INC",
+      "name_es": null,
+      "address": {
+        "line1": "448 S Los Angeles St",
+        "unit": "7",
+        "zip": "90013",
+        "lat": 34.0465,
+        "lng": -118.2471
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2013-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "articulos-religiosos-santa-maria-400",
+      "slug": "articulos-religiosos-santa-maria-400",
+      "name": "Articulos Religiosos Santa Maria",
+      "name_es": null,
+      "address": {
+        "line1": "400 S Los Angeles St",
+        "unit": "117",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "auspice-corp-408",
+      "slug": "auspice-corp-408",
+      "name": "Auspice CORP",
+      "name_es": null,
+      "address": {
+        "line1": "408 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0469,
+        "lng": -118.2465
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1995-08-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "avawilde-com-420",
+      "slug": "avawilde-com-420",
+      "name": "Avawilde.Com",
+      "name_es": null,
+      "address": {
+        "line1": "420 S San Pedro St",
+        "unit": "622",
+        "zip": "90013",
+        "lat": 34.0448,
+        "lng": -118.2428
+      },
+      "block": "san-pedro",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2014-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "azteca-mercancia-general-inc-396",
+      "slug": "azteca-mercancia-general-inc-396",
+      "name": "Azteca Mercancia General INC",
+      "name_es": null,
+      "address": {
+        "line1": "396 S Los Angeles St",
+        "unit": "225",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2457
+      },
+      "block": "los-angeles",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423600",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-01-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "babi-trading-inc-412",
+      "slug": "babi-trading-inc-412",
+      "name": "Babi Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "412 Wall St",
+        "unit": "B3",
+        "zip": "90013",
+        "lat": 34.0458,
+        "lng": -118.2445
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2019-04-10",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "babu-wireless-and-cell-phone-store-425",
+      "slug": "babu-wireless-and-cell-phone-store-425",
+      "name": "Babu Wireless & Cell Phone Store",
+      "name_es": null,
+      "address": {
+        "line1": "425 S Los Angeles St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.2469
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2016-05-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "bagmax-industrial-inc-321",
+      "slug": "bagmax-industrial-inc-321",
+      "name": "Bagmax Industrial INC",
+      "name_es": null,
+      "address": {
+        "line1": "321 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0473,
+        "lng": -118.244
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1988-10-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "bandevi-traders-usa-inc-336",
+      "slug": "bandevi-traders-usa-inc-336",
+      "name": "Bandevi Traders Usa INC",
+      "name_es": null,
+      "address": {
+        "line1": "336 E 3rd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-01-05",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "betitos-gifts-240",
+      "slug": "betitos-gifts-240",
+      "name": "Betitos Gifts",
+      "name_es": null,
+      "address": {
+        "line1": "240 Winston St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0462,
+        "lng": -118.2464
+      },
+      "block": "winston",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424300",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2002-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "bfc-305",
+      "slug": "bfc-305",
+      "name": "Bfc",
+      "name_es": null,
+      "address": {
+        "line1": "305 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0485,
+        "lng": -118.2449
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2007-11-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "bigmart-inc-230",
+      "slug": "bigmart-inc-230",
+      "name": "Bigmart INC",
+      "name_es": null,
+      "address": {
+        "line1": "230 Winston St",
+        "unit": "31",
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2467
+      },
+      "block": "winston",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2008-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "blossom-ak-inc-400",
+      "slug": "blossom-ak-inc-400",
+      "name": "Blossom Ak INC",
+      "name_es": null,
+      "address": {
+        "line1": "400 S Los Angeles St",
+        "unit": "106",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-12-30",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "california-balloon-house-447",
+      "slug": "california-balloon-house-447",
+      "name": "California Balloon House",
+      "name_es": null,
+      "address": {
+        "line1": "447 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2455
+      },
+      "block": "wall",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-10-22",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "california-balloon-house-c-447",
+      "slug": "california-balloon-house-c-447",
+      "name": "California Balloon House /C",
+      "name_es": null,
+      "address": {
+        "line1": "447 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0452,
+        "lng": -118.2454
+      },
+      "block": "wall",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2005-01-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "candy-place-inc-417",
+      "slug": "candy-place-inc-417",
+      "name": "Candy Place INC",
+      "name_es": null,
+      "address": {
+        "line1": "417 S San Pedro St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0453,
+        "lng": -118.2436
+      },
+      "block": "san-pedro",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-09-20",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "cap-and-hat-import-inc-322",
+      "slug": "cap-and-hat-import-inc-322",
+      "name": "Cap & Hat Import INC",
+      "name_es": null,
+      "address": {
+        "line1": "322 S Los Angeles St",
+        "unit": "29",
+        "zip": "90013",
+        "lat": 34.0479,
+        "lng": -118.2449
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2016-03-14",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "cell-gear-inc-217",
+      "slug": "cell-gear-inc-217",
+      "name": "Cell Gear INC",
+      "name_es": null,
+      "address": {
+        "line1": "217 E 5th St",
+        "unit": "C-13",
+        "zip": "90013",
+        "lat": 34.0456,
+        "lng": -118.2469
+      },
+      "block": "5th",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423600",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2014-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "cloudcali-inc-318",
+      "slug": "cloudcali-inc-318",
+      "name": "Cloudcali INC",
+      "name_es": null,
+      "address": {
+        "line1": "318 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2441
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-03-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "craft-99-inc-411",
+      "slug": "craft-99-inc-411",
+      "name": "Craft 99 INC",
+      "name_es": null,
+      "address": {
+        "line1": "411 S San Pedro St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "san-pedro",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-06-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "crystal-trade-inc-454",
+      "slug": "crystal-trade-inc-454",
+      "name": "Crystal Trade INC",
+      "name_es": null,
+      "address": {
+        "line1": "454 E 4th St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0451,
+        "lng": -118.2421
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2018-10-17",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "d-y-m-craft-232",
+      "slug": "d-y-m-craft-232",
+      "name": "D Y M Craft",
+      "name_es": null,
+      "address": {
+        "line1": "232 E 4th St #C 9",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0467,
+        "lng": -118.2452
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1997-08-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "downtown-wholesale-and-distribution-326",
+      "slug": "downtown-wholesale-and-distribution-326",
+      "name": "Downtown Wholesale & Distribution",
+      "name_es": null,
+      "address": {
+        "line1": "326 E 3rd St",
+        "unit": "B1",
+        "zip": "90013",
+        "lat": 34.0478,
+        "lng": -118.2434
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "both",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2006-10-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "dr-vape-group-llc-305",
+      "slug": "dr-vape-group-llc-305",
+      "name": "Dr Vape Group LLC",
+      "name_es": null,
+      "address": {
+        "line1": "305 Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0473,
+        "lng": -118.2442
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2019-09-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "el-vaticano-inc-500",
+      "slug": "el-vaticano-inc-500",
+      "name": "El Vaticano INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "26",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2014-02-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "electronics-and-games-unlimited-inc-500",
+      "slug": "electronics-and-games-unlimited-inc-500",
+      "name": "Electronics & Games Unlimited INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "7",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2475
+      },
+      "block": "los-angeles",
+      "category": [
+        "electronics",
+        "toys"
+      ],
+      "wholesale_retail": "unknown",
+      "naics": null,
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2007-01-28",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "emory-k-holiday-people-are-strange-420",
+      "slug": "emory-k-holiday-people-are-strange-420",
+      "name": "Emory K Holiday/People Are Strange",
+      "name_es": null,
+      "address": {
+        "line1": "420 S San Pedro St",
+        "unit": "411",
+        "zip": "90013",
+        "lat": 34.0452,
+        "lng": -118.2432
+      },
+      "block": "san-pedro",
+      "category": [
+        "seasonal"
+      ],
+      "wholesale_retail": "unknown",
+      "naics": "315000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2003-05-05",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "empire-floral-and-craft-415",
+      "slug": "empire-floral-and-craft-415",
+      "name": "Empire Floral & Craft",
+      "name_es": null,
+      "address": {
+        "line1": "415 S San Pedro St",
+        "unit": "A",
+        "zip": "90013",
+        "lat": 34.0456,
+        "lng": -118.2437
+      },
+      "block": "san-pedro",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-10-11",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "eratoss-inc-500",
+      "slug": "eratoss-inc-500",
+      "name": "Eratoss, INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "80",
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2474
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2018-10-02",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "estyle-zone-inc-448",
+      "slug": "estyle-zone-inc-448",
+      "name": "Estyle Zone INC",
+      "name_es": null,
+      "address": {
+        "line1": "448 S Los Angeles St",
+        "unit": "10",
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2471
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2008-10-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "eva-s-gifts-400",
+      "slug": "eva-s-gifts-400",
+      "name": "Eva's Gifts",
+      "name_es": null,
+      "address": {
+        "line1": "400 S Los Angeles St",
+        "unit": "111",
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.2461
+      },
+      "block": "los-angeles",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "unknown",
+      "naics": "339900",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2019-03-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "eva-s-gifts-2-401",
+      "slug": "eva-s-gifts-2-401",
+      "name": "Eva's Gifts #2",
+      "name_es": null,
+      "address": {
+        "line1": "401 S Los Angeles St",
+        "unit": "7",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "everest-top-inc-233",
+      "slug": "everest-top-inc-233",
+      "name": "Everest Top INC",
+      "name_es": null,
+      "address": {
+        "line1": "233 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2023-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "evrena-trading-inc-427",
+      "slug": "evrena-trading-inc-427",
+      "name": "Evrena Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "427 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0458,
+        "lng": -118.2451
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2020-05-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "fantasia-sales-inc-401",
+      "slug": "fantasia-sales-inc-401",
+      "name": "Fantasia Sales INC",
+      "name_es": null,
+      "address": {
+        "line1": "401 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2446
+      },
+      "block": "wall",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2011-01-10",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "fox-electronics-rs-llc-339",
+      "slug": "fox-electronics-rs-llc-339",
+      "name": "Fox Electronics Rs LLC",
+      "name_es": null,
+      "address": {
+        "line1": "339 Wall St #",
+        "unit": "D",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "wall",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-01-09",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "g-m-fashion-and-gift-s-226",
+      "slug": "g-m-fashion-and-gift-s-226",
+      "name": "G.M. Fashion & Gift's",
+      "name_es": null,
+      "address": {
+        "line1": "226 E 4th St",
+        "unit": "1",
+        "zip": "90013",
+        "lat": 34.0465,
+        "lng": -118.2455
+      },
+      "block": "4th",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "454390",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2020-10-13",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "gabys-cosmetics-general-merchandise-wholesale-560",
+      "slug": "gabys-cosmetics-general-merchandise-wholesale-560",
+      "name": "Gabys Cosmetics General Merchandise Wholesale",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0445,
+        "lng": -118.2481
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2020-06-26",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "game-source-inc-530",
+      "slug": "game-source-inc-530",
+      "name": "Game Source INC",
+      "name_es": null,
+      "address": {
+        "line1": "530 S Los Angeles St",
+        "unit": "3FL",
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2481
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2002-04-17",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "ghxl-inc-424",
+      "slug": "ghxl-inc-424",
+      "name": "Ghxl INC",
+      "name_es": null,
+      "address": {
+        "line1": "424 S Los Angeles St",
+        "unit": "2",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2023-01-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "gift-house-trading-225",
+      "slug": "gift-house-trading-225",
+      "name": "Gift House Trading",
+      "name_es": null,
+      "address": {
+        "line1": "225 Winston St",
+        "unit": "20",
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2461
+      },
+      "block": "winston",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2013-01-07",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "gold-kk-international-inc-313",
+      "slug": "gold-kk-international-inc-313",
+      "name": "Gold Kk International INC",
+      "name_es": null,
+      "address": {
+        "line1": "313 S San Pedro St Unit #104 & 105",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.243
+      },
+      "block": "san-pedro",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "golden-gift-int-l-corp-352",
+      "slug": "golden-gift-int-l-corp-352",
+      "name": "Golden Gift Int'l CORP",
+      "name_es": null,
+      "address": {
+        "line1": "352 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0478,
+        "lng": -118.2453
+      },
+      "block": "los-angeles",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1999-09-23",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "got-fiesta-inc-304",
+      "slug": "got-fiesta-inc-304",
+      "name": "Got Fiesta INC",
+      "name_es": null,
+      "address": {
+        "line1": "304 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2447
+      },
+      "block": "4th",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2020-03-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "green-light-imports-inc-326",
+      "slug": "green-light-imports-inc-326",
+      "name": "Green Light Imports INC",
+      "name_es": null,
+      "address": {
+        "line1": "326 Boyd St",
+        "unit": "F",
+        "zip": "90013",
+        "lat": 34.0467,
+        "lng": -118.2435
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2025-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "greenwich-usa-co-313",
+      "slug": "greenwich-usa-co-313",
+      "name": "Greenwich Usa CO",
+      "name_es": null,
+      "address": {
+        "line1": "313 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2444
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1999-11-10",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "gsi-co-340",
+      "slug": "gsi-co-340",
+      "name": "Gsi CO",
+      "name_es": null,
+      "address": {
+        "line1": "340 S San Pedro St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0462,
+        "lng": -118.2427
+      },
+      "block": "san-pedro",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423600",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": null,
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "gta-video-games-inc-529",
+      "slug": "gta-video-games-inc-529",
+      "name": "Gta Video Games INC",
+      "name_es": null,
+      "address": {
+        "line1": "529 S Los Angeles St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2481
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2010-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "happy-trading-inc-500",
+      "slug": "happy-trading-inc-500",
+      "name": "Happy Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "70",
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2474
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2007-08-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "hayatna-inc-417",
+      "slug": "hayatna-inc-417",
+      "name": "Hayatna INC",
+      "name_es": null,
+      "address": {
+        "line1": "417 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0458,
+        "lng": -118.2424
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-01-13",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "himalayan-glass-wholesale-inc-321",
+      "slug": "himalayan-glass-wholesale-inc-321",
+      "name": "Himalayan Glass Wholesale INC",
+      "name_es": null,
+      "address": {
+        "line1": "321 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2025-11-21",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "hye-sung-trading-256",
+      "slug": "hye-sung-trading-256",
+      "name": "Hye Sung Trading",
+      "name_es": null,
+      "address": {
+        "line1": "256 Winston St",
+        "unit": "A",
+        "zip": "90013",
+        "lat": 34.0457,
+        "lng": -118.2457
+      },
+      "block": "winston",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2014-01-07",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "i-luxe-llc-500",
+      "slug": "i-luxe-llc-500",
+      "name": "I Luxe LLC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "56",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2475
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2015-11-04",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "imad-distribution-inc-313",
+      "slug": "imad-distribution-inc-313",
+      "name": "Imad Distribution INC",
+      "name_es": null,
+      "address": {
+        "line1": "313 S San Pedro St",
+        "unit": "101",
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.243
+      },
+      "block": "san-pedro",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2020-01-27",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "investment-consultants-llc-326",
+      "slug": "investment-consultants-llc-326",
+      "name": "Investment Consultants, LLC",
+      "name_es": null,
+      "address": {
+        "line1": "326 Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.2437
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1994-12-16",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "j-n-trading-inc-421",
+      "slug": "j-n-trading-inc-421",
+      "name": "J N Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "421 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0459,
+        "lng": -118.2449
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1999-01-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "jt-distributors-inc-326",
+      "slug": "jt-distributors-inc-326",
+      "name": "Jt Distributors INC",
+      "name_es": null,
+      "address": {
+        "line1": "326 E 3rd St",
+        "unit": "E",
+        "zip": "90013",
+        "lat": 34.0478,
+        "lng": -118.2434
+      },
+      "block": "3rd",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2014-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "k-and-h-vision-trading-inc-412",
+      "slug": "k-and-h-vision-trading-inc-412",
+      "name": "K & H Vision Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "412 Wall St",
+        "unit": "B1",
+        "zip": "90013",
+        "lat": 34.0458,
+        "lng": -118.2445
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2010-08-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "k-and-less-inc-219",
+      "slug": "k-and-less-inc-219",
+      "name": "K & Less INC",
+      "name_es": null,
+      "address": {
+        "line1": "219 Winston St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2465
+      },
+      "block": "winston",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2018-04-30",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "kh-collectibles-inc-437",
+      "slug": "kh-collectibles-inc-437",
+      "name": "Kh Collectibles INC",
+      "name_es": null,
+      "address": {
+        "line1": "437 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0466,
+        "lng": -118.2473
+      },
+      "block": "los-angeles",
+      "category": [
+        "figures"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2025-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "kitchen-diamond-inc-241",
+      "slug": "kitchen-diamond-inc-241",
+      "name": "Kitchen Diamond INC",
+      "name_es": null,
+      "address": {
+        "line1": "241 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "l-a-top-distributor-441",
+      "slug": "l-a-top-distributor-441",
+      "name": "L A Top Distributor",
+      "name_es": null,
+      "address": {
+        "line1": "441 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0465,
+        "lng": -118.247
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2000-09-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "l-a-gem-shops-com-560",
+      "slug": "l-a-gem-shops-com-560",
+      "name": "L.A Gem Shops.Com",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": "65",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-06-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "l-t-gifts-238",
+      "slug": "l-t-gifts-238",
+      "name": "L.T. Gifts",
+      "name_es": null,
+      "address": {
+        "line1": "238 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.245
+      },
+      "block": "4th",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "la-candy-and-supplies-inc-321",
+      "slug": "la-candy-and-supplies-inc-321",
+      "name": "La Candy And Supplies INC",
+      "name_es": null,
+      "address": {
+        "line1": "321 E Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "boyd",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424450",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "la-sky-trading-inc-230",
+      "slug": "la-sky-trading-inc-230",
+      "name": "La Sky Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "230 Winston St",
+        "unit": "38",
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2467
+      },
+      "block": "winston",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2006-06-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "la-video-games-inc-531",
+      "slug": "la-video-games-inc-531",
+      "name": "La Video Games INC",
+      "name_es": null,
+      "address": {
+        "line1": "531 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0455,
+        "lng": -118.2485
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-07-06",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "landy-s-world-llc-215",
+      "slug": "landy-s-world-llc-215",
+      "name": "Landy's World LLC",
+      "name_es": null,
+      "address": {
+        "line1": "215 E 4th St",
+        "unit": "29",
+        "zip": "90013",
+        "lat": 34.0469,
+        "lng": -118.2455
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-04-12",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "letys-toys-inc-243",
+      "slug": "letys-toys-inc-243",
+      "name": "Letys Toys INC",
+      "name_es": null,
+      "address": {
+        "line1": "243 E 5th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0455,
+        "lng": -118.2461
+      },
+      "block": "5th",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2026-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "libreria-el-reyno-de-dios-410",
+      "slug": "libreria-el-reyno-de-dios-410",
+      "name": "Libreria El Reyno De Dios",
+      "name_es": null,
+      "address": {
+        "line1": "410 S Los Angeles St",
+        "unit": "146",
+        "zip": "90013",
+        "lat": 34.0468,
+        "lng": -118.2463
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2020-06-29",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "little-tokyo-service-center-community-development-corporatio",
+      "slug": "little-tokyo-service-center-community-development-corporatio",
+      "name": "Little Tokyo Service Center Community Development Corporation",
+      "name_es": null,
+      "address": {
+        "line1": "231 E 3rd St",
+        "unit": "G106",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1994-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "littsupplys-inc-339",
+      "slug": "littsupplys-inc-339",
+      "name": "Littsupplys INC",
+      "name_es": null,
+      "address": {
+        "line1": "339 Wall St",
+        "unit": "G",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-08-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "logographics-gift-shop-222",
+      "slug": "logographics-gift-shop-222",
+      "name": "Logographics Gift Shop",
+      "name_es": null,
+      "address": {
+        "line1": "222 Winston St #",
+        "unit": "A5",
+        "zip": "90013",
+        "lat": 34.0462,
+        "lng": -118.2465
+      },
+      "block": "winston",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2011-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "lokky-holding-inc-425",
+      "slug": "lokky-holding-inc-425",
+      "name": "Lokky Holding INC",
+      "name_es": null,
+      "address": {
+        "line1": "425 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0457,
+        "lng": -118.245
+      },
+      "block": "wall",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2014-01-06",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "lucky-by-inc-326",
+      "slug": "lucky-by-inc-326",
+      "name": "Lucky By INC",
+      "name_es": null,
+      "address": {
+        "line1": "326 Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0467,
+        "lng": -118.2435
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2025-04-29",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "m-and-h-wholesale-inc-312",
+      "slug": "m-and-h-wholesale-inc-312",
+      "name": "M&H Wholesale INC",
+      "name_es": null,
+      "address": {
+        "line1": "312 Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.244
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-01-13",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "macro-center-inc-521",
+      "slug": "macro-center-inc-521",
+      "name": "Macro Center INC",
+      "name_es": null,
+      "address": {
+        "line1": "521 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0456,
+        "lng": -118.2481
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2017-11-13",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "magna-stella-inc-500",
+      "slug": "magna-stella-inc-500",
+      "name": "Magna Stella INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St Suite #102 & 103",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2474
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-08-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "master-imports-396",
+      "slug": "master-imports-396",
+      "name": "Master Imports",
+      "name_es": null,
+      "address": {
+        "line1": "396 S Los Angeles St",
+        "unit": "16",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2457
+      },
+      "block": "los-angeles",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423600",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2011-02-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "master-party-inc-376",
+      "slug": "master-party-inc-376",
+      "name": "Master Party INC",
+      "name_es": null,
+      "address": {
+        "line1": "376 S Los Angeles St",
+        "unit": "D",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "unknown",
+      "naics": null,
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2025-08-19",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "me-cloud-inc-340",
+      "slug": "me-cloud-inc-340",
+      "name": "Me Cloud INC",
+      "name_es": null,
+      "address": {
+        "line1": "340 E 3rd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2026-02-02",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "mega-party-inc-215",
+      "slug": "mega-party-inc-215",
+      "name": "Mega Party INC",
+      "name_es": null,
+      "address": {
+        "line1": "215 Boyd St Suite #A & B",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0475,
+        "lng": -118.2448
+      },
+      "block": "boyd",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2010-07-16",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "mf-trading-417",
+      "slug": "mf-trading-417",
+      "name": "Mf Trading",
+      "name_es": null,
+      "address": {
+        "line1": "417 Wall St",
+        "unit": "23",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2448
+      },
+      "block": "wall",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2009-05-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "mike-s-international-inc-330",
+      "slug": "mike-s-international-inc-330",
+      "name": "Mike's International INC",
+      "name_es": null,
+      "address": {
+        "line1": "330 Wall St",
+        "unit": "9",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2015-06-18",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "milky-way-trading-inc-416",
+      "slug": "milky-way-trading-inc-416",
+      "name": "Milky Way Trading, INC",
+      "name_es": null,
+      "address": {
+        "line1": "416 Wall St",
+        "unit": "A",
+        "zip": "90013",
+        "lat": 34.0457,
+        "lng": -118.2448
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2020-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "misty-trading-corp-530",
+      "slug": "misty-trading-corp-530",
+      "name": "Misty Trading CORP",
+      "name_es": null,
+      "address": {
+        "line1": "530 S Los Angeles St Suite #C, 2f",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0451,
+        "lng": -118.248
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2017-01-02",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "monkey-world-inc-322",
+      "slug": "monkey-world-inc-322",
+      "name": "Monkey World INC",
+      "name_es": null,
+      "address": {
+        "line1": "322 Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "more-trade-co-414",
+      "slug": "more-trade-co-414",
+      "name": "More Trade CO",
+      "name_es": null,
+      "address": {
+        "line1": "414 S Los Angeles St",
+        "unit": "161",
+        "zip": "90013",
+        "lat": 34.0467,
+        "lng": -118.2468
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2011-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "mount-everest-clouds-inc-415",
+      "slug": "mount-everest-clouds-inc-415",
+      "name": "Mount Everest Clouds INC",
+      "name_es": null,
+      "address": {
+        "line1": "415 S San Pedro St",
+        "unit": "2",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "san-pedro",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-09-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "mumford-brewing-co-llc-416",
+      "slug": "mumford-brewing-co-llc-416",
+      "name": "Mumford Brewing CO LLC",
+      "name_es": null,
+      "address": {
+        "line1": "416 Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2422
+      },
+      "block": "boyd",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2011-08-17",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "nice-gifts-and-crafts-227",
+      "slug": "nice-gifts-and-crafts-227",
+      "name": "Nice Gifts & Crafts",
+      "name_es": null,
+      "address": {
+        "line1": "227 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-01-09",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "ojaas-corporation-412",
+      "slug": "ojaas-corporation-412",
+      "name": "Ojaas Corporation",
+      "name_es": null,
+      "address": {
+        "line1": "412 Wall St",
+        "unit": "B4",
+        "zip": "90013",
+        "lat": 34.0458,
+        "lng": -118.2445
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2018-02-21",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "olivia-beauty-supply-517",
+      "slug": "olivia-beauty-supply-517",
+      "name": "Olivia Beauty Supply",
+      "name_es": null,
+      "address": {
+        "line1": "517 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2023-07-07",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "omicaa-trade-inc-419",
+      "slug": "omicaa-trade-inc-419",
+      "name": "Omicaa Trade INC",
+      "name_es": null,
+      "address": {
+        "line1": "419 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-08-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "oushang-trading-inc-500",
+      "slug": "oushang-trading-inc-500",
+      "name": "Oushang Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "3A-4A",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2475
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2012-08-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "paredise-import-inc-500",
+      "slug": "paredise-import-inc-500",
+      "name": "Paredise Import INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "25",
+        "zip": "90013",
+        "lat": 34.0454,
+        "lng": -118.2474
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-03-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "payless-cellular-and-accessories-380",
+      "slug": "payless-cellular-and-accessories-380",
+      "name": "Payless Cellular And Accessories",
+      "name_es": null,
+      "address": {
+        "line1": "380 S Los Angeles St",
+        "unit": "2-3",
+        "zip": "90013",
+        "lat": 34.0473,
+        "lng": -118.2455
+      },
+      "block": "los-angeles",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423600",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2013-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "potozac-gift-wrapping-inc-217",
+      "slug": "potozac-gift-wrapping-inc-217",
+      "name": "Potozac Gift Wrapping INC",
+      "name_es": null,
+      "address": {
+        "line1": "217 Boyd St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0475,
+        "lng": -118.2448
+      },
+      "block": "boyd",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2007-07-10",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "prestige-electronic-imports-inc-222",
+      "slug": "prestige-electronic-imports-inc-222",
+      "name": "Prestige Electronic Imports INC",
+      "name_es": null,
+      "address": {
+        "line1": "222 Winston St",
+        "unit": "312",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2464
+      },
+      "block": "winston",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423600",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2015-03-19",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "prospect-trading-ll-216",
+      "slug": "prospect-trading-ll-216",
+      "name": "Prospect Trading Ll",
+      "name_es": null,
+      "address": {
+        "line1": "216 Boyd St",
+        "unit": "D",
+        "zip": "90013",
+        "lat": 34.0475,
+        "lng": -118.2449
+      },
+      "block": "boyd",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2014-06-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "pulceras-y-articulos-religiosos-san-judas-tadeo-560",
+      "slug": "pulceras-y-articulos-religiosos-san-judas-tadeo-560",
+      "name": "Pulceras Y Articulos Religiosos San Judas Tadeo",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0445,
+        "lng": -118.2481
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-01-04",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sahib-products-and-sales-llc-303",
+      "slug": "sahib-products-and-sales-llc-303",
+      "name": "Sahib Products & Sales LLC",
+      "name_es": null,
+      "address": {
+        "line1": "303 S Los Angeles St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0485,
+        "lng": -118.2449
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-07-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sairise-impex-inc-560",
+      "slug": "sairise-impex-inc-560",
+      "name": "Sairise Impex INC",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": "81-82",
+        "zip": "90013",
+        "lat": 34.045,
+        "lng": -118.2484
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2004-05-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "santa-maria-de-guadalupe-400",
+      "slug": "santa-maria-de-guadalupe-400",
+      "name": "Santa Maria De Guadalupe",
+      "name_es": null,
+      "address": {
+        "line1": "400 S Los Angeles St",
+        "unit": "106",
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.246
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2017-04-26",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sarve-imports-26-inc-401",
+      "slug": "sarve-imports-26-inc-401",
+      "name": "Sarve Imports 26 INC",
+      "name_es": null,
+      "address": {
+        "line1": "401 S Los Angeles St",
+        "unit": "5",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2461
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2004-05-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sonic-sunglass-corp-401",
+      "slug": "sonic-sunglass-corp-401",
+      "name": "Sonic Sunglass CORP",
+      "name_es": null,
+      "address": {
+        "line1": "401 S Los Angeles St",
+        "unit": "4",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2461
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1997-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sport-la-inc-500",
+      "slug": "sport-la-inc-500",
+      "name": "Sport La, INC",
+      "name_es": null,
+      "address": {
+        "line1": "500 S Los Angeles St",
+        "unit": "6",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2475
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2002-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sprake-s-243",
+      "slug": "sprake-s-243",
+      "name": "Sprake's",
+      "name_es": null,
+      "address": {
+        "line1": "243 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.2454
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-01-11",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "star-gift-international-inc-443",
+      "slug": "star-gift-international-inc-443",
+      "name": "Star Gift International INC",
+      "name_es": null,
+      "address": {
+        "line1": "443 S San Pedro St",
+        "unit": "1",
+        "zip": "90013",
+        "lat": 34.0448,
+        "lng": -118.2439
+      },
+      "block": "san-pedro",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "unknown",
+      "naics": null,
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2008-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sun-flower-novelties-co-232",
+      "slug": "sun-flower-novelties-co-232",
+      "name": "Sun Flower Novelties CO",
+      "name_es": null,
+      "address": {
+        "line1": "232 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2454
+      },
+      "block": "4th",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2000-10-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "sunshine-wholesale-corp-424",
+      "slug": "sunshine-wholesale-corp-424",
+      "name": "Sunshine Wholesale CORP",
+      "name_es": null,
+      "address": {
+        "line1": "424 S Los Angeles St",
+        "unit": "8",
+        "zip": "90013",
+        "lat": 34.0467,
+        "lng": -118.2468
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2013-08-07",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "team-work-trading-221",
+      "slug": "team-work-trading-221",
+      "name": "Team Work Trading",
+      "name_es": null,
+      "address": {
+        "line1": "221 Boyd St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0475,
+        "lng": -118.2448
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2001-11-07",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "the-333-store-330",
+      "slug": "the-333-store-330",
+      "name": "The 333 Store",
+      "name_es": null,
+      "address": {
+        "line1": "330 Wall St",
+        "unit": "3",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-11-18",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "the-glass-castle-inc-413",
+      "slug": "the-glass-castle-inc-413",
+      "name": "The Glass Castle INC",
+      "name_es": null,
+      "address": {
+        "line1": "413 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-05-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "the-js-store-llc-230",
+      "slug": "the-js-store-llc-230",
+      "name": "The Js Store, LLC",
+      "name_es": null,
+      "address": {
+        "line1": "230 Winston St",
+        "unit": "20",
+        "zip": "90013",
+        "lat": 34.0459,
+        "lng": -118.2467
+      },
+      "block": "winston",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2024-05-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "the-supply-joint-325",
+      "slug": "the-supply-joint-325",
+      "name": "The Supply Joint",
+      "name_es": null,
+      "address": {
+        "line1": "325 Boyd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2438
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "452000",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2022-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "the-us-hultan-group-401",
+      "slug": "the-us-hultan-group-401",
+      "name": "The Us Hultan Group",
+      "name_es": null,
+      "address": {
+        "line1": "401 S Los Angeles St",
+        "unit": "2",
+        "zip": "90013",
+        "lat": 34.0472,
+        "lng": -118.2466
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2016-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "toyoutdoor-301",
+      "slug": "toyoutdoor-301",
+      "name": "Toyoutdoor",
+      "name_es": null,
+      "address": {
+        "line1": "301 S Los Angeles St",
+        "unit": "301",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "electronics"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423600",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2026-04-16",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "toys-and-game-448",
+      "slug": "toys-and-game-448",
+      "name": "Toys And Game",
+      "name_es": null,
+      "address": {
+        "line1": "448 S Los Angeles St",
+        "unit": "9",
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.247
+      },
+      "block": "los-angeles",
+      "category": [
+        "toys"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2007-12-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "us-koko-trading-inc-231",
+      "slug": "us-koko-trading-inc-231",
+      "name": "Us Koko Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "231 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2021-05-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "v-d-a-party-supply-230",
+      "slug": "v-d-a-party-supply-230",
+      "name": "V D A Party Supply",
+      "name_es": null,
+      "address": {
+        "line1": "230 Winston St",
+        "unit": "20",
+        "zip": "90013",
+        "lat": 34.0459,
+        "lng": -118.2467
+      },
+      "block": "winston",
+      "category": [
+        "party"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2017-04-20",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "v-l-silk-and-craft-inc-335",
+      "slug": "v-l-silk-and-craft-inc-335",
+      "name": "V L Silk & Craft, INC",
+      "name_es": null,
+      "address": {
+        "line1": "335 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2435
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2019-11-21",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "vain-media-llc-420",
+      "slug": "vain-media-llc-420",
+      "name": "Vain Media LLC",
+      "name_es": null,
+      "address": {
+        "line1": "420 S San Pedro St",
+        "unit": "219",
+        "zip": "90013",
+        "lat": 34.0449,
+        "lng": -118.2428
+      },
+      "block": "san-pedro",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2010-06-25",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "vape-and-pack-inc-223",
+      "slug": "vape-and-pack-inc-223",
+      "name": "Vape And Pack INC",
+      "name_es": null,
+      "address": {
+        "line1": "223 Boyd St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0478,
+        "lng": -118.2449
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2023-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "vision-21-560",
+      "slug": "vision-21-560",
+      "name": "Vision 21",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": "6",
+        "zip": "90013",
+        "lat": 34.045,
+        "lng": -118.2484
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2002-01-03",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "winstons-novelty-s-225",
+      "slug": "winstons-novelty-s-225",
+      "name": "Winstons Novelty's",
+      "name_es": null,
+      "address": {
+        "line1": "225 Winston St",
+        "unit": "7",
+        "zip": "90013",
+        "lat": 34.0463,
+        "lng": -118.2466
+      },
+      "block": "winston",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2012-06-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "worldwide-aeros-corp-442",
+      "slug": "worldwide-aeros-corp-442",
+      "name": "Worldwide Aeros CORP",
+      "name_es": null,
+      "address": {
+        "line1": "442 E 3rd St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0464,
+        "lng": -118.2416
+      },
+      "block": "3rd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "1996-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "xitlali-s-gifts-560",
+      "slug": "xitlali-s-gifts-560",
+      "name": "Xitlali's Gifts",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": "73",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453220",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2023-03-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "yaali-usa-inc-424",
+      "slug": "yaali-usa-inc-424",
+      "name": "Yaali Usa INC",
+      "name_es": null,
+      "address": {
+        "line1": "424 S Los Angeles St",
+        "unit": "4",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2026-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "yahoo-trading-inc-326",
+      "slug": "yahoo-trading-inc-326",
+      "name": "Yahoo Trading INC",
+      "name_es": null,
+      "address": {
+        "line1": "326 Boyd St",
+        "unit": "E",
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.2437
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": null,
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "yrp-gifts-241",
+      "slug": "yrp-gifts-241",
+      "name": "Yrp Gifts",
+      "name_es": null,
+      "address": {
+        "line1": "241 Winston St",
+        "unit": "22",
+        "zip": "90013",
+        "lat": 34.046,
+        "lng": -118.2457
+      },
+      "block": "winston",
+      "category": [
+        "gifts"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2017-02-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "z-and-a-wholesale-inc-330",
+      "slug": "z-and-a-wholesale-inc-330",
+      "name": "Z & A Wholesale INC",
+      "name_es": null,
+      "address": {
+        "line1": "330 Wall St",
+        "unit": "4",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "424990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "medium",
+      "since": "2023-04-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "abc-trading-co-256",
+      "slug": "abc-trading-co-256",
+      "name": "Abc Trading CO",
+      "name_es": null,
+      "address": {
+        "line1": "256 Winston St",
+        "unit": "A",
+        "zip": "90013",
+        "lat": 34.0457,
+        "lng": -118.2457
+      },
+      "block": "winston",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2012-09-04",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "alco-imports-inc-326",
+      "slug": "alco-imports-inc-326",
+      "name": "Alco Imports INC",
+      "name_es": null,
+      "address": {
+        "line1": "326 Boyd St",
+        "unit": "E",
+        "zip": "90013",
+        "lat": 34.047,
+        "lng": -118.2437
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2007-07-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "golden-lite-wholesale-and-import-inc-321",
+      "slug": "golden-lite-wholesale-and-import-inc-321",
+      "name": "Golden Lite Wholesale & Import INC",
+      "name_es": null,
+      "address": {
+        "line1": "321 Wall St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0473,
+        "lng": -118.2443
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2012-04-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "johnny-trading-458",
+      "slug": "johnny-trading-458",
+      "name": "Johnny Trading",
+      "name_es": null,
+      "address": {
+        "line1": "458 E 4th St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0453,
+        "lng": -118.2421
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "retail",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2004-07-15",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "la-best-wholesale-339",
+      "slug": "la-best-wholesale-339",
+      "name": "La Best Wholesale",
+      "name_es": null,
+      "address": {
+        "line1": "339 Wall St",
+        "unit": "D",
+        "zip": "90013",
+        "lat": 34.0471,
+        "lng": -118.2445
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2018-11-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "lalaland-imports-inc-339",
+      "slug": "lalaland-imports-inc-339",
+      "name": "Lalaland Imports INC",
+      "name_es": null,
+      "address": {
+        "line1": "339 Wall St",
+        "unit": "B",
+        "zip": "90013",
+        "lat": 34.0471,
+        "lng": -118.2445
+      },
+      "block": "wall",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2013-09-05",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "nhk-international-trading-co-216",
+      "slug": "nhk-international-trading-co-216",
+      "name": "Nhk International Trading CO",
+      "name_es": null,
+      "address": {
+        "line1": "216 Boyd St",
+        "unit": "A",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "boyd",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "423200",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2012-01-01",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "prime-import-560",
+      "slug": "prime-import-560",
+      "name": "Prime Import",
+      "name_es": null,
+      "address": {
+        "line1": "560 S Los Angeles St",
+        "unit": "11",
+        "zip": "90013",
+        "lat": null,
+        "lng": null
+      },
+      "block": "los-angeles",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "wholesale",
+      "naics": "425120",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2020-02-20",
+      "verified_at": null,
+      "status": "unverified"
+    },
+    {
+      "id": "pyramids-wholesale-inc-464",
+      "slug": "pyramids-wholesale-inc-464",
+      "name": "Pyramids Wholesale INC",
+      "name_es": null,
+      "address": {
+        "line1": "464 E 4th St",
+        "unit": null,
+        "zip": "90013",
+        "lat": 34.0449,
+        "lng": -118.2419
+      },
+      "block": "4th",
+      "category": [
+        "general"
+      ],
+      "wholesale_retail": "both",
+      "naics": "453990",
+      "place_id": null,
+      "phone": null,
+      "hours": null,
+      "wechat": null,
+      "languages": null,
+      "payment": null,
+      "moq": null,
+      "resale_cert_required": null,
+      "mentions": [],
+      "sources": [
+        "opendata"
+      ],
+      "confidence": "low",
+      "since": "2018-03-01",
+      "verified_at": null,
+      "status": "unverified"
+    }
+  ]
+}
