@@ -20,6 +20,9 @@ export async function POST(req: Request) {
     buyer_type: String(body.buyer_type ?? "").slice(0, 40),
     items: String(body.items ?? "").slice(0, 2000),
     locale: body.locale === "es" ? "es" : "en",
+    // Present when the request comes from a specific store's detail page.
+    store_slug: body.store_slug ? String(body.store_slug).slice(0, 120) : null,
+    store_name: body.store_name ? String(body.store_name).slice(0, 200) : null,
   };
   if (!lead.name || !lead.contact || !lead.items) {
     return NextResponse.json({ ok: false, reason: "missing_fields" }, { status: 400 });

@@ -306,6 +306,11 @@ a:hover {
   background: #edf7ee;
   border-color: #cde5cf;
 }
+.fineprint {
+  font-size: 12px;
+  color: #9aa0a6;
+  margin: 10px 0 0;
+}
 
 /* prose / guides */
 .prose {

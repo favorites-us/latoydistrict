@@ -1,15 +1,12 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import StoreCard from "@/components/StoreCard";
+import StoreInquiryForm from "@/components/StoreInquiryForm";
 import StoreViewEvent from "@/components/StoreViewEvent";
 import { Header, Footer } from "@/components/SiteChrome";
 import { BLOCK_LABELS, fullAddress, stores, type Store } from "@/lib/stores";
 import { storeJsonLd } from "@/lib/jsonld";
 import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
-
-function Field({ locale, value }: { locale: Locale; value: string | null }) {
-  return value ? <>{value}</> : <span className="unknown">{t(locale, "unknown_value")}</span>;
-}
 
 // Defense in depth: website comes from world-editable OSM data. Only render http(s).
 function httpUrl(u: string | null | undefined): string | null {
@@ -70,9 +67,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
             <p className="note ok">
               ✓ {t(locale, "verified_note")} — {store.verified_at}
             </p>
-          ) : (
-            <p className="note">{t(locale, "unverified_note")}</p>
-          )}
+          ) : null}
           <table className="detail-table">
             <tbody>
               <tr>
@@ -89,14 +84,18 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                   </a>
                 </td>
               </tr>
-              <tr>
-                <th>{t(locale, "field_hours")}</th>
-                <td><Field locale={locale} value={store.hours} /></td>
-              </tr>
-              <tr>
-                <th>{t(locale, "field_phone")}</th>
-                <td><Field locale={locale} value={store.phone} /></td>
-              </tr>
+              {store.hours ? (
+                <tr>
+                  <th>{t(locale, "field_hours")}</th>
+                  <td>{store.hours}</td>
+                </tr>
+              ) : null}
+              {store.phone ? (
+                <tr>
+                  <th>{t(locale, "field_phone")}</th>
+                  <td>{store.phone}</td>
+                </tr>
+              ) : null}
               {links.length > 0 ? (
                 <tr>
                   <th>{t(locale, "field_links")}</th>
@@ -112,18 +111,24 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                   </td>
                 </tr>
               ) : null}
-              <tr>
-                <th>{t(locale, "field_moq")}</th>
-                <td><Field locale={locale} value={store.moq} /></td>
-              </tr>
-              <tr>
-                <th>{t(locale, "field_payment")}</th>
-                <td><Field locale={locale} value={store.payment?.join(", ") ?? null} /></td>
-              </tr>
-              <tr>
-                <th>{t(locale, "field_languages")}</th>
-                <td><Field locale={locale} value={store.languages?.join(", ") ?? null} /></td>
-              </tr>
+              {store.moq ? (
+                <tr>
+                  <th>{t(locale, "field_moq")}</th>
+                  <td>{store.moq}</td>
+                </tr>
+              ) : null}
+              {store.payment?.length ? (
+                <tr>
+                  <th>{t(locale, "field_payment")}</th>
+                  <td>{store.payment.join(", ")}</td>
+                </tr>
+              ) : null}
+              {store.languages?.length ? (
+                <tr>
+                  <th>{t(locale, "field_languages")}</th>
+                  <td>{store.languages.join(", ")}</td>
+                </tr>
+              ) : null}
               {store.since ? (
                 <tr>
                   <th>{t(locale, "since")}</th>
@@ -132,11 +137,13 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
               ) : null}
             </tbody>
           </table>
+          {!store.verified_at ? <p className="fineprint">{t(locale, "unverified_note")}</p> : null}
           <p>
             <a href={`mailto:hello@latoydistrict.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
               {t(locale, "claim_cta")} ↗
             </a>
           </p>
+          <StoreInquiryForm locale={locale} storeSlug={store.slug} storeName={store.name} />
           {nearby.length > 0 ? (
             <>
               <h2 style={{ marginTop: 36 }}>

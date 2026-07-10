@@ -10,8 +10,14 @@ create table if not exists public.leads (
   buyer_type text,
   items text not null,
   locale text not null default 'en',
+  store_slug text,
+  store_name text,
   handled boolean not null default false,
   notes text
 );
+
+-- For existing deployments created before per-store inquiries were added:
+alter table public.leads add column if not exists store_slug text;
+alter table public.leads add column if not exists store_name text;
 
 alter table public.leads enable row level security;
