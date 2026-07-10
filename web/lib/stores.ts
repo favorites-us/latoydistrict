@@ -1,4 +1,4 @@
-import raw from "../../data/stores.json";
+import raw from "../data/stores.json";
 
 export type Category =
   | "toys"

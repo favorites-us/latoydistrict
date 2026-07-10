@@ -92,9 +92,9 @@ parsed.sort((a, b) => (a.confidence === b.confidence ? a.name.localeCompare(b.na
 const rank = { high: 0, medium: 1, low: 2 };
 parsed.sort((a, b) => rank[a.confidence] - rank[b.confidence] || a.name.localeCompare(b.name));
 
-fs.mkdirSync(new URL("../data/", import.meta.url), { recursive: true });
+fs.mkdirSync(new URL("../web/data/", import.meta.url), { recursive: true });
 fs.writeFileSync(
-  new URL("../data/stores.json", import.meta.url),
+  new URL("../web/data/stores.json", import.meta.url),
   JSON.stringify({ generated_note: "built by pipeline/, do not edit by hand", stores: parsed }, null, 2),
 );
 console.log(`data/stores.json: ${parsed.length} stores`);

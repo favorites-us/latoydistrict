@@ -7,7 +7,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { OUT_DIR } from "./lib.mjs";
 
-const DATA_FILE = fileURLToPath(new URL("../data/stores.json", import.meta.url));
+const DATA_FILE = fileURLToPath(new URL("../web/data/stores.json", import.meta.url));
 const CONTACTS_FILE = path.join(OUT_DIR, "contacts.json");
 const DRY = process.argv.includes("--dry");
 

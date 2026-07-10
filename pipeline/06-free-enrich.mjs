@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { BBOX, OUT_DIR, parseAddress } from "./lib.mjs";
 
-const DATA_FILE = fileURLToPath(new URL("../data/stores.json", import.meta.url));
+const DATA_FILE = fileURLToPath(new URL("../web/data/stores.json", import.meta.url));
 const CENSUS_DIR = path.join(OUT_DIR, "census");
 const OVERPASS_FILE = path.join(OUT_DIR, "overpass-shops.json");
 const DRY = process.argv.includes("--dry");
