@@ -20,17 +20,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 687-8445",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.superpages.com/los-angeles-ca/bpp/abc-toys-457994485",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "1979-07-16",
@@ -56,22 +63,32 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213)-253-9808",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://americasfavors.com/pages/terms-and-conditions",
+          "note": "phone and address from official website terms page"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2014-09-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://americasfavors.com/"
+      }
     },
     {
       "id": "ampro-marketing-corporation-339",
@@ -92,17 +109,24 @@
       "wholesale_retail": "retail",
       "naics": "451120",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 620-8885",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.loc8nearme.com/california/los-angeles/ampro-marketing-corporation/5081533/",
+          "note": "phone from public business directory; name + 90013 address confirmed; exact Yelp listing URL not exposed by search, so links.yelp left null"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "1994-03-01",
@@ -164,22 +188,32 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "213-437-0823",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.casamanga.com/pages/whole-sale-contact",
+          "note": "Official site confirms the business name and exact address; phone from official contact page. No hours taken from third-party listings."
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2000-10-16",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://www.casamanga.com/"
+      }
     },
     {
       "id": "chill-trading-inc-225",
@@ -236,17 +270,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 620-1900",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/mip/cl-toys-trading-inc-451637357",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2011-01-03",
@@ -308,22 +349,32 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 687-8809",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/mip/flowers-beyond-intl-inc-9610295?lid=9610295",
+          "note": "phone from public business directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2018-02-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "yelp": "https://www.yellowpages.com/los-angeles-ca/mip/flowers-beyond-intl-inc-9610295?lid=9610295"
+      }
     },
     {
       "id": "funland-toys-inc-468",
@@ -344,22 +395,34 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 626-5160",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.cylex.us.com/company/funland-toys-inc-17798355.html",
+          "note": "phone from public business directory; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "1997-04-02",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "other": [
+          "https://www.cylex.us.com/company/funland-toys-inc-17798355.html"
+        ]
+      }
     },
     {
       "id": "funtastic-256",
@@ -524,17 +587,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 617-3750",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.cylex.us.com/los-angeles/toys-games-stores/?dst=little-tokyo",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "1987-05-06",
@@ -668,17 +738,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 620-1106",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.cylex.us.com/company/lovely-trading-llc-30461855.html",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2008-07-01",
@@ -750,12 +827,16 @@
       "mentions": [],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2017-08-30",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "http://www.mnmtoysinc.com/"
+      }
     },
     {
       "id": "maple-co-218",
@@ -956,17 +1037,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 253-5934",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://losangeles.jinbay.com/yellowpages/55/yellowlist_a60300_sc0_sa0_k_l0_s0_p11.html",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "1992-01-01",
@@ -992,17 +1080,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 680-0888",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/mip/toms-model-inc-1795116",
+          "note": "phone from public business directory; name + 90013 address confirmed; exact Yelp listing URL not exposed by search, so links.yelp left null"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2013-11-01",
@@ -1100,17 +1195,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 229-8822",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://losangeles.jinbay.com/yellowpages/55/yellowlist_a60300_sc0_sa0_k_l0_s0_p11.html",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": null,
@@ -1208,22 +1310,34 @@
       "wholesale_retail": "wholesale",
       "naics": "423920",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 620-1732",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/little-armenia-los-angeles-ca/thai-restaurants",
+          "note": "phone from public business directory; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2012-06-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "other": [
+          "https://www.yellowpages.com/little-armenia-los-angeles-ca/thai-restaurants"
+        ]
+      }
     },
     {
       "id": "viva-wholesale-inc-339",
@@ -1244,17 +1358,24 @@
       "wholesale_retail": "both",
       "naics": "451120",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 785-4921",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.postcard.inc/places/viva-wholesale-inc-los-angeles-JdpWNxxRtuV",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "high",
       "since": "2012-04-01",
@@ -1784,22 +1905,32 @@
       "wholesale_retail": "retail",
       "naics": "453220",
       "place_id": null,
-      "phone": null,
-      "hours": null,
+      "phone": "213-265-7559",
+      "hours": "Mon - Sat 9:00 am – 4:00 pm; Sunday Closed",
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.americansilkinc.com/",
+          "note": "phone, hours, and address from official website"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2018-07-02",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://www.americansilkinc.com/"
+      }
     },
     {
       "id": "amore-perfume-inc-448",
@@ -1820,22 +1951,34 @@
       "wholesale_retail": "retail",
       "naics": "452000",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 327-1111",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.buzzfile.com/business/Amore-Perfume-Inc.-213-327-1111",
+          "note": "phone from public business directory; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2013-01-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "other": [
+          "https://www.buzzfile.com/business/Amore-Perfume-Inc.-213-327-1111"
+        ]
+      }
     },
     {
       "id": "articulos-religiosos-santa-maria-400",
@@ -2288,22 +2431,32 @@
       "wholesale_retail": "wholesale",
       "naics": "423990",
       "place_id": null,
-      "phone": null,
-      "hours": null,
+      "phone": "213-689-0087",
+      "hours": "Business Hours: M-F - 9:00 AM to 4:45 PM; Sat - 9:00 AM to 3:45 PM. Helium Service Hours: M-F - 9:00 AM to 3:30 PM; Sat - 9:00 AM to 2:30 PM",
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://caballoonhouse.com/pages/faq",
+          "note": "Name, full address, phone, and hours confirmed on official website contact page"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2022-10-22",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://caballoonhouse.com/"
+      }
     },
     {
       "id": "california-balloon-house-c-447",
@@ -2324,17 +2477,24 @@
       "wholesale_retail": "retail",
       "naics": "453220",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 689-0087",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/mip/california-balloon-house-14694689",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2005-01-03",
@@ -2406,12 +2566,16 @@
       "mentions": [],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2016-03-14",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://www.capandhatimport.com/"
+      }
     },
     {
       "id": "cell-gear-inc-217",
@@ -2722,22 +2886,34 @@
       "wholesale_retail": "unknown",
       "naics": null,
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 683-9680",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.cybo.com/US/los-angeles/electronics-store",
+          "note": "phone from public business directory; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2007-01-28",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "other": [
+          "https://www.cybo.com/US/los-angeles/electronics-store"
+        ]
+      }
     },
     {
       "id": "emory-k-holiday-people-are-strange-420",
@@ -2794,17 +2970,24 @@
       "wholesale_retail": "retail",
       "naics": "452000",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 617-0153",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.mapquest.com/us/california/empire-floral-craft-276921974",
+          "note": "phone from public business directory; name + 90013 address confirmed; exact Yelp listing URL not exposed by search, so links.yelp left null"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2022-10-11",
@@ -3057,12 +3240,16 @@
       "mentions": [],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2011-01-10",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://fantasia-sales.com/"
+      }
     },
     {
       "id": "fox-electronics-rs-llc-339",
@@ -3551,22 +3738,32 @@
       "wholesale_retail": "retail",
       "naics": "452000",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 622-0895",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/south-park-los-angeles-ca/giftware-wholesalers-manufacturers",
+          "note": "phone from public business directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2007-08-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "yelp": "https://www.yellowpages.com/south-park-los-angeles-ca/giftware-wholesalers-manufacturers"
+      }
     },
     {
       "id": "hayatna-inc-417",
@@ -3803,17 +4000,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423990",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 613-9378",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.cylex.us.com/company/j-n-trading-32238972.html",
+          "note": "phone from public business directory; name + 90013 address confirmed; exact Yelp listing URL not exposed by search, so links.yelp left null"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "1999-01-15",
@@ -3839,22 +4043,32 @@
       "wholesale_retail": "retail",
       "naics": "453220",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 680-2002",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.allbiz.com/business/jt-distributors_2f-213-680-2002",
+          "note": "phone from public business directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2014-07-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "yelp": "https://www.allbiz.com/business/jt-distributors_2f-213-680-2002"
+      }
     },
     {
       "id": "k-and-h-vision-trading-inc-412",
@@ -4199,17 +4413,24 @@
       "wholesale_retail": "retail",
       "naics": "452000",
       "place_id": null,
-      "phone": null,
+      "phone": "(323) 898-5121",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.loc8nearme.com/california/los-angeles/la-video-games-inc/8629831/",
+          "note": "phone from public directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2021-07-06",
@@ -4343,22 +4564,34 @@
       "wholesale_retail": "wholesale",
       "naics": "424990",
       "place_id": null,
-      "phone": null,
+      "phone": "213-473-3030",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.ltsc.org/",
+          "note": "Official site footer confirms the organization, exact suite address, and phone. No hours published there."
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "1994-01-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://www.ltsc.org/",
+        "facebook": "https://www.facebook.com/LTSC.CDC",
+        "instagram": "https://www.instagram.com/ltsc.cdc/"
+      }
     },
     {
       "id": "littsupplys-inc-339",
@@ -4739,22 +4972,32 @@
       "wholesale_retail": "wholesale",
       "naics": "424990",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 620-0420",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/dulcerias",
+          "note": "phone from public business directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2010-07-16",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "yelp": "https://www.yellowpages.com/los-angeles-ca/dulcerias"
+      }
     },
     {
       "id": "mf-trading-417",
@@ -5027,22 +5270,32 @@
       "wholesale_retail": "retail",
       "naics": "453220",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 346-9970",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/brew-pubs",
+          "note": "phone from public business directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2011-08-17",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "yelp": "https://www.yellowpages.com/los-angeles-ca/brew-pubs"
+      }
     },
     {
       "id": "nice-gifts-and-crafts-227",
@@ -5279,17 +5532,24 @@
       "wholesale_retail": "wholesale",
       "naics": "423600",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 948-0390",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/jc-cellular-accessories",
+          "note": "phone from public business directory; name + 90013 address confirmed; exact Yelp listing URL not exposed by search, so links.yelp left null"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2013-02-01",
@@ -5963,22 +6223,32 @@
       "wholesale_retail": "retail",
       "naics": "452000",
       "place_id": null,
-      "phone": null,
+      "phone": "+1 (213) 265-7708",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://thesupplyjoint.com/pages/refund-policy",
+          "note": "phone and address from official website refund policy"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "2022-01-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "website": "https://thesupplyjoint.com/"
+      }
     },
     {
       "id": "the-us-hultan-group-401",
@@ -6359,22 +6629,32 @@
       "wholesale_retail": "wholesale",
       "naics": "424990",
       "place_id": null,
-      "phone": null,
+      "phone": "(626) 372-0961",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.ffls.com/ffl/995037107k02937/worldwide-aeros-corp",
+          "note": "phone from public business directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
       "confidence": "medium",
       "since": "1996-04-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "yelp": "https://www.ffls.com/ffl/995037107k02937/worldwide-aeros-corp"
+      }
     },
     {
       "id": "xitlali-s-gifts-560",
@@ -6647,22 +6927,32 @@
       "wholesale_retail": "wholesale",
       "naics": "425120",
       "place_id": null,
-      "phone": null,
+      "phone": "(213) 488-9395",
       "hours": null,
       "wechat": null,
       "languages": null,
       "payment": null,
       "moq": null,
       "resale_cert_required": null,
-      "mentions": [],
+      "mentions": [
+        {
+          "source": "web",
+          "url": "https://www.yellowpages.com/los-angeles-ca/mip/golden-lite-wholesale-474956653",
+          "note": "phone from public business directory listing; name + 90013 address confirmed"
+        }
+      ],
       "sources": [
         "opendata",
-        "census"
+        "census",
+        "web"
       ],
-      "confidence": "low",
+      "confidence": "medium",
       "since": "2012-04-01",
       "verified_at": null,
-      "status": "unverified"
+      "status": "unverified",
+      "links": {
+        "yelp": "https://www.yellowpages.com/los-angeles-ca/mip/golden-lite-wholesale-474956653"
+      }
     },
     {
       "id": "johnny-trading-458",

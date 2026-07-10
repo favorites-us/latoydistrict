@@ -26,6 +26,12 @@ export function storeJsonLd(store: Store) {
         }
       : {}),
     ...(store.phone ? { telephone: store.phone } : {}),
+    ...(() => {
+      const l = store.links ?? {};
+      const sameAs = [l.website, l.facebook, l.instagram, l.yelp, ...(l.other ?? [])]
+        .filter((u): u is string => typeof u === "string" && /^https?:\/\//i.test(u));
+      return sameAs.length ? { sameAs } : {};
+    })(),
   };
 }
 

@@ -25,6 +25,23 @@ function httpUrl(u: string | null | undefined): string | null {
 export default function StorePage({ store, locale }: { store: Store; locale: Locale }) {
   const nearby = stores.filter((s) => s.block === store.block && s.slug !== store.slug).slice(0, 6);
   const mapsQuery = encodeURIComponent(fullAddress(store));
+
+  // Any business-linked URL goes here — website, socials, Yelp, etc. All
+  // pass through httpUrl() since links can originate from world-editable data.
+  const links: { label: string; href: string }[] = [];
+  const addLink = (label: string, raw: string | undefined) => {
+    const href = httpUrl(raw);
+    if (href) links.push({ label, href });
+  };
+  addLink(t(locale, "field_website"), store.links?.website);
+  addLink("Facebook", store.links?.facebook);
+  addLink("Instagram", store.links?.instagram);
+  addLink("WhatsApp", store.links?.whatsapp);
+  addLink("Yelp", store.links?.yelp);
+  for (const raw of store.links?.other ?? []) {
+    const href = httpUrl(raw);
+    if (href) links.push({ label: new URL(href).hostname.replace(/^www\./, ""), href });
+  }
   return (
     <>
       <Header locale={locale} altPath={`/stores/${store.slug}`} />
@@ -80,13 +97,18 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                 <th>{t(locale, "field_phone")}</th>
                 <td><Field locale={locale} value={store.phone} /></td>
               </tr>
-              {httpUrl(store.links?.website) ? (
+              {links.length > 0 ? (
                 <tr>
-                  <th>{t(locale, "field_website")}</th>
-                  <td>
-                    <a href={httpUrl(store.links?.website)!} rel="nofollow noopener" target="_blank">
-                      {store.links!.website} ↗
-                    </a>
+                  <th>{t(locale, "field_links")}</th>
+                  <td className="links-row">
+                    {links.map((l, i) => (
+                      <span key={l.href}>
+                        {i > 0 ? " · " : ""}
+                        <a href={l.href} rel="nofollow noopener" target="_blank">
+                          {l.label} ↗
+                        </a>
+                      </span>
+                    ))}
                   </td>
                 </tr>
               ) : null}

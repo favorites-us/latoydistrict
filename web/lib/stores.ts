@@ -42,8 +42,11 @@ export interface Store {
   hours: string | null;
   links?: {
     website?: string;
+    facebook?: string;
     instagram?: string;
     whatsapp?: string;
+    yelp?: string;
+    other?: string[];
   };
   wechat: string | null;
   languages: string[] | null;
