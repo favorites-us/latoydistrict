@@ -29,6 +29,7 @@ export function Footer({ locale }: { locale: Locale }) {
     <footer className="site-footer">
       <div className="container">
         <p>{t(locale, "footer_disclaimer")}</p>
+        <p>{t(locale, "footer_sources")}</p>
         <p>
           {t(locale, "footer_updated")}: 2026-07 · © {new Date().getFullYear()} latoydistrict.com
         </p>

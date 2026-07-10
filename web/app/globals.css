@@ -152,6 +152,15 @@ a:hover {
 .maplibregl-popup-content a {
   font-weight: 600;
 }
+.maplibregl-popup-content ul.map-tenants {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+.maplibregl-popup-content ul.map-tenants li {
+  margin: 2px 0;
+}
 
 /* directory */
 .toolbar {

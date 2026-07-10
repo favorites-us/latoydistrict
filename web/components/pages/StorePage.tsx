@@ -69,6 +69,16 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                 <th>{t(locale, "field_phone")}</th>
                 <td><Field locale={locale} value={store.phone} /></td>
               </tr>
+              {store.links?.website ? (
+                <tr>
+                  <th>{t(locale, "field_website")}</th>
+                  <td>
+                    <a href={store.links.website} rel="nofollow noopener" target="_blank">
+                      {store.links.website} ↗
+                    </a>
+                  </td>
+                </tr>
+              ) : null}
               <tr>
                 <th>{t(locale, "field_moq")}</th>
                 <td><Field locale={locale} value={store.moq} /></td>

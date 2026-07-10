@@ -10,8 +10,8 @@
         "line1": "323 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2445
+        "lat": 34.046344088393,
+        "lng": -118.24423980693
       },
       "block": "4th",
       "category": [
@@ -29,7 +29,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "1979-07-16",
@@ -45,8 +46,8 @@
         "line1": "405 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2452
+        "lat": 34.04631213299,
+        "lng": -118.244828917872
       },
       "block": "wall",
       "category": [
@@ -64,7 +65,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2014-09-01",
@@ -80,8 +82,8 @@
         "line1": "339 Wall St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2442
+        "lat": 34.047029054532,
+        "lng": -118.244410335398
       },
       "block": "wall",
       "category": [
@@ -99,7 +101,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "1994-03-01",
@@ -115,8 +118,8 @@
         "line1": "417 Wall St",
         "unit": "27",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2452
+        "lat": 34.046016665726,
+        "lng": -118.245002019925
       },
       "block": "wall",
       "category": [
@@ -134,7 +137,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2022-01-01",
@@ -150,8 +154,8 @@
         "line1": "218 Boyd St",
         "unit": "D",
         "zip": "90013",
-        "lat": 34.0473,
-        "lng": -118.2449
+        "lat": 34.047667385812,
+        "lng": -118.245155872016
       },
       "block": "boyd",
       "category": [
@@ -169,7 +173,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2000-10-16",
@@ -185,8 +190,8 @@
         "line1": "225 Winston St",
         "unit": "1",
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2461
+        "lat": 34.046320645072,
+        "lng": -118.246549136733
       },
       "block": "winston",
       "category": [
@@ -204,7 +209,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2025-05-01",
@@ -220,8 +226,8 @@
         "line1": "409 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0462,
-        "lng": -118.2447
+        "lat": 34.046213643902,
+        "lng": -118.244886618556
       },
       "block": "wall",
       "category": [
@@ -239,7 +245,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2011-01-03",
@@ -255,8 +262,8 @@
         "line1": "325 Winston St",
         "unit": "5",
         "zip": "90013",
-        "lat": 34.0455,
-        "lng": -118.2442
+        "lat": 34.045511740914,
+        "lng": -118.244913258671
       },
       "block": "winston",
       "category": [
@@ -274,7 +281,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2025-08-06",
@@ -290,8 +298,8 @@
         "line1": "334 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0458,
-        "lng": -118.2435
+        "lat": 34.046171483054,
+        "lng": -118.244104169578
       },
       "block": "4th",
       "category": [
@@ -309,7 +317,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2018-02-01",
@@ -325,8 +334,8 @@
         "line1": "468 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0452,
-        "lng": -118.242
+        "lat": 34.045049618675,
+        "lng": -118.241838922697
       },
       "block": "4th",
       "category": [
@@ -344,7 +353,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "1997-04-02",
@@ -360,8 +370,8 @@
         "line1": "256 Winston St",
         "unit": "F",
         "zip": "90013",
-        "lat": 34.0457,
-        "lng": -118.2457
+        "lat": 34.045838076641,
+        "lng": -118.246138076845
       },
       "block": "winston",
       "category": [
@@ -379,7 +389,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2010-02-01",
@@ -395,8 +406,8 @@
         "line1": "401 S Los Angeles St",
         "unit": "5",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2461
+        "lat": 34.047252582506,
+        "lng": -118.246279384411
       },
       "block": "los-angeles",
       "category": [
@@ -414,7 +425,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": null,
@@ -430,8 +442,8 @@
         "line1": "256 Winston St",
         "unit": "H",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045838076641,
+        "lng": -118.246138076845
       },
       "block": "winston",
       "category": [
@@ -449,7 +461,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2023-04-01",
@@ -465,8 +478,8 @@
         "line1": "424 S Los Angeles St",
         "unit": "12B",
         "zip": "90013",
-        "lat": 34.0467,
-        "lng": -118.2468
+        "lat": 34.046744934442,
+        "lng": -118.246770260306
       },
       "block": "los-angeles",
       "category": [
@@ -484,7 +497,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2007-01-03",
@@ -500,8 +514,8 @@
         "line1": "411 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0461,
-        "lng": -118.2448
+        "lat": 34.046164399358,
+        "lng": -118.244915468899
       },
       "block": "wall",
       "category": [
@@ -519,7 +533,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "1987-05-06",
@@ -535,8 +550,8 @@
         "line1": "380 S Los Angeles St",
         "unit": "P-23",
         "zip": "90013",
-        "lat": 34.0473,
-        "lng": -118.2455
+        "lat": 34.04743133633,
+        "lng": -118.245801942017
       },
       "block": "los-angeles",
       "category": [
@@ -554,7 +569,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "1997-06-01",
@@ -570,8 +586,8 @@
         "line1": "516 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0448,
-        "lng": -118.2413
+        "lat": 34.044760284288,
+        "lng": -118.241372282971
       },
       "block": "4th",
       "category": [
@@ -589,7 +605,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": null,
@@ -605,8 +622,8 @@
         "line1": "256 Winston St",
         "unit": "D",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045838076641,
+        "lng": -118.246138076845
       },
       "block": "winston",
       "category": [
@@ -624,7 +641,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2017-05-22",
@@ -640,8 +658,8 @@
         "line1": "216 E 3rd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0482,
-        "lng": -118.2441
+        "lat": 34.048355993263,
+        "lng": -118.24457715652
       },
       "block": "3rd",
       "category": [
@@ -659,7 +677,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2008-07-01",
@@ -675,8 +694,8 @@
         "line1": "238 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0467,
-        "lng": -118.2451
+        "lat": 34.046865586157,
+        "lng": -118.245634613467
       },
       "block": "4th",
       "category": [
@@ -694,7 +713,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2015-01-01",
@@ -710,8 +730,8 @@
         "line1": "241 Winston St",
         "unit": "27",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2457
+        "lat": 34.046109510607,
+        "lng": -118.246322966573
       },
       "block": "winston",
       "category": [
@@ -729,7 +749,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2017-08-30",
@@ -745,8 +766,8 @@
         "line1": "218 Winston St",
         "unit": "D2",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2463
+        "lat": 34.046338533206,
+        "lng": -118.246739046532
       },
       "block": "winston",
       "category": [
@@ -764,7 +785,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2004-01-05",
@@ -780,8 +802,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "84",
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2474
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -799,7 +821,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2017-10-25",
@@ -815,8 +838,8 @@
         "line1": "241 Winston St",
         "unit": "2",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2457
+        "lat": 34.046109510607,
+        "lng": -118.246322966573
       },
       "block": "winston",
       "category": [
@@ -834,7 +857,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2020-02-01",
@@ -850,8 +874,8 @@
         "line1": "230 Winston St",
         "unit": "18",
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2467
+        "lat": 34.046164380236,
+        "lng": -118.246572988178
       },
       "block": "winston",
       "category": [
@@ -869,7 +893,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2008-10-24",
@@ -885,8 +910,8 @@
         "line1": "325 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2436
+        "lat": 34.046332884484,
+        "lng": -118.244208147409
       },
       "block": "4th",
       "category": [
@@ -904,7 +929,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2015-01-12",
@@ -920,8 +946,8 @@
         "line1": "232 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.046910244579,
+        "lng": -118.245720662603
       },
       "block": "4th",
       "category": [
@@ -939,7 +965,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "1992-01-01",
@@ -955,8 +982,8 @@
         "line1": "501 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0449,
-        "lng": -118.2415
+        "lat": 34.044918475059,
+        "lng": -118.241395985135
       },
       "block": "4th",
       "category": [
@@ -974,7 +1001,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2013-11-01",
@@ -990,8 +1018,8 @@
         "line1": "255 E 5th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0452,
-        "lng": -118.2461
+        "lat": 34.045221684646,
+        "lng": -118.24616815067
       },
       "block": "5th",
       "category": [
@@ -1009,7 +1037,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2021-06-18",
@@ -1025,8 +1054,8 @@
         "line1": "218 Winston St",
         "unit": "D1",
         "zip": "90013",
-        "lat": 34.0461,
-        "lng": -118.2465
+        "lat": 34.046338533206,
+        "lng": -118.246739046532
       },
       "block": "winston",
       "category": [
@@ -1044,7 +1073,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2021-07-01",
@@ -1060,8 +1090,8 @@
         "line1": "340 S San Pedro St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0462,
-        "lng": -118.2427
+        "lat": 34.046309801527,
+        "lng": -118.242740000724
       },
       "block": "san-pedro",
       "category": [
@@ -1079,7 +1109,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": null,
@@ -1095,8 +1126,8 @@
         "line1": "259 Winston Streets",
         "unit": "B",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045911008617,
+        "lng": -118.246022696938
       },
       "block": "winston",
       "category": [
@@ -1114,7 +1145,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2026-01-01",
@@ -1130,8 +1162,8 @@
         "line1": "300 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2446
+        "lat": 34.046361949501,
+        "lng": -118.244642381452
       },
       "block": "4th",
       "category": [
@@ -1149,7 +1181,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "1994-02-02",
@@ -1165,8 +1198,8 @@
         "line1": "400 S San Pedro St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0458,
-        "lng": -118.2429
+        "lat": 34.04576828214,
+        "lng": -118.242962896885
       },
       "block": "san-pedro",
       "category": [
@@ -1184,7 +1217,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2012-06-01",
@@ -1200,8 +1234,8 @@
         "line1": "339 Wall St",
         "unit": "C",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2442
+        "lat": 34.047029054532,
+        "lng": -118.244410335398
       },
       "block": "wall",
       "category": [
@@ -1219,7 +1253,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2012-04-01",
@@ -1235,8 +1270,8 @@
         "line1": "417 Wall St",
         "unit": "3",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2448
+        "lat": 34.046016665726,
+        "lng": -118.245002019925
       },
       "block": "wall",
       "category": [
@@ -1254,7 +1289,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2012-05-24",
@@ -1270,8 +1306,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "44",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2475
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -1289,7 +1325,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": null,
@@ -1305,8 +1342,8 @@
         "line1": "410 S Los Angeles St",
         "unit": "145",
         "zip": "90013",
-        "lat": 34.0468,
-        "lng": -118.2463
+        "lat": 34.046990730535,
+        "lng": -118.246430827579
       },
       "block": "los-angeles",
       "category": [
@@ -1324,7 +1361,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "high",
       "since": "2009-02-05",
@@ -1340,8 +1378,8 @@
         "line1": "231 E 3rd St",
         "unit": "G106",
         "zip": "90013",
-        "lat": 34.0482,
-        "lng": -118.2442
+        "lat": 34.04845493433,
+        "lng": -118.244506368436
       },
       "block": "3rd",
       "category": [
@@ -1359,7 +1397,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1998-07-16",
@@ -1375,8 +1414,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "60-61",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2475
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -1394,7 +1433,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2006-11-20",
@@ -1410,8 +1450,8 @@
         "line1": "300 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0485,
-        "lng": -118.2446
+        "lat": 34.048435674954,
+        "lng": -118.244716848571
       },
       "block": "los-angeles",
       "category": [
@@ -1429,7 +1469,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1997-04-29",
@@ -1445,8 +1486,8 @@
         "line1": "306 E 3rd St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047803863094,
+        "lng": -118.24360781401
       },
       "block": "3rd",
       "category": [
@@ -1464,7 +1505,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-02-16",
@@ -1480,12 +1522,12 @@
         "line1": "454 E 4th St Building",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2423
+        "lat": 34.045121548658,
+        "lng": -118.241955279999
       },
       "block": "4th",
       "category": [
-        "general"
+        "gifts"
       ],
       "wholesale_retail": "wholesale",
       "naics": "424990",
@@ -1499,7 +1541,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2015-10-01",
@@ -1515,8 +1558,8 @@
         "line1": "222 Winston St",
         "unit": "A9",
         "zip": "90013",
-        "lat": 34.0461,
-        "lng": -118.2464
+        "lat": 34.046280457685,
+        "lng": -118.246685913619
       },
       "block": "winston",
       "category": [
@@ -1534,7 +1577,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2013-04-01",
@@ -1550,8 +1594,8 @@
         "line1": "218 E 3rd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0479,
-        "lng": -118.2443
+        "lat": 34.048345967022,
+        "lng": -118.244560257456
       },
       "block": "3rd",
       "category": [
@@ -1569,7 +1613,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2019-01-01",
@@ -1585,8 +1630,8 @@
         "line1": "560 S Los Angeles St",
         "unit": "36B",
         "zip": "90013",
-        "lat": 34.0445,
-        "lng": -118.2481
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -1604,7 +1649,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2016-10-19",
@@ -1620,8 +1666,8 @@
         "line1": "516 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0448,
-        "lng": -118.2413
+        "lat": 34.044760284288,
+        "lng": -118.241372282971
       },
       "block": "4th",
       "category": [
@@ -1639,7 +1685,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2003-10-27",
@@ -1655,8 +1702,8 @@
         "line1": "303 E 5th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0451,
-        "lng": -118.2451
+        "lat": 34.044902295496,
+        "lng": -118.245677626494
       },
       "block": "5th",
       "category": [
@@ -1674,7 +1721,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2015-08-29",
@@ -1690,8 +1738,8 @@
         "line1": "223 Boyd St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0475,
-        "lng": -118.2448
+        "lat": 34.047734883359,
+        "lng": -118.245033214011
       },
       "block": "boyd",
       "category": [
@@ -1709,7 +1757,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2002-12-09",
@@ -1725,8 +1774,8 @@
         "line1": "340 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0461,
-        "lng": -118.244
+        "lat": 34.046137871328,
+        "lng": -118.244009191013
       },
       "block": "4th",
       "category": [
@@ -1744,7 +1793,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2018-07-02",
@@ -1760,8 +1810,8 @@
         "line1": "448 S Los Angeles St",
         "unit": "7",
         "zip": "90013",
-        "lat": 34.0465,
-        "lng": -118.2471
+        "lat": 34.046461024367,
+        "lng": -118.247091444166
       },
       "block": "los-angeles",
       "category": [
@@ -1779,7 +1829,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2013-01-01",
@@ -1795,8 +1846,8 @@
         "line1": "400 S Los Angeles St",
         "unit": "117",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047166299173,
+        "lng": -118.24618837563
       },
       "block": "los-angeles",
       "category": [
@@ -1814,7 +1865,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-04-01",
@@ -1830,8 +1882,8 @@
         "line1": "408 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0469,
-        "lng": -118.2465
+        "lat": 34.047025844263,
+        "lng": -118.246382337189
       },
       "block": "los-angeles",
       "category": [
@@ -1849,7 +1901,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1995-08-01",
@@ -1865,8 +1918,8 @@
         "line1": "420 S San Pedro St",
         "unit": "622",
         "zip": "90013",
-        "lat": 34.0448,
-        "lng": -118.2428
+        "lat": 34.045283198158,
+        "lng": -118.243205438909
       },
       "block": "san-pedro",
       "category": [
@@ -1884,7 +1937,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2014-01-01",
@@ -1900,8 +1954,8 @@
         "line1": "396 S Los Angeles St",
         "unit": "225",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2457
+        "lat": 34.047260551189,
+        "lng": -118.246053096657
       },
       "block": "los-angeles",
       "category": [
@@ -1919,7 +1973,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-01-03",
@@ -1935,8 +1990,8 @@
         "line1": "412 Wall St",
         "unit": "B3",
         "zip": "90013",
-        "lat": 34.0458,
-        "lng": -118.2445
+        "lat": 34.046264101041,
+        "lng": -118.244703326659
       },
       "block": "wall",
       "category": [
@@ -1954,7 +2009,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2019-04-10",
@@ -1970,8 +2026,8 @@
         "line1": "425 S Los Angeles St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.2469
+        "lat": 34.046831217774,
+        "lng": -118.246861269086
       },
       "block": "los-angeles",
       "category": [
@@ -1989,7 +2045,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2016-05-15",
@@ -2005,8 +2062,8 @@
         "line1": "321 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0473,
-        "lng": -118.244
+        "lat": 34.047269751102,
+        "lng": -118.244269676724
       },
       "block": "wall",
       "category": [
@@ -2024,7 +2081,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1988-10-01",
@@ -2040,8 +2098,8 @@
         "line1": "336 E 3rd St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047641201644,
+        "lng": -118.243280026613
       },
       "block": "3rd",
       "category": [
@@ -2059,7 +2117,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-01-05",
@@ -2075,8 +2134,8 @@
         "line1": "240 Winston St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0462,
-        "lng": -118.2464
+        "lat": 34.046027072681,
+        "lng": -118.246419026162
       },
       "block": "winston",
       "category": [
@@ -2094,7 +2153,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2002-01-01",
@@ -2110,8 +2170,8 @@
         "line1": "305 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0485,
-        "lng": -118.2449
+        "lat": 34.047939614095,
+        "lng": -118.245365277239
       },
       "block": "los-angeles",
       "category": [
@@ -2129,7 +2189,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2007-11-01",
@@ -2145,8 +2206,8 @@
         "line1": "230 Winston St",
         "unit": "31",
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2467
+        "lat": 34.046164380236,
+        "lng": -118.246572988178
       },
       "block": "winston",
       "category": [
@@ -2164,7 +2225,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2008-07-01",
@@ -2180,8 +2242,8 @@
         "line1": "400 S Los Angeles St",
         "unit": "106",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047166299173,
+        "lng": -118.24618837563
       },
       "block": "los-angeles",
       "category": [
@@ -2199,7 +2261,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-12-30",
@@ -2215,8 +2278,8 @@
         "line1": "447 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2455
+        "lat": 34.045426360342,
+        "lng": -118.24537998376
       },
       "block": "wall",
       "category": [
@@ -2234,7 +2297,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-10-22",
@@ -2250,8 +2314,8 @@
         "line1": "447 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0452,
-        "lng": -118.2454
+        "lat": 34.045426360342,
+        "lng": -118.24537998376
       },
       "block": "wall",
       "category": [
@@ -2269,7 +2333,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2005-01-03",
@@ -2285,8 +2350,8 @@
         "line1": "417 S San Pedro St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0453,
-        "lng": -118.2436
+        "lat": 34.045398203358,
+        "lng": -118.243297631946
       },
       "block": "san-pedro",
       "category": [
@@ -2304,7 +2369,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-09-20",
@@ -2320,8 +2386,8 @@
         "line1": "322 S Los Angeles St",
         "unit": "29",
         "zip": "90013",
-        "lat": 34.0479,
-        "lng": -118.2449
+        "lat": 34.048175785552,
+        "lng": -118.244964277542
       },
       "block": "los-angeles",
       "category": [
@@ -2339,7 +2405,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2016-03-14",
@@ -2355,8 +2422,8 @@
         "line1": "217 E 5th St",
         "unit": "C-13",
         "zip": "90013",
-        "lat": 34.0456,
-        "lng": -118.2469
+        "lat": 34.045491642456,
+        "lng": -118.246579985922
       },
       "block": "5th",
       "category": [
@@ -2374,7 +2441,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2014-01-01",
@@ -2390,12 +2458,12 @@
         "line1": "318 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2441
+        "lat": 34.046261114323,
+        "lng": -118.244357445754
       },
       "block": "4th",
       "category": [
-        "general"
+        "toys"
       ],
       "wholesale_retail": "wholesale",
       "naics": "424990",
@@ -2409,7 +2477,9 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census",
+        "osm"
       ],
       "confidence": "medium",
       "since": "2021-03-01",
@@ -2425,12 +2495,12 @@
         "line1": "411 S San Pedro St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045553430233,
+        "lng": -118.243220018498
       },
       "block": "san-pedro",
       "category": [
-        "general"
+        "gifts"
       ],
       "wholesale_retail": "wholesale",
       "naics": "423990",
@@ -2444,7 +2514,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-06-01",
@@ -2460,8 +2531,8 @@
         "line1": "454 E 4th St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0451,
-        "lng": -118.2421
+        "lat": 34.045121548658,
+        "lng": -118.241955279999
       },
       "block": "4th",
       "category": [
@@ -2479,7 +2550,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2018-10-17",
@@ -2495,12 +2567,12 @@
         "line1": "232 E 4th St #C 9",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0467,
-        "lng": -118.2452
+        "lat": 34.046910244579,
+        "lng": -118.245720662603
       },
       "block": "4th",
       "category": [
-        "general"
+        "gifts"
       ],
       "wholesale_retail": "wholesale",
       "naics": "424990",
@@ -2514,7 +2586,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1997-08-01",
@@ -2530,8 +2603,8 @@
         "line1": "326 E 3rd St",
         "unit": "B1",
         "zip": "90013",
-        "lat": 34.0478,
-        "lng": -118.2434
+        "lat": 34.047695422127,
+        "lng": -118.243389289078
       },
       "block": "3rd",
       "category": [
@@ -2549,7 +2622,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2006-10-01",
@@ -2565,8 +2639,8 @@
         "line1": "305 Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0473,
-        "lng": -118.2442
+        "lat": 34.047205507624,
+        "lng": -118.244090700363
       },
       "block": "boyd",
       "category": [
@@ -2584,7 +2658,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2019-09-15",
@@ -2600,8 +2675,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "26",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -2619,7 +2694,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2014-02-15",
@@ -2635,8 +2711,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "7",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2475
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -2655,7 +2731,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2007-01-28",
@@ -2671,8 +2748,8 @@
         "line1": "420 S San Pedro St",
         "unit": "411",
         "zip": "90013",
-        "lat": 34.0452,
-        "lng": -118.2432
+        "lat": 34.045283198158,
+        "lng": -118.243205438909
       },
       "block": "san-pedro",
       "category": [
@@ -2690,7 +2767,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2003-05-05",
@@ -2706,12 +2784,12 @@
         "line1": "415 S San Pedro St",
         "unit": "A",
         "zip": "90013",
-        "lat": 34.0456,
-        "lng": -118.2437
+        "lat": 34.04544994565,
+        "lng": -118.243271760797
       },
       "block": "san-pedro",
       "category": [
-        "general"
+        "gifts"
       ],
       "wholesale_retail": "retail",
       "naics": "452000",
@@ -2725,7 +2803,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-10-11",
@@ -2741,8 +2820,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "80",
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2474
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -2760,7 +2839,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2018-10-02",
@@ -2776,8 +2856,8 @@
         "line1": "448 S Los Angeles St",
         "unit": "10",
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2471
+        "lat": 34.046461024367,
+        "lng": -118.247091444166
       },
       "block": "los-angeles",
       "category": [
@@ -2795,7 +2875,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2008-10-01",
@@ -2811,8 +2892,8 @@
         "line1": "400 S Los Angeles St",
         "unit": "111",
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.2461
+        "lat": 34.047166299173,
+        "lng": -118.24618837563
       },
       "block": "los-angeles",
       "category": [
@@ -2830,7 +2911,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2019-03-01",
@@ -2846,8 +2928,8 @@
         "line1": "401 S Los Angeles St",
         "unit": "7",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047252582506,
+        "lng": -118.246279384411
       },
       "block": "los-angeles",
       "category": [
@@ -2865,7 +2947,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-07-01",
@@ -2881,12 +2964,12 @@
         "line1": "233 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047007358167,
+        "lng": -118.245647249896
       },
       "block": "4th",
       "category": [
-        "general"
+        "toys"
       ],
       "wholesale_retail": "wholesale",
       "naics": "423990",
@@ -2900,7 +2983,9 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census",
+        "osm"
       ],
       "confidence": "medium",
       "since": "2023-01-01",
@@ -2916,8 +3001,8 @@
         "line1": "427 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0458,
-        "lng": -118.2451
+        "lat": 34.045770443006,
+        "lng": -118.245146271636
       },
       "block": "wall",
       "category": [
@@ -2935,7 +3020,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2020-05-01",
@@ -2951,8 +3037,8 @@
         "line1": "401 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2446
+        "lat": 34.046410622078,
+        "lng": -118.244771217188
       },
       "block": "wall",
       "category": [
@@ -2970,7 +3056,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2011-01-10",
@@ -2986,8 +3073,8 @@
         "line1": "339 Wall St #",
         "unit": "D",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047029054532,
+        "lng": -118.244410335398
       },
       "block": "wall",
       "category": [
@@ -3005,7 +3092,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-01-09",
@@ -3021,8 +3109,8 @@
         "line1": "226 E 4th St",
         "unit": "1",
         "zip": "90013",
-        "lat": 34.0465,
-        "lng": -118.2455
+        "lat": 34.046954903,
+        "lng": -118.245806711739
       },
       "block": "4th",
       "category": [
@@ -3040,7 +3128,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2020-10-13",
@@ -3056,8 +3145,8 @@
         "line1": "560 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0445,
-        "lng": -118.2481
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -3075,7 +3164,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2020-06-26",
@@ -3091,8 +3181,8 @@
         "line1": "530 S Los Angeles St",
         "unit": "3FL",
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2481
+        "lat": 34.045557130447,
+        "lng": -118.247958035469
       },
       "block": "los-angeles",
       "category": [
@@ -3110,7 +3200,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2002-04-17",
@@ -3126,8 +3217,8 @@
         "line1": "424 S Los Angeles St",
         "unit": "2",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.046744934442,
+        "lng": -118.246770260306
       },
       "block": "los-angeles",
       "category": [
@@ -3145,7 +3236,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2023-01-03",
@@ -3161,8 +3253,8 @@
         "line1": "225 Winston St",
         "unit": "20",
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2461
+        "lat": 34.046320645072,
+        "lng": -118.246549136733
       },
       "block": "winston",
       "category": [
@@ -3180,7 +3272,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2013-01-07",
@@ -3196,8 +3289,8 @@
         "line1": "313 S San Pedro St Unit #104 & 105",
         "unit": null,
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.243
+        "lat": 34.047289546101,
+        "lng": -118.242591297535
       },
       "block": "san-pedro",
       "category": [
@@ -3215,7 +3308,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-01-01",
@@ -3231,8 +3325,8 @@
         "line1": "352 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0478,
-        "lng": -118.2453
+        "lat": 34.047752557964,
+        "lng": -118.245370596807
       },
       "block": "los-angeles",
       "category": [
@@ -3250,7 +3344,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1999-09-23",
@@ -3266,8 +3361,8 @@
         "line1": "304 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2447
+        "lat": 34.046339541684,
+        "lng": -118.244579062408
       },
       "block": "4th",
       "category": [
@@ -3285,7 +3380,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2020-03-03",
@@ -3301,8 +3397,8 @@
         "line1": "326 Boyd St",
         "unit": "F",
         "zip": "90013",
-        "lat": 34.0467,
-        "lng": -118.2435
+        "lat": 34.046993839051,
+        "lng": -118.243829018052
       },
       "block": "boyd",
       "category": [
@@ -3320,7 +3416,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2025-01-01",
@@ -3336,8 +3433,8 @@
         "line1": "313 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2444
+        "lat": 34.046400107936,
+        "lng": -118.24439810454
       },
       "block": "4th",
       "category": [
@@ -3355,7 +3452,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1999-11-10",
@@ -3371,8 +3469,8 @@
         "line1": "340 S San Pedro St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0462,
-        "lng": -118.2427
+        "lat": 34.046309801527,
+        "lng": -118.242740000724
       },
       "block": "san-pedro",
       "category": [
@@ -3390,7 +3488,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": null,
@@ -3406,8 +3505,8 @@
         "line1": "529 S Los Angeles St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2481
+        "lat": 34.045656009044,
+        "lng": -118.248040534767
       },
       "block": "los-angeles",
       "category": [
@@ -3425,7 +3524,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2010-07-01",
@@ -3441,8 +3541,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "70",
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2474
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -3460,7 +3560,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2007-08-01",
@@ -3476,8 +3577,8 @@
         "line1": "417 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0458,
-        "lng": -118.2424
+        "lat": 34.045718442027,
+        "lng": -118.242685318235
       },
       "block": "4th",
       "category": [
@@ -3495,7 +3596,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-01-13",
@@ -3511,8 +3613,8 @@
         "line1": "321 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.046355292301,
+        "lng": -118.244271466452
       },
       "block": "4th",
       "category": [
@@ -3530,7 +3632,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2025-11-21",
@@ -3546,8 +3649,8 @@
         "line1": "256 Winston St",
         "unit": "A",
         "zip": "90013",
-        "lat": 34.0457,
-        "lng": -118.2457
+        "lat": 34.045838076641,
+        "lng": -118.246138076845
       },
       "block": "winston",
       "category": [
@@ -3565,7 +3668,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2014-01-07",
@@ -3581,8 +3685,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "56",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2475
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -3600,7 +3704,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2015-11-04",
@@ -3616,8 +3721,8 @@
         "line1": "313 S San Pedro St",
         "unit": "101",
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.243
+        "lat": 34.047289546101,
+        "lng": -118.242591297535
       },
       "block": "san-pedro",
       "category": [
@@ -3635,7 +3740,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2020-01-27",
@@ -3651,8 +3757,8 @@
         "line1": "326 Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.2437
+        "lat": 34.046993839051,
+        "lng": -118.243829018052
       },
       "block": "boyd",
       "category": [
@@ -3670,7 +3776,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1994-12-16",
@@ -3686,8 +3793,8 @@
         "line1": "421 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0459,
-        "lng": -118.2449
+        "lat": 34.045918176638,
+        "lng": -118.24505972061
       },
       "block": "wall",
       "category": [
@@ -3705,7 +3812,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1999-01-15",
@@ -3721,8 +3829,8 @@
         "line1": "326 E 3rd St",
         "unit": "E",
         "zip": "90013",
-        "lat": 34.0478,
-        "lng": -118.2434
+        "lat": 34.047695422127,
+        "lng": -118.243389289078
       },
       "block": "3rd",
       "category": [
@@ -3740,7 +3848,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2014-07-01",
@@ -3756,8 +3865,8 @@
         "line1": "412 Wall St",
         "unit": "B1",
         "zip": "90013",
-        "lat": 34.0458,
-        "lng": -118.2445
+        "lat": 34.046264101041,
+        "lng": -118.244703326659
       },
       "block": "wall",
       "category": [
@@ -3775,7 +3884,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2010-08-15",
@@ -3791,8 +3901,8 @@
         "line1": "219 Winston St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2465
+        "lat": 34.046407758354,
+        "lng": -118.246628836103
       },
       "block": "winston",
       "category": [
@@ -3810,7 +3920,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2018-04-30",
@@ -3826,8 +3937,8 @@
         "line1": "437 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0466,
-        "lng": -118.2473
+        "lat": 34.046625828239,
+        "lng": -118.247107597127
       },
       "block": "los-angeles",
       "category": [
@@ -3845,7 +3956,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2025-07-01",
@@ -3861,8 +3973,8 @@
         "line1": "241 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.046947813604,
+        "lng": -118.245532517714
       },
       "block": "4th",
       "category": [
@@ -3880,7 +3992,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-01-01",
@@ -3896,8 +4009,8 @@
         "line1": "441 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0465,
-        "lng": -118.247
+        "lat": 34.046595049793,
+        "lng": -118.247137922951
       },
       "block": "los-angeles",
       "category": [
@@ -3915,7 +4028,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2000-09-01",
@@ -3931,8 +4045,8 @@
         "line1": "560 S Los Angeles St",
         "unit": "65",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -3950,7 +4064,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-06-01",
@@ -3966,8 +4081,8 @@
         "line1": "238 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.245
+        "lat": 34.046865586157,
+        "lng": -118.245634613467
       },
       "block": "4th",
       "category": [
@@ -3985,7 +4100,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-01-01",
@@ -4001,8 +4117,8 @@
         "line1": "321 E Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047128788206,
+        "lng": -118.243862561098
       },
       "block": "boyd",
       "category": [
@@ -4020,7 +4136,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-04-01",
@@ -4036,8 +4153,8 @@
         "line1": "230 Winston St",
         "unit": "38",
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2467
+        "lat": 34.046164380236,
+        "lng": -118.246572988178
       },
       "block": "winston",
       "category": [
@@ -4055,7 +4172,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2006-06-01",
@@ -4071,8 +4189,8 @@
         "line1": "531 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0455,
-        "lng": -118.2485
+        "lat": 34.045627300217,
+        "lng": -118.248067371282
       },
       "block": "los-angeles",
       "category": [
@@ -4090,7 +4208,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-07-06",
@@ -4106,8 +4225,8 @@
         "line1": "215 E 4th St",
         "unit": "29",
         "zip": "90013",
-        "lat": 34.0469,
-        "lng": -118.2455
+        "lat": 34.047141333432,
+        "lng": -118.245905397304
       },
       "block": "4th",
       "category": [
@@ -4125,7 +4244,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-04-12",
@@ -4141,8 +4261,8 @@
         "line1": "243 E 5th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0455,
-        "lng": -118.2461
+        "lat": 34.045287973564,
+        "lng": -118.246269328474
       },
       "block": "5th",
       "category": [
@@ -4160,7 +4280,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2026-04-01",
@@ -4176,8 +4297,8 @@
         "line1": "410 S Los Angeles St",
         "unit": "146",
         "zip": "90013",
-        "lat": 34.0468,
-        "lng": -118.2463
+        "lat": 34.046990730535,
+        "lng": -118.246430827579
       },
       "block": "los-angeles",
       "category": [
@@ -4195,7 +4316,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2020-06-29",
@@ -4211,8 +4333,8 @@
         "line1": "231 E 3rd St",
         "unit": "G106",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.04845493433,
+        "lng": -118.244506368436
       },
       "block": "3rd",
       "category": [
@@ -4230,7 +4352,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1994-01-01",
@@ -4246,8 +4369,8 @@
         "line1": "339 Wall St",
         "unit": "G",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047029054532,
+        "lng": -118.244410335398
       },
       "block": "wall",
       "category": [
@@ -4265,7 +4388,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-08-01",
@@ -4281,8 +4405,8 @@
         "line1": "222 Winston St #",
         "unit": "A5",
         "zip": "90013",
-        "lat": 34.0462,
-        "lng": -118.2465
+        "lat": 34.046280457685,
+        "lng": -118.246685913619
       },
       "block": "winston",
       "category": [
@@ -4300,7 +4424,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2011-02-01",
@@ -4316,8 +4441,8 @@
         "line1": "425 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0457,
-        "lng": -118.245
+        "lat": 34.04581968755,
+        "lng": -118.245117421294
       },
       "block": "wall",
       "category": [
@@ -4335,7 +4460,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2014-01-06",
@@ -4351,8 +4477,8 @@
         "line1": "326 Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0467,
-        "lng": -118.2435
+        "lat": 34.046993839051,
+        "lng": -118.243829018052
       },
       "block": "boyd",
       "category": [
@@ -4370,7 +4496,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2025-04-29",
@@ -4386,8 +4513,8 @@
         "line1": "312 Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.244
+        "lat": 34.047060968542,
+        "lng": -118.244028639909
       },
       "block": "boyd",
       "category": [
@@ -4405,7 +4532,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-01-13",
@@ -4421,8 +4549,8 @@
         "line1": "521 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0456,
-        "lng": -118.2481
+        "lat": 34.045770844355,
+        "lng": -118.247933188707
       },
       "block": "los-angeles",
       "category": [
@@ -4440,7 +4568,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2017-11-13",
@@ -4456,8 +4585,8 @@
         "line1": "500 S Los Angeles St Suite #102 & 103",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2474
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -4475,7 +4604,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-08-01",
@@ -4491,8 +4621,8 @@
         "line1": "396 S Los Angeles St",
         "unit": "16",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2457
+        "lat": 34.047260551189,
+        "lng": -118.246053096657
       },
       "block": "los-angeles",
       "category": [
@@ -4510,7 +4640,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2011-02-15",
@@ -4526,8 +4657,8 @@
         "line1": "376 S Los Angeles St",
         "unit": "D",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047474032615,
+        "lng": -118.245739153358
       },
       "block": "los-angeles",
       "category": [
@@ -4545,7 +4676,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2025-08-19",
@@ -4561,8 +4693,8 @@
         "line1": "340 E 3rd St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047619513451,
+        "lng": -118.243236321626
       },
       "block": "3rd",
       "category": [
@@ -4580,7 +4712,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2026-02-02",
@@ -4596,8 +4729,8 @@
         "line1": "215 Boyd St Suite #A & B",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0475,
-        "lng": -118.2448
+        "lat": 34.047784507937,
+        "lng": -118.24511464024
       },
       "block": "boyd",
       "category": [
@@ -4615,7 +4748,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2010-07-16",
@@ -4631,8 +4765,8 @@
         "line1": "417 Wall St",
         "unit": "23",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2448
+        "lat": 34.046016665726,
+        "lng": -118.245002019925
       },
       "block": "wall",
       "category": [
@@ -4650,7 +4784,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2009-05-15",
@@ -4666,8 +4801,8 @@
         "line1": "330 Wall St",
         "unit": "9",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047080356964,
+        "lng": -118.244226802843
       },
       "block": "wall",
       "category": [
@@ -4685,7 +4820,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2015-06-18",
@@ -4701,8 +4837,8 @@
         "line1": "416 Wall St",
         "unit": "A",
         "zip": "90013",
-        "lat": 34.0457,
-        "lng": -118.2448
+        "lat": 34.046231941339,
+        "lng": -118.244722167699
       },
       "block": "wall",
       "category": [
@@ -4720,7 +4856,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2020-01-01",
@@ -4736,8 +4873,8 @@
         "line1": "530 S Los Angeles St Suite #C, 2f",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0451,
-        "lng": -118.248
+        "lat": 34.045557130447,
+        "lng": -118.247958035469
       },
       "block": "los-angeles",
       "category": [
@@ -4755,7 +4892,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2017-01-02",
@@ -4771,8 +4909,8 @@
         "line1": "322 Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047013018905,
+        "lng": -118.243886052868
       },
       "block": "boyd",
       "category": [
@@ -4790,7 +4928,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-07-01",
@@ -4806,8 +4945,8 @@
         "line1": "414 S Los Angeles St",
         "unit": "161",
         "zip": "90013",
-        "lat": 34.0467,
-        "lng": -118.2468
+        "lat": 34.04692050308,
+        "lng": -118.246527808358
       },
       "block": "los-angeles",
       "category": [
@@ -4825,7 +4964,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2011-01-01",
@@ -4841,8 +4981,8 @@
         "line1": "415 S San Pedro St",
         "unit": "2",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.04544994565,
+        "lng": -118.243271760797
       },
       "block": "san-pedro",
       "category": [
@@ -4860,7 +5000,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-09-01",
@@ -4876,8 +5017,8 @@
         "line1": "416 Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2422
+        "lat": 34.046458264986,
+        "lng": -118.242595149562
       },
       "block": "boyd",
       "category": [
@@ -4895,7 +5036,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2011-08-17",
@@ -4911,8 +5053,8 @@
         "line1": "227 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047052016588,
+        "lng": -118.245733299032
       },
       "block": "4th",
       "category": [
@@ -4930,7 +5072,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-01-09",
@@ -4946,8 +5089,8 @@
         "line1": "412 Wall St",
         "unit": "B4",
         "zip": "90013",
-        "lat": 34.0458,
-        "lng": -118.2445
+        "lat": 34.046264101041,
+        "lng": -118.244703326659
       },
       "block": "wall",
       "category": [
@@ -4965,7 +5108,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2018-02-21",
@@ -4981,8 +5125,8 @@
         "line1": "517 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.04582826201,
+        "lng": -118.247879515676
       },
       "block": "los-angeles",
       "category": [
@@ -5000,7 +5144,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2023-07-07",
@@ -5016,8 +5161,8 @@
         "line1": "419 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045701437953,
+        "lng": -118.242658047557
       },
       "block": "4th",
       "category": [
@@ -5035,7 +5180,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-08-01",
@@ -5051,8 +5197,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "3A-4A",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2475
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -5070,7 +5216,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2012-08-01",
@@ -5086,8 +5233,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "25",
         "zip": "90013",
-        "lat": 34.0454,
-        "lng": -118.2474
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -5105,7 +5252,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-03-15",
@@ -5121,8 +5269,8 @@
         "line1": "380 S Los Angeles St",
         "unit": "2-3",
         "zip": "90013",
-        "lat": 34.0473,
-        "lng": -118.2455
+        "lat": 34.04743133633,
+        "lng": -118.245801942017
       },
       "block": "los-angeles",
       "category": [
@@ -5140,7 +5288,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2013-02-01",
@@ -5156,8 +5305,8 @@
         "line1": "217 Boyd St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0475,
-        "lng": -118.2448
+        "lat": 34.047772101793,
+        "lng": -118.245094283683
       },
       "block": "boyd",
       "category": [
@@ -5175,7 +5324,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2007-07-10",
@@ -5191,8 +5341,8 @@
         "line1": "222 Winston St",
         "unit": "312",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2464
+        "lat": 34.046280457685,
+        "lng": -118.246685913619
       },
       "block": "winston",
       "category": [
@@ -5210,7 +5360,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2015-03-19",
@@ -5226,8 +5377,8 @@
         "line1": "216 Boyd St",
         "unit": "D",
         "zip": "90013",
-        "lat": 34.0475,
-        "lng": -118.2449
+        "lat": 34.047679791957,
+        "lng": -118.245176228573
       },
       "block": "boyd",
       "category": [
@@ -5245,7 +5396,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2014-06-01",
@@ -5261,8 +5413,8 @@
         "line1": "560 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0445,
-        "lng": -118.2481
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -5280,7 +5432,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-01-04",
@@ -5296,8 +5449,8 @@
         "line1": "303 S Los Angeles St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0485,
-        "lng": -118.2449
+        "lat": 34.048223129806,
+        "lng": -118.245095354725
       },
       "block": "los-angeles",
       "category": [
@@ -5315,7 +5468,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-07-15",
@@ -5331,8 +5485,8 @@
         "line1": "560 S Los Angeles St",
         "unit": "81-82",
         "zip": "90013",
-        "lat": 34.045,
-        "lng": -118.2484
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -5350,7 +5504,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2004-05-01",
@@ -5366,8 +5521,8 @@
         "line1": "400 S Los Angeles St",
         "unit": "106",
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.246
+        "lat": 34.047166299173,
+        "lng": -118.24618837563
       },
       "block": "los-angeles",
       "category": [
@@ -5385,7 +5540,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2017-04-26",
@@ -5401,8 +5557,8 @@
         "line1": "401 S Los Angeles St",
         "unit": "5",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2461
+        "lat": 34.047252582506,
+        "lng": -118.246279384411
       },
       "block": "los-angeles",
       "category": [
@@ -5420,7 +5576,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2004-05-01",
@@ -5436,8 +5593,8 @@
         "line1": "401 S Los Angeles St",
         "unit": "4",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2461
+        "lat": 34.047252582506,
+        "lng": -118.246279384411
       },
       "block": "los-angeles",
       "category": [
@@ -5455,7 +5612,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1997-01-01",
@@ -5471,8 +5629,8 @@
         "line1": "500 S Los Angeles St",
         "unit": "6",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2475
+        "lat": 34.045987762862,
+        "lng": -118.247555487743
       },
       "block": "los-angeles",
       "category": [
@@ -5490,7 +5648,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2002-02-01",
@@ -5506,8 +5665,8 @@
         "line1": "243 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.2454
+        "lat": 34.046932927464,
+        "lng": -118.245503834669
       },
       "block": "4th",
       "category": [
@@ -5525,7 +5684,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-01-11",
@@ -5541,8 +5701,8 @@
         "line1": "443 S San Pedro St",
         "unit": "1",
         "zip": "90013",
-        "lat": 34.0448,
-        "lng": -118.2439
+        "lat": 34.044834170516,
+        "lng": -118.243592034286
       },
       "block": "san-pedro",
       "category": [
@@ -5560,7 +5720,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2008-07-01",
@@ -5576,8 +5737,8 @@
         "line1": "232 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2454
+        "lat": 34.046910244579,
+        "lng": -118.245720662603
       },
       "block": "4th",
       "category": [
@@ -5595,7 +5756,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2000-10-01",
@@ -5611,8 +5773,8 @@
         "line1": "424 S Los Angeles St",
         "unit": "8",
         "zip": "90013",
-        "lat": 34.0467,
-        "lng": -118.2468
+        "lat": 34.046744934442,
+        "lng": -118.246770260306
       },
       "block": "los-angeles",
       "category": [
@@ -5630,7 +5792,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2013-08-07",
@@ -5646,8 +5809,8 @@
         "line1": "221 Boyd St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0475,
-        "lng": -118.2448
+        "lat": 34.047747289504,
+        "lng": -118.245053570568
       },
       "block": "boyd",
       "category": [
@@ -5665,7 +5828,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2001-11-07",
@@ -5681,8 +5845,8 @@
         "line1": "330 Wall St",
         "unit": "3",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047080356964,
+        "lng": -118.244226802843
       },
       "block": "wall",
       "category": [
@@ -5700,7 +5864,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-11-18",
@@ -5716,8 +5881,8 @@
         "line1": "413 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045752450174,
+        "lng": -118.242739859593
       },
       "block": "4th",
       "category": [
@@ -5735,7 +5900,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-05-03",
@@ -5751,8 +5917,8 @@
         "line1": "230 Winston St",
         "unit": "20",
         "zip": "90013",
-        "lat": 34.0459,
-        "lng": -118.2467
+        "lat": 34.046164380236,
+        "lng": -118.246572988178
       },
       "block": "winston",
       "category": [
@@ -5770,7 +5936,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2024-05-01",
@@ -5786,8 +5953,8 @@
         "line1": "325 Boyd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2438
+        "lat": 34.047109608352,
+        "lng": -118.243805526282
       },
       "block": "boyd",
       "category": [
@@ -5805,7 +5972,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2022-01-01",
@@ -5821,8 +5989,8 @@
         "line1": "401 S Los Angeles St",
         "unit": "2",
         "zip": "90013",
-        "lat": 34.0472,
-        "lng": -118.2466
+        "lat": 34.047252582506,
+        "lng": -118.246279384411
       },
       "block": "los-angeles",
       "category": [
@@ -5840,7 +6008,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2016-01-01",
@@ -5856,8 +6025,8 @@
         "line1": "301 S Los Angeles St",
         "unit": "301",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.048506645517,
+        "lng": -118.24482543221
       },
       "block": "los-angeles",
       "category": [
@@ -5875,7 +6044,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2026-04-16",
@@ -5891,8 +6061,8 @@
         "line1": "448 S Los Angeles St",
         "unit": "9",
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.247
+        "lat": 34.046461024367,
+        "lng": -118.247091444166
       },
       "block": "los-angeles",
       "category": [
@@ -5910,7 +6080,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2007-12-01",
@@ -5926,8 +6097,8 @@
         "line1": "231 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047022244307,
+        "lng": -118.245675932941
       },
       "block": "4th",
       "category": [
@@ -5945,7 +6116,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2021-05-01",
@@ -5961,8 +6133,8 @@
         "line1": "230 Winston St",
         "unit": "20",
         "zip": "90013",
-        "lat": 34.0459,
-        "lng": -118.2467
+        "lat": 34.046164380236,
+        "lng": -118.246572988178
       },
       "block": "winston",
       "category": [
@@ -5980,7 +6152,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2017-04-20",
@@ -5996,12 +6169,12 @@
         "line1": "335 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2435
+        "lat": 34.046276864941,
+        "lng": -118.244049849799
       },
       "block": "4th",
       "category": [
-        "general"
+        "gifts"
       ],
       "wholesale_retail": "wholesale",
       "naics": "423990",
@@ -6015,7 +6188,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2019-11-21",
@@ -6031,8 +6205,8 @@
         "line1": "420 S San Pedro St",
         "unit": "219",
         "zip": "90013",
-        "lat": 34.0449,
-        "lng": -118.2428
+        "lat": 34.045283198158,
+        "lng": -118.243205438909
       },
       "block": "san-pedro",
       "category": [
@@ -6050,7 +6224,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2010-06-25",
@@ -6066,8 +6241,8 @@
         "line1": "223 Boyd St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0478,
-        "lng": -118.2449
+        "lat": 34.047734883359,
+        "lng": -118.245033214011
       },
       "block": "boyd",
       "category": [
@@ -6085,7 +6260,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2023-02-01",
@@ -6101,8 +6277,8 @@
         "line1": "560 S Los Angeles St",
         "unit": "6",
         "zip": "90013",
-        "lat": 34.045,
-        "lng": -118.2484
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -6120,7 +6296,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2002-01-03",
@@ -6136,8 +6313,8 @@
         "line1": "225 Winston St",
         "unit": "7",
         "zip": "90013",
-        "lat": 34.0463,
-        "lng": -118.2466
+        "lat": 34.046320645072,
+        "lng": -118.246549136733
       },
       "block": "winston",
       "category": [
@@ -6155,7 +6332,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2012-06-01",
@@ -6171,8 +6349,8 @@
         "line1": "442 E 3rd St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0464,
-        "lng": -118.2416
+        "lat": 34.046656937361,
+        "lng": -118.241150009038
       },
       "block": "3rd",
       "category": [
@@ -6190,7 +6368,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "1996-04-01",
@@ -6206,8 +6385,8 @@
         "line1": "560 S Los Angeles St",
         "unit": "73",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -6225,7 +6404,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2023-03-15",
@@ -6241,8 +6421,8 @@
         "line1": "424 S Los Angeles St",
         "unit": "4",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.046744934442,
+        "lng": -118.246770260306
       },
       "block": "los-angeles",
       "category": [
@@ -6260,7 +6440,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2026-01-01",
@@ -6276,8 +6457,8 @@
         "line1": "326 Boyd St",
         "unit": "E",
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.2437
+        "lat": 34.046993839051,
+        "lng": -118.243829018052
       },
       "block": "boyd",
       "category": [
@@ -6295,7 +6476,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": null,
@@ -6311,8 +6493,8 @@
         "line1": "241 Winston St",
         "unit": "22",
         "zip": "90013",
-        "lat": 34.046,
-        "lng": -118.2457
+        "lat": 34.046109510607,
+        "lng": -118.246322966573
       },
       "block": "winston",
       "category": [
@@ -6330,7 +6512,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2017-02-01",
@@ -6346,8 +6529,8 @@
         "line1": "330 Wall St",
         "unit": "4",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047080356964,
+        "lng": -118.244226802843
       },
       "block": "wall",
       "category": [
@@ -6365,7 +6548,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "medium",
       "since": "2023-04-15",
@@ -6381,8 +6565,8 @@
         "line1": "256 Winston St",
         "unit": "A",
         "zip": "90013",
-        "lat": 34.0457,
-        "lng": -118.2457
+        "lat": 34.045838076641,
+        "lng": -118.246138076845
       },
       "block": "winston",
       "category": [
@@ -6400,7 +6584,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2012-09-04",
@@ -6416,8 +6601,8 @@
         "line1": "326 Boyd St",
         "unit": "E",
         "zip": "90013",
-        "lat": 34.047,
-        "lng": -118.2437
+        "lat": 34.046993839051,
+        "lng": -118.243829018052
       },
       "block": "boyd",
       "category": [
@@ -6435,7 +6620,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2007-07-01",
@@ -6451,8 +6637,8 @@
         "line1": "321 Wall St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0473,
-        "lng": -118.2443
+        "lat": 34.047269751102,
+        "lng": -118.244269676724
       },
       "block": "wall",
       "category": [
@@ -6470,7 +6656,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2012-04-01",
@@ -6486,8 +6673,8 @@
         "line1": "458 E 4th St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0453,
-        "lng": -118.2421
+        "lat": 34.045100997234,
+        "lng": -118.241922035056
       },
       "block": "4th",
       "category": [
@@ -6505,7 +6692,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2004-07-15",
@@ -6521,8 +6709,8 @@
         "line1": "339 Wall St",
         "unit": "D",
         "zip": "90013",
-        "lat": 34.0471,
-        "lng": -118.2445
+        "lat": 34.047029054532,
+        "lng": -118.244410335398
       },
       "block": "wall",
       "category": [
@@ -6540,7 +6728,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2018-11-01",
@@ -6556,8 +6745,8 @@
         "line1": "339 Wall St",
         "unit": "B",
         "zip": "90013",
-        "lat": 34.0471,
-        "lng": -118.2445
+        "lat": 34.047029054532,
+        "lng": -118.244410335398
       },
       "block": "wall",
       "category": [
@@ -6575,7 +6764,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2013-09-05",
@@ -6591,8 +6781,8 @@
         "line1": "216 Boyd St",
         "unit": "A",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.047679791957,
+        "lng": -118.245176228573
       },
       "block": "boyd",
       "category": [
@@ -6610,7 +6800,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2012-01-01",
@@ -6626,8 +6817,8 @@
         "line1": "560 S Los Angeles St",
         "unit": "11",
         "zip": "90013",
-        "lat": null,
-        "lng": null
+        "lat": 34.045126498032,
+        "lng": -118.248360583195
       },
       "block": "los-angeles",
       "category": [
@@ -6645,7 +6836,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2020-02-20",
@@ -6661,8 +6853,8 @@
         "line1": "464 E 4th St",
         "unit": null,
         "zip": "90013",
-        "lat": 34.0449,
-        "lng": -118.2419
+        "lat": 34.045070170099,
+        "lng": -118.24187216764
       },
       "block": "4th",
       "category": [
@@ -6680,7 +6872,8 @@
       "resale_cert_required": null,
       "mentions": [],
       "sources": [
-        "opendata"
+        "opendata",
+        "census"
       ],
       "confidence": "low",
       "since": "2018-03-01",

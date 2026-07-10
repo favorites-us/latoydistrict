@@ -40,6 +40,11 @@ export interface Store {
   place_id: string | null;
   phone: string | null;
   hours: string | null;
+  links?: {
+    website?: string;
+    instagram?: string;
+    whatsapp?: string;
+  };
   wechat: string | null;
   languages: string[] | null;
   payment: string[] | null;
