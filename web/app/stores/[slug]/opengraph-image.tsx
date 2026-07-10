@@ -37,7 +37,7 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
           <div style={{ display: "flex", fontSize: 32, color: "#6b625a" }}>{sub}</div>
         </div>
         <div style={{ display: "flex", fontSize: 26, color: "#6b625a" }}>
-          Wholesale toys · Downtown Los Angeles · latoydistrict.com
+          Wholesale toys · Downtown Los Angeles · toydistrictlosangeles.com
         </div>
       </div>
     ),

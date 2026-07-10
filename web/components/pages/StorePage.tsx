@@ -139,7 +139,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
           </table>
           {!store.verified_at ? <p className="fineprint">{t(locale, "unverified_note")}</p> : null}
           <p>
-            <a href={`mailto:hello@latoydistrict.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
+            <a href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
               {t(locale, "claim_cta")} ↗
             </a>
           </p>

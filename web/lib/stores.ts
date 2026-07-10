@@ -77,7 +77,7 @@ export const BLOCK_LABELS: Record<Block, string> = {
   "san-pedro": "S San Pedro St",
 };
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://latoydistrict.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://toydistrictlosangeles.com";
 
 export function fullAddress(s: Store): string {
   const unit = s.address.unit ? ` #${s.address.unit}` : "";

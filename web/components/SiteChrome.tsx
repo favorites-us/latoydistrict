@@ -31,7 +31,7 @@ export function Footer({ locale }: { locale: Locale }) {
         <p>{t(locale, "footer_disclaimer")}</p>
         <p>{t(locale, "footer_sources")}</p>
         <p>
-          {t(locale, "footer_updated")}: 2026-07 · © {new Date().getFullYear()} latoydistrict.com
+          {t(locale, "footer_updated")}: 2026-07 · © {new Date().getFullYear()} toydistrictlosangeles.com
         </p>
       </div>
     </footer>

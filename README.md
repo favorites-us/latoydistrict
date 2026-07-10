@@ -41,7 +41,7 @@ Environment (all optional; site builds without them):
 
 | Var | Purpose |
 |---|---|
-| `NEXT_PUBLIC_SITE_URL` | Canonical origin (default `https://latoydistrict.com`) |
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin (default `https://toydistrictlosangeles.com`) |
 | `NEXT_PUBLIC_GA_ID` | GA4 measurement id — enables page views + `store_view`/`lead_submit` events |
 | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` | Lead form storage (`supabase/schema.sql`) |
 

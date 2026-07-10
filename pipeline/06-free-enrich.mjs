@@ -10,7 +10,7 @@ const DATA_FILE = fileURLToPath(new URL("../data/stores.json", import.meta.url))
 const CENSUS_DIR = path.join(OUT_DIR, "census");
 const OVERPASS_FILE = path.join(OUT_DIR, "overpass-shops.json");
 const DRY = process.argv.includes("--dry");
-const USER_AGENT = "LAToyDistrictDirectory/1.0 (public-data enrichment; https://latoydistrict.com)";
+const USER_AGENT = "LAToyDistrictDirectory/1.0 (public-data enrichment; https://toydistrictlosangeles.com)";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const filled = (value) => value !== null && value !== undefined && value !== "";

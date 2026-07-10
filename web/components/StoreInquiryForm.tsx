@@ -50,7 +50,7 @@ export default function StoreInquiryForm({
       {state === "ok" ? <p className="lead-msg ok">{t(locale, "lead_ok")}</p> : null}
       {state === "err" ? (
         <p className="lead-msg err">
-          {t(locale, "lead_err")} <a href="mailto:hello@latoydistrict.com">hello@latoydistrict.com</a>
+          {t(locale, "lead_err")} <a href="mailto:hello@toydistrictlosangeles.com">hello@toydistrictlosangeles.com</a>
         </p>
       ) : null}
     </div>
