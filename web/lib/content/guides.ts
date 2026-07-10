@@ -38,10 +38,30 @@ export const visiting: Record<Locale, Guide> = {
         ],
       },
       {
-        h: "Parking",
+        h: "Parking: reserve a lot, don't circle for meters",
         ps: [
-          "There is no dedicated district parking. Your options are paid surface lots scattered along the edges of the district (expect a flat daytime rate), metered street parking that fills early, and the public garages in Little Tokyo a couple of blocks north.",
+          "There's no dedicated district parking, but a cluster of pay lots and garages sits one block west along S Main St and on S Los Angeles St — a short walk into the core blocks. Reserving ahead on SpotHero, ParkWhiz, SpotAngels or Spacer almost always beats the drive-up rate.",
+          "Approximate all-day rates near the district (reserved price — drive-up runs higher and changes often, so check the app for the live rate):",
+        ],
+        bullets: [
+          "334 S Main St garage — from about $11 for the day (small lot, ~0.1 mi)",
+          "415 & 416 S Main St, garage and lot — roughly $15–22",
+          "330 & 433 S Main St lots — roughly $18–22",
+          "539–545 S Los Angeles St garage — around $21, right on the district's west edge",
+        ],
+      },
+      {
+        h: "Metered street parking & loading bulk buys",
+        ps: [
+          "Metered street parking runs around $3/hour and fills early. Read the signs carefully — several through-streets flip to peak-hour tow-away zones in the afternoon, so a meter that was legal at lunch can be a tow at 4pm. For a quick pickup a meter is fine; for a real buying trip a reserved lot is worth it.",
           "If you're loading bulk purchases, note where your car is before you start buying — vendors generally won't hold goods, and hand-trucking boxes several blocks gets old fast. Some buyers park close, buy heavy, and move the car between stops.",
+        ],
+      },
+      {
+        h: "Getting there by Metro or bus",
+        ps: [
+          "The nearest rail stop is Metro's Little Tokyo/Arts District station (200 N Alameda St), about a 10-minute walk north, served by the A Line and E Line. From there head south on Los Angeles St into the district.",
+          "Several Metro bus lines also run along Los Angeles St and San Pedro St at the district's edges. Transit sidesteps parking entirely, but plan to carry what you buy — it suits browsing and small retail trips more than a bulk wholesale haul.",
         ],
       },
       {
@@ -80,6 +100,14 @@ export const visiting: Record<Locale, Guide> = {
         q: "Can anyone buy in the Toy District, or is it wholesale only?",
         a: "Both. Roughly 90% of merchants sell at wholesale prices, but most also sell to walk-in retail customers. For true wholesale pricing and bulk orders, bringing a California resale certificate helps.",
       },
+      {
+        q: "Where can I park in the Toy District?",
+        a: "Pay lots and garages cluster one block west along S Main St (334, 415, 416, 330, 433 S Main) and on S Los Angeles St, roughly $11–22 for the day — cheapest reserved ahead on SpotHero, ParkWhiz, SpotAngels or Spacer. Metered street parking (~$3/hour) fills early and some streets are peak-hour tow-away zones.",
+      },
+      {
+        q: "Can I get to the Toy District by Metro?",
+        a: "Yes. Metro's Little Tokyo/Arts District station (A Line and E Line) is about a 10-minute walk north; head south on Los Angeles St into the district. Several bus lines also run along its edges.",
+      },
     ],
   },
   es: {
@@ -102,10 +130,30 @@ export const visiting: Record<Locale, Guide> = {
         ],
       },
       {
-        h: "Estacionamiento",
+        h: "Estacionamiento: reserve un lote, no dé vueltas por parquímetros",
         ps: [
-          "No hay estacionamiento propio del distrito. Las opciones son: lotes de pago en los bordes del distrito (tarifa fija de día), parquímetros en la calle que se llenan temprano, y los estacionamientos públicos de Little Tokyo a un par de cuadras al norte.",
+          "No hay estacionamiento propio del distrito, pero hay varios lotes y garajes de pago a una cuadra al oeste sobre S Main St y sobre S Los Angeles St — a poca distancia a pie de las cuadras centrales. Reservar antes en SpotHero, ParkWhiz, SpotAngels o Spacer casi siempre sale más barato que llegar sin reserva.",
+          "Tarifas aproximadas de día cerca del distrito (precio reservando — sin reserva sale más caro y cambia seguido, así que revise la app para el precio actual):",
+        ],
+        bullets: [
+          "Garaje 334 S Main St — desde unos $11 por el día (lote chico, ~0.1 mi)",
+          "415 y 416 S Main St, garaje y lote — más o menos $15–22",
+          "Lotes 330 y 433 S Main St — más o menos $18–22",
+          "Garaje 539–545 S Los Angeles St — alrededor de $21, justo en el borde oeste del distrito",
+        ],
+      },
+      {
+        h: "Parquímetros y carga de compras grandes",
+        ps: [
+          "El parquímetro en la calle cuesta alrededor de $3/hora y se llena temprano. Lea bien los letreros — varias calles principales se vuelven zona de remolque en hora pico por la tarde, así que un parquímetro que era legal al mediodía puede ser una grúa a las 4pm. Para una recogida rápida el parquímetro sirve; para un día de compras conviene un lote reservado.",
           "Si va a cargar compras en volumen, ubique bien su carro antes de empezar a comprar — los vendedores normalmente no apartan mercancía, y cargar cajas varias cuadras cansa rápido. Algunos compradores estacionan cerca, compran lo pesado y mueven el carro entre paradas.",
+        ],
+      },
+      {
+        h: "Cómo llegar en Metro o autobús",
+        ps: [
+          "La estación de tren más cercana es Little Tokyo/Arts District del Metro (200 N Alameda St), a unos 10 minutos a pie hacia el norte, con servicio de la A Line y la E Line. Desde ahí camine al sur por Los Angeles St hasta el distrito.",
+          "Varias líneas de autobús del Metro también pasan por Los Angeles St y San Pedro St en los bordes del distrito. El transporte evita por completo el estacionamiento, pero cuente con cargar lo que compre — conviene más para curiosear o compras chicas que para un cargamento grande de mayoreo.",
         ],
       },
       {
@@ -143,6 +191,14 @@ export const visiting: Record<Locale, Guide> = {
       {
         q: "¿Cualquiera puede comprar en el Toy District o es solo mayoreo?",
         a: "Ambos. Cerca del 90% de los comerciantes vende a precio de mayoreo, pero la mayoría también atiende al público. Para precio de mayoreo real y pedidos grandes, ayuda llevar un resale certificate de California.",
+      },
+      {
+        q: "¿Dónde puedo estacionar en el Toy District?",
+        a: "Hay lotes y garajes de pago a una cuadra al oeste sobre S Main St (334, 415, 416, 330, 433 S Main) y sobre S Los Angeles St, más o menos $11–22 por el día — más barato reservando antes en SpotHero, ParkWhiz, SpotAngels o Spacer. El parquímetro en la calle (~$3/hora) se llena temprano y algunas calles son zona de remolque en hora pico.",
+      },
+      {
+        q: "¿Puedo llegar al Toy District en Metro?",
+        a: "Sí. La estación Little Tokyo/Arts District del Metro (A Line y E Line) queda a unos 10 minutos a pie al norte; camine al sur por Los Angeles St hasta el distrito. Varias líneas de autobús también pasan por los bordes.",
       },
     ],
   },
