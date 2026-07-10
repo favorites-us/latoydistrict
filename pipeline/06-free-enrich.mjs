@@ -14,6 +14,15 @@ const USER_AGENT = "LAToyDistrictDirectory/1.0 (public-data enrichment; https://
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const filled = (value) => value !== null && value !== undefined && value !== "";
+// OSM tags are world-editable — only trust http(s) URLs, drop javascript:/data: etc.
+const safeHttpUrl = (u) => {
+  try {
+    const parsed = new URL(u);
+    return parsed.protocol === "http:" || parsed.protocol === "https:" ? parsed.toString() : null;
+  } catch {
+    return null;
+  }
+};
 const addSource = (store, source) => {
   if (!store.sources.includes(source)) store.sources.push(source);
 };
@@ -174,10 +183,10 @@ for (const store of stores) {
   const { element, reason } = candidates[0];
   const tags = element.tags || {};
   const phone = tags.phone || tags["contact:phone"];
-  const website = tags.website || tags["contact:website"];
+  const website = safeHttpUrl(tags.website || tags["contact:website"]);
   if (!filled(store.phone) && filled(phone)) store.phone = phone;
   if (!filled(store.hours) && filled(tags.opening_hours)) store.hours = tags.opening_hours;
-  if (filled(website) && !filled(store.links?.website)) store.links = { ...(store.links || {}), website };
+  if (website && !filled(store.links?.website)) store.links = { ...(store.links || {}), website };
   const category = OSM_CATEGORY[tags.shop];
   if (category && store.category.length === 1 && store.category[0] === "general") store.category = [category];
   addSource(store, "osm");

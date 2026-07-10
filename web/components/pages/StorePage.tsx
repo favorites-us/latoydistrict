@@ -11,6 +11,17 @@ function Field({ locale, value }: { locale: Locale; value: string | null }) {
   return value ? <>{value}</> : <span className="unknown">{t(locale, "unknown_value")}</span>;
 }
 
+// Defense in depth: website comes from world-editable OSM data. Only render http(s).
+function httpUrl(u: string | null | undefined): string | null {
+  if (!u) return null;
+  try {
+    const p = new URL(u);
+    return p.protocol === "http:" || p.protocol === "https:" ? p.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
 export default function StorePage({ store, locale }: { store: Store; locale: Locale }) {
   const nearby = stores.filter((s) => s.block === store.block && s.slug !== store.slug).slice(0, 6);
   const mapsQuery = encodeURIComponent(fullAddress(store));
@@ -69,12 +80,12 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                 <th>{t(locale, "field_phone")}</th>
                 <td><Field locale={locale} value={store.phone} /></td>
               </tr>
-              {store.links?.website ? (
+              {httpUrl(store.links?.website) ? (
                 <tr>
                   <th>{t(locale, "field_website")}</th>
                   <td>
-                    <a href={store.links.website} rel="nofollow noopener" target="_blank">
-                      {store.links.website} ↗
+                    <a href={httpUrl(store.links?.website)!} rel="nofollow noopener" target="_blank">
+                      {store.links!.website} ↗
                     </a>
                   </td>
                 </tr>
