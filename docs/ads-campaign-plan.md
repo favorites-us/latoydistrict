@@ -70,6 +70,52 @@
 | 리드 저장 | Supabase `leads` 테이블 (store_slug/store_name 포함, supabase/schema.sql) |
 | Search Console | 무료 수요 프록시 — 타겟 키워드 **노출수** 관찰(광고 없이도 신호) |
 
+## 광고 소재 (복붙용 — Responsive Search Ad)
+
+최종 URL은 모두 `https://toydistrictlosangeles.com`. 반응형 검색광고(RSA) 1개/그룹.
+헤드라인은 30자, 설명은 90자 이내로 이미 맞춰둠. 그대로 붙여 넣으면 된다.
+
+### AG1 — 지명군 · 최종 URL `https://toydistrictlosangeles.com/guide/visiting`
+Headlines:
+- LA Toy District Directory
+- Toy District, Downtown LA
+- Find Toy District Stores
+- Toy District Store Map
+- Hours, Parking & Stores
+- Wholesale Toys in DTLA
+- 190+ Toy District Shops
+- Where to Park & Shop
+- Toy District Visitor Guide
+- Downtown LA Toy District
+
+Descriptions:
+- Browse 190+ toy & party shops in LA's Toy District. Maps, hours, parking.
+- Your guide to Downtown LA's Toy District — where to park, when stores open.
+- Find wholesale toy, plush & party suppliers block by block. Free directory.
+- Planning a visit? Parking lots, store hours, and cash tips inside.
+
+### AG2 — 도매 인텐트 · 최종 URL `https://toydistrictlosangeles.com/`
+Headlines:
+- Wholesale Toys Los Angeles
+- LA Wholesale Toy Suppliers
+- Buy Toys Wholesale in DTLA
+- Toy District Wholesalers
+- Bulk Toys & Party Supplies
+- Wholesale Plush & Figures
+- Source Toys in Downtown LA
+- 190+ Wholesale Toy Shops
+- Party Supplies Wholesale LA
+- Find Toy Wholesalers Fast
+
+Descriptions:
+- Source toys, plush & party goods from 190+ Downtown LA wholesalers.
+- Free directory of LA Toy District wholesale suppliers. Maps & contacts.
+- Buying for resale? Find bulk toy & party suppliers block by block.
+- Compare Toy District wholesalers by category, block, and contact info.
+
+> 소액 버전에선 AG1·AG2만. 각 그룹 헤드라인/설명을 위에서 복사 → 핀 없이 전부 등록
+> (Google이 조합 최적화). 표시 경로(path)는 `visiting` / `wholesale` 권장.
+
 ## 판정 절차 (D+14)
 
 1. 그룹별 노출수 → 월환산 → PLAN.md 통과 ⓐ 판정
