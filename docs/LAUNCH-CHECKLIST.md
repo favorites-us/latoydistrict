@@ -10,19 +10,16 @@
 - ✅ 코드 반영 완료: `NEXT_PUBLIC_SITE_URL` 기본값·footer·OG·메일·README 전부 새 도메인.
 - 아직 A 레코드 없음(어디에도 미연결) → 아래 1번에서 Vercel에 연결.
 
-## 1. Vercel 배포 + Cloudflare DNS 연결 (무료)
+## 1. Vercel 배포 + Cloudflare DNS 연결 — ✅ 완료
 
-- [ ] github에 이 리포 push (아직 origin 미푸시 상태면 먼저).
-- [ ] Vercel New Project → 이 리포 import.
-- [ ] **Root Directory = `web`** 로 설정 (Next.js 앱이 web/ 하위). 나머지 자동 감지.
-- [ ] Deploy → `xxx.vercel.app` 로 우선 동작 확인.
-- [ ] 커스텀 도메인 연결: Vercel → Settings → Domains → `toydistrictlosangeles.com` 추가.
-      Vercel이 준 값을 **Cloudflare 대시보드 → DNS**에 입력:
-  - `A` `@` → `76.76.21.21` (Vercel 안내값 우선)
-  - `CNAME` `www` → `cname.vercel-dns.com`
-  - Cloudflare 프록시(주황 구름)는 **DNS only(회색)** 로 두면 충돌이 적다. SSL은 Vercel이 발급.
+- ✅ 리포 origin push, Vercel 프로젝트 `hbrandons-projects/toydistrictlosangeles` (Root=web).
+- ✅ 프로덕션 배포 라이브: https://toydistrictlosangeles.com (HTTP 200, SSL 발급됨).
+- ✅ Cloudflare DNS: `A @ 76.76.21.21`, **DNS only(회색 구름)**.
+- ✅ 환경변수 `NEXT_PUBLIC_SITE_URL` = 도메인 (Production).
+- [ ] (선택) `CNAME www → cname.vercel-dns.com` 추가 시 www도 연결.
 - [ ] (선택) 이메일 수신: Cloudflare → **Email Routing**(무료)에서 `hello@toydistrictlosangeles.com`
       → 실제 받는 주소로 포워딩. 안 하면 폼 폴백 메일이 도착하지 않는다.
+- 재배포는 리포에서 `cd web && vercel deploy --prod --yes` (또는 git push 연동 시 자동).
 
 ## 2. 환경변수 (Vercel → Settings → Environment Variables)
 
