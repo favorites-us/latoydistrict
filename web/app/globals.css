@@ -70,9 +70,9 @@ a:hover {
 }
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 16px;
   font-size: 14px;
-  overflow-x: auto;
   flex: 1;
 }
 .site-nav a {
@@ -90,6 +90,28 @@ a:hover {
   padding: 4px 12px;
   color: var(--muted);
   white-space: nowrap;
+}
+/* Push the language pill to the right edge on desktop. */
+.site-nav .lang-switch {
+  margin-left: auto;
+}
+/* Hamburger — hidden on desktop, shown on mobile via the media query below. */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  padding: 8px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
 }
 
 /* hero */
@@ -467,10 +489,41 @@ a:hover {
 
 @media (max-width: 640px) {
   .site-header .container {
-    height: auto;
-    padding: 10px 16px;
-    flex-wrap: wrap;
-    gap: 8px;
+    height: 56px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  /* Nav collapses into a dropdown panel below the header, toggled open. */
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    flex: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+    padding: 6px 16px 14px;
+  }
+  .site-nav.open {
+    display: flex;
+  }
+  .site-nav a:not(.lang-switch) {
+    padding: 13px 2px;
+    font-size: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .site-nav .lang-switch {
+    margin: 14px 0 0;
+    align-self: flex-start;
+    font-size: 14px;
   }
   .map-wrap {
     height: 320px;
