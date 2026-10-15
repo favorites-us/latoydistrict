@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-10-15",
+  "pages": [
+    {
+      "url": "https://www.americansilkinc.com/",
+      "http_status": 200,
+      "final_url": "https://www.americansilkinc.com/",
+      "image_elements": 16,
+      "relevant_links": [
+        "https://www.americansilkinc.com/about-us",
+        "https://www.americansilkinc.com/catalog"
+      ]
+    },
+    {
+      "url": "https://caballoonhouse.com/pages/faq",
+      "http_status": 200,
+      "final_url": "https://caballoonhouse.com/pages/faq",
+      "image_elements": 2,
+      "relevant_links": [
+        "/policies/terms-of-service"
+      ]
+    },
+    {
+      "url": "https://www.casamanga.com/",
+      "http_status": 200,
+      "final_url": "https://www.casamanga.com/",
+      "image_elements": 66,
+      "relevant_links": [
+        "/collections/all-products/bandai",
+        "/collections/all-products/bandai-hobby",
+        "/collections/all-products/bandai-shokugan",
+        "/collections/all-products/funko",
+        "/pages/about-us",
+        "/policies/terms-of-service"
+      ]
+    },
+    {
+      "url": "https://toms-model.myshopify.com/",
+      "http_status": 200,
+      "final_url": "https://toms-model.myshopify.com/",
+      "image_elements": 62,
+      "relevant_links": [
+        "/collections/lego",
+        "/pages/about-us",
+        "/pages/funko-collections",
+        "/products/funko-pop-baby-milo-18-flocked-bait-exclusivebuy-sell-trade",
+        "/products/funko-pop-harry-potter-harry-potter-herbology-multicolor",
+        "/products/funko-pop-heroes-dc-universe-the-joker-06-chase-buy-sell-trade-copy",
+        "/products/funko-pop-heroes-superman-and-lois-flying-2-pack-exclusive",
+        "/products/funko-pop-jujutsu-kaisen-toge-inumaki-chase",
+        "/products/funko-pop-movies-ghostface-ghostface-collectable-vinyl-figure-gift-idea-official-merchandise-for-kids-adults-horror-fans-model-figure-for-collectors-and-display",
+        "/products/funko-pop-television-the-munsters-grandpa",
+        "/products/funko-pop-tv-stranger-things-s4-steve-1"
+      ]
+    },
+    {
+      "url": "https://caballoonhouse.com/policies/refund-policy",
+      "http_status": 200,
+      "final_url": "https://caballoonhouse.com/policies/refund-policy",
+      "image_elements": 2,
+      "relevant_links": [
+        "/policies/terms-of-service"
+      ]
+    },
+    {
+      "url": "https://ladot.lacity.gov/residents/colored-curb-zones",
+      "http_status": 200,
+      "final_url": "https://ladot.lacity.gov/residents/colored-curb-zones",
+      "image_elements": 10,
+      "relevant_links": [
+        "/about",
+        "/about#careers",
+        "/about#explore-maps",
+        "/about#vision",
+        "/about/advisory-committees",
+        "/about/commissions",
+        "/about/faq",
+        "/about/organizational-structure",
+        "/about/plans-reports",
+        "/bilingual-glossary-terms"
+      ]
+    }
+  ]
+}

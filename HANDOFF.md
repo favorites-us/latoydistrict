@@ -1,5 +1,17 @@
 # LA Toy District 재시작 후 작업 인계
 
+## 최신 작업 — 2026년 10월 15일
+
+사용자의 사진·바이어 정보 검토 요청과 “진행해봐” 후속 요청에 따라 **가이드 정비와 구매 준비표를 구현하고 운영 배포했다.** 최신 배포는 `dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe`이며 [영문 구매 체크리스트](https://toydistrictlosangeles.com/guide/buying-checklist), [스페인어](https://toydistrictlosangeles.com/es/guide/buying-checklist)가 추가됐다. 기존 가이드 5종을 양 언어로 정리하고, 공식 업체 4곳에 구매 질문과 카탈로그 안내를 추가했다. California Balloon House 반품 정책도 반영했다. 등록 업체 191개와 관련 없는 필드는 유지했고 온라인 안내는 11→16개다.
+
+[구현 결과](docs/decisions/2026-10-15-buyer-information-implementation.md), [배포 기록](artifacts/buyer-information-implementation-20261015/deployment.json), [운영 HTML 검사](artifacts/buyer-information-implementation-20261015/production-checks.json)를 먼저 읽는다. 데이터 테스트 16개, 최종 빌드 593개 페이지, 로컬·운영 HTML 각 22개 검사가 통과했다. 현재 외관 사진으로 게시할 권리·촬영일·점포 일치를 모두 확인한 사진은 표본 4곳에서 0개이며, 사진을 복제하지 않고 공식 카탈로그로 연결했다. 전체 사진 커버리지나 실제 수요를 추정한 결과가 아니다.
+
+실제 Claude CLI와 선행 검토 2차례, 구현 검토 1차례를 수행했다. Google 캡처 수집은 하지 않는다. 10월 15일 브라우저 재접근도 저장된 `localhost` 차단 설정으로 거절되어 화면·인쇄 미리보기는 미확인이다. 우회하지 않았다. GA 수신·문의 처리·GSC 접근 역시 미완료다. 10/15~11/11 관찰 창에는 이번 추가 변경이 포함되므로 배포별로 구분하고, 12/1 최종 판단 일정은 유지한다.
+
+아래 10월 14일 배포·조사 내용은 이전 작업 이력이다. 최신 소스는 이번 배포의 48개 파일 해시 목록인 `artifacts/buyer-information-implementation-20261015/deployment-source-manifest.json`으로 대조한다. 배포는 `2a05e7e` 이후 작업 트리에서 먼저 수행했고 조사·구현·검증 기록을 같은 브랜치에 커밋한다. 최종 커밋·원격 동기화 상태는 `git log -1`과 `git status -sb`로 확인한다.
+
+## 10월 14일 작업 이력
+
 최초 작성: 2026년 10월 14일 14시 01분 PDT. 운영 배포·검증은 같은 날 14시 28분 PDT에 완료했고, 이후 사용자의 커밋·푸시 요청에 맞춰 저장소 상태 설명을 갱신했다.
 
 GA 실측 분석, 온라인 정보 확보 실험, Claude 검토, 콘텐츠 보강과 **운영 배포를 완료했다.** 사용자가 “배포해”라고 명시적으로 요청해 기존 Vercel 프로젝트에 배포했고, [운영 사이트](https://toydistrictlosangeles.com)가 새 배포를 가리키는 것을 확인했다. 영문·스페인어 20개 페이지와 정적 자산 13개의 운영 HTTP 검증이 통과했다. **공식 사이트가 확인된 업체를 제한적으로 보강할 가치는 있지만, 전체 업체 조사나 광고 확대를 뒷받침할 근거는 부족하다.** 화면 시각 검증은 대화에서 후순위로 정리했으며, 운영 GA 이벤트 수신은 아직 확인하지 않았다. 배포 당시에는 미커밋 작업 트리를 사용했다. 이후 사용자의 커밋·푸시 요청에 따라 배포 소스와 조사·검증 기록을 이 문서와 함께 버전 관리한다. [배포 당시 기록](artifacts/online-pilot-20261014/deployment.json), [운영 검증](artifacts/online-pilot-20261014/deployment-production-checks.json)
@@ -8,9 +20,11 @@ GA 실측 분석, 온라인 정보 확보 실험, Claude 검토, 콘텐츠 보�
 
 ## 재개 시 확인할 현재 상태
 
-1. 이 문서와 [파일럿 최종 결과](docs/decisions/2026-10-14-online-pilot-results.md), [배포 기록](artifacts/online-pilot-20261014/deployment.json)을 읽는다. 이미 수행한 GA 조사와 Claude 검토를 처음부터 반복하지 않는다.
+**2026-10-15 선행 검토 기록:** [사진·바이어 정보 판단 및 당시 초안](docs/decisions/2026-10-15-buyer-information-and-photos.md), [출처 기록](artifacts/buyer-information-review-20261015/evidence.json). 해당 문서의 미게시·미구현 표시는 초기 검토 단계의 상태다. 이후 사용자가 진행을 요청해 위 최신 작업의 구현·배포를 완료했다. 사진과 텍스트의 사용자 효과는 여전히 미검증이다.
+
+1. 이 문서의 최신 작업과 [10월 15일 구현 결과](docs/decisions/2026-10-15-buyer-information-implementation.md)를 먼저 읽는다. 10월 14일 근거는 [파일럿 최종 결과](docs/decisions/2026-10-14-online-pilot-results.md)에 있다. 이미 수행한 GA 조사와 Claude 검토를 처음부터 반복하지 않는다.
 2. 작업 디렉터리를 `/Users/hbrandon/DevProjects/ToyDistrict/latoydistrict`로 잡고 `git status --short`로 기존 변경을 확인한다. 기존 작업을 초기화하지 않는다.
-3. 현재 운영 배포는 `dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr`다. `web/`의 작업 트리에서 직접 배포했으며 업로드한 45개 파일의 해시는 `deployment-source-manifest.json`에 있다. 배포를 재현할 때는 이 파일 해시와 저장소 소스를 대조한다. 배포 당시 HEAD인 `c61d8e5`만으로는 보강된 소스를 재현할 수 없다.
+3. 현재 운영 배포는 위 최신 작업의 `dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe`다. `dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr`와 `online-pilot-20261014/deployment-source-manifest.json`의 45개 파일은 이전 배포다. 두 배포 모두 `web/` 작업 트리에서 배포했으므로 해당 날짜의 소스 해시 목록과 저장소를 대조한다.
 4. 브라우저 화면 검증은 후순위 미완료 항목이다. 이 작업 때문에 정보 확보나 이미 완료한 배포를 차단 상태로 되돌리지 않는다. 추가 화면 검증을 진행할 때만 아래의 동일 localhost 주소와 승인된 도구를 사용한다.
 5. 배포 후 관찰에서는 자연검색 유입·참여, 연락 클릭, 실제 문의를 구분한다. GA 수신 확인, 문의 처리 체계, GSC 접근은 별도 미완료다.
 6. 추가 조사·확대는 아래의 제한적 진행 판단을 따른다. 변경·실패·새로운 우려가 없으면 기존 검사를 반복하지 않는다.

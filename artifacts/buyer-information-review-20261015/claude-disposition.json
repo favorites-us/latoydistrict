@@ -1,0 +1,44 @@
+{
+  "review_date": "2026-10-15",
+  "method": "Two actual installed Claude CLI calls with tools disabled; evidence supplied by Codex. No independent Claude browsing.",
+  "rounds": [
+    {
+      "prompt": "claude-round1-prompt.txt",
+      "result": "claude-round1.json",
+      "readable_result": "claude-round1.txt",
+      "model_metadata": "claude-opus-5-5",
+      "status": "success",
+      "purpose": "Challenge legal/photo assumptions, buyer value, maintenance costs and proposed priorities."
+    },
+    {
+      "prompt": "claude-round2-prompt.txt",
+      "challenge": "claude-round2-challenge.txt",
+      "result": "claude-round2.json",
+      "readable_result": "claude-round2.txt",
+      "model_metadata": "claude-opus-5-5",
+      "status": "success",
+      "purpose": "Correct overclaims and reassess using newly found merchant policy, template, image-license and public-agency evidence."
+    }
+  ],
+  "accepted": [
+    "Prioritize an audit of unsupported guide claims, then common-format evidence cards for the four known official merchants.",
+    "Keep missing fields visibly unknown; provide neutral EN/ES buyer questions and a printable visit/quote worksheet.",
+    "Photos can assist entrance identification; relative value versus purchase information is not validated.",
+    "Use official gallery links while evaluating rights-cleared original images. Commons example is historical district context only, pending visual review.",
+    "Do not scale to all 191 registrations or build a generic comparison engine on the present evidence.",
+    "Treat California Balloon House refund information as a new draft candidate; hold Tom's Model template-like policy and outdated shipping notice.",
+    "If later content changes are deployed, record deployment date and affected pages so observation is interpreted correctly."
+  ],
+  "corrected_or_rejected": [
+    "Not all Street View copyright belongs to Google; policy and contract restrictions are not a blanket legal ruling.",
+    "A facade photo is not proof of a currently operating merchant, stock, ownership, safety or accessibility.",
+    "Dated online facade photos can exist; identity, date and license still require separate checks.",
+    "GSC is unavailable; a low query-impression share is not evidence of absent buyer demand. No 5-percent gate.",
+    "Product-specific non-Google-map exceptions exist; API support still does not establish permission for this directory's integration.",
+    "Failed retrieval is unavailable, a field not found within scope is not_found_in_review, and contradictory sources are conflict. No inference of absent service.",
+    "Claude's publication recommendations do not mean the current research request implemented or published anything.",
+    "The 28-day observation window is October 15 through November 11; December 1 is the separate final decision date."
+  ],
+  "additional_codex_research_after_round2": "CPSC official recall API and seller guidance are additional buyer-resource candidates, not items independently reviewed or endorsed in the two Claude rounds.",
+  "implementation_status": "Research notes and drafts only. No web or pipeline data changes, outreach, image acquisition, API activation, deployment, commit or push."
+}

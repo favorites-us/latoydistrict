@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-15",
+  "mode": "built_html",
+  "origin": null,
+  "pages": [
+    {
+      "path": "/",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/guide/visiting",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/guide/wholesale-basics",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/guide/buying-checklist",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/guide/for/party-planners",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/guide/for/store-owners",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/guide/for/resellers",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/stores/casa-manga-218",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/stores/tom-s-model-501",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/stores/american-silk-inc-340",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/stores/california-balloon-house-447",
+      "locale": "en",
+      "passed": true
+    },
+    {
+      "path": "/es",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/guide/visiting",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/guide/wholesale-basics",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/guide/buying-checklist",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/guide/for/party-planners",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/guide/for/store-owners",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/guide/for/resellers",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/stores/casa-manga-218",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/stores/tom-s-model-501",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/stores/american-silk-inc-340",
+      "locale": "es",
+      "passed": true
+    },
+    {
+      "path": "/es/stores/california-balloon-house-447",
+      "locale": "es",
+      "passed": true
+    }
+  ],
+  "page_count": 22,
+  "store_count": 191,
+  "online_fact_count": 16,
+  "stores_sha256": "c1a619d010501648cdd3bb4f905e6b1dc2198c3ae89f880d454f6d2f3881989e",
+  "browser_visual_check": "blocked by saved localhost browser preference; no workaround attempted",
+  "print_preview_check": "not performed",
+  "actual_inquiry_or_ga_delivery_test": "not performed"
+}

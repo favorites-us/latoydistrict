@@ -1,0 +1,133 @@
+Vercel CLI 59.25.4 (Node.js 25.6.1)
+Deploying toydistrictlosangeles
+Uploading [--------------------] (0.0B/261.9KB)
+Uploading [=====---------------] (66.0KB/261.9KB)
+Uploading [==========----------] (133.8KB/261.9KB)
+Uploading [===============-----] (200.3KB/261.9KB)
+Uploading [====================] (261.9KB/261.9KB)
+  Inspect         https://vercel.com/hbrandons-projects/toydistrictlosangeles/FbWM92oz5yt9ZEmVcossJcdFeDFe
+  Production      https://toydistrictlosangeles-irnzvjtj1-hbrandons-projects.vercel.app
+Building…
+Building…
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 4 cores, 8 GB
+Retrieving list of deployment files...
+Downloading 49 deployment files...
+Restored build cache from previous deployment (3eHS9fNG3CnAsjBYQM8NCY3jeerr)
+Running "vercel build"
+Vercel CLI 64.0.2
+Installing dependencies...
+npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+up to date in 486ms
+10 packages are looking for funding
+run `npm fund` for details
+npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn install-scripts   sharp@0.34.5 (install: node install/check.js || npm run build)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+Detected Next.js version: 15.5.20
+Running "npm run build"
+npm warn Unknown env config "cache-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+> build
+> next build
+▲ Next.js 15.5.20
+Creating an optimized production build ...
+✓ Compiled successfully in 5.5s
+Linting and checking validity of types ...
+Collecting page data ...
+Generating static pages (0/593) ...
+Generating static pages (148/593)
+Generating static pages (296/593)
+Generating static pages (444/593)
+✓ Generating static pages (593/593)
+Finalizing page optimization ...
+Collecting build traces ...
+Route (app)                                                       Size  First Load JS
+┌ ○ /                                                            124 B         131 kB
+├ ○ /_not-found                                                  138 B         103 kB
+├ ƒ /api/keepalive                                               138 B         103 kB
+├ ƒ /api/leads                                                   138 B         103 kB
+├ ○ /es                                                          124 B         131 kB
+├ ○ /es/guide/buying-checklist                                 5.04 kB         112 kB
+├ ● /es/guide/for/[buyer]                                      5.04 kB         112 kB
+├   ├ /es/guide/for/party-planners
+├   ├ /es/guide/for/store-owners
+├   └ /es/guide/for/resellers
+├ ○ /es/guide/visiting                                         5.04 kB         112 kB
+├ ○ /es/guide/wholesale-basics                                 5.04 kB         112 kB
+├ ● /es/stores/[slug]                                            124 B         112 kB
+├   ├ /es/stores/abc-toys-wholesale-323
+├   ├ /es/stores/americas-favors-405
+├   ├ /es/stores/ampro-marketing-corporation-339
+├   └ [+188 more paths]
+├ ○ /guide/buying-checklist                                    5.04 kB         112 kB
+├ ● /guide/for/[buyer]                                         5.04 kB         112 kB
+├   ├ /guide/for/party-planners
+├   ├ /guide/for/store-owners
+├   └ /guide/for/resellers
+├ ○ /guide/visiting                                            5.04 kB         112 kB
+├ ○ /guide/wholesale-basics                                    5.04 kB         112 kB
+├ ○ /robots.txt                                                  138 B         103 kB
+├ ○ /sitemap.xml                                                 138 B         103 kB
+├ ● /stores/[slug]                                               124 B         112 kB
+├   ├ /stores/abc-toys-wholesale-323
+├   ├ /stores/americas-favors-405
+├   ├ /stores/ampro-marketing-corporation-339
+├   └ [+188 more paths]
+└ ● /stores/[slug]/opengraph-image                               138 B         103 kB
+├ /stores/abc-toys-wholesale-323/opengraph-image
+├ /stores/americas-favors-405/opengraph-image
+├ /stores/ampro-marketing-corporation-339/opengraph-image
+└ [+188 more paths]
++ First Load JS shared by all                                   103 kB
+├ chunks/255-8d02907c593afb5f.js                             46.4 kB
+├ chunks/4bd1b696-c023c6e3521b1417.js                        54.2 kB
+└ other shared chunks (total)                                2.48 kB
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+Traced Next.js server files in: 29.574ms
+Created all serverless functions in: 96.605ms
+Collected static files (public/, static/, .next/static): 3.475ms
+Build Completed in /vercel/output [27s]
+Deploying outputs...
+[2K[1A[2K[G  Production      https://toydistrictlosangeles-irnzvjtj1-hbrandons-projects.vercel.app
+Completing…
+▲ Aliased         https://toydistrictlosangeles.com
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+    "url": "https://toydistrictlosangeles-irnzvjtj1-hbrandons-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/hbrandons-projects/toydistrictlosangeles/FbWM92oz5yt9ZEmVcossJcdFeDFe",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+    "buildMachine": {
+      "cores": 4,
+      "memory": 8192,
+      "machine": "standard",
+      "selectionType": "elastic",
+      "selectionSource": "elastic-algorithm"
+    }
+  },
+  "message": "Deployment toydistrictlosangeles-irnzvjtj1-hbrandons-projects.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel git connect --scope hbrandons-projects",
+      "when": "Automatically deploy changes on every push"
+    },
+    {
+      "command": "vercel curl https://toydistrictlosangeles-irnzvjtj1-hbrandons-projects.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect toydistrictlosangeles-irnzvjtj1-hbrandons-projects.vercel.app --scope hbrandons-projects",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod --scope hbrandons-projects",
+      "when": "Promote to production"
+    }
+  ]
+}

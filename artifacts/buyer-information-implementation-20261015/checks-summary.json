@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "data_tests": {
+    "command": "npm test",
+    "exit_code": 0,
+    "passed": 16
+  },
+  "final_build": {
+    "command": "npm run build",
+    "exit_code": 0,
+    "generated_pages": 593
+  },
+  "built_html": "validation.json",
+  "production_http": "production-checks.json",
+  "production_static_assets": "production-assets.json",
+  "browser_visual_and_print_preview": "Saved localhost browser permission rejected the attempt; no alternate host/browser/CDP/rendering workaround.",
+  "verification_harness_corrections": [
+    "Root canonical URL intentionally omits trailing slash.",
+    "Classify production asset extensions by URL path because Vercel appends deployment query parameters."
+  ],
+  "no_outreach_or_forms_submitted": true
+}

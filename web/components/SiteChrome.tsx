@@ -36,7 +36,7 @@ export function Header({ locale, altPath }: { locale: Locale; altPath: string })
           <Link href={p("/guide/wholesale-basics")} onClick={close}>
             {t(locale, "nav_wholesale")}
           </Link>
-          <Link href={p("/guide/for/party-planners")} onClick={close}>
+          <Link href={p("/guide/buying-checklist")} onClick={close}>
             {t(locale, "nav_buyers")}
           </Link>
           <Link

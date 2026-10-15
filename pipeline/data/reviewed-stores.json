@@ -243,6 +243,29 @@
               "checked_at": "2026-10-14"
             }
           ]
+        },
+        {
+          "id": "catalog-products",
+          "kind": "products",
+          "text": {
+            "en": "The official catalog includes artificial flowers and greenery. Browse the linked pages for product photos; confirm the items, quantities and in-store availability with the business.",
+            "es": "El catálogo oficial incluye flores y plantas artificiales. Consulte las páginas enlazadas para ver fotos de productos y confirme artículos, cantidades y disponibilidad en tienda."
+          },
+          "scope": "Official online catalog categories and product-photo navigation only; no stock, wholesale-price, authorized-dealer or image-republication claim.",
+          "source": {
+            "url": "https://www.americansilkinc.com/",
+            "type": "business",
+            "label": "American Silk catalog",
+            "checked_at": "2026-10-15"
+          },
+          "additional_sources": [
+            {
+              "url": "https://www.americansilkinc.com/catalog",
+              "type": "business",
+              "label": "American Silk product catalog",
+              "checked_at": "2026-10-15"
+            }
+          ]
         }
       ],
       "business_domains": [
@@ -389,6 +412,36 @@
             "label": "California Balloon House shipping",
             "checked_at": "2026-10-14"
           }
+        },
+        {
+          "id": "returns-incorrect-items",
+          "kind": "buying",
+          "text": {
+            "en": "The published policy states that sales are final, with no general returns, refunds or exchanges. For an incorrect delivered item, contact the business within its stated “48 business hours” for replacement and a return label. See the full policy for product-specific terms.",
+            "es": "La política publicada indica que las ventas son finales y que, en general, no se aceptan devoluciones, reembolsos ni cambios. Si recibe un artículo incorrecto, contacte al negocio dentro del plazo que describe como “48 business hours” para solicitar el reemplazo y una etiqueta de devolución. Consulte las condiciones específicas en la política completa."
+          },
+          "scope": "Merchant-published refund policy only, not an interpretation of statutory rights. Preserve the exact business-hours wording; no two-calendar-day conversion.",
+          "source": {
+            "url": "https://caballoonhouse.com/policies/refund-policy",
+            "type": "business",
+            "label": "California Balloon House refund policy",
+            "checked_at": "2026-10-15"
+          }
+        },
+        {
+          "id": "catalog-products",
+          "kind": "products",
+          "text": {
+            "en": "The official catalog includes latex and foil balloons, ribbons and party supplies. Product photos and online listings do not confirm current in-store stock; check your items and quantities before visiting.",
+            "es": "El catálogo oficial incluye globos de látex y metalizados, listones y artículos de fiesta. Las fotos y fichas en línea no confirman existencias actuales en tienda; consulte sus artículos y cantidades antes de visitar."
+          },
+          "scope": "Official online catalog categories and product-photo navigation only; no stock, wholesale-price, authorized-dealer or image-republication claim.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/faq",
+            "type": "business",
+            "label": "California Balloon House catalog and contact",
+            "checked_at": "2026-10-15"
+          }
         }
       ],
       "business_domains": [
@@ -477,6 +530,21 @@
             "label": "Casa Manga",
             "checked_at": "2026-10-14"
           }
+        },
+        {
+          "id": "catalog-products",
+          "kind": "products",
+          "text": {
+            "en": "The official site lists anime figures and plush products with product photos. Public retail prices are not wholesale quotes; ask about the exact products, quantities and in-store availability you need.",
+            "es": "El sitio oficial muestra figuras de anime y peluches con fotos de productos. Los precios públicos al menudeo no son cotizaciones de mayoreo; consulte los productos, cantidades y disponibilidad en tienda que necesita."
+          },
+          "scope": "Official online catalog categories and product-photo navigation only; no stock, wholesale-price, authorized-dealer or image-republication claim.",
+          "source": {
+            "url": "https://www.casamanga.com/",
+            "type": "business",
+            "label": "Casa Manga catalog",
+            "checked_at": "2026-10-15"
+          }
         }
       ],
       "business_domains": [
@@ -563,6 +631,29 @@
             "label": "Tom’s Model about",
             "checked_at": "2026-10-14"
           }
+        },
+        {
+          "id": "catalog-products",
+          "kind": "products",
+          "text": {
+            "en": "The official catalog has Funko Pops, LEGO and Bandai sections. Use the linked catalog for product photos; confirm current in-store stock and wholesale eligibility for your order.",
+            "es": "El catálogo oficial tiene secciones de Funko Pops, LEGO y Bandai. Consulte las fotos de productos en el catálogo enlazado y confirme las existencias en tienda y las condiciones de mayoreo de su pedido."
+          },
+          "scope": "Official online catalog categories and product-photo navigation only; no stock, wholesale-price, authorized-dealer or image-republication claim.",
+          "source": {
+            "url": "https://toms-model.myshopify.com/",
+            "type": "business",
+            "label": "Tom’s Model catalog",
+            "checked_at": "2026-10-15"
+          },
+          "additional_sources": [
+            {
+              "url": "https://toms-model.myshopify.com/collections/lego",
+              "type": "business",
+              "label": "Tom’s Model LEGO collection",
+              "checked_at": "2026-10-15"
+            }
+          ]
         }
       ],
       "business_domains": [

@@ -1,0 +1,185 @@
+{
+  "checked_at": "2026-10-15",
+  "scope": "Photo acquisition/display rights and useful online buyer information; research only",
+  "repository_base_commit": "2a05e7ed1da90dd5b2f576d8a3cfaa918bb5bd2d",
+  "method": "Targeted primary-source web research, local source/code review, and two tool-disabled Claude CLI review rounds. No exhaustive image coverage survey.",
+  "source_notes": [
+    {
+      "id": "google-geo",
+      "url": "https://about.google/brand-resource-center/products-and-services/geo-guidelines/",
+      "status": "original_page_read",
+      "findings": [
+        "Street View screenshots and extraction from embedded imagery are expressly prohibited by the published guidelines.",
+        "General supported embedding/API display exists; this is different from acquiring reusable image files.",
+        "Street View restrictions also cover deriving data and application-based analysis/extraction. Ordinary Google Maps map-screenshot guidance is not permission for Street View screenshots.",
+        "General linking to Google Maps is permitted. Fair-use applicability is case-specific, not decided by Google guidance."
+      ],
+      "decision": "Do not build a screenshot or Street View OCR collection pipeline. External links are an available option."
+    },
+    {
+      "id": "google-platform-terms",
+      "url": "https://cloud.google.com/maps-platform/terms",
+      "status": "original_page_read",
+      "sections": ["3.2.3(a)", "3.2.3(b)", "3.2.3(c)", "3.2.3(d)(iii)", "3.2.3(e)"],
+      "findings": [
+        "Core-services terms restrict extraction, storage, caching and creation of derived content, subject to stated exceptions.",
+        "The directory/listing provision and restrictions involving non-Google maps are directly relevant to this directory's MapLibre/OSM implementation."
+      ],
+      "decision": "API availability is not approval for this exact commercial directory. Resolve applicable product/contract terms before an integration. This is not a judicial determination that every possible use is illegal."
+    },
+    {
+      "id": "google-service-terms",
+      "url": "https://cloud.google.com/maps-platform/terms/maps-service-terms",
+      "status": "original_page_read",
+      "findings": [
+        "Places API permits display without a corresponding map but restricts use with non-Google maps.",
+        "Places UI Kit has an explicit exception for non-Google maps. This is not a general photo-storage or directory-use exception.",
+        "ID caching exceptions do not authorize an owned image archive."
+      ],
+      "scope": "Non-EEA terms page; a particular customer's actual agreement and billing jurisdiction must be checked before implementation."
+    },
+    {
+      "id": "google-embed-billing",
+      "url": "https://developers.google.com/maps/documentation/embed/usage-and-billing",
+      "status": "original_page_read",
+      "findings": ["Maps Embed API currently has no usage charge and requires an API key; license restrictions still apply."],
+      "decision": "Price is separate from permitted purpose; do not generalize the free tier to other APIs."
+    },
+    {
+      "id": "google-streetview-policies",
+      "url": "https://developers.google.com/maps/documentation/streetview/policies",
+      "status": "original_page_read",
+      "findings": ["Panorama IDs have a caching exception; attribution and applicable product policies remain required."],
+      "decision": "No general right to save and rehost image files."
+    },
+    {
+      "id": "google-places-policies",
+      "url": "https://developers.google.com/maps/documentation/places/web-service/policies",
+      "status": "original_page_read",
+      "findings": ["Photos have author-attribution and source-photo access requirements, with documented layout-specific details."],
+      "decision": "Do not treat Google Maps UI photos as downloadable merchant-owned assets."
+    },
+    {
+      "id": "copyright-photos",
+      "url": "https://www.copyright.gov/engage/docs/photography.pdf",
+      "status": "original_pdf_text_read",
+      "findings": ["Photos are protected when created; possessing a photo or being its subject is different from owning its copyright."],
+      "decision": "For merchant-supplied photos, obtain a license from someone who actually holds the rights. Public availability or attribution alone does not supply permission."
+    },
+    {
+      "id": "mapillary-license",
+      "url": "https://help.mapillary.com/hc/en-us/articles/115001770409-CC-BY-SA-license-for-open-data",
+      "status": "original_help_page_read",
+      "findings": ["Help page describes contributed imagery under CC BY-SA with source, contributor and license attribution."],
+      "unknowns": ["Toy District address-level coverage", "capture dates", "per-image license version", "API acquisition and current full terms"],
+      "terms_url": "https://www.mapillary.com/terms",
+      "terms_access_result": "JavaScript shell only; full terms not readable with the web text tool",
+      "decision": "Conditional research candidate, not an approved ready-to-deploy feed."
+    },
+    {
+      "id": "commons-reuse",
+      "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+      "status": "original_page_read",
+      "findings": ["Reuse depends on the individual file's creator/license and attribution/derivative conditions."],
+      "decision": "Verify each file; do not transfer a platform-wide permission assumption to every image."
+    },
+    {
+      "id": "commons-toy-district-example",
+      "url": "https://commons.wikimedia.org/wiki/File:In_LA%27s_%22Toy_District%22_(2011-01-07_13.49.17_by_David_Hilowitz).jpg",
+      "status": "file_description_and_license_read; image_not_downloaded_or_republished",
+      "creator": "David Hilowitz",
+      "capture_date": "2011-01-07",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "findings": ["A named, dated, openly licensed district-image candidate exists."],
+      "decision": "Possible historical district-context illustration after visual suitability review; not evidence of a merchant's current facade or operation.",
+      "coverage_limit": "One file examined from a category containing 4 files. No exhaustive Commons search or coverage estimate."
+    },
+    {
+      "id": "ladot-loading",
+      "url": "https://ladot.lacity.gov/residents/colored-curb-zones",
+      "status": "original_page_read_via_HTTPS_HTTP_200_after_web_text_tool_internal_errors",
+      "findings": ["Commercial-plate freight loading and ordinary-car passenger/baggage loading have different yellow-zone conditions. Posted signs and other regulations apply."],
+      "decision": "Useful general loading explainer; does not identify a specific merchant's loading space or authorize parking there."
+    },
+    {
+      "id": "ladot-meters",
+      "url": "https://ladotparking.org/parking-meters/faq/",
+      "status": "original_page_read",
+      "findings": ["Meter rates vary by area and sometimes time; metered spaces cannot be reserved."],
+      "decision": "Replace unsupported district-wide price promises with dated official guidance and the relevant live source."
+    },
+    {
+      "id": "cdtfa-documents",
+      "url": "https://cdtfa.ca.gov/industry/new-permit-and-license-holders/managing-your-sales.htm",
+      "status": "original_page_read",
+      "findings": ["A seller's permit copy is not a substitute for a resale certificate."],
+      "decision": "Separate tax documentation, merchant account approval and pricing eligibility. Link to official guidance; do not collect buyers' documents or provide individualized tax conclusions."
+    },
+    {
+      "id": "cbh-refund-new",
+      "url": "https://caballoonhouse.com/policies/refund-policy",
+      "status": "original_page_read; latest_recheck_HTTP_200_via_direct_HTTPS_after_web_text_tool_internal_errors; candidate_not_published",
+      "store_id": "california-balloon-house-447",
+      "new_vs_previous_pilot": "new policy information, not in the existing 11 online facts",
+      "findings": [
+        "Policy states general sales are final and returns/refunds/exchanges are not accepted.",
+        "Incorrect delivered items should be reported within the merchant's stated 48 business hours for replacement and a return label.",
+        "Air-filled balloons sold at the physical location and helium items have specific nonrefund language."
+      ],
+      "scope": "Merchant-published policy, not a statement of legal enforceability or all statutory rights. Preserve business-hours wording; do not convert it into two calendar days."
+    },
+    {
+      "id": "cbh-stale-notice",
+      "url": "https://caballoonhouse.com/",
+      "status": "original_page_read",
+      "findings": ["Page still displayed a shipping-pause notice for the week of 2026-03-16 with resumption on 2026-03-23."],
+      "decision": "Do not interpret this October page retrieval as evidence of a current shipping pause; checked_at is not source freshness."
+    },
+    {
+      "id": "toms-template-policy",
+      "url": "https://toms-model.myshopify.com/products/pop-disney-vinyl-mulan-golden-mushu-cricket-toms-model-exclusive?variant=32244642250815",
+      "status": "original_page_read; candidate_held",
+      "findings": ["A 30-day-return/worldwide-shipping block appears next to Lorem ipsum and generic account-return instructions."],
+      "decision": "Possible template residue; not proof the policy is false, but insufficient to publish a universal merchant promise without confirmation."
+    },
+    {
+      "id": "toms-catalog",
+      "url": "https://toms-model.myshopify.com/",
+      "status": "original_page_read",
+      "findings": ["Official navigation includes Funko Pops, LEGO and Bandai collections."],
+      "decision": "Can support attributed catalog-category links, not current in-store stock, wholesale availability or authorized-dealer certification."
+    },
+    {
+      "id": "casa-price-scope",
+      "url": "https://www.casamanga.com/",
+      "status": "original_page_read; confirms_existing_pilot_scope",
+      "findings": ["Public page differentiates US retail free shipping from wholesale pricing that requires login."],
+      "decision": "Public retail prices cannot be used as wholesale quotes or to calculate reseller profit."
+    },
+    {
+      "id": "cpsc-recall-api",
+      "url": "https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information",
+      "status": "original_page_read_after_Claude_round2",
+      "findings": ["CPSC provides public recall information through XML/JSON web services for consumers, businesses and developers."],
+      "decision": "Useful official lookup/link candidate. Automated matching would require exact product identification and freshness validation; no search result is not safety or compliance certification.",
+      "limits": ["API documentation landing page examined; API integration and product matching not performed", "No local merchant product checked against recalls", "Not part of the two completed Claude review rounds"]
+    },
+    {
+      "id": "cpsc-seller-guidance",
+      "url": "https://www.cpsc.gov/Business--Manufacturing/Online-Sellers-Safety-Guide",
+      "status": "original_page_read_after_Claude_round2",
+      "findings": ["Official resource hub includes reseller guidance, product certificate information and product-safety resources."],
+      "decision": "Link as a buyer preparation resource; do not label a product compliant or a merchant unsafe from generic guidance."
+    },
+    {
+      "id": "osm-license",
+      "url": "https://www.openstreetmap.org/copyright",
+      "status": "original_page_read",
+      "findings": ["OpenStreetMap data reuse is subject to its license and attribution requirements."],
+      "decision": "Any later itinerary calculation needs appropriately sourced coordinates and a usable pedestrian network. Straight-line distance is not a verified walking route, travel time, accessibility or safety score."
+    }
+  ],
+  "actions_not_taken": ["merchant outreach", "photo downloads or screenshots", "paid API activation", "website/data changes", "deployment", "commit or push of this review"],
+  "limits": ["No current storefront-photo license cleared for a specific listed merchant", "No new buyer demand or conversion data collected", "GSC access remains unavailable", "No real-time stock, negotiated price, operational-status or accessibility verification"]
+}

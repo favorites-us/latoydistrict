@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-10-15T22:50:41.868364+00:00",
+  "assets": [
+    {
+      "path": "/_next/static/chunks/255-8d02907c593afb5f.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 173850,
+      "sha256": "7624307f2e4b38c7ab80717441f7182d44bb069485288edd0706cf4523a7552d"
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c023c6e3521b1417.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2"
+    },
+    {
+      "path": "/_next/static/chunks/619-ba102abea3e3d0e4.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 8537,
+      "sha256": "9541ff3dd96091ca8bebc305fb72eca68e6015a177e1d3b4aa72859dc52fbdd7"
+    },
+    {
+      "path": "/_next/static/chunks/706-0b76e93fc8a3ad80.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 13084,
+      "sha256": "43df2e1242d4d96f1992dd59ca0d6ac77bda4cd43248afbc381620e0e1849039"
+    },
+    {
+      "path": "/_next/static/chunks/app/es/stores/%5Bslug%5D/page-d405782f925b29b7.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 128,
+      "sha256": "dcf61d324f9d4043b200d57f4963e95472389d50859ca9a8df12db406125e786"
+    },
+    {
+      "path": "/_next/static/chunks/app/guide/buying-checklist/page-c579825331f39542.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 13438,
+      "sha256": "8365cd3e9710f1aac81ba3f4d69573c0a4512f8e22059540a12448ba27d12f28"
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-1acf63fd0a7d0e1e.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 5335,
+      "sha256": "fa545f42e9d69b4ad2f911ecabd5548b0b2a1ce294db4b72a37bfce9c9b5aa1a"
+    },
+    {
+      "path": "/_next/static/chunks/main-app-f9b5d20365cb8be2.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 557,
+      "sha256": "2e7f54a461dcd0e6291339c749f9048e5dcf98fbd2658bb4fd437d485f3bb385"
+    },
+    {
+      "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 112594,
+      "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+    },
+    {
+      "path": "/_next/static/chunks/webpack-8f11792124c811a0.js?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 5249,
+      "sha256": "850c724ef6e0a85182092651104d0ce521025226329b3714daddf324dbce0227"
+    },
+    {
+      "path": "/_next/static/css/74841dc1c8e32f40.css?dpl=dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe",
+      "status": 200,
+      "bytes": 10016,
+      "sha256": "30f380a3a9ad113355a134f8557eeca1190c9b855560017e7ee02c459b3b601b"
+    }
+  ],
+  "print_action_in_delivered_js": true,
+  "worksheet_print_css_delivered": true,
+  "visual_or_print_execution": false
+}

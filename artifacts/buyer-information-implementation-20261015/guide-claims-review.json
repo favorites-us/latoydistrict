@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-15",
+  "locales": [
+    "en",
+    "es"
+  ],
+  "actions": [
+    {
+      "claim": "90% wholesale; most welcome walk-in retail",
+      "action": "Removed district-wide estimate; ask each merchant about channel and eligibility."
+    },
+    {
+      "claim": "Cash preferred and better cash quotes",
+      "action": "Replaced with neutral payment, fee and quote questions."
+    },
+    {
+      "claim": "Fixed meter and garage prices; advance reservation almost always cheaper",
+      "action": "Replaced with LADOT source and operator-specific checks."
+    },
+    {
+      "claim": "Vendors generally will not hold goods",
+      "action": "Replaced with order-holding and pickup questions."
+    },
+    {
+      "claim": "Weekday mornings improve staffing, stock or negotiations",
+      "action": "Removed unsupported operating-pattern claims."
+    },
+    {
+      "claim": "Specific Metro station address, fixed walking time and local bus routes",
+      "action": "Replaced with official date-and-destination trip planner."
+    },
+    {
+      "claim": "Easy universal wholesale access, low minimums, same-day or same-week restock",
+      "action": "Replaced with item-specific eligibility, quote, minimum and reorder questions."
+    },
+    {
+      "claim": "Generic products are safe; apparent cheap licensed products are counterfeit",
+      "action": "Removed categorical claims; product identity and official CPSC resource guidance added."
+    },
+    {
+      "claim": "Seller permit universally required for resale; certificate automatically skips tax",
+      "action": "Separated account pricing rules from CDTFA resale documentation; no personal tax conclusion."
+    },
+    {
+      "claim": "Every supplier listed; ground verification implied for all records",
+      "action": "Home/footer now describe registration-derived listings and cited online information."
+    }
+  ],
+  "remaining_unverified": "Merchant availability, stock, individual prices, physical access, route safety, image reuse and actual buyer demand remain unverified."
+}

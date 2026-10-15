@@ -1,0 +1,49 @@
+You are reviewing a live small-business directory product. Respond in Korean. This is a critical product/evidence discussion, not an implementation task. You have no browsing/tools in this run. Separate conclusions supported by the supplied evidence from ideas that still need validation. Do not invent research, measured demand, imagery coverage, current stock, prices, or legal certainty.
+
+USER REQUEST (2026-10-15): Can we legitimately obtain each merchant's photos, e.g. screenshots of Google Street View, or is all of that illegal? What other useful information for a buyer planning to visit/purchase in LA's Toy District can we derive from online research? Discuss with Claude and recommend what is worth providing.
+
+PROJECT / COMPLETED EVIDENCE
+- https://toydistrictlosangeles.com, bilingual EN/ES directory. 191 registration-derived merchant candidates, not a verified operating-business census.
+- 2026-10-14 pilot deployed: 9 merchants enriched; 35 phones, 4 emails, 10 website links (some inherited/unverified), 11 sourced buying/service notes; only 1 merchant has unambiguous published hours.
+- Prior GA: organic sessions 130 -> 192 across matched 28-day windows. Measured inquiry events 0 in both windows, not proof of zero actual inquiries. No demonstrated revenue or paid acquisition justification.
+- Fixed random sample of 20 yielded 4 directory-only phones, 0 new official buying terms. Four already-known official sites yielded useful details when read deeply. No case for crawling all 191.
+- Already published: American Silk's conflicting closing times and $3,000 wholesale-application scope vs one-item pricing; California Balloon House in-person prepaid helium ordering, outside balloons, generally 25+ balloons/3 days notice, separate service cutoff, shipping policy; Casa Manga signup/login/email and Spanish support; Tom's Model contact and retail/retailer positioning; Jada lists Funland/FLT (not current inventory proof).
+- Existing source policy excludes Google Maps/Places/GBP as a database input. That is a project policy, not a claim every Google integration is illegal. Frontend uses MapLibre, so non-Google-map compatibility matters. No merchant outreach authorized for this research.
+- Existing guide contains unsourced generalizations needing review: roughly 90% wholesale, cash preferred, vendors generally won't hold goods, broad parking prices, and a possibly outdated Metro station street address. Do not present these as verified facts.
+
+PRIMARY SOURCES OPENED TODAY (concise paraphrases, not independent legal advice)
+1. Google Geo Guidelines: https://about.google/brand-resource-center/products-and-services/geo-guidelines/
+Street View Web/apps permits supported embed/API use generally, but explicitly prohibits screenshots/removing imagery from embedded sources; additional restrictions include deriving data/digitizing, application-based extraction, and downloading for separate use. Google Maps ordinary map screenshot guidance must not be conflated with Street View. Fair use is case specific; Google does not decide it.
+2. Maps Platform Terms: https://cloud.google.com/maps-platform/terms (3.2.3)
+Restricts scraping/export/storage, caching except exceptions, and creating derived content. 3.2.3(d)(iii) explicitly mentions use of Core Services in a listings/directory service. 3.2.3(e) includes Street View alongside non-Google maps. Thus API existence is NOT a blanket green light for this directory. Exact commercial implementation requires resolving applicable terms; do not assert court-determined illegality.
+3. Service-specific terms: https://cloud.google.com/maps-platform/terms/maps-service-terms
+Places API may be displayed without a corresponding map but not with a non-Google map; Places UI Kit has its own explicit non-Google-map exception. A product-specific exception does not automatically authorize photo rehosting or all directory use.
+4. Embed API billing: https://developers.google.com/maps/documentation/embed/usage-and-billing
+Currently no charge/unlimited requests, API key required; explicitly remains subject to license restrictions. Other imagery APIs are not assumed free.
+5. Street View Static policies: https://developers.google.com/maps/documentation/streetview/policies
+Pano IDs have a storage exception; this does not grant a general right to save image files as our own photo library. Attribution and applicable app policies apply.
+6. Places policies: https://developers.google.com/maps/documentation/places/web-service/policies
+Photo attribution and source-photo access required; use depends on API/terms, not downloading Google Maps UI photos.
+7. Mapillary help: https://help.mapillary.com/hc/en-us/articles/115001770409-CC-BY-SA-license-for-open-data
+Says contributed imagery is CC BY-SA with contributor/source/license attribution. Coverage, capture dates, image/license version, API access and separate terms have NOT been checked for these shops.
+8. Commons reuse: https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia
+Each file has its own creator/license requirements; public accessibility does not remove them. Toy District category found, but no proof of current storefront coverage.
+9. LADOT colored curbs: https://ladot.lacity.gov/residents/colored-curb-zones
+Commercial yellow-zone loading differs from ordinary-car passenger/baggage loading; posted signs/other restrictions also govern. Useful district-level loading guidance, not proof of a particular shop's loading zone.
+10. LADOT parking meters FAQ: https://ladotparking.org/parking-meters/faq/
+Meter prices vary by area and sometimes time; spaces cannot be reserved. No basis for a universal $3/hour district quote or current vacancy promises.
+11. CDTFA: https://www.cdtfa.ca.gov/industry/new-permit-and-license-holders/managing-your-sales.htm
+Seller's permit copy is not a substitute for a resale certificate. Store account approval, wholesale pricing, and tax documentation must be separated. This does not supply individual-store eligibility.
+
+MY PROVISIONAL THESIS TO CHALLENGE
+The best near-term product is a sourced pre-purchase/visit checklist and evidence-based comparison for the few merchants with official information, not a universal 191-store photo gallery or AI-inferred inventory database.
+Photo priority: rights-cleared owner-supplied originals or commissioned photos; check CC assets as optional district-context material; link to original merchant galleries/external Street View as a low-cost fallback. Official merchant-site photos aren't automatically licensed to us. Never use synthetic storefront photos as actual evidence.
+Buyer features to evaluate: visit vs online channels; documents/approval; unit/case minimum and mixed cases; pickup/shipping and deadlines; returns/damage claims; exact unit/entrance (only verified); official catalogs/brand listings; compare shortlist; dated infrastructure links (parking/transit/loading); EN/ES inquiry questions. Current stock, negotiated wholesale prices, profitability, open-now across all stores, parking vacancy, door accessibility/safety cannot be inferred from weak data.
+Potential alternative: A manual short walk to photograph a few storefronts might outperform weeks of online coverage hunting, but user asked primarily about online research, so treat it as comparison, not required task.
+
+Please provide:
+1. Direct nuanced answer on images: contract restrictions vs law, supported display vs owned assets, merchant copyright, Google directory/non-Google-map issues.
+2. Rank at most 6 buyer information products by decision value, actual evidence availability, maintenance burden, and incremental value over Google Maps/merchant sites. Keep existing pilot facts separate from new discovery.
+3. Attack my thesis: what should be removed, where photos might outrank textual guides, where we lack demand evidence.
+4. A small falsifiable follow-up experiment with a concrete output, labor/time tracking, and stop conditions. No manufactured expected conversion lift.
+5. Explicit uncertainty and what new evidence would change your judgment. No contacting businesses, paid API setup, site writes or claimed independent browsing.

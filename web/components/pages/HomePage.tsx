@@ -49,9 +49,9 @@ export default function HomePage({ locale }: { locale: Locale }) {
                 <h3>{t(locale, "guide_wholesale_title")}</h3>
                 <p>{t(locale, "nav_wholesale")}</p>
               </Link>
-              <Link className="guide-card" href={p("/guide/for/party-planners")}>
+              <Link className="guide-card" href={p("/guide/buying-checklist")}>
                 <h3>{t(locale, "guide_buyers_title")}</h3>
-                <p>{t(locale, "lead_type_party")} · {t(locale, "lead_type_store")} · {t(locale, "lead_type_reseller")}</p>
+                <p>{t(locale, "worksheet_link")}</p>
               </Link>
             </div>
           </div>

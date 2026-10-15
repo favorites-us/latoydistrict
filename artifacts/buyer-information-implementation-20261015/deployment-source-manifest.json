@@ -1,0 +1,246 @@
+{
+  "root": "web",
+  "source_base_commit": "2a05e7ed1da90dd5b2f576d8a3cfaa918bb5bd2d",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "1020ee9e84c2553a04d656280374b01009d990ffb0e53f3eb77ec58dc30aeeb8",
+      "bytes": 939
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "56537ebe03160a28fdb6e59ae18f408d6f8aba609df73c45917c9358fd3bad52",
+      "bytes": 8
+    },
+    {
+      "path": "app/api/keepalive/route.ts",
+      "sha256": "863c89e271678baeca681b55098ef63365484e9b960eb3550c732029ff80d528",
+      "bytes": 1810
+    },
+    {
+      "path": "app/api/leads/route.ts",
+      "sha256": "64241d2286a63f1aba7620a667fca5ec2e6c0b76a7b71671d52c8dd399ebf897",
+      "bytes": 1750
+    },
+    {
+      "path": "app/es/guide/buying-checklist/page.tsx",
+      "sha256": "2f0b9bacba8d0df48b9705b4267c883801a483a3ad5cd7d3ebb16a4cfd62af71",
+      "bytes": 451
+    },
+    {
+      "path": "app/es/guide/for/[buyer]/page.tsx",
+      "sha256": "97723202d31cbf1860a0b91d56b3ec7f65a3245f85d1441c514520185ae0b284",
+      "bytes": 948
+    },
+    {
+      "path": "app/es/guide/visiting/page.tsx",
+      "sha256": "daa086e0aff252030924515da634013725b5a7f2b4be0e98cd20b2c0ed7c3e86",
+      "bytes": 407
+    },
+    {
+      "path": "app/es/guide/wholesale-basics/page.tsx",
+      "sha256": "0d214002964deed53402a84906388ac5d47ec1eda4fc4534b6e183f614c44900",
+      "bytes": 462
+    },
+    {
+      "path": "app/es/page.tsx",
+      "sha256": "a1b3c94a8cd3c0eec792ee96caafd62cd107bd5ee95c073b58d33c9d50566b9c",
+      "bytes": 398
+    },
+    {
+      "path": "app/es/stores/[slug]/page.tsx",
+      "sha256": "d95888bfe741c10ce63d83b15c922a73fd1831acb018e6704270772504c99e57",
+      "bytes": 1043
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "7e35b9da5de002d371effbe647db1aa3d9e859bdc6c842dbec525346d6f06e58",
+      "bytes": 12480
+    },
+    {
+      "path": "app/guide/buying-checklist/page.tsx",
+      "sha256": "d7218c3a00efc43024027818f892e394f2e1d2238f5ef2e83f59278c2eb0b4a2",
+      "bytes": 451
+    },
+    {
+      "path": "app/guide/for/[buyer]/page.tsx",
+      "sha256": "df877e3d17897072ce4335515d9ff4a2461efd5de064de316d7dd5c1eedcf66c",
+      "bytes": 948
+    },
+    {
+      "path": "app/guide/visiting/page.tsx",
+      "sha256": "a4a58c05c4e874854f0b2908c146bfb967434ab5fc25bc8bfc42699c30189c5c",
+      "bytes": 407
+    },
+    {
+      "path": "app/guide/wholesale-basics/page.tsx",
+      "sha256": "f0790afe3d5dd4138ce74a50a89e69cbc021dc5892606ad37b396f7d12f52ebf",
+      "bytes": 462
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "ddb2b0df97c0493ead26175c4456c96589a78f51f6c6c4357c11fae23611da22",
+      "bytes": 1418
+    },
+    {
+      "path": "app/not-found.tsx",
+      "sha256": "eac6efd576197cea5475e7944fbfa2c10783f76b08c5dd6bd24712ef2e1d1b6c",
+      "bytes": 575
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "a0b6650817c2d1455b8d9988d9ca078b3fcbdafc82df5bf934204a3b79c6b6d9",
+      "bytes": 389
+    },
+    {
+      "path": "app/robots.ts",
+      "sha256": "0e485a029d4baa99b0bf0ce49d606e78bd2a25a0d540a2f8f524929d83fcf289",
+      "bytes": 264
+    },
+    {
+      "path": "app/sitemap.ts",
+      "sha256": "787f4050a8ad57e55826d5833af55fc3298a262a4d8549536fcb371f95e46979",
+      "bytes": 1207
+    },
+    {
+      "path": "app/stores/[slug]/opengraph-image.tsx",
+      "sha256": "c52ae5b4ded06fa4eeedd2e2840316e2adf04e78fc035d8d9f2dcf1cd03108a6",
+      "bytes": 1599
+    },
+    {
+      "path": "app/stores/[slug]/page.tsx",
+      "sha256": "a06c85454b1b6a24d56879edbacba60da810320b9d2ed83ab4db9ebdfa2e3cf6",
+      "bytes": 1031
+    },
+    {
+      "path": "components/BuyerWorksheet.tsx",
+      "sha256": "3506ba8a937cc90c19f3ae2a59b8831941b755501693feb05fffbbcb69f2ddf3",
+      "bytes": 2569
+    },
+    {
+      "path": "components/DirectoryBrowser.tsx",
+      "sha256": "b6cde1c78424a8f368133c4446dc469e2dafb1701703592e361f1f00d67fbaca",
+      "bytes": 2885
+    },
+    {
+      "path": "components/DistrictMap.tsx",
+      "sha256": "f1510b9b544402389103649e4d685308949ac87ac7f41e040e0c7a4e7009b369",
+      "bytes": 8113
+    },
+    {
+      "path": "components/JsonLd.tsx",
+      "sha256": "1534540256b3d24c20a7dcb7129245ec28a3435a8e9344108ab97680493c2ccb",
+      "bytes": 196
+    },
+    {
+      "path": "components/LeadForm.tsx",
+      "sha256": "191d3f723e706e54d6d2df2a05b6d63e5fe515a439584a3fe91dfc546d08755c",
+      "bytes": 2312
+    },
+    {
+      "path": "components/SiteChrome.tsx",
+      "sha256": "b2d12299473a3afd22c63697397865ed9e289f1aebe39d0223508f07a5506704",
+      "bytes": 2245
+    },
+    {
+      "path": "components/StoreCard.tsx",
+      "sha256": "4f60e73cafd0dd9d4cb80ad4f064473121c6f77c309af4accaea81720502c26b",
+      "bytes": 1158
+    },
+    {
+      "path": "components/StoreContactLink.tsx",
+      "sha256": "ddbe3f365905cee34613c5cbeed7b617b47dff40746754678352db26fb225539",
+      "bytes": 698
+    },
+    {
+      "path": "components/StoreInquiryForm.tsx",
+      "sha256": "e4e7d4ece53369b07f90fd45a300966ba3ee134e207da913f6e7add78a526656",
+      "bytes": 2093
+    },
+    {
+      "path": "components/StoreViewEvent.tsx",
+      "sha256": "909ed779e52ae03e73347accaa4804c3ea0cf5b7c15666e49652685e01d8ac2d",
+      "bytes": 299
+    },
+    {
+      "path": "components/pages/GuidePage.tsx",
+      "sha256": "bd94f5f5063a4cb8921324eddeb58fcf9234e6e628ced29c0cd3fe0c8cacc213",
+      "bytes": 3017
+    },
+    {
+      "path": "components/pages/HomePage.tsx",
+      "sha256": "10e39f9690cd9167feeef0872aa126e6f95991b077b372c9310463bb5e178e8d",
+      "bytes": 2630
+    },
+    {
+      "path": "components/pages/StorePage.tsx",
+      "sha256": "916e67a4e79699a8d0ae7519fc16123afb9639680b25a88987735c43ecd83089",
+      "bytes": 9561
+    },
+    {
+      "path": "data/stores.json",
+      "sha256": "c1a619d010501648cdd3bb4f905e6b1dc2198c3ae89f880d454f6d2f3881989e",
+      "bytes": 194149
+    },
+    {
+      "path": "lib/content/buyer-questions.ts",
+      "sha256": "f713777bce981b854fd242239ac0383becf90125c72a78d256a81c2529037ead",
+      "bytes": 2186
+    },
+    {
+      "path": "lib/content/guides.ts",
+      "sha256": "07bd51e036a684e59602cdf397b6a805a572bfe28413c45c2e6f60d66d8f726c",
+      "bytes": 26862
+    },
+    {
+      "path": "lib/i18n.ts",
+      "sha256": "e1a1585e82bddaa967e8a7407a72997b5bb3b67fdc1f95ed80eb1df4754ce971",
+      "bytes": 10386
+    },
+    {
+      "path": "lib/jsonld.ts",
+      "sha256": "91b34606b6ba8833dc79246885aea14c0187ea8eb8e9a4c563b3eef8cb3d3f70",
+      "bytes": 1824
+    },
+    {
+      "path": "lib/meta.ts",
+      "sha256": "73dbc25f9bb06d1d248508e5596b1a18ff4defe9464a0047ccd17f7b07264edb",
+      "bytes": 509
+    },
+    {
+      "path": "lib/stores.ts",
+      "sha256": "afd97c1e166e4db7b17120f854b62fdb2ec79361073938a14c0f6fd183610cfb",
+      "bytes": 2505
+    },
+    {
+      "path": "next.config.mjs",
+      "sha256": "3fde95ad7c64defe278cb8f0eb8e9dd40bae91bac677de0da34384c1c8480322",
+      "bytes": 518
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5d4520c96b3a33989acd0fac23e9ee61daa2daec8e2c41398999f6231b565181",
+      "bytes": 42212
+    },
+    {
+      "path": "package.json",
+      "sha256": "37a6906719e5534e1274ca741895ea744c7788e688d42945077ac9a75f7767db",
+      "bytes": 430
+    },
+    {
+      "path": "public/ads.txt",
+      "sha256": "886c7f45af15551a1cbf69dcb1a9e0f04a7e6998a2e6f9117819c08e0c781860",
+      "bytes": 59
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "f6c45b018bb65e857354f73bf3282ee39208d00b07f081d9467fed8af020afb5",
+      "bytes": 562
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "844003de35fce14492e98d7c4e2dff7ed9f522836b2923cbe83e498c308a4630",
+      "bytes": 149
+    }
+  ]
+}

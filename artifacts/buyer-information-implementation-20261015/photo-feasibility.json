@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-15",
+  "cohort": [
+    {
+      "id": "american-silk-inc-340",
+      "name": "American Silk",
+      "address": "340 E 4th St, Los Angeles CA 90013",
+      "official_url": "https://www.americansilkinc.com/",
+      "checked_at": "2026-10-15",
+      "official_pages_reviewed": [
+        "https://www.americansilkinc.com/",
+        "https://www.americansilkinc.com/about-us",
+        "https://www.americansilkinc.com/catalog"
+      ],
+      "commons_query": "site:commons.wikimedia.org \"American Silk\" \"Los Angeles\"",
+      "commons_result": "No address-matched storefront file identified in the limited returned results; no inference of absent photos.",
+      "image_metadata_scope": "Official HTML/text and linked file descriptions only; images not downloaded or visually identified.",
+      "reuse_permission": "not_established_in_review",
+      "capture_date": null,
+      "current_storefront_identity_match": "unconfirmed",
+      "publication": "No local photo published. Official catalog/product-photo links supplied instead."
+    },
+    {
+      "id": "california-balloon-house-447",
+      "name": "California Balloon House",
+      "address": "447 Wall St, Los Angeles CA 90013",
+      "official_url": "https://caballoonhouse.com/",
+      "checked_at": "2026-10-15",
+      "official_pages_reviewed": [
+        "https://caballoonhouse.com/",
+        "https://caballoonhouse.com/pages/faq"
+      ],
+      "commons_query": "site:commons.wikimedia.org \"California Balloon House\"",
+      "commons_result": "No address-matched storefront file identified in the limited returned results; no inference of absent photos.",
+      "image_metadata_scope": "Official HTML/text and linked file descriptions only; images not downloaded or visually identified.",
+      "reuse_permission": "not_established_in_review",
+      "capture_date": null,
+      "current_storefront_identity_match": "unconfirmed",
+      "publication": "No local photo published. Official catalog/product-photo links supplied instead."
+    },
+    {
+      "id": "casa-manga-218",
+      "name": "Casa Manga",
+      "address": "218 Boyd St #D, Los Angeles CA 90013",
+      "official_url": "https://www.casamanga.com/",
+      "checked_at": "2026-10-15",
+      "official_pages_reviewed": [
+        "https://www.casamanga.com/"
+      ],
+      "commons_query": "site:commons.wikimedia.org \"Casa Manga\" \"Boyd\"",
+      "commons_result": "No address-matched storefront file identified in the limited returned results; no inference of absent photos.",
+      "image_metadata_scope": "Official HTML/text and linked file descriptions only; images not downloaded or visually identified.",
+      "reuse_permission": "not_established_in_review",
+      "capture_date": null,
+      "current_storefront_identity_match": "unconfirmed",
+      "publication": "No local photo published. Official catalog/product-photo links supplied instead."
+    },
+    {
+      "id": "tom-s-model-501",
+      "name": "Tom's Model",
+      "address": "501 E 4th St, Los Angeles CA 90013",
+      "official_url": "https://toms-model.myshopify.com/",
+      "checked_at": "2026-10-15",
+      "official_pages_reviewed": [
+        "https://toms-model.myshopify.com/",
+        "https://toms-model.myshopify.com/pages/about-us",
+        "https://toms-model.myshopify.com/collections/lego"
+      ],
+      "commons_query": "site:commons.wikimedia.org \"Tom's Model\" \"Los Angeles\"",
+      "commons_result": "No address-matched storefront file identified in the limited returned results; no inference of absent photos.",
+      "image_metadata_scope": "Official HTML/text and linked file descriptions only; images not downloaded or visually identified.",
+      "reuse_permission": "not_established_in_review",
+      "capture_date": null,
+      "current_storefront_identity_match": "unconfirmed",
+      "publication": "No local photo published. Official catalog/product-photo links supplied instead."
+    }
+  ],
+  "shared_commons_category": "https://commons.wikimedia.org/wiki/Category:Buildings_in_Toy_District,_Los_Angeles",
+  "historical_candidate": "See prior evidence.json: David Hilowitz 2011-01-07, CC BY 2.0, district context only; not visually reviewed or assigned to a merchant.",
+  "approved_current_storefront_photos": 0,
+  "scope_limit": "No exhaustive image search, no coverage extrapolation, no merchant contact and no Google content extraction. Copyright, date and identity are separate checks."
+}

@@ -1,500 +1,262 @@
-// Guide copy for both locales, committed and human-editable. Facts here are
-// research-based but unverified on the ground — keep hedged wording ("most",
-// "typically") until Phase 3 field checks replace it with confirmed detail.
-
+// Reviewed EN/ES copy. Questions are preparation prompts, not merchant facts.
 import type { Locale } from "../i18n";
 
+export interface GuideLink { label: string; href: string }
+export interface GuideSource extends GuideLink { checked_at: string }
 export interface GuideSection {
   h: string;
   ps: string[];
   bullets?: string[];
+  links?: GuideLink[];
+  sources?: GuideSource[];
 }
-
 export interface Guide {
   title: string;
   description: string;
+  reviewed_at: string;
   sections: GuideSection[];
   faq?: { q: string; a: string }[];
+  worksheet?: boolean;
 }
+
+const reviewed_at = "2026-10-15";
+const source = (label: string, href: string): GuideSource => ({ label, href, checked_at: reviewed_at });
+const meters = source("LADOT: parking meters", "https://ladotparking.org/parking-meters/faq/");
+const loading = source("LADOT: colored curb zones", "https://ladot.lacity.gov/residents/colored-curb-zones");
+const transit = source("Metro: trip planner", "https://www.metro.net/riding/trip-planner/");
+const resale = source("CDTFA: sales for resale", "https://cdtfa.ca.gov/industry/new-permit-and-license-holders/managing-your-sales.htm");
+const recalls = source("CPSC: recalls", "https://www.cpsc.gov/Recalls");
+const productSafety = source("CPSC: online sellers’ safety guide", "https://www.cpsc.gov/Business--Manufacturing/Online-Sellers-Safety-Guide");
+const checklistLink = (locale: Locale): GuideLink => ({
+  label: locale === "en" ? "Purchase checklist & printable worksheet" : "Lista de compra y hoja para imprimir",
+  href: "/guide/buying-checklist",
+});
 
 export const visiting: Record<Locale, Guide> = {
   en: {
-    title: "Visiting the Toy District: parking, hours, safety & cash",
-    description:
-      "Practical guide to visiting LA's Toy District in Downtown Los Angeles — where to park, when stores are open, how safe it is, and why you should bring cash.",
+    title: "Visiting the Toy District: plan your purchase and pickup",
+    description: "Check store hours, purchasing arrangements, parking and pickup before a buying trip to Downtown Los Angeles.",
+    reviewed_at,
     sections: [
       {
-        h: "Where exactly is it?",
-        ps: [
-          "The Toy District covers roughly 12 blocks of Downtown Los Angeles: E 3rd St to E 5th St, between S Los Angeles St and S San Pedro St (ZIP 90013). The densest wholesale blocks are Wall St, Winston St and Boyd St. Little Tokyo is immediately north across 3rd St.",
-          "If you're navigating by GPS, aim for the corner of 4th St & Wall St and walk from there — the district is compact and best covered on foot.",
-        ],
+        h: "Start with the exact store address",
+        ps: ["This directory covers the area between E 3rd and E 5th Streets, from S Los Angeles Street to S San Pedro Street. Use the address and suite on each listing to plan your stops.", "Listings begin with city business registrations. A registration or map pin does not confirm that a storefront is currently open. Contact the business before making a dedicated trip."],
       },
       {
-        h: "Hours: go on a weekday morning",
-        ps: [
-          "Most wholesalers here keep daytime hours, typically opening mid-morning and closing by late afternoon. Many are open Saturdays (often the busiest retail day) and closed or limited on Sundays.",
-          "If you're buying wholesale quantities, weekday mornings are the practical choice: staff have time to quote case prices, and stock is easiest to pull. Exact hours vary store to store and aren't published anywhere reliable — that's a gap this directory is working through block by block.",
-        ],
+        h: "Confirm hours and purchasing arrangements",
+        ps: ["Ask about the day you intend to visit, whether walk-in purchases are available, and whether an appointment or approved wholesale account is required. A service or pickup deadline may be earlier than the shop’s closing time.", "Reviewed online information includes a source and the date we read that page. Conflicting hours remain unconfirmed."],
+        links: [checklistLink("en")],
       },
       {
-        h: "Parking: reserve a lot, don't circle for meters",
-        ps: [
-          "There's no dedicated district parking, but a cluster of pay lots and garages sits one block west along S Main St and on S Los Angeles St — a short walk into the core blocks. Reserving ahead on SpotHero, ParkWhiz, SpotAngels or Spacer almost always beats the drive-up rate.",
-          "Approximate all-day rates near the district (reserved price — drive-up runs higher and changes often, so check the app for the live rate):",
-        ],
-        bullets: [
-          "334 S Main St garage — from about $11 for the day (small lot, ~0.1 mi)",
-          "415 & 416 S Main St, garage and lot — roughly $15–22",
-          "330 & 433 S Main St lots — roughly $18–22",
-          "539–545 S Los Angeles St garage — around $21, right on the district's west edge",
-        ],
+        h: "Check parking for your arrival time",
+        ps: ["LADOT meter rates vary by location and sometimes time. Read the meter and all posted restrictions before parking. Metered spaces cannot be reserved.", "For a private lot or garage, check the operator’s current total price, opening hours, vehicle-height limit and re-entry rules. We have not verified current spaces or district-wide prices."],
+        sources: [meters],
       },
       {
-        h: "Metered street parking & loading bulk buys",
-        ps: [
-          "Metered street parking runs around $3/hour and fills early. Read the signs carefully — several through-streets flip to peak-hour tow-away zones in the afternoon, so a meter that was legal at lunch can be a tow at 4pm. For a quick pickup a meter is fine; for a real buying trip a reserved lot is worth it.",
-          "If you're loading bulk purchases, note where your car is before you start buying — vendors generally won't hold goods, and hand-trucking boxes several blocks gets old fast. Some buyers park close, buy heavy, and move the car between stops.",
-        ],
+        h: "Arrange pickup before buying bulky items",
+        ps: ["Ask the merchant where to collect the order, whether it can be held until pickup, and how many boxes you will need to carry.", "LADOT distinguishes freight loading by vehicles with commercial plates from passenger and baggage loading by other vehicles at yellow curbs. A yellow curb is not general shopping parking. Check the posted signs and the full rules for your vehicle and arrival time."],
+        sources: [loading],
       },
       {
-        h: "Getting there by Metro or bus",
-        ps: [
-          "The nearest rail stop is Metro's Little Tokyo/Arts District station (200 N Alameda St), about a 10-minute walk north, served by the A Line and E Line. From there head south on Los Angeles St into the district.",
-          "Several Metro bus lines also run along Los Angeles St and San Pedro St at the district's edges. Transit sidesteps parking entirely, but plan to carry what you buy — it suits browsing and small retail trips more than a bulk wholesale haul.",
-        ],
+        h: "Plan transit for your actual destination",
+        ps: ["Use Metro’s trip planner with the exact store address, travel date and arrival time. Check current service and the walking connection. Consider the size of your order and how you will carry it on the return trip."],
+        sources: [transit],
       },
       {
-        h: "Is the Toy District safe?",
-        ps: [
-          "Honest answer: the district borders Skid Row, and you will see street homelessness, especially along 5th St and toward San Pedro St. During business hours the commercial blocks are busy with buyers, hand trucks and delivery traffic, and daytime visits are routine for thousands of shoppers.",
-          "Sensible rules: go during business hours, keep to the active commercial blocks, don't leave anything visible in your car, and carry cash securely. If you're uneasy, start from the 3rd St side near Little Tokyo and work south.",
-        ],
-      },
-      {
-        h: "Bring cash",
-        ps: [
-          "Many stalls are cash-preferred; some take cards with a minimum purchase or a fee. Wholesale deals in particular tend to be cash transactions. There are ATMs in convenience stores around the district, but fees add up — bring what you plan to spend.",
-          "Ask for a receipt/invoice if you're buying for resale; you'll want it for your books, and legitimate wholesalers expect the request.",
-        ],
+        h: "Confirm payment and access",
+        ps: ["Ask which payment methods are accepted, whether minimums or fees apply, and whether the merchant can provide an itemized invoice.", "If you need step-free entry, room for a cart or help collecting an order, ask the merchant directly. We have not assessed route safety, accessible entrances or current street conditions."],
       },
     ],
     faq: [
-      {
-        q: "Where is the Toy District in Los Angeles?",
-        a: "Downtown LA, between E 3rd St and E 5th St from S Los Angeles St to S San Pedro St, ZIP 90013. The core blocks are Wall St, Winston St and Boyd St.",
-      },
-      {
-        q: "What time do Toy District stores open?",
-        a: "Most stores keep daytime hours, roughly mid-morning to late afternoon, Monday through Saturday. Many are closed or limited on Sundays. Hours vary by store.",
-      },
-      {
-        q: "Is the Toy District safe to visit?",
-        a: "Daytime visits during business hours are routine. The district borders Skid Row, so stay on the active commercial blocks, visit during business hours, and don't leave valuables in your car.",
-      },
-      {
-        q: "Do Toy District stores take credit cards?",
-        a: "Some do, often with minimums or fees, but many stalls prefer cash — especially for wholesale pricing. Bring cash.",
-      },
-      {
-        q: "Can anyone buy in the Toy District, or is it wholesale only?",
-        a: "Both. Roughly 90% of merchants sell at wholesale prices, but most also sell to walk-in retail customers. For true wholesale pricing and bulk orders, bringing a California resale certificate helps.",
-      },
-      {
-        q: "Where can I park in the Toy District?",
-        a: "Pay lots and garages cluster one block west along S Main St (334, 415, 416, 330, 433 S Main) and on S Los Angeles St, roughly $11–22 for the day — cheapest reserved ahead on SpotHero, ParkWhiz, SpotAngels or Spacer. Metered street parking (~$3/hour) fills early and some streets are peak-hour tow-away zones.",
-      },
-      {
-        q: "Can I get to the Toy District by Metro?",
-        a: "Yes. Metro's Little Tokyo/Arts District station (A Line and E Line) is about a 10-minute walk north; head south on Los Angeles St into the district. Several bus lines also run along its edges.",
-      },
+      { q: "What time do Toy District stores open?", a: "Confirm with the individual business for your visit date. Store hours, service cutoffs and pickup deadlines can differ." },
+      { q: "Do I need a wholesale account to shop?", a: "It depends on the merchant and purchase channel. Ask about walk-in retail, wholesale approval and the minimum for your specific order." },
+      { q: "Do stores accept credit cards?", a: "Confirm payment methods, minimums and fees with each merchant. This directory does not assume a district-wide cash or card policy." },
+      { q: "How much does parking cost?", a: "Check the meter or parking operator for your location and arrival time. Prices and restrictions vary; we do not publish a district-wide rate." },
     ],
   },
   es: {
-    title: "Visitar el Toy District: estacionamiento, horarios, seguridad y efectivo",
-    description:
-      "Guía práctica para visitar el Toy District en el centro de Los Ángeles — dónde estacionar, horarios de las tiendas, qué tan seguro es y por qué conviene llevar efectivo.",
+    title: "Visitar el Toy District: prepare su compra y recogida",
+    description: "Confirme horarios, condiciones de compra, estacionamiento y recogida antes de visitar el centro de Los Ángeles.",
+    reviewed_at,
     sections: [
       {
-        h: "¿Dónde queda exactamente?",
-        ps: [
-          "El Toy District abarca unas 12 cuadras del centro de Los Ángeles: de E 3rd St a E 5th St, entre S Los Angeles St y S San Pedro St (código postal 90013). Las cuadras con más mayoristas son Wall St, Winston St y Boyd St. Little Tokyo queda justo al norte, cruzando 3rd St.",
-          "Si usa GPS, ponga como destino la esquina de 4th St y Wall St y recorra a pie desde ahí — el distrito es compacto y se camina fácil.",
-        ],
+        h: "Empiece con la dirección exacta",
+        ps: ["Este directorio cubre el área entre E 3rd y E 5th Streets, desde S Los Angeles Street hasta S San Pedro Street. Use la dirección y el número de local de cada ficha para planear sus visitas.", "Las fichas parten de registros comerciales de la ciudad. Un registro o marcador en el mapa no confirma que la tienda siga abierta. Contacte al negocio antes de hacer un viaje dedicado."],
       },
       {
-        h: "Horarios: vaya entre semana por la mañana",
-        ps: [
-          "La mayoría de los mayoristas abren de día, normalmente a media mañana y cierran a media tarde. Muchos abren los sábados (suele ser el día de más venta al menudeo) y cierran o limitan horario los domingos.",
-          "Si compra por mayoreo, lo práctico es ir entre semana por la mañana: el personal tiene tiempo de cotizar precios por caja y es más fácil sacar mercancía. Los horarios exactos varían por tienda y no están publicados en ningún lado confiable — es justo el hueco que este directorio está llenando cuadra por cuadra.",
-        ],
+        h: "Confirme horarios y condiciones de compra",
+        ps: ["Pregunte por el día de su visita, si puede comprar sin cita y si necesita una cuenta de mayoreo aprobada. El límite para un servicio o una recogida puede ser anterior al cierre de la tienda.", "La información en línea revisada incluye su fuente y la fecha de consulta. Los horarios contradictorios se mantienen sin confirmar."],
+        links: [checklistLink("es")],
       },
       {
-        h: "Estacionamiento: reserve un lote, no dé vueltas por parquímetros",
-        ps: [
-          "No hay estacionamiento propio del distrito, pero hay varios lotes y garajes de pago a una cuadra al oeste sobre S Main St y sobre S Los Angeles St — a poca distancia a pie de las cuadras centrales. Reservar antes en SpotHero, ParkWhiz, SpotAngels o Spacer casi siempre sale más barato que llegar sin reserva.",
-          "Tarifas aproximadas de día cerca del distrito (precio reservando — sin reserva sale más caro y cambia seguido, así que revise la app para el precio actual):",
-        ],
-        bullets: [
-          "Garaje 334 S Main St — desde unos $11 por el día (lote chico, ~0.1 mi)",
-          "415 y 416 S Main St, garaje y lote — más o menos $15–22",
-          "Lotes 330 y 433 S Main St — más o menos $18–22",
-          "Garaje 539–545 S Los Angeles St — alrededor de $21, justo en el borde oeste del distrito",
-        ],
+        h: "Revise el estacionamiento para su hora de llegada",
+        ps: ["Las tarifas de los parquímetros de LADOT varían según el lugar y, en algunos casos, la hora. Lea el parquímetro y todas las restricciones antes de estacionarse. Los espacios con parquímetro no se pueden reservar.", "Para un lote o garaje privado, consulte el precio total actual, el horario, el límite de altura y las condiciones de reingreso. No hemos verificado espacios disponibles ni una tarifa general para el distrito."],
+        sources: [meters],
       },
       {
-        h: "Parquímetros y carga de compras grandes",
-        ps: [
-          "El parquímetro en la calle cuesta alrededor de $3/hora y se llena temprano. Lea bien los letreros — varias calles principales se vuelven zona de remolque en hora pico por la tarde, así que un parquímetro que era legal al mediodía puede ser una grúa a las 4pm. Para una recogida rápida el parquímetro sirve; para un día de compras conviene un lote reservado.",
-          "Si va a cargar compras en volumen, ubique bien su carro antes de empezar a comprar — los vendedores normalmente no apartan mercancía, y cargar cajas varias cuadras cansa rápido. Algunos compradores estacionan cerca, compran lo pesado y mueven el carro entre paradas.",
-        ],
+        h: "Organice la recogida de artículos voluminosos",
+        ps: ["Pregunte dónde recoger el pedido, si pueden guardarlo hasta esa hora y cuántas cajas tendrá que transportar.", "LADOT distingue la carga de mercancía en vehículos con placas comerciales de la subida y bajada de pasajeros y equipaje en otros vehículos junto a bordillos amarillos. No son estacionamiento general para ir de compras. Revise los letreros y las reglas completas para su vehículo y hora de llegada."],
+        sources: [loading],
       },
       {
-        h: "Cómo llegar en Metro o autobús",
-        ps: [
-          "La estación de tren más cercana es Little Tokyo/Arts District del Metro (200 N Alameda St), a unos 10 minutos a pie hacia el norte, con servicio de la A Line y la E Line. Desde ahí camine al sur por Los Angeles St hasta el distrito.",
-          "Varias líneas de autobús del Metro también pasan por Los Angeles St y San Pedro St en los bordes del distrito. El transporte evita por completo el estacionamiento, pero cuente con cargar lo que compre — conviene más para curiosear o compras chicas que para un cargamento grande de mayoreo.",
-        ],
+        h: "Planee el transporte a su destino exacto",
+        ps: ["Use el planificador de Metro con la dirección de la tienda, la fecha y la hora de llegada. Revise el servicio actual y el tramo a pie. Considere el tamaño del pedido y cómo lo transportará de regreso."],
+        sources: [transit],
       },
       {
-        h: "¿Es seguro el Toy District?",
-        ps: [
-          "Respuesta honesta: el distrito colinda con Skid Row y verá personas sin hogar en la calle, sobre todo por 5th St y hacia San Pedro St. En horario comercial las cuadras están llenas de compradores, diablitos y camiones de entrega, y miles de personas lo visitan de día sin problema.",
-          "Reglas de sentido común: vaya en horario comercial, quédese en las cuadras comerciales activas, no deje nada visible en el carro y cargue el efectivo de forma segura. Si le da pendiente, empiece por el lado de 3rd St junto a Little Tokyo y avance hacia el sur.",
-        ],
-      },
-      {
-        h: "Lleve efectivo",
-        ps: [
-          "Muchos locales prefieren efectivo; algunos aceptan tarjeta con compra mínima o comisión. Las ventas de mayoreo en particular suelen ser en efectivo. Hay cajeros en las tienditas de la zona, pero las comisiones suman — lleve lo que planea gastar.",
-          "Pida recibo o factura si compra para revender; la necesita para su contabilidad y los mayoristas serios están acostumbrados a darla.",
-        ],
+        h: "Confirme el pago y el acceso",
+        ps: ["Pregunte qué formas de pago aceptan, si hay mínimos o cargos y si pueden emitir una factura detallada.", "Si necesita una entrada sin escalones, espacio para un carrito o ayuda con la recogida, pregunte directamente al negocio. No hemos evaluado la seguridad de las rutas, la accesibilidad de las entradas ni las condiciones actuales de la calle."],
       },
     ],
     faq: [
-      {
-        q: "¿Dónde está el Toy District de Los Ángeles?",
-        a: "En el centro de LA, entre E 3rd St y E 5th St, de S Los Angeles St a S San Pedro St, código postal 90013. Las cuadras principales son Wall St, Winston St y Boyd St.",
-      },
-      {
-        q: "¿A qué hora abren las tiendas del Toy District?",
-        a: "La mayoría abre de día, más o menos de media mañana a media tarde, de lunes a sábado. Muchas cierran o limitan horario los domingos. Varía por tienda.",
-      },
-      {
-        q: "¿Es seguro visitar el Toy District?",
-        a: "Visitar de día en horario comercial es lo normal. El distrito colinda con Skid Row, así que quédese en las cuadras comerciales activas, vaya en horario comercial y no deje objetos de valor en el carro.",
-      },
-      {
-        q: "¿Aceptan tarjeta en el Toy District?",
-        a: "Algunas tiendas sí, a veces con mínimo de compra o comisión, pero muchos locales prefieren efectivo — sobre todo para precio de mayoreo. Lleve efectivo.",
-      },
-      {
-        q: "¿Cualquiera puede comprar en el Toy District o es solo mayoreo?",
-        a: "Ambos. Cerca del 90% de los comerciantes vende a precio de mayoreo, pero la mayoría también atiende al público. Para precio de mayoreo real y pedidos grandes, ayuda llevar un resale certificate de California.",
-      },
-      {
-        q: "¿Dónde puedo estacionar en el Toy District?",
-        a: "Hay lotes y garajes de pago a una cuadra al oeste sobre S Main St (334, 415, 416, 330, 433 S Main) y sobre S Los Angeles St, más o menos $11–22 por el día — más barato reservando antes en SpotHero, ParkWhiz, SpotAngels o Spacer. El parquímetro en la calle (~$3/hora) se llena temprano y algunas calles son zona de remolque en hora pico.",
-      },
-      {
-        q: "¿Puedo llegar al Toy District en Metro?",
-        a: "Sí. La estación Little Tokyo/Arts District del Metro (A Line y E Line) queda a unos 10 minutos a pie al norte; camine al sur por Los Angeles St hasta el distrito. Varias líneas de autobús también pasan por los bordes.",
-      },
+      { q: "¿A qué hora abren las tiendas del Toy District?", a: "Confirme con cada negocio para la fecha de su visita. El horario de la tienda y los límites para servicios o recogidas pueden ser distintos." },
+      { q: "¿Necesito una cuenta de mayoreo para comprar?", a: "Depende del negocio y del canal de compra. Pregunte por compras al menudeo en persona, aprobación de mayoreo y mínimos para su pedido." },
+      { q: "¿Aceptan tarjetas de crédito?", a: "Confirme formas de pago, mínimos y cargos con cada negocio. No suponemos una política de efectivo o tarjetas para todo el distrito." },
+      { q: "¿Cuánto cuesta el estacionamiento?", a: "Consulte el parquímetro o el operador para el lugar y la hora de su visita. Los precios y las restricciones varían; no publicamos una tarifa general." },
     ],
   },
 };
 
 export const wholesaleBasics: Record<Locale, Guide> = {
   en: {
-    title: "Buying wholesale in California: seller's permits & resale certificates",
-    description:
-      "What you need to buy wholesale in LA's Toy District — California seller's permit, resale certificate, MOQs, and what wholesalers actually ask for.",
+    title: "Buying wholesale: accounts, order minimums & resale documents",
+    description: "Separate a merchant’s wholesale terms from resale tax documentation, and prepare questions for your order.", reviewed_at,
     sections: [
-      {
-        h: "Do I need a permit to buy wholesale?",
-        ps: [
-          "Strictly speaking, no — anyone can walk into most Toy District stores and buy. But if you're buying for resale and want to skip California sales tax on your purchase, you need to give the seller a resale certificate, and to issue one you need a California seller's permit.",
-          "The seller's permit is issued by the CDTFA (California Department of Tax and Fee Administration) and is free. You register once for your business, then you can issue resale certificates to any wholesaler you buy from.",
-        ],
-      },
-      {
-        h: "How the resale certificate works at the counter",
-        ps: [
-          "A resale certificate is a short form (CDTFA-230 is the standard template) stating that you're buying the goods to resell them. You give it to the wholesaler; they keep it on file and don't charge you sales tax. You then collect sales tax from your own customers when you sell.",
-          "In practice, Toy District wholesalers vary: some ask for your resale number before quoting wholesale prices, others just sell at wholesale to anyone buying by the case. Having the certificate ready marks you as a trade buyer and usually gets you better treatment.",
-        ],
-        bullets: [
-          "Register for a seller's permit at cdtfa.ca.gov (free).",
-          "Print or save a filled resale certificate (CDTFA-230) with your permit number.",
-          "Out-of-state resellers: many CA wholesalers accept your home-state resale documentation, but policies vary — ask.",
-          "Buying for your own use (parties, events) is not resale — you pay sales tax, no permit needed.",
-        ],
-      },
-      {
-        h: "MOQs: how much do you have to buy?",
-        ps: [
-          "Minimum order quantities in the district are usually small compared to importing: by the dozen, by the case, or a dollar minimum per order. Many stores sell single pieces at a retail markup and only apply wholesale pricing from a threshold (\"minimum 6 pieces\" is a common pattern).",
-          "MOQs are store-by-store and rarely posted. This directory tracks MOQ per store as we verify listings in person — where you see it on a store page, it came from a field check.",
-        ],
-      },
-      {
-        h: "A caution on branded goods",
-        ps: [
-          "Licensed and brand-name items (popular character plush, collectible figures) sold far below normal wholesale can be counterfeit. Selling counterfeits exposes you, not just the wholesaler, to platform bans and legal risk — TikTok Shop and Amazon both enforce actively.",
-          "Ask for the licensed distributor's invoice on branded goods, and be skeptical of prices that are too good. Generic and unbranded toys avoid the problem entirely.",
-        ],
-      },
-      {
-        h: "Not legal or tax advice",
-        ps: [
-          "This page summarizes public CDTFA guidance for orientation. Rules change and situations differ — confirm specifics with the CDTFA or a tax professional.",
-        ],
-      },
+      { h: "Ask which buying channel applies", ps: ["Check whether the merchant offers retail, wholesale or both, and whether an account must be approved before you can order or visit. An online shop does not by itself confirm walk-in purchasing."], links: [checklistLink("en")] },
+      { h: "Keep resale documents separate from account approval", ps: ["CDTFA explains that a seller’s permit copy is not a substitute for a resale certificate. Its guidance describes the information required for sales for resale and how sellers handle those records.", "A merchant’s account approval, eligibility for its prices and the tax treatment of a purchase are separate questions. Use CDTFA guidance for your circumstances, including purchases for your own use or by an out-of-state business. Confirm the merchant’s document requirements before ordering."], sources: [resale] },
+      { h: "Get the minimum and quote for your items", ps: ["Ask for the minimum quantity or order amount, units per case, whether items can be mixed, and the price at your chosen quantity. A free-shipping threshold is not a minimum order.", "Record the quote date, currency, shipping charges and expiry. Ask which payment methods are accepted and whether fees apply. Do not assume that cash changes the price."], links: [checklistLink("en")] },
+      { h: "Check product identity and return terms", ps: ["Record the brand, model or SKU, and ask for an itemized invoice. Confirm return conditions and the deadline for reporting incorrect or damaged goods before paying.", "CPSC provides recall searches and guidance for sellers. Match product identifiers and affected batches with the original notice. An empty search does not establish safety, authenticity or compliance; unbranded products are not automatically exempt from product requirements."], sources: [recalls, productSafety] },
     ],
   },
   es: {
-    title: "Comprar al por mayor en California: seller's permit y resale certificate",
-    description:
-      "Lo que necesita para comprar al por mayor en el Toy District de LA — seller's permit de California, resale certificate, pedidos mínimos y qué piden realmente los mayoristas.",
+    title: "Comprar al por mayor: cuentas, mínimos y documentos de reventa",
+    description: "Distinga las condiciones de mayoreo de los documentos fiscales de reventa y prepare preguntas para su pedido.", reviewed_at,
     sections: [
-      {
-        h: "¿Necesito permiso para comprar al por mayor?",
-        ps: [
-          "Estrictamente, no — cualquiera puede entrar y comprar en la mayoría de las tiendas del Toy District. Pero si compra para revender y quiere no pagar el impuesto de venta de California en su compra, debe entregar al vendedor un resale certificate, y para emitirlo necesita un seller's permit de California.",
-          "El seller's permit lo emite el CDTFA (Departamento de Administración de Impuestos y Cuotas de California) y es gratuito. Se registra una vez con su negocio y después puede emitir resale certificates a cualquier mayorista al que le compre.",
-        ],
-      },
-      {
-        h: "Cómo funciona el resale certificate en el mostrador",
-        ps: [
-          "El resale certificate es un formulario corto (el modelo estándar es el CDTFA-230) que declara que compra la mercancía para revenderla. Se lo entrega al mayorista; él lo archiva y no le cobra impuesto de venta. Usted después cobra el impuesto a sus propios clientes al vender.",
-          "En la práctica, los mayoristas del Toy District varían: algunos piden su número de resale antes de dar precio de mayoreo, otros venden a mayoreo a cualquiera que compre por caja. Llevar el certificado listo lo identifica como comprador de comercio y normalmente le atienden mejor.",
-        ],
-        bullets: [
-          "Registre su seller's permit en cdtfa.ca.gov (gratis).",
-          "Imprima o guarde un resale certificate lleno (CDTFA-230) con su número de permiso.",
-          "Revendedores de otros estados: muchos mayoristas de CA aceptan la documentación de reventa de su estado, pero las políticas varían — pregunte.",
-          "Comprar para uso propio (fiestas, eventos) no es reventa — paga el impuesto y no necesita permiso.",
-        ],
-      },
-      {
-        h: "Pedidos mínimos (MOQ): ¿cuánto hay que comprar?",
-        ps: [
-          "Los mínimos en el distrito suelen ser bajos comparados con importar: por docena, por caja, o un mínimo en dólares por pedido. Muchas tiendas venden pieza suelta a precio de menudeo y aplican precio de mayoreo a partir de cierto volumen (\"mínimo 6 piezas\" es un patrón común).",
-          "El MOQ es de cada tienda y casi nunca está publicado. Este directorio registra el MOQ por tienda conforme verificamos las fichas en persona — si lo ve en la página de una tienda, viene de una verificación en el lugar.",
-        ],
-      },
-      {
-        h: "Cuidado con la mercancía de marca",
-        ps: [
-          "Los artículos con licencia y de marca (peluches de personajes populares, figuras coleccionables) que se venden muy por debajo del mayoreo normal pueden ser falsificaciones. Vender falsificaciones lo expone a usted, no solo al mayorista, a bloqueos de plataforma y riesgo legal — TikTok Shop y Amazon lo aplican activamente.",
-          "Pida la factura del distribuidor autorizado en mercancía de marca y desconfíe de precios demasiado buenos. Los juguetes genéricos y sin marca evitan el problema por completo.",
-        ],
-      },
-      {
-        h: "No es asesoría legal ni fiscal",
-        ps: [
-          "Esta página resume orientación pública del CDTFA. Las reglas cambian y cada caso es distinto — confirme los detalles con el CDTFA o con un profesional de impuestos.",
-        ],
-      },
+      { h: "Pregunte qué canal de compra corresponde", ps: ["Confirme si el negocio vende al menudeo, al mayoreo o ambos y si debe aprobar una cuenta antes de comprar o visitar. Una tienda en línea no confirma por sí sola la compra en persona."], links: [checklistLink("es")] },
+      { h: "Distinga los documentos de reventa de la aprobación de cuenta", ps: ["CDTFA explica que una copia del seller’s permit no sustituye un resale certificate. Su guía describe la información necesaria para las ventas para reventa y cómo los vendedores conservan esos registros.", "La aprobación de una cuenta, el acceso a ciertos precios y el tratamiento fiscal de una compra son preguntas distintas. Consulte la guía de CDTFA para su situación, incluidas compras para uso propio o realizadas por negocios de otro estado. Confirme los documentos que pide el negocio antes de ordenar."], sources: [resale] },
+      { h: "Pida el mínimo y la cotización para sus artículos", ps: ["Pregunte por la cantidad o el importe mínimo, las unidades por caja, si puede mezclar artículos y el precio para la cantidad elegida. Un umbral de envío gratis no es un pedido mínimo.", "Anote la fecha, la moneda, los gastos de envío y la vigencia de la cotización. Pregunte por las formas de pago y los cargos. No suponga que pagar en efectivo cambia el precio."], links: [checklistLink("es")] },
+      { h: "Revise la identidad del producto y las devoluciones", ps: ["Anote la marca, el modelo o SKU y pida una factura detallada. Confirme las condiciones de devolución y el plazo para reportar artículos incorrectos o dañados antes de pagar.", "CPSC ofrece búsquedas de retiros del mercado y orientación para vendedores. Compare los identificadores y lotes afectados con el aviso original. No encontrar resultados no confirma seguridad, autenticidad ni cumplimiento; un producto sin marca no está automáticamente exento de requisitos."], sources: [recalls, productSafety] },
     ],
   },
 };
 
 export type BuyerSlug = "party-planners" | "store-owners" | "resellers";
-
 export const buyerGuides: Record<BuyerSlug, Record<Locale, Guide>> = {
   "party-planners": {
     en: {
-      title: "Toy District guide for party planners",
-      description:
-        "How party planners buy piñatas, balloons, party favors and quinceañera supplies wholesale in LA's Toy District.",
+      title: "Toy District buying guide for party planners",
+      description: "Prepare quantities, event dates and pickup questions before contacting a party supplier.", reviewed_at,
       sections: [
-        {
-          h: "Why planners buy here",
-          ps: [
-            "Party favors, piñata fillers, balloons, themed toys and goody-bag stock are the district's bread and butter, sold by the dozen or gross at prices that make per-guest math work. For quinceañeras, birthday parties and corporate events, one morning here replaces a week of online ordering.",
-          ],
-        },
-        {
-          h: "How to work the district",
-          ps: [
-            "Come with your headcount and theme, not a rigid shopping list — assortments change constantly and the deals are on what's in stock. Prices drop at dozen/case thresholds, so consolidate: one store for favors, one for balloons and decor, one for filler toys.",
-            "Most planners don't need a resale certificate (buying for an event is use, not resale), so expect to pay sales tax. If you invoice clients for goods, talk to your accountant about whether reselling applies to you.",
-          ],
-          bullets: [
-            "Bring cash — party-goods stalls are among the most cash-preferred.",
-            "Saturday is crowded with retail shoppers; weekday mornings are calmer for bulk orders.",
-            "Spanish is widely spoken on the party-supply blocks.",
-          ],
-        },
-        {
-          h: "Where to start",
-          ps: [
-            "Filter the directory for Party supplies and start on the Los Angeles St and Wall St blocks, then branch out. The visiting guide covers parking and logistics for hauling bulky items like piñatas.",
-          ],
-        },
+        { h: "Build the event order", ps: ["List the event date, guest count, quantities, sizes and acceptable substitutions. Use the Party supplies category to find candidates, then check each merchant’s official catalog and availability.", "A catalog photo is a product reference, not confirmation of stock at a particular store."], links: [{ label: "Browse the directory", href: "/" }] },
+        { h: "Work back from pickup time", ps: ["Ask when you must place and pay for the order, which services require advance booking, and the latest collection time. Confirm whether assembly, inflation or delivery is included.", "California Balloon House has published helium ordering and service information linked on its listing. Check the terms for your quantity and event date."], links: [{ label: "California Balloon House: buying details", href: "/stores/california-balloon-house-447" }] },
+        { h: "Record the agreement", ps: ["Confirm payment, substitutions, cancellation and return terms. Ask whether the order can be held for collection and how much vehicle space it needs."], links: [checklistLink("en"), { label: "Parking and pickup planning", href: "/guide/visiting" }] },
       ],
     },
     es: {
-      title: "Guía del Toy District para organizadores de fiestas",
-      description:
-        "Cómo compran los organizadores de fiestas piñatas, globos, recuerdos y artículos para quinceañeras al por mayor en el Toy District de LA.",
+      title: "Guía de compra del Toy District para organizadores de fiestas",
+      description: "Prepare cantidades, fechas y preguntas de recogida antes de contactar a un proveedor de fiestas.", reviewed_at,
       sections: [
-        {
-          h: "Por qué los organizadores compran aquí",
-          ps: [
-            "Recuerdos de fiesta, relleno de piñata, globos, juguetitos temáticos y bolsitas sorpresa son el pan de cada día del distrito, vendidos por docena o gruesa a precios que hacen rendir el presupuesto por invitado. Para quinceañeras, cumpleaños y eventos corporativos, una mañana aquí reemplaza una semana de pedidos en línea.",
-          ],
-        },
-        {
-          h: "Cómo recorrer el distrito",
-          ps: [
-            "Venga con su número de invitados y su tema, no con una lista rígida — el surtido cambia constantemente y las ofertas están en lo que hay en existencia. Los precios bajan por docena o caja, así que concentre: una tienda para recuerdos, otra para globos y decoración, otra para juguetes de relleno.",
-            "La mayoría de los organizadores no necesita resale certificate (comprar para un evento es uso, no reventa), así que pagará impuesto de venta. Si factura mercancía a sus clientes, consulte con su contador si le aplica la reventa.",
-          ],
-          bullets: [
-            "Lleve efectivo — los locales de fiesta son de los que más lo prefieren.",
-            "El sábado se llena de compradores al menudeo; entre semana por la mañana es más tranquilo para pedidos grandes.",
-            "En las cuadras de artículos de fiesta se habla mucho español.",
-          ],
-        },
-        {
-          h: "Por dónde empezar",
-          ps: [
-            "Filtre el directorio por Artículos de fiesta y empiece por las cuadras de Los Angeles St y Wall St, y de ahí siga. La guía de visita cubre estacionamiento y logística para cargar cosas voluminosas como piñatas.",
-          ],
-        },
+        { h: "Prepare el pedido del evento", ps: ["Anote la fecha, el número de invitados, las cantidades, los tamaños y las sustituciones aceptables. Use la categoría Artículos de fiesta para encontrar candidatos y después confirme el catálogo oficial y la disponibilidad.", "Una foto de catálogo sirve de referencia; no confirma las existencias en una tienda concreta."], links: [{ label: "Ver el directorio", href: "/" }] },
+        { h: "Planee desde la hora de recogida", ps: ["Pregunte cuándo debe hacer y pagar el pedido, qué servicios requieren reserva previa y cuál es la última hora de recogida. Confirme si incluye armado, inflado o entrega.", "La ficha de California Balloon House enlaza información publicada sobre pedidos y servicio de helio. Revise las condiciones para su cantidad y fecha de evento."], links: [{ label: "California Balloon House: detalles de compra", href: "/stores/california-balloon-house-447" }] },
+        { h: "Anote lo acordado", ps: ["Confirme el pago, las sustituciones, la cancelación y las devoluciones. Pregunte si pueden guardar el pedido hasta recogerlo y cuánto espacio necesitará en el vehículo."], links: [checklistLink("es"), { label: "Estacionamiento y recogida", href: "/guide/visiting" }] },
       ],
     },
   },
   "store-owners": {
     en: {
-      title: "Toy District guide for dollar store & discount store owners",
-      description:
-        "How dollar store and discount retail owners restock toys, novelty and general merchandise from LA Toy District wholesalers.",
+      title: "Toy District buying guide for store owners",
+      description: "Prepare a restock order with item identifiers, case quantities, quotes and delivery questions.", reviewed_at,
       sections: [
-        {
-          h: "The district as your restock route",
-          ps: [
-            "For dollar stores, discount stores and swap-meet retailers across Southern California, the Toy District works as a same-day restock route: case-packed toys, novelty, gifts and seasonal goods at import prices, without container commitments or freight lead times.",
-          ],
-        },
-        {
-          h: "Buying like a trade customer",
-          ps: [
-            "Bring your California seller's permit and a filled resale certificate — most wholesalers here will file it and skip the sales tax, and it signals you buy in volume. Ask for case prices and per-piece breaks; quotes move when you consolidate an order.",
-            "Get invoices for everything: you need them for your books, and an invoice trail matters if a licensed-looking product ever gets questioned. See our note on branded goods in the wholesale basics guide.",
-          ],
-          bullets: [
-            "Weekday mornings: easiest time to pull case quantities and talk numbers.",
-            "Seasonal resets (Halloween, Christmas, back-to-school) land months early — buy ahead.",
-            "Many wholesalers here also run cash-and-carry: no accounts, no minimum relationship.",
-          ],
-        },
-        {
-          h: "Where to start",
-          ps: [
-            "Filter the directory for General merchandise and Toys, and walk Wall St and Winston St first — the highest density of cash-and-carry wholesalers is there.",
-          ],
-        },
+        { h: "Make a restock shortlist", ps: ["Use the directory’s categories to find potential suppliers. Record products and quantities, then confirm stock and purchasing arrangements directly. A listing does not promise same-day collection."], links: [{ label: "Browse the directory", href: "/" }] },
+        { h: "Compare quotes on the same basis", ps: ["Check units per case, product size and assortment before comparing unit prices. Record order minimums, quote expiry, shipping and pickup costs. Ask whether the same SKU can be reordered and how to check future availability."], links: [checklistLink("en")] },
+        { h: "Prepare documents and problem handling", ps: ["Ask about account approval and the documents required for this purchase. Keep an itemized invoice and confirm how to report shortages, damage or incorrect items."], links: [{ label: "Wholesale accounts and resale documents", href: "/guide/wholesale-basics" }] },
       ],
     },
     es: {
-      title: "Guía del Toy District para dueños de tiendas de descuento",
-      description:
-        "Cómo los dueños de dollar stores y tiendas de descuento se surten de juguetes, novedades y mercancía general con los mayoristas del Toy District de LA.",
+      title: "Guía de compra del Toy District para dueños de tiendas",
+      description: "Prepare su resurtido con identificadores de productos, cantidades por caja, cotizaciones y preguntas de entrega.", reviewed_at,
       sections: [
-        {
-          h: "El distrito como su ruta de resurtido",
-          ps: [
-            "Para dollar stores, tiendas de descuento y comerciantes de swap meet del sur de California, el Toy District funciona como ruta de resurtido el mismo día: juguetes por caja, novedades, regalos y mercancía de temporada a precio de importación, sin comprometerse a contenedores ni esperar fletes.",
-          ],
-        },
-        {
-          h: "Comprar como cliente de comercio",
-          ps: [
-            "Lleve su seller's permit de California y un resale certificate lleno — la mayoría de los mayoristas lo archivan y no cobran impuesto de venta, y además indica que usted compra por volumen. Pida precio por caja y descuentos por pieza; la cotización mejora cuando junta un pedido grande.",
-            "Pida factura de todo: la necesita para su contabilidad, y el historial de facturas importa si algún producto con apariencia de licencia llega a cuestionarse. Vea la nota sobre mercancía de marca en la guía de compra al por mayor.",
-          ],
-          bullets: [
-            "Entre semana por la mañana: el mejor momento para sacar cajas y negociar números.",
-            "Lo de temporada (Halloween, Navidad, regreso a clases) llega con meses de anticipación — compre antes.",
-            "Muchos mayoristas aquí operan cash-and-carry: sin cuentas ni relación mínima.",
-          ],
-        },
-        {
-          h: "Por dónde empezar",
-          ps: [
-            "Filtre el directorio por Mercancía general y Juguetes, y recorra primero Wall St y Winston St — ahí está la mayor densidad de mayoristas cash-and-carry.",
-          ],
-        },
+        { h: "Seleccione posibles proveedores", ps: ["Use las categorías del directorio para encontrar candidatos. Anote productos y cantidades y confirme directamente existencias y condiciones de compra. Una ficha no promete recogida el mismo día."], links: [{ label: "Ver el directorio", href: "/" }] },
+        { h: "Compare cotizaciones equivalentes", ps: ["Revise unidades por caja, tamaño y surtido antes de comparar precios unitarios. Anote mínimos, vigencia de la cotización y costos de envío y recogida. Pregunte si puede volver a pedir el mismo SKU y cómo confirmar su disponibilidad futura."], links: [checklistLink("es")] },
+        { h: "Prepare documentos y condiciones de reclamación", ps: ["Pregunte por la aprobación de cuenta y los documentos necesarios para esta compra. Guarde una factura detallada y confirme cómo reportar faltantes, daños o artículos incorrectos."], links: [{ label: "Cuentas de mayoreo y documentos de reventa", href: "/guide/wholesale-basics" }] },
       ],
     },
   },
   resellers: {
     en: {
-      title: "Toy District guide for TikTok Shop & online resellers",
-      description:
-        "Sourcing toys and trend items in LA's Toy District for TikTok Shop, Amazon, eBay and swap meets — what works, what to avoid.",
+      title: "Toy District buying guide for online resellers",
+      description: "Check product identity, sourcing documents, purchase costs and reorder terms before buying inventory.", reviewed_at,
       sections: [
-        {
-          h: "Why resellers film here",
-          ps: [
-            "The district has become a sourcing stop for TikTok Shop and marketplace resellers: trend toys, plush, blind-box style items and novelty at cash-and-carry prices, in quantities small enough to test (a dozen units) before committing to more. The same aisles double as content — wholesale-haul videos from these blocks pull real views.",
-          ],
-        },
-        {
-          h: "The counterfeit trap (read this)",
-          ps: [
-            "The biggest risk for online resellers here is not price — it's authenticity. Popular licensed characters sold cheap from unmarked boxes are often counterfeit, and platforms enforce hard: TikTok Shop and Amazon suspend sellers and hold funds over IP complaints.",
-            "Rules of thumb: unbranded and generic items are safe; for anything licensed, ask for the authorized distributor's invoice and walk away if the price seems impossible. Your account is worth more than one hot SKU.",
-          ],
-        },
-        {
-          h: "Practical sourcing loop",
-          ps: [
-            "Test small (most stores will sell a dozen), list, watch sell-through for a week, then come back and buy depth on winners — the district's advantage over importing is exactly this same-week reorder loop.",
-            "Bring a resale certificate to skip sales tax on inventory purchases (see the wholesale basics guide), pay cash for better quotes, and keep every invoice for your records and platform disputes.",
-          ],
-          bullets: [
-            "Filter the directory for Toys, Plush and Figures & collectibles to plan a route.",
-            "Weekday mornings beat Saturdays for talking quantity prices.",
-            "Ask stores about restock days so your reorder loop matches their container schedule.",
-          ],
-        },
+        { h: "Identify the exact product", ps: ["Record the brand, model, SKU and relevant batch information. Ask which sourcing documents the merchant can supply and check the requirements of the marketplace where you plan to sell. A catalog listing or invoice alone is not an authenticity certification."], links: [{ label: "Browse the directory", href: "/" }] },
+        { h: "Check recall information", ps: ["Use CPSC’s official search and compare the product with identifiers and affected batches in a notice. An empty search does not certify safety or compliance. CPSC’s seller guide provides further product-specific resources."], sources: [recalls, productSafety] },
+        { h: "Confirm the economics and reorder terms", ps: ["Ask for a quote at your intended quantity and record case size, minimums, shipping, applicable tax and other purchase costs. Add your own selling fees when evaluating the order.", "Confirm returns, claim deadlines, reorder availability and timing. We have not verified wholesale prices, resale margins or a same-week restock schedule."], links: [checklistLink("en"), { label: "Wholesale accounts and resale documents", href: "/guide/wholesale-basics" }] },
       ],
     },
     es: {
-      title: "Guía del Toy District para revendedores en línea y TikTok Shop",
-      description:
-        "Cómo surtirse de juguetes y artículos de tendencia en el Toy District de LA para TikTok Shop, Amazon, eBay y swap meets — qué funciona y qué evitar.",
+      title: "Guía de compra del Toy District para revendedores en línea",
+      description: "Revise la identidad del producto, los documentos de procedencia o compra, los costos y las condiciones de resurtido antes de comprar inventario.", reviewed_at,
       sections: [
-        {
-          h: "Por qué los revendedores graban aquí",
-          ps: [
-            "El distrito se volvió parada de surtido para revendedores de TikTok Shop y marketplaces: juguetes de tendencia, peluches, artículos tipo blind box y novedades a precio cash-and-carry, en cantidades pequeñas para probar (una docena) antes de comprometerse a más. Los mismos pasillos sirven de contenido — los videos de compras al mayoreo en estas cuadras jalan vistas reales.",
-          ],
-        },
-        {
-          h: "La trampa de las falsificaciones (lea esto)",
-          ps: [
-            "El mayor riesgo para el revendedor en línea aquí no es el precio — es la autenticidad. Los personajes con licencia que se venden baratos en cajas sin marcar suelen ser falsificados, y las plataformas lo castigan duro: TikTok Shop y Amazon suspenden vendedores y retienen fondos por quejas de propiedad intelectual.",            "Reglas prácticas: lo genérico y sin marca es seguro; para cualquier cosa con licencia, pida la factura del distribuidor autorizado y aléjese si el precio parece imposible. Su cuenta vale más que un SKU de moda.",
-          ],
-        },
-        {
-          h: "Ciclo práctico de surtido",
-          ps: [
-            "Pruebe en pequeño (la mayoría vende por docena), publique, mida la venta una semana y regrese a comprar fondo en lo que funcionó — la ventaja del distrito sobre importar es justo ese ciclo de resurtido en la misma semana.",
-            "Lleve resale certificate para no pagar impuesto en compras de inventario (vea la guía de compra al por mayor), pague en efectivo para mejores cotizaciones y guarde toda factura para su contabilidad y disputas de plataforma.",
-          ],
-          bullets: [
-            "Filtre el directorio por Juguetes, Peluches y Figuras y coleccionables para planear su ruta.",
-            "Entre semana por la mañana es mejor que el sábado para negociar precios por cantidad.",
-            "Pregunte en las tiendas qué días reciben mercancía para empatar su ciclo de resurtido con sus contenedores.",
-          ],
-        },
+        { h: "Identifique el producto exacto", ps: ["Anote marca, modelo, SKU y datos de lote pertinentes. Pregunte qué documentos de procedencia o compra puede proporcionar el negocio y revise los requisitos de la plataforma donde venderá. Un catálogo o una factura por sí solos no certifican autenticidad."], links: [{ label: "Ver el directorio", href: "/" }] },
+        { h: "Consulte los retiros del mercado", ps: ["Use la búsqueda oficial de CPSC y compare el producto con los identificadores y lotes afectados en el aviso. No encontrar resultados no certifica seguridad ni cumplimiento. La guía de CPSC para vendedores ofrece más recursos por producto."], sources: [recalls, productSafety] },
+        { h: "Confirme los costos y el resurtido", ps: ["Pida una cotización para su cantidad y anote unidades por caja, mínimos, envío, impuestos aplicables y otros costos de compra. Añada sus propias comisiones de venta al evaluar el pedido.", "Confirme devoluciones, plazos de reclamación, disponibilidad y fechas de resurtido. No hemos verificado precios de mayoreo, márgenes de reventa ni resurtido en la misma semana."], links: [checklistLink("es"), { label: "Cuentas de mayoreo y documentos de reventa", href: "/guide/wholesale-basics" }] },
       ],
     },
+  },
+};
+
+export const buyingChecklist: Record<Locale, Guide> = {
+  en: {
+    title: "Your Toy District purchase checklist",
+    description: "Choose a supplier, confirm the terms and take a printable sheet for your quotes and pickup details.", reviewed_at, worksheet: true,
+    sections: [
+      { h: "Start with published buying information", ps: ["These four listings link to reviewed merchant information. Each shows the source and the date we read it. Confirm current terms, stock and visit arrangements directly."], links: [
+        { label: "American Silk: retail, wholesale application and conflicting hours", href: "/stores/american-silk-inc-340" },
+        { label: "California Balloon House: ordering, helium service and refund policy", href: "/stores/california-balloon-house-447" },
+        { label: "Casa Manga: wholesale signup and catalog", href: "/stores/casa-manga-218" },
+        { label: "Tom’s Model: buying channels and catalog", href: "/stores/tom-s-model-501" },
+      ] },
+      { h: "Questions to ask before you go", ps: ["Use these questions where a condition is not documented or where you need terms for your specific order."], bullets: [
+        "Can I buy in person? Do I need an appointment or an approved account?",
+        "What minimum quantity or order amount applies? How many units are in a case, and can I mix items?",
+        "Which payment methods and documents do you require? Are there any fees?",
+        "When and where can I collect the order? Can you hold it until that time?",
+        "What are the return terms and the deadline for reporting incorrect or damaged items?",
+        "How can I reorder the same item and confirm its availability?",
+      ] },
+      { h: "Prepare for the visit", ps: ["Check parking or transit, arrange how to carry the order and review resale documents if relevant. For toys you plan to resell, consult official product-safety resources."], links: [
+        { label: "Parking and pickup planning", href: "/guide/visiting" },
+        { label: "Wholesale accounts and resale documents", href: "/guide/wholesale-basics" },
+        { label: "Party planners", href: "/guide/for/party-planners" },
+        { label: "Store owners", href: "/guide/for/store-owners" },
+        { label: "Online resellers", href: "/guide/for/resellers" },
+      ] },
+    ],
+  },
+  es: {
+    title: "Su lista de compra para el Toy District",
+    description: "Elija un proveedor, confirme las condiciones y lleve una hoja impresa para cotizaciones y detalles de recogida.", reviewed_at, worksheet: true,
+    sections: [
+      { h: "Empiece con información de compra publicada", ps: ["Estas cuatro fichas enlazan información del negocio que hemos revisado. Cada dato muestra la fuente y la fecha de consulta. Confirme directamente condiciones actuales, existencias y visita."], links: [
+        { label: "American Silk: menudeo, solicitud de mayoreo y horarios contradictorios", href: "/stores/american-silk-inc-340" },
+        { label: "California Balloon House: pedidos, helio y política de reembolsos", href: "/stores/california-balloon-house-447" },
+        { label: "Casa Manga: registro de mayoreo y catálogo", href: "/stores/casa-manga-218" },
+        { label: "Tom’s Model: canales de compra y catálogo", href: "/stores/tom-s-model-501" },
+      ] },
+      { h: "Preguntas antes de visitar", ps: ["Use estas preguntas cuando una condición no esté documentada o necesite saber qué se aplica a su pedido."], bullets: [
+        "¿Puedo comprar en persona? ¿Necesito cita o una cuenta aprobada?",
+        "¿Qué cantidad o importe mínimo se aplica? ¿Cuántas unidades contiene una caja y puedo mezclar artículos?",
+        "¿Qué métodos de pago y documentos requieren? ¿Hay cargos adicionales?",
+        "¿Cuándo y dónde puedo recoger el pedido? ¿Pueden guardarlo hasta entonces?",
+        "¿Cuáles son las condiciones de devolución y el plazo para reportar artículos incorrectos o dañados?",
+        "¿Cómo puedo volver a pedir el mismo artículo y confirmar su disponibilidad?",
+      ] },
+      { h: "Prepare su visita", ps: ["Revise el estacionamiento o transporte, organice cómo llevar el pedido y consulte los documentos de reventa si corresponde. Si revenderá juguetes, consulte los recursos oficiales de seguridad de productos."], links: [
+        { label: "Estacionamiento y recogida", href: "/guide/visiting" },
+        { label: "Cuentas de mayoreo y documentos de reventa", href: "/guide/wholesale-basics" },
+        { label: "Organizadores de fiestas", href: "/guide/for/party-planners" },
+        { label: "Dueños de tiendas", href: "/guide/for/store-owners" },
+        { label: "Revendedores en línea", href: "/guide/for/resellers" },
+      ] },
+    ],
   },
 };

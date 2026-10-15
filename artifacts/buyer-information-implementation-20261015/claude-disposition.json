@@ -1,0 +1,17 @@
+{
+  "review": "claude-implementation.json",
+  "model_metadata": "claude-opus-5-5",
+  "accepted": [
+    "Clarified CBH link label as refund policy, not a bare returns label.",
+    "Corrected Spanish out-of-state purchaser wording.",
+    "Used Spanish purchasing/provenance documents instead of ambiguous origin documents.",
+    "Clarified Spanish retailer-order question.",
+    "Set print writing-rule border explicitly black."
+  ],
+  "not_adopted": [
+    "Root href defect was not present: localePath(en, /) returns /; built page links verified.",
+    "Missing grid display and full-width notes were not defects: base CSS already supplies them. Claude was given the print section only.",
+    "No unsupported ad-wrapper classes invented. adsbygoogle is hidden; actual print preview remains unverified."
+  ],
+  "validation_scope": "Tool-disabled critique; not independent browser testing. Final source built and static pages rechecked after accepted fixes."
+}

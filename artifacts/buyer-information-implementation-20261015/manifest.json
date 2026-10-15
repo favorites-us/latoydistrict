@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "scope": "Implement reviewed buyer guidance, new official facts and an EN/ES printable worksheet; evaluate photo rights for a fixed four-store cohort.",
+  "base_commit": "2a05e7ed1da90dd5b2f576d8a3cfaa918bb5bd2d",
+  "photo_cohort_fixed_before_search": [
+    {"id": "american-silk-inc-340", "name": "American Silk", "address": "340 E 4th St, Los Angeles CA 90013", "official_url": "https://www.americansilkinc.com/"},
+    {"id": "california-balloon-house-447", "name": "California Balloon House", "address": "447 Wall St, Los Angeles CA 90013", "official_url": "https://caballoonhouse.com/"},
+    {"id": "casa-manga-218", "name": "Casa Manga", "address": "218 Boyd St #D, Los Angeles CA 90013", "official_url": "https://www.casamanga.com/"},
+    {"id": "tom-s-model-501", "name": "Tom's Model", "address": "501 E 4th St, Los Angeles CA 90013", "official_url": "https://toms-model.myshopify.com/"}
+  ],
+  "photo_review_limits": "Known official home/about/gallery pages and targeted Commons queries only. No merchant outreach, Google image extraction or expansion to 191 stores. Missing results do not establish missing images or closure.",
+  "design": {
+    "palette": {"background": "#fffdf8", "ink": "#1e1a16", "muted": "#6b625a", "line": "#e8e0d4", "action": "#1f6f8b", "paper": "#ffffff"},
+    "type": "Reuse the existing system sans-serif; readable body copy and short section headings.",
+    "layout": "Left-aligned purchase preparation sheet with a narrow reading column, source-backed store links and ruled fields for handwritten quotes. Mobile flows in one column; print isolates the worksheet.",
+    "wireframe": "Title / purpose -> four merchant links -> neutral purchase questions -> printable ruled worksheet -> official resources",
+    "review": "Retain the established site identity. Avoid a new comparison dashboard, decorative metrics or a photo placeholder gallery. Distinctive element is a practical purchasing sheet with room for actual quotes."
+  }
+}

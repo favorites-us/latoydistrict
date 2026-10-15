@@ -8,6 +8,7 @@ import { Header, Footer } from "@/components/SiteChrome";
 import { BLOCK_LABELS, fullAddress, stores, type Store, type OnlineSource } from "@/lib/stores";
 import { storeJsonLd } from "@/lib/jsonld";
 import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
+import { buyerQuestions } from "@/lib/content/buyer-questions";
 
 // Defense in depth: website comes from world-editable OSM data. Only render http(s).
 function httpUrl(u: string | null | undefined): string | null {
@@ -36,6 +37,7 @@ function SourceNote({ source, locale, slug }: { source?: OnlineSource; locale: L
 export default function StorePage({ store, locale }: { store: Store; locale: Locale }) {
   const nearby = stores.filter((s) => s.block === store.block && s.slug !== store.slug).slice(0, 6);
   const mapsQuery = encodeURIComponent(fullAddress(store));
+  const questions = buyerQuestions[store.slug]?.[locale];
 
   // Any business-linked URL goes here — website, socials, Yelp, etc. All
   // pass through httpUrl() since links can originate from world-editable data.
@@ -185,6 +187,12 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
               </ul>
             </section>
           ) : null}
+          {questions ? <section className="buyer-questions" aria-labelledby="questions-heading">
+            <h2 id="questions-heading">{t(locale, "buyer_questions_h2")}</h2>
+            <p>{t(locale, "buyer_questions_note")}</p>
+            <ul>{questions.map((question) => <li key={question}>{question}</li>)}</ul>
+            <Link href={localePath(locale, "/guide/buying-checklist")}>{t(locale, "worksheet_link")}</Link>
+          </section> : null}
           {!store.verified_at ? <p className="fineprint">{t(locale, "unverified_note")}</p> : null}
           <p>
             <a href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
