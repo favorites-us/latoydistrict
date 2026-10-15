@@ -1,10 +1,11 @@
-// Enrich the built directory with free, legally-storable public data:
+// Stage free public-data enrichment for review before updating the baseline:
 // Census coordinates, conservatively matched OpenStreetMap details, and
 // deterministic category signals from business names.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { BBOX, OUT_DIR, parseAddress } from "./lib.mjs";
+import { BBOX, OUT_DIR } from "./lib.mjs";
+import { osmMatch } from "./osm-match.mjs";
 
 const DATA_FILE = fileURLToPath(new URL("../web/data/stores.json", import.meta.url));
 const CENSUS_DIR = path.join(OUT_DIR, "census");
@@ -95,53 +96,6 @@ async function fetchOverpass() {
   return result;
 }
 
-const PLAUSIBLE_SHOPS = new Set([
-  "toys", "gift", "variety_store", "wholesale", "department_store", "party",
-  "convenience", "cosmetics", "stationery", "craft", "general", "houseware",
-  "electronics", "mobile_phone", "games", "collector", "interior_decoration",
-]);
-
-function normalizeStreet(value = "") {
-  return value.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/\b(STREET|ST\.)\b/g, "ST").replace(/\b(AVENUE|AVE\.)\b/g, "AVE")
-    .replace(/\b(PLACE|PL\.)\b/g, "PL").replace(/\bEAST\b/g, "E")
-    .replace(/\bSOUTH\b/g, "S").replace(/[^A-Z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
-}
-
-function normalizeName(value = "") {
-  return value.toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    .replace(/&/g, " AND ").replace(/[^A-Z0-9 ]/g, " ")
-    .replace(/\b(LLC|INC|INCORPORATED|CORP|CORPORATION|LTD|COMPANY|CO)\b/g, " ")
-    .replace(/\s+/g, " ").trim();
-}
-
-function nameSimilarity(a, b) {
-  const left = normalizeName(a);
-  const right = normalizeName(b);
-  if (!left || !right) return { accepted: false, score: 0 };
-  if (left.includes(right) || right.includes(left)) return { accepted: true, score: 1 };
-  const aa = new Set(left.split(" "));
-  const bb = new Set(right.split(" "));
-  const intersection = [...aa].filter((token) => bb.has(token)).length;
-  const score = intersection / new Set([...aa, ...bb]).size;
-  return { accepted: score >= 0.6, score };
-}
-
-function osmMatch(store, element) {
-  const tags = element.tags || {};
-  if (!PLAUSIBLE_SHOPS.has(tags.shop)) return null;
-  const parsed = parseAddress(store.address.line1);
-  const sameAddress = parsed && String(parsed.num) === String(tags["addr:housenumber"] || "").trim()
-    && normalizeStreet(parsed.street) === normalizeStreet(tags["addr:street"]);
-  const similarity = nameSimilarity(store.name, tags.name);
-  if (!sameAddress && !similarity.accepted) return null;
-  return sameAddress ? "address" : `name (${similarity.score.toFixed(2)})`;
-}
-
-const OSM_CATEGORY = {
-  toys: "toys", gift: "gifts", party: "party", stationery: "gifts",
-  craft: "gifts", electronics: "electronics", games: "toys", collector: "figures",
-};
 
 const NAME_CATEGORIES = [
   ["plush", /\b(PLUSH|STUFFED|TEDDY|PELUCHE|PELUCHES)\b/],
@@ -174,6 +128,7 @@ for (const [index, store] of stores.entries()) {
 
 const overpass = await fetchOverpass();
 let osmMatches = 0;
+const contactCandidates = [];
 for (const store of stores) {
   const candidates = (overpass.elements || []).map((element) => ({ element, reason: osmMatch(store, element) })).filter((x) => x.reason);
   if (candidates.length !== 1) {
@@ -184,13 +139,14 @@ for (const store of stores) {
   const tags = element.tags || {};
   const phone = tags.phone || tags["contact:phone"];
   const website = safeHttpUrl(tags.website || tags["contact:website"]);
-  if (!filled(store.phone) && filled(phone)) store.phone = phone;
-  if (!filled(store.hours) && filled(tags.opening_hours)) store.hours = tags.opening_hours;
-  if (website && !filled(store.links?.website)) store.links = { ...(store.links || {}), website };
-  const category = OSM_CATEGORY[tags.shop];
-  if (category && store.category.length === 1 && store.category[0] === "general") store.category = [category];
-  addSource(store, "osm");
-  if (store.confidence === "low") store.confidence = "medium";
+  // Public map tags are discovery candidates, never owner-confirmed facts.
+  contactCandidates.push({
+    id: store.id, decision: "needs_review", matched_by: reason,
+    discovered_at: new Date().toISOString().slice(0, 10),
+    source_url: `https://www.openstreetmap.org/${element.type}/${element.id}`,
+    phone: phone || null, website, hours_hint: tags.opening_hours || null,
+    note: "Verify identity and original sources under CONTACT-RESEARCH-C.md. Hours require the business website.",
+  });
   osmMatches++;
   console.log(`OSM match: ${store.id} <- ${element.type}/${element.id} (${reason})`);
 }
@@ -212,8 +168,9 @@ console.log(`Name category refinements: ${categoryRefinements}`);
 printMetrics(before, after, stores.length);
 
 if (DRY) {
-  console.log("\nDry run: data/stores.json not written");
+  console.log("\nDry run: candidate files not written");
 } else {
-  fs.writeFileSync(DATA_FILE, `${JSON.stringify({ ...document, stores }, null, 2)}\n`);
-  console.log("wrote data/stores.json");
+  fs.writeFileSync(path.join(OUT_DIR, "osm-contact-candidates.json"), `${JSON.stringify({ results: contactCandidates }, null, 2)}\n`);
+  fs.writeFileSync(path.join(OUT_DIR, "free-enrichment-candidates.json"), `${JSON.stringify({ generated_note: "Research candidates only; review coordinates/categories before deliberately updating the baseline. Strip generated online_facts/field_sources/contact_email; never copy the whole generated store into baseline.", stores }, null, 2)}\n`);
+  console.log("wrote enrichment candidates to pipeline/out/; web/data/stores.json unchanged");
 }

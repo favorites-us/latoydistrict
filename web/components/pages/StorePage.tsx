@@ -3,8 +3,9 @@ import JsonLd from "@/components/JsonLd";
 import StoreCard from "@/components/StoreCard";
 import StoreInquiryForm from "@/components/StoreInquiryForm";
 import StoreViewEvent from "@/components/StoreViewEvent";
+import StoreContactLink from "@/components/StoreContactLink";
 import { Header, Footer } from "@/components/SiteChrome";
-import { BLOCK_LABELS, fullAddress, stores, type Store } from "@/lib/stores";
+import { BLOCK_LABELS, fullAddress, stores, type Store, type OnlineSource } from "@/lib/stores";
 import { storeJsonLd } from "@/lib/jsonld";
 import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
 
@@ -13,10 +14,23 @@ function httpUrl(u: string | null | undefined): string | null {
   if (!u) return null;
   try {
     const p = new URL(u);
-    return p.protocol === "http:" || p.protocol === "https:" ? p.toString() : null;
+    return (p.protocol === "http:" || p.protocol === "https:") && !p.username && !p.password ? p.toString() : null;
   } catch {
     return null;
   }
+}
+
+function SourceNote({ source, locale, slug }: { source?: OnlineSource; locale: Locale; slug?: string }) {
+  if (!source) return null;
+  const href = httpUrl(source.url);
+  if (!href) return null;
+  return <p className="source-note">
+    {t(locale, `source_${source.type}` as DictKey)} · {" "}
+    {slug
+      ? <StoreContactLink href={href} slug={slug} method="buying_source" external>{source.label} ↗</StoreContactLink>
+      : <a href={href} target="_blank" rel="nofollow noopener noreferrer">{source.label} ↗</a>}
+    {" · "}{t(locale, "source_checked")} <time dateTime={source.checked_at}>{source.checked_at}</time>
+  </p>;
 }
 
 export default function StorePage({ store, locale }: { store: Store; locale: Locale }) {
@@ -63,6 +77,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
               </span>
             ))}
           </div>
+          <SourceNote source={store.field_sources?.wholesale_retail} locale={locale} />
           {store.verified_at ? (
             <p className="note ok">
               ✓ {t(locale, "verified_note")} — {store.verified_at}
@@ -84,16 +99,28 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                   </a>
                 </td>
               </tr>
-              {store.hours ? (
+              {store.hours || store.field_sources?.hours ? (
                 <tr>
                   <th>{t(locale, "field_hours")}</th>
-                  <td>{store.hours}</td>
+                  <td>{store.hours ?? t(locale, "hours_unconfirmed")}<SourceNote source={store.field_sources?.hours} locale={locale} /></td>
                 </tr>
               ) : null}
               {store.phone ? (
                 <tr>
                   <th>{t(locale, "field_phone")}</th>
-                  <td>{store.phone}</td>
+                  <td>
+                    <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone">{store.phone}</StoreContactLink>
+                    <SourceNote source={store.field_sources?.phone} locale={locale} />
+                  </td>
+                </tr>
+              ) : null}
+              {store.contact_email ? (
+                <tr>
+                  <th>{t(locale, "field_email")}</th>
+                  <td>
+                    <StoreContactLink href={`mailto:${store.contact_email}`} slug={store.slug} method="email">{store.contact_email}</StoreContactLink>
+                    <SourceNote source={store.field_sources?.contact_email} locale={locale} />
+                  </td>
                 </tr>
               ) : null}
               {links.length > 0 ? (
@@ -103,11 +130,12 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                     {links.map((l, i) => (
                       <span key={l.href}>
                         {i > 0 ? " · " : ""}
-                        <a href={l.href} rel="nofollow noopener" target="_blank">
+                        <StoreContactLink href={l.href} slug={store.slug} method="website" external>
                           {l.label} ↗
-                        </a>
+                        </StoreContactLink>
                       </span>
                     ))}
+                    <SourceNote source={store.field_sources?.["links.website"]} locale={locale} />
                   </td>
                 </tr>
               ) : null}
@@ -126,7 +154,10 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
               {store.languages?.length ? (
                 <tr>
                   <th>{t(locale, "field_languages")}</th>
-                  <td>{store.languages.join(", ")}</td>
+                  <td>
+                    {store.languages.map((language) => locale === "es" && language === "Spanish" ? "Español" : language).join(", ")}
+                    <SourceNote source={store.field_sources?.languages} locale={locale} />
+                  </td>
                 </tr>
               ) : null}
               {store.since ? (
@@ -137,6 +168,23 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
               ) : null}
             </tbody>
           </table>
+          {store.online_facts?.length ? (
+            <section className="buying-details" aria-labelledby="buying-heading">
+              <h2 id="buying-heading">{t(locale, "buying_h2")}</h2>
+              <p>{t(locale, "online_note")}</p>
+              <ul>
+                {store.online_facts.map((fact) => (
+                  <li key={fact.id}>
+                    <p>{fact.text[locale]}</p>
+                    <SourceNote source={fact.source} locale={locale} slug={store.slug} />
+                    {fact.additional_sources?.map((source) => (
+                      <SourceNote key={source.url} source={source} locale={locale} slug={store.slug} />
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
           {!store.verified_at ? <p className="fineprint">{t(locale, "unverified_note")}</p> : null}
           <p>
             <a href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>

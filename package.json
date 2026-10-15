@@ -6,7 +6,9 @@
     "pipeline": "node pipeline/01-opendata.mjs && node pipeline/02-places.mjs && node pipeline/03-crossmatch.mjs && node pipeline/04-enrich.mjs && node pipeline/05-build.mjs",
     "free-enrich": "node pipeline/06-free-enrich.mjs",
     "dev": "npm --prefix web run dev",
-    "build": "npm --prefix web run build"
+    "build": "npm --prefix web run build",
+    "test": "node --test pipeline/*.test.mjs",
+    "reviewed-enrich": "node pipeline/07-contact.mjs"
   },
   "devDependencies": {
     "zod": "^3.24.0"

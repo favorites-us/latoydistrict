@@ -1,0 +1,207 @@
+{
+  "property": "545044706",
+  "measurementId": "G-1D1HB0X4BH",
+  "timezone": "America/Los_Angeles",
+  "fetchedAt": "2026-10-14T19:03:47.827Z",
+  "previousDates": [
+    "2026-08-17",
+    "2026-09-13"
+  ],
+  "recentDates": [
+    "2026-09-14",
+    "2026-10-11"
+  ],
+  "filters": {
+    "hostName": "toydistrictlosangeles.com (optional www allowed in core reports)",
+    "internalTraffic": "No additional exclusion; current admin filter configuration not verified"
+  },
+  "overview": {
+    "recent_28d": {
+      "dateRange": "recent_28d",
+      "sessions": 292,
+      "totalUsers": 235,
+      "newUsers": 224,
+      "screenPageViews": 481,
+      "engagedSessions": 131,
+      "engagementRate": 0.4486301369863014,
+      "userEngagementDuration": 7124,
+      "averageSessionDuration": 95.03868692123288,
+      "keyEvents": 0
+    },
+    "previous_28d": {
+      "dateRange": "previous_28d",
+      "sessions": 265,
+      "totalUsers": 230,
+      "newUsers": 229,
+      "screenPageViews": 545,
+      "engagedSessions": 129,
+      "engagementRate": 0.4867924528301887,
+      "userEngagementDuration": 21573,
+      "averageSessionDuration": 125.94889887924529,
+      "keyEvents": 0
+    }
+  },
+  "organicSearch": {
+    "recent_28d": {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "sessions": 192,
+      "totalUsers": 145,
+      "newUsers": 138,
+      "screenPageViews": 328,
+      "engagedSessions": 91,
+      "engagementRate": 0.4739583333333333,
+      "userEngagementDuration": 5471,
+      "averageSessionDuration": 106.06903215625,
+      "keyEvents": 0
+    },
+    "previous_28d": {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "sessions": 130,
+      "totalUsers": 104,
+      "newUsers": 100,
+      "screenPageViews": 230,
+      "engagedSessions": 77,
+      "engagementRate": 0.5923076923076923,
+      "userEngagementDuration": 16580,
+      "averageSessionDuration": 123.06300813846154,
+      "keyEvents": 0
+    }
+  },
+  "googleOrganic": {
+    "recent_28d": {
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 160,
+      "totalUsers": 121,
+      "newUsers": 117,
+      "screenPageViews": 269,
+      "engagedSessions": 75,
+      "engagementRate": 0.46875,
+      "userEngagementDuration": 4515,
+      "averageSessionDuration": 107.92016344375,
+      "keyEvents": 0
+    },
+    "previous_28d": {
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 98,
+      "totalUsers": 77,
+      "newUsers": 73,
+      "screenPageViews": 158,
+      "engagedSessions": 54,
+      "engagementRate": 0.5510204081632653,
+      "userEngagementDuration": 13954,
+      "averageSessionDuration": 99.33719291836734,
+      "keyEvents": 0
+    }
+  },
+  "organicStorePages": {
+    "recent_28d": {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "screenPageViews": 121,
+      "totalUsers": 76,
+      "sessions": 85,
+      "engagedSessions": 57
+    },
+    "previous_28d": {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "screenPageViews": 100,
+      "totalUsers": 49,
+      "sessions": 60,
+      "engagedSessions": 41
+    }
+  },
+  "changesPercent": {
+    "overview": {
+      "sessions": 10.1887,
+      "totalUsers": 2.1739,
+      "screenPageViews": -11.7431,
+      "engagedSessions": 1.5504
+    },
+    "organicSearch": {
+      "sessions": 47.6923,
+      "totalUsers": 39.4231,
+      "screenPageViews": 42.6087,
+      "engagedSessions": 18.1818
+    },
+    "googleOrganic": {
+      "sessions": 63.2653,
+      "totalUsers": 57.1429,
+      "screenPageViews": 70.2532,
+      "engagedSessions": 38.8889
+    },
+    "organicStorePages": {
+      "sessions": 41.6667,
+      "totalUsers": 55.102,
+      "screenPageViews": 21.0,
+      "engagedSessions": 39.0244
+    }
+  },
+  "dataQuality": {
+    "gscAvailable": false,
+    "recordedRecentLeadSubmit": 0,
+    "recordedRecentStoreInquiry": 0,
+    "actualReceivedLeads": "Unknown; neither Supabase rows nor mailbox reviewed",
+    "samplingOrThresholdingFlags": "None present in report metadata; not proof against all measurement limitations",
+    "weekTotalNote": "Weekly reports queried directly; daily/user counts not added into period unique totals"
+  },
+  "priorityStoreCurrentFields": [
+    {
+      "name": "Abc Toys Wholesale",
+      "slug": "abc-toys-wholesale-323",
+      "phone": "(213) 687-8445",
+      "hours": null,
+      "moq": null,
+      "payment": null,
+      "verified_at": null
+    },
+    {
+      "name": "Camila's Toys",
+      "slug": "camila-s-toys-417",
+      "phone": null,
+      "hours": null,
+      "moq": null,
+      "payment": null,
+      "verified_at": null
+    },
+    {
+      "name": "Chill Trading, INC",
+      "slug": "chill-trading-inc-225",
+      "phone": null,
+      "hours": null,
+      "moq": null,
+      "payment": null,
+      "verified_at": null
+    },
+    {
+      "name": "Funland Toys INC",
+      "slug": "funland-toys-inc-468",
+      "phone": "(213) 626-5160",
+      "hours": null,
+      "moq": null,
+      "payment": null,
+      "verified_at": null
+    },
+    {
+      "name": "Little Tokyo Wholesale",
+      "slug": "little-tokyo-wholesale-256",
+      "phone": null,
+      "hours": null,
+      "moq": null,
+      "payment": null,
+      "verified_at": null
+    }
+  ],
+  "listingCoverage": {
+    "records": 191,
+    "phone": 31,
+    "hours": 2,
+    "moq": 0,
+    "payment": 0,
+    "verified_at": 0
+  }
+}

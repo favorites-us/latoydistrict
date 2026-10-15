@@ -1,0 +1,3165 @@
+{
+  "fetchedAt": "2026-10-14T19:03:52.075Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "country"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "newUsers"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "engagementRate"
+      },
+      {
+        "name": "userEngagementDuration"
+      },
+      {
+        "name": "averageSessionDuration"
+      },
+      {
+        "name": "keyEvents"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "country"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "newUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagementRate",
+        "type": "TYPE_FLOAT"
+      },
+      {
+        "name": "userEngagementDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "averageSessionDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "270"
+          },
+          {
+            "value": "218"
+          },
+          {
+            "value": "211"
+          },
+          {
+            "value": "456"
+          },
+          {
+            "value": "125"
+          },
+          {
+            "value": "0.46296296296296297"
+          },
+          {
+            "value": "6874"
+          },
+          {
+            "value": "86.636891981481483"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "210"
+          },
+          {
+            "value": "179"
+          },
+          {
+            "value": "177"
+          },
+          {
+            "value": "349"
+          },
+          {
+            "value": "106"
+          },
+          {
+            "value": "0.50476190476190474"
+          },
+          {
+            "value": "17566"
+          },
+          {
+            "value": "106.77729831428572"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "89"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "0.7142857142857143"
+          },
+          {
+            "value": "1960"
+          },
+          {
+            "value": "477.95536357142856"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.33333333333333331"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "302.58245716666664"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Canada"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.4"
+          },
+          {
+            "value": "43"
+          },
+          {
+            "value": "100.1205128"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "0.8"
+          },
+          {
+            "value": "33"
+          },
+          {
+            "value": "241.20356080000002"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "China"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "71"
+          },
+          {
+            "value": "497.654311"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United Kingdom"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "France"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.66666666666666663"
+          },
+          {
+            "value": "21"
+          },
+          {
+            "value": "11.881366333333332"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Germany"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "0.52032733333333336"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Poland"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.66666666666666663"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "7.7043246666666674"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.56447066666666668"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "17"
+          },
+          {
+            "value": "8.869208"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Belarus"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "3.817426"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "China"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "904"
+          },
+          {
+            "value": "1560.690958"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Germany"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Honduras"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "27"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "737"
+          },
+          {
+            "value": "438.5006115"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Netherlands"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Pakistan"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "14"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "210"
+          },
+          {
+            "value": "303.5999135"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Puerto Rico"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Spain"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Albania"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Australia"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "42"
+          },
+          {
+            "value": "43.819341"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Austria"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "5.894585"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Barbados"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "1139.776526"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Canada"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Costa Rica"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "France"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "French Polynesia"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "140"
+          },
+          {
+            "value": "513.220932"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Hong Kong"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "18.459491"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "38.307162"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Japan"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1.695665"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Nicaragua"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Philippines"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Sweden"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Taiwan"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Albania"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Australia"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Austria"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Barbados"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Belarus"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Costa Rica"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "French Polynesia"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Honduras"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Hong Kong"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Japan"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Netherlands"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Nicaragua"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Pakistan"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Philippines"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Poland"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Puerto Rico"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Spain"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Sweden"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Taiwan"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United Kingdom"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 29,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 2,
+        "remaining": 199986
+      },
+      "tokensPerHour": {
+        "consumed": 2,
+        "remaining": 39986
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 2,
+        "remaining": 13986
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "country": "United States",
+      "dateRange": "recent_28d",
+      "sessions": 270,
+      "totalUsers": 218,
+      "newUsers": 211,
+      "screenPageViews": 456,
+      "engagedSessions": 125,
+      "engagementRate": 0.46296296296296297,
+      "userEngagementDuration": 6874,
+      "averageSessionDuration": 86.63689198148148,
+      "keyEvents": 0
+    },
+    {
+      "country": "United States",
+      "dateRange": "previous_28d",
+      "sessions": 210,
+      "totalUsers": 179,
+      "newUsers": 177,
+      "screenPageViews": 349,
+      "engagedSessions": 106,
+      "engagementRate": 0.5047619047619047,
+      "userEngagementDuration": 17566,
+      "averageSessionDuration": 106.77729831428572,
+      "keyEvents": 0
+    },
+    {
+      "country": "Mexico",
+      "dateRange": "previous_28d",
+      "sessions": 7,
+      "totalUsers": 5,
+      "newUsers": 5,
+      "screenPageViews": 89,
+      "engagedSessions": 5,
+      "engagementRate": 0.7142857142857143,
+      "userEngagementDuration": 1960,
+      "averageSessionDuration": 477.95536357142856,
+      "keyEvents": 0
+    },
+    {
+      "country": "Mexico",
+      "dateRange": "recent_28d",
+      "sessions": 6,
+      "totalUsers": 3,
+      "newUsers": 1,
+      "screenPageViews": 7,
+      "engagedSessions": 2,
+      "engagementRate": 0.3333333333333333,
+      "userEngagementDuration": 3,
+      "averageSessionDuration": 302.58245716666664,
+      "keyEvents": 0
+    },
+    {
+      "country": "Canada",
+      "dateRange": "previous_28d",
+      "sessions": 5,
+      "totalUsers": 5,
+      "newUsers": 5,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "engagementRate": 0.4,
+      "userEngagementDuration": 43,
+      "averageSessionDuration": 100.1205128,
+      "keyEvents": 0
+    },
+    {
+      "country": "India",
+      "dateRange": "previous_28d",
+      "sessions": 5,
+      "totalUsers": 5,
+      "newUsers": 5,
+      "screenPageViews": 8,
+      "engagedSessions": 4,
+      "engagementRate": 0.8,
+      "userEngagementDuration": 33,
+      "averageSessionDuration": 241.20356080000002,
+      "keyEvents": 0
+    },
+    {
+      "country": "China",
+      "dateRange": "recent_28d",
+      "sessions": 4,
+      "totalUsers": 3,
+      "newUsers": 3,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 71,
+      "averageSessionDuration": 497.654311,
+      "keyEvents": 0
+    },
+    {
+      "country": "United Kingdom",
+      "dateRange": "previous_28d",
+      "sessions": 4,
+      "totalUsers": 4,
+      "newUsers": 4,
+      "screenPageViews": 4,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "France",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 3,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "engagementRate": 0.6666666666666666,
+      "userEngagementDuration": 21,
+      "averageSessionDuration": 11.881366333333332,
+      "keyEvents": 0
+    },
+    {
+      "country": "Germany",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 13,
+      "averageSessionDuration": 0.5203273333333334,
+      "keyEvents": 0
+    },
+    {
+      "country": "Poland",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 5,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "engagementRate": 0.6666666666666666,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 7.704324666666667,
+      "keyEvents": 0
+    },
+    {
+      "country": "Russia",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 1,
+      "averageSessionDuration": 0.5644706666666667,
+      "keyEvents": 0
+    },
+    {
+      "country": "(not set)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 17,
+      "averageSessionDuration": 8.869208,
+      "keyEvents": 0
+    },
+    {
+      "country": "Belarus",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 7,
+      "averageSessionDuration": 3.817426,
+      "keyEvents": 0
+    },
+    {
+      "country": "China",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 13,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 904,
+      "averageSessionDuration": 1560.690958,
+      "keyEvents": 0
+    },
+    {
+      "country": "Germany",
+      "dateRange": "recent_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 22,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Honduras",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 27,
+      "engagedSessions": 2,
+      "engagementRate": 1,
+      "userEngagementDuration": 737,
+      "averageSessionDuration": 438.5006115,
+      "keyEvents": 0
+    },
+    {
+      "country": "Netherlands",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Pakistan",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 14,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 210,
+      "averageSessionDuration": 303.5999135,
+      "keyEvents": 0
+    },
+    {
+      "country": "Puerto Rico",
+      "dateRange": "recent_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Spain",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Albania",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Australia",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 42,
+      "averageSessionDuration": 43.819341,
+      "keyEvents": 0
+    },
+    {
+      "country": "Austria",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 1,
+      "averageSessionDuration": 5.894585,
+      "keyEvents": 0
+    },
+    {
+      "country": "Barbados",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 8,
+      "averageSessionDuration": 1139.776526,
+      "keyEvents": 0
+    },
+    {
+      "country": "Canada",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Costa Rica",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "France",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "French Polynesia",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 140,
+      "averageSessionDuration": 513.220932,
+      "keyEvents": 0
+    },
+    {
+      "country": "Hong Kong",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 10,
+      "averageSessionDuration": 18.459491,
+      "keyEvents": 0
+    },
+    {
+      "country": "India",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 13,
+      "averageSessionDuration": 38.307162,
+      "keyEvents": 0
+    },
+    {
+      "country": "Japan",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 1,
+      "averageSessionDuration": 1.695665,
+      "keyEvents": 0
+    },
+    {
+      "country": "Nicaragua",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Philippines",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Russia",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Sweden",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Taiwan",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "(not set)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Albania",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Australia",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Austria",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Barbados",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Belarus",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Costa Rica",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "French Polynesia",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Honduras",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Hong Kong",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Japan",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Netherlands",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Nicaragua",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Pakistan",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Philippines",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Poland",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Puerto Rico",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Spain",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Sweden",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "Taiwan",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "country": "United Kingdom",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    }
+  ]
+}

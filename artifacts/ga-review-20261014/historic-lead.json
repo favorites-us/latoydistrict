@@ -1,0 +1,111 @@
+{
+  "fetchedAt": "2026-10-14T19:05:05.702Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-07-10",
+        "endDate": "2026-10-11"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "date"
+      },
+      {
+        "name": "sessionSourceMedium"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "eventCount"
+      },
+      {
+        "name": "totalUsers"
+      }
+    ],
+    "dimensionFilter": {
+      "andGroup": {
+        "expressions": [
+          {
+            "filter": {
+              "fieldName": "hostName",
+              "stringFilter": {
+                "matchType": "FULL_REGEXP",
+                "value": "(www\\.)?toydistrictlosangeles\\.com",
+                "caseSensitive": false
+              }
+            }
+          },
+          {
+            "filter": {
+              "fieldName": "eventName",
+              "inListFilter": {
+                "values": [
+                  "lead_submit",
+                  "store_inquiry"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "date"
+      },
+      {
+        "name": "sessionSourceMedium"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "eventCount",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "20260719"
+          },
+          {
+            "value": "google / cpc"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      }
+    ],
+    "rowCount": 1,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "date": "20260719",
+      "sessionSourceMedium": "google / cpc",
+      "eventCount": 1,
+      "totalUsers": 1
+    }
+  ]
+}

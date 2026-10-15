@@ -1,0 +1,17 @@
+{
+  "completed_at": "2026-10-14T20:31:05.163600+00:00",
+  "elapsed_wall_minutes": 24.1,
+  "labor_productivity": "Not measured; elapsed time includes research, code, model review and validation.",
+  "unit_tests": 14,
+  "unit_tests_status": "pass",
+  "next_build": "pass; 591 static/generated pages",
+  "static_page_checks": 20,
+  "generated_stores_sha256": "ee7704f1cbde0d03630a09e75955058e2eead3fb43d2542fc9ef0dd424c12d13",
+  "claude_models": [
+    "claude-opus-5-5"
+  ],
+  "claude_review_rounds": 2,
+  "deployment": "not performed",
+  "browser_visual_qa": "blocked by user-denied browser access",
+  "live_ga_delivery": "not tested"
+}

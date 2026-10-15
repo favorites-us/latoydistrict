@@ -1,0 +1,60 @@
+{
+  "baseline": {
+    "stores": 191,
+    "phone": 31,
+    "hours": 2,
+    "website_links": 9,
+    "contact_email": 0,
+    "with_online_facts": 0,
+    "online_facts": 0,
+    "verified_in_person": 0
+  },
+  "after": {
+    "stores": 191,
+    "phone": 35,
+    "hours": 2,
+    "website_links": 10,
+    "contact_email": 4,
+    "with_online_facts": 5,
+    "online_facts": 7,
+    "verified_in_person": 0
+  },
+  "changed_store_ids": [
+    "casa-manga-218",
+    "funland-toys-inc-468",
+    "tom-s-model-501",
+    "american-silk-inc-340",
+    "bigmart-inc-230",
+    "california-balloon-house-447",
+    "l-t-gifts-238",
+    "la-sky-trading-inc-230",
+    "v-l-silk-and-craft-inc-335"
+  ],
+  "field_update_types": {
+    "new_fill": 10,
+    "reconfirm": 6,
+    "correction": 4
+  },
+  "cohort_results": {
+    "ga_priority": {
+      "n": 5,
+      "new_operational_fields": 0,
+      "previous_manufacturer_listing_applied": 1
+    },
+    "known_web": {
+      "n": 10,
+      "previous_official_evidence_applied": 4
+    },
+    "random": {
+      "n": 20,
+      "new_directory_phones": 4,
+      "new_owner_published_buying_conditions": 0
+    }
+  },
+  "measurement_limits": [
+    "Website link count includes inherited unreachable/unverified URLs.",
+    "Newly displayed official information was already discovered before this pilot.",
+    "Research/verification hours were not independently timed.",
+    "Contact click is not a completed inquiry; live delivery not yet tested."
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "phase": "Follow-up after original frozen pilot; targeted official-site policy pages, not new random-sample results",
+  "checked_at": "2026-10-14",
+  "new_facts": [
+    {
+      "id": "helium-ordering",
+      "kind": "services",
+      "text": {
+        "en": "Helium-inflation orders must be placed in person and paid in full on the reservation day. No phone or online booking; balloons bought elsewhere are accepted.",
+        "es": "Los pedidos de inflado con helio se hacen en persona y se pagan por completo el día de la reserva. No se aceptan reservas por teléfono ni en línea; se admiten globos comprados en otras tiendas."
+      },
+      "scope": "Balloon helium-inflation ordering policy, not all merchandise orders. Availability still requires confirmation.",
+      "source": {
+        "url": "https://caballoonhouse.com/pages/helium-services",
+        "type": "business",
+        "label": "California Balloon House helium",
+        "checked_at": "2026-10-14"
+      }
+    },
+    {
+      "id": "helium-large-orders",
+      "kind": "services",
+      "text": {
+        "en": "Large helium-inflation orders, generally 25 or more balloons, require at least three days’ notice. Last helium orders are accepted at 3:30pm on weekdays and 2:30pm Saturday.",
+        "es": "Los pedidos grandes de inflado con helio, generalmente de 25 globos o más, requieren al menos tres días de anticipación. Los últimos pedidos se reciben a las 15:30 entre semana y a las 14:30 el sábado."
+      },
+      "scope": "Merchant defines large orders generally as 25+ balloons; helium-specific cutoff and advance-order policy.",
+      "source": {
+        "url": "https://caballoonhouse.com/pages/helium-services",
+        "type": "business",
+        "label": "California Balloon House helium",
+        "checked_at": "2026-10-14"
+      }
+    },
+    {
+      "id": "shipping-area-timing",
+      "kind": "buying",
+      "text": {
+        "en": "Shipping is limited to the contiguous U.S. Friday orders are processed and shipped the following Monday. Arrival dates are estimates; confirm timing for event orders.",
+        "es": "Los envíos se limitan a los estados contiguos de EE. UU. Los pedidos del viernes se procesan y envían el lunes siguiente. Las fechas de llegada son estimadas; confirme los plazos para eventos."
+      },
+      "scope": "Published online shipping policy, not a guaranteed delivery date or a rule for in-store pickup.",
+      "source": {
+        "url": "https://caballoonhouse.com/policies/shipping-policy",
+        "type": "business",
+        "label": "California Balloon House shipping",
+        "checked_at": "2026-10-14"
+      }
+    }
+  ],
+  "corrected_american_silk": {
+    "hours": "Home 9am–4pm vs About 9am–5pm; withdraw single closing time",
+    "minimum": "Application $3,000 vs About one-item wholesale pricing; explain scope ambiguity",
+    "sources": [
+      {
+        "url": "https://www.americansilkinc.com/",
+        "type": "business",
+        "label": "American Silk home",
+        "checked_at": "2026-10-14"
+      },
+      {
+        "url": "https://www.americansilkinc.com/about-us",
+        "type": "business",
+        "label": "American Silk about",
+        "checked_at": "2026-10-14"
+      },
+      {
+        "url": "https://www.americansilkinc.com/wholesale",
+        "type": "business",
+        "label": "American Silk wholesale",
+        "checked_at": "2026-10-14"
+      }
+    ],
+    "minimum_numeric_value": "Removed from structured fact; conflict presented as scoped prose only."
+  },
+  "not_adopted": [
+    {
+      "source": "https://caballoonhouse.com/policies/refund-policy",
+      "reason": "Blanket helium no-refund wording differs from service-page cancellation exceptions. No simplified refund claim added."
+    }
+  ],
+  "browser_qa": "Retry blocked again by saved localhost preference; waiting for user to change permission."
+}

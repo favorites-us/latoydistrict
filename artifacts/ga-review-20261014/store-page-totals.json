@@ -1,0 +1,151 @@
+{
+  "fetchedAt": "2026-10-14T19:05:05.752Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [],
+    "metrics": [
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "engagedSessions"
+      }
+    ],
+    "dimensionFilter": {
+      "andGroup": {
+        "expressions": [
+          {
+            "filter": {
+              "fieldName": "hostName",
+              "stringFilter": {
+                "matchType": "FULL_REGEXP",
+                "value": "(www\\.)?toydistrictlosangeles\\.com",
+                "caseSensitive": false
+              }
+            }
+          },
+          {
+            "filter": {
+              "fieldName": "pagePath",
+              "stringFilter": {
+                "matchType": "FULL_REGEXP",
+                "value": "(/es)?/stores/.*"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "223"
+          },
+          {
+            "value": "95"
+          },
+          {
+            "value": "109"
+          },
+          {
+            "value": "69"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "163"
+          },
+          {
+            "value": "104"
+          },
+          {
+            "value": "115"
+          },
+          {
+            "value": "80"
+          }
+        ]
+      }
+    ],
+    "rowCount": 2,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "dateRange": "previous_28d",
+      "screenPageViews": 223,
+      "totalUsers": 95,
+      "sessions": 109,
+      "engagedSessions": 69
+    },
+    {
+      "dateRange": "recent_28d",
+      "screenPageViews": 163,
+      "totalUsers": 104,
+      "sessions": 115,
+      "engagedSessions": 80
+    }
+  ]
+}

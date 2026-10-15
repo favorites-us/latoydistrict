@@ -1,0 +1,113 @@
+{
+  "note": "Search discovery only; acceptance requires reading the matching original page.",
+  "batches": [
+    {
+      "batch": 1,
+      "queries": [
+        "\"The JS Store\" \"230 Winston\" -site:toydistrictlosangeles.com",
+        "\"V L Silk\" \"335\" Los Angeles -site:toydistrictlosangeles.com",
+        "\"US Koko Trading\" Los Angeles -site:toydistrictlosangeles.com",
+        "\"Hultan\" \"401\" Los Angeles -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 2,
+      "queries": [
+        "\"Dr Vape Group\" \"305\" -site:toydistrictlosangeles.com",
+        "\"Amore Perfume\" \"448\" -site:toydistrictlosangeles.com",
+        "\"AA Wholesale\" \"516\" Los Angeles -site:toydistrictlosangeles.com",
+        "\"Letys Toys\" \"243\" -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 3,
+      "queries": [
+        "\"Young Hee Kim\" \"500 S Los Angeles\" toys -site:toydistrictlosangeles.com",
+        "\"Articulos Religiosos Santa Maria\" \"400\" -site:toydistrictlosangeles.com",
+        "\"KH Collectibles\" \"437\" -site:toydistrictlosangeles.com",
+        "\"L T Gifts\" \"238\" Los Angeles -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 4,
+      "queries": [
+        "\"Bigmart\" \"230 Winston\" -site:toydistrictlosangeles.com",
+        "\"Master Party\" \"376\" Los Angeles -site:toydistrictlosangeles.com",
+        "\"Babi Trading\" \"412\" -site:toydistrictlosangeles.com",
+        "\"Global Light\" \"401 S Los Angeles\" -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 5,
+      "queries": [
+        "\"Jese Trading\" Los Angeles wholesale -site:toydistrictlosangeles.com",
+        "\"Greenwich USA\" \"313\" -site:toydistrictlosangeles.com",
+        "\"LA Sky Trading\" \"230\" -site:toydistrictlosangeles.com",
+        "\"Funtastic\" \"256 Winston\" -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 6,
+      "queries": [
+        "V L Silk Craft 335 East 4th Los Angeles website",
+        "\"Letys Toys\" Los Angeles wholesale",
+        "\"Funtastic\" Los Angeles Winston toys",
+        "\"KH Collectibles\" Los Angeles website"
+      ]
+    },
+    {
+      "batch": 7,
+      "queries": [
+        "\"Van Long\" \"335\" crafts website",
+        "\"Lety's Toys\" Los Angeles",
+        "\"L.T. Gifts\" Los Angeles",
+        "\"Master Party\" Los Angeles wholesale"
+      ]
+    },
+    {
+      "batch": 8,
+      "queries": [
+        "\"Beaula\" \"238\" gifts wholesale",
+        "\"V L Silk\" \"680-9802\"",
+        "\"The JS Store\" Winston wholesale -site:toydistrictlosangeles.com",
+        "\"Hultan Group\" Los Angeles -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 9,
+      "queries": [
+        "\"Amore Perfume\" Los Angeles wholesale website -site:toydistrictlosangeles.com",
+        "\"AA Wholesale\" Los Angeles 4th -site:toydistrictlosangeles.com",
+        "\"Big Mart\" \"230 Winston\" website",
+        "\"Global Light\" Los Angeles toys wholesale -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 10,
+      "queries": [
+        "\"US Koko\" wholesale contact -site:toydistrictlosangeles.com",
+        "\"305 Boyd\" \"Dr Vape\" website -site:toydistrictlosangeles.com",
+        "\"500 S Los Angeles\" \"44\" toys -site:toydistrictlosangeles.com",
+        "\"Articulos Religiosos Santa Maria\" Los Angeles facebook"
+      ]
+    },
+    {
+      "batch": 11,
+      "queries": [
+        "\"Babi Trading\" Los Angeles contact -site:toydistrictlosangeles.com",
+        "\"Greenwich USA\" Los Angeles wholesale -site:toydistrictlosangeles.com",
+        "\"Jese Trading\" \"424\" phone -site:toydistrictlosangeles.com",
+        "\"LA Sky Trading\" website wholesale -site:toydistrictlosangeles.com"
+      ]
+    },
+    {
+      "batch": 12,
+      "queries": [
+        "\"Chill Trading\" \"225 Winston\" phone instagram -site:toydistrictlosangeles.com",
+        "\"Camila's Toys\" \"417 Wall\" facebook -site:toydistrictlosangeles.com",
+        "\"Little Tokyo Wholesale\" \"256 Winston\" phone -site:toydistrictlosangeles.com",
+        "\"ABC Toys\" \"213-687-8445\" website -site:toydistrictlosangeles.com"
+      ]
+    }
+  ]
+}

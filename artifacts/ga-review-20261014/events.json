@@ -1,0 +1,555 @@
+{
+  "fetchedAt": "2026-10-14T19:03:48.466Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "eventName"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "eventCount"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "keyEvents"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "eventName"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "eventCount",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "page_view"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "545"
+          },
+          {
+            "value": "227"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "page_view"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "481"
+          },
+          {
+            "value": "233"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "session_start"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "290"
+          },
+          {
+            "value": "233"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "session_start"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "267"
+          },
+          {
+            "value": "229"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "first_visit"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "229"
+          },
+          {
+            "value": "226"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "first_visit"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "224"
+          },
+          {
+            "value": "224"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "user_engagement"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "177"
+          },
+          {
+            "value": "137"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "user_engagement"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "168"
+          },
+          {
+            "value": "121"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "124"
+          },
+          {
+            "value": "41"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "90"
+          },
+          {
+            "value": "61"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "scroll"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "69"
+          },
+          {
+            "value": "58"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "scroll"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "66"
+          },
+          {
+            "value": "62"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "20"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "20"
+          },
+          {
+            "value": "18"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "form_start"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "form_start"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 8,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 1,
+        "remaining": 199991
+      },
+      "tokensPerHour": {
+        "consumed": 1,
+        "remaining": 39991
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 8
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 1,
+        "remaining": 13991
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "eventName": "page_view",
+      "dateRange": "previous_28d",
+      "eventCount": 545,
+      "totalUsers": 227,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "page_view",
+      "dateRange": "recent_28d",
+      "eventCount": 481,
+      "totalUsers": 233,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "session_start",
+      "dateRange": "recent_28d",
+      "eventCount": 290,
+      "totalUsers": 233,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "session_start",
+      "dateRange": "previous_28d",
+      "eventCount": 267,
+      "totalUsers": 229,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "first_visit",
+      "dateRange": "previous_28d",
+      "eventCount": 229,
+      "totalUsers": 226,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "first_visit",
+      "dateRange": "recent_28d",
+      "eventCount": 224,
+      "totalUsers": 224,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "user_engagement",
+      "dateRange": "recent_28d",
+      "eventCount": 177,
+      "totalUsers": 137,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "user_engagement",
+      "dateRange": "previous_28d",
+      "eventCount": 168,
+      "totalUsers": 121,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "store_view",
+      "dateRange": "previous_28d",
+      "eventCount": 124,
+      "totalUsers": 41,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "store_view",
+      "dateRange": "recent_28d",
+      "eventCount": 90,
+      "totalUsers": 61,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "scroll",
+      "dateRange": "previous_28d",
+      "eventCount": 69,
+      "totalUsers": 58,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "scroll",
+      "dateRange": "recent_28d",
+      "eventCount": 66,
+      "totalUsers": 62,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "click",
+      "dateRange": "previous_28d",
+      "eventCount": 20,
+      "totalUsers": 8,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "click",
+      "dateRange": "recent_28d",
+      "eventCount": 20,
+      "totalUsers": 18,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "form_start",
+      "dateRange": "recent_28d",
+      "eventCount": 4,
+      "totalUsers": 1,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "form_start",
+      "dateRange": "previous_28d",
+      "eventCount": 2,
+      "totalUsers": 2,
+      "keyEvents": 0
+    }
+  ]
+}

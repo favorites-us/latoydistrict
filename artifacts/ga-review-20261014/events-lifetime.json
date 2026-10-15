@@ -1,0 +1,314 @@
+{
+  "fetchedAt": "2026-10-14T19:03:53.874Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-07-10",
+        "endDate": "2026-10-11"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "eventName"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "eventCount"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "keyEvents"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "eventName"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "eventCount",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "page_view"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1460"
+          },
+          {
+            "value": "696"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "session_start"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "842"
+          },
+          {
+            "value": "696"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "first_visit"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "700"
+          },
+          {
+            "value": "696"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "user_engagement"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "444"
+          },
+          {
+            "value": "335"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "278"
+          },
+          {
+            "value": "126"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "scroll"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "189"
+          },
+          {
+            "value": "167"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "54"
+          },
+          {
+            "value": "35"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "form_start"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "lead_submit"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 9,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 1,
+        "remaining": 199974
+      },
+      "tokensPerHour": {
+        "consumed": 1,
+        "remaining": 39974
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 9
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 1,
+        "remaining": 13974
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "eventName": "page_view",
+      "eventCount": 1460,
+      "totalUsers": 696,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "session_start",
+      "eventCount": 842,
+      "totalUsers": 696,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "first_visit",
+      "eventCount": 700,
+      "totalUsers": 696,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "user_engagement",
+      "eventCount": 444,
+      "totalUsers": 335,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "store_view",
+      "eventCount": 278,
+      "totalUsers": 126,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "scroll",
+      "eventCount": 189,
+      "totalUsers": 167,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "click",
+      "eventCount": 54,
+      "totalUsers": 35,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "form_start",
+      "eventCount": 8,
+      "totalUsers": 5,
+      "keyEvents": 0
+    },
+    {
+      "eventName": "lead_submit",
+      "eventCount": 1,
+      "totalUsers": 1,
+      "keyEvents": 0
+    }
+  ]
+}

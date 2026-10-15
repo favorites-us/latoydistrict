@@ -1,0 +1,109 @@
+{
+  "method": "Static production-build HTML parsing, not browser visual/runtime testing",
+  "pages": [
+    {
+      "locale": "en",
+      "id": "v-l-silk-and-craft-inc-335",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "l-t-gifts-238",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "bigmart-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "la-sky-trading-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "american-silk-inc-340",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "california-balloon-house-447",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "casa-manga-218",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "tom-s-model-501",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "funland-toys-inc-468",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "v-l-silk-and-craft-inc-335",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "l-t-gifts-238",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "bigmart-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "la-sky-trading-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "american-silk-inc-340",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "california-balloon-house-447",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "casa-manga-218",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "tom-s-model-501",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "funland-toys-inc-468",
+      "status": "pass"
+    },
+    {
+      "page": "index.html",
+      "status": "pass",
+      "scope": "Four reviewed sales-mode cards show buying-channel guidance; cards contain no telephone field."
+    },
+    {
+      "page": "es.html",
+      "status": "pass",
+      "scope": "Four reviewed sales-mode cards show buying-channel guidance; cards contain no telephone field."
+    }
+  ],
+  "regeneration": "byte-identical output; dry run also leaves file unchanged",
+  "directory_phone_jsonld": "No telephone in all 8 affected EN/ES JSON-LD blocks",
+  "browser_visual_qa": "Blocked: browser policy reported user denied localhost access; no workaround attempted.",
+  "live_ga_delivery": "Not tested; code is not deployed."
+}

@@ -1,0 +1,153 @@
+{
+  "fetchedAt": "2026-10-14T19:03:52.569Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "hostName"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "eventCount"
+      }
+    ],
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "hostName"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "eventCount",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "toydistrictlosangeles.com"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "292"
+          },
+          {
+            "value": "481"
+          },
+          {
+            "value": "1352"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "toydistrictlosangeles.com"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "265"
+          },
+          {
+            "value": "545"
+          },
+          {
+            "value": "1424"
+          }
+        ]
+      }
+    ],
+    "rowCount": 1,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 1,
+        "remaining": 199983
+      },
+      "tokensPerHour": {
+        "consumed": 1,
+        "remaining": 39983
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 9
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 1,
+        "remaining": 13983
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "hostName": "toydistrictlosangeles.com",
+      "dateRange": "recent_28d",
+      "sessions": 292,
+      "screenPageViews": 481,
+      "eventCount": 1352
+    },
+    {
+      "hostName": "toydistrictlosangeles.com",
+      "dateRange": "previous_28d",
+      "sessions": 265,
+      "screenPageViews": 545,
+      "eventCount": 1424
+    }
+  ]
+}

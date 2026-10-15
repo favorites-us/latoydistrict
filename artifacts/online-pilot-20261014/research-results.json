@@ -1,0 +1,446 @@
+{
+  "checked_at": "2026-10-14",
+  "method": "Bounded public web discovery and original-page review; no account login, form submission, merchant outreach, Google Maps/Places collection, or access-control circumvention.",
+  "population_warning": "Random sample is drawn from remaining registration-derived candidates, not a verified universe of operating wholesalers.",
+  "results": [
+    {
+      "id": "abc-toys-wholesale-323",
+      "cohort": "ga_priority",
+      "outcome": "no_new_fact",
+      "note": "Search supported existing number at 323 E 4th St; EDD original returned 502. Different ABC Toys at 634 S San Pedro rejected. No new field adopted.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "chill-trading-inc-225",
+      "cohort": "ga_priority",
+      "outcome": "no_new_fact",
+      "note": "Exact name/address and social-channel discovery yielded no supported new operational detail.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "camila-s-toys-417",
+      "cohort": "ga_priority",
+      "outcome": "no_new_fact",
+      "note": "Exact name/address and social-channel discovery yielded no supported new operational detail.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "funland-toys-inc-468",
+      "cohort": "ga_priority",
+      "outcome": "prior_manufacturer_evidence",
+      "note": "Jada Toys source rechecked. Attribution/FLT Collectibles alias added; discovered before pilot, no new phone/hours/website.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": true,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://www.jadatoys.com/about/where-to-buy/",
+          "type": "manufacturer",
+          "label": "Jada Toys",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "little-tokyo-wholesale-256",
+      "cohort": "ga_priority",
+      "outcome": "no_new_fact",
+      "note": "No owner channel established at 256 Winston St suite D; existing registry record retained.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "americas-favors-405",
+      "cohort": "known_web",
+      "outcome": "source_restriction",
+      "note": "Prior review identified anti-scraping/automation terms. No new automated collection from this site.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "casa-manga-218",
+      "cohort": "known_web",
+      "outcome": "prior_official_evidence",
+      "note": "Official name, address and suite match. Previously discovered wholesale route, Spanish and email now incorporated; phone reconfirmed.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": true,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://www.casamanga.com/",
+          "type": "business",
+          "label": "Casa Manga",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "m-and-m-toys-241",
+      "cohort": "known_web",
+      "outcome": "unreachable",
+      "note": "Known domain did not resolve in this research environment. No conclusion about closure; inherited URL remains unverified.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "american-silk-inc-340",
+      "cohort": "known_web",
+      "outcome": "prior_official_evidence",
+      "note": "Own site and wholesale page rechecked. $3,000 wholesale minimum is scoped; no physical-store or repeat-order assumption. Existing hours/phone reconfirmed.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": true,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://www.americansilkinc.com/",
+          "type": "business",
+          "label": "American Silk",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "url": "https://www.americansilkinc.com/wholesale",
+          "type": "business",
+          "label": "American Silk wholesale",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "california-balloon-house-447",
+      "cohort": "known_web",
+      "outcome": "prior_official_evidence",
+      "note": "FAQ/contact and wholesale application rechecked. Retail/wholesale access and application conditions scoped. Existing phone/hours reconfirmed; no outreach.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": true,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://caballoonhouse.com/pages/faq",
+          "type": "business",
+          "label": "California Balloon House",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "url": "https://caballoonhouse.com/pages/ws-account-create",
+          "type": "business",
+          "label": "California Balloon House wholesale",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "cap-and-hat-import-inc-322",
+      "cohort": "known_web",
+      "outcome": "unreachable",
+      "note": "Known domain did not resolve in this research environment. No conclusion about closure; inherited URL remains unverified.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "fantasia-sales-inc-401",
+      "cohort": "known_web",
+      "outcome": "stale_page",
+      "note": "Official page contains pandemic-era temporary-closure text. No current closure/hours inferred.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "little-tokyo-service-center-community-development-corporatio",
+      "cohort": "known_web",
+      "outcome": "topic_mismatch",
+      "note": "Official site describes community/social services. Not counted as wholesale buying enrichment; no route deletion in this pilot.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "the-supply-joint-325",
+      "cohort": "known_web",
+      "outcome": "topic_mismatch",
+      "note": "Official storefront focuses on packaging/smoke accessories. No toy/party buying enrichment adopted.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "tom-s-model-501",
+      "cohort": "known_web",
+      "outcome": "prior_official_evidence",
+      "note": "Official Shopify contact/about pages match 501 E 4th St and existing phone. Previously found website/email/customer types now incorporated.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": true,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://toms-model.myshopify.com/pages/contact-us",
+          "type": "business",
+          "label": "Tom’s Model contact",
+          "checked_at": "2026-10-14"
+        },
+        {
+          "url": "https://toms-model.myshopify.com/pages/about-us",
+          "type": "business",
+          "label": "Tom’s Model about",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "the-js-store-llc-230",
+      "cohort": "random",
+      "outcome": "registration_only",
+      "note": "Exact business/address found in registration mirrors; no business-operated contact or buying page.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "v-l-silk-and-craft-inc-335",
+      "cohort": "random",
+      "outcome": "directory_phone",
+      "note": "Name and 335 E 4th St match Yellow Pages. Phone accepted only. Van Long Silk & Crafts import history is not current inventory evidence.",
+      "newly_discovered_accepted_fields": [
+        "phone"
+      ],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://www.yellowpages.com/los-angeles-ca/mip/v-l-silk-craft-inc-559510118",
+          "type": "directory",
+          "label": "Yellow Pages",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "us-koko-trading-inc-231",
+      "cohort": "random",
+      "outcome": "registration_or_trade_history",
+      "note": "231 E 4th St appears in trade records. Ambiguous embedded phone string rejected; corporate address elsewhere does not prove relocation.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "the-us-hultan-group-401",
+      "cohort": "random",
+      "outcome": "address_mismatch",
+      "note": "Trade listing at 251 S Los Angeles St differs from this 401 S Los Angeles St suite 2 record.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "dr-vape-group-llc-305",
+      "cohort": "random",
+      "outcome": "historical_only",
+      "note": "Old trademark/address result; no current owner channel established. No buying information adopted.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "amore-perfume-inc-448",
+      "cohort": "random",
+      "outcome": "no_new_fact",
+      "note": "Exact registration found; existing phone retained. Same-name foreign business rejected.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "aa-wholesale-516",
+      "cohort": "random",
+      "outcome": "registration_only",
+      "note": "Exact registration only; Dallas wholesaler is a different location.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "letys-toys-inc-243",
+      "cohort": "random",
+      "outcome": "address_mismatch",
+      "note": "Lety’s Toys in Pico Rivera does not match 243 E 5th St; no fact adopted.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "young-hee-kim-500",
+      "cohort": "random",
+      "outcome": "unresolved_alias",
+      "note": "Old city list suggests Basic Trading at 500 S Los Angeles St suite 44. No supported current owner/DBA link; do not merge.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "articulos-religiosos-santa-maria-400",
+      "cohort": "random",
+      "outcome": "unverified_candidates",
+      "note": "Search snippets offered conflicting phones; original Cybo page returned 429. Stopped; no phone adopted.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "kh-collectibles-inc-437",
+      "cohort": "random",
+      "outcome": "registration_only",
+      "note": "437 S Los Angeles St registration found, no business-operated buying/contact page.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "l-t-gifts-238",
+      "cohort": "random",
+      "outcome": "directory_phone",
+      "note": "Loc8NearMe matches L.T. Gifts / Beaula and 238 E 4th St. Phone only; ltgiftsupply.com TLS request failed, so website not adopted.",
+      "newly_discovered_accepted_fields": [
+        "phone"
+      ],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://www.loc8nearme.com/california/los-angeles/l-t-gifts-beaula-inc/7569938/",
+          "type": "directory",
+          "label": "Loc8NearMe",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "bigmart-inc-230",
+      "cohort": "random",
+      "outcome": "directory_phone",
+      "note": "411.info matches Big Mart at 230 Winston St suite 31. Phone only; discovered bigmartworld.com did not resolve.",
+      "newly_discovered_accepted_fields": [
+        "phone"
+      ],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://411.info/business/Big-Mart-Los-Angeles-CA-8960596",
+          "type": "directory",
+          "label": "411.info",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "master-party-inc-376",
+      "cohort": "random",
+      "outcome": "no_new_fact",
+      "note": "Search found directory’s own page and unrelated party planners; no independent supported operational detail.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "babi-trading-inc-412",
+      "cohort": "random",
+      "outcome": "registration_only",
+      "note": "Old registration at 412 Wall St B3; other corporate mailing location is not proof of shop relocation. Unrelated Telegram result rejected.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "global-light-401",
+      "cohort": "random",
+      "outcome": "different_entity",
+      "note": "Foreign same-name companies and global-light.com wholesale terms do not establish identity at 401 S Los Angeles St suite 5.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "jese-trading-inc-424",
+      "cohort": "random",
+      "outcome": "registration_only",
+      "note": "Exact registration; old litigation irrelevant to current buying information. No operational detail adopted.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "greenwich-usa-co-313",
+      "cohort": "random",
+      "outcome": "no_new_fact",
+      "note": "Exact-name/address searches did not establish a current business-operated channel.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    },
+    {
+      "id": "la-sky-trading-inc-230",
+      "cohort": "random",
+      "outcome": "directory_phone",
+      "note": "411.info exact name and 230 Winston St suite 38 match. Phone only; directory-hosted localsearch page is not assumed owner-operated.",
+      "newly_discovered_accepted_fields": [
+        "phone"
+      ],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": [
+        {
+          "url": "https://411.info/business/La-Sky-Trading-Inc-Los-Angeles-CA-8960337",
+          "type": "directory",
+          "label": "411.info",
+          "checked_at": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "id": "funtastic-256",
+      "cohort": "random",
+      "outcome": "different_entity",
+      "note": "Houston and overseas same-name stores do not match 256 Winston St suite F.",
+      "newly_discovered_accepted_fields": [],
+      "previously_known_evidence_applied": false,
+      "new_current_operations_verified": false,
+      "accepted_sources": []
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "framework": {
+    "name": "Next.js",
+    "slug": "nextjs"
+  },
+  "basePath": "/Users/hbrandon/DevProjects/ToyDistrict/latoydistrict/web",
+  "fileCount": 45,
+  "totalSize": 446914,
+  "ignoredCount": 4,
+  "ignored": [
+    ".gitignore",
+    ".next",
+    ".vercel",
+    "node_modules"
+  ],
+  "directories": [
+    {
+      "path": "data",
+      "fileCount": 1,
+      "size": 188622
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "fileCount": 1,
+      "size": 106810
+    },
+    {
+      "path": "lib",
+      "fileCount": 5,
+      "size": 48409
+    },
+    {
+      "path": "package-lock.json",
+      "fileCount": 1,
+      "size": 42212
+    },
+    {
+      "path": "components",
+      "fileCount": 12,
+      "size": 33118
+    },
+    {
+      "path": "app",
+      "fileCount": 18,
+      "size": 24824
+    },
+    {
+      "path": ".env.example",
+      "fileCount": 1,
+      "size": 939
+    },
+    {
+      "path": "tsconfig.json",
+      "fileCount": 1,
+      "size": 562
+    },
+    {
+      "path": "next.config.mjs",
+      "fileCount": 1,
+      "size": 518
+    },
+    {
+      "path": "package.json",
+      "fileCount": 1,
+      "size": 430
+    },
+    {
+      "path": "next-env.d.ts",
+      "fileCount": 1,
+      "size": 262
+    },
+    {
+      "path": "vercel.json",
+      "fileCount": 1,
+      "size": 149
+    },
+    {
+      "path": "public",
+      "fileCount": 1,
+      "size": 59
+    }
+  ],
+  "largestFiles": [
+    {
+      "path": "data/stores.json",
+      "size": 188622,
+      "mode": 33188,
+      "sha": "a03415ed0a7181cedfb457eb3f2183943e66161a"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "size": 106810,
+      "mode": 33188,
+      "sha": "96de583da86a6b301c1a14fcdb9957742eae048d"
+    },
+    {
+      "path": "package-lock.json",
+      "size": 42212,
+      "mode": 33188,
+      "sha": "0afc92206632350fd807a37ba43ae8daf86d6eb4"
+    },
+    {
+      "path": "lib/content/guides.ts",
+      "size": 33845,
+      "mode": 33188,
+      "sha": "c447a0b6e99af118af706fffc82053dbf39a698f"
+    },
+    {
+      "path": "app/globals.css",
+      "size": 9751,
+      "mode": 33188,
+      "sha": "a98ed84421f0265b8ac9fcc2568be82a4ffc2c3f"
+    },
+    {
+      "path": "lib/i18n.ts",
+      "size": 9726,
+      "mode": 33188,
+      "sha": "b44fe317f5f729b36b1050b0809d6c17bb03d719"
+    },
+    {
+      "path": "components/pages/StorePage.tsx",
+      "size": 8985,
+      "mode": 33188,
+      "sha": "efcdd3c317df351d27c501dc422af5d9881dd2be"
+    },
+    {
+      "path": "components/DistrictMap.tsx",
+      "size": 8113,
+      "mode": 33188,
+      "sha": "1beb543391509b2234acb2e1dc48af2b42815c90"
+    },
+    {
+      "path": "components/DirectoryBrowser.tsx",
+      "size": 2885,
+      "mode": 33188,
+      "sha": "f75c9c71f4941356c8b61a7c882485406423cc4c"
+    },
+    {
+      "path": "components/pages/HomePage.tsx",
+      "size": 2704,
+      "mode": 33188,
+      "sha": "d7e14061c70857b03a95608ca3c32fe38a392ed6"
+    }
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "size": 939,
+      "mode": 33188,
+      "sha": "6e22ccfcb714c49db7e4386e263dc5525e755b12"
+    },
+    {
+      "path": "app/api/keepalive/route.ts",
+      "size": 1810,
+      "mode": 33188,
+      "sha": "39743088b144ea0dadb8488d9e95f1371e94dc3d"
+    },
+    {
+      "path": "app/api/leads/route.ts",
+      "size": 1750,
+      "mode": 33188,
+      "sha": "59e10c62803470a25a5dfcac51c107c384680c22"
+    },
+    {
+      "path": "app/es/guide/for/[buyer]/page.tsx",
+      "size": 948,
+      "mode": 33188,
+      "sha": "7556483debf299350f5bc2270b34751bf1b034ed"
+    },
+    {
+      "path": "app/es/guide/visiting/page.tsx",
+      "size": 407,
+      "mode": 33188,
+      "sha": "0c4dc83628b27824ae93c8d295f7dbdc2f43c5d6"
+    },
+    {
+      "path": "app/es/guide/wholesale-basics/page.tsx",
+      "size": 462,
+      "mode": 33188,
+      "sha": "ad8bb4aecf601de03ad6e4e6cd993e40548449ab"
+    },
+    {
+      "path": "app/es/page.tsx",
+      "size": 398,
+      "mode": 33188,
+      "sha": "3b6ae34759f9ff67fdfd2e6217ac8008db103833"
+    },
+    {
+      "path": "app/es/stores/[slug]/page.tsx",
+      "size": 1043,
+      "mode": 33188,
+      "sha": "047fee39980c6797259a2d861dd9a0869123a2ca"
+    },
+    {
+      "path": "app/globals.css",
+      "size": 9751,
+      "mode": 33188,
+      "sha": "a98ed84421f0265b8ac9fcc2568be82a4ffc2c3f"
+    },
+    {
+      "path": "app/guide/for/[buyer]/page.tsx",
+      "size": 948,
+      "mode": 33188,
+      "sha": "b3bfe595bc1b3b07070db16c1e11ea3f2d82c2c0"
+    },
+    {
+      "path": "app/guide/visiting/page.tsx",
+      "size": 407,
+      "mode": 33188,
+      "sha": "f173e5c69f7a28b66091e5095e6ef6a19c0f95ae"
+    },
+    {
+      "path": "app/guide/wholesale-basics/page.tsx",
+      "size": 462,
+      "mode": 33188,
+      "sha": "719bb62a7fb576474fc11e176521065bbd4da28e"
+    },
+    {
+      "path": "app/layout.tsx",
+      "size": 1418,
+      "mode": 33188,
+      "sha": "3fc01bab054dec2aa61143a0d7b23bace7519945"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "size": 575,
+      "mode": 33188,
+      "sha": "044ae37c100200b76a838440297bc32dc17e2117"
+    },
+    {
+      "path": "app/page.tsx",
+      "size": 389,
+      "mode": 33188,
+      "sha": "8f1b12a29f0317d7e3407d8237df018ce3372a25"
+    },
+    {
+      "path": "app/robots.ts",
+      "size": 264,
+      "mode": 33188,
+      "sha": "8140808f3249770c0a6cd85373b97e6cf5215669"
+    },
+    {
+      "path": "app/sitemap.ts",
+      "size": 1162,
+      "mode": 33188,
+      "sha": "b9c4c53bfb81bb10d4fc966f0d447bc6e33609f3"
+    },
+    {
+      "path": "app/stores/[slug]/opengraph-image.tsx",
+      "size": 1599,
+      "mode": 33188,
+      "sha": "945839e756981605c702709e83787ac5678635a7"
+    },
+    {
+      "path": "app/stores/[slug]/page.tsx",
+      "size": 1031,
+      "mode": 33188,
+      "sha": "c6fd330aeaa6a2bba563939689864d413ef71103"
+    },
+    {
+      "path": "components/DirectoryBrowser.tsx",
+      "size": 2885,
+      "mode": 33188,
+      "sha": "f75c9c71f4941356c8b61a7c882485406423cc4c"
+    },
+    {
+      "path": "components/DistrictMap.tsx",
+      "size": 8113,
+      "mode": 33188,
+      "sha": "1beb543391509b2234acb2e1dc48af2b42815c90"
+    },
+    {
+      "path": "components/JsonLd.tsx",
+      "size": 196,
+      "mode": 33188,
+      "sha": "3aa1f4f590c296761e096e1d9fdf098cc23b8479"
+    },
+    {
+      "path": "components/LeadForm.tsx",
+      "size": 2312,
+      "mode": 33188,
+      "sha": "7d23e4a7efd874487756b128e5401462b1f0b5d9"
+    },
+    {
+      "path": "components/pages/GuidePage.tsx",
+      "size": 1428,
+      "mode": 33188,
+      "sha": "1075a703745f5ad6cee4e672a72037e396749883"
+    },
+    {
+      "path": "components/pages/HomePage.tsx",
+      "size": 2704,
+      "mode": 33188,
+      "sha": "d7e14061c70857b03a95608ca3c32fe38a392ed6"
+    },
+    {
+      "path": "components/pages/StorePage.tsx",
+      "size": 8985,
+      "mode": 33188,
+      "sha": "efcdd3c317df351d27c501dc422af5d9881dd2be"
+    },
+    {
+      "path": "components/SiteChrome.tsx",
+      "size": 2247,
+      "mode": 33188,
+      "sha": "b994d812d7f7cbd2f6830842f37479989247bd98"
+    },
+    {
+      "path": "components/StoreCard.tsx",
+      "size": 1158,
+      "mode": 33188,
+      "sha": "e1800d26273525b4ef6165f6cc662b14e63c2022"
+    },
+    {
+      "path": "components/StoreContactLink.tsx",
+      "size": 698,
+      "mode": 33188,
+      "sha": "47f620d0b03e2b1cdf7cfc77b257d1e2c6fae4ae"
+    },
+    {
+      "path": "components/StoreInquiryForm.tsx",
+      "size": 2093,
+      "mode": 33188,
+      "sha": "4bb677c901cecca7f53c8c546859378092c9b24a"
+    },
+    {
+      "path": "components/StoreViewEvent.tsx",
+      "size": 299,
+      "mode": 33188,
+      "sha": "6e4e32facee72c599aa2b015e5c45e371b5a7e28"
+    },
+    {
+      "path": "data/stores.json",
+      "size": 188622,
+      "mode": 33188,
+      "sha": "a03415ed0a7181cedfb457eb3f2183943e66161a"
+    },
+    {
+      "path": "lib/content/guides.ts",
+      "size": 33845,
+      "mode": 33188,
+      "sha": "c447a0b6e99af118af706fffc82053dbf39a698f"
+    },
+    {
+      "path": "lib/i18n.ts",
+      "size": 9726,
+      "mode": 33188,
+      "sha": "b44fe317f5f729b36b1050b0809d6c17bb03d719"
+    },
+    {
+      "path": "lib/jsonld.ts",
+      "size": 1824,
+      "mode": 33188,
+      "sha": "7d92a73c5bd01ec5695bc19469b618f640946b86"
+    },
+    {
+      "path": "lib/meta.ts",
+      "size": 509,
+      "mode": 33188,
+      "sha": "31cb18a30497d1326a6526f025899d4a4cb775a2"
+    },
+    {
+      "path": "lib/stores.ts",
+      "size": 2505,
+      "mode": 33188,
+      "sha": "d4ad95a4fc4b523b11ccd0966973b844dea51e29"
+    },
+    {
+      "path": "next-env.d.ts",
+      "size": 262,
+      "mode": 33188,
+      "sha": "79ea33d5bd6bf5319667f287c6aec3a5e0ce256a"
+    },
+    {
+      "path": "next.config.mjs",
+      "size": 518,
+      "mode": 33188,
+      "sha": "bb39a19629e14593caf938451eea025ea732bf9c"
+    },
+    {
+      "path": "package-lock.json",
+      "size": 42212,
+      "mode": 33188,
+      "sha": "0afc92206632350fd807a37ba43ae8daf86d6eb4"
+    },
+    {
+      "path": "package.json",
+      "size": 430,
+      "mode": 33188,
+      "sha": "d031d96f478d7da47de83b000acb44c819a28394"
+    },
+    {
+      "path": "public/ads.txt",
+      "size": 59,
+      "mode": 33188,
+      "sha": "d765ae413b39be53aa4354672112ff056c80e758"
+    },
+    {
+      "path": "tsconfig.json",
+      "size": 562,
+      "mode": 33188,
+      "sha": "25df18918a85dc9f91a7ffa716f64c4c5e9b902b"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "size": 106810,
+      "mode": 33188,
+      "sha": "96de583da86a6b301c1a14fcdb9957742eae048d"
+    },
+    {
+      "path": "vercel.json",
+      "size": 149,
+      "mode": 33188,
+      "sha": "f2a96a6d32a540e2114c78f9387fbd87697e5eb7"
+    }
+  ]
+}

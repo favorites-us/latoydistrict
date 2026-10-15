@@ -1,0 +1,604 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "v-l-silk-and-craft-inc-335",
+      "identity": {
+        "name": "V L Silk & Craft, INC",
+        "line1": "335 E 4th St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "V L Silk & Craft Inc; 335 E 4th St, Los Angeles, CA 90013. Full listing read; phone only.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "(213) 680-9802",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Public directory listing; owner confirmation and current service not established.",
+          "source": {
+            "url": "https://www.yellowpages.com/los-angeles-ca/mip/v-l-silk-craft-inc-559510118",
+            "type": "directory",
+            "label": "Yellow Pages",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [],
+      "business_domains": []
+    },
+    {
+      "id": "l-t-gifts-238",
+      "identity": {
+        "name": "L.T. Gifts",
+        "line1": "238 E 4th St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "L.T. GIFTS (BEAULA INC); 238 East 4th Street, Los Angeles, CA 90013. Full listing read; phone only.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "(213) 527-7070",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Public directory listing; owner confirmation and current service not established.",
+          "source": {
+            "url": "https://www.loc8nearme.com/california/los-angeles/l-t-gifts-beaula-inc/7569938/",
+            "type": "directory",
+            "label": "Loc8NearMe",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [],
+      "business_domains": []
+    },
+    {
+      "id": "bigmart-inc-230",
+      "identity": {
+        "name": "Bigmart INC",
+        "line1": "230 Winston St",
+        "unit": "31",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "Big Mart; 230 Winston St, Ste 31, Los Angeles, CA 90013-1479. Full listing read; suite matches.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "(213) 629-4626",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Public directory listing; owner confirmation and current service not established.",
+          "source": {
+            "url": "https://411.info/business/Big-Mart-Los-Angeles-CA-8960596",
+            "type": "directory",
+            "label": "411.info",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [],
+      "business_domains": []
+    },
+    {
+      "id": "la-sky-trading-inc-230",
+      "identity": {
+        "name": "La Sky Trading INC",
+        "line1": "230 Winston St",
+        "unit": "38",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "La Sky Trading Inc; 230 Winston St, Ste 38, Los Angeles, CA 90013-1449. Full listing read; suite matches.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "(213) 622-3188",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Public directory listing; owner confirmation and current service not established.",
+          "source": {
+            "url": "https://411.info/business/La-Sky-Trading-Inc-Los-Angeles-CA-8960337",
+            "type": "directory",
+            "label": "411.info",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [],
+      "business_domains": []
+    },
+    {
+      "id": "american-silk-inc-340",
+      "identity": {
+        "name": "American Silk INC",
+        "line1": "340 E 4th St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "Official home page gives American Silk, 340 E 4th St, Los Angeles CA 90013 and the existing phone; same-domain wholesale application.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "213-265-7559",
+          "previous": "213-265-7559",
+          "change_type": "reconfirm",
+          "scope": "Business website: consumer shopping and linked wholesale application; online source review, not a visit.",
+          "source": {
+            "url": "https://www.americansilkinc.com/",
+            "type": "business",
+            "label": "American Silk",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "hours",
+          "value": null,
+          "previous": "Mon - Sat 9:00 am – 4:00 pm; Sunday Closed",
+          "change_type": "correction",
+          "scope": "Withdraw single-valued hours: homepage publishes Mon–Sat 9am–4pm, About page publishes Mon–Sat 9am–5pm. Neither has a reliable update date establishing precedence. Confirm with the business.",
+          "source": {
+            "url": "https://www.americansilkinc.com/about-us",
+            "type": "business",
+            "label": "American Silk about",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "contact_email",
+          "value": "AmericanSilkInc@gmail.com",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Business website: consumer shopping and linked wholesale application; online source review, not a visit.",
+          "source": {
+            "url": "https://www.americansilkinc.com/",
+            "type": "business",
+            "label": "American Silk",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "wholesale_retail",
+          "value": "both",
+          "previous": "retail",
+          "change_type": "correction",
+          "scope": "Homepage offers consumer shopping and links directly to /wholesale; online retail and wholesale channels, not confirmation of walk-in retail.",
+          "source": {
+            "url": "https://www.americansilkinc.com/",
+            "type": "business",
+            "label": "American Silk",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [
+        {
+          "id": "online-retail",
+          "kind": "buying",
+          "text": {
+            "en": "The website offers retail shopping and links to a wholesale application. Confirm in-store purchasing options before visiting.",
+            "es": "El sitio ofrece compras al menudeo y enlaza a una solicitud de mayoreo. Confirme las opciones de compra en tienda antes de visitar."
+          },
+          "scope": "Online retail channel; no claim of walk-in retail availability.",
+          "source": {
+            "url": "https://www.americansilkinc.com/",
+            "type": "business",
+            "label": "American Silk",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "id": "wholesale-minimum",
+          "kind": "buying",
+          "text": {
+            "en": "The wholesale application lists a $3,000 minimum, while the About page advertises wholesale pricing even for one item. Confirm which program and conditions apply to your purchase.",
+            "es": "La solicitud de mayoreo indica un mínimo de $3,000, mientras que la página «Acerca de» anuncia precios de mayoreo incluso por una pieza. Confirme qué programa y condiciones corresponden a su compra."
+          },
+          "scope": "Conflicting or differently scoped official wording: account minimum versus advertised per-item pricing. Do not treat $3,000 as a universal minimum or one-item pricing as guaranteed account eligibility.",
+          "source": {
+            "url": "https://www.americansilkinc.com/wholesale",
+            "type": "business",
+            "label": "American Silk wholesale",
+            "checked_at": "2026-10-14"
+          },
+          "additional_sources": [
+            {
+              "url": "https://www.americansilkinc.com/about-us",
+              "type": "business",
+              "label": "American Silk about",
+              "checked_at": "2026-10-14"
+            }
+          ]
+        },
+        {
+          "id": "hours-conflict",
+          "kind": "services",
+          "text": {
+            "en": "Published hours disagree: the homepage says Monday–Saturday 9am–4pm; the About page says 9am–5pm. Both say Sunday closed. Confirm the closing time before visiting.",
+            "es": "Los horarios publicados difieren: la página principal indica lunes–sábado de 9 a 16 h; la página «Acerca de» indica de 9 a 17 h. Ambas indican cierre los domingos. Confirme antes de visitar."
+          },
+          "scope": "Same business and address; no authoritative page update date, so no single closing time is adopted.",
+          "source": {
+            "url": "https://www.americansilkinc.com/",
+            "type": "business",
+            "label": "American Silk home",
+            "checked_at": "2026-10-14"
+          },
+          "additional_sources": [
+            {
+              "url": "https://www.americansilkinc.com/about-us",
+              "type": "business",
+              "label": "American Silk about",
+              "checked_at": "2026-10-14"
+            }
+          ]
+        }
+      ],
+      "business_domains": [
+        "americansilkinc.com"
+      ]
+    },
+    {
+      "id": "california-balloon-house-447",
+      "identity": {
+        "name": "California Balloon House",
+        "line1": "447 Wall St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "Official contact page gives exact name, 447 Wall St, Los Angeles CA 90013 and existing phone. Wholesale application is linked from the same site.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "213-689-0087",
+          "previous": "213-689-0087",
+          "change_type": "reconfirm",
+          "scope": "Existing phone reconfirmed on the official About Us & Contact Us page at /pages/faq; no claim of live call verification.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/faq",
+            "type": "business",
+            "label": "California Balloon House",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "hours",
+          "value": "Business Hours: M-F - 9:00 AM to 4:45 PM; Sat - 9:00 AM to 3:45 PM. Helium Service Hours: M-F - 9:00 AM to 3:30 PM; Sat - 9:00 AM to 2:30 PM",
+          "previous": "Business Hours: M-F - 9:00 AM to 4:45 PM; Sat - 9:00 AM to 3:45 PM. Helium Service Hours: M-F - 9:00 AM to 3:30 PM; Sat - 9:00 AM to 2:30 PM",
+          "change_type": "reconfirm",
+          "scope": "Business contact page; store and helium service hours are separate; Sunday is not stated.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/faq",
+            "type": "business",
+            "label": "California Balloon House",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "contact_email",
+          "value": "info@caballoonhouse.com",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Public customer contact email on the official About Us & Contact Us page at /pages/faq; not an invitation for marketing outreach.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/faq",
+            "type": "business",
+            "label": "California Balloon House",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "wholesale_retail",
+          "value": "both",
+          "previous": "wholesale",
+          "change_type": "correction",
+          "scope": "Official About Us & Contact Us page at /pages/faq explicitly welcomes wholesale and retail customers in person and online.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/faq",
+            "type": "business",
+            "label": "California Balloon House",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [
+        {
+          "id": "buying-options",
+          "kind": "buying",
+          "text": {
+            "en": "Wholesale and retail customers can shop in person or online. Helium service ends earlier than store hours.",
+            "es": "Clientes de mayoreo y menudeo pueden comprar en tienda o en línea. El servicio de helio termina antes del cierre de la tienda."
+          },
+          "scope": "Published buying options; availability is not guaranteed.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/faq",
+            "type": "business",
+            "label": "California Balloon House",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "id": "wholesale-account",
+          "kind": "buying",
+          "text": {
+            "en": "Wholesale accounts require approval. For tax-exempt status, the application requests a valid seller’s permit matching the business name. Some applicants must provide portfolio links; see the application.",
+            "es": "Las cuentas de mayoreo requieren aprobación. Para la exención de impuestos, la solicitud pide un permiso de vendedor válido con el mismo nombre comercial. Algunos solicitantes deben incluir enlaces a su portafolio; consulte la solicitud."
+          },
+          "scope": "Merchant application policy only; not a statement that all purchases require a resale certificate.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/ws-account-create",
+            "type": "business",
+            "label": "California Balloon House wholesale",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "id": "helium-ordering",
+          "kind": "services",
+          "text": {
+            "en": "Helium-inflation orders must be placed in person and paid in full on the reservation day. No phone or online booking; balloons bought elsewhere are accepted.",
+            "es": "Los pedidos de inflado con helio se hacen en persona y se pagan por completo el día de la reserva. No se aceptan reservas por teléfono ni en línea; se admiten globos comprados en otras tiendas."
+          },
+          "scope": "Balloon helium-inflation ordering policy, not all merchandise orders. Availability still requires confirmation.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/helium-services",
+            "type": "business",
+            "label": "California Balloon House helium",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "id": "helium-large-orders",
+          "kind": "services",
+          "text": {
+            "en": "Large helium-inflation orders, generally 25 or more balloons, require at least three days’ notice. Last helium orders are accepted at 3:30pm on weekdays and 2:30pm Saturday.",
+            "es": "Los pedidos grandes de inflado con helio, generalmente de 25 globos o más, requieren al menos tres días de anticipación. Los últimos pedidos se reciben a las 15:30 entre semana y a las 14:30 el sábado."
+          },
+          "scope": "Merchant defines large orders generally as 25+ balloons; helium-specific cutoff and advance-order policy.",
+          "source": {
+            "url": "https://caballoonhouse.com/pages/helium-services",
+            "type": "business",
+            "label": "California Balloon House helium",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "id": "shipping-area-timing",
+          "kind": "buying",
+          "text": {
+            "en": "Shipping is limited to the contiguous U.S. Friday orders are processed and shipped the following Monday. Arrival dates are estimates; confirm timing for event orders.",
+            "es": "Los envíos se limitan a los estados contiguos de EE. UU. Los pedidos del viernes se procesan y envían el lunes siguiente. Las fechas de llegada son estimadas; confirme los plazos para eventos."
+          },
+          "scope": "Published online shipping policy, not a guaranteed delivery date or a rule for in-store pickup.",
+          "source": {
+            "url": "https://caballoonhouse.com/policies/shipping-policy",
+            "type": "business",
+            "label": "California Balloon House shipping",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "business_domains": [
+        "caballoonhouse.com"
+      ]
+    },
+    {
+      "id": "casa-manga-218",
+      "identity": {
+        "name": "Casa Manga",
+        "line1": "218 Boyd St",
+        "unit": "D",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "Official site gives Casa Manga, 218 Boyd St #D, Los Angeles CA 90013 and existing phone. Exact suite matches.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "213-437-0823",
+          "previous": "213-437-0823",
+          "change_type": "reconfirm",
+          "scope": "Homepage explicitly distinguishes retail and wholesale customers, provides wholesale contact, and advertises Spanish service.",
+          "source": {
+            "url": "https://www.casamanga.com/",
+            "type": "business",
+            "label": "Casa Manga",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "contact_email",
+          "value": "sales@casamanga.com",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Homepage explicitly distinguishes retail and wholesale customers, provides wholesale contact, and advertises Spanish service.",
+          "source": {
+            "url": "https://www.casamanga.com/",
+            "type": "business",
+            "label": "Casa Manga",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "wholesale_retail",
+          "value": "both",
+          "previous": "wholesale",
+          "change_type": "correction",
+          "scope": "Homepage explicitly distinguishes retail and wholesale customers, provides wholesale contact, and advertises Spanish service.",
+          "source": {
+            "url": "https://www.casamanga.com/",
+            "type": "business",
+            "label": "Casa Manga",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "languages",
+          "value": [
+            "Spanish"
+          ],
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Homepage explicitly distinguishes retail and wholesale customers, provides wholesale contact, and advertises Spanish service.",
+          "source": {
+            "url": "https://www.casamanga.com/",
+            "type": "business",
+            "label": "Casa Manga",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [
+        {
+          "id": "wholesale-signup",
+          "kind": "buying",
+          "text": {
+            "en": "The website serves retail and wholesale customers. Request a wholesale account via “Wholesale Sign Up / Log In” or sales@casamanga.com; wholesale prices require login. Spanish service is advertised. Confirm in-store purchasing before visiting.",
+            "es": "El sitio atiende a clientes de menudeo y mayoreo. Solicite una cuenta en “Wholesale Sign Up / Log In” o sales@casamanga.com; los precios de mayoreo requieren iniciar sesión. Anuncia atención en español. Confirme las compras en tienda antes de visitar."
+          },
+          "scope": "Account route and advertised language; no minimum order inferred from the retail free-shipping threshold.",
+          "source": {
+            "url": "https://www.casamanga.com/",
+            "type": "business",
+            "label": "Casa Manga",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "business_domains": [
+        "casamanga.com"
+      ]
+    },
+    {
+      "id": "tom-s-model-501",
+      "identity": {
+        "name": "Tom's Model",
+        "line1": "501 E 4th St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "Official Shopify contact page gives Tom’s Model, 501 East 4th Street, Los Angeles CA 90013 and existing phone. About page is linked on the same store.",
+      "updates": [
+        {
+          "field": "phone",
+          "value": "(213) 680-0888",
+          "previous": "(213) 680-0888",
+          "change_type": "reconfirm",
+          "scope": "Business-operated Shopify storefront and contact page; website was discovered before this pilot.",
+          "source": {
+            "url": "https://toms-model.myshopify.com/pages/contact-us",
+            "type": "business",
+            "label": "Tom’s Model contact",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "contact_email",
+          "value": "sales@tomsmodel.com",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Business-operated Shopify storefront and contact page; website was discovered before this pilot.",
+          "source": {
+            "url": "https://toms-model.myshopify.com/pages/contact-us",
+            "type": "business",
+            "label": "Tom’s Model contact",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "links.website",
+          "value": "https://toms-model.myshopify.com/",
+          "previous": null,
+          "change_type": "new_fill",
+          "scope": "Business-operated Shopify storefront and contact page; website was discovered before this pilot.",
+          "source": {
+            "url": "https://toms-model.myshopify.com/pages/contact-us",
+            "type": "business",
+            "label": "Tom’s Model contact",
+            "checked_at": "2026-10-14"
+          }
+        },
+        {
+          "field": "wholesale_retail",
+          "value": "both",
+          "previous": "wholesale",
+          "change_type": "correction",
+          "scope": "About page states distribution to retailers and direct sales to consumers; wholesale terms are not specified.",
+          "source": {
+            "url": "https://toms-model.myshopify.com/pages/about-us",
+            "type": "business",
+            "label": "Tom’s Model about",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "facts": [
+        {
+          "id": "buying-options",
+          "kind": "buying",
+          "text": {
+            "en": "Online shopping is available to consumers. The company also describes sales to retailers; ask customer service about wholesale terms and in-store purchases.",
+            "es": "Los consumidores pueden comprar en línea. La empresa también indica que vende a comercios; consulte al servicio al cliente las condiciones de mayoreo y las compras en tienda."
+          },
+          "scope": "Published customer types, not guaranteed wholesale eligibility or current stock.",
+          "source": {
+            "url": "https://toms-model.myshopify.com/pages/about-us",
+            "type": "business",
+            "label": "Tom’s Model about",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "business_domains": [
+        "toms-model.myshopify.com"
+      ]
+    },
+    {
+      "id": "funland-toys-inc-468",
+      "identity": {
+        "name": "Funland Toys INC",
+        "line1": "468 E 4th St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: source and entity review, 2026-10-14",
+      "identity_evidence": "Jada Toys lists Funland Toys / FLT Collectibles at 468 E. 4th Street, Los Angeles CA 90013. Exact business address matches; manufacturer listing only.",
+      "updates": [],
+      "facts": [
+        {
+          "id": "jada-distributor-listing",
+          "kind": "manufacturer_listing",
+          "text": {
+            "en": "Jada Toys lists “Funland Toys / FLT Collectibles” at this address among its U.S. hobby distributors. This listing does not confirm current stock or hours.",
+            "es": "Jada Toys incluye a “Funland Toys / FLT Collectibles” en esta dirección entre sus distribuidores de hobby en EE. UU. La lista no confirma existencias ni horarios actuales."
+          },
+          "scope": "Attributed manufacturer listing; no claim of active inventory, owner-verified hours or current operating status.",
+          "source": {
+            "url": "https://www.jadatoys.com/about/where-to-buy/",
+            "type": "manufacturer",
+            "label": "Jada Toys",
+            "checked_at": "2026-10-14"
+          }
+        }
+      ],
+      "business_domains": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "fetchedAt": "2026-10-14T19:03:46.899Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsadmin.googleapis.com/v1beta/properties/545044706/dataStreams",
+  "result": {
+    "dataStreams": [
+      {
+        "name": "properties/545044706/dataStreams/15236968078",
+        "type": "WEB_DATA_STREAM",
+        "displayName": "toydistrictla",
+        "createTime": "2026-07-10T21:20:48.585Z",
+        "updateTime": "2026-07-10T21:20:48.585Z",
+        "webStreamData": {
+          "measurementId": "G-1D1HB0X4BH",
+          "defaultUri": "https://toydistrictlosangeles.com"
+        }
+      }
+    ]
+  }
+}

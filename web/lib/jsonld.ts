@@ -25,7 +25,9 @@ export function storeJsonLd(store: Store) {
           },
         }
       : {}),
-    ...(store.phone ? { telephone: store.phone } : {}),
+    // New directory-only phones retain their uncertainty label in the UI;
+    // don't export them as an unqualified structured-data telephone claim.
+    ...(store.phone && store.field_sources?.phone?.type !== "directory" ? { telephone: store.phone } : {}),
     ...(() => {
       const l = store.links ?? {};
       const sameAs = [l.website, l.facebook, l.instagram, l.yelp, ...(l.other ?? [])]

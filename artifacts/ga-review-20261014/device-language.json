@@ -1,0 +1,1009 @@
+{
+  "fetchedAt": "2026-10-14T19:03:52.706Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "deviceCategory"
+      },
+      {
+        "name": "language"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "screenPageViews"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "deviceCategory"
+      },
+      {
+        "name": "language"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "English"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "137"
+          },
+          {
+            "value": "66"
+          },
+          {
+            "value": "230"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "English"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "116"
+          },
+          {
+            "value": "53"
+          },
+          {
+            "value": "181"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "English"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "110"
+          },
+          {
+            "value": "51"
+          },
+          {
+            "value": "185"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "English"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "109"
+          },
+          {
+            "value": "53"
+          },
+          {
+            "value": "171"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Spanish"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "23"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "32"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "Spanish"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "15"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "105"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Spanish"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "15"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "62"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "Chinese"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "17"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "Chinese"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "Spanish"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Chinese"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Italian"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Russian"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "tablet"
+          },
+          {
+            "value": "English"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "French"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "French"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "German"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "Japanese"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Korean"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Vietnamese"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "German"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "desktop"
+          },
+          {
+            "value": "Japanese"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Chinese"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Italian"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Korean"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Russian"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mobile"
+          },
+          {
+            "value": "Vietnamese"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "tablet"
+          },
+          {
+            "value": "English"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 14,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 2,
+        "remaining": 199981
+      },
+      "tokensPerHour": {
+        "consumed": 2,
+        "remaining": 39981
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 2,
+        "remaining": 13981
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "deviceCategory": "mobile",
+      "language": "English",
+      "dateRange": "recent_28d",
+      "sessions": 137,
+      "engagedSessions": 66,
+      "screenPageViews": 230
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "English",
+      "dateRange": "previous_28d",
+      "sessions": 116,
+      "engagedSessions": 53,
+      "screenPageViews": 181
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "English",
+      "dateRange": "recent_28d",
+      "sessions": 110,
+      "engagedSessions": 51,
+      "screenPageViews": 185
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "English",
+      "dateRange": "previous_28d",
+      "sessions": 109,
+      "engagedSessions": 53,
+      "screenPageViews": 171
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Spanish",
+      "dateRange": "recent_28d",
+      "sessions": 23,
+      "engagedSessions": 7,
+      "screenPageViews": 32
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "Spanish",
+      "dateRange": "previous_28d",
+      "sessions": 15,
+      "engagedSessions": 7,
+      "screenPageViews": 105
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Spanish",
+      "dateRange": "previous_28d",
+      "sessions": 15,
+      "engagedSessions": 10,
+      "screenPageViews": 62
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "Chinese",
+      "dateRange": "previous_28d",
+      "sessions": 5,
+      "engagedSessions": 4,
+      "screenPageViews": 17
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "Chinese",
+      "dateRange": "recent_28d",
+      "sessions": 5,
+      "engagedSessions": 3,
+      "screenPageViews": 7
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "Spanish",
+      "dateRange": "recent_28d",
+      "sessions": 4,
+      "engagedSessions": 1,
+      "screenPageViews": 5
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Chinese",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "engagedSessions": 0,
+      "screenPageViews": 3
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Italian",
+      "dateRange": "recent_28d",
+      "sessions": 3,
+      "engagedSessions": 1,
+      "screenPageViews": 5
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Russian",
+      "dateRange": "recent_28d",
+      "sessions": 3,
+      "engagedSessions": 2,
+      "screenPageViews": 10
+    },
+    {
+      "deviceCategory": "tablet",
+      "language": "English",
+      "dateRange": "recent_28d",
+      "sessions": 3,
+      "engagedSessions": 0,
+      "screenPageViews": 3
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "French",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 2,
+      "screenPageViews": 5
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "French",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "German",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "Japanese",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Korean",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Vietnamese",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "German",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    },
+    {
+      "deviceCategory": "desktop",
+      "language": "Japanese",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Chinese",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Italian",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Korean",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Russian",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    },
+    {
+      "deviceCategory": "mobile",
+      "language": "Vietnamese",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    },
+    {
+      "deviceCategory": "tablet",
+      "language": "English",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "source_url": "https://data.lacity.org/resource/6rrh-rzua.json?%24select=location_account%2Cbusiness_name%2Cdba_name%2Cstreet_address%2Czip_code%2Cnaics%2Clocation_start_date&%24where=starts_with%28zip_code%2C%2790013%27%29+AND+%28upper%28business_name%29+like+%27%25CHILL+TRADING%25%27+OR+upper%28business_name%29+like+%27%25FUNLAND+TOYS%25%27+OR+upper%28dba_name%29+like+%27%25CAMILA%25%27%29&%24limit=20",
+  "checked_at": "2026-10-14",
+  "purpose": "business identity and DBA lookup; not operating status or contacts",
+  "rows": [
+    {
+      "location_account": "0003492018-0001-6",
+      "business_name": "CHILL TRADING, INC.",
+      "street_address": "225 WINSTON STREET SUITE #1",
+      "zip_code": "90013-1451",
+      "naics": "423920",
+      "location_start_date": "2025-05-01T00:00:00.000"
+    },
+    {
+      "location_account": "0000458668-0001-8",
+      "business_name": "FUNLAND TOYS INC",
+      "street_address": "468 E 4TH STREET",
+      "zip_code": "90013-1604",
+      "naics": "423920",
+      "location_start_date": "1997-04-02T00:00:00.000"
+    },
+    {
+      "location_account": "0003349511-0001-9",
+      "business_name": "CARLOS VILLARRUEL",
+      "dba_name": "CAMILA'S TOYS",
+      "street_address": "417 WALL STREET SPACE #27",
+      "zip_code": "90013-2392",
+      "naics": "423920",
+      "location_start_date": "2022-01-01T00:00:00.000"
+    }
+  ]
+}

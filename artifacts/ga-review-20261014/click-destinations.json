@@ -1,0 +1,1508 @@
+{
+  "fetchedAt": "2026-10-14T19:05:05.198Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "linkDomain"
+      },
+      {
+        "name": "pagePath"
+      },
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "eventCount"
+      },
+      {
+        "name": "totalUsers"
+      }
+    ],
+    "dimensionFilter": {
+      "andGroup": {
+        "expressions": [
+          {
+            "filter": {
+              "fieldName": "hostName",
+              "stringFilter": {
+                "matchType": "FULL_REGEXP",
+                "value": "(www\\.)?toydistrictlosangeles\\.com",
+                "caseSensitive": false
+              }
+            }
+          },
+          {
+            "filter": {
+              "fieldName": "eventName",
+              "stringFilter": {
+                "matchType": "EXACT",
+                "value": "click"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "linkDomain"
+      },
+      {
+        "name": "pagePath"
+      },
+      {
+        "name": "sessionDefaultChannelGroup"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "eventCount",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "cylex.us.com"
+          },
+          {
+            "value": "/stores/funland-toys-inc-468"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/abc-toys-wholesale-323"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/abc-toys-wholesale-323"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "americasfavors.com"
+          },
+          {
+            "value": "/stores/americas-favors-405"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/season-toys-232"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "americasfavors.com"
+          },
+          {
+            "value": "/es/stores/americas-favors-405"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "americasfavors.com"
+          },
+          {
+            "value": "/stores/americas-favors-405"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "caballoonhouse.com"
+          },
+          {
+            "value": "/stores/california-balloon-house-447"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "casamanga.com"
+          },
+          {
+            "value": "/stores/casa-manga-218"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "cylex.us.com"
+          },
+          {
+            "value": "/stores/funland-toys-inc-468"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/abc-toys-wholesale-323"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/chill-trading-inc-225"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/chill-trading-inc-225"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/downtown-wholesale-and-distribution-326"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/global-light-401"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/toy-time-la-255"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mnmtoysinc.com"
+          },
+          {
+            "value": "/stores/m-and-m-toys-241"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "americasfavors.com"
+          },
+          {
+            "value": "/es/stores/americas-favors-405"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "americasfavors.com"
+          },
+          {
+            "value": "/stores/americas-favors-405"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "americasfavors.com"
+          },
+          {
+            "value": "/stores/americas-favors-405"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "caballoonhouse.com"
+          },
+          {
+            "value": "/stores/california-balloon-house-447"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "casamanga.com"
+          },
+          {
+            "value": "/stores/casa-manga-218"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "cylex.us.com"
+          },
+          {
+            "value": "/stores/funland-toys-inc-468"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "cylex.us.com"
+          },
+          {
+            "value": "/stores/funland-toys-inc-468"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/abc-toys-wholesale-323"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/chill-trading-inc-225"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/chill-trading-inc-225"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/downtown-wholesale-and-distribution-326"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/global-light-401"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/season-toys-232"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google.com"
+          },
+          {
+            "value": "/stores/toy-time-la-255"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "mnmtoysinc.com"
+          },
+          {
+            "value": "/stores/m-and-m-toys-241"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 22,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "linkDomain": "cylex.us.com",
+      "pagePath": "/stores/funland-toys-inc-468",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 7,
+      "totalUsers": 7
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/abc-toys-wholesale-323",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 4,
+      "totalUsers": 3
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/abc-toys-wholesale-323",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 4,
+      "totalUsers": 3
+    },
+    {
+      "linkDomain": "americasfavors.com",
+      "pagePath": "/stores/americas-favors-405",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 3,
+      "totalUsers": 3
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/camila-s-toys-417",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "previous_28d",
+      "eventCount": 2,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/cl-toys-trading-inc-409",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 2,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/season-toys-232",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 2,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "americasfavors.com",
+      "pagePath": "/es/stores/americas-favors-405",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "americasfavors.com",
+      "pagePath": "/stores/americas-favors-405",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "caballoonhouse.com",
+      "pagePath": "/stores/california-balloon-house-447",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "casamanga.com",
+      "pagePath": "/stores/casa-manga-218",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "cylex.us.com",
+      "pagePath": "/stores/funland-toys-inc-468",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/abc-toys-wholesale-323",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/camila-s-toys-417",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/camila-s-toys-417",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/chill-trading-inc-225",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/chill-trading-inc-225",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/cl-toys-trading-inc-409",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/cl-toys-trading-inc-409",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/downtown-wholesale-and-distribution-326",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/global-light-401",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/toy-time-la-255",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "mnmtoysinc.com",
+      "pagePath": "/stores/m-and-m-toys-241",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "linkDomain": "americasfavors.com",
+      "pagePath": "/es/stores/americas-favors-405",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "americasfavors.com",
+      "pagePath": "/stores/americas-favors-405",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "americasfavors.com",
+      "pagePath": "/stores/americas-favors-405",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "caballoonhouse.com",
+      "pagePath": "/stores/california-balloon-house-447",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "casamanga.com",
+      "pagePath": "/stores/casa-manga-218",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "cylex.us.com",
+      "pagePath": "/stores/funland-toys-inc-468",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "cylex.us.com",
+      "pagePath": "/stores/funland-toys-inc-468",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/abc-toys-wholesale-323",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/camila-s-toys-417",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/camila-s-toys-417",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/camila-s-toys-417",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/chill-trading-inc-225",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/chill-trading-inc-225",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/cl-toys-trading-inc-409",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/cl-toys-trading-inc-409",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/cl-toys-trading-inc-409",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/downtown-wholesale-and-distribution-326",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/global-light-401",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/season-toys-232",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "google.com",
+      "pagePath": "/stores/toy-time-la-255",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "linkDomain": "mnmtoysinc.com",
+      "pagePath": "/stores/m-and-m-toys-241",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    }
+  ]
+}

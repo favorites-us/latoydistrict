@@ -1,5 +1,9 @@
 # Contact research brief B (Yelp / public-directory PHONE numbers)
 
+**Workflow update:** use [brief C](CONTACT-RESEARCH-C.md) for review and publication.
+The raw output format below is historical research input; `07-contact.mjs` now
+rebuilds from the committed baseline and approved field evidence.
+
 Goal: for each store in the assigned input file, find a **phone number** from a
 public business listing (Yelp preferred) and record it, plus the Yelp listing
 URL as a link. Write results to the assigned output file, then

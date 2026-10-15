@@ -1,0 +1,564 @@
+{
+  "checked_at": "2026-10-14T21:28:40.419669+00:00",
+  "origin": "https://toydistrictlosangeles.com",
+  "deployment_id": "dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+  "method": "HTTPS GET and parsed production HTML/static assets; no browser JavaScript execution, form submissions, telephone calls, emails, or GA delivery test",
+  "data_sha256": "4725fbe05d2c394141f24b2f47863981fc29da1e886da084ac8d7238253c88f0",
+  "pages": [
+    {
+      "path": "/stores/casa-manga-218",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/casa-manga-218",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true
+      }
+    },
+    {
+      "path": "/stores/funland-toys-inc-468",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/funland-toys-inc-468",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true
+      }
+    },
+    {
+      "path": "/stores/tom-s-model-501",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/tom-s-model-501",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true
+      }
+    },
+    {
+      "path": "/stores/american-silk-inc-340",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/american-silk-inc-340",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true,
+        "hours_unconfirmed": true
+      }
+    },
+    {
+      "path": "/stores/bigmart-inc-230",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/bigmart-inc-230",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/bigmart-inc-230",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/stores/california-balloon-house-447",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/california-balloon-house-447",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true
+      }
+    },
+    {
+      "path": "/stores/l-t-gifts-238",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/l-t-gifts-238",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/l-t-gifts-238",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/stores/la-sky-trading-inc-230",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/la-sky-trading-inc-230",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/la-sky-trading-inc-230",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/stores/v-l-silk-and-craft-inc-335",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/stores/v-l-silk-and-craft-inc-335",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/v-l-silk-and-craft-inc-335",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/es/stores/casa-manga-218",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/casa-manga-218",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true,
+        "spanish_language_label": true
+      }
+    },
+    {
+      "path": "/es/stores/funland-toys-inc-468",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/funland-toys-inc-468",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true
+      }
+    },
+    {
+      "path": "/es/stores/tom-s-model-501",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/tom-s-model-501",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true
+      }
+    },
+    {
+      "path": "/es/stores/american-silk-inc-340",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/american-silk-inc-340",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true,
+        "hours_unconfirmed": true
+      }
+    },
+    {
+      "path": "/es/stores/bigmart-inc-230",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/bigmart-inc-230",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/bigmart-inc-230",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/es/stores/california-balloon-house-447",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/california-balloon-house-447",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "email_link": true
+      }
+    },
+    {
+      "path": "/es/stores/l-t-gifts-238",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/l-t-gifts-238",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/l-t-gifts-238",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/es/stores/la-sky-trading-inc-230",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/la-sky-trading-inc-230",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/la-sky-trading-inc-230",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/es/stores/v-l-silk-and-craft-inc-335",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es/stores/v-l-silk-and-craft-inc-335",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "name": true,
+        "address_and_unit": true,
+        "all_fact_texts": true,
+        "all_source_links": true,
+        "source_dates": true,
+        "phone_link": true,
+        "directory_uncertainty_label": true,
+        "directory_phone_omitted_from_jsonld": true
+      },
+      "jsonld_evidence": [
+        {
+          "type": "Store",
+          "url": "https://toydistrictlosangeles.com/stores/v-l-silk-and-craft-inc-335",
+          "telephone_present": false
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "four_reviewed_buying_notes": true,
+        "buying_note_text": true
+      }
+    },
+    {
+      "path": "/es",
+      "http_status": 200,
+      "final_url": "https://toydistrictlosangeles.com/es",
+      "status": "pass",
+      "checks": {
+        "http_200": true,
+        "html": true,
+        "canonical": true,
+        "locale": true,
+        "ga_id_configured": true,
+        "four_reviewed_buying_notes": true,
+        "buying_note_text": true
+      }
+    }
+  ],
+  "assets": [
+    {
+      "path": "/_next/static/chunks/255-6333758f336b72fa.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c023c6e3521b1417.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/599-dcb17395704b2583.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/619-ba102abea3e3d0e4.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/app/es/page-904abfc323f87218.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/app/es/stores/%5Bslug%5D/page-3d8fe37aadf28f06.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": true,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-1acf63fd0a7d0e1e.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/app/page-64615e065edcbe0e.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/app/stores/%5Bslug%5D/page-3d8fe37aadf28f06.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": true,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/main-app-f9b5d20365cb8be2.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/chunks/webpack-8f11792124c811a0.js?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": false
+    },
+    {
+      "path": "/_next/static/css/279ec6ffab74798c.css?dpl=dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr",
+      "status": "pass",
+      "http_status": 200,
+      "contact_event_present": false,
+      "source_styles_present": true
+    }
+  ],
+  "contact_event_bundle_present": true,
+  "source_styles_bundle_present": true,
+  "browser_visual_qa": "deferred following discussion with user; not a deployment prerequisite for this release",
+  "live_ga_delivery": "not tested",
+  "status": "pass",
+  "validation_check_correction": "The initial checker selected @type=LocalBusiness, but the site emits @type=Store. Re-read all 8 affected production pages and checked their Store blocks by URL; no site code changed.",
+  "initial_check_record": "deployment-production-checks-initial.json"
+}

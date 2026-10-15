@@ -1,0 +1,23 @@
+{
+  "fetchedAt": "2026-10-14T19:03:46.837Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsadmin.googleapis.com/v1beta/properties/545044706/keyEvents",
+  "result": {
+    "keyEvents": [
+      {
+        "name": "properties/545044706/keyEvents/15236928234",
+        "eventName": "purchase",
+        "createTime": "2026-07-10T21:20:48.585784Z",
+        "countingMethod": "ONCE_PER_EVENT"
+      },
+      {
+        "name": "properties/545044706/keyEvents/15237396933",
+        "eventName": "manual_event_PAGE_VIEW",
+        "createTime": "2026-07-11T00:23:18.512389Z",
+        "deletable": true,
+        "custom": true,
+        "countingMethod": "ONCE_PER_EVENT"
+      }
+    ]
+  }
+}

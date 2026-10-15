@@ -1,0 +1,5557 @@
+{
+  "fetchedAt": "2026-10-14T19:03:52.104Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "landingPage"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "newUsers"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "engagementRate"
+      },
+      {
+        "name": "userEngagementDuration"
+      },
+      {
+        "name": "averageSessionDuration"
+      },
+      {
+        "name": "keyEvents"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "landingPage"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "newUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagementRate",
+        "type": "TYPE_FLOAT"
+      },
+      {
+        "name": "userEngagementDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "averageSessionDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "/"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "185"
+          },
+          {
+            "value": "164"
+          },
+          {
+            "value": "158"
+          },
+          {
+            "value": "368"
+          },
+          {
+            "value": "99"
+          },
+          {
+            "value": "0.53513513513513511"
+          },
+          {
+            "value": "5302"
+          },
+          {
+            "value": "99.1909202972973"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "161"
+          },
+          {
+            "value": "149"
+          },
+          {
+            "value": "150"
+          },
+          {
+            "value": "336"
+          },
+          {
+            "value": "82"
+          },
+          {
+            "value": "0.50931677018633537"
+          },
+          {
+            "value": "5334"
+          },
+          {
+            "value": "127.71686811801244"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/guide/visiting"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "27"
+          },
+          {
+            "value": "24"
+          },
+          {
+            "value": "23"
+          },
+          {
+            "value": "37"
+          },
+          {
+            "value": "15"
+          },
+          {
+            "value": "0.55555555555555558"
+          },
+          {
+            "value": "1353"
+          },
+          {
+            "value": "148.95687970370369"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/guide/visiting"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "22"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "26"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "0.45454545454545453"
+          },
+          {
+            "value": "502"
+          },
+          {
+            "value": "60.613206090909081"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "19"
+          },
+          {
+            "value": "18"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/pyramids-wholesale-inc-464"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "15"
+          },
+          {
+            "value": "15"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.13333333333333333"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "1.8443678666666665"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/chill-trading-inc-225"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "11"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "0.45454545454545453"
+          },
+          {
+            "value": "422"
+          },
+          {
+            "value": "234.25698045454547"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/es"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.22222222222222221"
+          },
+          {
+            "value": "44"
+          },
+          {
+            "value": "5.7228785555555559"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.14285714285714285"
+          },
+          {
+            "value": "9757"
+          },
+          {
+            "value": "38.322015285714279"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/es"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "68"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1682"
+          },
+          {
+            "value": "497.1168608"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/es/guide/visiting"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.4"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "362.4605488"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/articulos-religiosos-santa-maria-400"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "23"
+          },
+          {
+            "value": "5.0699984"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/articulos-religiosos-santa-maria-400"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "56"
+          },
+          {
+            "value": "230.79218825"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/lokky-holding-inc-425"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "36"
+          },
+          {
+            "value": "305.356792"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/mike-s-international-inc-330"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "122.5879355"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/viva-wholesale-inc-417"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "1724"
+          },
+          {
+            "value": "179.17881275"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/bandevi-traders-usa-inc-336"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.66666666666666663"
+          },
+          {
+            "value": "38"
+          },
+          {
+            "value": "71.672975333333326"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/electronics-and-games-unlimited-inc-500"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.33333333333333331"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "442.24721500000004"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/funland-toys-inc-468"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1.2666966666666666"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/kh-collectibles-inc-437"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1016"
+          },
+          {
+            "value": "341.43591933333329"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/l-d-c-toys-380"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2.0245396666666666"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/a-d-cash-and-carry-218"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/got-fiesta-inc-304"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "55"
+          },
+          {
+            "value": "31.5141825"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/han-s-wholesale-inc-256"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "155.5994025"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/ocean-toys-241"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/omicaa-trade-inc-419"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "216.9295175"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/vape-and-pack-inc-223"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "3.996967"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/viva-wholesale-inc-417"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "3.9038975"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/es/guide/for/party-planners"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4.074233"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/guide/for/party-planners"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/guide/wholesale-basics"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "13.754767"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/guide/wholesale-basics"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "619"
+          },
+          {
+            "value": "620.322306"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/a-and-pe-560"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/a-d-cash-and-carry-218"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/abc-toys-wholesale-323"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/americas-favors-405"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/ampro-marketing-corporation-339"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "17"
+          },
+          {
+            "value": "9.200715"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/bandevi-traders-usa-inc-336"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "113.727437"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/camila-s-toys-417"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "27.762111"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/chill-trading-inc-225"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "210"
+          },
+          {
+            "value": "607.199827"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/cloudcali-inc-318"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "41.699363"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/dio-amusements-llc"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/downtown-wholesale-and-distribution-326"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "14"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "227"
+          },
+          {
+            "value": "676.018494"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/electronics-and-games-unlimited-inc-500"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2.020398"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/flowers-and-beyond-international-inc-334"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "23"
+          },
+          {
+            "value": "33.143947"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/funland-toys-inc-468"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "6.411495"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/game-source-inc-530"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/golden-lite-wholesale-and-import-inc-321"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "38.307162"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/got-fiesta-inc-304"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4.399487"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/himalayan-glass-wholesale-inc-321"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/kcn-enterprises-inc-411"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5.759713"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/l-a-gem-shops-com-560"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/lacwin-corp-516"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "8.870911"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/lalaland-imports-inc-339"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/libreria-el-reyno-de-dios-410"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/little-tokyo-wholesale-256"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/little-tokyo-wholesale-256"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/logographics-gift-shop-222"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1.695665"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/lokky-holding-inc-425"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "464.39377"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/macro-center-inc-521"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "6.095785"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/me-cloud-inc-340"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "11"
+          },
+          {
+            "value": "60.761342"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/mount-everest-clouds-inc-415"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "27"
+          },
+          {
+            "value": "44.811062"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/nice-gifts-and-crafts-227"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "10.52653"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/season-toys-232"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/season-toys-232"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "59.753713"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/toys-4-less-218"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/yaali-usa-inc-424"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/es/guide/for/party-planners"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/es/guide/visiting"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/guide/for/party-planners"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/a-and-pe-560"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/abc-toys-wholesale-323"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/americas-favors-405"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/ampro-marketing-corporation-339"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/cl-toys-trading-inc-409"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/cloudcali-inc-318"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/dio-amusements-llc"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/downtown-wholesale-and-distribution-326"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/flowers-and-beyond-international-inc-334"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/game-source-inc-530"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/golden-lite-wholesale-and-import-inc-321"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/han-s-wholesale-inc-256"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/himalayan-glass-wholesale-inc-321"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/kcn-enterprises-inc-411"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/kh-collectibles-inc-437"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/l-a-gem-shops-com-560"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/l-d-c-toys-380"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/lacwin-corp-516"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/lalaland-imports-inc-339"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/libreria-el-reyno-de-dios-410"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/logographics-gift-shop-222"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/macro-center-inc-521"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/me-cloud-inc-340"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/mike-s-international-inc-330"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/mount-everest-clouds-inc-415"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/nice-gifts-and-crafts-227"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/ocean-toys-241"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/omicaa-trade-inc-419"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/pyramids-wholesale-inc-464"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/toys-4-less-218"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/vape-and-pack-inc-223"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "/stores/yaali-usa-inc-424"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 52,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 3,
+        "remaining": 199986
+      },
+      "tokensPerHour": {
+        "consumed": 3,
+        "remaining": 39986
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 3,
+        "remaining": 13986
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "landingPage": "/",
+      "dateRange": "recent_28d",
+      "sessions": 185,
+      "totalUsers": 164,
+      "newUsers": 158,
+      "screenPageViews": 368,
+      "engagedSessions": 99,
+      "engagementRate": 0.5351351351351351,
+      "userEngagementDuration": 5302,
+      "averageSessionDuration": 99.1909202972973,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/",
+      "dateRange": "previous_28d",
+      "sessions": 161,
+      "totalUsers": 149,
+      "newUsers": 150,
+      "screenPageViews": 336,
+      "engagedSessions": 82,
+      "engagementRate": 0.5093167701863354,
+      "userEngagementDuration": 5334,
+      "averageSessionDuration": 127.71686811801244,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/guide/visiting",
+      "dateRange": "previous_28d",
+      "sessions": 27,
+      "totalUsers": 24,
+      "newUsers": 23,
+      "screenPageViews": 37,
+      "engagedSessions": 15,
+      "engagementRate": 0.5555555555555556,
+      "userEngagementDuration": 1353,
+      "averageSessionDuration": 148.9568797037037,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/guide/visiting",
+      "dateRange": "recent_28d",
+      "sessions": 22,
+      "totalUsers": 16,
+      "newUsers": 16,
+      "screenPageViews": 26,
+      "engagedSessions": 10,
+      "engagementRate": 0.45454545454545453,
+      "userEngagementDuration": 502,
+      "averageSessionDuration": 60.61320609090908,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "(not set)",
+      "dateRange": "recent_28d",
+      "sessions": 19,
+      "totalUsers": 18,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 22,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/pyramids-wholesale-inc-464",
+      "dateRange": "previous_28d",
+      "sessions": 15,
+      "totalUsers": 15,
+      "newUsers": 16,
+      "screenPageViews": 16,
+      "engagedSessions": 2,
+      "engagementRate": 0.13333333333333333,
+      "userEngagementDuration": 16,
+      "averageSessionDuration": 1.8443678666666665,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/chill-trading-inc-225",
+      "dateRange": "recent_28d",
+      "sessions": 11,
+      "totalUsers": 10,
+      "newUsers": 10,
+      "screenPageViews": 16,
+      "engagedSessions": 5,
+      "engagementRate": 0.45454545454545453,
+      "userEngagementDuration": 422,
+      "averageSessionDuration": 234.25698045454547,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/es",
+      "dateRange": "recent_28d",
+      "sessions": 9,
+      "totalUsers": 9,
+      "newUsers": 9,
+      "screenPageViews": 10,
+      "engagedSessions": 2,
+      "engagementRate": 0.2222222222222222,
+      "userEngagementDuration": 44,
+      "averageSessionDuration": 5.722878555555556,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "(not set)",
+      "dateRange": "previous_28d",
+      "sessions": 7,
+      "totalUsers": 7,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 1,
+      "engagementRate": 0.14285714285714285,
+      "userEngagementDuration": 9757,
+      "averageSessionDuration": 38.32201528571428,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/es",
+      "dateRange": "previous_28d",
+      "sessions": 5,
+      "totalUsers": 4,
+      "newUsers": 3,
+      "screenPageViews": 68,
+      "engagedSessions": 5,
+      "engagementRate": 1,
+      "userEngagementDuration": 1682,
+      "averageSessionDuration": 497.1168608,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/es/guide/visiting",
+      "dateRange": "recent_28d",
+      "sessions": 5,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "engagementRate": 0.4,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 362.4605488,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/articulos-religiosos-santa-maria-400",
+      "dateRange": "recent_28d",
+      "sessions": 5,
+      "totalUsers": 5,
+      "newUsers": 5,
+      "screenPageViews": 5,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 23,
+      "averageSessionDuration": 5.0699984,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/articulos-religiosos-santa-maria-400",
+      "dateRange": "previous_28d",
+      "sessions": 4,
+      "totalUsers": 4,
+      "newUsers": 4,
+      "screenPageViews": 6,
+      "engagedSessions": 4,
+      "engagementRate": 1,
+      "userEngagementDuration": 56,
+      "averageSessionDuration": 230.79218825,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/lokky-holding-inc-425",
+      "dateRange": "recent_28d",
+      "sessions": 4,
+      "totalUsers": 4,
+      "newUsers": 4,
+      "screenPageViews": 7,
+      "engagedSessions": 2,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 36,
+      "averageSessionDuration": 305.356792,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/mike-s-international-inc-330",
+      "dateRange": "previous_28d",
+      "sessions": 4,
+      "totalUsers": 4,
+      "newUsers": 4,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 22,
+      "averageSessionDuration": 122.5879355,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/viva-wholesale-inc-417",
+      "dateRange": "previous_28d",
+      "sessions": 4,
+      "totalUsers": 3,
+      "newUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 1724,
+      "averageSessionDuration": 179.17881275,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/bandevi-traders-usa-inc-336",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "engagementRate": 0.6666666666666666,
+      "userEngagementDuration": 38,
+      "averageSessionDuration": 71.67297533333333,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/electronics-and-games-unlimited-inc-500",
+      "dateRange": "recent_28d",
+      "sessions": 3,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 0.3333333333333333,
+      "userEngagementDuration": 8,
+      "averageSessionDuration": 442.24721500000004,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/funland-toys-inc-468",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 3,
+      "averageSessionDuration": 1.2666966666666666,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/kh-collectibles-inc-437",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 6,
+      "engagedSessions": 3,
+      "engagementRate": 1,
+      "userEngagementDuration": 1016,
+      "averageSessionDuration": 341.4359193333333,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/l-d-c-toys-380",
+      "dateRange": "recent_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 6,
+      "averageSessionDuration": 2.0245396666666666,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/a-d-cash-and-carry-218",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/got-fiesta-inc-304",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "engagementRate": 1,
+      "userEngagementDuration": 55,
+      "averageSessionDuration": 31.5141825,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/han-s-wholesale-inc-256",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 0,
+      "screenPageViews": 3,
+      "engagedSessions": 2,
+      "engagementRate": 1,
+      "userEngagementDuration": 16,
+      "averageSessionDuration": 155.5994025,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/ocean-toys-241",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/omicaa-trade-inc-419",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 6,
+      "averageSessionDuration": 216.9295175,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/vape-and-pack-inc-223",
+      "dateRange": "recent_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 8,
+      "averageSessionDuration": 3.996967,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/viva-wholesale-inc-417",
+      "dateRange": "recent_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 7,
+      "averageSessionDuration": 3.9038975,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/es/guide/for/party-planners",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 3,
+      "averageSessionDuration": 4.074233,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/guide/for/party-planners",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/guide/wholesale-basics",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 13,
+      "averageSessionDuration": 13.754767,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/guide/wholesale-basics",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 619,
+      "averageSessionDuration": 620.322306,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/a-and-pe-560",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/a-d-cash-and-carry-218",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/abc-toys-wholesale-323",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/americas-favors-405",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/ampro-marketing-corporation-339",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 17,
+      "averageSessionDuration": 9.200715,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/bandevi-traders-usa-inc-336",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 16,
+      "averageSessionDuration": 113.727437,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/camila-s-toys-417",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/camila-s-toys-417",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 5,
+      "averageSessionDuration": 27.762111,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/chill-trading-inc-225",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 13,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 210,
+      "averageSessionDuration": 607.199827,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/cl-toys-trading-inc-409",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/cloudcali-inc-318",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 3,
+      "averageSessionDuration": 41.699363,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/dio-amusements-llc",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/downtown-wholesale-and-distribution-326",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 14,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 227,
+      "averageSessionDuration": 676.018494,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/electronics-and-games-unlimited-inc-500",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 2,
+      "averageSessionDuration": 2.020398,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/flowers-and-beyond-international-inc-334",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 23,
+      "averageSessionDuration": 33.143947,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/funland-toys-inc-468",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 3,
+      "averageSessionDuration": 6.411495,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/game-source-inc-530",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/golden-lite-wholesale-and-import-inc-321",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 13,
+      "averageSessionDuration": 38.307162,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/got-fiesta-inc-304",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 4,
+      "averageSessionDuration": 4.399487,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/himalayan-glass-wholesale-inc-321",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/kcn-enterprises-inc-411",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 5,
+      "averageSessionDuration": 5.759713,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/l-a-gem-shops-com-560",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/lacwin-corp-516",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 8,
+      "averageSessionDuration": 8.870911,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/lalaland-imports-inc-339",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/libreria-el-reyno-de-dios-410",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/little-tokyo-wholesale-256",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/little-tokyo-wholesale-256",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/logographics-gift-shop-222",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 1,
+      "averageSessionDuration": 1.695665,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/lokky-holding-inc-425",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 9,
+      "averageSessionDuration": 464.39377,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/macro-center-inc-521",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 6,
+      "averageSessionDuration": 6.095785,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/me-cloud-inc-340",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 11,
+      "averageSessionDuration": 60.761342,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/mount-everest-clouds-inc-415",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 27,
+      "averageSessionDuration": 44.811062,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/nice-gifts-and-crafts-227",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 10,
+      "averageSessionDuration": 10.52653,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/season-toys-232",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/season-toys-232",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 4,
+      "averageSessionDuration": 59.753713,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/toys-4-less-218",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/yaali-usa-inc-424",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/es/guide/for/party-planners",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/es/guide/visiting",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/guide/for/party-planners",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/a-and-pe-560",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/abc-toys-wholesale-323",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/americas-favors-405",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/ampro-marketing-corporation-339",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/cl-toys-trading-inc-409",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/cloudcali-inc-318",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/dio-amusements-llc",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/downtown-wholesale-and-distribution-326",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/flowers-and-beyond-international-inc-334",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/game-source-inc-530",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/golden-lite-wholesale-and-import-inc-321",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/han-s-wholesale-inc-256",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/himalayan-glass-wholesale-inc-321",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/kcn-enterprises-inc-411",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/kh-collectibles-inc-437",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/l-a-gem-shops-com-560",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/l-d-c-toys-380",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/lacwin-corp-516",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/lalaland-imports-inc-339",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/libreria-el-reyno-de-dios-410",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/logographics-gift-shop-222",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/macro-center-inc-521",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/me-cloud-inc-340",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/mike-s-international-inc-330",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/mount-everest-clouds-inc-415",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/nice-gifts-and-crafts-227",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/ocean-toys-241",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/omicaa-trade-inc-419",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/pyramids-wholesale-inc-464",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/toys-4-less-218",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/vape-and-pack-inc-223",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "landingPage": "/stores/yaali-usa-inc-424",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    }
+  ]
+}

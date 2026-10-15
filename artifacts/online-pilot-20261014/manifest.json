@@ -1,0 +1,852 @@
+{
+  "started_at": "2026-10-14T20:06:57Z",
+  "seed": "toydistrict-online-pilot-20261014",
+  "sampling_method": "Sort candidate IDs by sha256(seed + | + id); first 20, frozen before searching. Remaining directory candidates, not confirmed operating shops.",
+  "pool_size": 175,
+  "pool_ids": [
+    "2449-hyperion-llc-231",
+    "3-kids-toys-500",
+    "300-s-los-angeles-st-partnership-lp-300",
+    "3rd-st-distro-inc-306",
+    "a-and-a-crafts-454",
+    "a-and-pe-560",
+    "a-and-r-party-and-general-accessories-222",
+    "a-d-cash-and-carry-218",
+    "aa-wholesale-516",
+    "abc-trading-co-256",
+    "adrian-jefferson-llc-303",
+    "alco-imports-inc-326",
+    "american-new-century-co-c-223",
+    "amore-perfume-inc-448",
+    "ampro-marketing-corporation-339",
+    "articulos-religiosos-santa-maria-400",
+    "auspice-corp-408",
+    "avawilde-com-420",
+    "azteca-mercancia-general-inc-396",
+    "babi-trading-inc-412",
+    "babu-wireless-and-cell-phone-store-425",
+    "bagmax-industrial-inc-321",
+    "bandevi-traders-usa-inc-336",
+    "betitos-gifts-240",
+    "bfc-305",
+    "bigmart-inc-230",
+    "blossom-ak-inc-400",
+    "candy-place-inc-417",
+    "cell-gear-inc-217",
+    "cl-toys-trading-inc-409",
+    "cloudcali-inc-318",
+    "craft-99-inc-411",
+    "crystal-trade-inc-454",
+    "d-y-m-craft-232",
+    "dio-amusements-llc-325",
+    "downtown-wholesale-and-distribution-326",
+    "dr-vape-group-llc-305",
+    "el-vaticano-inc-500",
+    "electronics-and-games-unlimited-inc-500",
+    "emory-k-holiday-people-are-strange-420",
+    "empire-floral-and-craft-415",
+    "eratoss-inc-500",
+    "estyle-zone-inc-448",
+    "eva-s-gifts-2-401",
+    "eva-s-gifts-400",
+    "everest-top-inc-233",
+    "evrena-trading-inc-427",
+    "flowers-and-beyond-international-inc-334",
+    "fox-electronics-rs-llc-339",
+    "funtastic-256",
+    "g-m-fashion-and-gift-s-226",
+    "gabys-cosmetics-general-merchandise-wholesale-560",
+    "game-source-inc-530",
+    "ghxl-inc-424",
+    "gift-house-trading-225",
+    "global-light-401",
+    "gold-kk-international-inc-313",
+    "golden-gift-int-l-corp-352",
+    "golden-lite-wholesale-and-import-inc-321",
+    "got-fiesta-inc-304",
+    "green-light-imports-inc-326",
+    "greenwich-usa-co-313",
+    "gsi-co-340",
+    "gta-video-games-inc-529",
+    "han-s-wholesale-inc-256",
+    "happy-trading-inc-500",
+    "hayatna-inc-417",
+    "himalayan-glass-wholesale-inc-321",
+    "hye-sung-trading-256",
+    "i-luxe-llc-500",
+    "imad-distribution-inc-313",
+    "investment-consultants-llc-326",
+    "j-n-trading-inc-421",
+    "jese-trading-inc-424",
+    "johnny-trading-458",
+    "jt-distributors-inc-326",
+    "k-and-h-vision-trading-inc-412",
+    "k-and-less-inc-219",
+    "kcn-enterprises-inc-411",
+    "kh-collectibles-inc-437",
+    "kitchen-diamond-inc-241",
+    "l-a-gem-shops-com-560",
+    "l-a-top-distributor-441",
+    "l-d-c-toys-380",
+    "l-t-gifts-238",
+    "la-best-wholesale-339",
+    "la-candy-and-supplies-inc-321",
+    "la-sky-trading-inc-230",
+    "la-video-games-inc-531",
+    "lacwin-corp-516",
+    "lalaland-imports-inc-339",
+    "landy-s-world-llc-215",
+    "letys-toys-inc-243",
+    "libreria-el-reyno-de-dios-410",
+    "littsupplys-inc-339",
+    "logographics-gift-shop-222",
+    "lokky-holding-inc-425",
+    "lovely-trading-llc-216",
+    "lp-gifts-inc-238",
+    "lucky-by-inc-326",
+    "m-and-h-wholesale-inc-312",
+    "macro-center-inc-521",
+    "magna-stella-inc-500",
+    "maple-co-218",
+    "master-imports-396",
+    "master-party-inc-376",
+    "me-cloud-inc-340",
+    "mega-party-inc-215",
+    "mf-trading-417",
+    "mike-s-international-inc-330",
+    "milky-way-trading-inc-416",
+    "misty-trading-corp-530",
+    "monkey-world-inc-322",
+    "more-trade-co-414",
+    "mount-everest-clouds-inc-415",
+    "mumford-brewing-co-llc-416",
+    "nhk-international-trading-co-216",
+    "nice-gifts-and-crafts-227",
+    "noveltyzone-500",
+    "ocean-toys-241",
+    "ojaas-corporation-412",
+    "olivia-beauty-supply-517",
+    "omicaa-trade-inc-419",
+    "oushang-trading-inc-500",
+    "paredise-import-inc-500",
+    "paty-s-trading-230",
+    "payless-cellular-and-accessories-380",
+    "potozac-gift-wrapping-inc-217",
+    "prestige-electronic-imports-inc-222",
+    "prime-import-560",
+    "prospect-trading-ll-216",
+    "pulceras-y-articulos-religiosos-san-judas-tadeo-560",
+    "pyramids-wholesale-inc-464",
+    "s-j-s-toys-325",
+    "sahib-products-and-sales-llc-303",
+    "sairise-impex-inc-560",
+    "santa-maria-de-guadalupe-400",
+    "sarve-imports-26-inc-401",
+    "season-toys-232",
+    "sonic-sunglass-corp-401",
+    "sport-la-inc-500",
+    "sprake-s-243",
+    "star-gift-international-inc-443",
+    "sun-flower-novelties-co-232",
+    "sunshine-wholesale-corp-424",
+    "team-work-trading-221",
+    "the-333-store-330",
+    "the-glass-castle-inc-413",
+    "the-js-store-llc-230",
+    "the-us-hultan-group-401",
+    "toy-time-la-255",
+    "toyoutdoor-301",
+    "toys-4-less-218",
+    "toys-and-game-448",
+    "toys-capital-inc-340",
+    "toystop-259",
+    "tpn-products-inc-300",
+    "us-koko-trading-inc-231",
+    "v-d-a-party-supply-230",
+    "v-l-silk-and-craft-inc-335",
+    "vain-media-llc-420",
+    "van-thai-inc-400",
+    "vape-and-pack-inc-223",
+    "vision-21-560",
+    "viva-wholesale-inc-339",
+    "viva-wholesale-inc-417",
+    "winstons-novelty-s-225",
+    "worldwide-aeros-corp-442",
+    "xitlali-s-gifts-560",
+    "yaali-usa-inc-424",
+    "yahoo-trading-inc-326",
+    "young-hee-kim-500",
+    "yrp-gifts-241",
+    "yuchu-li-410",
+    "z-and-a-wholesale-inc-330"
+  ],
+  "excluded_duplicate_candidate": "california-balloon-house-c-447",
+  "groups": {
+    "ga_priority": [
+      {
+        "id": "abc-toys-wholesale-323",
+        "name": "Abc Toys Wholesale",
+        "address": {
+          "line1": "323 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.046344088393,
+          "lng": -118.24423980693
+        },
+        "phone": "(213) 687-8445",
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "chill-trading-inc-225",
+        "name": "Chill Trading, INC",
+        "address": {
+          "line1": "225 Winston St",
+          "unit": "1",
+          "zip": "90013",
+          "lat": 34.046320645072,
+          "lng": -118.246549136733
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "camila-s-toys-417",
+        "name": "Camila's Toys",
+        "address": {
+          "line1": "417 Wall St",
+          "unit": "27",
+          "zip": "90013",
+          "lat": 34.046016665726,
+          "lng": -118.245002019925
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "funland-toys-inc-468",
+        "name": "Funland Toys INC",
+        "address": {
+          "line1": "468 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.045049618675,
+          "lng": -118.241838922697
+        },
+        "phone": "(213) 626-5160",
+        "hours": null,
+        "links": {
+          "other": [
+            "https://www.cylex.us.com/company/funland-toys-inc-17798355.html"
+          ]
+        },
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "little-tokyo-wholesale-256",
+        "name": "Little Tokyo Wholesale",
+        "address": {
+          "line1": "256 Winston St",
+          "unit": "D",
+          "zip": "90013",
+          "lat": 34.045838076641,
+          "lng": -118.246138076845
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      }
+    ],
+    "known_web": [
+      {
+        "id": "americas-favors-405",
+        "name": "Americas Favors",
+        "address": {
+          "line1": "405 Wall St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.04631213299,
+          "lng": -118.244828917872
+        },
+        "phone": "(213)-253-9808",
+        "hours": null,
+        "links": {
+          "website": "https://americasfavors.com/"
+        },
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "casa-manga-218",
+        "name": "Casa Manga",
+        "address": {
+          "line1": "218 Boyd St",
+          "unit": "D",
+          "zip": "90013",
+          "lat": 34.047667385812,
+          "lng": -118.245155872016
+        },
+        "phone": "213-437-0823",
+        "hours": null,
+        "links": {
+          "website": "https://www.casamanga.com/"
+        },
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "m-and-m-toys-241",
+        "name": "M & M Toys",
+        "address": {
+          "line1": "241 Winston St",
+          "unit": "27",
+          "zip": "90013",
+          "lat": 34.046109510607,
+          "lng": -118.246322966573
+        },
+        "phone": null,
+        "hours": null,
+        "links": {
+          "website": "http://www.mnmtoysinc.com/"
+        },
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "american-silk-inc-340",
+        "name": "American Silk INC",
+        "address": {
+          "line1": "340 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.046137871328,
+          "lng": -118.244009191013
+        },
+        "phone": "213-265-7559",
+        "hours": "Mon - Sat 9:00 am – 4:00 pm; Sunday Closed",
+        "links": {
+          "website": "https://www.americansilkinc.com/"
+        },
+        "category": [
+          "gifts"
+        ],
+        "naics": "453220"
+      },
+      {
+        "id": "california-balloon-house-447",
+        "name": "California Balloon House",
+        "address": {
+          "line1": "447 Wall St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.045426360342,
+          "lng": -118.24537998376
+        },
+        "phone": "213-689-0087",
+        "hours": "Business Hours: M-F - 9:00 AM to 4:45 PM; Sat - 9:00 AM to 3:45 PM. Helium Service Hours: M-F - 9:00 AM to 3:30 PM; Sat - 9:00 AM to 2:30 PM",
+        "links": {
+          "website": "https://caballoonhouse.com/"
+        },
+        "category": [
+          "party"
+        ],
+        "naics": "423990"
+      },
+      {
+        "id": "cap-and-hat-import-inc-322",
+        "name": "Cap & Hat Import INC",
+        "address": {
+          "line1": "322 S Los Angeles St",
+          "unit": "29",
+          "zip": "90013",
+          "lat": 34.048175785552,
+          "lng": -118.244964277542
+        },
+        "phone": null,
+        "hours": null,
+        "links": {
+          "website": "https://www.capandhatimport.com/"
+        },
+        "category": [
+          "general"
+        ],
+        "naics": "452000"
+      },
+      {
+        "id": "fantasia-sales-inc-401",
+        "name": "Fantasia Sales INC",
+        "address": {
+          "line1": "401 Wall St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.046410622078,
+          "lng": -118.244771217188
+        },
+        "phone": null,
+        "hours": null,
+        "links": {
+          "website": "https://fantasia-sales.com/"
+        },
+        "category": [
+          "gifts"
+        ],
+        "naics": "453220"
+      },
+      {
+        "id": "little-tokyo-service-center-community-development-corporatio",
+        "name": "Little Tokyo Service Center Community Development Corporation",
+        "address": {
+          "line1": "231 E 3rd St",
+          "unit": "G106",
+          "zip": "90013",
+          "lat": 34.04845493433,
+          "lng": -118.244506368436
+        },
+        "phone": "213-473-3030",
+        "hours": null,
+        "links": {
+          "website": "https://www.ltsc.org/",
+          "facebook": "https://www.facebook.com/LTSC.CDC",
+          "instagram": "https://www.instagram.com/ltsc.cdc/"
+        },
+        "category": [
+          "general"
+        ],
+        "naics": "424990"
+      },
+      {
+        "id": "the-supply-joint-325",
+        "name": "The Supply Joint",
+        "address": {
+          "line1": "325 Boyd St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.047109608352,
+          "lng": -118.243805526282
+        },
+        "phone": "+1 (213) 265-7708",
+        "hours": null,
+        "links": {
+          "website": "https://thesupplyjoint.com/"
+        },
+        "category": [
+          "general"
+        ],
+        "naics": "452000"
+      },
+      {
+        "id": "tom-s-model-501",
+        "name": "Tom's Model",
+        "address": {
+          "line1": "501 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.044918475059,
+          "lng": -118.241395985135
+        },
+        "phone": "(213) 680-0888",
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      }
+    ],
+    "random": [
+      {
+        "id": "the-js-store-llc-230",
+        "name": "The Js Store, LLC",
+        "address": {
+          "line1": "230 Winston St",
+          "unit": "20",
+          "zip": "90013",
+          "lat": 34.046164380236,
+          "lng": -118.246572988178
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "423990"
+      },
+      {
+        "id": "v-l-silk-and-craft-inc-335",
+        "name": "V L Silk & Craft, INC",
+        "address": {
+          "line1": "335 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.046276864941,
+          "lng": -118.244049849799
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "gifts"
+        ],
+        "naics": "423990"
+      },
+      {
+        "id": "us-koko-trading-inc-231",
+        "name": "Us Koko Trading INC",
+        "address": {
+          "line1": "231 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.047022244307,
+          "lng": -118.245675932941
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "424990"
+      },
+      {
+        "id": "the-us-hultan-group-401",
+        "name": "The Us Hultan Group",
+        "address": {
+          "line1": "401 S Los Angeles St",
+          "unit": "2",
+          "zip": "90013",
+          "lat": 34.047252582506,
+          "lng": -118.246279384411
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "423990"
+      },
+      {
+        "id": "dr-vape-group-llc-305",
+        "name": "Dr Vape Group LLC",
+        "address": {
+          "line1": "305 Boyd St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.047205507624,
+          "lng": -118.244090700363
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "452000"
+      },
+      {
+        "id": "amore-perfume-inc-448",
+        "name": "Amore Perfume INC",
+        "address": {
+          "line1": "448 S Los Angeles St",
+          "unit": "7",
+          "zip": "90013",
+          "lat": 34.046461024367,
+          "lng": -118.247091444166
+        },
+        "phone": "(213) 327-1111",
+        "hours": null,
+        "links": {
+          "other": [
+            "https://www.buzzfile.com/business/Amore-Perfume-Inc.-213-327-1111"
+          ]
+        },
+        "category": [
+          "general"
+        ],
+        "naics": "452000"
+      },
+      {
+        "id": "aa-wholesale-516",
+        "name": "Aa Wholesale",
+        "address": {
+          "line1": "516 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.044760284288,
+          "lng": -118.241372282971
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "424990"
+      },
+      {
+        "id": "letys-toys-inc-243",
+        "name": "Letys Toys INC",
+        "address": {
+          "line1": "243 E 5th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.045287973564,
+          "lng": -118.246269328474
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "453990"
+      },
+      {
+        "id": "young-hee-kim-500",
+        "name": "Young Hee Kim",
+        "address": {
+          "line1": "500 S Los Angeles St",
+          "unit": "44",
+          "zip": "90013",
+          "lat": 34.045987762862,
+          "lng": -118.247555487743
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "articulos-religiosos-santa-maria-400",
+        "name": "Articulos Religiosos Santa Maria",
+        "address": {
+          "line1": "400 S Los Angeles St",
+          "unit": "117",
+          "zip": "90013",
+          "lat": 34.047166299173,
+          "lng": -118.24618837563
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "423990"
+      },
+      {
+        "id": "kh-collectibles-inc-437",
+        "name": "Kh Collectibles INC",
+        "address": {
+          "line1": "437 S Los Angeles St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.046625828239,
+          "lng": -118.247107597127
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "figures"
+        ],
+        "naics": "425120"
+      },
+      {
+        "id": "l-t-gifts-238",
+        "name": "L.T. Gifts",
+        "address": {
+          "line1": "238 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.046865586157,
+          "lng": -118.245634613467
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "gifts"
+        ],
+        "naics": "453990"
+      },
+      {
+        "id": "bigmart-inc-230",
+        "name": "Bigmart INC",
+        "address": {
+          "line1": "230 Winston St",
+          "unit": "31",
+          "zip": "90013",
+          "lat": 34.046164380236,
+          "lng": -118.246572988178
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "424990"
+      },
+      {
+        "id": "master-party-inc-376",
+        "name": "Master Party INC",
+        "address": {
+          "line1": "376 S Los Angeles St",
+          "unit": "D",
+          "zip": "90013",
+          "lat": 34.047474032615,
+          "lng": -118.245739153358
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "party"
+        ],
+        "naics": null
+      },
+      {
+        "id": "babi-trading-inc-412",
+        "name": "Babi Trading INC",
+        "address": {
+          "line1": "412 Wall St",
+          "unit": "B3",
+          "zip": "90013",
+          "lat": 34.046264101041,
+          "lng": -118.244703326659
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "452000"
+      },
+      {
+        "id": "global-light-401",
+        "name": "Global Light",
+        "address": {
+          "line1": "401 S Los Angeles St",
+          "unit": "5",
+          "zip": "90013",
+          "lat": 34.047252582506,
+          "lng": -118.246279384411
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "jese-trading-inc-424",
+        "name": "Jese Trading, INC",
+        "address": {
+          "line1": "424 S Los Angeles St",
+          "unit": "12B",
+          "zip": "90013",
+          "lat": 34.046744934442,
+          "lng": -118.246770260306
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "423920"
+      },
+      {
+        "id": "greenwich-usa-co-313",
+        "name": "Greenwich Usa CO",
+        "address": {
+          "line1": "313 E 4th St",
+          "unit": null,
+          "zip": "90013",
+          "lat": 34.046400107936,
+          "lng": -118.24439810454
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "general"
+        ],
+        "naics": "424990"
+      },
+      {
+        "id": "la-sky-trading-inc-230",
+        "name": "La Sky Trading INC",
+        "address": {
+          "line1": "230 Winston St",
+          "unit": "38",
+          "zip": "90013",
+          "lat": 34.046164380236,
+          "lng": -118.246572988178
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "gifts"
+        ],
+        "naics": "453220"
+      },
+      {
+        "id": "funtastic-256",
+        "name": "Funtastic",
+        "address": {
+          "line1": "256 Winston St",
+          "unit": "F",
+          "zip": "90013",
+          "lat": 34.045838076641,
+          "lng": -118.246138076845
+        },
+        "phone": null,
+        "hours": null,
+        "links": null,
+        "category": [
+          "toys"
+        ],
+        "naics": "451120"
+      }
+    ]
+  },
+  "known_web_note": "9 existing website fields plus Toms Model discovered during the prior review. Includes LTSC for eligibility audit, not assumed to be a merchant.",
+  "baseline_sha256": "ac6540bf0829d4957c41953de61726b1defaf118e1192dd7a158bf9f677029b6"
+}

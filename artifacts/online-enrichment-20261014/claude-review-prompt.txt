@@ -1,0 +1,262 @@
+You are Claude, independently reviewing a Korean user's plan for LA Toy District merchant data acquisition. The user explicitly asked to review together with Claude how to maximize reliable information acquisition online. Read the supplied evidence critically. It was gathered by this agent from public pages today; you have no independent browsing tools and must not claim you browsed. No live merchant data has been changed, no outreach authorized, and no crawler deployment is requested. Recommend a concrete feasible source strategy, judge whether enough useful facts can be obtained online, challenge inference and source matching, and prioritize a bounded pilot over speculative infrastructure. Respond in Korean, about 900 words maximum. Include (1) conclusion, (2) strongest proven new source/field opportunities, (3) blind spots/misleading claims and what NOT to infer, (4) pragmatic collection-and-review workflow and minimum evidence schema, (5) an 8-hour pilot allocation with explicit proposed go/no-go criteria and stopping rules, and (6) any disagreement with the supplied proposals. Do not treat sample yield as representative; do not conflate existing phone reconfirmation with a newly filled phone. Consider that strict existing project policy forbids Google Maps/Places/Business Profile as data source and directory hours; suggest explicit policy edits if first-party owned social or manufacturer listings should gain a new accepted use, not silent exceptions. Respect source-specific access/automation conditions. Distinguish minimum order value from minimum unit quantity, retail from wholesale, tax exemption from access eligibility, listed supplier affiliation from currently stocked products, and online checked from in-person verified. Consider stale first-party pages, self-citation feedback loops, and inherited field-level provenance. You may evaluate our findings and propose steps, but do not claim implementation or actual pilot success. The prior GA review found Organic Search sessions 130->192 over successive 28-day periods but no measured inquiry/lead events in the recent period; only a bounded content pilot was recommended.
+
+EVIDENCE:
+{
+  "reviewed_at": "2026-10-14",
+  "scope": "Online merchant information acquisition feasibility review; no store data changed and no merchant contacted. Purposive sample, not a coverage estimate.",
+  "baseline": {
+    "stores": 191,
+    "phone_present": 31,
+    "hours_present": 2,
+    "website_link_present": 9,
+    "moq_present": 0,
+    "payment_present": 0,
+    "resale_certificate_requirement_present": 0,
+    "in_person_verified_at_present": 0
+  },
+  "past_research": {
+    "owner_presence_pass": {
+      "searched": 191,
+      "found_true": 9
+    },
+    "directory_phone_pass": {
+      "searched": 185,
+      "found_true": 25
+    },
+    "warning": "Historical outputs, overlapping coverage, not verified success rates or evidence of absence."
+  },
+  "samples": [
+    {
+      "id": "abc-toys-wholesale-323",
+      "priority": "GA top 5",
+      "status": "unresolved_phone_candidates",
+      "sources": [
+        "https://www.superpages.com/los-angeles-ca/bpp/abc-toys-457994485",
+        "https://www.macraesbluebook.com/search/company.cfm?company=1060841",
+        "https://www.abctradinginc.com/about-us"
+      ],
+      "findings": [
+        "Superpages lists the existing 213-687-8445 and an extra 213-627-0566; Macrae lists 213-627-0566.",
+        "ABC Trading at 620 E Slauson is a different address and cannot be merged by name.",
+        "abctoy.com retrieval failed."
+      ],
+      "decision": "Do not replace phone or adopt directory hours; owner identity/currentness unresolved."
+    },
+    {
+      "id": "chill-trading-inc-225",
+      "priority": "GA top 5",
+      "status": "no_operational_source_confirmed",
+      "sources": [
+        "https://opengovus.com/los-angeles-business/0003492018-0001-6",
+        "https://www.bizprofile.net/ca/los-angeles/chill-trading-inc"
+      ],
+      "findings": [
+        "Registration mirrors supply identity/address leads, with suite 1 versus 1-4 requiring resolution.",
+        "No owner-published phone, hours or buying terms confirmed in this search."
+      ],
+      "decision": "Use original city registry for legal/DBA identity; registrations do not establish current storefront operation."
+    },
+    {
+      "id": "camila-s-toys-417",
+      "priority": "GA top 5",
+      "status": "no_operational_source_confirmed",
+      "sources": [],
+      "findings": [
+        "Name/address, Instagram and Spanish juguete query variants did not identify a matching first-party source."
+      ],
+      "decision": "Keep unknown; limited search does not prove the business or its web presence does not exist."
+    },
+    {
+      "id": "funland-toys-inc-468",
+      "priority": "GA top 5",
+      "status": "manufacturer_alias_bridge_found",
+      "sources": [
+        "https://www.jadatoys.com/about/where-to-buy/"
+      ],
+      "findings": [
+        "Jada lists Funland Toys / FLT Collectibles under US Hobby Distributors at 468 E 4th Street.",
+        "The displayed email label contains fltcollectibles.com; fetching that domain failed."
+      ],
+      "candidate_fields": [
+        "alias: FLT Collectibles",
+        "manufacturer directory listing: Jada hobby distributor"
+      ],
+      "decision": "Attribute the directory listing and alias; no live inventory, current opening hours, or working official website established."
+    },
+    {
+      "id": "little-tokyo-wholesale-256",
+      "priority": "GA top 5",
+      "status": "no_operational_source_confirmed",
+      "sources": [],
+      "findings": [
+        "Exact name and 256 Winston address searches did not establish an owner-published operational source."
+      ],
+      "decision": "Keep unknown; do not substitute unrelated nearby businesses."
+    },
+    {
+      "id": "tom-s-model-501",
+      "priority": "first-party opportunity",
+      "status": "first_party_contact_and_sales_mode",
+      "sources": [
+        "https://toms-model.myshopify.com/pages/contact-us",
+        "https://toms-model.myshopify.com/pages/about-us"
+      ],
+      "findings": [
+        "Owner-hosted Shopify contact page matches 501 East 4th Street and existing 213-680-0888; sales@tomsmodel.com is published.",
+        "About page explicitly describes distributing to retailers and selling direct to consumers.",
+        "Catalog navigation lists collectible/hobby product groups."
+      ],
+      "candidate_fields": [
+        "official store link",
+        "business contact route",
+        "wholesale and retail sales mode"
+      ],
+      "decision": "Owned hosted commerce pages can be first-party. Do not infer physical hours or wholesale MOQ."
+    },
+    {
+      "id": "american-silk-inc-340",
+      "priority": "first-party opportunity",
+      "status": "explicit_wholesale_minimum",
+      "sources": [
+        "https://www.americansilkinc.com/",
+        "https://www.americansilkinc.com/wholesale"
+      ],
+      "findings": [
+        "Homepage matches 340 E 4th St, existing phone and hours; lists artificial flowers/plants.",
+        "Wholesale account page explicitly states a $3,000 wholesale minimum order."
+      ],
+      "candidate_fields": [
+        "minimum order value: USD 3000, scope wholesale account page",
+        "wholesale application route",
+        "correct retail-only classification to reflect wholesale availability"
+      ],
+      "decision": "Publish as website-stated wholesale condition with source/check date, not universal walk-in minimum; first/repeat-order and in-store applicability are unstated."
+    },
+    {
+      "id": "california-balloon-house-447",
+      "priority": "first-party opportunity",
+      "status": "eligibility_and_service_scope",
+      "sources": [
+        "https://caballoonhouse.com/pages/faq",
+        "https://caballoonhouse.com/pages/ws-account-create"
+      ],
+      "findings": [
+        "About/contact matches 447 Wall and existing phone/hours; explicitly welcomes wholesale and retail customers in person and online.",
+        "Store hours differ from helium service hours.",
+        "Wholesale application requests a valid matching Seller's Permit for tax-exempt status; some applicants must show their work via site/social links."
+      ],
+      "candidate_fields": [
+        "retail customers welcome",
+        "separate helium service hours",
+        "wholesale application and conditional tax exemption requirements",
+        "parking: street or separate paid lot next door"
+      ],
+      "decision": "Do not set resale_cert_required=true for every purchase; tax exemption is a narrower condition. No MOQ inferred from free-shipping threshold."
+    },
+    {
+      "id": "americas-favors-405",
+      "priority": "existing website",
+      "status": "automation_constraint_found",
+      "sources": [
+        "https://americasfavors.com/pages/terms-and-conditions"
+      ],
+      "findings": [
+        "Published terms prohibit automated system use and scraping/harvesting."
+      ],
+      "decision": "Do not put this site into an unattended crawler. A public site does not imply permission to bulk reuse its contents; use source link/owner-supplied updates as appropriate."
+    },
+    {
+      "id": "m-and-m-toys-241",
+      "priority": "existing website",
+      "status": "retrieval_failed",
+      "sources": [
+        "http://www.mnmtoysinc.com/",
+        "https://www.mnmtoysinc.com/"
+      ],
+      "findings": [
+        "Both attempted URL schemes failed in the web retrieval tool."
+      ],
+      "decision": "Access failure is not evidence of closure or invalid business identity."
+    },
+    {
+      "id": "casa-manga-218",
+      "priority": "first-party opportunity",
+      "status": "language_and_wholesale_path",
+      "sources": [
+        "https://www.casamanga.com/"
+      ],
+      "findings": [
+        "Owner homepage matches 218 Boyd St #D and existing phone.",
+        "Publishes Spanish service, retail-customer offer, wholesale signup/login instructions and sales@casamanga.com."
+      ],
+      "candidate_fields": [
+        "Spanish service",
+        "wholesale application route",
+        "retail and wholesale sales mode"
+      ],
+      "decision": "Do not interpret $50 retail free-shipping offer as a wholesale minimum. Product licensing is merchant's claim, not independently verified."
+    },
+    {
+      "id": "cap-and-hat-import-inc-322",
+      "priority": "existing website",
+      "status": "retrieval_failed",
+      "sources": [
+        "https://www.capandhatimport.com/"
+      ],
+      "findings": [
+        "Website retrieval failed in the web tool."
+      ],
+      "decision": "No closure inference; existing website link needs separate reachability review."
+    }
+  ],
+  "source_policy": {
+    "current_project": "CONTACT-RESEARCH-B allows matching public-directory phone only; hours from business-owned website only. Google Maps/Places/Business Profile excluded by project rule.",
+    "distinction": "Project permissions are not legal conclusions about every source's terms. Manufacturer and hosted-store policies should be explicitly added to the research brief before operational use.",
+    "self_contamination": "Exclude toydistrictlosangeles.com from discovery and do not count mirrors/copied listings as independent corroboration.",
+    "scope": "Online checking is distinct from in-person verified_at."
+  },
+  "pipeline_findings": [
+    {
+      "file": "pipeline/05-build.mjs",
+      "lines": [
+        73,
+        74,
+        77,
+        78,
+        79,
+        84,
+        96
+      ],
+      "finding": "Build initializes enriched fields to null and writes stores.json; rerun can overwrite separately gathered enrichment. Persist reviewed overlays outside generated output."
+    },
+    {
+      "file": "pipeline/07-contact.mjs",
+      "lines": [
+        41,
+        46,
+        47,
+        65
+      ],
+      "finding": "Merge does not enforce found/confidence or mandatory provenance. Provenance condition uses global phone/hour counters rather than per-record changes. Fill-only cannot correct stale values."
+    },
+    {
+      "file": "pipeline/06-free-enrich.mjs",
+      "lines": [
+        127,
+        134,
+        137
+      ],
+      "finding": "OSM candidate match accepts address OR name similarity, with no suite match in sameAddress. Multi-tenant buildings need stronger identity checks."
+    }
+  ],
+  "proposals": [
+    "Begin with the five GA-demand stores plus four accessible official-presence examples (Tom, American Silk, California Balloon, Casa Manga), with a separately selected unresearched sample before any coverage projection.",
+    "Discover via legal/DBA aliases, exact address+suite, published business phone, manufacturer distributor lists, public trade catalogs, owner social profiles and first-party hosted stores. Broaden language only when evidence suggests a relevant alias.",
+    "Read Contact/About/Wholesale/FAQ/Shipping pages and dated owner catalogs; extract field-level facts, explicit scope, exact source URL, observation date, source date if available, identity evidence, conflict state and reviewer decision.",
+    "Treat social captions/OCR and directories as discovery candidates; review original content and merchant identity before accepting facts. Do not infer hours from post timestamps or shelf photos.",
+    "Prioritize usable contact paths and buying-decision facts over descriptions. Keep unknowns visible. Do not infer no minimum from no published minimum.",
+    "Use bounded search/page budgets and a small reviewed overlay before crawler infrastructure. Reuse accepted evidence after rebuild and recheck changed/important facts rather than rerunning discovery for all stores.",
+    "No outbound contact in this task. Owner-submitted correction/claim forms are a future path for unpublished MOQ/payment terms, with review and identity proof.",
+    "Measure newly useful accepted facts and uniquely improved stores per researcher-hour, identity error/conflict rates, incremental verified coverage, and later user contact actions. Pilot thresholds are proposals, not observed forecasts."
+  ]
+}

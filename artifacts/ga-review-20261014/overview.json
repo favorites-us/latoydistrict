@@ -1,0 +1,238 @@
+{
+  "fetchedAt": "2026-10-14T19:03:47.827Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "newUsers"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "engagementRate"
+      },
+      {
+        "name": "userEngagementDuration"
+      },
+      {
+        "name": "averageSessionDuration"
+      },
+      {
+        "name": "keyEvents"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "newUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagementRate",
+        "type": "TYPE_FLOAT"
+      },
+      {
+        "name": "userEngagementDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "averageSessionDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "292"
+          },
+          {
+            "value": "235"
+          },
+          {
+            "value": "224"
+          },
+          {
+            "value": "481"
+          },
+          {
+            "value": "131"
+          },
+          {
+            "value": "0.44863013698630139"
+          },
+          {
+            "value": "7124"
+          },
+          {
+            "value": "95.03868692123288"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "265"
+          },
+          {
+            "value": "230"
+          },
+          {
+            "value": "229"
+          },
+          {
+            "value": "545"
+          },
+          {
+            "value": "129"
+          },
+          {
+            "value": "0.48679245283018868"
+          },
+          {
+            "value": "21573"
+          },
+          {
+            "value": "125.94889887924529"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 2,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 2,
+        "remaining": 199992
+      },
+      "tokensPerHour": {
+        "consumed": 2,
+        "remaining": 39992
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 2,
+        "remaining": 13994
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "dateRange": "recent_28d",
+      "sessions": 292,
+      "totalUsers": 235,
+      "newUsers": 224,
+      "screenPageViews": 481,
+      "engagedSessions": 131,
+      "engagementRate": 0.4486301369863014,
+      "userEngagementDuration": 7124,
+      "averageSessionDuration": 95.03868692123288,
+      "keyEvents": 0
+    },
+    {
+      "dateRange": "previous_28d",
+      "sessions": 265,
+      "totalUsers": 230,
+      "newUsers": 229,
+      "screenPageViews": 545,
+      "engagedSessions": 129,
+      "engagementRate": 0.4867924528301887,
+      "userEngagementDuration": 21573,
+      "averageSessionDuration": 125.94889887924529,
+      "keyEvents": 0
+    }
+  ]
+}

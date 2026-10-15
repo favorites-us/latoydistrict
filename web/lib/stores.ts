@@ -21,6 +21,23 @@ export type Block =
   | "los-angeles"
   | "san-pedro";
 
+export interface OnlineSource {
+  url: string;
+  type: "business" | "directory" | "manufacturer";
+  label: string;
+  checked_at: string;
+}
+
+export interface OnlineFact {
+  id: string;
+  kind: "buying" | "minimum_order" | "services" | "products" | "manufacturer_listing";
+  text: { en: string; es: string };
+  scope: string;
+  source: OnlineSource;
+  additional_sources?: OnlineSource[];
+  minimum_order_value?: { amount: number; currency: "USD" };
+}
+
 export interface Store {
   id: string;
   slug: string;
@@ -39,6 +56,9 @@ export interface Store {
   naics: string | null;
   place_id: string | null;
   phone: string | null;
+  contact_email?: string;
+  field_sources?: Record<string, OnlineSource>;
+  online_facts?: OnlineFact[];
   hours: string | null;
   links?: {
     website?: string;

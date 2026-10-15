@@ -1,0 +1,47 @@
+Vercel CLI 59.25.4 (Node.js 25.6.1)
+Fetching deployment "toydistrictlosangeles.com" in hbrandons-projects
+> Fetched deployment "toydistrictlosangeles-193yh7cgw-hbrandons-projects.vercel.app" in hbrandons-projects [285ms]
+
+  General
+
+    id		dpl_3eHS9fNG3CnAsjBYQM8NCY3jeerr
+    name	toydistrictlosangeles
+    target	production
+    status	● Ready
+    url		https://toydistrictlosangeles-193yh7cgw-hbrandons-projects.vercel.app
+    created	Wed Oct 14 2026 14:27:10 GMT-0700 (Pacific Daylight Time) [45s ago]
+
+
+  Build Machine
+
+    requested build machine standard
+    actual assigned cores   4 vCPU (actual assignment)
+    memory                  8192 MiB
+    selection type          elastic
+    selection source        elastic-algorithm
+
+
+  Duration
+
+    build duration	33s
+    post-build duration	unavailable
+    billable duration	unavailable
+    CPU Minutes Usage	unavailable
+
+
+  Aliases
+
+    ╶ https://toydistrictlosangeles.com
+    ╶ https://toydistrictlosangeles.vercel.app
+    ╶ https://toydistrictlosangeles-hbrandons-projects.vercel.app
+
+
+  Builds
+
+    ┌ .        [0ms]
+    ├── λ index (1.22MB) [iad1]
+    ├── λ _not-found (1.22MB) [iad1]
+    ├── λ _not-found.rsc (1.22MB) [iad1]
+    ├── λ es (1.22MB) [iad1]
+    ├── λ es.rsc (1.22MB) [iad1]
+    └── 994 output items hidden

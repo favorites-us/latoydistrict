@@ -1,0 +1,3648 @@
+{
+  "fetchedAt": "2026-10-14T19:03:53.344Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "country"
+      },
+      {
+        "name": "sessionSourceMedium"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "userEngagementDuration"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "country"
+      },
+      {
+        "name": "sessionSourceMedium"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "userEngagementDuration",
+        "type": "TYPE_SECONDS"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "155"
+          },
+          {
+            "value": "74"
+          },
+          {
+            "value": "264"
+          },
+          {
+            "value": "4500"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "92"
+          },
+          {
+            "value": "50"
+          },
+          {
+            "value": "139"
+          },
+          {
+            "value": "13720"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "45"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "55"
+          },
+          {
+            "value": "354"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "45"
+          },
+          {
+            "value": "27"
+          },
+          {
+            "value": "82"
+          },
+          {
+            "value": "973"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "44"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "56"
+          },
+          {
+            "value": "455"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "42"
+          },
+          {
+            "value": "28"
+          },
+          {
+            "value": "106"
+          },
+          {
+            "value": "1275"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "18"
+          },
+          {
+            "value": "11"
+          },
+          {
+            "value": "28"
+          },
+          {
+            "value": "964"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "12"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "26"
+          },
+          {
+            "value": "397"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "yahoo / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "20"
+          },
+          {
+            "value": "471"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "duckduckgo / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "74"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "yahoo / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "1174"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Canada"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "43"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "25"
+          },
+          {
+            "value": "442"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United Kingdom"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "China"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "19"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Poland"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "17"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Belarus"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "China"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "904"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "France"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Germany"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Germany"
+          },
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "22"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Honduras"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "27"
+          },
+          {
+            "value": "737"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Netherlands"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Pakistan"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "14"
+          },
+          {
+            "value": "210"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "dataindex.pro / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Spain"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "duckduckgo / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "gemini.google.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "youtube.com / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "75"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Albania"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Australia"
+          },
+          {
+            "value": "au.search.yahoo.com / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "42"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Austria"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Barbados"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Canada"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "China"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "59"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Costa Rica"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "France"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "France"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "French Polynesia"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "140"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Germany"
+          },
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Hong Kong"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Japan"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "62"
+          },
+          {
+            "value": "1518"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Nicaragua"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Philippines"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Puerto Rico"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Puerto Rico"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "aicrawler.store / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Sweden"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Taiwan"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "ecosia.org / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "gemini / (not set)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Albania"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Australia"
+          },
+          {
+            "value": "au.search.yahoo.com / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Austria"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Barbados"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Belarus"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "China"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Costa Rica"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "France"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "French Polynesia"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Germany"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Honduras"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Hong Kong"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "India"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Japan"
+          },
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Mexico"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Netherlands"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Nicaragua"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Pakistan"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Philippines"
+          },
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Poland"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Puerto Rico"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Puerto Rico"
+          },
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "aicrawler.store / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Russia"
+          },
+          {
+            "value": "dataindex.pro / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Spain"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Sweden"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Taiwan"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United Kingdom"
+          },
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "ecosia.org / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "gemini / (not set)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "gemini.google.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "United States"
+          },
+          {
+            "value": "youtube.com / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 49,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 2,
+        "remaining": 199977
+      },
+      "tokensPerHour": {
+        "consumed": 2,
+        "remaining": 39977
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 9
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 2,
+        "remaining": 13977
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "country": "United States",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 155,
+      "engagedSessions": 74,
+      "screenPageViews": 264,
+      "userEngagementDuration": 4500
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 92,
+      "engagedSessions": 50,
+      "screenPageViews": 139,
+      "userEngagementDuration": 13720
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 45,
+      "engagedSessions": 9,
+      "screenPageViews": 55,
+      "userEngagementDuration": 354
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 45,
+      "engagedSessions": 27,
+      "screenPageViews": 82,
+      "userEngagementDuration": 973
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 44,
+      "engagedSessions": 10,
+      "screenPageViews": 56,
+      "userEngagementDuration": 455
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 42,
+      "engagedSessions": 28,
+      "screenPageViews": 106,
+      "userEngagementDuration": 1275
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "previous_28d",
+      "sessions": 18,
+      "engagedSessions": 11,
+      "screenPageViews": 28,
+      "userEngagementDuration": 964
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "recent_28d",
+      "sessions": 12,
+      "engagedSessions": 7,
+      "screenPageViews": 26,
+      "userEngagementDuration": 397
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "yahoo / organic",
+      "dateRange": "recent_28d",
+      "sessions": 7,
+      "engagedSessions": 4,
+      "screenPageViews": 20,
+      "userEngagementDuration": 471
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "duckduckgo / organic",
+      "dateRange": "recent_28d",
+      "sessions": 6,
+      "engagedSessions": 2,
+      "screenPageViews": 5,
+      "userEngagementDuration": 74
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "yahoo / organic",
+      "dateRange": "previous_28d",
+      "sessions": 6,
+      "engagedSessions": 6,
+      "screenPageViews": 12,
+      "userEngagementDuration": 1174
+    },
+    {
+      "country": "Canada",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 5,
+      "engagedSessions": 2,
+      "screenPageViews": 6,
+      "userEngagementDuration": 43
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "recent_28d",
+      "sessions": 5,
+      "engagedSessions": 2,
+      "screenPageViews": 6,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "previous_28d",
+      "sessions": 4,
+      "engagedSessions": 4,
+      "screenPageViews": 25,
+      "userEngagementDuration": 442
+    },
+    {
+      "country": "United Kingdom",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 4,
+      "engagedSessions": 0,
+      "screenPageViews": 4,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "China",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 3,
+      "engagedSessions": 1,
+      "screenPageViews": 3,
+      "userEngagementDuration": 12
+    },
+    {
+      "country": "India",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "engagedSessions": 2,
+      "screenPageViews": 5,
+      "userEngagementDuration": 19
+    },
+    {
+      "country": "Poland",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "engagedSessions": 2,
+      "screenPageViews": 5,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "(not set)",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 1,
+      "screenPageViews": 2,
+      "userEngagementDuration": 17
+    },
+    {
+      "country": "Belarus",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 2,
+      "userEngagementDuration": 7
+    },
+    {
+      "country": "China",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 1,
+      "screenPageViews": 13,
+      "userEngagementDuration": 904
+    },
+    {
+      "country": "France",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 1,
+      "screenPageViews": 4,
+      "userEngagementDuration": 20
+    },
+    {
+      "country": "Germany",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 2,
+      "userEngagementDuration": 1
+    },
+    {
+      "country": "Germany",
+      "sessionSourceMedium": "(not set)",
+      "dateRange": "recent_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 22
+    },
+    {
+      "country": "Honduras",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 2,
+      "screenPageViews": 27,
+      "userEngagementDuration": 737
+    },
+    {
+      "country": "India",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 2,
+      "screenPageViews": 3,
+      "userEngagementDuration": 14
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 2,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Netherlands",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 2,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Pakistan",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 1,
+      "screenPageViews": 14,
+      "userEngagementDuration": 210
+    },
+    {
+      "country": "Russia",
+      "sessionSourceMedium": "dataindex.pro / referral",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 2,
+      "userEngagementDuration": 1
+    },
+    {
+      "country": "Spain",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 2,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "duckduckgo / organic",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 1,
+      "screenPageViews": 3,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "gemini.google.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 0,
+      "screenPageViews": 2,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "youtube.com / referral",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "engagedSessions": 1,
+      "screenPageViews": 3,
+      "userEngagementDuration": 75
+    },
+    {
+      "country": "Albania",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Australia",
+      "sessionSourceMedium": "au.search.yahoo.com / referral",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 3,
+      "userEngagementDuration": 42
+    },
+    {
+      "country": "Austria",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 1
+    },
+    {
+      "country": "Barbados",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 2,
+      "userEngagementDuration": 8
+    },
+    {
+      "country": "Canada",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "China",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 2,
+      "userEngagementDuration": 59
+    },
+    {
+      "country": "Costa Rica",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "France",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "France",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 2,
+      "userEngagementDuration": 1
+    },
+    {
+      "country": "French Polynesia",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 4,
+      "userEngagementDuration": 140
+    },
+    {
+      "country": "Germany",
+      "sessionSourceMedium": "(not set)",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 12
+    },
+    {
+      "country": "Hong Kong",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 1,
+      "userEngagementDuration": 10
+    },
+    {
+      "country": "India",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 1,
+      "userEngagementDuration": 13
+    },
+    {
+      "country": "Japan",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 1
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 62,
+      "userEngagementDuration": 1518
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 3
+    },
+    {
+      "country": "Nicaragua",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Philippines",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Puerto Rico",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Puerto Rico",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Russia",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Russia",
+      "sessionSourceMedium": "aicrawler.store / referral",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Sweden",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Taiwan",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "ecosia.org / organic",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "screenPageViews": 1,
+      "userEngagementDuration": 4
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "gemini / (not set)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "screenPageViews": 3,
+      "userEngagementDuration": 4
+    },
+    {
+      "country": "(not set)",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Albania",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Australia",
+      "sessionSourceMedium": "au.search.yahoo.com / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Austria",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Barbados",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Belarus",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "China",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Costa Rica",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "France",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "French Polynesia",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Germany",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Honduras",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Hong Kong",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "India",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "India",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "India",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Japan",
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Mexico",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Netherlands",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Nicaragua",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Pakistan",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Philippines",
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Poland",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Puerto Rico",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Puerto Rico",
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Russia",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Russia",
+      "sessionSourceMedium": "aicrawler.store / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Russia",
+      "sessionSourceMedium": "dataindex.pro / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Spain",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Sweden",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "Taiwan",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United Kingdom",
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "ecosia.org / organic",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "gemini / (not set)",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "gemini.google.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "country": "United States",
+      "sessionSourceMedium": "youtube.com / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "screenPageViews": 0,
+      "userEngagementDuration": 0
+    }
+  ]
+}

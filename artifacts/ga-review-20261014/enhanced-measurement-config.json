@@ -1,0 +1,17 @@
+{
+  "fetchedAt": "2026-10-14T19:05:06.457Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsadmin.googleapis.com/v1alpha/properties/545044706/dataStreams/15236968078/enhancedMeasurementSettings",
+  "result": {
+    "name": "properties/545044706/dataStreams/15236968078/enhancedMeasurementSettings",
+    "streamEnabled": true,
+    "scrollsEnabled": true,
+    "outboundClicksEnabled": true,
+    "siteSearchEnabled": true,
+    "videoEngagementEnabled": true,
+    "fileDownloadsEnabled": true,
+    "pageChangesEnabled": true,
+    "formInteractionsEnabled": true,
+    "searchQueryParameter": "q,s,search,query,keyword"
+  }
+}

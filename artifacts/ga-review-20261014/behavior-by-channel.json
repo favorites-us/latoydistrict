@@ -1,0 +1,715 @@
+{
+  "fetchedAt": "2026-10-14T19:05:05.878Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "eventName"
+      },
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "eventCount"
+      },
+      {
+        "name": "totalUsers"
+      }
+    ],
+    "dimensionFilter": {
+      "andGroup": {
+        "expressions": [
+          {
+            "filter": {
+              "fieldName": "hostName",
+              "stringFilter": {
+                "matchType": "FULL_REGEXP",
+                "value": "(www\\.)?toydistrictlosangeles\\.com",
+                "caseSensitive": false
+              }
+            }
+          },
+          {
+            "filter": {
+              "fieldName": "eventName",
+              "inListFilter": {
+                "values": [
+                  "store_view",
+                  "click",
+                  "form_start",
+                  "lead_submit",
+                  "store_inquiry"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "eventName"
+      },
+      {
+        "name": "sessionDefaultChannelGroup"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "eventCount",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "63"
+          },
+          {
+            "value": "41"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "49"
+          },
+          {
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "39"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "34"
+          },
+          {
+            "value": "21"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "18"
+          },
+          {
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "18"
+          },
+          {
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "16"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "form_start"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "form_start"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "form_start"
+          },
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "click"
+          },
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "form_start"
+          },
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "store_view"
+          },
+          {
+            "value": "Referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 11,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 63,
+      "totalUsers": 41
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 49,
+      "totalUsers": 13
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "previous_28d",
+      "eventCount": 39,
+      "totalUsers": 5
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 34,
+      "totalUsers": 21
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "eventCount": 18,
+      "totalUsers": 16
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 18,
+      "totalUsers": 13
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 16,
+      "totalUsers": 5
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "recent_28d",
+      "eventCount": 9,
+      "totalUsers": 7
+    },
+    {
+      "eventName": "form_start",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "recent_28d",
+      "eventCount": 4,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "previous_28d",
+      "eventCount": 2,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "recent_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "form_start",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "form_start",
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Referral",
+      "dateRange": "previous_28d",
+      "eventCount": 1,
+      "totalUsers": 1
+    },
+    {
+      "eventName": "click",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "eventName": "form_start",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    },
+    {
+      "eventName": "store_view",
+      "sessionDefaultChannelGroup": "Referral",
+      "dateRange": "recent_28d",
+      "eventCount": 0,
+      "totalUsers": 0
+    }
+  ]
+}

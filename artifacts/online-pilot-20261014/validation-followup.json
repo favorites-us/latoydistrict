@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-10-14T20:54:50.047316+00:00",
+  "phase": "Targeted official-policy follow-up; original random sample unchanged",
+  "unit_tests": 16,
+  "unit_tests_status": "pass",
+  "next_build": "pass; 591 generated pages",
+  "static_pages": [
+    {
+      "locale": "en",
+      "id": "v-l-silk-and-craft-inc-335",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "l-t-gifts-238",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "bigmart-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "la-sky-trading-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "american-silk-inc-340",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "california-balloon-house-447",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "casa-manga-218",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "tom-s-model-501",
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "id": "funland-toys-inc-468",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "v-l-silk-and-craft-inc-335",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "l-t-gifts-238",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "bigmart-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "la-sky-trading-inc-230",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "american-silk-inc-340",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "california-balloon-house-447",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "casa-manga-218",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "tom-s-model-501",
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "id": "funland-toys-inc-468",
+      "status": "pass"
+    }
+  ],
+  "online_fact_count": 11,
+  "single_valued_hours_count": 1,
+  "ambiguous_moq": "Only scoped prose remains; no universal moq or standalone numeric fact",
+  "rebuild": "byte-stable",
+  "data_sha256": "4725fbe05d2c394141f24b2f47863981fc29da1e886da084ac8d7238253c88f0",
+  "claude_review": "claude-opus-5-5; additional policy critique completed and addressed",
+  "browser_visual_qa": "Retry rejected because a saved user permission setting still blocks http://localhost:3017; waiting for user change, no workaround",
+  "deployment": "not performed"
+}

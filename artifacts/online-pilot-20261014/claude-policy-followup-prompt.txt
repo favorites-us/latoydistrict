@@ -1,0 +1,291 @@
+Review this follow-up to the Toy District online information pilot. Reply in Korean in at most 400 words. User requested Claude joint review. No tools/browsing; do not claim independent verification. Codex read the following original official pages. Assess factual scope, omissions that materially mislead, EN/ES consistency, and whether the new information is useful to an actual buyer. No deployment or outreach authorized/performed. Original random20 result remains only4 directory phones and0 new owner conditions; this is additional targeted research on known official sites.
+Verified source paraphrases:
+American Silk home https://www.americansilkinc.com/ says Mon–Sat9am–4pm, Sunday closed. About https://www.americansilkinc.com/about-us says Mon–Sat9am–5pm, Sunday closed. Both same phone and340E4th address; neither reliably dated. About advertises wholesale prices even for one item and invites visiting. /wholesale application says minimum wholesale order $3000. We do not know if these are different channels/programs or outdated copy. We withdraw the single hours value (null, explicit conflict guidance in UI) and qualify the $3000 statement with both sources.
+California Balloon House /pages/helium-services says balloon inflation covers in-store and outside purchases; orders only in person, fully paid on reservation day, no phone/online ordering; large orders generally25+ balloons need at least3days notice; final helium orders3:30pm Mon–Fri and2:30pm Sat. Do NOT infer generic store-wide MOQ or apply helium rules to all merchandise.
+/policies/shipping-policy states contiguous US only, Friday orders processed/shipped followingMonday, delivery not guaranteed. /policies/refund-policy has blanket helium no-refund wording whereas service page has cancellation exceptions, so no generic refund statement added.
+Code supports optional additional_sources on a fact, validates all primary/additional source domains and types, and renders links for both. Hours updates can clear an existing value with source/scope but null-to-null new-fill is rejected. Unit regression tests for conflict withdrawal and additional-source policy passed. UI hours row says confirmation needed; before-buying fact shows both published closing times.
+Review proposed copy below; no need to invent extra implementation requirements.
+[
+  {
+    "id": "american-silk-inc-340",
+    "identity": {
+      "name": "American Silk INC",
+      "line1": "340 E 4th St",
+      "unit": null,
+      "zip": "90013"
+    },
+    "decision": "approved",
+    "reviewer": "Codex: source and entity review, 2026-10-14",
+    "identity_evidence": "Official home page gives American Silk, 340 E 4th St, Los Angeles CA 90013 and the existing phone; same-domain wholesale application.",
+    "updates": [
+      {
+        "field": "phone",
+        "value": "213-265-7559",
+        "previous": "213-265-7559",
+        "change_type": "reconfirm",
+        "scope": "Business website: consumer shopping and linked wholesale application; online source review, not a visit.",
+        "source": {
+          "url": "https://www.americansilkinc.com/",
+          "type": "business",
+          "label": "American Silk",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "field": "hours",
+        "value": null,
+        "previous": "Mon - Sat 9:00 am – 4:00 pm; Sunday Closed",
+        "change_type": "correction",
+        "scope": "Withdraw single-valued hours: homepage publishes Mon–Sat 9am–4pm, About page publishes Mon–Sat 9am–5pm. Neither has a reliable update date establishing precedence. Confirm with the business.",
+        "source": {
+          "url": "https://www.americansilkinc.com/about-us",
+          "type": "business",
+          "label": "American Silk about",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "field": "contact_email",
+        "value": "AmericanSilkInc@gmail.com",
+        "previous": null,
+        "change_type": "new_fill",
+        "scope": "Business website: consumer shopping and linked wholesale application; online source review, not a visit.",
+        "source": {
+          "url": "https://www.americansilkinc.com/",
+          "type": "business",
+          "label": "American Silk",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "field": "wholesale_retail",
+        "value": "both",
+        "previous": "retail",
+        "change_type": "correction",
+        "scope": "Homepage offers consumer shopping and links directly to /wholesale; online retail and wholesale channels, not confirmation of walk-in retail.",
+        "source": {
+          "url": "https://www.americansilkinc.com/",
+          "type": "business",
+          "label": "American Silk",
+          "checked_at": "2026-10-14"
+        }
+      }
+    ],
+    "facts": [
+      {
+        "id": "online-retail",
+        "kind": "buying",
+        "text": {
+          "en": "The website offers retail shopping and links to a wholesale application. Confirm in-store purchasing options before visiting.",
+          "es": "El sitio ofrece compras al menudeo y enlaza a una solicitud de mayoreo. Confirme las opciones de compra en tienda antes de visitar."
+        },
+        "scope": "Online retail channel; no claim of walk-in retail availability.",
+        "source": {
+          "url": "https://www.americansilkinc.com/",
+          "type": "business",
+          "label": "American Silk",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "id": "wholesale-minimum",
+        "kind": "minimum_order",
+        "text": {
+          "en": "The wholesale application lists a $3,000 minimum, while the About page advertises wholesale pricing even for one item. Confirm which program and conditions apply to your purchase.",
+          "es": "La solicitud de mayoreo indica un mínimo de $3,000, mientras que la página de presentación anuncia precios de mayoreo incluso por una pieza. Confirme qué programa y condiciones corresponden a su compra."
+        },
+        "scope": "Conflicting or differently scoped official wording: account minimum versus advertised per-item pricing. Do not treat $3,000 as a universal minimum or one-item pricing as guaranteed account eligibility.",
+        "source": {
+          "url": "https://www.americansilkinc.com/wholesale",
+          "type": "business",
+          "label": "American Silk wholesale",
+          "checked_at": "2026-10-14"
+        },
+        "minimum_order_value": {
+          "amount": 3000,
+          "currency": "USD"
+        },
+        "additional_sources": [
+          {
+            "url": "https://www.americansilkinc.com/about-us",
+            "type": "business",
+            "label": "American Silk about",
+            "checked_at": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "id": "hours-conflict",
+        "kind": "services",
+        "text": {
+          "en": "Published hours disagree: the homepage says Monday–Saturday 9am–4pm; the About page says 9am–5pm. Confirm the closing time before visiting.",
+          "es": "Los horarios publicados difieren: la página principal indica lunes–sábado de 9 a 16 h; la presentación indica de 9 a 17 h. Confirme la hora de cierre antes de visitar."
+        },
+        "scope": "Same business and address; no authoritative page update date, so no single closing time is adopted.",
+        "source": {
+          "url": "https://www.americansilkinc.com/",
+          "type": "business",
+          "label": "American Silk home",
+          "checked_at": "2026-10-14"
+        },
+        "additional_sources": [
+          {
+            "url": "https://www.americansilkinc.com/about-us",
+            "type": "business",
+            "label": "American Silk about",
+            "checked_at": "2026-10-14"
+          }
+        ]
+      }
+    ],
+    "business_domains": [
+      "americansilkinc.com"
+    ]
+  },
+  {
+    "id": "california-balloon-house-447",
+    "identity": {
+      "name": "California Balloon House",
+      "line1": "447 Wall St",
+      "unit": null,
+      "zip": "90013"
+    },
+    "decision": "approved",
+    "reviewer": "Codex: source and entity review, 2026-10-14",
+    "identity_evidence": "Official contact page gives exact name, 447 Wall St, Los Angeles CA 90013 and existing phone. Wholesale application is linked from the same site.",
+    "updates": [
+      {
+        "field": "phone",
+        "value": "213-689-0087",
+        "previous": "213-689-0087",
+        "change_type": "reconfirm",
+        "scope": "Business contact page; store and helium service hours are separate; Sunday is not stated.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/faq",
+          "type": "business",
+          "label": "California Balloon House",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "field": "hours",
+        "value": "Business Hours: M-F - 9:00 AM to 4:45 PM; Sat - 9:00 AM to 3:45 PM. Helium Service Hours: M-F - 9:00 AM to 3:30 PM; Sat - 9:00 AM to 2:30 PM",
+        "previous": "Business Hours: M-F - 9:00 AM to 4:45 PM; Sat - 9:00 AM to 3:45 PM. Helium Service Hours: M-F - 9:00 AM to 3:30 PM; Sat - 9:00 AM to 2:30 PM",
+        "change_type": "reconfirm",
+        "scope": "Business contact page; store and helium service hours are separate; Sunday is not stated.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/faq",
+          "type": "business",
+          "label": "California Balloon House",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "field": "contact_email",
+        "value": "info@caballoonhouse.com",
+        "previous": null,
+        "change_type": "new_fill",
+        "scope": "Business contact page; store and helium service hours are separate; Sunday is not stated.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/faq",
+          "type": "business",
+          "label": "California Balloon House",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "field": "wholesale_retail",
+        "value": "both",
+        "previous": "wholesale",
+        "change_type": "correction",
+        "scope": "Business contact page; store and helium service hours are separate; Sunday is not stated.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/faq",
+          "type": "business",
+          "label": "California Balloon House",
+          "checked_at": "2026-10-14"
+        }
+      }
+    ],
+    "facts": [
+      {
+        "id": "buying-options",
+        "kind": "buying",
+        "text": {
+          "en": "Wholesale and retail customers can shop in person or online. Helium service ends earlier than store hours.",
+          "es": "Clientes de mayoreo y menudeo pueden comprar en tienda o en línea. El servicio de helio termina antes del cierre de la tienda."
+        },
+        "scope": "Published buying options; availability is not guaranteed.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/faq",
+          "type": "business",
+          "label": "California Balloon House",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "id": "wholesale-account",
+        "kind": "buying",
+        "text": {
+          "en": "Wholesale accounts require approval. For tax-exempt status, the application requests a valid seller’s permit matching the business name. Some applicants must provide portfolio links; see the application.",
+          "es": "Las cuentas de mayoreo requieren aprobación. Para la exención de impuestos, la solicitud pide un permiso de vendedor válido con el mismo nombre comercial. Algunos solicitantes deben incluir enlaces a su portafolio; consulte la solicitud."
+        },
+        "scope": "Merchant application policy only; not a statement that all purchases require a resale certificate.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/ws-account-create",
+          "type": "business",
+          "label": "California Balloon House wholesale",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "id": "helium-ordering",
+        "kind": "services",
+        "text": {
+          "en": "Helium inflation is offered for balloons bought here or elsewhere. Orders must be placed and paid in full in person; phone and online booking are not accepted.",
+          "es": "Se ofrece inflado con helio para globos comprados aquí o en otra tienda. Los pedidos se hacen y pagan por completo en persona; no se aceptan reservas por teléfono ni en línea."
+        },
+        "scope": "Balloon helium-inflation ordering policy, not all merchandise orders. Availability still requires confirmation.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/helium-services",
+          "type": "business",
+          "label": "California Balloon House helium",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "id": "helium-large-orders",
+        "kind": "services",
+        "text": {
+          "en": "Large balloon orders, generally 25 or more, require at least three days’ notice. Helium service ends at 3:30pm on weekdays and 2:30pm Saturday.",
+          "es": "Los pedidos grandes, generalmente de 25 globos o más, requieren al menos tres días de anticipación. El servicio de helio termina a las 15:30 entre semana y a las 14:30 el sábado."
+        },
+        "scope": "Merchant defines large orders generally as 25+ balloons; helium-specific cutoff and advance-order policy.",
+        "source": {
+          "url": "https://caballoonhouse.com/pages/helium-services",
+          "type": "business",
+          "label": "California Balloon House helium",
+          "checked_at": "2026-10-14"
+        }
+      },
+      {
+        "id": "shipping-area-timing",
+        "kind": "buying",
+        "text": {
+          "en": "The shipping policy covers the contiguous U.S. only and says Friday orders are processed and shipped the following Monday. Confirm arrival timing for event orders.",
+          "es": "La política de envío cubre solo los estados contiguos de EE. UU. e indica que los pedidos del viernes se procesan y envían el lunes siguiente. Confirme la llegada para pedidos destinados a eventos."
+        },
+        "scope": "Published online shipping policy, not a guaranteed delivery date or a rule for in-store pickup.",
+        "source": {
+          "url": "https://caballoonhouse.com/policies/shipping-policy",
+          "type": "business",
+          "label": "California Balloon House shipping",
+          "checked_at": "2026-10-14"
+        }
+      }
+    ],
+    "business_domains": [
+      "caballoonhouse.com"
+    ]
+  }
+]

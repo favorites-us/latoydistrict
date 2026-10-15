@@ -1,0 +1,9089 @@
+{
+  "fetchedAt": "2026-10-14T19:03:53.399Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-07-10",
+        "endDate": "2026-10-11"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "date"
+      },
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "userEngagementDuration"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true,
+    "orderBys": [
+      {
+        "dimension": {
+          "dimensionName": "date"
+        }
+      }
+    ]
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "date"
+      },
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "userEngagementDuration",
+        "type": "TYPE_SECONDS"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "20260710"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "30"
+          },
+          {
+            "value": "30"
+          },
+          {
+            "value": "48"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "101"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260710"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "12"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260711"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "17"
+          },
+          {
+            "value": "17"
+          },
+          {
+            "value": "17"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "22"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260711"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260712"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "18"
+          },
+          {
+            "value": "18"
+          },
+          {
+            "value": "17"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260712"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "99"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260712"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "23"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260712"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260713"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260713"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260713"
+          },
+          {
+            "value": "Cross-network"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260714"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260714"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "42"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260714"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260715"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260715"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "18"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260715"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260715"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260715"
+          },
+          {
+            "value": "Cross-network"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260716"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260716"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260716"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "27"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260716"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "22"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260717"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "42"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260717"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "30"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260717"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260718"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "54"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260718"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "61"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260719"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "14"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "500"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260719"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260719"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "121"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260719"
+          },
+          {
+            "value": "Referral"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260720"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260720"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "31"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260720"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260721"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260721"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "24"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260721"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260721"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260722"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "55"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260722"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260723"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "21"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260723"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260723"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260723"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260724"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "59"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260725"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260725"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260726"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260727"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260728"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "81"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260728"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260729"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "188"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260729"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260729"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260730"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "111"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260730"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260731"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "209"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260731"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260801"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "80"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260801"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "76"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260801"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260802"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260803"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260804"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "136"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260804"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260804"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260805"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "301"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260806"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260806"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "58"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260806"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "235"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260807"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "53"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260807"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "106"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260808"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "42"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260808"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260809"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260809"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "14"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "167"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260810"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260810"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "75"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260810"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260811"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260811"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "71"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260811"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260812"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260812"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260813"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260813"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260813"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260813"
+          },
+          {
+            "value": "Paid Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260814"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "104"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260815"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "120"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260815"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260815"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260816"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "183"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260816"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "127"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260817"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "17"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260817"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "129"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260817"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260818"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "19"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260818"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "329"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260818"
+          },
+          {
+            "value": "Referral"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260819"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "69"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260819"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260819"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260819"
+          },
+          {
+            "value": "Organic Video"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "75"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260820"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "10"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "18"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "10011"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260820"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "90"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260820"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260820"
+          },
+          {
+            "value": "Organic Video"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260821"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1138"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260821"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260821"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "132"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260822"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "45"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260822"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "221"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260822"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "22"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260823"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "122"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260823"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "62"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260823"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "19"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260824"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "58"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260825"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "149"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260826"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "121"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260826"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "216"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260826"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "26"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260827"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "99"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260827"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260827"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260828"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260828"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "191"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260829"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "10"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "311"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260829"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "638"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260829"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260830"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "64"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260830"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "23"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260830"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260830"
+          },
+          {
+            "value": "Referral"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260831"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "94"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260831"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "31"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260831"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260901"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "37"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260901"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260901"
+          },
+          {
+            "value": "Referral"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260901"
+          },
+          {
+            "value": "Unassigned"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260902"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "15"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "140"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260902"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "18"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "164"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260903"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "14"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "841"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260903"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260903"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260904"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "335"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260904"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260904"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260905"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "268"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260905"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "68"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1595"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260905"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "30"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260906"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "74"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260906"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260907"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "21"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "910"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260907"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "30"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260907"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "77"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260908"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "16"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "70"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260908"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "96"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260908"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260909"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "22"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260909"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1676"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260909"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260910"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "34"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260910"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260910"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260911"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "134"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260911"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260911"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260912"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "193"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260912"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "106"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260913"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "60"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260913"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "57"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260913"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260914"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "18"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260914"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260914"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "33"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260915"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260915"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "38"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260915"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "154"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260916"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "334"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260916"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260916"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260917"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "14"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "318"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260917"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "34"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260918"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "210"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260918"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "76"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260918"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "28"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260919"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "12"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "17"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "233"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260919"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "25"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260919"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260920"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "114"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260921"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "16"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "175"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260921"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "47"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260921"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "28"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260922"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "416"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260922"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "15"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "128"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260923"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "53"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260923"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "41"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260923"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260924"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "45"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260924"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "42"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260924"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260925"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "104"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260925"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260926"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "52"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260926"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260926"
+          },
+          {
+            "value": "Unassigned"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260927"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "15"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "61"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260927"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "21"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260927"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260928"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "10"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "181"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260928"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260929"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "20"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "395"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260929"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260929"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "18"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260930"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "221"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20260930"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "68"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261001"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "191"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261001"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "44"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261001"
+          },
+          {
+            "value": "Unassigned"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261002"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "666"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261002"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "25"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261003"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "367"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261003"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261003"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "129"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261004"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "11"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "314"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261004"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261005"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "31"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261005"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261005"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261006"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "11"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "210"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261006"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261006"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261007"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "333"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261007"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261007"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "38"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261008"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "8"
+          },
+          {
+            "value": "8"
+          },
+          {
+            "value": "18"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "378"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261008"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "19"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261008"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261009"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "113"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261009"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261009"
+          },
+          {
+            "value": "Unassigned"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261010"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "15"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "138"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261010"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "4"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "44"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261011"
+          },
+          {
+            "value": "Organic Search"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "46"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261011"
+          },
+          {
+            "value": "Direct"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "199"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "20261011"
+          },
+          {
+            "value": "AI Assistant"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "21"
+          }
+        ]
+      }
+    ],
+    "rowCount": 249,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 2,
+        "remaining": 199975
+      },
+      "tokensPerHour": {
+        "consumed": 2,
+        "remaining": 39975
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 2,
+        "remaining": 13975
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "date": "20260710",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 30,
+      "totalUsers": 30,
+      "screenPageViews": 48,
+      "engagedSessions": 3,
+      "userEngagementDuration": 101
+    },
+    {
+      "date": "20260710",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 12,
+      "totalUsers": 12,
+      "screenPageViews": 12,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260711",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 17,
+      "totalUsers": 17,
+      "screenPageViews": 17,
+      "engagedSessions": 1,
+      "userEngagementDuration": 22
+    },
+    {
+      "date": "20260711",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260712",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 18,
+      "totalUsers": 18,
+      "screenPageViews": 17,
+      "engagedSessions": 0,
+      "userEngagementDuration": 5
+    },
+    {
+      "date": "20260712",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 3,
+      "userEngagementDuration": 99
+    },
+    {
+      "date": "20260712",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 5,
+      "engagedSessions": 1,
+      "userEngagementDuration": 23
+    },
+    {
+      "date": "20260712",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260713",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 5,
+      "engagedSessions": 0,
+      "userEngagementDuration": 4
+    },
+    {
+      "date": "20260713",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260713",
+      "sessionDefaultChannelGroup": "Cross-network",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260714",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 6,
+      "totalUsers": 6,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "userEngagementDuration": 20
+    },
+    {
+      "date": "20260714",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 9,
+      "engagedSessions": 2,
+      "userEngagementDuration": 42
+    },
+    {
+      "date": "20260714",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260715",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 7
+    },
+    {
+      "date": "20260715",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 4,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 18
+    },
+    {
+      "date": "20260715",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260715",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 10
+    },
+    {
+      "date": "20260715",
+      "sessionDefaultChannelGroup": "Cross-network",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260716",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 4,
+      "engagedSessions": 0,
+      "userEngagementDuration": 4
+    },
+    {
+      "date": "20260716",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 13
+    },
+    {
+      "date": "20260716",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 27
+    },
+    {
+      "date": "20260716",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 22
+    },
+    {
+      "date": "20260717",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 42
+    },
+    {
+      "date": "20260717",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 30
+    },
+    {
+      "date": "20260717",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260718",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 54
+    },
+    {
+      "date": "20260718",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 2,
+      "userEngagementDuration": 61
+    },
+    {
+      "date": "20260719",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 14,
+      "engagedSessions": 1,
+      "userEngagementDuration": 500
+    },
+    {
+      "date": "20260719",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 12
+    },
+    {
+      "date": "20260719",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 6,
+      "engagedSessions": 1,
+      "userEngagementDuration": 121
+    },
+    {
+      "date": "20260719",
+      "sessionDefaultChannelGroup": "Referral",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260720",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 4
+    },
+    {
+      "date": "20260720",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 1,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 31
+    },
+    {
+      "date": "20260720",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260721",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 4,
+      "engagedSessions": 0,
+      "userEngagementDuration": 10
+    },
+    {
+      "date": "20260721",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 24
+    },
+    {
+      "date": "20260721",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260721",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260722",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 55
+    },
+    {
+      "date": "20260722",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 14
+    },
+    {
+      "date": "20260723",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 21
+    },
+    {
+      "date": "20260723",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260723",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260723",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260724",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 7,
+      "engagedSessions": 1,
+      "userEngagementDuration": 59
+    },
+    {
+      "date": "20260725",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260725",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 4
+    },
+    {
+      "date": "20260726",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260727",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 5,
+      "engagedSessions": 1,
+      "userEngagementDuration": 20
+    },
+    {
+      "date": "20260728",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "userEngagementDuration": 81
+    },
+    {
+      "date": "20260728",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 5
+    },
+    {
+      "date": "20260729",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 188
+    },
+    {
+      "date": "20260729",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260729",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260730",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 111
+    },
+    {
+      "date": "20260730",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 13
+    },
+    {
+      "date": "20260731",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 5,
+      "engagedSessions": 3,
+      "userEngagementDuration": 209
+    },
+    {
+      "date": "20260731",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260801",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 7,
+      "engagedSessions": 2,
+      "userEngagementDuration": 80
+    },
+    {
+      "date": "20260801",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 3,
+      "userEngagementDuration": 76
+    },
+    {
+      "date": "20260801",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260802",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260803",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 12
+    },
+    {
+      "date": "20260804",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 5,
+      "engagedSessions": 1,
+      "userEngagementDuration": 136
+    },
+    {
+      "date": "20260804",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260804",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260805",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 4,
+      "screenPageViews": 19,
+      "engagedSessions": 3,
+      "userEngagementDuration": 301
+    },
+    {
+      "date": "20260806",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260806",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 58
+    },
+    {
+      "date": "20260806",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 12,
+      "engagedSessions": 1,
+      "userEngagementDuration": 235
+    },
+    {
+      "date": "20260807",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "userEngagementDuration": 53
+    },
+    {
+      "date": "20260807",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 106
+    },
+    {
+      "date": "20260808",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 5,
+      "engagedSessions": 1,
+      "userEngagementDuration": 42
+    },
+    {
+      "date": "20260808",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260809",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "userEngagementDuration": 14
+    },
+    {
+      "date": "20260809",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 14,
+      "engagedSessions": 2,
+      "userEngagementDuration": 167
+    },
+    {
+      "date": "20260810",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 7
+    },
+    {
+      "date": "20260810",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 7,
+      "engagedSessions": 2,
+      "userEngagementDuration": 75
+    },
+    {
+      "date": "20260810",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 12
+    },
+    {
+      "date": "20260811",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260811",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 5,
+      "engagedSessions": 1,
+      "userEngagementDuration": 71
+    },
+    {
+      "date": "20260811",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260812",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 2
+    },
+    {
+      "date": "20260812",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 13
+    },
+    {
+      "date": "20260813",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260813",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260813",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260813",
+      "sessionDefaultChannelGroup": "Paid Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260814",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 3,
+      "screenPageViews": 13,
+      "engagedSessions": 2,
+      "userEngagementDuration": 104
+    },
+    {
+      "date": "20260815",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 6,
+      "screenPageViews": 10,
+      "engagedSessions": 2,
+      "userEngagementDuration": 120
+    },
+    {
+      "date": "20260815",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260815",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260816",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 6,
+      "engagedSessions": 1,
+      "userEngagementDuration": 183
+    },
+    {
+      "date": "20260816",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 8,
+      "engagedSessions": 1,
+      "userEngagementDuration": 127
+    },
+    {
+      "date": "20260817",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 17
+    },
+    {
+      "date": "20260817",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 129
+    },
+    {
+      "date": "20260817",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260818",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 7,
+      "totalUsers": 7,
+      "screenPageViews": 9,
+      "engagedSessions": 2,
+      "userEngagementDuration": 19
+    },
+    {
+      "date": "20260818",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 8,
+      "engagedSessions": 3,
+      "userEngagementDuration": 329
+    },
+    {
+      "date": "20260818",
+      "sessionDefaultChannelGroup": "Referral",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260819",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 6,
+      "engagedSessions": 3,
+      "userEngagementDuration": 69
+    },
+    {
+      "date": "20260819",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260819",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260819",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 75
+    },
+    {
+      "date": "20260820",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 10,
+      "totalUsers": 10,
+      "screenPageViews": 18,
+      "engagedSessions": 4,
+      "userEngagementDuration": 10011
+    },
+    {
+      "date": "20260820",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 9,
+      "engagedSessions": 2,
+      "userEngagementDuration": 90
+    },
+    {
+      "date": "20260820",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 16
+    },
+    {
+      "date": "20260820",
+      "sessionDefaultChannelGroup": "Organic Video",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260821",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 9,
+      "engagedSessions": 4,
+      "userEngagementDuration": 1138
+    },
+    {
+      "date": "20260821",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 5,
+      "engagedSessions": 1,
+      "userEngagementDuration": 2
+    },
+    {
+      "date": "20260821",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 7,
+      "engagedSessions": 2,
+      "userEngagementDuration": 132
+    },
+    {
+      "date": "20260822",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 8,
+      "totalUsers": 8,
+      "screenPageViews": 10,
+      "engagedSessions": 2,
+      "userEngagementDuration": 45
+    },
+    {
+      "date": "20260822",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 3,
+      "userEngagementDuration": 221
+    },
+    {
+      "date": "20260822",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 22
+    },
+    {
+      "date": "20260823",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 6,
+      "engagedSessions": 3,
+      "userEngagementDuration": 122
+    },
+    {
+      "date": "20260823",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 2,
+      "userEngagementDuration": 62
+    },
+    {
+      "date": "20260823",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 19
+    },
+    {
+      "date": "20260824",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 5,
+      "engagedSessions": 3,
+      "userEngagementDuration": 58
+    },
+    {
+      "date": "20260825",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 8,
+      "engagedSessions": 3,
+      "userEngagementDuration": 149
+    },
+    {
+      "date": "20260826",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 5,
+      "screenPageViews": 9,
+      "engagedSessions": 4,
+      "userEngagementDuration": 121
+    },
+    {
+      "date": "20260826",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 4,
+      "totalUsers": 3,
+      "screenPageViews": 16,
+      "engagedSessions": 3,
+      "userEngagementDuration": 216
+    },
+    {
+      "date": "20260826",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 26
+    },
+    {
+      "date": "20260827",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 6,
+      "engagedSessions": 1,
+      "userEngagementDuration": 99
+    },
+    {
+      "date": "20260827",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260827",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 3
+    },
+    {
+      "date": "20260828",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 4,
+      "screenPageViews": 9,
+      "engagedSessions": 2,
+      "userEngagementDuration": 20
+    },
+    {
+      "date": "20260828",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 16,
+      "engagedSessions": 2,
+      "userEngagementDuration": 191
+    },
+    {
+      "date": "20260829",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 10,
+      "totalUsers": 6,
+      "screenPageViews": 22,
+      "engagedSessions": 5,
+      "userEngagementDuration": 311
+    },
+    {
+      "date": "20260829",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 22,
+      "engagedSessions": 1,
+      "userEngagementDuration": 638
+    },
+    {
+      "date": "20260829",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260830",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 64
+    },
+    {
+      "date": "20260830",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 23
+    },
+    {
+      "date": "20260830",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260830",
+      "sessionDefaultChannelGroup": "Referral",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260831",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 12,
+      "engagedSessions": 4,
+      "userEngagementDuration": 94
+    },
+    {
+      "date": "20260831",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 4,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 31
+    },
+    {
+      "date": "20260831",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260901",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "userEngagementDuration": 37
+    },
+    {
+      "date": "20260901",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 12
+    },
+    {
+      "date": "20260901",
+      "sessionDefaultChannelGroup": "Referral",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260901",
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "userEngagementDuration": 12
+    },
+    {
+      "date": "20260902",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 9,
+      "totalUsers": 8,
+      "screenPageViews": 15,
+      "engagedSessions": 3,
+      "userEngagementDuration": 140
+    },
+    {
+      "date": "20260902",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 18,
+      "engagedSessions": 1,
+      "userEngagementDuration": 164
+    },
+    {
+      "date": "20260903",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 7,
+      "totalUsers": 7,
+      "screenPageViews": 14,
+      "engagedSessions": 6,
+      "userEngagementDuration": 841
+    },
+    {
+      "date": "20260903",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 7
+    },
+    {
+      "date": "20260903",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260904",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 13,
+      "engagedSessions": 5,
+      "userEngagementDuration": 335
+    },
+    {
+      "date": "20260904",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260904",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260905",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 22,
+      "engagedSessions": 3,
+      "userEngagementDuration": 268
+    },
+    {
+      "date": "20260905",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 68,
+      "engagedSessions": 2,
+      "userEngagementDuration": 1595
+    },
+    {
+      "date": "20260905",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 30
+    },
+    {
+      "date": "20260906",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 5,
+      "screenPageViews": 10,
+      "engagedSessions": 2,
+      "userEngagementDuration": 74
+    },
+    {
+      "date": "20260906",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260907",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 9,
+      "totalUsers": 9,
+      "screenPageViews": 21,
+      "engagedSessions": 2,
+      "userEngagementDuration": 910
+    },
+    {
+      "date": "20260907",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 4,
+      "totalUsers": 3,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "userEngagementDuration": 30
+    },
+    {
+      "date": "20260907",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 77
+    },
+    {
+      "date": "20260908",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 16,
+      "totalUsers": 16,
+      "screenPageViews": 19,
+      "engagedSessions": 3,
+      "userEngagementDuration": 70
+    },
+    {
+      "date": "20260908",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 8,
+      "engagedSessions": 3,
+      "userEngagementDuration": 96
+    },
+    {
+      "date": "20260908",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260909",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 6,
+      "totalUsers": 6,
+      "screenPageViews": 7,
+      "engagedSessions": 1,
+      "userEngagementDuration": 22
+    },
+    {
+      "date": "20260909",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 4,
+      "screenPageViews": 7,
+      "engagedSessions": 2,
+      "userEngagementDuration": 1676
+    },
+    {
+      "date": "20260909",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260910",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "userEngagementDuration": 34
+    },
+    {
+      "date": "20260910",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 16
+    },
+    {
+      "date": "20260910",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260911",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 2,
+      "userEngagementDuration": 134
+    },
+    {
+      "date": "20260911",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260911",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260912",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 8,
+      "engagedSessions": 3,
+      "userEngagementDuration": 193
+    },
+    {
+      "date": "20260912",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "userEngagementDuration": 106
+    },
+    {
+      "date": "20260913",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 60
+    },
+    {
+      "date": "20260913",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 57
+    },
+    {
+      "date": "20260913",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 12
+    },
+    {
+      "date": "20260914",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 4,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 18
+    },
+    {
+      "date": "20260914",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260914",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 33
+    },
+    {
+      "date": "20260915",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 9
+    },
+    {
+      "date": "20260915",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 38
+    },
+    {
+      "date": "20260915",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 154
+    },
+    {
+      "date": "20260916",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 8,
+      "screenPageViews": 19,
+      "engagedSessions": 4,
+      "userEngagementDuration": 334
+    },
+    {
+      "date": "20260916",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260916",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 20
+    },
+    {
+      "date": "20260917",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 6,
+      "totalUsers": 6,
+      "screenPageViews": 14,
+      "engagedSessions": 1,
+      "userEngagementDuration": 318
+    },
+    {
+      "date": "20260917",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 5,
+      "screenPageViews": 8,
+      "engagedSessions": 4,
+      "userEngagementDuration": 34
+    },
+    {
+      "date": "20260918",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 7,
+      "totalUsers": 5,
+      "screenPageViews": 10,
+      "engagedSessions": 3,
+      "userEngagementDuration": 210
+    },
+    {
+      "date": "20260918",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 2,
+      "screenPageViews": 6,
+      "engagedSessions": 1,
+      "userEngagementDuration": 76
+    },
+    {
+      "date": "20260918",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 28
+    },
+    {
+      "date": "20260919",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 12,
+      "totalUsers": 10,
+      "screenPageViews": 17,
+      "engagedSessions": 8,
+      "userEngagementDuration": 233
+    },
+    {
+      "date": "20260919",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 2,
+      "userEngagementDuration": 25
+    },
+    {
+      "date": "20260919",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260920",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "userEngagementDuration": 114
+    },
+    {
+      "date": "20260921",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 9,
+      "totalUsers": 9,
+      "screenPageViews": 16,
+      "engagedSessions": 5,
+      "userEngagementDuration": 175
+    },
+    {
+      "date": "20260921",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 2,
+      "userEngagementDuration": 47
+    },
+    {
+      "date": "20260921",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 2,
+      "userEngagementDuration": 28
+    },
+    {
+      "date": "20260922",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 6,
+      "screenPageViews": 19,
+      "engagedSessions": 3,
+      "userEngagementDuration": 416
+    },
+    {
+      "date": "20260922",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 15,
+      "engagedSessions": 3,
+      "userEngagementDuration": 128
+    },
+    {
+      "date": "20260923",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 7,
+      "screenPageViews": 7,
+      "engagedSessions": 2,
+      "userEngagementDuration": 53
+    },
+    {
+      "date": "20260923",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 6,
+      "engagedSessions": 1,
+      "userEngagementDuration": 41
+    },
+    {
+      "date": "20260923",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260924",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 7,
+      "totalUsers": 5,
+      "screenPageViews": 10,
+      "engagedSessions": 3,
+      "userEngagementDuration": 45
+    },
+    {
+      "date": "20260924",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 5,
+      "totalUsers": 4,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 42
+    },
+    {
+      "date": "20260924",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20260925",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 104
+    },
+    {
+      "date": "20260925",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260926",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 5,
+      "screenPageViews": 10,
+      "engagedSessions": 2,
+      "userEngagementDuration": 52
+    },
+    {
+      "date": "20260926",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260926",
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 4
+    },
+    {
+      "date": "20260927",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 7,
+      "screenPageViews": 15,
+      "engagedSessions": 3,
+      "userEngagementDuration": 61
+    },
+    {
+      "date": "20260927",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 7,
+      "engagedSessions": 1,
+      "userEngagementDuration": 21
+    },
+    {
+      "date": "20260927",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20260928",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 10,
+      "totalUsers": 7,
+      "screenPageViews": 12,
+      "engagedSessions": 1,
+      "userEngagementDuration": 181
+    },
+    {
+      "date": "20260928",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 12
+    },
+    {
+      "date": "20260929",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 7,
+      "totalUsers": 7,
+      "screenPageViews": 20,
+      "engagedSessions": 7,
+      "userEngagementDuration": 395
+    },
+    {
+      "date": "20260929",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 3
+    },
+    {
+      "date": "20260929",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 18
+    },
+    {
+      "date": "20260930",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 8,
+      "engagedSessions": 3,
+      "userEngagementDuration": 221
+    },
+    {
+      "date": "20260930",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "userEngagementDuration": 68
+    },
+    {
+      "date": "20261001",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 8,
+      "screenPageViews": 13,
+      "engagedSessions": 6,
+      "userEngagementDuration": 191
+    },
+    {
+      "date": "20261001",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 44
+    },
+    {
+      "date": "20261001",
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "userEngagementDuration": 11
+    },
+    {
+      "date": "20261002",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 7,
+      "totalUsers": 5,
+      "screenPageViews": 12,
+      "engagedSessions": 3,
+      "userEngagementDuration": 666
+    },
+    {
+      "date": "20261002",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 4,
+      "engagedSessions": 1,
+      "userEngagementDuration": 25
+    },
+    {
+      "date": "20261003",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 8,
+      "screenPageViews": 19,
+      "engagedSessions": 4,
+      "userEngagementDuration": 367
+    },
+    {
+      "date": "20261003",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 2
+    },
+    {
+      "date": "20261003",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 3,
+      "engagedSessions": 2,
+      "userEngagementDuration": 129
+    },
+    {
+      "date": "20261004",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 11,
+      "engagedSessions": 2,
+      "userEngagementDuration": 314
+    },
+    {
+      "date": "20261004",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 3
+    },
+    {
+      "date": "20261005",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 9,
+      "totalUsers": 9,
+      "screenPageViews": 8,
+      "engagedSessions": 3,
+      "userEngagementDuration": 31
+    },
+    {
+      "date": "20261005",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 20
+    },
+    {
+      "date": "20261005",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20261006",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 7,
+      "screenPageViews": 11,
+      "engagedSessions": 3,
+      "userEngagementDuration": 210
+    },
+    {
+      "date": "20261006",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "userEngagementDuration": 4
+    },
+    {
+      "date": "20261006",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 1
+    },
+    {
+      "date": "20261007",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 5,
+      "screenPageViews": 19,
+      "engagedSessions": 4,
+      "userEngagementDuration": 333
+    },
+    {
+      "date": "20261007",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20261007",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 1,
+      "userEngagementDuration": 38
+    },
+    {
+      "date": "20261008",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 8,
+      "totalUsers": 8,
+      "screenPageViews": 18,
+      "engagedSessions": 5,
+      "userEngagementDuration": 378
+    },
+    {
+      "date": "20261008",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "userEngagementDuration": 19
+    },
+    {
+      "date": "20261008",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 3,
+      "totalUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "userEngagementDuration": 6
+    },
+    {
+      "date": "20261009",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 5,
+      "totalUsers": 5,
+      "screenPageViews": 9,
+      "engagedSessions": 3,
+      "userEngagementDuration": 113
+    },
+    {
+      "date": "20261009",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "userEngagementDuration": 0
+    },
+    {
+      "date": "20261009",
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "userEngagementDuration": 11
+    },
+    {
+      "date": "20261010",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 5,
+      "screenPageViews": 15,
+      "engagedSessions": 3,
+      "userEngagementDuration": 138
+    },
+    {
+      "date": "20261010",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 4,
+      "totalUsers": 4,
+      "screenPageViews": 6,
+      "engagedSessions": 3,
+      "userEngagementDuration": 44
+    },
+    {
+      "date": "20261011",
+      "sessionDefaultChannelGroup": "Organic Search",
+      "sessions": 6,
+      "totalUsers": 6,
+      "screenPageViews": 6,
+      "engagedSessions": 1,
+      "userEngagementDuration": 46
+    },
+    {
+      "date": "20261011",
+      "sessionDefaultChannelGroup": "Direct",
+      "sessions": 2,
+      "totalUsers": 2,
+      "screenPageViews": 6,
+      "engagedSessions": 2,
+      "userEngagementDuration": 199
+    },
+    {
+      "date": "20261011",
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "sessions": 1,
+      "totalUsers": 1,
+      "screenPageViews": 2,
+      "engagedSessions": 1,
+      "userEngagementDuration": 21
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "fetchedAt": "2026-10-14T19:05:05.256Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-09-20",
+        "name": "2026-09-14"
+      },
+      {
+        "startDate": "2026-09-21",
+        "endDate": "2026-09-27",
+        "name": "2026-09-21"
+      },
+      {
+        "startDate": "2026-09-28",
+        "endDate": "2026-10-04",
+        "name": "2026-09-28"
+      },
+      {
+        "startDate": "2026-10-05",
+        "endDate": "2026-10-11",
+        "name": "2026-10-05"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "totalUsers"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "sessionDefaultChannelGroup"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "2026-09-28"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "50"
+          },
+          {
+            "value": "26"
+          },
+          {
+            "value": "44"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "2026-09-21"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "49"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "38"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "2026-10-05"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "48"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "41"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "2026-09-14"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "45"
+          },
+          {
+            "value": "24"
+          },
+          {
+            "value": "33"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "2026-09-14"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "18"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "2026-09-21"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "17"
+          },
+          {
+            "value": "9"
+          },
+          {
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "2026-10-05"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "15"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "2026-09-14"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "10"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "2026-09-28"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "10"
+          },
+          {
+            "value": "7"
+          },
+          {
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "2026-10-05"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "2026-09-21"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "2026-09-28"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "9"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Unassigned"
+          },
+          {
+            "value": "2026-09-21"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Unassigned"
+          },
+          {
+            "value": "2026-09-28"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Unassigned"
+          },
+          {
+            "value": "2026-10-05"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Unassigned"
+          },
+          {
+            "value": "2026-09-14"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 4,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "2026-09-28",
+      "sessions": 50,
+      "engagedSessions": 26,
+      "totalUsers": 44
+    },
+    {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "2026-09-21",
+      "sessions": 49,
+      "engagedSessions": 19,
+      "totalUsers": 38
+    },
+    {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "2026-10-05",
+      "sessions": 48,
+      "engagedSessions": 22,
+      "totalUsers": 41
+    },
+    {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "2026-09-14",
+      "sessions": 45,
+      "engagedSessions": 24,
+      "totalUsers": 33
+    },
+    {
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "2026-09-14",
+      "sessions": 18,
+      "engagedSessions": 3,
+      "totalUsers": 15
+    },
+    {
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "2026-09-21",
+      "sessions": 17,
+      "engagedSessions": 9,
+      "totalUsers": 16
+    },
+    {
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "2026-10-05",
+      "sessions": 15,
+      "engagedSessions": 5,
+      "totalUsers": 15
+    },
+    {
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "2026-09-14",
+      "sessions": 10,
+      "engagedSessions": 7,
+      "totalUsers": 8
+    },
+    {
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "2026-09-28",
+      "sessions": 10,
+      "engagedSessions": 7,
+      "totalUsers": 10
+    },
+    {
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "2026-10-05",
+      "sessions": 9,
+      "engagedSessions": 4,
+      "totalUsers": 7
+    },
+    {
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "2026-09-21",
+      "sessions": 9,
+      "engagedSessions": 2,
+      "totalUsers": 8
+    },
+    {
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "2026-09-28",
+      "sessions": 9,
+      "engagedSessions": 2,
+      "totalUsers": 9
+    },
+    {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "dateRange": "2026-09-21",
+      "sessions": 1,
+      "engagedSessions": 1,
+      "totalUsers": 1
+    },
+    {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "dateRange": "2026-09-28",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "totalUsers": 1
+    },
+    {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "dateRange": "2026-10-05",
+      "sessions": 1,
+      "engagedSessions": 0,
+      "totalUsers": 1
+    },
+    {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "dateRange": "2026-09-14",
+      "sessions": 0,
+      "engagedSessions": 0,
+      "totalUsers": 0
+    }
+  ]
+}

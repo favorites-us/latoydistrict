@@ -1,0 +1,773 @@
+{
+  "fetchedAt": "2026-10-14T19:03:47.862Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "sessionDefaultChannelGroup"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "newUsers"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "engagementRate"
+      },
+      {
+        "name": "userEngagementDuration"
+      },
+      {
+        "name": "averageSessionDuration"
+      },
+      {
+        "name": "keyEvents"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "sessionDefaultChannelGroup"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "newUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagementRate",
+        "type": "TYPE_FLOAT"
+      },
+      {
+        "name": "userEngagementDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "averageSessionDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "192"
+          },
+          {
+            "value": "145"
+          },
+          {
+            "value": "138"
+          },
+          {
+            "value": "328"
+          },
+          {
+            "value": "91"
+          },
+          {
+            "value": "0.47395833333333331"
+          },
+          {
+            "value": "5471"
+          },
+          {
+            "value": "106.06903215625"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Search"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "130"
+          },
+          {
+            "value": "104"
+          },
+          {
+            "value": "100"
+          },
+          {
+            "value": "230"
+          },
+          {
+            "value": "77"
+          },
+          {
+            "value": "0.59230769230769231"
+          },
+          {
+            "value": "16580"
+          },
+          {
+            "value": "123.06300813846154"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "79"
+          },
+          {
+            "value": "76"
+          },
+          {
+            "value": "79"
+          },
+          {
+            "value": "168"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "0.24050632911392406"
+          },
+          {
+            "value": "2884"
+          },
+          {
+            "value": "95.294662126582281"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Direct"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "51"
+          },
+          {
+            "value": "46"
+          },
+          {
+            "value": "44"
+          },
+          {
+            "value": "67"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "0.23529411764705882"
+          },
+          {
+            "value": "654"
+          },
+          {
+            "value": "96.645207235294109"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "50"
+          },
+          {
+            "value": "46"
+          },
+          {
+            "value": "46"
+          },
+          {
+            "value": "141"
+          },
+          {
+            "value": "32"
+          },
+          {
+            "value": "0.64"
+          },
+          {
+            "value": "2021"
+          },
+          {
+            "value": "192.13539378000002"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "AI Assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "46"
+          },
+          {
+            "value": "41"
+          },
+          {
+            "value": "41"
+          },
+          {
+            "value": "83"
+          },
+          {
+            "value": "27"
+          },
+          {
+            "value": "0.58695652173913049"
+          },
+          {
+            "value": "973"
+          },
+          {
+            "value": "52.117024456521747"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.56447066666666668"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Unassigned"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "3"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.33333333333333331"
+          },
+          {
+            "value": "26"
+          },
+          {
+            "value": "19.917904333333333"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "75"
+          },
+          {
+            "value": "120.762868"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Unassigned"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Organic Video"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "Referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 6,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 2,
+        "remaining": 199992
+      },
+      "tokensPerHour": {
+        "consumed": 2,
+        "remaining": 39992
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 2,
+        "remaining": 13992
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "recent_28d",
+      "sessions": 192,
+      "totalUsers": 145,
+      "newUsers": 138,
+      "screenPageViews": 328,
+      "engagedSessions": 91,
+      "engagementRate": 0.4739583333333333,
+      "userEngagementDuration": 5471,
+      "averageSessionDuration": 106.06903215625,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Organic Search",
+      "dateRange": "previous_28d",
+      "sessions": 130,
+      "totalUsers": 104,
+      "newUsers": 100,
+      "screenPageViews": 230,
+      "engagedSessions": 77,
+      "engagementRate": 0.5923076923076923,
+      "userEngagementDuration": 16580,
+      "averageSessionDuration": 123.06300813846154,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "previous_28d",
+      "sessions": 79,
+      "totalUsers": 76,
+      "newUsers": 79,
+      "screenPageViews": 168,
+      "engagedSessions": 19,
+      "engagementRate": 0.24050632911392406,
+      "userEngagementDuration": 2884,
+      "averageSessionDuration": 95.29466212658228,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Direct",
+      "dateRange": "recent_28d",
+      "sessions": 51,
+      "totalUsers": 46,
+      "newUsers": 44,
+      "screenPageViews": 67,
+      "engagedSessions": 12,
+      "engagementRate": 0.23529411764705882,
+      "userEngagementDuration": 654,
+      "averageSessionDuration": 96.64520723529411,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "previous_28d",
+      "sessions": 50,
+      "totalUsers": 46,
+      "newUsers": 46,
+      "screenPageViews": 141,
+      "engagedSessions": 32,
+      "engagementRate": 0.64,
+      "userEngagementDuration": 2021,
+      "averageSessionDuration": 192.13539378000002,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "AI Assistant",
+      "dateRange": "recent_28d",
+      "sessions": 46,
+      "totalUsers": 41,
+      "newUsers": 41,
+      "screenPageViews": 83,
+      "engagedSessions": 27,
+      "engagementRate": 0.5869565217391305,
+      "userEngagementDuration": 973,
+      "averageSessionDuration": 52.11702445652175,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Referral",
+      "dateRange": "previous_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 3,
+      "screenPageViews": 3,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 1,
+      "averageSessionDuration": 0.5644706666666667,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "dateRange": "recent_28d",
+      "sessions": 3,
+      "totalUsers": 3,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 0.3333333333333333,
+      "userEngagementDuration": 26,
+      "averageSessionDuration": 19.917904333333333,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 75,
+      "averageSessionDuration": 120.762868,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 12,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Organic Video",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionDefaultChannelGroup": "Referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    }
+  ]
+}

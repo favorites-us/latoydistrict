@@ -1,0 +1,18 @@
+{
+  "fetchedAt": "2026-10-14T19:03:46.828Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsadmin.googleapis.com/v1beta/properties/545044706",
+  "result": {
+    "name": "properties/545044706",
+    "parent": "accounts/380910865",
+    "createTime": "2026-07-10T21:19:53.132Z",
+    "updateTime": "2026-07-10T21:19:53.132Z",
+    "displayName": "latoydistrict",
+    "industryCategory": "INTERNET_AND_TELECOM",
+    "timeZone": "America/Los_Angeles",
+    "currencyCode": "USD",
+    "serviceLevel": "GOOGLE_ANALYTICS_STANDARD",
+    "account": "accounts/380910865",
+    "propertyType": "PROPERTY_TYPE_ORDINARY"
+  }
+}

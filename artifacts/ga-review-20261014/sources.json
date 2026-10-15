@@ -1,0 +1,1605 @@
+{
+  "fetchedAt": "2026-10-14T19:03:47.855Z",
+  "property": "properties/545044706",
+  "url": "https://analyticsdata.googleapis.com/v1beta/properties/545044706:runReport",
+  "request": {
+    "dateRanges": [
+      {
+        "startDate": "2026-08-17",
+        "endDate": "2026-09-13",
+        "name": "previous_28d"
+      },
+      {
+        "startDate": "2026-09-14",
+        "endDate": "2026-10-11",
+        "name": "recent_28d"
+      }
+    ],
+    "dimensions": [
+      {
+        "name": "sessionSourceMedium"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "sessions"
+      },
+      {
+        "name": "totalUsers"
+      },
+      {
+        "name": "newUsers"
+      },
+      {
+        "name": "screenPageViews"
+      },
+      {
+        "name": "engagedSessions"
+      },
+      {
+        "name": "engagementRate"
+      },
+      {
+        "name": "userEngagementDuration"
+      },
+      {
+        "name": "averageSessionDuration"
+      },
+      {
+        "name": "keyEvents"
+      }
+    ],
+    "dimensionFilter": {
+      "filter": {
+        "fieldName": "hostName",
+        "stringFilter": {
+          "matchType": "FULL_REGEXP",
+          "value": "(www\\.)?toydistrictlosangeles\\.com",
+          "caseSensitive": false
+        }
+      }
+    },
+    "limit": 10000,
+    "returnPropertyQuota": true
+  },
+  "result": {
+    "dimensionHeaders": [
+      {
+        "name": "sessionSourceMedium"
+      },
+      {
+        "name": "dateRange"
+      }
+    ],
+    "metricHeaders": [
+      {
+        "name": "sessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "totalUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "newUsers",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "screenPageViews",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagedSessions",
+        "type": "TYPE_INTEGER"
+      },
+      {
+        "name": "engagementRate",
+        "type": "TYPE_FLOAT"
+      },
+      {
+        "name": "userEngagementDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "averageSessionDuration",
+        "type": "TYPE_SECONDS"
+      },
+      {
+        "name": "keyEvents",
+        "type": "TYPE_FLOAT"
+      }
+    ],
+    "rows": [
+      {
+        "dimensionValues": [
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "160"
+          },
+          {
+            "value": "121"
+          },
+          {
+            "value": "117"
+          },
+          {
+            "value": "269"
+          },
+          {
+            "value": "75"
+          },
+          {
+            "value": "0.46875"
+          },
+          {
+            "value": "4515"
+          },
+          {
+            "value": "107.92016344375"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "google / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "98"
+          },
+          {
+            "value": "77"
+          },
+          {
+            "value": "73"
+          },
+          {
+            "value": "158"
+          },
+          {
+            "value": "54"
+          },
+          {
+            "value": "0.55102040816326525"
+          },
+          {
+            "value": "13954"
+          },
+          {
+            "value": "99.337192918367336"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "79"
+          },
+          {
+            "value": "76"
+          },
+          {
+            "value": "79"
+          },
+          {
+            "value": "168"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "0.24050632911392406"
+          },
+          {
+            "value": "2884"
+          },
+          {
+            "value": "95.294662126582281"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(direct) / (none)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "51"
+          },
+          {
+            "value": "46"
+          },
+          {
+            "value": "44"
+          },
+          {
+            "value": "67"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "0.23529411764705882"
+          },
+          {
+            "value": "654"
+          },
+          {
+            "value": "96.645207235294109"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "48"
+          },
+          {
+            "value": "44"
+          },
+          {
+            "value": "44"
+          },
+          {
+            "value": "139"
+          },
+          {
+            "value": "32"
+          },
+          {
+            "value": "0.66666666666666663"
+          },
+          {
+            "value": "2021"
+          },
+          {
+            "value": "200.14103518750002"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "chatgpt.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "46"
+          },
+          {
+            "value": "41"
+          },
+          {
+            "value": "41"
+          },
+          {
+            "value": "83"
+          },
+          {
+            "value": "27"
+          },
+          {
+            "value": "0.58695652173913049"
+          },
+          {
+            "value": "973"
+          },
+          {
+            "value": "52.117024456521747"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "22"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "19"
+          },
+          {
+            "value": "53"
+          },
+          {
+            "value": "15"
+          },
+          {
+            "value": "0.68181818181818177"
+          },
+          {
+            "value": "1406"
+          },
+          {
+            "value": "174.58917845454545"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "bing / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "19"
+          },
+          {
+            "value": "13"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "34"
+          },
+          {
+            "value": "10"
+          },
+          {
+            "value": "0.52631578947368418"
+          },
+          {
+            "value": "411"
+          },
+          {
+            "value": "132.72622336842105"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "yahoo / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "7"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "20"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "0.5714285714285714"
+          },
+          {
+            "value": "471"
+          },
+          {
+            "value": "71.465910571428566"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "duckduckgo / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0.33333333333333331"
+          },
+          {
+            "value": "74"
+          },
+          {
+            "value": "12.661400833333333"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "yahoo / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "6"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "5"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "6"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1174"
+          },
+          {
+            "value": "369.81849183333333"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "22"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "dataindex.pro / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.846706"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "duckduckgo / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "77.4976755"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "gemini.google.com / ai-assistant"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "2"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "youtube.com / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "2"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0.5"
+          },
+          {
+            "value": "75"
+          },
+          {
+            "value": "120.762868"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "(not set)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "12"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "aicrawler.store / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "au.search.yahoo.com / referral"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "42"
+          },
+          {
+            "value": "43.819341"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "ecosia.org / organic"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "4.458583"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "gemini / (not set)"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "3"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "1"
+          },
+          {
+            "value": "4"
+          },
+          {
+            "value": "59.753713"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "aicrawler.store / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "au.search.yahoo.com / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "dataindex.pro / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "ecosia.org / organic"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "gemini / (not set)"
+          },
+          {
+            "value": "previous_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "gemini.google.com / ai-assistant"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "dimensionValues": [
+          {
+            "value": "youtube.com / referral"
+          },
+          {
+            "value": "recent_28d"
+          }
+        ],
+        "metricValues": [
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          },
+          {
+            "value": "0"
+          }
+        ]
+      }
+    ],
+    "rowCount": 14,
+    "metadata": {
+      "currencyCode": "USD",
+      "timeZone": "America/Los_Angeles"
+    },
+    "propertyQuota": {
+      "tokensPerDay": {
+        "consumed": 3,
+        "remaining": 199992
+      },
+      "tokensPerHour": {
+        "consumed": 3,
+        "remaining": 39992
+      },
+      "concurrentRequests": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "serverErrorsPerProjectPerHour": {
+        "consumed": 0,
+        "remaining": 10
+      },
+      "potentiallyThresholdedRequestsPerHour": {
+        "consumed": 0,
+        "remaining": 120
+      },
+      "tokensPerProjectPerHour": {
+        "consumed": 3,
+        "remaining": 13992
+      }
+    },
+    "kind": "analyticsData#runReport"
+  },
+  "rows": [
+    {
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "recent_28d",
+      "sessions": 160,
+      "totalUsers": 121,
+      "newUsers": 117,
+      "screenPageViews": 269,
+      "engagedSessions": 75,
+      "engagementRate": 0.46875,
+      "userEngagementDuration": 4515,
+      "averageSessionDuration": 107.92016344375,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "google / organic",
+      "dateRange": "previous_28d",
+      "sessions": 98,
+      "totalUsers": 77,
+      "newUsers": 73,
+      "screenPageViews": 158,
+      "engagedSessions": 54,
+      "engagementRate": 0.5510204081632653,
+      "userEngagementDuration": 13954,
+      "averageSessionDuration": 99.33719291836734,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "previous_28d",
+      "sessions": 79,
+      "totalUsers": 76,
+      "newUsers": 79,
+      "screenPageViews": 168,
+      "engagedSessions": 19,
+      "engagementRate": 0.24050632911392406,
+      "userEngagementDuration": 2884,
+      "averageSessionDuration": 95.29466212658228,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "(direct) / (none)",
+      "dateRange": "recent_28d",
+      "sessions": 51,
+      "totalUsers": 46,
+      "newUsers": 44,
+      "screenPageViews": 67,
+      "engagedSessions": 12,
+      "engagementRate": 0.23529411764705882,
+      "userEngagementDuration": 654,
+      "averageSessionDuration": 96.64520723529411,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 48,
+      "totalUsers": 44,
+      "newUsers": 44,
+      "screenPageViews": 139,
+      "engagedSessions": 32,
+      "engagementRate": 0.6666666666666666,
+      "userEngagementDuration": 2021,
+      "averageSessionDuration": 200.14103518750002,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "chatgpt.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 46,
+      "totalUsers": 41,
+      "newUsers": 41,
+      "screenPageViews": 83,
+      "engagedSessions": 27,
+      "engagementRate": 0.5869565217391305,
+      "userEngagementDuration": 973,
+      "averageSessionDuration": 52.11702445652175,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "previous_28d",
+      "sessions": 22,
+      "totalUsers": 19,
+      "newUsers": 19,
+      "screenPageViews": 53,
+      "engagedSessions": 15,
+      "engagementRate": 0.6818181818181818,
+      "userEngagementDuration": 1406,
+      "averageSessionDuration": 174.58917845454545,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "bing / organic",
+      "dateRange": "recent_28d",
+      "sessions": 19,
+      "totalUsers": 13,
+      "newUsers": 10,
+      "screenPageViews": 34,
+      "engagedSessions": 10,
+      "engagementRate": 0.5263157894736842,
+      "userEngagementDuration": 411,
+      "averageSessionDuration": 132.72622336842105,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "yahoo / organic",
+      "dateRange": "recent_28d",
+      "sessions": 7,
+      "totalUsers": 6,
+      "newUsers": 6,
+      "screenPageViews": 20,
+      "engagedSessions": 4,
+      "engagementRate": 0.5714285714285714,
+      "userEngagementDuration": 471,
+      "averageSessionDuration": 71.46591057142857,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "duckduckgo / organic",
+      "dateRange": "recent_28d",
+      "sessions": 6,
+      "totalUsers": 5,
+      "newUsers": 5,
+      "screenPageViews": 5,
+      "engagedSessions": 2,
+      "engagementRate": 0.3333333333333333,
+      "userEngagementDuration": 74,
+      "averageSessionDuration": 12.661400833333333,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "yahoo / organic",
+      "dateRange": "previous_28d",
+      "sessions": 6,
+      "totalUsers": 5,
+      "newUsers": 5,
+      "screenPageViews": 12,
+      "engagedSessions": 6,
+      "engagementRate": 1,
+      "userEngagementDuration": 1174,
+      "averageSessionDuration": 369.8184918333333,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "(not set)",
+      "dateRange": "recent_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 22,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "dataindex.pro / referral",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 1,
+      "averageSessionDuration": 0.846706,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "duckduckgo / organic",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 77.4976755,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "gemini.google.com / ai-assistant",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 2,
+      "newUsers": 2,
+      "screenPageViews": 2,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "youtube.com / referral",
+      "dateRange": "previous_28d",
+      "sessions": 2,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "userEngagementDuration": 75,
+      "averageSessionDuration": 120.762868,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "(not set)",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 12,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "aicrawler.store / referral",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "au.search.yahoo.com / referral",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 42,
+      "averageSessionDuration": 43.819341,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "ecosia.org / organic",
+      "dateRange": "previous_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 1,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 4,
+      "averageSessionDuration": 4.458583,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "gemini / (not set)",
+      "dateRange": "recent_28d",
+      "sessions": 1,
+      "totalUsers": 1,
+      "newUsers": 1,
+      "screenPageViews": 3,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "userEngagementDuration": 4,
+      "averageSessionDuration": 59.753713,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "aicrawler.store / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "au.search.yahoo.com / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "dataindex.pro / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "ecosia.org / organic",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "gemini / (not set)",
+      "dateRange": "previous_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "gemini.google.com / ai-assistant",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    },
+    {
+      "sessionSourceMedium": "youtube.com / referral",
+      "dateRange": "recent_28d",
+      "sessions": 0,
+      "totalUsers": 0,
+      "newUsers": 0,
+      "screenPageViews": 0,
+      "engagedSessions": 0,
+      "engagementRate": 0,
+      "userEngagementDuration": 0,
+      "averageSessionDuration": 0,
+      "keyEvents": 0
+    }
+  ]
+}

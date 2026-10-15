@@ -1,0 +1,16 @@
+{
+  "accepted": [
+    "Remove unqualified numeric minimum_order_value; keep scoped buying text and both URLs.",
+    "Add agreed Sunday closure and improve Spanish About-page naming.",
+    "Specify helium inflation, reservation-day full payment and last-order cutoff.",
+    "Correct copied field scopes and explicitly label shipping arrival dates as estimates."
+  ],
+  "resolved_by_existing_source_evidence": [
+    "/pages/faq actually has title About Us & Contact Us; re-opened this turn.",
+    "Wholesale/retail and account rules re-opened from official FAQ/account pages this turn, independently of Claude\u2019s limited prompt."
+  ],
+  "not_adopted": [
+    "No simplified helium refund/cancellation rule: generic policy and service-specific exceptions need full context."
+  ],
+  "review_limit": "Claude inspected supplied excerpts/data, not the original pages independently."
+}

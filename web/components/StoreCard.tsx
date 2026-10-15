@@ -16,6 +16,7 @@ export default function StoreCard({ store, locale }: { store: Store; locale: Loc
       <span className={`wr-tag wr-${store.wholesale_retail}`}>
         {t(locale, `wr_${store.wholesale_retail}` as Parameters<typeof t>[1])}
       </span>
+      {store.field_sources?.wholesale_retail ? <p className="buying-options-note">{t(locale, "buying_options_note")}</p> : null}
       <div className="chips">
         {store.category.map((c) => (
           <span key={c} className="badge">
