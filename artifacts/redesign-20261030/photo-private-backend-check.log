@@ -1,0 +1,5 @@
+
+> photos
+> node scripts/photos.mjs check american-silk-catalog-1
+
+{"status":200,"ok":true,"private_storage":"validated","diagnostic_files_remaining":0}

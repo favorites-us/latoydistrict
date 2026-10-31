@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <>
       <Header locale="en" altPath="/" />
-      <main>
+      <main id="main-content">
         <div className="container prose">
           <h1>Page not found</h1>
           <p className="lede">

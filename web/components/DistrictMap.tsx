@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import maplibregl from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { localePath, type Locale } from "@/lib/i18n";
 
@@ -22,7 +22,7 @@ const DISTRICT_RING: [number, number][] = [
   [-118.2462, 34.049],
 ];
 
-const BRAND = "#d6452c";
+const BRAND = "#2456d3";
 
 function escapeHtml(s: string) {
   return s.replace(/[&<>"']/g, (c) =>
@@ -36,6 +36,8 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
 
   useEffect(() => {
     if (!el.current || mapRef.current) return;
+    // MapLibre 6 ships a separate worker; Next must emit its hashed asset.
+    maplibregl.setWorkerUrl(new URL("maplibre-gl/dist/maplibre-gl-worker.mjs", import.meta.url).toString());
     const map = new maplibregl.Map({
       container: el.current,
       style: {
@@ -70,6 +72,10 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
       `<a href="${localePath(locale, `/stores/${slug}`)}">${escapeHtml(name)}</a>`;
 
     map.on("load", () => {
+      const bounds = new maplibregl.LngLatBounds();
+      const points: [number, number][] = stores.length ? stores.map((store) => [store.lng, store.lat]) : DISTRICT_RING;
+      for (const point of points) bounds.extend(point);
+      map.fitBounds(bounds, { padding: 36, maxZoom: 16, duration: 0 });
       map.addSource("district", {
         type: "geojson",
         data: {
@@ -98,6 +104,7 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
         cluster: true,
         clusterRadius: 40,
         clusterMaxZoom: 18,
+        maxzoom: 19,
       });
 
       // single (unclustered) store dots
@@ -125,7 +132,7 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
           "circle-opacity": 0.9,
           "circle-radius": ["step", ["get", "point_count"], 15, 5, 19, 15, 24],
           "circle-stroke-width": 3,
-          "circle-stroke-color": "rgba(214,69,44,0.25)",
+          "circle-stroke-color": "rgba(36,86,211,0.2)",
         },
       });
       // Cluster counts as HTML markers — a raster style ships no glyphs, so a
@@ -209,7 +216,7 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
             new maplibregl.Popup({ offset: 14, maxWidth: "260px" })
               .setLngLat(center)
               .setHTML(
-                `<strong>${leaves.length} businesses here</strong>` +
+                `<strong>${leaves.length} ${locale === "es" ? "negocios aquí" : "businesses here"}</strong>` +
                   `<ul class="map-tenants">${list}</ul>`,
               )
               .addTo(map);
@@ -225,5 +232,5 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
     };
   }, [stores, locale]);
 
-  return <div ref={el} style={{ height: "100%", width: "100%" }} />;
+  return <div ref={el} role="region" aria-label={locale === "es" ? "Mapa de proveedores" : "Supplier map"} style={{ height: "100%", width: "100%" }} />;
 }

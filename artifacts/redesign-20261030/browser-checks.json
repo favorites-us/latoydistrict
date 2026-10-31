@@ -1,0 +1,45 @@
+{
+  "tool": "CUA Chrome authenticated extension",
+  "production": true,
+  "desktop_viewport": [
+    1440,
+    1000
+  ],
+  "mobile_home_viewport": [
+    390,
+    844
+  ],
+  "narrow_store_viewport": [
+    320,
+    780
+  ],
+  "passed": [
+    "LEGO product search returns Toms Model",
+    "zero-result state",
+    "save two suppliers and compare",
+    "comparison scroll stays inside a 352px region on 390px page",
+    "copy inquiry uses user input and success feedback; original empty clipboard restored",
+    "dialog closes and returns focus",
+    "mobile menu",
+    "Spanish toys + 4th Street filters return 10; filter URL preserved",
+    "both American Silk catalog images naturalWidth > 0",
+    "photo removal dialog opens; no ownership claim or request submitted",
+    "MapLibre worker and district outline load",
+    "filtered map fits Toms Model on mobile; pin opens correct name/address link",
+    "temporary saved suppliers removed; count restored to zero",
+    "responsive menu/filter toggles hidden on desktop"
+  ],
+  "screenshots_local_ignored": [
+    "desktop-home.jpg",
+    "mobile-home.jpg",
+    "mobile-store.jpg",
+    "mobile-map.jpg"
+  ],
+  "limits": [
+    "No actual supplier message or real inquiry submitted",
+    "No real removal claim submitted; removal failure/race paths tested with isolated mock storage",
+    "No physical print or print-preview dialog test",
+    "GA event delivery and mailbox reception not verified"
+  ],
+  "final_map_deployment": "dpl_7Eu8sCE5PeSRGxdo4H88ne2AYj7e"
+}

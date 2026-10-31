@@ -1,0 +1,11 @@
+Vercel CLI 59.25.4 (Node.js 25.6.1)
+Retrieving project…
+Creating new blob store
+> Success! Blob store created: toydistrict-private (store_9BRH8s14He6YrKB3) in iad1
+> Access: private. Learn more: https://vercel.com/docs/vercel-blob/private-storage (https://vercel.com/docs/vercel-blob/private-storage)
+Connecting toydistrict-private to toydistrictlosangeles...
+> Success! Blob store toydistrict-private linked to toydistrictlosangeles
+> Downloading `development` environment variables for hbrandons-projects/toydistrictlosangeles
+Downloading
+
+✓ Created         .env.local file and added it to .gitignore

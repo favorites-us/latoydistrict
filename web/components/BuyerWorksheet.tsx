@@ -1,5 +1,6 @@
 "use client";
 
+import { track } from "@/lib/analytics";
 import type { Locale } from "@/lib/i18n";
 
 const copy = {
@@ -27,7 +28,7 @@ export default function BuyerWorksheet({ locale }: { locale: Locale }) {
     <section className="buyer-worksheet" aria-labelledby="worksheet-heading">
       <div className="worksheet-heading">
         <h2 id="worksheet-heading">{c.title}</h2>
-        <button type="button" className="print-worksheet" onClick={() => window.print()}>{c.print}</button>
+        <button type="button" className="print-worksheet" onClick={() => { track("visit_print", { source: "worksheet" }); window.print(); }}>{c.print}</button>
       </div>
       <p className="worksheet-intro">{c.intro}</p>
       <dl className="worksheet-fields">

@@ -1,0 +1,6 @@
+
+> photos
+> node scripts/photos.mjs publish american-silk-catalog-1 ../artifacts/redesign-20261030/photo-preview/silk-catalog-1.jpg
+
+{"status":200,"ok":true,"photo_id":"american-silk-catalog-1"}
+Verified american-silk-catalog-1: HTTP 200.

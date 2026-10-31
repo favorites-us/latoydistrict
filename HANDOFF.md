@@ -1,6 +1,26 @@
 # LA Toy District 재시작 후 작업 인계
 
-## 최신 작업 — 2026년 10월 15일
+## 최신 작업 — 2026년 10월 30일
+
+사용자의 디자인 시스템·업체 사진·B2B 바이어 기능 개선 요청을 구현하고 **운영 배포했다.** 현재 배포는 `dpl_7Eu8sCE5PeSRGxdo4H88ne2AYj7e`, 도메인은 https://toydistrictlosangeles.com 이다. 실제 Claude Code로 계획·구현·사진 차단 후속·최종 저장소 변경을 총 4차례 검토했다. 아래 10월 15일·14일 내용은 당시 이력이며 현재 런타임과 구별한다.
+
+- Tailwind 4, shadcn 방식의 로컬 UI 컴포넌트, Radix 모달, DM Sans/Barlow 폰트로 EN/ES 공통 UI를 개편했다. 목록 중심 탐색, 상품명/업체/거리 검색, 필터, 선택형 지도를 제공한다.
+- 브라우저에 업체 최대 12곳 저장, 2–4곳 비교, 거리별 방문 목록 인쇄, 문의 초안 복사를 추가했다. 초안은 직접 복사하는 기능이며 업체에 자동 전송하지 않는다. 디렉터리 문의는 운영자에게 전달되는 것으로 정확히 표시했다.
+- American Silk 카탈로그 2장(업체 1곳)을 자체 비공개 저장소에서 제공한다. 외관 사진이나 현재 가격으로 표현하지 않고 출처·가격 재확인·사용 허락 미확인을 표시한다. 삭제 요청이 성공하면 영구 차단 기록으로 직접 이미지 주소도 차단한다. Google/Street View 사진은 수집하지 않았다. CBH/Casa Manga의 복제 제한 약관, 워터마크 스톡 이미지, 접근 실패한 사이트는 제외했다. 전체 191개 업체의 사진 수집 완료를 의미하지 않는다.
+- 운영 검사에서 기존 Supabase 호스트가 DNS 조회되지 않는 것이 드러났다. 기존 문의 저장도 불가능한 상태였다. 과거 데이터와 자격 증명은 건드리지 않고, 이 사이트 전용 **private Vercel Blob** `toydistrict-private` (`store_9BRH8s14He6YrKB3`, iad1)을 production에 연결했다. 새 문의는 `inquiries/`, 삭제 요청은 `photo-requests/`, 영구 차단은 `photo-blocks/`에 분리한다. 과거 문의의 복구/이관은 수행하지 않았다. 자동 이메일 알림이나 데이터 보존기간 작업은 없으므로 운영자가 수동 확인해야 한다.
+- `PHOTO_ADMIN_TOKEN`은 Vercel Secret이며 로컬 CLI는 무시되는 `web/.env.photos-admin.local`을 읽는다. 토큰을 출력/커밋하지 않는다. 사진 원본과 화면 증빙 JPG도 Git에서 제외했다. 상세 명령과 영구 차단 유지 규칙은 [사진·문의 운영 안내](docs/operations/photos.md)를 따른다.
+
+재개 시 [설계·판단 기록](docs/decisions/2026-10-30-buyer-redesign.md), [최종 배포](artifacts/redesign-20261030/deployment.json), [배포 소스 해시](artifacts/redesign-20261030/deployment-source-manifest.json), [운영 검사](artifacts/redesign-20261030/production-checks.json), [브라우저 검사](artifacts/redesign-20261030/browser-checks.json)를 먼저 읽는다. 초기 Supabase 배포/검사 실패 로그는 이력이고, 최종 코드는 Supabase에 의존하지 않는다. `.env.production.local`은 로컬 공개 빌드 값만 포함하며 실제 저장소 검증은 production에서 수행했다.
+
+검증: 기존 데이터 테스트 16개와 새 웹 테스트 10개, Next 빌드 599페이지, 로컬/운영 대표 페이지 26개, 운영 JS/CSS 자산 31개, 사진 2장의 정확한 SHA-256 및 무캐시 헤더가 통과했다. 의존성 audit는 0건이다. 실제 비공개 저장소 쓰기·덮어쓰기 일관성·삭제·진단 파일 정리도 성공했다. CUA Chrome으로 데스크톱 1440px, 모바일 홈/비교 390px, 업체 페이지 320px를 확인했고 검색·빈 결과·저장·비교·문의 복사·스페인어 필터·사진·삭제 모달·지도 점/상호 팝업을 검사했다. MapLibre 6 워커 경로와 모바일 지도 화면 맞춤을 수정했다. 테스트 저장 목록과 클립보드는 원래 상태로 돌렸다. localhost 차단을 우회하지 않았다.
+
+검증 범위: 실제 문의/권리 주장을 제출하거나 업체 메시지를 보내지 않았다. 삭제 실패·동시 요청은 격리 mock 테스트로, 실제 저장소는 무해한 진단 파일로 검증했다. 인쇄 미리보기/실제 인쇄, GA 이벤트 수신, 이메일 수신은 미확인이다. 익명 사진 차단 남용, 공개 문의 rate limit, 수동 inbox 확인/개인정보 정리는 운영상 후속 항목이다. 사진 삭제 수단이 사용 허락이나 자동적인 법적 면책을 의미하지 않는다.
+
+GA: 인증된 GA Home의 최근 28일 화면에서 활성 사용자 314(+37.1%), 조회 790(+45.8%), 새 사용자 312, 주요 이벤트 0을 확인했다. 카드별 기간이 달라 채널의 최근 7일 수치를 28일 수치로 혼합하지 않는다. API 인증 범위 부족으로 UI를 읽었으며 신규 디자인의 인과효과나 구매 전환 증거가 아니다. [관찰 기록](artifacts/redesign-20261030/ga-observation.json)
+
+다음 투자 우선순위는 사업주 확인 MOQ/박스 수량/혼합 주문/픽업 마감, 브랜드·유통 권한 근거, 바이어 입력 견적의 개당 총비용 비교다. 업체 등록 데이터 191개와 현장 확인 날짜는 유지했다. 최종 커밋·원격 동기화는 `git log -1`과 `git status -sb`로 확인한다.
+
+## 10월 15일 작업 이력
 
 사용자의 사진·바이어 정보 검토 요청과 “진행해봐” 후속 요청에 따라 **가이드 정비와 구매 준비표를 구현하고 운영 배포했다.** 최신 배포는 `dpl_FbWM92oz5yt9ZEmVcossJcdFeDFe`이며 [영문 구매 체크리스트](https://toydistrictlosangeles.com/guide/buying-checklist), [스페인어](https://toydistrictlosangeles.com/es/guide/buying-checklist)가 추가됐다. 기존 가이드 5종을 양 언어로 정리하고, 공식 업체 4곳에 구매 질문과 카탈로그 안내를 추가했다. California Balloon House 반품 정책도 반영했다. 등록 업체 191개와 관련 없는 필드는 유지했고 온라인 안내는 11→16개다.
 
@@ -18,7 +38,7 @@ GA 실측 분석, 온라인 정보 확보 실험, Claude 검토, 콘텐츠 보�
 
 **배포 전 이력 — 2026년 10월 14일 14시 18분 PDT:** 동일한 Chrome 도구로 동일한 `http://localhost:3017/stores/american-silk-inc-340` 접근을 시도했으나 사용자 권한 거부로 다시 차단됐다. 화면 검증은 시작하지 못했고, 설정 변경이나 우회는 하지 않았다. 이후 사용자가 설정 해제를 알리고 이 단계의 필요성을 물었으며, 정보 확보에는 필수 단계가 아니므로 후순위로 둘 수 있다고 설명한 뒤 배포 요청을 받았다. 권한 해제 자체는 도구로 재확인하지 않았다. [당시 권한 확인 기록](artifacts/online-pilot-20261014/validation-browser-resume.json)
 
-## 재개 시 확인할 현재 상태
+## 10월 15일 당시 재개 안내 (이전 기록)
 
 **2026-10-15 선행 검토 기록:** [사진·바이어 정보 판단 및 당시 초안](docs/decisions/2026-10-15-buyer-information-and-photos.md), [출처 기록](artifacts/buyer-information-review-20261015/evidence.json). 해당 문서의 미게시·미구현 표시는 초기 검토 단계의 상태다. 이후 사용자가 진행을 요청해 위 최신 작업의 구현·배포를 완료했다. 사진과 텍스트의 사용자 효과는 여전히 미검증이다.
 

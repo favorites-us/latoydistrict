@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/analytics";
 import { t, type Locale } from "@/lib/i18n";
 
 // Per-store request form. Posts to the shared /api/leads endpoint with the
@@ -29,7 +30,7 @@ export default function StoreInquiryForm({
         body: JSON.stringify({ ...data, locale, store_slug: storeSlug, store_name: storeName }),
       });
       if (!res.ok) throw new Error(String(res.status));
-      window.gtag?.("event", "store_inquiry", { store_slug: storeSlug });
+      track("store_inquiry", { store_slug: storeSlug });
       setState("ok");
       form.reset();
     } catch {
@@ -42,14 +43,16 @@ export default function StoreInquiryForm({
       <h2>{t(locale, "inquiry_h2")}</h2>
       <p className="sub">{t(locale, "inquiry_sub")}</p>
       <form onSubmit={onSubmit}>
-        <input name="name" required maxLength={120} placeholder={t(locale, "lead_name")} />
-        <input name="contact" required maxLength={200} placeholder={t(locale, "lead_contact")} />
-        <textarea name="items" required maxLength={2000} placeholder={t(locale, "inquiry_message")} />
+        <label className="field-label">{t(locale, "lead_name")}<input name="name" required maxLength={120} autoComplete="name" /></label>
+        <label className="field-label">{t(locale, "lead_contact")}<input name="contact" required maxLength={200} /></label>
+        <label className="field-label">{t(locale, "inquiry_message")}<textarea name="items" required maxLength={2000} /></label>
+        <label className="honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
+        <p className="text-xs text-muted-foreground">{locale === "es" ? "Sus datos se usan para responder a esta consulta; no se publican." : "Your details are used to handle this inquiry and are not published."}</p>
         <button disabled={state === "busy"}>{t(locale, "inquiry_submit")}</button>
       </form>
-      {state === "ok" ? <p className="lead-msg ok">{t(locale, "lead_ok")}</p> : null}
+      {state === "ok" ? <p role="status" className="lead-msg ok">{t(locale, "lead_ok")}</p> : null}
       {state === "err" ? (
-        <p className="lead-msg err">
+        <p role="alert" className="lead-msg err">
           {t(locale, "lead_err")} <a href="mailto:hello@toydistrictlosangeles.com">hello@toydistrictlosangeles.com</a>
         </p>
       ) : null}

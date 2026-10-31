@@ -1,49 +1,27 @@
 import { NextResponse } from "next/server";
+import { storeBySlug } from "@/lib/stores";
+import { limitedJson, sameOrigin, textField } from "@/lib/request-validation";
+import { privateFiles } from "@/lib/server/private-files";
 
-// Lead storage: Supabase REST (service role, server-side only). Env-gated so the
-// site builds and runs without Supabase configured — the form then reports the
-// mailto fallback to the visitor.
-export async function POST(req: Request) {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-  let body: Record<string, unknown>;
-  try {
-    body = await req.json();
-  } catch {
-    return NextResponse.json({ ok: false, reason: "bad_json" }, { status: 400 });
-  }
-
+export async function POST(request: Request) {
+  if (!sameOrigin(request)) return NextResponse.json({ ok: false, reason: "origin" }, { status: 403 });
+  const body = await limitedJson(request);
+  if (!body || body.website) return NextResponse.json({ ok: false, reason: "bad_request" }, { status: 400 });
+  const slug = textField(body.store_slug, 120);
+  const store = slug ? storeBySlug.get(slug) : undefined;
+  if (slug && !store) return NextResponse.json({ ok: false, reason: "unknown_store" }, { status: 400 });
+  const buyer = textField(body.buyer_type, 40);
   const lead = {
-    name: String(body.name ?? "").slice(0, 120),
-    contact: String(body.contact ?? "").slice(0, 200),
-    buyer_type: String(body.buyer_type ?? "").slice(0, 40),
-    items: String(body.items ?? "").slice(0, 2000),
-    locale: body.locale === "es" ? "es" : "en",
-    // Present when the request comes from a specific store's detail page.
-    store_slug: body.store_slug ? String(body.store_slug).slice(0, 120) : null,
-    store_name: body.store_name ? String(body.store_name).slice(0, 200) : null,
+    name: textField(body.name, 120), contact: textField(body.contact, 200),
+    buyer_type: ["party_planner", "store_owner", "reseller", "other"].includes(buyer) ? buyer : "other",
+    items: textField(body.items, 2000), locale: body.locale === "es" ? "es" : "en",
+    store_slug: store?.slug ?? null, store_name: store?.name ?? null,
   };
-  if (!lead.name || !lead.contact || !lead.items) {
-    return NextResponse.json({ ok: false, reason: "missing_fields" }, { status: 400 });
-  }
-
-  if (!url || !key) {
-    return NextResponse.json({ ok: false, reason: "not_configured" }, { status: 503 });
-  }
-
-  const res = await fetch(`${url}/rest/v1/leads`, {
-    method: "POST",
-    headers: {
-      apikey: key,
-      Authorization: `Bearer ${key}`,
-      "Content-Type": "application/json",
-      Prefer: "return=minimal",
-    },
-    body: JSON.stringify(lead),
-  });
-  if (!res.ok) {
-    return NextResponse.json({ ok: false, reason: "storage_error" }, { status: 502 });
-  }
-  return NextResponse.json({ ok: true });
+  if (!lead.name || !lead.contact || !lead.items) return NextResponse.json({ ok: false, reason: "missing_fields" }, { status: 400 });
+  try {
+    const id = crypto.randomUUID();
+    const created_at = new Date().toISOString();
+    await privateFiles.write(`inquiries/${created_at.slice(0, 7)}/${id}.json`, JSON.stringify({ id, created_at, ...lead }));
+    return NextResponse.json({ ok: true });
+  } catch { return NextResponse.json({ ok: false, reason: "storage_error" }, { status: 502 }); }
 }

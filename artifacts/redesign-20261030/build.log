@@ -1,0 +1,72 @@
+
+> build
+> next build
+
+   ▲ Next.js 15.5.28
+   - Environments: .env.production.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 1461ms
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/599) ...
+   Generating static pages (149/599)
+   Generating static pages (299/599)
+   Generating static pages (449/599)
+ ✓ Generating static pages (599/599)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                                       Size  First Load JS
+┌ ○ /                                                            137 B         166 kB
+├ ○ /_not-found                                                  146 B         104 kB
+├ ƒ /api/admin/photos                                            146 B         104 kB
+├ ƒ /api/keepalive                                               146 B         104 kB
+├ ƒ /api/leads                                                   146 B         104 kB
+├ ƒ /api/photo-reports                                           146 B         104 kB
+├ ƒ /api/store-photos/[id]                                       146 B         104 kB
+├ ○ /es                                                          137 B         166 kB
+├ ○ /es/guide/buying-checklist                                 3.09 kB         145 kB
+├ ● /es/guide/for/[buyer]                                      3.09 kB         145 kB
+├   ├ /es/guide/for/party-planners
+├   ├ /es/guide/for/store-owners
+├   └ /es/guide/for/resellers
+├ ○ /es/guide/visiting                                         3.09 kB         145 kB
+├ ○ /es/guide/wholesale-basics                                 3.09 kB         145 kB
+├ ○ /es/photos                                                   189 B         158 kB
+├ ○ /es/saved                                                    133 B         167 kB
+├ ● /es/stores/[slug]                                            134 B         162 kB
+├   ├ /es/stores/abc-toys-wholesale-323
+├   ├ /es/stores/americas-favors-405
+├   ├ /es/stores/ampro-marketing-corporation-339
+├   └ [+188 more paths]
+├ ○ /guide/buying-checklist                                    3.09 kB         145 kB
+├ ● /guide/for/[buyer]                                         3.09 kB         145 kB
+├   ├ /guide/for/party-planners
+├   ├ /guide/for/store-owners
+├   └ /guide/for/resellers
+├ ○ /guide/visiting                                            3.09 kB         145 kB
+├ ○ /guide/wholesale-basics                                    3.09 kB         145 kB
+├ ○ /photos                                                      189 B         158 kB
+├ ○ /robots.txt                                                  146 B         104 kB
+├ ○ /saved                                                       133 B         167 kB
+├ ○ /sitemap.xml                                                 146 B         104 kB
+├ ● /stores/[slug]                                               134 B         162 kB
+├   ├ /stores/abc-toys-wholesale-323
+├   ├ /stores/americas-favors-405
+├   ├ /stores/ampro-marketing-corporation-339
+├   └ [+188 more paths]
+└ ● /stores/[slug]/opengraph-image                               146 B         104 kB
+    ├ /stores/abc-toys-wholesale-323/opengraph-image
+    ├ /stores/americas-favors-405/opengraph-image
+    ├ /stores/ampro-marketing-corporation-339/opengraph-image
+    └ [+188 more paths]
++ First Load JS shared by all                                   103 kB
+  ├ chunks/255-b1e2483a7e02feee.js                             46.6 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js                        54.2 kB
+  └ other shared chunks (total)                                2.58 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand

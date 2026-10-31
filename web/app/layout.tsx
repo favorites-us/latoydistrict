@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { SITE_URL } from "@/lib/stores";
+import { SITE_URL, stores } from "@/lib/stores";
+import { BuyerProvider } from "@/components/BuyerProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | LA Toy District",
   },
   description:
-    "Every wholesale toy, party & gift supplier in Downtown LA's Toy District — addresses, map, and buying guides.",
+    "Explore toy, party and gift business listings in Downtown LA. Compare published buying details, save suppliers and plan your visit.",
 };
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -20,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        {children}
+        <BuyerProvider knownSlugs={stores.map((store) => store.slug)}>{children}</BuyerProvider>
         <Script
           id="adsbygoogle-init"
           async

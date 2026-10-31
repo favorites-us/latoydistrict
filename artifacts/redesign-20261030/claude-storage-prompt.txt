@@ -1,0 +1,267 @@
+Review this final backend change for release-blocking issues only, in concise Korean. Actual production check showed the OLD Supabase hostname does not resolve (also local DNS NXDOMAIN); no photos were uploaded there and no user data was read or migrated. We created a dedicated PRIVATE Vercel Blob store connected only to this project production, using existing Vercel hosting. SDK2.8.2 supports useCache:false consistent private reads (official July14 2026 changelog). All current routes use private store; old deployments cannot serve the new images because they use the unreachable old backend. Permanent anonymous photo-blocks are separate paths from private request/inquiry inbox. Block is written before anything else; request/audit failure never undoes a removal. Admin token can only allowlisted photos publish/remove and bounded private storage diagnostic. No public URLs or tokens are emitted. Tests mock privateFiles and block all actual fetches; real production diagnostic will check write/read/overwrite/delete without a real complaint or inquiry. Please check race/fail-closed/privacy and pitfalls of Blob SDK/API use. Do not claim you executed tests. Current snapshot:
+
+FILE web/lib/server/private-files.ts
+import "server-only";
+import { del, get, put } from "@vercel/blob";
+
+// All files belong to this site's private store. Never expose storage URLs or
+// credentials. Suppression reads must bypass the CDN, including cached misses.
+export const privateFiles = {
+  async read(path: string): Promise<Buffer | null> {
+    const result = await get(path, { access: "private", useCache: false, abortSignal: AbortSignal.timeout(12000) });
+    if (!result) return null;
+    if (result.statusCode !== 200 || !result.stream) throw new Error("private_read_failed");
+    return Buffer.from(await new Response(result.stream).arrayBuffer());
+  },
+  async write(path: string, bytes: string | Buffer, contentType = "application/json", overwrite = false) {
+    const result = await put(path, bytes, { access: "private", addRandomSuffix: false, allowOverwrite: overwrite, contentType, cacheControlMaxAge: 60, abortSignal: AbortSignal.timeout(12000) });
+    if (!new URL(result.url).hostname.endsWith(".private.blob.vercel-storage.com")) throw new Error("private_store_required");
+  },
+  async remove(path: string) { await del(path, { abortSignal: AbortSignal.timeout(12000) }); },
+};
+
+export async function checkPrivateStorage() {
+  const path = `diagnostics/${crypto.randomUUID()}.json`;
+  try {
+    await privateFiles.write(path, JSON.stringify({ diagnostic: "storage check", revision: 1 }));
+    if (JSON.parse((await privateFiles.read(path))?.toString() ?? "null")?.revision !== 1) throw new Error("write_read_failed");
+    await privateFiles.write(path, JSON.stringify({ diagnostic: "storage check", revision: 2 }), "application/json", true);
+    if (JSON.parse((await privateFiles.read(path))?.toString() ?? "null")?.revision !== 2) throw new Error("consistent_read_failed");
+  } finally { await privateFiles.remove(path); }
+  if (await privateFiles.read(path)) throw new Error("cleanup_unconfirmed");
+}
+
+
+FILE web/lib/server/photo-service.ts
+import "server-only";
+import { privateFiles } from "./private-files";
+import type { StorePhoto } from "@/lib/photos";
+
+type RemovalRequest = { name: string; contact: string; reason: string; locale: string };
+export function photoBlockPath(photo: StorePhoto) { return `photo-blocks/${photo.id}.json`; }
+export async function photoIsReported(photo: StorePhoto) {
+  // Existence is the permanent block. Request handling and inbox deletion do
+  // not affect it. Read errors propagate, so image serving fails closed.
+  return (await privateFiles.read(photoBlockPath(photo))) !== null;
+}
+
+export async function removePhoto(photo: StorePhoto, report: RemovalRequest) {
+  const id = crypto.randomUUID();
+  const created_at = new Date().toISOString();
+  // Persist anonymous suppression first. Its only meaning is "never serve".
+  await privateFiles.write(photoBlockPath(photo), JSON.stringify({ photo_id: photo.id, blocked_at: created_at }), "application/json", true);
+  let request_saved = false;
+  try {
+    await privateFiles.write(`photo-requests/${id}.json`, JSON.stringify({ id, created_at, photo_id: photo.id, ...report }));
+    request_saved = true;
+  } catch { /* Removing the photo takes priority over storing contact details. */ }
+  let bytes_removed = false;
+  try { await privateFiles.remove(photo.storage_path); bytes_removed = true; } catch { /* Persisted block still prevents serving. */ }
+  try { await privateFiles.write(`photo-audits/${id}.json`, JSON.stringify({ photo_id: photo.id, created_at, bytes_removed, request_saved })); } catch { /* Block remains permanent even if audit storage fails. */ }
+  return { hidden: true, bytes_removed, request_saved };
+}
+
+
+FILE web/app/api/admin/photos/route.ts
+import { createHash, timingSafeEqual } from "node:crypto";
+import { NextResponse } from "next/server";
+import { photoById } from "@/lib/photos";
+import { privateFiles, checkPrivateStorage } from "@/lib/server/private-files";
+import { photoIsReported, removePhoto } from "@/lib/server/photo-service";
+import { limitedJson, textField } from "@/lib/request-validation";
+
+export const runtime = "nodejs";
+export const maxDuration = 60;
+export async function POST(request: Request) {
+  const configured = process.env.PHOTO_ADMIN_TOKEN;
+  const supplied = request.headers.get("authorization")?.replace(/^Bearer /, "") ?? "";
+  if (!configured || configured.length < 32 || !supplied || !timingSafeEqual(createHash("sha256").update(configured).digest(), createHash("sha256").update(supplied).digest())) return NextResponse.json({ ok: false }, { status: 401 });
+  const body = await limitedJson(request, 3_000_000);
+  const photo = body && photoById(textField(body.photo_id, 120));
+  if (!body || !photo) return NextResponse.json({ ok: false }, { status: 400 });
+  try {
+    if (body.action === "check") {
+      await checkPrivateStorage();
+      return NextResponse.json({ ok: true, private_storage: "validated", diagnostic_files_remaining: 0 });
+    }
+    if (body.action === "remove") {
+      const result = await removePhoto(photo, { name: "Directory operator", contact: "", reason: textField(body.reason, 1500) || "Removed by operator", locale: "en" });
+      return NextResponse.json({ ok: true, ...result });
+    }
+    if (body.action !== "publish" || photo.status !== "published" || typeof body.image_base64 !== "string") return NextResponse.json({ ok: false }, { status: 400 });
+    if (await photoIsReported(photo)) return NextResponse.json({ ok: false, reason: "removal_request_pending" }, { status: 409 });
+    const bytes = Buffer.from(body.image_base64, "base64");
+    if (!bytes.length || bytes.length > 2_000_000 || createHash("sha256").update(bytes).digest("hex") !== photo.sha256) return NextResponse.json({ ok: false, reason: "unreviewed_bytes" }, { status: 400 });
+    await privateFiles.write(photo.storage_path, bytes, photo.mime_type);
+    if (await photoIsReported(photo)) { await privateFiles.remove(photo.storage_path); return NextResponse.json({ ok: false, reason: "removal_request_pending" }, { status: 409 }); }
+    return NextResponse.json({ ok: true, photo_id: photo.id });
+  } catch { return NextResponse.json({ ok: false, reason: "private_storage_error" }, { status: 503 }); }
+}
+
+
+FILE web/app/api/store-photos/[id]/route.ts
+import { photoById } from "@/lib/photos";
+import { privateFiles } from "@/lib/server/private-files";
+import { photoIsReported } from "@/lib/server/photo-service";
+
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+const headers = { "Cache-Control": "private, no-store, max-age=0", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store", "X-Robots-Tag": "noindex, noimageindex", "X-Content-Type-Options": "nosniff" };
+
+export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const photo = photoById(id);
+  if (!photo || photo.status !== "published") return new Response(null, { status: 404, headers });
+  try {
+    if (await photoIsReported(photo)) return new Response(null, { status: 410, headers });
+    const bytes = await privateFiles.read(photo.storage_path);
+    if (!bytes) return new Response(null, { status: 404, headers });
+    if (await photoIsReported(photo)) return new Response(null, { status: 410, headers });
+    return new Response(new Uint8Array(bytes), { headers: { ...headers, "Content-Type": photo.mime_type } });
+  } catch { return new Response(null, { status: 503, headers }); }
+}
+
+
+FILE web/app/api/photo-reports/route.ts
+import { NextResponse } from "next/server";
+import { photoById } from "@/lib/photos";
+import { limitedJson, sameOrigin, textField, validPhotoReport } from "@/lib/request-validation";
+import { photoIsReported, removePhoto } from "@/lib/server/photo-service";
+
+export const runtime = "nodejs";
+export async function POST(request: Request) {
+  if (!sameOrigin(request)) return NextResponse.json({ ok: false }, { status: 403 });
+  const body = await limitedJson(request);
+  if (!body) return NextResponse.json({ ok: false }, { status: 400 });
+  const photo = photoById(textField(body.photo_id, 120));
+  const report = validPhotoReport(body);
+  if (!photo || !report) return NextResponse.json({ ok: false }, { status: 400 });
+  try {
+    // Idempotent: repeated reports cannot grow the inbox after a photo is hidden.
+    if (await photoIsReported(photo)) return NextResponse.json({ ok: true, hidden: true });
+    const result = await removePhoto(photo, report);
+    return NextResponse.json({ ok: true, hidden: result.hidden });
+  } catch { return NextResponse.json({ ok: false }, { status: 503 }); }
+}
+
+
+FILE web/app/api/leads/route.ts
+import { NextResponse } from "next/server";
+import { storeBySlug } from "@/lib/stores";
+import { limitedJson, sameOrigin, textField } from "@/lib/request-validation";
+import { privateFiles } from "@/lib/server/private-files";
+
+export async function POST(request: Request) {
+  if (!sameOrigin(request)) return NextResponse.json({ ok: false, reason: "origin" }, { status: 403 });
+  const body = await limitedJson(request);
+  if (!body || body.website) return NextResponse.json({ ok: false, reason: "bad_request" }, { status: 400 });
+  const slug = textField(body.store_slug, 120);
+  const store = slug ? storeBySlug.get(slug) : undefined;
+  if (slug && !store) return NextResponse.json({ ok: false, reason: "unknown_store" }, { status: 400 });
+  const buyer = textField(body.buyer_type, 40);
+  const lead = {
+    name: textField(body.name, 120), contact: textField(body.contact, 200),
+    buyer_type: ["party_planner", "store_owner", "reseller", "other"].includes(buyer) ? buyer : "other",
+    items: textField(body.items, 2000), locale: body.locale === "es" ? "es" : "en",
+    store_slug: store?.slug ?? null, store_name: store?.name ?? null,
+  };
+  if (!lead.name || !lead.contact || !lead.items) return NextResponse.json({ ok: false, reason: "missing_fields" }, { status: 400 });
+  try {
+    const id = crypto.randomUUID();
+    const created_at = new Date().toISOString();
+    await privateFiles.write(`inquiries/${created_at.slice(0, 7)}/${id}.json`, JSON.stringify({ id, created_at, ...lead }));
+    return NextResponse.json({ ok: true });
+  } catch { return NextResponse.json({ ok: false, reason: "storage_error" }, { status: 502 }); }
+}
+
+
+FILE web/tests/photo-removal.test.ts
+import test, { type TestContext } from "node:test";
+import assert from "node:assert/strict";
+import { limitedJson, sameOrigin, validPhotoReport } from "../lib/request-validation";
+import { GET } from "../app/api/store-photos/[id]/route";
+import { POST as reportPhoto } from "../app/api/photo-reports/route";
+import { POST as administerPhoto } from "../app/api/admin/photos/route";
+import { photos } from "../lib/photos";
+import { privateFiles, checkPrivateStorage } from "../lib/server/private-files";
+import { photoBlockPath } from "../lib/server/photo-service";
+import { POST as submitInquiry } from "../app/api/leads/route";
+
+const origin = "https://toydistrictlosangeles.com";
+const photo = photos[0];
+function request(path: string, body: unknown, requestOrigin = origin) { return new Request(`${origin}${path}`, { method: "POST", headers: { "Content-Type": "application/json", Origin: requestOrigin }, body: JSON.stringify(body) }); }
+
+test("report validation rejects cross-origin, malformed, automated and incomplete submissions", async () => {
+  assert.equal(sameOrigin(request("/api/photo-reports", {}, "https://unrelated.example")), false);
+  assert.equal(await limitedJson(request("/api/photo-reports", [])), null);
+  assert.equal(await limitedJson(request("/api/photo-reports", { data: "x".repeat(13000) })), null);
+  assert.equal(validPhotoReport({ name: "Owner", reason: "Please remove my photograph", rights_holder: "no" }), null);
+  assert.equal(validPhotoReport({ name: "Owner", reason: "Please remove my photograph", rights_holder: "yes", website: "spam" }), null);
+  assert.equal(validPhotoReport({ name: "Owner", contact: "not-an-email", reason: "Please remove my photograph", rights_holder: "yes" }), null);
+  assert.ok(validPhotoReport({ name: "Owner", reason: "Please remove my photograph", rights_holder: "yes" }));
+  assert.equal((await reportPhoto(request("/api/photo-reports", {}, "https://unrelated.example"))).status, 403);
+  assert.equal((await administerPhoto(request("/api/admin/photos", { action: "publish", photo_id: photo.id }))).status, 401);
+});
+
+function mockStorage(context: TestContext) {
+  const files = new Map<string, Buffer>([[photo.storage_path, Buffer.from([255, 216, 255, 217])]]);
+  const state = { downloads: 0, writes: 0, failReads: false, failDelete: false, failBlockWrite: false, failInboxWrite: false, raceRemoval: false };
+  context.mock.method(globalThis, "fetch", async () => { throw new Error("Tests must never contact a real service"); });
+  context.mock.method(privateFiles, "read", async (path: string) => {
+    if (state.failReads) throw new Error("unavailable");
+    if (path === photo.storage_path) { state.downloads++; if (state.raceRemoval) files.set(photoBlockPath(photo), Buffer.from("{}")); }
+    return files.get(path) ?? null;
+  });
+  context.mock.method(privateFiles, "write", async (path: string, bytes: string | Buffer) => {
+    if ((state.failBlockWrite && path.startsWith("photo-blocks/")) || (state.failInboxWrite && path.startsWith("photo-requests/"))) throw new Error("unavailable");
+    state.writes++; files.set(path, Buffer.from(bytes));
+  });
+  context.mock.method(privateFiles, "remove", async (path: string) => { if (state.failDelete) throw new Error("unavailable"); files.delete(path); });
+  return { files, state };
+}
+const getPhoto = () => GET(new Request(`${origin}/api/store-photos/${photo.id}`), { params: Promise.resolve({ id: photo.id }) });
+const payload = { photo_id: photo.id, name: "Test owner", reason: "Test photo removal request", rights_holder: "yes", locale: "en" };
+
+test("permanent suppression survives file deletion failure and private-inbox cleanup; repeated reports are idempotent", async (context) => {
+  const { files, state } = mockStorage(context); state.failDelete = true;
+  const before = await getPhoto(); assert.equal(before.status, 200); assert.match(before.headers.get("cache-control")!, /no-store/); assert.match(before.headers.get("x-robots-tag")!, /noimageindex/);
+  const removed = await reportPhoto(request("/api/photo-reports", payload)); assert.equal(removed.status, 200); assert.equal((await removed.json()).hidden, true);
+  assert.ok(files.has(photoBlockPath(photo))); assert.ok(files.has(photo.storage_path));
+  const audit = [...files].find(([path]) => path.startsWith("photo-audits/")); assert.equal(JSON.parse(audit![1].toString()).bytes_removed, false);
+  for (const path of files.keys()) if (path.startsWith("photo-requests/")) files.delete(path);
+  assert.equal((await getPhoto()).status, 410); assert.equal(state.downloads, 1);
+  const previousWrites = state.writes;
+  assert.equal((await reportPhoto(request("/api/photo-reports", payload))).status, 200); assert.equal(state.writes, previousWrites);
+  state.failReads = true; assert.equal((await getPhoto()).status, 503);
+  assert.equal((await GET(new Request(`${origin}/api/store-photos/missing`), { params: Promise.resolve({ id: "missing" }) })).status, 404);
+});
+
+test("suppression storage failure never claims success; private request storage failure does not undo a successful takedown", async (context) => {
+  const { files, state } = mockStorage(context); state.failBlockWrite = true;
+  assert.equal((await reportPhoto(request("/api/photo-reports", payload))).status, 503);
+  assert.equal((await getPhoto()).status, 200);
+  state.failBlockWrite = false; state.failInboxWrite = true;
+  assert.equal((await reportPhoto(request("/api/photo-reports", payload))).status, 200);
+  assert.equal((await getPhoto()).status, 410); assert.equal(files.has(photo.storage_path), false);
+});
+
+test("a removal racing with image download is checked again before bytes are returned", async (context) => {
+  const { state } = mockStorage(context); state.raceRemoval = true;
+  assert.equal((await getPhoto()).status, 410); assert.equal(state.downloads, 1);
+});
+
+test("private storage diagnostic cleans only its own temporary file", async (context) => {
+  const { files } = mockStorage(context); await checkPrivateStorage();
+  assert.deepEqual([...files.keys()], [photo.storage_path]);
+});
+
+test("directory inquiries store privately, reject unknown suppliers and report backend failures", async (context) => {
+  const { files } = mockStorage(context);
+  const lead = { name: "Synthetic test", contact: "test@example.invalid", items: "Test request", buyer_type: "reseller" };
+  assert.equal((await submitInquiry(request("/api/leads", lead, "https://unrelated.example"))).status, 403);
+  assert.equal((await submitInquiry(request("/api/leads", { ...lead, store_slug: "unknown" }))).status, 400);
+  assert.equal((await submitInquiry(request("/api/leads", lead))).status, 200);
+  assert.equal([...files.keys()].filter((key) => key.startsWith("inquiries/")).length, 1);
+  context.mock.method(privateFiles, "write", async () => { throw new Error("unavailable"); });
+  assert.equal((await submitInquiry(request("/api/leads", lead))).status, 502);
+});

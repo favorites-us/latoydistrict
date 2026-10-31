@@ -18,7 +18,7 @@ export default function GuidePage({
   return (
     <>
       <Header locale={locale} altPath={path} />
-      <main lang={locale} className={guide.worksheet ? "worksheet-page" : undefined}>
+      <main id="main-content" lang={locale} className={guide.worksheet ? "worksheet-page" : undefined}>
         {guide.faq ? <JsonLd data={faqJsonLd(guide.faq)} /> : null}
         <article className="container prose">
           <div className="guide-copy">

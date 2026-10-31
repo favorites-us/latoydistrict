@@ -1,0 +1,39 @@
+# 후속 리뷰: LA Toy District 사진 제거 흐름
+
+제공된 파일만 정적으로 검토했습니다. 실환경 테스트가 아니며, `web/app/api/photo-reports/route.ts`와 `web/app/api/leads/route.ts`는 제공되지 않아 검토 범위에 넣지 않았습니다.
+
+## 릴리스 차단 이슈 (1건)
+
+### P1: 요청 행에 `id`가 없어 프로덕션에서 제거 insert가 실패합니다
+
+`web/lib/server/photo-service.ts:27`
+
+`removePhoto`의 bulk insert에서 첫 행(`photo_block`)에는 `id`가 있지만 두 번째 행(`photo_removal`)에는 없습니다. supabase-js(postgrest-js)는 배열 insert를 보낼 때 모든 행 키의 합집합을 `columns` 파라미터로 전송합니다. 기본값이 `defaultToNull: true`이므로 빠진 키는 컬럼 default가 아니라 **NULL**로 채워집니다. 그 결과 두 번째 행의 `id`가 NULL이 되고, `id uuid primary key`의 NOT NULL 제약(23502)에 걸립니다.
+
+- 트랜잭션이므로 두 행 모두 저장되지 않습니다. 이 동작 자체는 안전 측입니다.
+- 하지만 모든 공개 제거 요청이 `report_save_failed`로 끝납니다. 사용자는 이메일 안내만 보게 되고, 운영자의 `remove`도 같은 이유로 실패합니다.
+- **이 문제가 현재 검증에서 드러나지 않는 이유:**
+  - 테스트 mock은 PostgREST의 `columns`/NULL 처리를 재현하지 않습니다.
+  - `check` 액션(`web/app/api/admin/photos/route.ts:24`)은 두 행 모두에 `id`를 넣습니다. 실제 `removePhoto`의 행 모양과 달라서 "schema validated"가 거짓 양성이 됩니다.
+
+**수정 제안:**
+
+```ts
+const requestId = crypto.randomUUID();
+// ...
+{ id: requestId, name: report.name, contact: report.contact, /* ... */ },
+```
+
+- `check`가 실제 경로를 검증하도록, 행 생성을 공용 함수(예: `removalRows(photo, report, { blockId, requestId })`)로 분리하고 `check`와 `removePhoto`가 함께 사용하게 하세요.
+- 테스트 mock의 POST 분기에서 `url.searchParams.get("columns")`의 컬럼 중 빠진 키를 null로 채운 뒤, `id`가 null이면 400을 반환하도록 하면 회귀를 잡을 수 있습니다. 최소한 `assert.ok(rows.every((row) => row.id))` 정도는 추가하세요.
+
+그 외 차단 이슈는 찾지 못했습니다. 이미지 GET의 이중 확인, fail-closed 처리, no-store/noimageindex 헤더, publish 전후의 block 재확인, 토큰 비교, private 버킷 강제, SavedPage의 출처·시간 규칙과 `httpUrl` 처리는 의도대로 동작하는 것으로 보입니다.
+
+## 잔여 주의사항
+
+- **block 행의 영속성은 운영 규칙에만 의존합니다.** `leads` 테이블에 있으므로 대시보드에서 정리하거나 일괄 삭제하면 차단이 풀립니다. 특히 바이트 삭제가 실패해 `bytes_removed:false`인 경우에는 사진이 다시 노출됩니다. DB 제약이나 트리거로 막혀 있지 않습니다.
+- **`check` 실행 중에는 진단 행 2개가 잠시 inbox에 보입니다.** `leads`에 insert 알림(Webhook, 트리거 등)이 걸려 있다면 알림이 발생할 수 있습니다. 정리 실패 시에는 `diagnostic_ids`로 수동 삭제해야 합니다.
+- **제거 요청 개인정보(이름, 연락처, 사유)는 자동으로 파기되지 않습니다.** 보존 기간과 수동 삭제 절차를 운영 문서에 명시해야 합니다.
+- **누구나 체크박스만으로 임의의 사진을 즉시 숨길 수 있습니다.** 의도된 설계이며, 실패해도 사진이 숨겨지는 안전한 방향입니다. 다만 남용 시 복구 절차(block 행 해제 기준)는 정해져 있지 않습니다.
+- **이미지 요청 1건마다 `leads` 조회가 2회 발생합니다.** 현재 규모에서는 문제없지만, `(buyer_type, store_name)` 인덱스가 없으므로 트래픽이 늘면 고려할 만합니다.
+- **이미 삭제된 바이트, 이미 렌더링된 다른 카드의 이미지, 외부로 다운로드된 사본은 회수할 수 없습니다.** UI 문구에는 이미 반영되어 있습니다.

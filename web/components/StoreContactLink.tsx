@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { track } from "@/lib/analytics";
 
 export default function StoreContactLink({ href, slug, method, children, external = false }: {
   href: string;
@@ -15,7 +16,7 @@ export default function StoreContactLink({ href, slug, method, children, externa
       target={external ? "_blank" : undefined}
       rel={external ? "nofollow noopener noreferrer" : undefined}
       onClick={() => {
-        (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag?.("event", "store_contact_click", {
+        track("store_contact_click", {
           store_slug: slug,
           contact_method: method,
         });

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@/lib/analytics";
 import { t, type Locale } from "@/lib/i18n";
 
 declare global {
@@ -24,7 +25,7 @@ export default function LeadForm({ locale }: { locale: Locale }) {
         body: JSON.stringify({ ...data, locale }),
       });
       if (!res.ok) throw new Error(String(res.status));
-      window.gtag?.("event", "lead_submit", { buyer_type: data.buyer_type });
+      track("lead_submit", { buyer_type: String(data.buyer_type ?? "other") });
       setState("ok");
       form.reset();
     } catch {
@@ -37,9 +38,9 @@ export default function LeadForm({ locale }: { locale: Locale }) {
       <h2>{t(locale, "lead_h2")}</h2>
       <p className="sub">{t(locale, "lead_sub")}</p>
       <form onSubmit={onSubmit}>
-        <input name="name" required maxLength={120} placeholder={t(locale, "lead_name")} />
-        <input name="contact" required maxLength={200} placeholder={t(locale, "lead_contact")} />
-        <select name="buyer_type" defaultValue="">
+        <label className="field-label">{t(locale, "lead_name")}<input name="name" required maxLength={120} autoComplete="name" /></label>
+        <label className="field-label">{t(locale, "lead_contact")}<input name="contact" required maxLength={200} /></label>
+        <select name="buyer_type" defaultValue="" aria-label={t(locale, "lead_type")}>
           <option value="" disabled>
             {t(locale, "lead_type")}
           </option>
@@ -48,12 +49,14 @@ export default function LeadForm({ locale }: { locale: Locale }) {
           <option value="reseller">{t(locale, "lead_type_reseller")}</option>
           <option value="other">{t(locale, "lead_type_other")}</option>
         </select>
-        <textarea name="items" required maxLength={2000} placeholder={t(locale, "lead_items")} />
+        <label className="field-label">{t(locale, "lead_items")}<textarea name="items" required maxLength={2000} /></label>
+        <label className="honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
+        <p className="text-xs text-muted-foreground">{locale === "es" ? "Sus datos se usan para responder a esta consulta; no se publican." : "Your details are used to handle this inquiry and are not published."}</p>
         <button disabled={state === "busy"}>{t(locale, "lead_submit")}</button>
       </form>
-      {state === "ok" ? <p className="lead-msg ok">{t(locale, "lead_ok")}</p> : null}
+      {state === "ok" ? <p role="status" className="lead-msg ok">{t(locale, "lead_ok")}</p> : null}
       {state === "err" ? (
-        <p className="lead-msg err">
+        <p role="alert" className="lead-msg err">
           {t(locale, "lead_err")} <a href="mailto:hello@toydistrictlosangeles.com">hello@toydistrictlosangeles.com</a>
         </p>
       ) : null}

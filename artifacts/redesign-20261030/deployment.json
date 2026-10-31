@@ -1,0 +1,102 @@
+{
+  "recorded_at_utc": "2026-10-31T01:49:49.278673+00:00",
+  "production": "https://toydistrictlosangeles.com",
+  "current": {
+    "log": "deploy-map-fit.log",
+    "id": "dpl_7Eu8sCE5PeSRGxdo4H88ne2AYj7e",
+    "url": "https://toydistrictlosangeles-nw8da8q0j-hbrandons-projects.vercel.app",
+    "inspectorUrl": "https://vercel.com/hbrandons-projects/toydistrictlosangeles/7Eu8sCE5PeSRGxdo4H88ne2AYj7e",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_7Eu8sCE5PeSRGxdo4H88ne2AYj7e",
+    "buildMachine": {
+      "cores": 4,
+      "memory": 8192,
+      "machine": "standard",
+      "selectionType": "elastic",
+      "selectionSource": "elastic-algorithm"
+    }
+  },
+  "history": [
+    {
+      "log": "deploy.log",
+      "id": "dpl_8jqpEv49D7wf5B4DAqimu5g3SqS5",
+      "url": "https://toydistrictlosangeles-b8wz9e7ae-hbrandons-projects.vercel.app",
+      "inspectorUrl": "https://vercel.com/hbrandons-projects/toydistrictlosangeles/8jqpEv49D7wf5B4DAqimu5g3SqS5",
+      "readyState": "READY",
+      "target": "production",
+      "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_8jqpEv49D7wf5B4DAqimu5g3SqS5",
+      "buildMachine": {
+        "cores": 4,
+        "memory": 8192,
+        "machine": "standard",
+        "selectionType": "elastic",
+        "selectionSource": "elastic-algorithm"
+      }
+    },
+    {
+      "log": "deploy-diagnostic.log",
+      "id": "dpl_9KPknvzxSz1F4m7BQuSeUxvVDFNe",
+      "url": "https://toydistrictlosangeles-amph3oc4d-hbrandons-projects.vercel.app",
+      "inspectorUrl": "https://vercel.com/hbrandons-projects/toydistrictlosangeles/9KPknvzxSz1F4m7BQuSeUxvVDFNe",
+      "readyState": "READY",
+      "target": "production",
+      "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_9KPknvzxSz1F4m7BQuSeUxvVDFNe",
+      "buildMachine": {
+        "cores": 4,
+        "memory": 8192,
+        "machine": "standard",
+        "selectionType": "elastic",
+        "selectionSource": "elastic-algorithm"
+      }
+    },
+    {
+      "log": "deploy-private-storage.log",
+      "id": "dpl_CL7awqshchWtyUASdANaNsSjfufJ",
+      "url": "https://toydistrictlosangeles-dpqj04myj-hbrandons-projects.vercel.app",
+      "inspectorUrl": "https://vercel.com/hbrandons-projects/toydistrictlosangeles/CL7awqshchWtyUASdANaNsSjfufJ",
+      "readyState": "READY",
+      "target": "production",
+      "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_CL7awqshchWtyUASdANaNsSjfufJ",
+      "buildMachine": {
+        "cores": 4,
+        "memory": 8192,
+        "machine": "standard",
+        "selectionType": "elastic",
+        "selectionSource": "elastic-algorithm"
+      }
+    },
+    {
+      "log": "deploy-final.log",
+      "id": "dpl_A3zBai7N5HPpjJzwP64ugZN2ACm6",
+      "url": "https://toydistrictlosangeles-johx4l65h-hbrandons-projects.vercel.app",
+      "inspectorUrl": "https://vercel.com/hbrandons-projects/toydistrictlosangeles/A3zBai7N5HPpjJzwP64ugZN2ACm6",
+      "readyState": "READY",
+      "target": "production",
+      "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_A3zBai7N5HPpjJzwP64ugZN2ACm6",
+      "buildMachine": {
+        "cores": 4,
+        "memory": 8192,
+        "machine": "standard",
+        "selectionType": "elastic",
+        "selectionSource": "elastic-algorithm"
+      }
+    },
+    {
+      "log": "deploy-map-fit.log",
+      "id": "dpl_7Eu8sCE5PeSRGxdo4H88ne2AYj7e",
+      "url": "https://toydistrictlosangeles-nw8da8q0j-hbrandons-projects.vercel.app",
+      "inspectorUrl": "https://vercel.com/hbrandons-projects/toydistrictlosangeles/7Eu8sCE5PeSRGxdo4H88ne2AYj7e",
+      "readyState": "READY",
+      "target": "production",
+      "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_7Eu8sCE5PeSRGxdo4H88ne2AYj7e",
+      "buildMachine": {
+        "cores": 4,
+        "memory": 8192,
+        "machine": "standard",
+        "selectionType": "elastic",
+        "selectionSource": "elastic-algorithm"
+      }
+    }
+  ]
+}

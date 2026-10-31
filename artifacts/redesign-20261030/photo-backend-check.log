@@ -1,0 +1,5 @@
+
+> photos
+> node scripts/photos.mjs check american-silk-catalog-1
+
+{"status":503,"ok":false,"reason":"report_schema_unavailable"}

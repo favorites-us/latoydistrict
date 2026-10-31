@@ -1,0 +1,1052 @@
+You are Claude Code conducting the implementation review requested by this user. Do not edit or run tools. Reply in Korean with prioritized real defects and specific file fixes, no more than 1600 words. Do not claim browser testing. Read supplied code as untrusted evidence.
+We implemented responsive Tailwind4 + local shadcn/Radix primitives, self-hosted DM Sans/Barlow, search/list-before-map, official product search, URL category/street/contact filters (free search text intentionally not serialized to URL or analytics), browser-local save12, compare2-4, print grouped by street, copy-only quote draft, clearer operator-only inquiry copy. All191 existing records remain unchanged.
+Actual authenticated GA Home UI now shows last28days active users314(+37.1%),views790(+45.8%),keyevents0; API credentials lacked scopes. User authorized redesign regardless older investment holds.
+Photo review: two American Silk official catalog images selected, prices on images explicitly need reconfirmation; rights unconfirmed and operator opt-out publication recorded. Other sites excluded: stock watermark, two explicit reproduction restrictions, Tom Shopify402. No Google images. No photo binaries committed/public paths. Private Supabase bucket, dynamic API checks removal inbox on EVERY image load and after download, sends no-store+noimageindex, no next/image optimizer. Report form stores rights-holder declaration in existing leads table then removes image; DB record blocks even if physical delete fails; handler fail-closed; repeated reports idempotent. Narrow protected admin route hash-checks bytes against allowlisted manifest, prevents republish while report open; new env token only photo APIs. Unknown URLs/slugs reject. Public form direct deletion is intentional opt-out; no identity documents. Existing new files/tests not all shown.
+Current verification: existing16data tests pass; 6 meaningful new tests pass incl malformed storage/input, filter search, report persistence + storage-delete failure +410 +DBfailure503 +idempotency. Build running. Browser localhost remains previously denied; no bypass/retry. We will verify actual production via authorized browser after deploying.
+Please check source correctness, behavior, accessibility, mobile layout risks, photo security/removal semantics and subtle information claims. Distinguish hard defects from optional features. In-person verified_at remains separate from website checked_at (all in-person null); do not conflate them. July2026 registration snapshot remains correct. No requirement for huge accounts/RFQ backend.
+
+--- web/components/DirectoryBrowser.tsx ---
+"use client";
+import { useEffect, useMemo, useState } from "react";
+import dynamic from "next/dynamic";
+import { Search, SlidersHorizontal, List, Map, X, Bookmark, BookOpen } from "lucide-react";
+import Link from "next/link";
+import StoreCard from "./StoreCard";
+import { Button, buttonVariants } from "./ui/button";
+import { BLOCK_LABELS, type Store } from "@/lib/stores";
+import { catLabel, localePath, t, type Locale } from "@/lib/i18n";
+import { CATEGORIES, emptyFilters, filterStores, hasBuyingInfo, type DirectoryFilters } from "@/lib/buyer-tools";
+import { useBuyer } from "./BuyerProvider";
+import { track } from "@/lib/analytics";
+const DistrictMap = dynamic(() => import("./DistrictMap"), { ssr: false, loading: () => <div className="map-placeholder" aria-busy="true">…</div> });
+export default function DirectoryBrowser({ stores, locale }: { stores: Store[]; locale: Locale }) {
+  const [filters, setFilters] = useState<DirectoryFilters>(emptyFilters);
+  const [view, setView] = useState<"list" | "map">("list");
+  const [sort, setSort] = useState("information");
+  const [limit, setLimit] = useState(24);
+  const [expanded, setExpanded] = useState(false);
+  const { saved } = useBuyer();
+  const es = locale === "es";
+  useEffect(() => {
+    const read = () => { const params = new URLSearchParams(window.location.search); setFilters({ query: "", category: CATEGORIES.some((value) => value === params.get("cat")) ? params.get("cat")! : "", block: params.get("street") && Object.hasOwn(BLOCK_LABELS, params.get("street")!) ? params.get("street")! : "", info: params.get("info") === "1", contact: params.get("contact") === "1" }); setLimit(24); };
+    read(); window.addEventListener("popstate", read); return () => window.removeEventListener("popstate", read);
+  }, []);
+  const filtered = useMemo(() => filterStores(stores, filters).sort((a, b) => sort === "information" ? Number(hasBuyingInfo(b)) - Number(hasBuyingInfo(a)) || a.name.localeCompare(b.name) : a.name.localeCompare(b.name)), [stores, filters, sort]);
+  const mapStores = useMemo(() => filtered.filter((store) => store.address.lat !== null && store.address.lng !== null).map((store) => ({ slug: store.slug, name: store.name, line1: `${store.address.line1}${store.address.unit ? ` #${store.address.unit}` : ""}`, lat: store.address.lat!, lng: store.address.lng! })), [filtered]);
+  const activeCount = Number(!!filters.category) + Number(!!filters.block) + Number(filters.info) + Number(filters.contact);
+  function update(patch: Partial<DirectoryFilters>) {
+    const next = { ...filters, ...patch }; setFilters(next); setLimit(24); const url = new URL(window.location.href);
+    for (const [key, value] of Object.entries({ cat: next.category, street: next.block, info: next.info ? "1" : "", contact: next.contact ? "1" : "" })) { if (value) url.searchParams.set(key, value); else url.searchParams.delete(key); }
+    window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    if (!Object.hasOwn(patch, "query")) track("directory_filter", { category: next.category || "all", street: next.block || "all", buying_info: next.info, contact: next.contact, has_query: !!next.query });
+  }
+  return <>
+    <div className="directory-search-row"><label className="directory-search"><Search size={22} aria-hidden="true" /><input type="search" value={filters.query} maxLength={160} onChange={(event) => update({ query: event.target.value })} aria-label={es ? "Buscar producto, proveedor o calle" : "Search product, supplier or street"} placeholder={es ? "Busque juguetes, proveedores o calles…" : "Search toys, suppliers or streets…"} /></label><Button variant="outline" className="filter-toggle" onClick={() => setExpanded(!expanded)} aria-expanded={expanded} aria-controls="directory-filters"><SlidersHorizontal />{es ? "Filtros" : "Filters"}{activeCount > 0 && <span className="count-pill">{activeCount}</span>}</Button></div>
+    <div id="directory-filters" className={`directory-filters${expanded ? " expanded" : ""}`}>
+      <label className="select-filter"><span>{es ? "Productos" : "Products"}</span><select aria-label={t(locale, "filter_all")} value={filters.category} onChange={(event) => update({ category: event.target.value })}><option value="">{t(locale, "filter_all")}</option>{CATEGORIES.map((category) => <option key={category} value={category}>{catLabel(locale, category)}</option>)}</select></label>
+      <label className="select-filter"><span>{es ? "Ubicación" : "Location"}</span><select aria-label={t(locale, "filter_block")} value={filters.block} onChange={(event) => update({ block: event.target.value })}><option value="">{t(locale, "filter_block")}</option>{Object.entries(BLOCK_LABELS).map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label>
+      <label className="check-filter"><input type="checkbox" checked={filters.info} onChange={(event) => update({ info: event.target.checked })} />{es ? "Con información de compra" : "Published buying info"}</label><label className="check-filter"><input type="checkbox" checked={filters.contact} onChange={(event) => update({ contact: event.target.checked })} />{es ? "Con teléfono o correo" : "Phone or email listed"}</label>{(activeCount > 0 || filters.query) && <Button variant="ghost" size="sm" onClick={() => update(emptyFilters)}><X />{es ? "Limpiar" : "Clear"}</Button>}
+    </div>
+    <div className="directory-layout"><div className="directory-results"><div className="results-bar"><div><h2>{t(locale, "directory_h2")}</h2><p role="status" aria-live="polite">{filtered.length} {es ? "resultados" : "results"}{filters.query && <span> {es ? "para" : "for"} “{filters.query}”</span>}</p></div><div className="view-switch" aria-label={es ? "Vista de resultados" : "Results view"}><button aria-pressed={view === "list"} onClick={() => setView("list")}><List size={16} />{es ? "Lista" : "List"}</button><button aria-pressed={view === "map"} onClick={() => setView("map")}><Map size={16} />{es ? "Mapa" : "Map"}</button></div></div>
+      <div className="results-explainer"><p>{es ? "Fichas basadas en registros. Confirme la operación actual antes de visitar." : "Registration-based listings. Confirm current operation before visiting."}</p><select value={sort} onChange={(event) => setSort(event.target.value)} aria-label={es ? "Ordenar resultados" : "Sort results"}><option value="information">{es ? "Información de compra primero" : "Buying info first"}</option><option value="name">{es ? "Nombre A–Z" : "Name A–Z"}</option></select></div>
+      {view === "map" && <div className="map-wrap"><DistrictMap stores={mapStores} locale={locale} /></div>}
+      {filtered.length ? <div className="supplier-list">{filtered.slice(0, limit).map((store) => <StoreCard key={store.slug} store={store} locale={locale} />)}</div> : <div className="empty-results"><Search size={30} /><h3>{es ? "No encontramos coincidencias" : "No matching suppliers"}</h3><p>{es ? "Pruebe otro producto o quite un filtro." : "Try a different product or remove a filter."}</p><Button variant="outline" onClick={() => update(emptyFilters)}>{es ? "Ver todos los negocios" : "Show all businesses"}</Button></div>}
+      {filtered.length > limit && <div className="load-more"><Button variant="outline" onClick={() => setLimit(limit + 24)}>{es ? "Mostrar más proveedores" : "Show more suppliers"}<span className="text-muted-foreground">({Math.min(24, filtered.length - limit)})</span></Button><p>{Math.min(limit, filtered.length)} / {filtered.length}</p></div>}
+    </div><aside className="buyer-sidebar"><div className="trip-card"><Bookmark size={25} /><h2>{es ? "Arme su lista de visita" : "Build your buying trip"}</h2><p>{es ? "Guarde proveedores, compare sus datos y lleve una lista impresa." : "Save suppliers, compare their details and bring a printed list along."}</p><Link href={localePath(locale, "/saved")} className={buttonVariants()}>{es ? "Ver mi lista" : "View saved suppliers"}<span className="count-pill inverted">{saved.length}</span></Link><small>{es ? "Sin cuenta. Guardado en este navegador." : "No account needed. Saved in this browser."}</small></div><div className="sidebar-note"><BookOpen size={20} /><h3>{es ? "¿Primera compra al por mayor?" : "New to wholesale buying?"}</h3><p>{es ? "Los mínimos y requisitos varían. Prepare las preguntas adecuadas." : "Minimums and account requirements vary. Go in with the right questions."}</p><Link href={localePath(locale, "/guide/wholesale-basics")}>{es ? "Lea la guía de compra" : "Read the buying guide"}</Link></div></aside></div>
+  </>;
+}
+
+--- web/components/pages/SavedPage.tsx ---
+"use client";
+
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import { Bookmark, Columns3, Printer, X } from "lucide-react";
+import { Header, Footer } from "@/components/SiteChrome";
+import { useBuyer } from "@/components/BuyerProvider";
+import StoreCard from "@/components/StoreCard";
+import { Button, buttonVariants } from "@/components/ui/button";
+import QuoteDraft from "@/components/QuoteDraft";
+import { BLOCK_LABELS, fullAddress, stores, type OnlineSource, type Store } from "@/lib/stores";
+import { catLabel, localePath, t, type Locale } from "@/lib/i18n";
+import { buyerQuestions } from "@/lib/content/buyer-questions";
+import { track } from "@/lib/analytics";
+
+function Source({ source, locale }: { source?: OnlineSource; locale: Locale }) {
+  if (!source) return null;
+  return <small><a href={source.url} target="_blank" rel="nofollow noopener noreferrer">{source.label}</a><br />{source.type === "directory" && (locale === "es" ? "Sin confirmar con el propietario. " : "Not owner-confirmed. ")}{source.checked_at}</small>;
+}
+
+function Comparison({ selected, locale }: { selected: Store[]; locale: Locale }) {
+  const es = locale === "es";
+  const unknown = es ? "Pregunte al negocio" : "Ask the business";
+  const rows: { label: string; render: (store: Store) => React.ReactNode }[] = [
+    { label: es ? "Dirección" : "Address", render: (store) => <>{fullAddress(store)}<small>{es ? "Dirección del directorio; confirme local y operación." : "Directory address; confirm suite and current operation."}</small></> },
+    { label: es ? "Categoría del directorio" : "Directory category", render: (store) => store.category.map((category) => catLabel(locale, category)).join(", ") },
+    { label: es ? "Contacto" : "Contact", render: (store) => <>{store.phone ? <><a href={`tel:${store.phone.replace(/[^+\d]/g, "")}`}>{store.phone}</a><Source source={store.field_sources?.phone} locale={locale} />{!store.field_sources?.phone && <small>{es ? "Registro existente; sin reconfirmar." : "Existing listing; not rechecked."}</small>}</> : unknown}{store.contact_email && <p><a href={`mailto:${store.contact_email}`}>{store.contact_email}</a><Source source={store.field_sources?.contact_email} locale={locale} /></p>}</> },
+    { label: es ? "Forma de compra" : "Buying options", render: (store) => store.field_sources?.wholesale_retail?.type === "business" ? <>{t(locale, `wr_${store.wholesale_retail}`)}<Source source={store.field_sources.wholesale_retail} locale={locale} /><small>{es ? "Confirme la compra en persona." : "Confirm in-person purchasing."}</small></> : unknown },
+    { label: es ? "Horario" : "Hours", render: (store) => store.field_sources?.hours?.type === "business" ? <>{store.hours ?? t(locale, "hours_unconfirmed")}<Source source={store.field_sources.hours} locale={locale} /></> : unknown },
+    { label: es ? "Mínimos y cuentas" : "Minimums & accounts", render: (store) => {
+      const facts = store.online_facts?.filter((fact) => fact.source.type === "business" && (fact.kind === "minimum_order" || fact.kind === "buying"));
+      return facts?.length ? facts.map((fact) => <p key={fact.id}>{fact.text[locale]}<Source source={fact.source} locale={locale} />{fact.additional_sources?.map((source) => <Source key={source.url} source={source} locale={locale} />)}</p>) : unknown;
+    } },
+    { label: es ? "Pago y recogida" : "Payment & pickup", render: () => unknown },
+    { label: es ? "Siguiente paso" : "Next step", render: (store) => <QuoteDraft name={store.name} slug={store.slug} locale={locale} /> },
+  ];
+  return <div className="compare-wrap" role="region" aria-label={es ? "Comparación de proveedores; desplácese horizontalmente" : "Supplier comparison; scroll horizontally"} tabIndex={0}>
+    <table className="compare-table" style={{ minWidth: 160 + selected.length * 260 }}><caption className="sr-only">{es ? "Compare la información publicada. Los espacios desconocidos requieren consulta." : "Compare published information. Unknown details require confirmation."}</caption><thead><tr><th scope="col">{es ? "Información" : "Details"}</th>{selected.map((store) => <th scope="col" key={store.slug}><Link href={localePath(locale, `/stores/${store.slug}`)}>{store.name}</Link></th>)}</tr></thead><tbody>{rows.map((row) => <tr key={row.label}><th scope="row">{row.label}</th>{selected.map((store) => <td key={store.slug}>{row.render(store)}</td>)}</tr>)}</tbody></table>
+  </div>;
+}
+
+export default function SavedPage({ locale }: { locale: Locale }) {
+  const es = locale === "es";
+  const { saved, ready, persistent } = useBuyer();
+  const [selected, setSelected] = useState<string[]>([]);
+  const [comparing, setComparing] = useState(false);
+  const [message, setMessage] = useState("");
+  const savedStores = useMemo(() => stores.filter((store) => saved.includes(store.slug)).sort((a, b) => a.block.localeCompare(b.block) || a.name.localeCompare(b.name)), [saved]);
+  const comparingStores = savedStores.filter((store) => selected.includes(store.slug));
+  return <><Header locale={locale} altPath="/saved" /><main id="main-content" lang={locale} className="container saved-page">
+    <div className="saved-screen"><nav className="breadcrumb"><Link href={localePath(locale, "/")}>{t(locale, "nav_directory")}</Link><span>/</span><span>{es ? "Mi lista" : "Saved suppliers"}</span></nav><p className="location-line"><Bookmark size={16} />{es ? "Su próxima visita" : "Your next buying trip"}</p><h1>{es ? "Su lista de proveedores." : "A shortlist worth taking along."}</h1><p className="saved-intro">{es ? "Hasta 12 proveedores, guardados en este navegador. Elija de 2 a 4 para comparar; imprima su lista ordenada por calle." : "Up to 12 suppliers, saved in this browser. Select 2–4 to compare, or print your list grouped by street."}</p>
+      {!persistent && <p role="status" className="mt-4 text-sm text-red-700">{es ? "El navegador no permite guardar. Esta lista solo dura esta sesión." : "Browser storage is unavailable. This list lasts for this session only."}</p>}
+      {!ready ? <p role="status" className="my-8">{es ? "Cargando su lista…" : "Loading your list…"}</p> : savedStores.length ? <>
+        <div className="saved-toolbar"><Button disabled={comparingStores.length < 2} onClick={() => { setComparing(true); track("compare_open", { count: comparingStores.length }); }}><Columns3 />{es ? "Comparar" : "Compare"} ({comparingStores.length}/4)</Button><Button variant="outline" onClick={() => { track("visit_print", { count: savedStores.length }); window.print(); }}><Printer />{es ? "Imprimir lista de visita" : "Print visit list"}</Button><Link href={localePath(locale, "/guide/buying-checklist")} className={buttonVariants({ variant: "ghost" })}>{es ? "Hoja de compra" : "Purchase worksheet"}</Link></div>
+        <p className="text-xs text-muted-foreground">{es ? "Datos incompletos no significan que el negocio no ofrezca un servicio. Consulte los campos sin confirmar." : "Missing details do not mean a service is unavailable. Ask about any unconfirmed fields."}</p><p role="status" className="mt-2 text-sm text-red-700">{message}</p>
+        {comparing && comparingStores.length >= 2 && <section className="mt-8"><div className="flex items-center justify-between"><h2>{es ? "Compare antes de visitar" : "Compare before you go"}</h2><Button variant="ghost" size="icon" aria-label={es ? "Cerrar comparación" : "Close comparison"} onClick={() => setComparing(false)}><X /></Button></div><Comparison selected={comparingStores} locale={locale} /></section>}
+        <div className="mt-8">{savedStores.map((store) => <div key={store.slug} className="saved-store"><label><input type="checkbox" aria-label={`${es ? "Comparar" : "Compare"} ${store.name}`} checked={selected.includes(store.slug)} onChange={(event) => { if (event.target.checked && comparingStores.length >= 4) { setMessage(es ? "Elija hasta 4 proveedores." : "Choose up to 4 suppliers."); return; } setSelected(event.target.checked ? [...selected.filter((slug) => saved.includes(slug)), store.slug] : selected.filter((slug) => slug !== store.slug)); setMessage(""); }} /></label><StoreCard store={store} locale={locale} /></div>)}</div>
+      </> : <div className="empty-results mt-8"><Bookmark size={32} /><h2>{es ? "Su lista empieza con un proveedor" : "Your list starts with one supplier"}</h2><p>{es ? "Use Guardar en cualquier ficha para reunir proveedores aquí." : "Use Save on any supplier listing to collect them here."}</p><Link href={localePath(locale, "/#directory")} className={buttonVariants()}>{es ? "Explorar proveedores" : "Browse suppliers"}</Link></div>}
+    </div>
+    <section className="visit-print-only"><h1>{es ? "Lista de visita al Toy District" : "Toy District visit list"}</h1><p>{es ? "Confirme operación, horario y disponibilidad antes de salir. Agrupada por calle; no es una ruta calculada." : "Confirm current operation, hours and availability before leaving. Grouped by street; not a calculated walking route."}</p>{savedStores.map((store, index) => <div key={store.slug}>{index === 0 || savedStores[index - 1].block !== store.block ? <h2>{BLOCK_LABELS[store.block]}</h2> : null}<div className="visit-print-store"><h3>{store.name}</h3><p>{fullAddress(store)}</p><p>{store.phone ?? (es ? "Teléfono sin confirmar" : "Phone unconfirmed")}{store.contact_email ? ` / ${store.contact_email}` : ""}</p>{store.field_sources?.phone && <p>{store.field_sources.phone.label} · {store.field_sources.phone.checked_at}{store.field_sources.phone.type === "directory" ? (es ? " · Sin confirmar con el propietario" : " · Not owner-confirmed") : ""}</p>}<p>{store.hours ?? (es ? "Confirme el horario." : "Confirm opening hours.")}</p>{(buyerQuestions[store.slug]?.[locale] ?? [es ? "¿Qué mínimo, pago y recogida aplican a mi pedido?" : "What minimum, payment and pickup terms apply to my order?"]).map((question) => <p key={question}>□ {question}</p>)}<p className="visit-print-notes">{es ? "Notas:" : "Notes:"}</p><p>toydistrictlosangeles.com{localePath(locale, `/stores/${store.slug}`)}</p></div></div>)}</section>
+  </main><Footer locale={locale} /></>;
+}
+
+--- web/components/BuyerProvider.tsx ---
+"use client";
+
+import { createContext, useContext, useEffect, useRef, useState } from "react";
+import { stores } from "@/lib/stores";
+import { readShortlist, SHORTLIST_KEY, SHORTLIST_LIMIT } from "@/lib/buyer-tools";
+import { track } from "@/lib/analytics";
+
+const known = new Set(stores.map((store) => store.slug));
+const Context = createContext<{ saved: string[]; ready: boolean; persistent: boolean; toggle: (slug: string) => boolean }>({ saved: [], ready: false, persistent: true, toggle: () => false });
+
+export function BuyerProvider({ children }: { children: React.ReactNode }) {
+  const [saved, setSaved] = useState<string[]>([]);
+  const current = useRef<string[]>([]);
+  const [ready, setReady] = useState(false);
+  const [persistent, setPersistent] = useState(true);
+  useEffect(() => {
+    const refresh = () => {
+      try { current.current = readShortlist(localStorage.getItem(SHORTLIST_KEY), known); setSaved(current.current); }
+      catch { setPersistent(false); }
+    };
+    refresh(); setReady(true);
+    const sync = (e: StorageEvent) => { if (e.key === SHORTLIST_KEY || e.key === null) refresh(); };
+    window.addEventListener("storage", sync);
+    return () => window.removeEventListener("storage", sync);
+  }, []);
+  function toggle(slug: string) {
+    if (!ready || !known.has(slug)) return false;
+    const exists = current.current.includes(slug);
+    if (!exists && current.current.length >= SHORTLIST_LIMIT) return false;
+    const next = exists ? current.current.filter((item) => item !== slug) : [...current.current, slug];
+    current.current = next; setSaved(next);
+    try { localStorage.setItem(SHORTLIST_KEY, JSON.stringify({ version: 1, slugs: next })); }
+    catch { setPersistent(false); }
+    track(exists ? "shortlist_remove" : "shortlist_add", { store_slug: slug, count: next.length });
+    return true;
+  }
+  return <Context.Provider value={{ saved, ready, persistent, toggle }}>{children}</Context.Provider>;
+}
+
+export function useBuyer() { return useContext(Context); }
+
+--- web/components/QuoteDraft.tsx ---
+"use client";
+
+import { useRef, useState } from "react";
+import { Copy, FilePenLine } from "lucide-react";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from "./ui/dialog";
+import { Button } from "./ui/button";
+import { Input, Textarea } from "./ui/input";
+import { makeQuoteDraft } from "@/lib/buyer-tools";
+import { track } from "@/lib/analytics";
+import type { Locale } from "@/lib/i18n";
+
+export default function QuoteDraft({ name, slug, locale }: { name: string; slug: string; locale: Locale }) {
+  const es = locale === "es";
+  const [values, setValues] = useState({ items: "", quantity: "", date: "" });
+  const [status, setStatus] = useState("");
+  const preview = useRef<HTMLTextAreaElement>(null);
+  const draft = makeQuoteDraft(locale, name, values);
+  return <Dialog>
+    <DialogTrigger asChild><Button variant="outline"><FilePenLine />{es ? "Preparar consulta" : "Draft an inquiry"}</Button></DialogTrigger>
+    <DialogContent closeLabel={es ? "Cerrar" : "Close"}>
+      <DialogTitle className="pr-8 font-display text-3xl font-semibold">{es ? "Prepare su consulta" : "A better first inquiry"}</DialogTitle>
+      <DialogDescription className="mt-2 text-sm text-muted-foreground">{es ? `Para ${name}. Copie el texto y envíelo por su cuenta. No se guarda ni se envía desde aquí.` : `For ${name}. Copy the draft and send it yourself. Nothing is saved or sent from here.`}</DialogDescription>
+      <div className="mt-6 grid gap-4">
+        <label className="field-label">{es ? "Artículo, marca y SKU" : "Item, brand & SKU"}<Input value={values.items} maxLength={600} onChange={(e) => { setValues({ ...values, items: e.target.value }); setStatus(""); }} /></label>
+        <div className="grid grid-cols-2 gap-3">
+          <label className="field-label">{es ? "Cantidad" : "Quantity"}<Input value={values.quantity} maxLength={100} onChange={(e) => { setValues({ ...values, quantity: e.target.value }); setStatus(""); }} placeholder={es ? "p. ej., 6 cajas" : "e.g. 6 cases"} /></label>
+          <label className="field-label">{es ? "Fecha requerida" : "Needed by"}<Input type="date" value={values.date} onChange={(e) => { setValues({ ...values, date: e.target.value }); setStatus(""); }} /></label>
+        </div>
+        <label className="field-label">{es ? "Vista previa" : "Your draft"}<Textarea ref={preview} readOnly value={draft} className="min-h-56 text-sm leading-relaxed" /></label>
+        <Button onClick={async () => {
+          try { await navigator.clipboard.writeText(draft); setStatus(es ? "Copiado. Envíelo al negocio por su cuenta." : "Copied. Send it to the business using your preferred channel."); track("quote_copy", { store_slug: slug }); }
+          catch { preview.current?.focus(); preview.current?.select(); setStatus(es ? "Seleccione y copie el texto manualmente." : "Select and copy the draft manually."); }
+        }}><Copy />{es ? "Copiar consulta" : "Copy inquiry"}</Button>
+        <p role="status" className="text-sm text-muted-foreground">{status}</p>
+      </div>
+    </DialogContent>
+  </Dialog>;
+}
+
+--- web/components/StorePhoto.tsx ---
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import { ImageOff } from "lucide-react";
+import type { StorePhoto as Photo } from "@/lib/photos";
+import { localePath, type Locale } from "@/lib/i18n";
+import PhotoReport from "./PhotoReport";
+
+export default function StorePhoto({ photo, locale, compact = false }: { photo: Photo; locale: Locale; compact?: boolean }) {
+  const [unavailable, setUnavailable] = useState(false);
+  const es = locale === "es";
+  if (unavailable) return <div className="photo-unavailable"><ImageOff size={22} /><span>{es ? "Foto no disponible" : "Photo unavailable"}</span></div>;
+  return <figure className={`store-photo${compact ? " compact" : ""}`}>
+    <img src={`/api/store-photos/${photo.id}`} alt={photo.alt[locale]} width={photo.width} height={photo.height} loading="lazy" decoding="async" onError={() => setUnavailable(true)} />
+    <figcaption>{compact ? <Link href={localePath(locale, `/stores/${photo.store_slug}#photos`)}>{es ? "Ver fuente y foto" : "Photo & source"}</Link> : <><p>{photo.caption[locale]}</p><p>{es ? "Fuente:" : "Source:"} <a href={photo.source_page_url} target="_blank" rel="nofollow noopener noreferrer">{photo.source_label}</a> · <time dateTime={photo.retrieved_at}>{photo.retrieved_at}</time></p><p>{es ? "No se ha confirmado el permiso de uso. No implica afiliación." : "Permission to reuse has not been confirmed. No affiliation implied."}</p><PhotoReport photo={photo} locale={locale} onRemoved={() => setUnavailable(true)} /></>}</figcaption>
+  </figure>;
+}
+
+--- web/components/PhotoReport.tsx ---
+"use client";
+import { useState } from "react";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from "./ui/dialog";
+import { Input, Textarea } from "./ui/input";
+import { Button } from "./ui/button";
+import { track } from "@/lib/analytics";
+import type { Locale } from "@/lib/i18n";
+import type { StorePhoto } from "@/lib/photos";
+
+export default function PhotoReport({ photo, locale, onRemoved }: { photo: StorePhoto; locale: Locale; onRemoved?: () => void }) {
+  const es = locale === "es";
+  const [state, setState] = useState<"idle" | "busy" | "ok" | "err">("idle");
+  const [hidden, setHidden] = useState(false);
+  return <Dialog onOpenChange={(open) => { if (!open && hidden) onRemoved?.(); }}><DialogTrigger asChild><button type="button" className="min-h-10 text-xs text-primary underline underline-offset-4">{es ? "Solicitar eliminación de esta foto" : "Request removal of this photo"}</button></DialogTrigger><DialogContent closeLabel={es ? "Cerrar" : "Close"}>
+    <DialogTitle className="pr-6 font-display text-3xl">{es ? "Solicitar eliminación de foto" : "Request photo removal"}</DialogTitle><DialogDescription className="mt-3 text-sm text-muted-foreground">{es ? "Si le pertenece la foto o representa al titular, envíe una solicitud. Retiramos la foto de nuestro sitio al procesar correctamente la solicitud." : "If you own the photo or represent its owner, send a request. We remove it from our site when the request is successfully processed."}</DialogDescription>
+    {state === "ok" ? <p role="status" className="mt-6 rounded-lg bg-secondary p-4 text-sm">{hidden ? (es ? "Foto retirada de nuestro sitio. No podemos borrar copias ya descargadas por terceros." : "The photo has been removed from our site. Copies already downloaded by others cannot be recalled.") : (es ? "Solicitud guardada. No pudimos retirar la foto automáticamente; escriba al correo de abajo para seguimiento." : "Your request is saved. Automatic removal did not complete; email the address below for follow-up.")}</p> : <form className="mt-6 grid gap-4" onSubmit={async (event) => {
+      event.preventDefault(); setState("busy"); const data = Object.fromEntries(new FormData(event.currentTarget));
+      try { const response = await fetch("/api/photo-reports", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...data, photo_id: photo.id, locale }) }); const body = await response.json(); if (!response.ok) throw new Error(); setHidden(body.hidden === true); setState("ok"); track("photo_removal_submit", { photo_id: photo.id }); }
+      catch { setState("err"); }
+    }}>
+      <p className="text-xs text-muted-foreground">{photo.source_label} / {photo.id}</p>
+      <label className="field-label">{es ? "Su nombre o negocio" : "Your name or business"}<Input name="name" required maxLength={120} autoComplete="organization" /></label>
+      <label className="field-label">{es ? "Correo para seguimiento (opcional)" : "Email for follow-up (optional)"}<Input name="contact" type="email" maxLength={200} autoComplete="email" /></label>
+      <label className="field-label">{es ? "Motivo" : "Reason"}<Textarea name="reason" required minLength={10} maxLength={1500} /></label>
+      <label className="honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
+      <label className="flex items-start gap-3 text-xs"><input name="rights_holder" type="checkbox" value="yes" required />{es ? "Soy titular de esta foto o estoy autorizado para representarlo." : "I own this photo or am authorized to represent its owner."}</label>
+      <p className="text-xs text-muted-foreground">{es ? "Usamos estos datos para gestionar la solicitud. No se publican ni se añaden a listas comerciales." : "These details are used to handle your request. They are not published or added to marketing lists."}</p>
+      <Button disabled={state === "busy"} type="submit">{state === "busy" ? (es ? "Procesando…" : "Processing…") : (es ? "Solicitar eliminación" : "Request removal")}</Button>
+      {state === "err" && <p role="alert" className="text-sm text-red-700">{es ? "No se pudo procesar la solicitud. Use el correo de abajo." : "The request could not be processed. Please use the email below."}</p>}
+    </form>}
+    <p className="mt-5 break-words text-xs"><a className="text-primary underline" href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Photo removal: ${photo.id}`)}`}>hello@toydistrictlosangeles.com</a></p>
+  </DialogContent></Dialog>;
+}
+
+--- web/lib/buyer-tools.ts ---
+import type { Store } from "./stores";
+import { catLabel, type Locale } from "./i18n";
+
+export const SHORTLIST_LIMIT = 12;
+export const SHORTLIST_KEY = "toy-district:shortlist:v1";
+export const CATEGORIES = ["toys", "plush", "figures", "party", "seasonal", "electronics", "gifts", "general"] as const;
+
+export function readShortlist(raw: string | null, knownSlugs: Set<string>): string[] {
+  try {
+    const parsed = JSON.parse(raw ?? "null");
+    if (parsed?.version !== 1 || !Array.isArray(parsed.slugs)) return [];
+    return [...new Set<string>(parsed.slugs.filter((slug: unknown) => typeof slug === "string" && knownSlugs.has(slug)))].slice(0, SHORTLIST_LIMIT);
+  } catch { return []; }
+}
+
+export function hasBuyingInfo(store: Store): boolean {
+  return !!store.online_facts?.some((fact) => fact.source.type === "business");
+}
+
+function normalize(value: string): string {
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+export interface DirectoryFilters { query: string; category: string; block: string; info: boolean; contact: boolean }
+export const emptyFilters: DirectoryFilters = { query: "", category: "", block: "", info: false, contact: false };
+
+export function filterStores(stores: Store[], filters: DirectoryFilters): Store[] {
+  const words = normalize(filters.query.trim()).split(/\s+/).filter(Boolean);
+  return stores.filter((store) => {
+    if (store.status === "closed") return false;
+    if (filters.category && !store.category.some((cat) => cat === filters.category)) return false;
+    if (filters.block && store.block !== filters.block) return false;
+    if (filters.info && !hasBuyingInfo(store)) return false;
+    if (filters.contact && !store.phone && !store.contact_email) return false;
+    const haystack = normalize([store.name, store.address.line1, store.address.unit, ...store.category.flatMap((cat) => [catLabel("en", cat), catLabel("es", cat)]), ...(store.online_facts ?? []).filter((fact) => fact.kind === "products").flatMap((fact) => [fact.text.en, fact.text.es])].join(" "));
+    return words.every((word) => haystack.includes(word));
+  });
+}
+
+export function makeQuoteDraft(locale: Locale, name: string, values: { items: string; quantity: string; date: string }): string {
+  return locale === "es"
+    ? `Hola ${name},\n\nQuisiera cotizar los siguientes productos:\n${values.items.trim() || "[artículo, marca y SKU]"}\nCantidad: ${values.quantity.trim() || "[unidades o cajas]"}\nFecha requerida: ${values.date.trim() || "[fecha]"}\n\n¿Pueden confirmar disponibilidad, precio por unidad/caja, pedido mínimo y requisitos de cuenta? Indiquen el total con impuestos y cargos aplicables, formas de pago, recogida o envío, vigencia de la cotización y condiciones de devolución.\n\nGracias.`
+    : `Hello ${name},\n\nI'd like a quote for:\n${values.items.trim() || "[item, brand and SKU]"}\nQuantity: ${values.quantity.trim() || "[units or cases]"}\nNeeded by: ${values.date.trim() || "[date]"}\n\nCould you confirm availability, unit/case pricing, minimum order and account requirements? Please include the total with applicable tax and fees, payment options, pickup or shipping, quote validity and return terms.\n\nThank you.`;
+}
+
+--- web/lib/analytics.ts ---
+type BuyerEvent = "shortlist_add" | "shortlist_remove" | "compare_open" | "visit_print" | "quote_copy" | "directory_filter" | "photo_removal_submit" | "store_view" | "store_contact_click" | "lead_submit" | "store_inquiry";
+
+// Buffer early events in the same queue consumed by gtag. Never include free
+// text, names, email addresses, phone numbers or quote contents in this queue.
+export function track(event: BuyerEvent, params: Record<string, string | number | boolean> = {}) {
+  if (typeof window === "undefined" || !process.env.NEXT_PUBLIC_GA_ID) return;
+  const w = window as Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
+  w.dataLayer ??= [];
+  if (w.gtag) w.gtag("event", event, params);
+  else {
+    function queued(...args: unknown[]) { void args; w.dataLayer!.push(arguments); }
+    queued("event", event, params);
+  }
+}
+
+--- web/lib/request-validation.ts ---
+export function sameOrigin(request: Request): boolean {
+  const origin = request.headers.get("origin");
+  return !!origin && origin === new URL(request.url).origin;
+}
+
+export async function limitedJson(request: Request, limit = 12000): Promise<Record<string, unknown> | null> {
+  if (!request.headers.get("content-type")?.startsWith("application/json")) return null;
+  if (Number(request.headers.get("content-length")) > limit) return null;
+  const reader = request.body?.getReader();
+  if (!reader) return null;
+  const chunks: Uint8Array[] = []; let size = 0;
+  try {
+    while (true) {
+      const { done, value } = await reader.read(); if (done) break;
+      size += value.byteLength;
+      if (size > limit) { await reader.cancel(); return null; }
+      chunks.push(value);
+    }
+    const bytes = new Uint8Array(size); let offset = 0;
+    for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.length; }
+    const value = JSON.parse(new TextDecoder().decode(bytes));
+    return value && typeof value === "object" && !Array.isArray(value) ? value : null;
+  } catch { return null; }
+}
+
+export function textField(value: unknown, max: number): string {
+  return typeof value === "string" ? value.trim().slice(0, max) : "";
+}
+
+export function validPhotoReport(body: Record<string, unknown>) {
+  const name = textField(body.name, 120);
+  const contact = textField(body.contact, 200);
+  const reason = textField(body.reason, 1500);
+  if (body.website || body.rights_holder !== "yes" || !name || reason.length < 10 || (contact && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact))) return null;
+  return { name, contact, reason, locale: body.locale === "es" ? "es" : "en" };
+}
+
+--- web/lib/server/photo-service.ts ---
+import "server-only";
+import { database, PHOTO_BUCKET } from "./supabase";
+import type { StorePhoto } from "@/lib/photos";
+
+export async function photoIsReported(photo: StorePhoto) {
+  const db = database();
+  if (!db) throw new Error("storage_unavailable");
+  const { data, error } = await db.from("leads").select("id").eq("buyer_type", "photo_removal").eq("notes", `photo_id:${photo.id}`).eq("handled", false).limit(1);
+  if (error) throw new Error("report_check_failed");
+  return !!data?.length;
+}
+
+export async function removePhoto(photo: StorePhoto, report: { name: string; contact: string; reason: string; locale: string }) {
+  const db = database();
+  if (!db) throw new Error("storage_unavailable");
+  // Persist the block before deleting bytes. Every image request checks this
+  // record, including requests to older deployments. Failure must stay closed.
+  const { error } = await db.from("leads").insert({ name: report.name, contact: report.contact, items: report.reason, locale: report.locale, buyer_type: "photo_removal", store_slug: photo.store_slug, store_name: photo.source_label, notes: `photo_id:${photo.id}`, handled: false });
+  if (error) throw new Error("report_save_failed");
+  const { error: deletionError } = await db.storage.from(PHOTO_BUCKET).remove([photo.storage_path]);
+  return { hidden: true, bytes_removed: !deletionError };
+}
+
+--- web/app/api/store-photos/[id]/route.ts ---
+import { photoById } from "@/lib/photos";
+import { database, PHOTO_BUCKET } from "@/lib/server/supabase";
+import { photoIsReported } from "@/lib/server/photo-service";
+
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+const headers = { "Cache-Control": "private, no-store, max-age=0", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store", "X-Robots-Tag": "noindex, noimageindex", "X-Content-Type-Options": "nosniff" };
+
+export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const photo = photoById(id);
+  if (!photo || photo.status !== "published") return new Response(null, { status: 404, headers });
+  try {
+    const db = database();
+    if (!db) return new Response(null, { status: 503, headers });
+    if (await photoIsReported(photo)) return new Response(null, { status: 410, headers });
+    const { data, error } = await db.storage.from(PHOTO_BUCKET).download(photo.storage_path);
+    if (error || !data) return new Response(null, { status: 404, headers });
+    // A second check prevents a concurrent in-flight download from starting a
+    // response after a removal request has already been recorded.
+    if (await photoIsReported(photo)) return new Response(null, { status: 410, headers });
+    return new Response(data, { headers: { ...headers, "Content-Type": photo.mime_type } });
+  } catch { return new Response(null, { status: 503, headers }); }
+}
+
+--- web/app/api/admin/photos/route.ts ---
+import { createHash, timingSafeEqual } from "node:crypto";
+import { NextResponse } from "next/server";
+import { photoById } from "@/lib/photos";
+import { database, PHOTO_BUCKET } from "@/lib/server/supabase";
+import { photoIsReported, removePhoto } from "@/lib/server/photo-service";
+import { limitedJson, textField } from "@/lib/request-validation";
+
+export const runtime = "nodejs";
+export const maxDuration = 30;
+export async function POST(request: Request) {
+  const configured = process.env.PHOTO_ADMIN_TOKEN;
+  const supplied = request.headers.get("authorization")?.replace(/^Bearer /, "") ?? "";
+  if (!configured || configured.length < 32 || !supplied || !timingSafeEqual(createHash("sha256").update(configured).digest(), createHash("sha256").update(supplied).digest())) return NextResponse.json({ ok: false }, { status: 401 });
+  const body = await limitedJson(request, 3_000_000);
+  const photo = body && photoById(textField(body.photo_id, 120));
+  if (!body || !photo) return NextResponse.json({ ok: false }, { status: 400 });
+  const db = database();
+  if (!db) return NextResponse.json({ ok: false, reason: "storage_unavailable" }, { status: 503 });
+  try {
+    if (body.action === "remove") {
+      const result = await removePhoto(photo, { name: "Directory operator", contact: "", reason: textField(body.reason, 1500) || "Removed by operator", locale: "en" });
+      return NextResponse.json({ ok: true, ...result });
+    }
+    if (body.action !== "publish" || photo.status !== "published" || typeof body.image_base64 !== "string") return NextResponse.json({ ok: false }, { status: 400 });
+    if (await photoIsReported(photo)) return NextResponse.json({ ok: false, reason: "removal_request_pending" }, { status: 409 });
+    const bytes = Buffer.from(body.image_base64, "base64");
+    if (!bytes.length || bytes.length > 2_000_000 || createHash("sha256").update(bytes).digest("hex") !== photo.sha256) return NextResponse.json({ ok: false, reason: "unreviewed_bytes" }, { status: 400 });
+    const { data: bucket, error: bucketError } = await db.storage.getBucket(PHOTO_BUCKET);
+    if (bucket?.public) return NextResponse.json({ ok: false, reason: "bucket_must_be_private" }, { status: 409 });
+    if (!bucket) {
+      const { error } = await db.storage.createBucket(PHOTO_BUCKET, { public: false, fileSizeLimit: 2_000_000, allowedMimeTypes: ["image/jpeg", "image/png", "image/webp"] });
+      if (error) return NextResponse.json({ ok: false, reason: bucketError ? "bucket_unavailable" : "bucket_create_failed" }, { status: 503 });
+    }
+    const { error } = await db.storage.from(PHOTO_BUCKET).upload(photo.storage_path, bytes, { contentType: photo.mime_type, cacheControl: "0", upsert: false });
+    if (error) return NextResponse.json({ ok: false, reason: "upload_failed_or_exists" }, { status: 409 });
+    // A report racing with an upload remains blocked and is never auto-restored.
+    if (await photoIsReported(photo)) { await db.storage.from(PHOTO_BUCKET).remove([photo.storage_path]); return NextResponse.json({ ok: false, reason: "removal_request_pending" }, { status: 409 }); }
+    return NextResponse.json({ ok: true, photo_id: photo.id });
+  } catch { return NextResponse.json({ ok: false, reason: "storage_error" }, { status: 503 }); }
+}
+
+--- web/app/api/photo-reports/route.ts ---
+import { NextResponse } from "next/server";
+import { photoById } from "@/lib/photos";
+import { limitedJson, sameOrigin, textField, validPhotoReport } from "@/lib/request-validation";
+import { photoIsReported, removePhoto } from "@/lib/server/photo-service";
+
+export const runtime = "nodejs";
+export async function POST(request: Request) {
+  if (!sameOrigin(request)) return NextResponse.json({ ok: false }, { status: 403 });
+  const body = await limitedJson(request);
+  if (!body) return NextResponse.json({ ok: false }, { status: 400 });
+  const photo = photoById(textField(body.photo_id, 120));
+  const report = validPhotoReport(body);
+  if (!photo || !report) return NextResponse.json({ ok: false }, { status: 400 });
+  try {
+    // Idempotent: repeated reports cannot grow the inbox after a photo is hidden.
+    if (await photoIsReported(photo)) return NextResponse.json({ ok: true, hidden: true });
+    const result = await removePhoto(photo, report);
+    return NextResponse.json({ ok: true, hidden: result.hidden });
+  } catch { return NextResponse.json({ ok: false }, { status: 503 }); }
+}
+
+--- web/app/api/leads/route.ts ---
+import { NextResponse } from "next/server";
+import { storeBySlug } from "@/lib/stores";
+import { limitedJson, sameOrigin, textField } from "@/lib/request-validation";
+import { database } from "@/lib/server/supabase";
+
+export async function POST(request: Request) {
+  if (!sameOrigin(request)) return NextResponse.json({ ok: false, reason: "origin" }, { status: 403 });
+  const body = await limitedJson(request);
+  if (!body || body.website) return NextResponse.json({ ok: false, reason: "bad_request" }, { status: 400 });
+  const slug = textField(body.store_slug, 120);
+  const store = slug ? storeBySlug.get(slug) : undefined;
+  if (slug && !store) return NextResponse.json({ ok: false, reason: "unknown_store" }, { status: 400 });
+  const buyer = textField(body.buyer_type, 40);
+  const lead = {
+    name: textField(body.name, 120), contact: textField(body.contact, 200),
+    buyer_type: ["party_planner", "store_owner", "reseller", "other"].includes(buyer) ? buyer : "other",
+    items: textField(body.items, 2000), locale: body.locale === "es" ? "es" : "en",
+    store_slug: store?.slug ?? null, store_name: store?.name ?? null,
+  };
+  if (!lead.name || !lead.contact || !lead.items) return NextResponse.json({ ok: false, reason: "missing_fields" }, { status: 400 });
+  try {
+    const db = database();
+    if (!db) return NextResponse.json({ ok: false, reason: "not_configured" }, { status: 503 });
+    const { error } = await db.from("leads").insert(lead);
+    if (error) return NextResponse.json({ ok: false, reason: "storage_error" }, { status: 502 });
+    return NextResponse.json({ ok: true });
+  } catch { return NextResponse.json({ ok: false, reason: "storage_error" }, { status: 502 }); }
+}
+
+--- web/components/pages/StorePage.tsx ---
+import Link from "next/link";
+import { Phone, Globe2, MapPin } from "lucide-react";
+import SaveStoreButton from "@/components/SaveStoreButton";
+import QuoteDraft from "@/components/QuoteDraft";
+import StorePhoto from "@/components/StorePhoto";
+import { photosForStore } from "@/lib/photos";
+import JsonLd from "@/components/JsonLd";
+import StoreCard from "@/components/StoreCard";
+import StoreInquiryForm from "@/components/StoreInquiryForm";
+import StoreViewEvent from "@/components/StoreViewEvent";
+import StoreContactLink from "@/components/StoreContactLink";
+import { Header, Footer } from "@/components/SiteChrome";
+import { BLOCK_LABELS, fullAddress, stores, type Store, type OnlineSource } from "@/lib/stores";
+import { storeJsonLd } from "@/lib/jsonld";
+import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
+import { buyerQuestions } from "@/lib/content/buyer-questions";
+
+// Defense in depth: website comes from world-editable OSM data. Only render http(s).
+function httpUrl(u: string | null | undefined): string | null {
+  if (!u) return null;
+  try {
+    const p = new URL(u);
+    return (p.protocol === "http:" || p.protocol === "https:") && !p.username && !p.password ? p.toString() : null;
+  } catch {
+    return null;
+  }
+}
+
+function SourceNote({ source, locale, slug }: { source?: OnlineSource; locale: Locale; slug?: string }) {
+  if (!source) return null;
+  const href = httpUrl(source.url);
+  if (!href) return null;
+  return <p className="source-note">
+    {t(locale, `source_${source.type}` as DictKey)} · {" "}
+    {slug
+      ? <StoreContactLink href={href} slug={slug} method="buying_source" external>{source.label} ↗</StoreContactLink>
+      : <a href={href} target="_blank" rel="nofollow noopener noreferrer">{source.label} ↗</a>}
+    {" · "}{t(locale, "source_checked")} <time dateTime={source.checked_at}>{source.checked_at}</time>
+  </p>;
+}
+
+export default function StorePage({ store, locale }: { store: Store; locale: Locale }) {
+  const nearby = stores.filter((s) => s.block === store.block && s.slug !== store.slug).slice(0, 6);
+  const mapsQuery = encodeURIComponent(fullAddress(store));
+  const questions = buyerQuestions[store.slug]?.[locale];
+  const gallery = photosForStore(store.slug);
+  const es = locale === "es";
+
+  // Any business-linked URL goes here — website, socials, Yelp, etc. All
+  // pass through httpUrl() since links can originate from world-editable data.
+  const links: { label: string; href: string }[] = [];
+  const addLink = (label: string, raw: string | undefined) => {
+    const href = httpUrl(raw);
+    if (href) links.push({ label, href });
+  };
+  addLink(t(locale, "field_website"), store.links?.website);
+  addLink("Facebook", store.links?.facebook);
+  addLink("Instagram", store.links?.instagram);
+  addLink("WhatsApp", store.links?.whatsapp);
+  addLink("Yelp", store.links?.yelp);
+  for (const raw of store.links?.other ?? []) {
+    const href = httpUrl(raw);
+    if (href) links.push({ label: new URL(href).hostname.replace(/^www\./, ""), href });
+  }
+  return (
+    <>
+      <Header locale={locale} altPath={`/stores/${store.slug}`} />
+      <main id="main-content" lang={locale}>
+        <JsonLd data={storeJsonLd(store)} />
+        <StoreViewEvent slug={store.slug} />
+        <div className="container store-page">
+          <nav className="breadcrumb">
+            <Link href={localePath(locale, "/") || "/"}>{t(locale, "breadcrumb_home")}</Link>
+            {" / "}
+            {BLOCK_LABELS[store.block]}
+          </nav>
+          <div className="store-heading"><div><h1>{store.name}</h1>
+          <p className="sub">
+            {fullAddress(store)} · {BLOCK_LABELS[store.block]}
+          </p>
+          <div className="chips">
+            <span className={`badge brand`}>{t(locale, `wr_${store.wholesale_retail}` as DictKey)}</span>
+            {store.category.map((c) => (
+              <span key={c} className="badge">
+                {catLabel(locale, c)}
+              </span>
+            ))}
+          </div>
+          </div><SaveStoreButton slug={store.slug} name={store.name} locale={locale} /></div>
+          <SourceNote source={store.field_sources?.wholesale_retail} locale={locale} />
+          {store.verified_at ? (
+            <p className="note ok">
+              ✓ {t(locale, "verified_note")} — {store.verified_at}
+            </p>
+          ) : null}
+          <div className="store-detail-layout"><div className="store-main-column">
+          {gallery.length > 0 && <section id="photos" aria-label={es ? "Imágenes del catálogo" : "Catalog images"}>
+            <StorePhoto photo={gallery[0]} locale={locale} />
+            {gallery.length > 1 && <details className="mb-6 rounded-xl border border-border bg-white p-4"><summary className="text-sm font-semibold text-primary">{es ? "Más imágenes del catálogo" : "More catalog images"} ({gallery.length - 1})</summary>{gallery.slice(1).map((photo) => <StorePhoto key={photo.id} photo={photo} locale={locale} />)}</details>}
+          </section>}
+          <table className="detail-table">
+            <tbody>
+              <tr>
+                <th>{t(locale, "field_address")}</th>
+                <td>
+                  {fullAddress(store)}
+                  {" · "}
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`}
+                    rel="nofollow noopener"
+                    target="_blank"
+                  >
+                    Google Maps ↗
+                  </a>
+                </td>
+              </tr>
+              {store.hours || store.field_sources?.hours ? (
+                <tr>
+                  <th>{t(locale, "field_hours")}</th>
+                  <td>{store.hours ?? t(locale, "hours_unconfirmed")}<SourceNote source={store.field_sources?.hours} locale={locale} /></td>
+                </tr>
+              ) : null}
+              {store.phone ? (
+                <tr>
+                  <th>{t(locale, "field_phone")}</th>
+                  <td>
+                    <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone">{store.phone}</StoreContactLink>
+                    <SourceNote source={store.field_sources?.phone} locale={locale} />
+                  </td>
+                </tr>
+              ) : null}
+              {store.contact_email ? (
+                <tr>
+                  <th>{t(locale, "field_email")}</th>
+                  <td>
+                    <StoreContactLink href={`mailto:${store.contact_email}`} slug={store.slug} method="email">{store.contact_email}</StoreContactLink>
+                    <SourceNote source={store.field_sources?.contact_email} locale={locale} />
+                  </td>
+                </tr>
+              ) : null}
+              {links.length > 0 ? (
+                <tr>
+                  <th>{t(locale, "field_links")}</th>
+                  <td className="links-row">
+                    {links.map((l, i) => (
+                      <span key={l.href}>
+                        {i > 0 ? " · " : ""}
+                        <StoreContactLink href={l.href} slug={store.slug} method="website" external>
+                          {l.label} ↗
+                        </StoreContactLink>
+                      </span>
+                    ))}
+                    <SourceNote source={store.field_sources?.["links.website"]} locale={locale} />
+                  </td>
+                </tr>
+              ) : null}
+              {store.moq ? (
+                <tr>
+                  <th>{t(locale, "field_moq")}</th>
+                  <td>{store.moq}</td>
+                </tr>
+              ) : null}
+              {store.payment?.length ? (
+                <tr>
+                  <th>{t(locale, "field_payment")}</th>
+                  <td>{store.payment.join(", ")}</td>
+                </tr>
+              ) : null}
+              {store.languages?.length ? (
+                <tr>
+                  <th>{t(locale, "field_languages")}</th>
+                  <td>
+                    {store.languages.map((language) => locale === "es" && language === "Spanish" ? "Español" : language).join(", ")}
+                    <SourceNote source={store.field_sources?.languages} locale={locale} />
+                  </td>
+                </tr>
+              ) : null}
+              {store.since ? (
+                <tr>
+                  <th>{t(locale, "since")}</th>
+                  <td>{store.since.slice(0, 4)}</td>
+                </tr>
+              ) : null}
+            </tbody>
+          </table>
+          {store.online_facts?.length ? (
+            <section className="buying-details" aria-labelledby="buying-heading">
+              <h2 id="buying-heading">{t(locale, "buying_h2")}</h2>
+              <p>{t(locale, "online_note")}</p>
+              <ul>
+                {store.online_facts.map((fact) => (
+                  <li key={fact.id}>
+                    <p>{fact.text[locale]}</p>
+                    <SourceNote source={fact.source} locale={locale} slug={store.slug} />
+                    {fact.additional_sources?.map((source) => (
+                      <SourceNote key={source.url} source={source} locale={locale} slug={store.slug} />
+                    ))}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+          {questions ? <section className="buyer-questions" aria-labelledby="questions-heading">
+            <h2 id="questions-heading">{t(locale, "buyer_questions_h2")}</h2>
+            <p>{t(locale, "buyer_questions_note")}</p>
+            <ul>{questions.map((question) => <li key={question}>{question}</li>)}</ul>
+            <Link href={localePath(locale, "/guide/buying-checklist")}>{t(locale, "worksheet_link")}</Link>
+          </section> : null}
+          {!store.verified_at ? <p className="fineprint">{t(locale, "unverified_note")}</p> : null}
+          <p className="claim-link">
+            <a href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
+              {t(locale, "claim_cta")} ↗
+            </a>
+          </p>
+          </div><aside className="store-actions"><div className="store-contact-box">
+            <h2>{es ? "Prepare su compra" : "Plan your purchase"}</h2><p>{es ? "Confirme los productos y condiciones directamente con el negocio." : "Confirm items and buying terms directly with the business."}</p>
+            <div className="store-contact-buttons">
+              {store.phone && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={16} />{es ? "Llamar al negocio" : "Call the business"}</StoreContactLink>}
+              {httpUrl(store.links?.website) && <StoreContactLink href={httpUrl(store.links?.website)!} slug={store.slug} method="website" external><Globe2 size={16} />{es ? "Sitio del negocio" : "Business website"}</StoreContactLink>}
+              <QuoteDraft name={store.name} slug={store.slug} locale={locale} />
+              <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="nofollow noopener noreferrer"><MapPin size={16} />{es ? "Ver dirección en Maps" : "Open address in Maps"}</a>
+              <SaveStoreButton slug={store.slug} name={store.name} locale={locale} />
+            </div>
+          </div><StoreInquiryForm locale={locale} storeSlug={store.slug} storeName={store.name} /></aside></div>
+          {nearby.length > 0 ? (
+            <>
+              <h2 style={{ marginTop: 36 }}>
+                {t(locale, "nearby_h2")} {BLOCK_LABELS[store.block]}
+              </h2>
+              <div className="store-grid">
+                {nearby.map((s) => (
+                  <StoreCard key={s.slug} store={s} locale={locale} />
+                ))}
+              </div>
+            </>
+          ) : null}
+        </div>
+      </main>
+      <Footer locale={locale} />
+    </>
+  );
+}
+
+--- web/app/globals.css ---
+@import "tailwindcss";
+@import "@fontsource-variable/dm-sans/latin.css";
+@import "@fontsource/barlow-semi-condensed/latin-600.css";
+@import "@fontsource/barlow-semi-condensed/latin-700.css";
+
+@theme inline {
+  --font-sans: "DM Sans Variable", sans-serif;
+  --font-display: "Barlow Semi Condensed", sans-serif;
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --color-primary: var(--brand);
+  --color-primary-dark: #1943ad;
+  --color-secondary: #edf2fa;
+  --color-muted-foreground: #56657e;
+  --color-border: #dce3ee;
+}
+@layer base {
+  :root { --bg: #f6f8fc; --ink: #172b4d; --muted: #56657e; --line: #dce3ee; --brand: #2456d3; --brand-dark: #1943ad; --accent: #2456d3; --card: #fff; --chip: #edf2fa; --ok: #247451; --radius: 14px; --maxw: 1240px; }
+  html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: "DM Sans Variable", sans-serif; font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: "Barlow Semi Condensed", sans-serif; line-height: 1.15; font-weight: 600; text-wrap: balance; }
+  h1 { font-size: clamp(36px, 5vw, 60px); letter-spacing: -.025em; }
+  h2 { font-size: 32px; letter-spacing: -.015em; }
+  h3 { font-size: 24px; }
+  a { text-decoration: none; }
+  button, input, select, textarea { font: inherit; }
+  button, select, summary { cursor: pointer; }
+  button:disabled { cursor: default; }
+  input[type="checkbox"] { accent-color: var(--brand); width: 17px; height: 17px; flex-shrink: 0; }
+  :focus-visible { outline: 3px solid var(--brand); outline-offset: 4px; }
+  ::selection { background: #dbe6ff; }
+}
+@layer components {
+  .container { width: min(100% - 64px, var(--maxw)); margin-inline: auto; }
+  .skip-link { position: fixed; top: -90px; left: 16px; z-index: 100; padding: 12px 20px; border-radius: 8px; background: white; color: var(--brand); }
+  .skip-link:focus { top: 10px; }
+  .site-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--line); }
+  .header-inner { display: flex; align-items: center; gap: 30px; min-height: 84px; }
+  .logo { display: inline-flex; align-items: center; gap: 12px; font-weight: 750; font-size: 18px; letter-spacing: -.045em; white-space: nowrap; }
+  .logo small { display: block; font-size: 11px; font-weight: 450; letter-spacing: .01em; color: var(--muted); }
+  .logo-mark { display: grid; place-items: center; width: 42px; height: 46px; color: white; background: var(--brand); border-radius: 10px 10px 18px 10px; }
+  .desktop-nav { display: flex; margin-left: auto; gap: 28px; font-size: 13px; font-weight: 600; }
+  .desktop-nav a:hover { color: var(--brand); }
+  .header-actions { display: flex; gap: 20px; align-items: center; }
+  .count-pill { display: inline-grid; place-items: center; min-width: 21px; height: 21px; padding-inline: 5px; border-radius: 5px; background: #e9effa; color: var(--brand); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .count-pill.inverted { background: #fff3; color: #fff; }
+  .language-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 12px; font-weight: 650; }
+  .mobile-menu-button, .mobile-nav { display: none; }
+  .directory-hero { padding-block: 54px 42px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 80px; align-items: center; }
+  .location-line { display: flex; gap: 8px; align-items: center; font-size: 12px; font-weight: 600; color: var(--muted); }
+  .directory-hero h1 { max-width: 610px; margin-block: 16px 18px; font-size: clamp(42px, 4.8vw, 68px); line-height: 1.02; }
+  .hero-description { max-width: 550px; color: var(--muted); font-size: 16px; line-height: 1.75; }
+  .district-sign { background: var(--brand); color: #fff; min-height: 248px; padding: 24px 28px; border-radius: 16px; position: relative; overflow: hidden; isolation: isolate; }
+  .district-sign-top { display: flex; gap: 8px; align-items: center; font-size: 11px; color: #dbe6ff; }
+  .district-sign strong { display: block; position: relative; font-family: var(--font-display); font-size: 64px; font-weight: 600; line-height: .92; letter-spacing: -.035em; margin-block: 20px; }
+  .sign-dot { display: inline-block; height: 16px; width: 16px; border-radius: 50%; background: #ffb35e; margin-left: 8px; }
+  .district-sign-bottom { display: flex; justify-content: space-between; gap: 12px; font-size: 10px; color: #dbe6ff; }
+  .sign-streets { position: absolute; z-index: -1; inset: 0; transform: rotate(-28deg); opacity: .12; }
+  .sign-streets i { position: absolute; height: 430px; width: 18px; background: #fff; top: -90px; left: 71%; }
+  .sign-streets i:nth-child(2) { left: 88%; } .sign-streets i:nth-child(3) { left: 50%; top: 130px; transform: rotate(90deg); } .sign-streets i:nth-child(4) { left: 50%; top: -40px; transform: rotate(90deg); }
+  .directory-section { padding-bottom: 48px; }
+  .directory-search-row { display: flex; gap: 12px; }
+  .directory-search { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 66px; padding: 12px 22px; background: white; border: 1px solid #b8c8e5; border-radius: 12px; box-shadow: 0 4px 14px #172b4d04; color: var(--brand); }
+  .directory-search:focus-within { border-color: var(--brand); box-shadow: 0 0 0 3px #2456d310; }
+  .directory-search input { flex: 1; min-width: 0; outline: none; border: 0; background: transparent; color: var(--ink); font-size: 16px; }
+  .directory-search input::placeholder { color: #6c7a91; }
+  .filter-toggle { display: none; }
+  .directory-filters { display: flex; align-items: center; gap: 28px; padding-block: 20px 24px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .select-filter { display: flex; align-items: center; gap: 10px; font-size: 12px; }
+  .select-filter > span { color: var(--muted); }
+  .select-filter select { max-width: 215px; min-height: 40px; font-size: 12px; font-weight: 600; padding: 6px 24px 6px 0; background: transparent; }
+  .check-filter { display: flex; align-items: center; gap: 8px; min-height: 40px; font-size: 12px; cursor: pointer; }
+  .directory-layout { display: grid; grid-template-columns: minmax(0, 1fr) 276px; gap: 32px; margin-top: 30px; }
+  .directory-results { min-width: 0; }
+  .results-bar { display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .results-bar h2 { font-size: 30px; }
+  .results-bar p { color: var(--muted); font-size: 12px; margin-top: 5px; overflow-wrap: anywhere; }
+  .view-switch { display: flex; padding: 4px; border-radius: 9px; background: #e9eef7; }
+  .view-switch button { display: flex; gap: 7px; align-items: center; min-height: 36px; padding: 8px 12px; border-radius: 6px; font-size: 12px; color: var(--muted); }
+  .view-switch button[aria-pressed="true"] { background: white; color: var(--ink); box-shadow: 0 1px 3px #172b4d0c; }
+  .results-explainer { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 16px; }
+  .results-explainer p { max-width: 410px; font-size: 11px; color: var(--muted); }
+  .results-explainer select { background: transparent; font-size: 11px; max-width: 190px; padding-block: 8px; }
+  .supplier-list { display: grid; gap: 14px; }
+  .store-card { display: flex; background: white; border: 1px solid var(--line); border-radius: 12px; overflow: visible; transition: border-color .15s; min-width: 0; }
+  .store-card:hover { border-color: #a4b7d9; }
+  .store-card-visual { flex: 0 0 150px; width: 150px; margin: 14px 0 14px 14px; overflow: hidden; border-radius: 8px; background: #edf2fa; }
+  .store-monogram { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 130px; gap: 7px; color: #6c83af; }
+  .store-monogram span { font-family: var(--font-display); font-size: 26px; opacity: .7; }
+  .category-party { background: #f6edf7; } .category-gifts { background: #edf4ee; } .category-plush { background: #fff3e9; }
+  .store-card-body { flex: 1; padding: 18px 20px; min-width: 0; }
+  .store-card-title { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; }
+  .store-card h3 { font-size: 25px; text-wrap: initial; overflow-wrap: anywhere; padding-top: 3px; }
+  .store-card h3 a:hover { color: var(--brand); }
+  .store-address { display: flex; align-items: center; gap: 5px; color: var(--muted); font-size: 12px; margin-top: 6px; }
+  .store-address svg { flex-shrink: 0; }
+  .store-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+  .store-tags > span { display: inline-flex; align-items: center; gap: 5px; background: #f2f5fa; font-size: 10px; font-weight: 550; padding: 3px 8px; border-radius: 4px; }
+  .store-tags .info-tag { background: #eaf4ed; color: #326647; }
+  .store-card-bottom { display: flex; justify-content: space-between; align-items: center; gap: 8px; border-top: 1px solid #edf0f6; padding-top: 12px; margin-top: 16px; }
+  .store-data-note { font-size: 10px; color: var(--muted); }
+  .store-card-bottom > div { display: flex; gap: 16px; }
+  .store-card-bottom a { display: inline-flex; align-items: center; gap: 5px; min-height: 28px; font-size: 11px; color: var(--brand); font-weight: 650; }
+  .save-control { position: relative; flex-shrink: 0; }
+  .save-message { position: absolute; top: 100%; right: 0; width: 220px; padding: 10px; margin-top: 5px; z-index: 20; background: white; border: 1px solid var(--line); border-radius: 8px; font-size: 12px; box-shadow: 0 6px 24px #172b4d18; }
+  .buyer-sidebar { align-self: start; position: sticky; top: 112px; }
+  .trip-card { padding: 26px; border-radius: 14px; background: #eaf0fc; }
+  .trip-card > svg { color: var(--brand); margin-bottom: 20px; }
+  .trip-card h2 { font-size: 29px; max-width: 220px; }
+  .trip-card p { color: var(--muted); font-size: 13px; margin-block: 12px 22px; }
+  .trip-card > a { width: 100%; font-size: 12px; }
+  .trip-card small { display: block; text-align: center; color: var(--muted); font-size: 10px; margin-top: 14px; }
+  .sidebar-note { padding: 28px 18px; }
+  .sidebar-note > svg { color: var(--muted); margin-bottom: 12px; }
+  .sidebar-note h3 { font-size: 23px; }
+  .sidebar-note p { font-size: 12px; color: var(--muted); margin-block: 10px 14px; }
+  .sidebar-note a { font-size: 12px; font-weight: 650; color: var(--brand); text-decoration: underline; text-underline-offset: 4px; }
+  .load-more { display: grid; justify-items: center; gap: 12px; padding-top: 28px; }
+  .load-more p { font-size: 11px; color: var(--muted); }
+  .empty-results { padding: 64px 24px; display: grid; justify-items: center; gap: 18px; text-align: center; background: white; border: 1px dashed #b9c9e4; border-radius: 12px; }
+  .empty-results > svg, .empty-results p { color: var(--muted); }
+  .map-wrap { height: 420px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #e8edf5; margin-bottom: 20px; }
+  .map-placeholder { height: 100%; display: grid; place-items: center; color: var(--muted); }
+  .maplibregl-popup-content { font-family: "DM Sans Variable", sans-serif; font-size: 13px; line-height: 1.6; color: var(--ink); }
+  .maplibregl-popup-content a { font-weight: 650; color: var(--brand); }
+  .map-tenants { margin-top: 8px; max-height: 180px; overflow-y: auto; padding-left: 18px; list-style: disc; }
+  .planning-section { padding-block: 56px; border-top: 1px solid var(--line); }
+  .section-intro { max-width: 680px; margin-bottom: 28px; }
+  .section-intro h2 { font-size: 40px; margin-block: 14px 10px; }
+  .section-intro > p:last-child { color: var(--muted); }
+  .guide-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .guide-card { display: block; position: relative; padding: 26px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+  .guide-card:hover { border-color: var(--brand); }
+  .guide-icon { color: var(--brand); width: 25px; height: 25px; margin-bottom: 26px; }
+  .guide-card h3 { font-size: 26px; max-width: 270px; }
+  .guide-card p { color: var(--muted); font-size: 13px; margin-top: 12px; max-width: 280px; }
+  .guide-arrow { position: absolute; top: 25px; right: 24px; width: 19px; color: var(--muted); }
+  .district-context { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; padding-block: 16px 60px; }
+  .district-context > div:first-child { padding-top: 24px; }
+  .district-context > div:first-child p { margin-top: 18px; color: var(--muted); max-width: 520px; }
+  .site-footer { background: #fff; border-top: 1px solid var(--line); padding-block: 44px 28px; }
+  .footer-grid { display: grid; grid-template-columns: 1fr 320px; gap: 80px; }
+  .footer-brand { font-size: 22px; font-weight: 700; letter-spacing: -.035em; }
+  .footer-grid p { font-size: 12px; color: var(--muted); max-width: 630px; margin-top: 16px; }
+  .footer-links { display: grid; align-content: start; gap: 12px; font-size: 12px; }
+  .footer-links a:hover { color: var(--brand); }
+  .footer-bottom { display: flex; justify-content: space-between; gap: 40px; border-top: 1px solid var(--line); margin-top: 34px; padding-top: 22px; color: var(--muted); font-size: 10px; }
+  .footer-bottom p:first-child { max-width: 720px; }
+  .field-label { display: grid; gap: 8px; font-size: 12px; font-weight: 650; }
+  .lead-box { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+  .lead-box h2 { font-size: 29px; }
+  .lead-box .sub { font-size: 13px; color: var(--muted); margin-block: 12px 20px; }
+  .lead-box form { display: grid; gap: 15px; }
+  .lead-box input, .lead-box select, .lead-box textarea { min-height: 44px; border: 1px solid var(--line); border-radius: 8px; width: 100%; padding: 10px 12px; background: white; color: var(--ink); font-size: 16px; font-weight: 400; }
+  .lead-box textarea { min-height: 110px; resize: vertical; }
+  .lead-box button { min-height: 46px; padding: 11px 16px; border-radius: 8px; font-weight: 650; font-size: 13px; background: var(--brand); color: white; }
+  .lead-box button:hover { background: var(--brand-dark); }
+  .lead-box button:disabled { opacity: .5; }
+  .lead-msg { margin-top: 14px; font-size: 13px; } .ok { color: var(--ok); } .err { color: #b42318; }
+  .honeypot { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+  .breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); margin-bottom: 25px; }
+  .breadcrumb a:hover { color: var(--brand); }
+  .store-page { padding-block: 38px 64px; }
+  .store-heading { display: flex; justify-content: space-between; gap: 28px; align-items: center; margin-bottom: 24px; }
+  .store-heading h1 { max-width: 800px; margin-bottom: 12px; }
+  .store-page .sub { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .chips { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .badge { display: inline-flex; gap: 5px; align-items: center; font-size: 11px; padding: 5px 10px; border-radius: 5px; background: var(--chip); color: var(--muted); }
+  .badge.brand { background: #e4ecff; color: var(--brand-dark); }
+  .store-detail-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 36px; align-items: start; }
+  .store-main-column { min-width: 0; }
+  .store-actions { position: sticky; top: 112px; display: grid; gap: 16px; }
+  .store-contact-box { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  .store-contact-box h2 { font-size: 27px; margin-bottom: 8px; }
+  .store-contact-box p { color: var(--muted); font-size: 12px; margin-bottom: 18px; }
+  .store-contact-buttons { display: grid; gap: 10px; }
+  .store-contact-buttons > a, .store-contact-buttons > button { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; font-size: 13px; color: var(--brand); font-weight: 650; }
+  .store-contact-buttons > a:first-child { background: var(--brand); color: white; border-color: var(--brand); }
+  .store-contact-buttons .save-control > button { width: 100%; }
+  .detail-table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-block: 24px 32px; }
+  .detail-table th, .detail-table td { padding: 16px 18px; text-align: left; vertical-align: top; border-bottom: 1px solid #edf0f6; font-size: 13px; }
+  .detail-table th { width: 150px; color: var(--muted); font-weight: 500; }
+  .detail-table td { overflow-wrap: anywhere; }
+  .detail-table a, .source-note a, .prose a, .buyer-questions a, .claim-link a { color: var(--brand); text-decoration: underline; text-decoration-color: #2456d350; text-underline-offset: 3px; }
+  .detail-table tr:last-child th, .detail-table tr:last-child td { border-bottom: 0; }
+  .source-note { font-size: 11px; line-height: 1.7; color: var(--muted); margin-top: 8px; overflow-wrap: anywhere; }
+  .buying-details { padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: white; margin-block: 28px; }
+  .buying-details > p { font-size: 13px; color: var(--muted); margin-top: 10px; }
+  .buying-details > ul { margin-top: 22px; }
+  .buying-details li { padding-block: 16px; border-top: 1px solid #edf0f6; font-size: 14px; }
+  .buying-details li:first-child { padding-top: 0; border-top: 0; }
+  .buyer-questions { background: #edf2fc; padding: 28px; border-radius: 14px; margin-block: 28px; }
+  .buyer-questions > p { color: var(--muted); font-size: 12px; margin-top: 10px; }
+  .buyer-questions ul { margin: 18px 0; list-style: disc; padding-left: 20px; font-size: 14px; }
+  .buyer-questions li { margin-block: 9px; }
+  .buyer-questions > a { font-size: 13px; font-weight: 600; }
+  .fineprint, .claim-link { font-size: 12px; margin-block: 16px; color: var(--muted); }
+  .store-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 24px; }
+  .store-grid .store-card-visual { display: none; } .store-grid .store-card-bottom { flex-wrap: wrap; gap: 8px; } .store-grid .store-card h3 { font-size: 23px; }
+  .store-photo { margin-block: 24px; border-radius: 12px; overflow: hidden; background: white; border: 1px solid var(--line); }
+  .store-photo img { display: block; width: 100%; max-height: 560px; object-fit: contain; background: #f0f3f8; }
+  .store-photo figcaption { padding: 14px 18px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+  .store-photo figcaption a, .store-photo figcaption button { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
+  .store-photo.compact { height: 100%; margin: 0; border: 0; border-radius: 8px; }
+  .store-photo.compact img { width: 100%; height: 145px; object-fit: contain; }
+  .store-photo.compact figcaption { font-size: 9px; padding: 5px 8px; }
+  .photo-unavailable { display: grid; place-items: center; padding: 24px; min-height: 130px; color: var(--muted); font-size: 11px; }
+  .prose { max-width: 830px; padding-block: 40px 72px; }
+  .prose h1 { font-size: clamp(38px, 5vw, 56px); margin-block: 20px; }
+  .prose .lede { font-size: 18px; color: var(--muted); line-height: 1.75; margin-bottom: 16px; }
+  .prose section { margin-block: 34px; }
+  .prose h2 { font-size: 31px; margin-bottom: 14px; }
+  .prose h3 { margin-block: 24px 10px; font-size: 24px; }
+  .prose p { margin-block: 14px; line-height: 1.8; }
+  .prose ul { list-style: disc; padding-left: 24px; }
+  .prose li { margin-block: 10px; }
+  .prose .source-note { font-size: 11px; }
+  .guide-next { border-top: 1px solid var(--line); padding-top: 24px; font-weight: 600; }
+  .buyer-worksheet { padding: 30px; background: white; border: 1px solid var(--line); border-radius: 14px; }
+  .worksheet-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px; }
+  .print-worksheet { padding: 12px 18px; background: var(--brand); color: white; border-radius: 8px; font-size: 13px; font-weight: 600; }
+  .worksheet-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; margin-top: 24px; }
+  .worksheet-field dt { font-size: 12px; font-weight: 600; }
+  .worksheet-field dd { min-height: 42px; border-bottom: 1px solid #65758f; }
+  .worksheet-notes { grid-column: 1 / -1; } .worksheet-notes dd { min-height: 64px; }
+  .prose .worksheet-intro, .prose .worksheet-reminder { font-size: 13px; color: var(--muted); }
+  .prose .worksheet-origin { font-size: 10px; color: var(--muted); overflow-wrap: anywhere; }
+  .saved-page { padding-block: 40px 64px; }
+  .saved-page h1 { margin-block: 20px 12px; }
+  .saved-intro { max-width: 650px; color: var(--muted); }
+  .saved-toolbar { display: flex; gap: 12px; flex-wrap: wrap; margin-block: 26px; }
+  .saved-store { display: grid; grid-template-columns: auto 1fr; gap: 16px; margin-top: 16px; align-items: center; }
+  .saved-store > label { padding: 10px; }
+  .compare-wrap { overflow-x: auto; margin-block: 28px; background: white; border: 1px solid var(--line); border-radius: 12px; }
+  .compare-table { width: 100%; border-collapse: collapse; table-layout: fixed; min-width: 650px; }
+  .compare-table th, .compare-table td { padding: 18px; text-align: left; vertical-align: top; font-size: 13px; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); overflow-wrap: anywhere; }
+  .compare-table th:first-child { width: 150px; font-weight: 500; color: var(--muted); }
+  .compare-table thead th { background: #eef3fb; font-weight: 650; }
+  .compare-table a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
+  .compare-table p { margin-block: 8px; }
+  .compare-table small { display: block; font-size: 10px; color: var(--muted); }
+  .visit-print-only { display: none; }
+}
+@media (max-width: 1100px) {
+  .desktop-nav { gap: 18px; } .header-inner { gap: 22px; } .header-actions { gap: 14px; }
+  .directory-hero { gap: 40px; } .directory-filters { gap: 14px 22px; }
+  .directory-layout { grid-template-columns: minmax(0, 1fr) 240px; gap: 24px; }
+  .trip-card { padding: 22px; } .trip-card > a { font-size: 11px; }
+  .store-card-visual { flex-basis: 115px; width: 115px; } .store-card-body { padding: 16px; }
+  .store-data-note { display: none; } .store-card-bottom { justify-content: flex-end; }
+  .store-detail-layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; }
+}
+@media (max-width: 900px) {
+  .desktop-nav { display: none; } .header-actions { margin-left: auto; } .mobile-menu-button { display: inline-flex; }
+  .mobile-nav { display: grid; padding: 8px 24px 20px; border-top: 1px solid var(--line); background: white; }
+  .mobile-nav a { padding: 13px 8px; font-size: 14px; }
+  .directory-hero { gap: 30px; } .directory-hero h1 { font-size: 52px; } .district-sign strong { font-size: 56px; } .district-sign-bottom { flex-direction: column; gap: 3px; }
+  .directory-layout { grid-template-columns: 1fr; } .buyer-sidebar { display: none; }
+  .store-card-visual { flex-basis: 150px; width: 150px; } .store-data-note { display: inline; } .store-card-bottom { justify-content: space-between; }
+  .store-detail-layout { grid-template-columns: 1fr; } .store-actions { position: static; grid-template-columns: 1fr 1fr; align-items: start; }
+  .guide-cards { gap: 14px; } .guide-card { padding: 22px; } .guide-card h3 { font-size: 24px; }
+  .district-context, .footer-grid { gap: 40px; } .footer-grid { grid-template-columns: 1.5fr 1fr; }
+  .store-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .container { width: calc(100% - 36px); }
+  .header-inner { min-height: 68px; gap: 8px; } .header-actions { gap: 8px; }
+  .logo { font-size: 15px; gap: 8px; } .logo-mark { width: 32px; height: 37px; border-radius: 8px 8px 13px 8px; } .logo-mark svg { width: 22px; } .logo small { font-size: 9px; }
+  .saved-label, .language-link svg { display: none; } .language-link { padding-inline: 4px; } .header-actions > a:first-child { gap: 5px; padding-inline: 9px; }
+  .directory-hero { display: block; padding-block: 28px 24px; } .location-line { font-size: 10px; }
+  .directory-hero h1 { font-size: 43px; max-width: 370px; margin-block: 12px; line-height: 1.04; } .hero-description { font-size: 13px; line-height: 1.7; max-width: 420px; } .district-sign { display: none; }
+  .directory-search { min-height: 56px; padding: 12px 14px; gap: 9px; } .directory-search svg { width: 19px; flex-shrink: 0; } .directory-search input { font-size: 16px; }
+  .filter-toggle { display: inline-flex; min-height: 56px; padding-inline: 12px; font-size: 12px; }
+  .directory-filters { display: none; padding-block: 18px; gap: 12px; } .directory-filters.expanded { display: grid; grid-template-columns: 1fr; }
+  .select-filter { justify-content: space-between; border-bottom: 1px solid var(--line); } .select-filter select { text-align: right; font-size: 14px; }
+  .directory-layout { margin-top: 26px; } .results-bar h2 { font-size: 27px; } .view-switch button { font-size: 11px; padding-inline: 9px; }
+  .results-explainer { align-items: flex-start; gap: 12px; } .results-explainer p { font-size: 10px; max-width: 210px; } .results-explainer select { max-width: 135px; font-size: 10px; }
+  .store-card-visual { flex-basis: 74px; width: 74px; margin: 12px 0 12px 12px; } .store-monogram { min-height: 105px; } .store-monogram svg { width: 24px; } .store-monogram span { font-size: 22px; }
+  .store-card-body { padding: 12px; } .store-card h3 { font-size: 23px; padding-top: 4px; } .store-card-title { gap: 8px; } .store-card-title button { width: 36px; min-height: 40px; }
+  .store-address { font-size: 11px; gap: 4px; } .store-address svg { display: none; } .store-tags { margin-top: 9px; gap: 5px; } .store-tags > span { font-size: 9px; padding: 2px 5px; } .store-tags .info-tag svg { display: none; }
+  .store-data-note { display: none; } .store-card-bottom { justify-content: flex-start; margin-top: 12px; padding-top: 8px; } .store-card-bottom > div { gap: 20px; } .store-card-bottom a { min-height: 32px; font-size: 11px; }
+  .store-photo.compact img { height: 118px; } .store-photo.compact figcaption { padding: 4px; font-size: 8px; }
+  .planning-section { padding-block: 36px; } .section-intro h2 { font-size: 34px; } .section-intro > p:last-child { font-size: 13px; }
+  .guide-cards, .district-context, .footer-grid { grid-template-columns: 1fr; gap: 16px; } .guide-card { padding: 23px; } .guide-icon { margin-bottom: 18px; } .guide-card h3 { max-width: 310px; }
+  .district-context { padding-bottom: 36px; gap: 28px; } .district-context > div:first-child p { font-size: 13px; } .lead-box { padding: 23px; }
+  .site-footer { padding-block: 30px; } .footer-links { margin-top: 14px; } .footer-bottom { flex-direction: column; gap: 18px; margin-top: 28px; }
+  .store-page { padding-block: 24px 40px; } .store-heading { display: block; } .store-heading h1 { font-size: 40px; } .store-page .sub { font-size: 13px; }
+  .store-actions { grid-template-columns: 1fr; } .detail-table th { width: 95px; } .detail-table th, .detail-table td { padding: 13px 11px; font-size: 12px; }
+  .buying-details, .buyer-questions { padding: 22px; } .buying-details h2, .buyer-questions h2 { font-size: 29px; } .buying-details li { font-size: 13px; }
+  .source-note { font-size: 10px; } .store-grid { grid-template-columns: 1fr; } .store-grid .store-card-visual { display: block; }
+  .prose { padding-block: 26px 48px; } .prose h1 { font-size: 39px; } .prose .lede { font-size: 16px; } .prose p, .prose li { font-size: 14px; }
+  .buyer-worksheet { padding: 20px; } .worksheet-fields { grid-template-columns: 1fr; } .worksheet-notes { grid-column: 1; }
+  .saved-store { gap: 6px; } .saved-store > label { padding: 4px; } .saved-store .store-card-visual { display: none; }
+  .saved-page h1 { font-size: 40px; } .saved-intro { font-size: 13px; } .compare-table th:first-child { width: 120px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+@media print {
+  .site-header, .site-footer, .print-worksheet, .adsbygoogle, .worksheet-page .guide-copy, .saved-screen { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11px; }
+  .container, .worksheet-page .prose { width: 100%; max-width: none; padding: 0; }
+  .buyer-worksheet { border: 0; padding: 0; margin: 0; border-radius: 0; }
+  .worksheet-heading h2 { font-size: 22px; } .worksheet-fields { grid-template-columns: 1fr 1fr; gap: 12px 22px; } .worksheet-field { break-inside: avoid; } .worksheet-field dd { min-height: 35px; border-bottom-color: #000; } .worksheet-notes { grid-column: 1 / -1; } .worksheet-notes dd { min-height: 60px; }
+  .prose .worksheet-intro, .worksheet-field dt, .prose .worksheet-reminder { font-size: 11px; color: #000; }
+  .visit-print-only { display: block; } .visit-print-only h1 { font-size: 26px; margin-bottom: 12px; } .visit-print-only h2 { font-size: 20px; margin-block: 18px 10px; } .visit-print-store { break-inside: avoid; padding-block: 14px; border-bottom: 1px solid #777; } .visit-print-store h3 { font-size: 17px; } .visit-print-store p { margin-block: 5px; } .visit-print-notes { min-height: 45px; border-bottom: 1px solid #777; }
+}

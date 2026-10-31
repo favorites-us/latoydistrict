@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-30",
+  "source": "Authenticated GA Home UI",
+  "property_id": "545044706",
+  "date_range": "Last 28 days (UI preset)",
+  "comparison": "previous period, UI reported",
+  "active_users": 314,
+  "active_users_change_percent": 37.1,
+  "views": 790,
+  "views_change_percent": 45.8,
+  "new_users": 312,
+  "new_users_change_percent": 36.8,
+  "key_events": 0,
+  "limits": [
+    "UI preset includes recent processing dates.",
+    "No production-host or internal-traffic filter added in UI.",
+    "Key events are not all inquiry events.",
+    "Do not compare directly with the differently dated Oct14 API report."
+  ],
+  "api_attempt": "403 insufficient authentication scopes; UI used instead"
+}

@@ -1,4 +1,9 @@
 import Link from "next/link";
+import { Phone, Globe2, MapPin } from "lucide-react";
+import SaveStoreButton from "@/components/SaveStoreButton";
+import QuoteDraft from "@/components/QuoteDraft";
+import StorePhoto from "@/components/StorePhoto";
+import { photosForStore } from "@/lib/photos";
 import JsonLd from "@/components/JsonLd";
 import StoreCard from "@/components/StoreCard";
 import StoreInquiryForm from "@/components/StoreInquiryForm";
@@ -10,16 +15,7 @@ import { storeJsonLd } from "@/lib/jsonld";
 import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
 import { buyerQuestions } from "@/lib/content/buyer-questions";
 
-// Defense in depth: website comes from world-editable OSM data. Only render http(s).
-function httpUrl(u: string | null | undefined): string | null {
-  if (!u) return null;
-  try {
-    const p = new URL(u);
-    return (p.protocol === "http:" || p.protocol === "https:") && !p.username && !p.password ? p.toString() : null;
-  } catch {
-    return null;
-  }
-}
+import { httpUrl } from "@/lib/urls";
 
 function SourceNote({ source, locale, slug }: { source?: OnlineSource; locale: Locale; slug?: string }) {
   if (!source) return null;
@@ -38,6 +34,8 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
   const nearby = stores.filter((s) => s.block === store.block && s.slug !== store.slug).slice(0, 6);
   const mapsQuery = encodeURIComponent(fullAddress(store));
   const questions = buyerQuestions[store.slug]?.[locale];
+  const gallery = photosForStore(store.slug);
+  const es = locale === "es";
 
   // Any business-linked URL goes here — website, socials, Yelp, etc. All
   // pass through httpUrl() since links can originate from world-editable data.
@@ -58,7 +56,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
   return (
     <>
       <Header locale={locale} altPath={`/stores/${store.slug}`} />
-      <main lang={locale}>
+      <main id="main-content" lang={locale}>
         <JsonLd data={storeJsonLd(store)} />
         <StoreViewEvent slug={store.slug} />
         <div className="container store-page">
@@ -67,24 +65,31 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
             {" / "}
             {BLOCK_LABELS[store.block]}
           </nav>
-          <h1>{store.name}</h1>
+          <div className="store-heading"><div><h1>{store.name}</h1>
           <p className="sub">
             {fullAddress(store)} · {BLOCK_LABELS[store.block]}
           </p>
           <div className="chips">
-            <span className={`badge brand`}>{t(locale, `wr_${store.wholesale_retail}` as DictKey)}</span>
+            <span className={store.field_sources?.wholesale_retail?.type === "business" ? "badge brand" : "badge"}>{t(locale, `wr_${store.wholesale_retail}` as DictKey)}</span>
             {store.category.map((c) => (
               <span key={c} className="badge">
                 {catLabel(locale, c)}
               </span>
             ))}
           </div>
+          </div><SaveStoreButton slug={store.slug} name={store.name} locale={locale} /></div>
           <SourceNote source={store.field_sources?.wholesale_retail} locale={locale} />
+          {!store.field_sources?.wholesale_retail && <p className="source-note">{es ? "Clasificación del registro; confirme las opciones de compra." : "Registration classification; confirm buying options."}</p>}
           {store.verified_at ? (
             <p className="note ok">
               ✓ {t(locale, "verified_note")} — {store.verified_at}
             </p>
           ) : null}
+          <div className="store-detail-layout"><div className="store-main-column">
+          {gallery.length > 0 && <section id="photos" aria-label={es ? "Imágenes del catálogo" : "Catalog images"}>
+            <StorePhoto photo={gallery[0]} locale={locale} />
+            {gallery.length > 1 && <details className="mb-6 rounded-xl border border-border bg-white p-4"><summary className="text-sm font-semibold text-primary">{es ? "Más imágenes del catálogo" : "More catalog images"} ({gallery.length - 1})</summary>{gallery.slice(1).map((photo) => <StorePhoto key={photo.id} photo={photo} locale={locale} />)}</details>}
+          </section>}
           <table className="detail-table">
             <tbody>
               <tr>
@@ -194,12 +199,21 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
             <Link href={localePath(locale, "/guide/buying-checklist")}>{t(locale, "worksheet_link")}</Link>
           </section> : null}
           {!store.verified_at ? <p className="fineprint">{t(locale, "unverified_note")}</p> : null}
-          <p>
+          <p className="claim-link">
             <a href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
               {t(locale, "claim_cta")} ↗
             </a>
           </p>
-          <StoreInquiryForm locale={locale} storeSlug={store.slug} storeName={store.name} />
+          </div><aside className="store-actions"><div className="store-contact-box">
+            <h2>{es ? "Prepare su compra" : "Plan your purchase"}</h2><p>{es ? "Confirme los productos y condiciones directamente con el negocio." : "Confirm items and buying terms directly with the business."}</p>
+            <div className="store-contact-buttons">
+              {store.phone && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={16} />{es ? "Llamar al negocio" : "Call the business"}</StoreContactLink>}
+              {httpUrl(store.links?.website) && <StoreContactLink href={httpUrl(store.links?.website)!} slug={store.slug} method="website" external><Globe2 size={16} />{es ? "Sitio del negocio" : "Business website"}</StoreContactLink>}
+              <QuoteDraft name={store.name} slug={store.slug} locale={locale} />
+              <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="nofollow noopener noreferrer"><MapPin size={16} />{es ? "Ver dirección en Maps" : "Open address in Maps"}</a>
+              <SaveStoreButton slug={store.slug} name={store.name} locale={locale} />
+            </div>
+          </div><StoreInquiryForm locale={locale} storeSlug={store.slug} storeName={store.name} /></aside></div>
           {nearby.length > 0 ? (
             <>
               <h2 style={{ marginTop: 36 }}>

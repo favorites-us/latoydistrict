@@ -10,3 +10,9 @@ next-env.d.ts
 .DS_Store
 .vercel
 .playwright-mcp/
+
+# Downloaded photo review bytes stay outside Git history.
+artifacts/redesign-20261030/photo-preview/
+supabase/.temp/
+# Browser QA screenshots can contain copied catalog photos.
+artifacts/redesign-20261030/*.jpg

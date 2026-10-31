@@ -1,0 +1,52 @@
+{
+  "photos": [
+    {
+      "id": "american-silk-catalog-1",
+      "store_slug": "american-silk-inc-340",
+      "status": "published",
+      "storage_path": "american-silk-catalog-1.jpg",
+      "source_page_url": "https://www.americansilkinc.com/catalog",
+      "source_image_url": "https://static.wixstatic.com/media/0a6d3a_755ecefbd8d64cf499a1d76d924ce59f~mv2.jpg/v1/fill/w_980,h_1268,q_90,enc_avif,quality_auto/0a6d3a_755ecefbd8d64cf499a1d76d924ce59f~mv2.jpg",
+      "source_label": "American Silk catalog",
+      "retrieved_at": "2026-10-30",
+      "rights_status": "not_confirmed",
+      "publication_basis": "operator_requested_opt_out_2026_10_30",
+      "width": 980,
+      "height": 1268,
+      "mime_type": "image/jpeg",
+      "sha256": "f8f2222309d0754ea7dfc3c37d0a5af3870442977d137f9e0ada3dededcba28b",
+      "caption": {
+        "en": "American Silk catalog page 1. Printed prices, pack sizes and availability need confirmation with the business.",
+        "es": "P\u00e1gina 1 del cat\u00e1logo de American Silk. Confirme precios impresos, unidades por paquete y disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Artificial flower bouquets pictured in the American Silk catalog",
+        "es": "Ramos de flores artificiales en el cat\u00e1logo de American Silk"
+      }
+    },
+    {
+      "id": "american-silk-catalog-2",
+      "store_slug": "american-silk-inc-340",
+      "status": "published",
+      "storage_path": "american-silk-catalog-2.jpg",
+      "source_page_url": "https://www.americansilkinc.com/catalog",
+      "source_image_url": "https://static.wixstatic.com/media/0a6d3a_2e446d48a70c4c50a88dee9ca6b39e7f~mv2.jpg/v1/fill/w_980,h_1268,q_90,enc_avif,quality_auto/0a6d3a_2e446d48a70c4c50a88dee9ca6b39e7f~mv2.jpg",
+      "source_label": "American Silk catalog",
+      "retrieved_at": "2026-10-30",
+      "rights_status": "not_confirmed",
+      "publication_basis": "operator_requested_opt_out_2026_10_30",
+      "width": 980,
+      "height": 1268,
+      "mime_type": "image/jpeg",
+      "sha256": "2e90472e41d0326b2c1d36f367ec2132fb092c44ff4486e96a73670ecad5bdad",
+      "caption": {
+        "en": "American Silk catalog page 2. Printed prices, pack sizes and availability need confirmation with the business.",
+        "es": "P\u00e1gina 2 del cat\u00e1logo de American Silk. Confirme precios impresos, unidades por paquete y disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Artificial flower bouquets pictured in the American Silk catalog",
+        "es": "Ramos de flores artificiales en el cat\u00e1logo de American Silk"
+      }
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { track } from "@/lib/analytics";
 
 export default function StoreViewEvent({ slug }: { slug: string }) {
   useEffect(() => {
-    (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "store_view", {
+    track("store_view", {
       store_slug: slug,
     });
   }, [slug]);

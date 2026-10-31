@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries("/guide/visiting", 0.9),
     entries("/guide/wholesale-basics", 0.8),
     entries("/guide/buying-checklist", 0.8),
+    entries("/photos", 0.2),
     ...Object.keys(buyerGuides).map((b) => entries(`/guide/for/${b}`, 0.8)),
     ...stores.map((s) => entries(`/stores/${s.slug}`, 0.6)),
   ].flat();

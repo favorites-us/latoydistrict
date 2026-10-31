@@ -1,0 +1,22 @@
+
+> test
+> node --conditions=react-server --import tsx --test tests/*.test.ts
+
+✔ corrupted, stale and oversized saved lists do not become arbitrary suppliers (1.162916ms)
+✔ official product names are searchable without treating policy text as inventory (0.617083ms)
+✔ filters intersect, closed businesses are excluded, and zero matches stay empty (0.634667ms)
+✔ quote drafts keep user quantities but do not invent a quote, minimum or availability (0.115625ms)
+✔ report validation rejects cross-origin, malformed, automated and incomplete submissions (2.745833ms)
+✔ permanent suppression survives file deletion failure and private-inbox cleanup; repeated reports are idempotent (1.920375ms)
+✔ suppression storage failure never claims success; private request storage failure does not undo a successful takedown (0.3775ms)
+✔ a removal racing with image download is checked again before bytes are returned (0.103083ms)
+✔ private storage diagnostic cleans only its own temporary file (0.590916ms)
+✔ directory inquiries store privately, reject unknown suppliers and report backend failures (0.440459ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 319.099167

@@ -1,0 +1,188 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com",
+      "assets": 14,
+      "status": "pass"
+    },
+    {
+      "path": "/es",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es",
+      "assets": 14,
+      "status": "pass"
+    },
+    {
+      "path": "/saved",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/saved",
+      "assets": 16,
+      "status": "pass"
+    },
+    {
+      "path": "/es/saved",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/saved",
+      "assets": 16,
+      "status": "pass"
+    },
+    {
+      "path": "/photos",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/photos",
+      "assets": 12,
+      "status": "pass"
+    },
+    {
+      "path": "/es/photos",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/photos",
+      "assets": 12,
+      "status": "pass"
+    },
+    {
+      "path": "/stores/american-silk-inc-340",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/stores/american-silk-inc-340",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/es/stores/american-silk-inc-340",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/stores/american-silk-inc-340",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/stores/california-balloon-house-447",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/stores/california-balloon-house-447",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/es/stores/california-balloon-house-447",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/stores/california-balloon-house-447",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/stores/casa-manga-218",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/stores/casa-manga-218",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/es/stores/casa-manga-218",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/stores/casa-manga-218",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/stores/tom-s-model-501",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/stores/tom-s-model-501",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/es/stores/tom-s-model-501",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/stores/tom-s-model-501",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/stores/abc-toys-wholesale-323",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/stores/abc-toys-wholesale-323",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/es/stores/abc-toys-wholesale-323",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/stores/abc-toys-wholesale-323",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/stores/bigmart-inc-230",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/stores/bigmart-inc-230",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/es/stores/bigmart-inc-230",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/stores/bigmart-inc-230",
+      "assets": 13,
+      "status": "pass"
+    },
+    {
+      "path": "/guide/buying-checklist",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/guide/buying-checklist",
+      "assets": 10,
+      "status": "pass"
+    },
+    {
+      "path": "/es/guide/buying-checklist",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/guide/buying-checklist",
+      "assets": 10,
+      "status": "pass"
+    },
+    {
+      "path": "/guide/visiting",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/guide/visiting",
+      "assets": 10,
+      "status": "pass"
+    },
+    {
+      "path": "/es/guide/visiting",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/guide/visiting",
+      "assets": 10,
+      "status": "pass"
+    },
+    {
+      "path": "/guide/wholesale-basics",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/guide/wholesale-basics",
+      "assets": 10,
+      "status": "pass"
+    },
+    {
+      "path": "/es/guide/wholesale-basics",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/guide/wholesale-basics",
+      "assets": 10,
+      "status": "pass"
+    },
+    {
+      "path": "/guide/for/resellers",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/guide/for/resellers",
+      "assets": 10,
+      "status": "pass"
+    },
+    {
+      "path": "/es/guide/for/resellers",
+      "h1_count": 1,
+      "canonical": "https://toydistrictlosangeles.com/es/guide/for/resellers",
+      "assets": 10,
+      "status": "pass"
+    }
+  ],
+  "source_facts": "all preserved in EN/ES",
+  "result": "pass"
+}

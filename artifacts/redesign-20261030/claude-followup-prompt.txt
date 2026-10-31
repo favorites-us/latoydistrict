@@ -1,0 +1,341 @@
+You are performing a follow-up review of the LA Toy District redesign. This is real Claude Code review requested by the user. Use only supplied files; no tools or network. Earlier P1: block depended on handled=false and exact notes; now separate anonymous photo_block rows are persistent, separate private request data can be removed. Actual production credentials cannot be downloaded; bounded authenticated check operation validates actual table columns/constraints with two explicitly labelled temporary diagnostic rows, removes them, verifies cleanup before any publishing. No actual photo is blocked and no ownership is asserted. Tests currently pass; UI fixes address source labels, hour rules, safe URL, pre-hydration image error and report result focus. Review only for remaining release-blocking bugs or privacy/security/operational issues; do not invent demands or call this a live test. State residual caveats concisely in Korean.
+
+FILE web/lib/server/photo-service.ts
+import "server-only";
+import { database, PHOTO_BUCKET } from "./supabase";
+import type { StorePhoto } from "@/lib/photos";
+
+export async function photoIsReported(photo: StorePhoto) {
+  const db = database();
+  if (!db) throw new Error("storage_unavailable");
+  // Permanent anonymous suppression records are separate from request inbox
+  // rows. Marking a request handled or editing its notes never unblocks a photo.
+  const { data, error } = await db.from("leads").select("id").eq("buyer_type", "photo_block").eq("store_name", photo.id).limit(1);
+  if (error) throw new Error("report_check_failed");
+  return !!data?.length;
+}
+
+export async function removePhoto(photo: StorePhoto, report: { name: string; contact: string; reason: string; locale: string }) {
+  const db = database();
+  if (!db) throw new Error("storage_unavailable");
+  // Persist the block before deleting bytes. Every image request checks this
+  // record, including requests to older deployments. Failure must stay closed.
+  const blockId = crypto.randomUUID();
+  const blockState = { photo_id: photo.id, bytes_removed: false };
+  // A bulk insert is transactional: either both the anonymous block and the
+  // private request are persisted, or neither is. No schema migration needed.
+  const { error } = await db.from("leads").insert([
+    { id: blockId, name: "Photo suppression", contact: "", items: JSON.stringify(blockState), locale: "en", buyer_type: "photo_block", store_slug: photo.store_slug, store_name: photo.id, notes: "Permanent suppression record. Keep when archiving the request inbox.", handled: false },
+    { name: report.name, contact: report.contact, items: report.reason, locale: report.locale, buyer_type: "photo_removal", store_slug: photo.store_slug, store_name: photo.source_label, notes: `photo_id:${photo.id}`, handled: false },
+  ]);
+  if (error) throw new Error("report_save_failed");
+  const { error: deletionError } = await db.storage.from(PHOTO_BUCKET).remove([photo.storage_path]);
+  // Best-effort operational audit. An audit-write failure cannot remove a block.
+  await db.from("leads").update({ items: JSON.stringify({ ...blockState, bytes_removed: !deletionError }) }).eq("id", blockId);
+  return { hidden: true, bytes_removed: !deletionError };
+}
+
+
+FILE web/app/api/admin/photos/route.ts
+import { createHash, timingSafeEqual } from "node:crypto";
+import { NextResponse } from "next/server";
+import { photoById } from "@/lib/photos";
+import { database, PHOTO_BUCKET } from "@/lib/server/supabase";
+import { photoIsReported, removePhoto } from "@/lib/server/photo-service";
+import { limitedJson, textField } from "@/lib/request-validation";
+
+export const runtime = "nodejs";
+export const maxDuration = 30;
+export async function POST(request: Request) {
+  const configured = process.env.PHOTO_ADMIN_TOKEN;
+  const supplied = request.headers.get("authorization")?.replace(/^Bearer /, "") ?? "";
+  if (!configured || configured.length < 32 || !supplied || !timingSafeEqual(createHash("sha256").update(configured).digest(), createHash("sha256").update(supplied).digest())) return NextResponse.json({ ok: false }, { status: 401 });
+  const body = await limitedJson(request, 3_000_000);
+  const photo = body && photoById(textField(body.photo_id, 120));
+  if (!body || !photo) return NextResponse.json({ ok: false }, { status: 400 });
+  const db = database();
+  if (!db) return NextResponse.json({ ok: false, reason: "storage_unavailable" }, { status: 503 });
+  try {
+    if (body.action === "check") {
+      // Bounded integration check: no real person, claim, or photo is affected.
+      // Validate the actual table's columns/types/constraints before publishing.
+      const ids = [crypto.randomUUID(), crypto.randomUUID()];
+      const rows = ["photo_block", "photo_removal"].map((buyer_type, index) => ({ id: ids[index], name: "SYSTEM: photo schema check", contact: "", buyer_type, items: "Temporary schema check. No removal request or ownership claim.", locale: "en", store_slug: null, store_name: `__photo_schema_check_${ids[0]}`, handled: true, notes: "Temporary system diagnostic; safe to delete." }));
+      const { error: insertError } = await db.from("leads").insert(rows);
+      if (insertError) return NextResponse.json({ ok: false, reason: "report_schema_unavailable" }, { status: 503 });
+      const { error: cleanupError } = await db.from("leads").delete().in("id", ids);
+      if (cleanupError) return NextResponse.json({ ok: false, reason: "schema_check_cleanup_failed", diagnostic_ids: ids }, { status: 503 });
+      const { data, error: readError } = await db.from("leads").select("id").in("id", ids);
+      if (readError || data?.length) return NextResponse.json({ ok: false, reason: "schema_check_cleanup_unconfirmed", diagnostic_ids: ids }, { status: 503 });
+      return NextResponse.json({ ok: true, report_schema: "validated", diagnostic_rows_remaining: 0 });
+    }
+    if (body.action === "remove") {
+      const result = await removePhoto(photo, { name: "Directory operator", contact: "", reason: textField(body.reason, 1500) || "Removed by operator", locale: "en" });
+      return NextResponse.json({ ok: true, ...result });
+    }
+    if (body.action !== "publish" || photo.status !== "published" || typeof body.image_base64 !== "string") return NextResponse.json({ ok: false }, { status: 400 });
+    if (await photoIsReported(photo)) return NextResponse.json({ ok: false, reason: "removal_request_pending" }, { status: 409 });
+    const bytes = Buffer.from(body.image_base64, "base64");
+    if (!bytes.length || bytes.length > 2_000_000 || createHash("sha256").update(bytes).digest("hex") !== photo.sha256) return NextResponse.json({ ok: false, reason: "unreviewed_bytes" }, { status: 400 });
+    const { data: bucket, error: bucketError } = await db.storage.getBucket(PHOTO_BUCKET);
+    if (bucket?.public) return NextResponse.json({ ok: false, reason: "bucket_must_be_private" }, { status: 409 });
+    if (!bucket) {
+      const { error } = await db.storage.createBucket(PHOTO_BUCKET, { public: false, fileSizeLimit: 2_000_000, allowedMimeTypes: ["image/jpeg", "image/png", "image/webp"] });
+      if (error) return NextResponse.json({ ok: false, reason: bucketError ? "bucket_unavailable" : "bucket_create_failed" }, { status: 503 });
+    }
+    const { error } = await db.storage.from(PHOTO_BUCKET).upload(photo.storage_path, bytes, { contentType: photo.mime_type, cacheControl: "0", upsert: false });
+    if (error) return NextResponse.json({ ok: false, reason: "upload_failed_or_exists" }, { status: 409 });
+    // A report racing with an upload remains blocked and is never auto-restored.
+    if (await photoIsReported(photo)) { await db.storage.from(PHOTO_BUCKET).remove([photo.storage_path]); return NextResponse.json({ ok: false, reason: "removal_request_pending" }, { status: 409 }); }
+    return NextResponse.json({ ok: true, photo_id: photo.id });
+  } catch { return NextResponse.json({ ok: false, reason: "storage_error" }, { status: 503 }); }
+}
+
+
+FILE web/app/api/store-photos/[id]/route.ts
+import { photoById } from "@/lib/photos";
+import { database, PHOTO_BUCKET } from "@/lib/server/supabase";
+import { photoIsReported } from "@/lib/server/photo-service";
+
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+const headers = { "Cache-Control": "private, no-store, max-age=0", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store", "X-Robots-Tag": "noindex, noimageindex", "X-Content-Type-Options": "nosniff" };
+
+export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const photo = photoById(id);
+  if (!photo || photo.status !== "published") return new Response(null, { status: 404, headers });
+  try {
+    const db = database();
+    if (!db) return new Response(null, { status: 503, headers });
+    if (await photoIsReported(photo)) return new Response(null, { status: 410, headers });
+    const { data, error } = await db.storage.from(PHOTO_BUCKET).download(photo.storage_path);
+    if (error || !data) return new Response(null, { status: 404, headers });
+    // A second check prevents a concurrent in-flight download from starting a
+    // response after a removal request has already been recorded.
+    if (await photoIsReported(photo)) return new Response(null, { status: 410, headers });
+    return new Response(data, { headers: { ...headers, "Content-Type": photo.mime_type } });
+  } catch { return new Response(null, { status: 503, headers }); }
+}
+
+
+FILE web/tests/photo-removal.test.ts
+import test from "node:test";
+import assert from "node:assert/strict";
+import { limitedJson, sameOrigin, validPhotoReport } from "../lib/request-validation";
+import { GET } from "../app/api/store-photos/[id]/route";
+import { POST as reportPhoto } from "../app/api/photo-reports/route";
+import { POST as administerPhoto } from "../app/api/admin/photos/route";
+import { photos } from "../lib/photos";
+
+const origin = "https://toydistrictlosangeles.com";
+const photo = photos[0];
+function request(path: string, body: unknown, requestOrigin = origin) { return new Request(`${origin}${path}`, { method: "POST", headers: { "Content-Type": "application/json", Origin: requestOrigin }, body: JSON.stringify(body) }); }
+
+test("report validation rejects cross-origin, malformed, automated and incomplete submissions", async () => {
+  assert.equal(sameOrigin(request("/api/photo-reports", {}, "https://unrelated.example")), false);
+  assert.equal(await limitedJson(request("/api/photo-reports", [])), null);
+  assert.equal(await limitedJson(request("/api/photo-reports", { data: "x".repeat(13000) })), null);
+  assert.equal(validPhotoReport({ name: "Owner", reason: "Please remove my photograph", rights_holder: "no" }), null);
+  assert.equal(validPhotoReport({ name: "Owner", reason: "Please remove my photograph", rights_holder: "yes", website: "spam" }), null);
+  assert.equal(validPhotoReport({ name: "Owner", contact: "not-an-email", reason: "Please remove my photograph", rights_holder: "yes" }), null);
+  assert.ok(validPhotoReport({ name: "Owner", reason: "Please remove my photograph", rights_holder: "yes" }));
+  assert.equal((await reportPhoto(request("/api/photo-reports", {}, "https://unrelated.example"))).status, 403);
+  assert.equal((await administerPhoto(request("/api/admin/photos", { action: "publish", photo_id: photo.id }))).status, 401);
+});
+
+test("a persisted removal blocks image bytes even when storage deletion fails; repeated reports are idempotent", async (context) => {
+  const previousUrl = process.env.SUPABASE_URL; const previousKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  process.env.SUPABASE_URL = "https://photo-test.supabase.co"; process.env.SUPABASE_SERVICE_ROLE_KEY = "test-service-key";
+  let records: Record<string, unknown>[] = []; let inserts = 0; let downloads = 0; let failReads = false;
+  const fetchMock = context.mock.method(globalThis, "fetch", async (input: string | URL | Request, init?: RequestInit) => {
+    const url = new URL(typeof input === "string" || input instanceof URL ? input.toString() : input.url);
+    const method = init?.method ?? "GET";
+    assert.equal(url.hostname, "photo-test.supabase.co", "tests must not contact a real backend");
+    if (url.pathname === "/rest/v1/leads") {
+      if (method === "POST") { records.push(...JSON.parse(String(init?.body))); inserts++; return new Response(null, { status: 201 }); }
+      if (method === "PATCH") { for (const row of records) if (`eq.${row.id}` === url.searchParams.get("id")) Object.assign(row, JSON.parse(String(init?.body))); return new Response(null, { status: 204 }); }
+      const matching = records.filter((row) => [...url.searchParams].every(([key, value]) => !value.startsWith("eq.") || String(row[key]) === value.slice(3)));
+      return new Response(JSON.stringify(failReads ? { message: "unavailable" } : matching), { status: failReads ? 503 : 200, headers: { "Content-Type": "application/json" } });
+    }
+    if (method === "DELETE") return new Response(JSON.stringify({ statusCode: "503", message: "storage unavailable" }), { status: 503, headers: { "Content-Type": "application/json" } });
+    if (url.pathname.includes("/storage/v1/object/")) { downloads++; return new Response(new Uint8Array([255, 216, 255, 217]), { headers: { "Content-Type": "image/jpeg" } }); }
+    throw new Error(`Unexpected endpoint ${url.pathname}`);
+  });
+  try {
+    const get = () => GET(new Request(`${origin}/api/store-photos/${photo.id}`), { params: Promise.resolve({ id: photo.id }) });
+    const before = await get(); assert.equal(before.status, 200); assert.match(before.headers.get("cache-control")!, /no-store/); assert.match(before.headers.get("x-robots-tag")!, /noimageindex/); assert.equal(downloads, 1);
+    const payload = { photo_id: photo.id, name: "Test owner", reason: "Test photo removal request", rights_holder: "yes", locale: "en" };
+    const removed = await reportPhoto(request("/api/photo-reports", payload)); assert.equal(removed.status, 200); assert.equal((await removed.json()).hidden, true);
+    assert.equal(records.length, 2, "private request and anonymous suppression must both be persisted");
+    assert.equal(records.find((row) => row.buyer_type === "photo_block")?.contact, "");
+    assert.equal(JSON.parse(String(records.find((row) => row.buyer_type === "photo_block")?.items)).bytes_removed, false);
+    // Normal inbox handling and removal of personal request data must never
+    // make the copied photograph available again.
+    records = records.filter((row) => row.buyer_type !== "photo_removal");
+    for (const row of records) { row.handled = true; row.notes = "Archived by operator"; }
+    assert.equal((await get()).status, 410); assert.equal(downloads, 1, "blocked image must never reach byte download");
+    const repeat = await reportPhoto(request("/api/photo-reports", payload)); assert.equal(repeat.status, 200); assert.equal(inserts, 1);
+    failReads = true; assert.equal((await get()).status, 503, "report-store errors must fail closed");
+    assert.equal((await GET(new Request(`${origin}/api/store-photos/missing`), { params: Promise.resolve({ id: "missing" }) })).status, 404);
+  } finally {
+    fetchMock.mock.restore();
+    if (previousUrl === undefined) delete process.env.SUPABASE_URL; else process.env.SUPABASE_URL = previousUrl;
+    if (previousKey === undefined) delete process.env.SUPABASE_SERVICE_ROLE_KEY; else process.env.SUPABASE_SERVICE_ROLE_KEY = previousKey;
+  }
+});
+
+
+FILE web/components/PhotoReport.tsx
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from "./ui/dialog";
+import { Input, Textarea } from "./ui/input";
+import { Button } from "./ui/button";
+import { track } from "@/lib/analytics";
+import type { Locale } from "@/lib/i18n";
+import type { StorePhoto } from "@/lib/photos";
+
+export default function PhotoReport({ photo, locale, onRemoved }: { photo: StorePhoto; locale: Locale; onRemoved?: () => void }) {
+  const es = locale === "es";
+  const [state, setState] = useState<"idle" | "busy" | "ok" | "err">("idle");
+  const [hidden, setHidden] = useState(false);
+  const resultRef = useRef<HTMLParagraphElement>(null);
+  useEffect(() => { if (state === "ok") resultRef.current?.focus(); }, [state]);
+  return <Dialog onOpenChange={(open) => { if (!open && hidden) onRemoved?.(); }}><DialogTrigger asChild><button type="button" className="min-h-10 text-xs text-primary underline underline-offset-4">{es ? "Solicitar eliminación de esta foto" : "Request removal of this photo"}</button></DialogTrigger><DialogContent closeLabel={es ? "Cerrar" : "Close"}>
+    <DialogTitle className="pr-6 font-display text-3xl">{es ? "Solicitar eliminación de foto" : "Request photo removal"}</DialogTitle><DialogDescription className="mt-3 text-sm text-muted-foreground">{es ? "Si le pertenece la foto o representa al titular, envíe una solicitud. Retiramos la foto de nuestro sitio al procesar correctamente la solicitud." : "If you own the photo or represent its owner, send a request. We remove it from our site when the request is successfully processed."}</DialogDescription>
+    <p ref={resultRef} role="status" tabIndex={-1} className={state === "ok" ? "mt-6 rounded-lg bg-secondary p-4 text-sm" : "sr-only"}>{state === "ok" ? (hidden ? (es ? "Foto retirada de nuestro sitio. No podemos borrar copias ya descargadas por terceros." : "The photo has been removed from our site. Copies already downloaded by others cannot be recalled.") : (es ? "Solicitud guardada. No pudimos retirar la foto automáticamente; escriba al correo de abajo para seguimiento." : "Your request is saved. Automatic removal did not complete; email the address below for follow-up.")) : ""}</p>
+    {state !== "ok" && <form className="mt-6 grid gap-4" onSubmit={async (event) => {
+      event.preventDefault(); setState("busy"); const data = Object.fromEntries(new FormData(event.currentTarget));
+      try { const response = await fetch("/api/photo-reports", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...data, photo_id: photo.id, locale }) }); const body = await response.json(); if (!response.ok) throw new Error(); setHidden(body.hidden === true); setState("ok"); track("photo_removal_submit", { photo_id: photo.id }); }
+      catch { setState("err"); }
+    }}>
+      <p className="text-xs text-muted-foreground">{photo.source_label} / {photo.id}</p>
+      <label className="field-label">{es ? "Su nombre o negocio" : "Your name or business"}<Input name="name" required maxLength={120} autoComplete="organization" /></label>
+      <label className="field-label">{es ? "Correo para seguimiento (opcional)" : "Email for follow-up (optional)"}<Input name="contact" type="email" maxLength={200} autoComplete="email" /></label>
+      <label className="field-label">{es ? "Motivo" : "Reason"}<Textarea name="reason" required minLength={10} maxLength={1500} /></label>
+      <label className="honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
+      <label className="flex items-start gap-3 text-xs"><input name="rights_holder" type="checkbox" value="yes" required />{es ? "Soy titular de esta foto o estoy autorizado para representarlo." : "I own this photo or am authorized to represent its owner."}</label>
+      <p className="text-xs text-muted-foreground">{es ? "Usamos estos datos para gestionar la solicitud. No se publican ni se añaden a listas comerciales." : "These details are used to handle your request. They are not published or added to marketing lists."}</p>
+      <Button disabled={state === "busy"} type="submit">{state === "busy" ? (es ? "Procesando…" : "Processing…") : (es ? "Solicitar eliminación" : "Request removal")}</Button>
+      {state === "err" && <p role="alert" className="text-sm text-red-700">{es ? "No se pudo procesar la solicitud. Use el correo de abajo." : "The request could not be processed. Please use the email below."}</p>}
+    </form>}
+    <p className="mt-5 break-words text-xs"><a className="text-primary underline" href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Photo removal: ${photo.id}`)}`}>hello@toydistrictlosangeles.com</a></p>
+  </DialogContent></Dialog>;
+}
+
+
+FILE web/components/StorePhoto.tsx
+"use client";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { ImageOff } from "lucide-react";
+import type { StorePhoto as Photo } from "@/lib/photos";
+import { localePath, type Locale } from "@/lib/i18n";
+import PhotoReport from "./PhotoReport";
+
+export default function StorePhoto({ photo, locale, compact = false }: { photo: Photo; locale: Locale; compact?: boolean }) {
+  const [unavailable, setUnavailable] = useState(false);
+  const image = useRef<HTMLImageElement>(null);
+  useEffect(() => {
+    if (image.current?.complete && image.current.naturalWidth === 0) setUnavailable(true);
+  }, []);
+  const es = locale === "es";
+  if (unavailable) return <div className="photo-unavailable"><ImageOff size={22} /><span>{es ? "Foto no disponible" : "Photo unavailable"}</span></div>;
+  return <figure className={`store-photo${compact ? " compact" : ""}`}>
+    <img ref={image} src={`/api/store-photos/${photo.id}`} alt={photo.alt[locale]} width={photo.width} height={photo.height} loading="lazy" decoding="async" onError={() => setUnavailable(true)} />
+    <figcaption>{compact ? <><p>{es ? "Catálogo. Confirme precios." : "Catalog. Confirm prices."}</p><Link href={localePath(locale, `/stores/${photo.store_slug}#photos`)}>{es ? "Fuente y derechos" : "Source & rights"}</Link></> : <><p>{photo.caption[locale]}</p><p>{es ? "Fuente:" : "Source:"} <a href={photo.source_page_url} target="_blank" rel="nofollow noopener noreferrer">{photo.source_label}</a> · <time dateTime={photo.retrieved_at}>{photo.retrieved_at}</time></p><p>{es ? "No se ha confirmado el permiso de uso. No implica afiliación." : "Permission to reuse has not been confirmed. No affiliation implied."}</p><PhotoReport photo={photo} locale={locale} onRemoved={() => setUnavailable(true)} /></>}</figcaption>
+  </figure>;
+}
+
+
+FILE web/components/pages/SavedPage.tsx
+"use client";
+
+import { useMemo, useState } from "react";
+import Link from "next/link";
+import { Bookmark, Columns3, Printer, X } from "lucide-react";
+import { Header, Footer } from "@/components/SiteChrome";
+import { useBuyer } from "@/components/BuyerProvider";
+import StoreCard from "@/components/StoreCard";
+import { Button, buttonVariants } from "@/components/ui/button";
+import QuoteDraft from "@/components/QuoteDraft";
+import { BLOCK_LABELS, fullAddress, stores, type OnlineSource, type Store } from "@/lib/stores";
+import { catLabel, localePath, t, type Locale } from "@/lib/i18n";
+import { buyerQuestions } from "@/lib/content/buyer-questions";
+import { httpUrl } from "@/lib/urls";
+import { track } from "@/lib/analytics";
+
+function Source({ source, locale }: { source?: OnlineSource; locale: Locale }) {
+  if (!source) return null;
+  return <small>{httpUrl(source.url) ? <a href={httpUrl(source.url)!} target="_blank" rel="nofollow noopener noreferrer">{source.label}</a> : source.label}<br />{source.type === "directory" && (locale === "es" ? "Sin confirmar con el propietario. " : "Not owner-confirmed. ")}{t(locale, "source_checked")} {source.checked_at}</small>;
+}
+
+function Comparison({ selected, locale }: { selected: Store[]; locale: Locale }) {
+  const es = locale === "es";
+  const unknown = es ? "Pregunte al negocio" : "Ask the business";
+  const rows: { label: string; render: (store: Store) => React.ReactNode }[] = [
+    { label: es ? "Dirección" : "Address", render: (store) => <>{fullAddress(store)}<small>{es ? "Dirección del directorio; confirme local y operación." : "Directory address; confirm suite and current operation."}</small></> },
+    { label: es ? "Categoría del directorio" : "Directory category", render: (store) => store.category.map((category) => catLabel(locale, category)).join(", ") },
+    { label: es ? "Contacto" : "Contact", render: (store) => <>{store.phone ? <><a href={`tel:${store.phone.replace(/[^+\d]/g, "")}`}>{store.phone}</a><Source source={store.field_sources?.phone} locale={locale} />{!store.field_sources?.phone && <small>{es ? "Registro existente; sin reconfirmar." : "Existing listing; not rechecked."}</small>}</> : unknown}{store.contact_email && <p><a href={`mailto:${store.contact_email}`}>{store.contact_email}</a><Source source={store.field_sources?.contact_email} locale={locale} /></p>}</> },
+    { label: es ? "Forma de compra" : "Buying options", render: (store) => store.field_sources?.wholesale_retail?.type === "business" ? <>{t(locale, `wr_${store.wholesale_retail}`)}<Source source={store.field_sources.wholesale_retail} locale={locale} /><small>{es ? "Confirme la compra en persona." : "Confirm in-person purchasing."}</small></> : unknown },
+    { label: es ? "Horario" : "Hours", render: (store) => store.field_sources?.hours?.type === "business" ? <>{store.hours ?? t(locale, "hours_unconfirmed")}<Source source={store.field_sources.hours} locale={locale} /></> : unknown },
+    { label: es ? "Mínimos y cuentas" : "Minimums & accounts", render: (store) => {
+      const facts = store.online_facts?.filter((fact) => fact.source.type === "business" && (fact.kind === "minimum_order" || fact.kind === "buying"));
+      return facts?.length ? facts.map((fact) => <p key={fact.id}>{fact.text[locale]}<Source source={fact.source} locale={locale} />{fact.additional_sources?.map((source) => <Source key={source.url} source={source} locale={locale} />)}</p>) : unknown;
+    } },
+    { label: es ? "Pago y recogida" : "Payment & pickup", render: () => unknown },
+    { label: es ? "Siguiente paso" : "Next step", render: (store) => <QuoteDraft name={store.name} slug={store.slug} locale={locale} /> },
+  ];
+  return <div className="compare-wrap" role="region" aria-label={es ? "Comparación de proveedores; desplácese horizontalmente" : "Supplier comparison; scroll horizontally"} tabIndex={0}>
+    <table className="compare-table" style={{ minWidth: 160 + selected.length * 260 }}><caption className="sr-only">{es ? "Compare la información publicada. Los espacios desconocidos requieren consulta." : "Compare published information. Unknown details require confirmation."}</caption><thead><tr><th scope="col">{es ? "Información" : "Details"}</th>{selected.map((store) => <th scope="col" key={store.slug}><Link href={localePath(locale, `/stores/${store.slug}`)}>{store.name}</Link></th>)}</tr></thead><tbody>{rows.map((row) => <tr key={row.label}><th scope="row">{row.label}</th>{selected.map((store) => <td key={store.slug}>{row.render(store)}</td>)}</tr>)}</tbody></table>
+  </div>;
+}
+
+export default function SavedPage({ locale }: { locale: Locale }) {
+  const es = locale === "es";
+  const { saved, ready, persistent } = useBuyer();
+  const [selected, setSelected] = useState<string[]>([]);
+  const [comparing, setComparing] = useState(false);
+  const [message, setMessage] = useState("");
+  const savedStores = useMemo(() => stores.filter((store) => saved.includes(store.slug)).sort((a, b) => a.block.localeCompare(b.block, "en") || a.name.localeCompare(b.name, "en")), [saved]);
+  const comparingStores = savedStores.filter((store) => selected.includes(store.slug));
+  return <><Header locale={locale} altPath="/saved" /><main id="main-content" lang={locale} className="container saved-page">
+    <div className="saved-screen"><nav className="breadcrumb"><Link href={localePath(locale, "/")}>{t(locale, "nav_directory")}</Link><span>/</span><span>{es ? "Mi lista" : "Saved suppliers"}</span></nav><p className="location-line"><Bookmark size={16} />{es ? "Su próxima visita" : "Your next buying trip"}</p><h1>{es ? "Su lista de proveedores." : "A shortlist worth taking along."}</h1><p className="saved-intro">{es ? "Hasta 12 proveedores, guardados en este navegador. Elija de 2 a 4 para comparar; imprima su lista ordenada por calle." : "Up to 12 suppliers, saved in this browser. Select 2–4 to compare, or print your list grouped by street."}</p>
+      {!persistent && <p role="status" className="mt-4 text-sm text-red-700">{es ? "El navegador no permite guardar. Esta lista solo dura esta sesión." : "Browser storage is unavailable. This list lasts for this session only."}</p>}
+      {!ready ? <p role="status" className="my-8">{es ? "Cargando su lista…" : "Loading your list…"}</p> : savedStores.length ? <>
+        <div className="saved-toolbar"><Button disabled={comparingStores.length < 2} onClick={() => { setComparing(true); track("compare_open", { count: comparingStores.length }); }}><Columns3 />{es ? "Comparar" : "Compare"} ({comparingStores.length}/4)</Button><Button variant="outline" onClick={() => { track("visit_print", { count: savedStores.length }); window.print(); }}><Printer />{es ? "Imprimir lista de visita" : "Print visit list"}</Button><Link href={localePath(locale, "/guide/buying-checklist")} className={buttonVariants({ variant: "ghost" })}>{es ? "Hoja de compra" : "Purchase worksheet"}</Link></div>
+        <p className="text-xs text-muted-foreground">{es ? "Datos incompletos no significan que el negocio no ofrezca un servicio. Consulte los campos sin confirmar." : "Missing details do not mean a service is unavailable. Ask about any unconfirmed fields."}</p><p role="status" className="mt-2 text-sm text-red-700">{message}</p>
+        {comparing && comparingStores.length >= 2 && <section className="mt-8"><div className="flex items-center justify-between"><h2>{es ? "Compare antes de visitar" : "Compare before you go"}</h2><Button variant="ghost" size="icon" aria-label={es ? "Cerrar comparación" : "Close comparison"} onClick={() => setComparing(false)}><X /></Button></div><Comparison selected={comparingStores} locale={locale} /></section>}
+        <div className="mt-8">{savedStores.map((store) => <div key={store.slug} className="saved-store"><label><input type="checkbox" aria-label={`${es ? "Comparar" : "Compare"} ${store.name}`} checked={selected.includes(store.slug)} onChange={(event) => { if (event.target.checked && comparingStores.length >= 4) { setMessage(es ? "Elija hasta 4 proveedores." : "Choose up to 4 suppliers."); return; } setSelected(event.target.checked ? [...selected.filter((slug) => saved.includes(slug)), store.slug] : selected.filter((slug) => slug !== store.slug)); setMessage(""); }} /></label><StoreCard store={store} locale={locale} /></div>)}</div>
+      </> : <div className="empty-results mt-8"><Bookmark size={32} /><h2>{es ? "Su lista empieza con un proveedor" : "Your list starts with one supplier"}</h2><p>{es ? "Use Guardar en cualquier ficha para reunir proveedores aquí." : "Use Save on any supplier listing to collect them here."}</p><Link href={localePath(locale, "/#directory")} className={buttonVariants()}>{es ? "Explorar proveedores" : "Browse suppliers"}</Link></div>}
+    </div>
+    <section className="visit-print-only"><h2 className="visit-print-title">{es ? "Lista de visita al Toy District" : "Toy District visit list"}</h2><p>{es ? "Confirme operación, horario y disponibilidad antes de salir. Agrupada por calle; no es una ruta calculada." : "Confirm current operation, hours and availability before leaving. Grouped by street; not a calculated walking route."}</p>{savedStores.map((store, index) => <div key={store.slug}>{index === 0 || savedStores[index - 1].block !== store.block ? <h2>{BLOCK_LABELS[store.block]}</h2> : null}<div className="visit-print-store"><h3>{store.name}</h3><p>{fullAddress(store)}</p><p>{store.phone ?? (es ? "Teléfono sin confirmar" : "Phone unconfirmed")}{store.contact_email ? ` / ${store.contact_email}` : ""}</p>{!store.field_sources?.phone && store.phone && <p>{es ? "Teléfono del registro existente; sin reconfirmar." : "Phone from the existing listing; not rechecked."}</p>}{store.phone && store.field_sources?.phone && <p>{store.field_sources.phone.label} · {t(locale, "source_checked")} {store.field_sources.phone.checked_at}{store.field_sources.phone.type === "directory" ? (es ? " · Sin confirmar con el propietario" : " · Not owner-confirmed") : ""}</p>}<p>{store.field_sources?.hours?.type === "business" && store.hours ? store.hours : (es ? "Confirme el horario." : "Confirm opening hours.")}</p>{store.field_sources?.hours?.type === "business" && <p>{store.field_sources.hours.label} · {t(locale, "source_checked")} {store.field_sources.hours.checked_at}</p>}{(buyerQuestions[store.slug]?.[locale] ?? [es ? "¿Qué mínimo, pago y recogida aplican a mi pedido?" : "What minimum, payment and pickup terms apply to my order?"]).map((question) => <p key={question}>□ {question}</p>)}<p className="visit-print-notes">{es ? "Notas:" : "Notes:"}</p><p>toydistrictlosangeles.com{localePath(locale, `/stores/${store.slug}`)}</p></div></div>)}</section>
+  </main><Footer locale={locale} /></>;
+}
+
+
+FILE supabase/schema.sql
+-- Leads captured by the Get Quotes form (web/app/api/leads/route.ts).
+-- Apply in the Supabase SQL editor. The API uses the service-role key from the
+-- server only; RLS stays enabled with no public policies.
+
+create table if not exists public.leads (
+  id uuid primary key default gen_random_uuid(),
+  created_at timestamptz not null default now(),
+  name text not null,
+  contact text not null,
+  buyer_type text,
+  items text not null,
+  locale text not null default 'en',
+  store_slug text,
+  store_name text,
+  handled boolean not null default false,
+  notes text
+);
+
+-- For existing deployments created before per-store inquiries were added:
+alter table public.leads add column if not exists store_slug text;
+alter table public.leads add column if not exists store_name text;
+
+alter table public.leads enable row level security;

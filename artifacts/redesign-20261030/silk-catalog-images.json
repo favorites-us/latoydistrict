@@ -1,0 +1,90 @@
+[
+  {
+    "fetchpriority": "high",
+    "sizes": "90px",
+    "srcset": "https://static.wixstatic.com/media/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg/v1/crop/x_33,y_24,w_429,h_433/fill/w_90,h_91,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg 1x, https://static.wixstatic.com/media/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg/v1/crop/x_33,y_24,w_429,h_433/fill/w_180,h_182,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg 2x",
+    "id": "img_comp-lyyrza06",
+    "src": "https://static.wixstatic.com/media/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg/v1/crop/x_33,y_24,w_429,h_433/fill/w_90,h_91,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg",
+    "alt": " artificial flower silk flower fake flower",
+    "style": "object-fit:cover",
+    "class": "gRkIq0 sFiSiq",
+    "width": "90",
+    "height": "91"
+  },
+  {
+    "id": "654783e8-a716-472f-a1d0-d990e53dd090",
+    "class": "gallery-item-visible gallery-item gallery-item-preloaded",
+    "data-hook": "gallery-item-image-img",
+    "data-idx": "0",
+    "src": "https://static.wixstatic.com/media/0a6d3a_755ecefbd8d64cf499a1d76d924ce59f~mv2.jpg/v1/fill/w_980,h_1268,q_90,enc_avif,quality_auto/0a6d3a_755ecefbd8d64cf499a1d76d924ce59f~mv2.jpg",
+    "alt": "",
+    "loading": "eager",
+    "style": "width:980px;height:1268px"
+  },
+  {
+    "id": "312ac1b5-8a4d-47e4-9f39-9aa4d0ace191",
+    "class": "gallery-item-visible gallery-item gallery-item-preloaded",
+    "data-hook": "gallery-item-image-img",
+    "data-idx": "1",
+    "src": "https://static.wixstatic.com/media/0a6d3a_2e446d48a70c4c50a88dee9ca6b39e7f~mv2.jpg/v1/fill/w_980,h_1268,q_90,enc_avif,quality_auto/0a6d3a_2e446d48a70c4c50a88dee9ca6b39e7f~mv2.jpg",
+    "alt": "",
+    "loading": "eager",
+    "style": "width:980px;height:1268px"
+  },
+  {
+    "sizes": "23px",
+    "srcset": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 1x, https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_46,h_46,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png 2x",
+    "id": "img_0_comp-lzpmrkp0",
+    "src": "https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e1aa082f7c0747168d9cf43e77046142.png",
+    "alt": "Instagram",
+    "style": "object-fit:cover",
+    "class": "ZK9snE sFiSiq",
+    "width": "23",
+    "height": "23"
+  },
+  {
+    "sizes": "23px",
+    "srcset": "https://static.wixstatic.com/media/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png 1x, https://static.wixstatic.com/media/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png/v1/fill/w_46,h_46,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png 2x",
+    "id": "img_1_comp-lzpmrkp0",
+    "src": "https://static.wixstatic.com/media/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png",
+    "alt": "Facebook",
+    "style": "object-fit:cover",
+    "class": "ZK9snE sFiSiq",
+    "width": "23",
+    "height": "23"
+  },
+  {
+    "sizes": "23px",
+    "srcset": "https://static.wixstatic.com/media/11062b_283a2164806c4d4fb90048b444dec715~mv2.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_283a2164806c4d4fb90048b444dec715~mv2.png 1x, https://static.wixstatic.com/media/11062b_283a2164806c4d4fb90048b444dec715~mv2.png/v1/fill/w_46,h_46,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_283a2164806c4d4fb90048b444dec715~mv2.png 2x",
+    "id": "img_2_comp-lzpmrkp0",
+    "src": "https://static.wixstatic.com/media/11062b_283a2164806c4d4fb90048b444dec715~mv2.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_283a2164806c4d4fb90048b444dec715~mv2.png",
+    "alt": "Pinterest",
+    "style": "object-fit:cover",
+    "class": "ZK9snE sFiSiq",
+    "width": "23",
+    "height": "23"
+  },
+  {
+    "sizes": "23px",
+    "srcset": "https://static.wixstatic.com/media/11062b_66167d61316d4665841f3397360d54a9~mv2.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_66167d61316d4665841f3397360d54a9~mv2.png 1x, https://static.wixstatic.com/media/11062b_66167d61316d4665841f3397360d54a9~mv2.png/v1/fill/w_46,h_46,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_66167d61316d4665841f3397360d54a9~mv2.png 2x",
+    "id": "img_3_comp-lzpmrkp0",
+    "src": "https://static.wixstatic.com/media/11062b_66167d61316d4665841f3397360d54a9~mv2.png/v1/fill/w_23,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_66167d61316d4665841f3397360d54a9~mv2.png",
+    "alt": "TikTok",
+    "style": "object-fit:cover",
+    "class": "ZK9snE sFiSiq",
+    "width": "23",
+    "height": "23"
+  },
+  {
+    "loading": "lazy",
+    "sizes": "90px",
+    "srcset": "https://static.wixstatic.com/media/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg/v1/crop/x_33,y_24,w_429,h_433/fill/w_90,h_91,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg 1x, https://static.wixstatic.com/media/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg/v1/crop/x_33,y_24,w_429,h_433/fill/w_180,h_182,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg 2x",
+    "id": "img_comp-lzpmssu3",
+    "src": "https://static.wixstatic.com/media/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg/v1/crop/x_33,y_24,w_429,h_433/fill/w_90,h_91,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg",
+    "alt": " artificial flower silk flower fake flower",
+    "style": "object-fit:cover",
+    "class": "gRkIq0 sFiSiq",
+    "width": "90",
+    "height": "91"
+  }
+]
