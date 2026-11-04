@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { localePath, type Locale } from "@/lib/i18n";
+import { parkingLots, lotRatesUrl } from "@/lib/parking";
 
 export interface MapStore {
   slug: string;
@@ -57,6 +58,19 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
       attributionControl: { compact: true },
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+
+    // parking facilities (amber "P" pins — DOM markers, since raster styles ship no glyphs)
+    for (const lot of parkingLots) {
+      const pin = document.createElement("div");
+      pin.style.cssText =
+        "width:22px;height:22px;border-radius:6px;background:#b45309;color:#fff;display:grid;place-items:center;font:700 12px system-ui,sans-serif;border:2px solid #fff;cursor:pointer;";
+      pin.textContent = "P";
+      pin.setAttribute("aria-label", lot.name);
+      const popup = new maplibregl.Popup({ offset: 14 }).setHTML(
+        `<strong>${escapeHtml(lot.name)}</strong><br/><a href="${lotRatesUrl(lot)}" target="_blank" rel="nofollow noopener noreferrer">${locale === "es" ? "Tarifas actuales" : "Current rates"} ↗</a>`,
+      );
+      new maplibregl.Marker({ element: pin }).setLngLat([lot.lng, lot.lat]).setPopup(popup).addTo(map);
+    }
 
     const features: GeoJSON.Feature<GeoJSON.Point>[] = stores.map((s) => ({
       type: "Feature",

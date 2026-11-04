@@ -9,6 +9,7 @@ export interface GuideSection {
   bullets?: string[];
   links?: GuideLink[];
   sources?: GuideSource[];
+  widget?: "parking";
 }
 export interface Guide {
   title: string;
@@ -49,8 +50,9 @@ export const visiting: Record<Locale, Guide> = {
       },
       {
         h: "Check parking for your arrival time",
-        ps: ["LADOT meter rates vary by location and sometimes time. Read the meter and all posted restrictions before parking. Metered spaces cannot be reserved.", "For a private lot or garage, check the operator’s current total price, opening hours, vehicle-height limit and re-entry rules. We have not verified current spaces or district-wide prices."],
+        ps: ["Pay lots and garages cluster one block west of the district along S Main St, with more on S Los Angeles St and toward Little Tokyo. These are the facilities we track, with reserved Saturday-daytime rates as a reference point — operators change prices by day and event, so always check the live rate for your arrival time.", "LADOT meter rates vary by location and sometimes time. Read the meter and all posted restrictions before parking. Metered spaces cannot be reserved."],
         sources: [meters],
+        widget: "parking",
       },
       {
         h: "Arrange pickup before buying bulky items",
@@ -71,7 +73,7 @@ export const visiting: Record<Locale, Guide> = {
       { q: "What time do Toy District stores open?", a: "Confirm with the individual business for your visit date. Store hours, service cutoffs and pickup deadlines can differ." },
       { q: "Do I need a wholesale account to shop?", a: "It depends on the merchant and purchase channel. Ask about walk-in retail, wholesale approval and the minimum for your specific order." },
       { q: "Do stores accept credit cards?", a: "Confirm payment methods, minimums and fees with each merchant. This directory does not assume a district-wide cash or card policy." },
-      { q: "How much does parking cost?", a: "Check the meter or parking operator for your location and arrival time. Prices and restrictions vary; we do not publish a district-wide rate." },
+      { q: "How much does parking cost?", a: "As a reference, reserved Saturday-daytime rates at the lots we track ran roughly $10–27 when last checked — see the lot list above for each facility and its live-rate link. Prices change by day and event; always check the operator's current rate for your arrival time." },
     ],
   },
   es: {
@@ -90,8 +92,9 @@ export const visiting: Record<Locale, Guide> = {
       },
       {
         h: "Revise el estacionamiento para su hora de llegada",
-        ps: ["Las tarifas de los parquímetros de LADOT varían según el lugar y, en algunos casos, la hora. Lea el parquímetro y todas las restricciones antes de estacionarse. Los espacios con parquímetro no se pueden reservar.", "Para un lote o garaje privado, consulte el precio total actual, el horario, el límite de altura y las condiciones de reingreso. No hemos verificado espacios disponibles ni una tarifa general para el distrito."],
+        ps: ["Los lotes y garajes de pago se concentran a una cuadra al oeste del distrito, sobre S Main St, con más opciones en S Los Angeles St y hacia Little Tokyo. Estas son las instalaciones que seguimos, con tarifas de reserva de sábado por el día como referencia — los operadores cambian los precios según el día y los eventos, así que consulte siempre la tarifa vigente para su hora de llegada.", "Las tarifas de los parquímetros de LADOT varían según el lugar y, en algunos casos, la hora. Lea el parquímetro y todas las restricciones antes de estacionarse. Los espacios con parquímetro no se pueden reservar."],
         sources: [meters],
+        widget: "parking",
       },
       {
         h: "Organice la recogida de artículos voluminosos",
@@ -112,7 +115,7 @@ export const visiting: Record<Locale, Guide> = {
       { q: "¿A qué hora abren las tiendas del Toy District?", a: "Confirme con cada negocio para la fecha de su visita. El horario de la tienda y los límites para servicios o recogidas pueden ser distintos." },
       { q: "¿Necesito una cuenta de mayoreo para comprar?", a: "Depende del negocio y del canal de compra. Pregunte por compras al menudeo en persona, aprobación de mayoreo y mínimos para su pedido." },
       { q: "¿Aceptan tarjetas de crédito?", a: "Confirme formas de pago, mínimos y cargos con cada negocio. No suponemos una política de efectivo o tarjetas para todo el distrito." },
-      { q: "¿Cuánto cuesta el estacionamiento?", a: "Consulte el parquímetro o el operador para el lugar y la hora de su visita. Los precios y las restricciones varían; no publicamos una tarifa general." },
+      { q: "¿Cuánto cuesta el estacionamiento?", a: "Como referencia, las tarifas de reserva de sábado por el día en los lotes que seguimos rondaron $10–27 en la última consulta — vea la lista de lotes arriba con el enlace de tarifas vigentes de cada uno. Los precios cambian según el día y los eventos; consulte siempre la tarifa actual del operador para su hora de llegada." },
     ],
   },
 };

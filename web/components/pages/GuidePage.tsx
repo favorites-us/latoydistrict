@@ -1,6 +1,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import BuyerWorksheet from "@/components/BuyerWorksheet";
+import { ParkingLotList } from "@/components/ParkingLots";
 import { Header, Footer } from "@/components/SiteChrome";
 import type { Guide } from "@/lib/content/guides";
 import { faqJsonLd } from "@/lib/jsonld";
@@ -53,6 +54,7 @@ export default function GuidePage({
                   <a href={source.href} target="_blank" rel="noopener noreferrer">{source.label} ↗</a>
                   {" · "}{t(locale, "source_checked")} <time dateTime={source.checked_at}>{source.checked_at}</time>
                 </p>)}
+                {sec.widget === "parking" ? <ParkingLotList locale={locale} /> : null}
               </section>
             ))}
             {guide.faq ? <section aria-labelledby="faq-heading">
