@@ -44,11 +44,14 @@ export function nearestLots(lat: number, lng: number, n = 2): NearbyLot[] {
   return parkingLots
     .map((lot) => {
       // Street grid: straight-line underestimates the walk — pad by ~30%.
+      // 75 m/min is a deliberately slow pace (buyers push hand trucks); both
+      // constants are estimates, so the UI labels walk times as approximate.
       const meters = haversineMeters(lat, lng, lot.lat, lot.lng) * 1.3;
-      return { ...lot, walk_min: Math.max(1, Math.round(meters / WALK_METERS_PER_MIN)) };
+      return { ...lot, meters, walk_min: Math.max(1, Math.round(meters / WALK_METERS_PER_MIN)) };
     })
-    .sort((a, b) => a.walk_min - b.walk_min)
-    .slice(0, n);
+    .sort((a, b) => a.meters - b.meters)
+    .slice(0, n)
+    .map(({ meters: _meters, ...lot }) => lot);
 }
 
 /** Search link with live prices, centered on one lot. */

@@ -1,5 +1,11 @@
 // Reviewed EN/ES copy. Questions are preparation prompts, not merchant facts.
 import type { Locale } from "../i18n";
+import { parkingCheckedAt, parkingLots } from "../parking";
+
+// FAQ price range derives from the tracked lot data so it can't drift from it.
+const lotRates = parkingLots.map((lot) => lot.sat_day_from_usd).filter((v): v is number => v != null);
+const rateLo = Math.round(Math.min(...lotRates));
+const rateHi = Math.round(Math.max(...lotRates));
 
 export interface GuideLink { label: string; href: string }
 export interface GuideSource extends GuideLink { checked_at: string }
@@ -37,7 +43,7 @@ export const visiting: Record<Locale, Guide> = {
   en: {
     title: "Visiting the Toy District: plan your purchase and pickup",
     description: "Check store hours, purchasing arrangements, parking and pickup before a buying trip to Downtown Los Angeles.",
-    reviewed_at,
+    reviewed_at: parkingCheckedAt,
     sections: [
       {
         h: "Start with the exact store address",
@@ -73,13 +79,13 @@ export const visiting: Record<Locale, Guide> = {
       { q: "What time do Toy District stores open?", a: "Confirm with the individual business for your visit date. Store hours, service cutoffs and pickup deadlines can differ." },
       { q: "Do I need a wholesale account to shop?", a: "It depends on the merchant and purchase channel. Ask about walk-in retail, wholesale approval and the minimum for your specific order." },
       { q: "Do stores accept credit cards?", a: "Confirm payment methods, minimums and fees with each merchant. This directory does not assume a district-wide cash or card policy." },
-      { q: "How much does parking cost?", a: "As a reference, reserved Saturday-daytime rates at the lots we track ran roughly $10–27 when last checked — see the lot list above for each facility and its live-rate link. Prices change by day and event; always check the operator's current rate for your arrival time." },
+      { q: "How much does parking cost?", a: `As a reference, reserved Saturday-daytime rates at the lots we track ran roughly $${rateLo}–${rateHi} when last checked — see the lot list above for each facility and its live-rate link. Prices change by day and event; always check the operator's current rate for your arrival time.` },
     ],
   },
   es: {
     title: "Visitar el Toy District: prepare su compra y recogida",
     description: "Confirme horarios, condiciones de compra, estacionamiento y recogida antes de visitar el centro de Los Ángeles.",
-    reviewed_at,
+    reviewed_at: parkingCheckedAt,
     sections: [
       {
         h: "Empiece con la dirección exacta",
@@ -115,7 +121,7 @@ export const visiting: Record<Locale, Guide> = {
       { q: "¿A qué hora abren las tiendas del Toy District?", a: "Confirme con cada negocio para la fecha de su visita. El horario de la tienda y los límites para servicios o recogidas pueden ser distintos." },
       { q: "¿Necesito una cuenta de mayoreo para comprar?", a: "Depende del negocio y del canal de compra. Pregunte por compras al menudeo en persona, aprobación de mayoreo y mínimos para su pedido." },
       { q: "¿Aceptan tarjetas de crédito?", a: "Confirme formas de pago, mínimos y cargos con cada negocio. No suponemos una política de efectivo o tarjetas para todo el distrito." },
-      { q: "¿Cuánto cuesta el estacionamiento?", a: "Como referencia, las tarifas de reserva de sábado por el día en los lotes que seguimos rondaron $10–27 en la última consulta — vea la lista de lotes arriba con el enlace de tarifas vigentes de cada uno. Los precios cambian según el día y los eventos; consulte siempre la tarifa actual del operador para su hora de llegada." },
+      { q: "¿Cuánto cuesta el estacionamiento?", a: `Como referencia, las tarifas de reserva de sábado por el día en los lotes que seguimos rondaron $${rateLo}–${rateHi} en la última consulta — vea la lista de lotes arriba con el enlace de tarifas vigentes de cada uno. Los precios cambian según el día y los eventos; consulte siempre la tarifa actual del operador para su hora de llegada.` },
     ],
   },
 };

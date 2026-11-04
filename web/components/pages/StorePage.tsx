@@ -113,6 +113,9 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                 ) : null}
               </p>
               <p className="sub">{fullAddress(store)}</p>
+              {!store.field_sources?.wholesale_retail ? (
+                <p className="source-note">{t(locale, "wr_registration_note")}</p>
+              ) : null}
             </div>
             <SaveStoreButton slug={store.slug} name={store.name} locale={locale} />
           </div>
@@ -243,6 +246,9 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                       <li key={fact.id}>
                         <p>{fact.text[locale]}</p>
                         <SourceNote source={fact.source} locale={locale} slug={store.slug} />
+                        {fact.additional_sources?.map((source) => (
+                          <SourceNote key={source.url} source={source} locale={locale} slug={store.slug} />
+                        ))}
                       </li>
                     ))}
                   </ul>

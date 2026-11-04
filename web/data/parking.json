@@ -1,23 +1,26 @@
 {
-  "comment": "Reserved-rate evidence captured from a live SpotHero search (Sat 10:00-16:00 day window). Drive-up and weekday prices differ; rates move — the UI must always say so and link out. Addresses geocoded via U.S. Census Bureau on the same date.",
+  "comment": "Reserved-rate evidence captured from a live SpotHero search (Sat 10:00-16:00 day window). Drive-up and weekday prices differ; rates move — the UI must always say so and link out. Addresses geocoded via U.S. Census Bureau on the same date. Walk times in the UI are approximations (straight-line x1.3 at 75 m/min), labeled as such.",
   "checked_at": "2026-11-04",
   "source": {
-    "label": "SpotHero search (Toy District area)",
+    "label": "SpotHero",
     "url": "https://spothero.com/search?latitude=34.0462&longitude=-118.2448&zoom=16"
   },
   "lots": [
     {
       "id": "main-334",
-      "name": "334 S Main St — Garage",
+      "name": "334 S Main St",
       "type": "garage",
       "lat": 34.047586,
       "lng": -118.246475,
       "sat_day_from_usd": 10.99,
-      "note": { "en": "Entrance at 135 E 4th St", "es": "Entrada por 135 E 4th St" }
+      "note": {
+        "en": "Entrance at 135 E 4th St",
+        "es": "Entrada por 135 E 4th St"
+      }
     },
     {
       "id": "main-415",
-      "name": "415 S Main St — Garage",
+      "name": "415 S Main St",
       "type": "garage",
       "lat": 34.047755,
       "lng": -118.247625,
@@ -25,7 +28,7 @@
     },
     {
       "id": "main-416",
-      "name": "416 S Main St — Lot",
+      "name": "416 S Main St",
       "type": "lot",
       "lat": 34.047675,
       "lng": -118.247525,
@@ -33,7 +36,7 @@
     },
     {
       "id": "main-330",
-      "name": "330 S Main St — Lot",
+      "name": "330 S Main St",
       "type": "lot",
       "lat": 34.049067,
       "lng": -118.246225,
@@ -41,7 +44,7 @@
     },
     {
       "id": "main-433",
-      "name": "433 S Main St — Lot",
+      "name": "433 S Main St",
       "type": "lot",
       "lat": 34.047441,
       "lng": -118.247919,
@@ -49,7 +52,7 @@
     },
     {
       "id": "la-539",
-      "name": "539–545 S Los Angeles St — Garage",
+      "name": "539–545 S Los Angeles St",
       "type": "garage",
       "lat": 34.045482,
       "lng": -118.248201,
@@ -57,12 +60,15 @@
     },
     {
       "id": "sanpedro-120",
-      "name": "120 S San Pedro St — Garage",
+      "name": "120 S San Pedro St",
       "type": "garage",
       "lat": 34.050125,
       "lng": -118.241009,
       "sat_day_from_usd": 15.99,
-      "note": { "en": "Little Tokyo side; entrance at 319 E 2nd St", "es": "Lado de Little Tokyo; entrada por 319 E 2nd St" }
+      "note": {
+        "en": "Little Tokyo side; entrance at 319 E 2nd St",
+        "es": "Lado de Little Tokyo; entrada por 319 E 2nd St"
+      }
     }
   ]
 }

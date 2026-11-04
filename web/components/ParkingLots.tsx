@@ -23,7 +23,7 @@ function LotRow({ lot, locale, walk }: { lot: ParkingLot; locale: Locale; walk?:
         </p>
       </div>
       <div className="parking-lot-price">
-        {price ? <strong>{price}</strong> : null}
+        {price ? <strong>{t(locale, "parking_from")} {price}</strong> : null}
         <a href={lotRatesUrl(lot)} target="_blank" rel="nofollow noopener noreferrer">
           {t(locale, "parking_rates_link")} ↗
         </a>
