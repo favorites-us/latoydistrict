@@ -23,7 +23,7 @@ const DISTRICT_RING: [number, number][] = [
   [-118.2462, 34.049],
 ];
 
-const BRAND = "#2456d3";
+const BRAND = "#28549a";
 
 function escapeHtml(s: string) {
   return s.replace(/[&<>"']/g, (c) =>
@@ -153,7 +153,7 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
           "circle-opacity": 0.9,
           "circle-radius": ["step", ["get", "point_count"], 15, 5, 19, 15, 24],
           "circle-stroke-width": 3,
-          "circle-stroke-color": "rgba(36,86,211,0.2)",
+          "circle-stroke-color": "rgba(40,84,154,0.2)",
         },
       });
       // Cluster counts as HTML markers — a raster style ships no glyphs, so a
