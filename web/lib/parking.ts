@@ -41,6 +41,7 @@ export interface NearbyLot extends ParkingLot {
 
 /** Nearest lots to a point, with a rough walking time (straight-line based). */
 export function nearestLots(lat: number, lng: number, n = 2): NearbyLot[] {
+  if (!Number.isFinite(lat) || !Number.isFinite(lng) || Math.abs(lat) > 90 || Math.abs(lng) > 180) return [];
   return parkingLots
     .map((lot) => {
       // Street grid: straight-line underestimates the walk — pad by ~30%.
@@ -52,6 +53,12 @@ export function nearestLots(lat: number, lng: number, n = 2): NearbyLot[] {
     .sort((a, b) => a.meters - b.meters)
     .slice(0, n)
     .map(({ meters: _meters, ...lot }) => lot);
+}
+
+/** Historical reference price, never a live quote. */
+export function parkingPrice(lot: ParkingLot): string | null {
+  const price = lot.sat_day_from_usd;
+  return price != null && Number.isFinite(price) && price >= 0 ? `~$${Math.round(price)}` : null;
 }
 
 /** Search link with live prices, centered on one lot. */

@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { localePath, type Locale } from "@/lib/i18n";
-import { parkingLots, lotRatesUrl } from "@/lib/parking";
+import { localePath, t, type Locale } from "@/lib/i18n";
+import { parkingLots, parkingCheckedAt, parkingPrice, lotRatesUrl } from "@/lib/parking";
 
 export interface MapStore {
   slug: string;
@@ -62,12 +62,19 @@ export default function DistrictMap({ stores, locale }: { stores: MapStore[]; lo
     // parking facilities (amber "P" pins — DOM markers, since raster styles ship no glyphs)
     for (const lot of parkingLots) {
       const pin = document.createElement("div");
-      pin.style.cssText =
-        "width:22px;height:22px;border-radius:6px;background:#b45309;color:#fff;display:grid;place-items:center;font:700 12px system-ui,sans-serif;border:2px solid #fff;cursor:pointer;";
-      pin.textContent = "P";
-      pin.setAttribute("aria-label", lot.name);
+      pin.className = "parking-map-marker";
+      const symbol = document.createElement("span");
+      symbol.textContent = "P";
+      symbol.setAttribute("aria-hidden", "true");
+      pin.append(symbol);
+      pin.setAttribute("aria-label", `${t(locale, "parking_h2")}: ${lot.name}`);
+      const price = parkingPrice(lot);
+      const reference = price ? `<p>${escapeHtml(t(locale, "parking_from"))} ${price}</p>` : "";
       const popup = new maplibregl.Popup({ offset: 14 }).setHTML(
-        `<strong>${escapeHtml(lot.name)}</strong><br/><a href="${lotRatesUrl(lot)}" target="_blank" rel="nofollow noopener noreferrer">${locale === "es" ? "Tarifas actuales" : "Current rates"} ↗</a>`,
+        `<div class="parking-map-popup"><strong>${escapeHtml(lot.name)}</strong>${reference}` +
+        `<p>${escapeHtml(t(locale, "parking_reference_note"))}</p>` +
+        `<p>${escapeHtml(t(locale, "source_checked"))} <time datetime="${parkingCheckedAt}">${parkingCheckedAt}</time></p>` +
+        `<a href="${lotRatesUrl(lot)}" target="_blank" rel="nofollow noopener noreferrer">${escapeHtml(t(locale, "parking_rates_link"))} ↗</a></div>`,
       );
       new maplibregl.Marker({ element: pin }).setLngLat([lot.lng, lot.lat]).setPopup(popup).addTo(map);
     }

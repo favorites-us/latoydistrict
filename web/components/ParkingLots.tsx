@@ -1,14 +1,9 @@
 import { Car, SquareParking } from "lucide-react";
-import { nearestLots, parkingCheckedAt, parkingLots, parkingSource, lotRatesUrl, type NearbyLot, type ParkingLot } from "@/lib/parking";
+import { nearestLots, parkingCheckedAt, parkingLots, parkingSource, parkingPrice, lotRatesUrl, type NearbyLot, type ParkingLot } from "@/lib/parking";
 import { t, type Locale } from "@/lib/i18n";
 
-function fromPrice(lot: ParkingLot): string | null {
-  if (lot.sat_day_from_usd == null) return null;
-  return `~$${Math.round(lot.sat_day_from_usd)}`;
-}
-
 function LotRow({ lot, locale, walk }: { lot: ParkingLot; locale: Locale; walk?: number }) {
-  const price = fromPrice(lot);
+  const price = parkingPrice(lot);
   return (
     <li className="parking-lot">
       <span className="parking-icon" aria-hidden="true">
@@ -24,7 +19,7 @@ function LotRow({ lot, locale, walk }: { lot: ParkingLot; locale: Locale; walk?:
       </div>
       <div className="parking-lot-price">
         {price ? <strong>{t(locale, "parking_from")} {price}</strong> : null}
-        <a href={lotRatesUrl(lot)} target="_blank" rel="nofollow noopener noreferrer">
+        <a href={lotRatesUrl(lot)} aria-label={`${t(locale, "parking_rates_link")}: ${lot.name}`} target="_blank" rel="nofollow noopener noreferrer">
           {t(locale, "parking_rates_link")} ↗
         </a>
       </div>

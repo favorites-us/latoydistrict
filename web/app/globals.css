@@ -275,7 +275,12 @@
   .parking-lot-meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
   .parking-lot-price { text-align: right; flex-shrink: 0; display: grid; gap: 2px; justify-items: end; }
   .parking-lot-price strong { font-size: 14px; font-variant-numeric: tabular-nums; }
-  .parking-lot-price a { font-size: 11.5px; }
+  .parking-lot-price a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
+  .parking-map-marker { width: 44px; height: 44px; display: grid; place-items: center; cursor: pointer; border-radius: 8px; }
+  .parking-map-marker > span { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 6px; background: var(--focus); color: #fff; font: 700 12px var(--font-sans); border: 2px solid #fff; }
+  .parking-map-popup { font-family: var(--font-sans); font-size: 12px; line-height: 1.5; }
+  .parking-map-popup p { margin-top: 6px; }
+  .parking-map-popup a { display: inline-flex; align-items: center; min-height: 44px; color: var(--brand); text-decoration: underline; }
 
   .claim-banner { border-left: 3px solid var(--brand); padding: 6px 0 6px 18px; }
   .claim-banner p { color: var(--muted); font-size: 13px; margin-block: 6px 10px; max-width: 520px; }
@@ -400,6 +405,9 @@
   .store-actions { grid-template-columns: 1fr; }
   .fact-card, .carry-card, .visit-card, .buying-details { padding: 16px; }
   .fact-row { grid-template-columns: 95px minmax(0, 1fr); gap: 10px; font-size: 12.5px; padding-block: 9px; }
+  .parking-lot { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px 10px; }
+  .parking-lot-price { grid-column: 2; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; flex-wrap: wrap; }
+  .parking-lot-name { overflow-wrap: anywhere; }
   .parking-lot-price strong { font-size: 13px; }
   .buyer-questions { padding-left: 14px; } .buying-details li, .buyer-questions ul { font-size: 13px; }
   .source-note { font-size: 10.5px; } .store-grid { grid-template-columns: 1fr; } .store-grid .store-card-visual { display: block; }
