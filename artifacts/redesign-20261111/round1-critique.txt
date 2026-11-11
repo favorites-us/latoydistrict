@@ -1,0 +1,18 @@
+[claude-ask] claude-opus-5-5 medium in=997 out=2041 $0.0448 stop=end_turn month=$5.37/$100
+1. **Directory cards → compact list rows.** Use a 56px category icon on the left, then name, address, tags and a Call/Save icon on the right, about 88px tall. This shows 6–7 stores per screen instead of 1.5. Reserve photo cards for the ~5 stores with real photos.
+
+2. **Collapse the home top.** Use a one-line H1, one search field and scrollable category chips, then the directory starts above the fold. Delete the "General merchandise" placeholder carousel, the "A closer look" block and the duplicate second search box.
+
+3. **Make search, chips and List/Map/Sort one sticky bar.** It pins under the header on scroll. Add result counts to the chips (Toys 42) and show active filters as removable chips.
+
+4. **Remove placeholder noise everywhere.** Drop "Photo unavailable" badges, "Source & rights" links on illustrations, and the per-card "Catalog. Confirm prices." line. Replace the registration disclaimer paragraph with one ⓘ icon next to "191 results."
+
+5. **Replace the detail-page hero carousel with a compact header.** Show a 48px category icon, name, tags, a verified badge and the address in about 140px. Show a gallery only when real photos exist.
+
+6. **Pin the action bar to the bottom of the viewport.** Use four equal icon-over-label buttons (Call, Directions, Website, Save) in the thumb zone. Today it floats mid-page over the Address field.
+
+7. **Turn Details into icon rows instead of stacked label/value blocks.** Rows are phone, email, website, hours and "since 2018," each a 44px tap target. Hours become a status pill ("Hours unconfirmed") plus a compact weekday table.
+
+8. **Restructure "Before you buy" and "What they carry."** Convert the paragraphs into scannable fact chips ("⚠ $3,000 wholesale min," "⚠ Hours conflict"). Collapse every "Business website · … · Page checked" line into one "Sources (5)" disclosure per section.
+
+A ninth change, if you can fit it: tighten the type scale to a modern sans (Inter/Geist) with a 22/17/15/13px hierarchy, a muted gray for metadata, and one border style instead of stacked bordered cards inside bordered sections.

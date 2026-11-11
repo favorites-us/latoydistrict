@@ -1,0 +1,99 @@
+{
+  "sites": [
+    {
+      "slug": "americas-favors-405",
+      "name": "Americas Favors",
+      "url": "https://americasfavors.com/",
+      "evidence": {
+        "file": "artifacts/online-pilot-20261014/baseline-stores.json",
+        "field": "links.website"
+      }
+    },
+    {
+      "slug": "casa-manga-218",
+      "name": "Casa Manga",
+      "url": "https://www.casamanga.com/",
+      "evidence": {
+        "file": "artifacts/online-pilot-20261014/baseline-stores.json",
+        "field": "links.website"
+      }
+    },
+    {
+      "slug": "m-and-m-toys-241",
+      "name": "M & M Toys",
+      "url": "http://www.mnmtoysinc.com/",
+      "evidence": {
+        "file": "artifacts/online-pilot-20261014/baseline-stores.json",
+        "field": "links.website"
+      }
+    },
+    {
+      "slug": "american-silk-inc-340",
+      "name": "American Silk INC",
+      "url": "https://www.americansilkinc.com/",
+      "evidence": {
+        "file": "artifacts/online-pilot-20261014/baseline-stores.json",
+        "field": "links.website"
+      }
+    },
+    {
+      "slug": "cap-and-hat-import-inc-322",
+      "name": "Cap & Hat Import INC",
+      "url": "https://www.capandhatimport.com/",
+      "evidence": {
+        "file": "artifacts/online-pilot-20261014/baseline-stores.json",
+        "field": "links.website"
+      }
+    },
+    {
+      "slug": "fantasia-sales-inc-401",
+      "name": "Fantasia Sales INC",
+      "url": "https://fantasia-sales.com/",
+      "evidence": {
+        "file": "artifacts/online-pilot-20261014/baseline-stores.json",
+        "field": "links.website"
+      }
+    },
+    {
+      "slug": "the-supply-joint-325",
+      "name": "The Supply Joint",
+      "url": "https://thesupplyjoint.com/",
+      "evidence": {
+        "file": "artifacts/online-pilot-20261014/baseline-stores.json",
+        "field": "links.website"
+      }
+    },
+    {
+      "slug": "tom-s-model-501",
+      "name": "Tom's Model",
+      "url": "https://toms-model.myshopify.com/",
+      "evidence": {
+        "file": "pipeline/data/reviewed-stores.json",
+        "field": "updates.links.website",
+        "identity_evidence": "Official Shopify contact page gives Tom’s Model, 501 East 4th Street, Los Angeles CA 90013 and existing phone. About page is linked on the same store."
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "domain": "ltsc.org",
+      "reason": "Community service organization, not a store"
+    },
+    {
+      "domain": "jadatoys.com",
+      "reason": "Manufacturer dealer listing for Funland, not the store’s own site"
+    },
+    {
+      "domain": "ffls.com",
+      "reason": "Directory"
+    },
+    {
+      "domain": "losangeles.jinbay.com",
+      "reason": "Directory"
+    },
+    {
+      "domain": "caballoonhouse.com",
+      "reason": "Terms restrict reproduction without permission; excluded per docs/decisions/2026-10-30-buyer-redesign.md. Do not collect or republish."
+    }
+  ]
+}

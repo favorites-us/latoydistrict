@@ -1,13 +1,22 @@
 import Link from "next/link";
-import { ArrowUpRight, MapPin, Phone, BookOpen } from "lucide-react";
+import CategoryVisual from "./CategoryVisual";
+import { Phone } from "lucide-react";
 import type { Store } from "@/lib/stores";
 import { catLabel, localePath, type Locale } from "@/lib/i18n";
-import { hasBuyingInfo } from "@/lib/buyer-tools";
 import SaveStoreButton from "./SaveStoreButton";
 import StoreContactLink from "./StoreContactLink";
 import StorePhoto from "./StorePhoto";
 import { photoForStore } from "@/lib/photos";
-export default function StoreCard({ store, locale }: { store: Store; locale: Locale }) {
-  const es = locale === "es"; const photo = photoForStore(store.slug); const info = hasBuyingInfo(store); const unit = store.address.unit ? ` #${store.address.unit}` : "";
-  return <article className="store-card">{photo && <div className="store-card-visual"><StorePhoto photo={photo} locale={locale} compact /></div>}<div className="store-card-body"><div className="store-card-title"><h3><Link href={localePath(locale, `/stores/${store.slug}`)}>{store.name}</Link></h3><SaveStoreButton slug={store.slug} name={store.name} locale={locale} compact /></div><p className="store-address"><MapPin size={14} />{store.address.line1}{unit}</p><div className="store-tags">{store.category.map((category) => <span key={category}>{catLabel(locale, category)}</span>)}{info && <span className="info-tag"><BookOpen size={12} />{es ? "Información de compra" : "Buying info"}</span>}</div><div className="store-card-bottom"><span className="store-data-note">{info ? (es ? "Con fuentes del negocio" : "Business sources linked") : (es ? "Datos de registro" : "Registration details")}</span><div>{store.phone && store.field_sources?.phone?.type === "business" && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={14} /><span>{es ? "Llamar" : "Call"}</span></StoreContactLink>}<Link href={localePath(locale, `/stores/${store.slug}`)}>{es ? "Ver ficha" : "View supplier"}<ArrowUpRight size={15} /></Link></div></div></div></article>;
+export default function StoreCard({ store, locale, featured = false }: { store: Store; locale: Locale; featured?: boolean }) {
+  const photo = photoForStore(store.slug);
+  return <article className={`store-card ${featured ? "featured-card" : "compact-row"}`}>
+    {featured && <Link className="featured-card-link" href={localePath(locale, `/stores/${store.slug}`)} aria-label={store.name} />}
+    {/* List thumbnails omit attribution: the row links to the store page's source/removal section. */}
+    <div className="store-card-visual">{photo ? <StorePhoto photo={photo} locale={locale} category={store.category[0]} compact showSource={featured} /> : <CategoryVisual category={store.category[0] || "general"} locale={locale} showLabel={false} />}</div>
+    <div className="store-card-body"><h3>{featured ? store.name : <Link className="store-row-link" href={localePath(locale, `/stores/${store.slug}`)}>{store.name}</Link>}</h3>
+      <p className="store-address">{store.address.line1}{store.address.unit ? ` #${store.address.unit}` : ""}</p>
+      <div className="store-tags">{store.category.slice(0, 2).map(category => <span key={category}>{catLabel(locale, category)}</span>)}</div>
+    </div>
+    <div className="row-actions"><SaveStoreButton slug={store.slug} name={store.name} locale={locale} compact />{!featured && store.phone && store.field_sources?.phone?.type === "business" && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={17} /><span className="sr-only">{locale === "es" ? "Llamar a" : "Call"} {store.name}</span></StoreContactLink>}</div>
+  </article>;
 }

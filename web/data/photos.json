@@ -17,11 +17,11 @@
       "sha256": "f8f2222309d0754ea7dfc3c37d0a5af3870442977d137f9e0ada3dededcba28b",
       "caption": {
         "en": "American Silk catalog page 1. Printed prices, pack sizes and availability need confirmation with the business.",
-        "es": "P\u00e1gina 1 del cat\u00e1logo de American Silk. Confirme precios impresos, unidades por paquete y disponibilidad con el negocio."
+        "es": "Página 1 del catálogo de American Silk. Confirme precios impresos, unidades por paquete y disponibilidad con el negocio."
       },
       "alt": {
         "en": "Artificial flower bouquets pictured in the American Silk catalog",
-        "es": "Ramos de flores artificiales en el cat\u00e1logo de American Silk"
+        "es": "Ramos de flores artificiales en el catálogo de American Silk"
       }
     },
     {
@@ -41,11 +41,275 @@
       "sha256": "2e90472e41d0326b2c1d36f367ec2132fb092c44ff4486e96a73670ecad5bdad",
       "caption": {
         "en": "American Silk catalog page 2. Printed prices, pack sizes and availability need confirmation with the business.",
-        "es": "P\u00e1gina 2 del cat\u00e1logo de American Silk. Confirme precios impresos, unidades por paquete y disponibilidad con el negocio."
+        "es": "Página 2 del catálogo de American Silk. Confirme precios impresos, unidades por paquete y disponibilidad con el negocio."
       },
       "alt": {
         "en": "Artificial flower bouquets pictured in the American Silk catalog",
-        "es": "Ramos de flores artificiales en el cat\u00e1logo de American Silk"
+        "es": "Ramos de flores artificiales en el catálogo de American Silk"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-1",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-1.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/files/Untitled_design_11.png?v=1653360736&width=1500",
+      "source_label": "Americas Favors website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 720,
+      "height": 405,
+      "mime_type": "image/webp",
+      "sha256": "3b97d000c3bfd4214653391ee9c47ccac6fe2131c06b3021ce310d82c2b661a8",
+      "caption": {
+        "en": "Glass bottle favors",
+        "es": "Recuerdos en frascos de vidrio"
+      },
+      "alt": {
+        "en": "Glass favor bottles with cork tops, gold ribbon, and Mr. & Mrs. tags filled with white candies, with brown paper butterflies on a burlap background",
+        "es": "Frascos de vidrio con tapón de corcho, cinta dorada y etiquetas de Mr. & Mrs. llenos de caramelos blancos, con mariposas de papel marrón sobre fondo de arpillera"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-2",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-2.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_9147.jpg?v=1596763491",
+      "source_label": "Americas Favors website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 800,
+      "mime_type": "image/webp",
+      "sha256": "2918d8fa099ea9a4a120051675edbe419da17c1fe5a2d735177befeec8894b4a",
+      "caption": {
+        "en": "Mini glass dome favors",
+        "es": "Recuerdos con cúpulas de vidrio"
+      },
+      "alt": {
+        "en": "Mini glass dome favor containers on pedestal stands with chocolates, pink and gold bows and a pink butterfly decoration",
+        "es": "Pequeños recipientes de vidrio con cúpula sobre pedestales con chocolates, lazos rosas y dorados y una decoración de mariposa rosa"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-3",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-3.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/ScreenShot2020-04-03at6.31.33PM.png?v=1585963921",
+      "source_label": "Americas Favors website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 922,
+      "mime_type": "image/webp",
+      "sha256": "a94505bdf9f5011815a7d2c6c6b920f634f92bd4348b351dfb45ae19536a8fed",
+      "caption": {
+        "en": "Personalized wooden name sign",
+        "es": "Letrero de madera personalizado"
+      },
+      "alt": {
+        "en": "Wooden cursive 'Anna' name sign hanging on a light gray wall beside a white vase with flowers and books",
+        "es": "Letrero de madera con el nombre 'Anna' en letra cursiva colgado en una pared gris claro, junto a un jarrón blanco con flores y libros"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-4",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-4.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_8684.jpg?v=1571609724",
+      "source_label": "Americas Favors website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 800,
+      "mime_type": "image/webp",
+      "sha256": "126e15ee3ba1c284307ad65fe1acd36391a5d2b2c2c7ab0aa43f628686e4a6a4",
+      "caption": {
+        "en": "Crown-shaped candy favors",
+        "es": "Recuerdos para dulces en forma de corona"
+      },
+      "alt": {
+        "en": "Gold and clear plastic crown-shaped candy favors filled with chocolate truffles",
+        "es": "Recuerdos de dulces en forma de corona de plástico dorado y transparente, rellenos de trufas de chocolate"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-5",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-5.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_6727__41898.1489455010.1280.1280.jpg?v=1571609719",
+      "source_label": "Americas Favors website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 800,
+      "mime_type": "image/webp",
+      "sha256": "7802b02a9c4df99ea7ea16bf7acb99c0259b1e6801391187b71255f97f898aa4",
+      "caption": {
+        "en": "Personalized satin ribbons",
+        "es": "Cintas de satén personalizadas"
+      },
+      "alt": {
+        "en": "Assorted satin ribbons with personalized printed names and dates, arranged on a white background, some tied in bows",
+        "es": "Cintas de satén surtidas con nombres y fechas personalizados impresos, dispuestas sobre fondo blanco, algunas atadas en moños"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-6",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-6.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/Foam_Flowers3.jpg?v=1571609659",
+      "source_label": "Americas Favors website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1191,
+      "height": 1200,
+      "mime_type": "image/webp",
+      "sha256": "7c7354f38dedd7cbab8f60dc3e98422d13d4579288e7412b5bb72d5627361dcd",
+      "caption": {
+        "en": "Colorful foam roses",
+        "es": "Rosas de espuma de colores"
+      },
+      "alt": {
+        "en": "Wall display of colorful foam roses in pink, red, white, yellow, teal, navy, and black",
+        "es": "Pared decorativa con rosas de espuma de colores en rosa, rojo, blanco, amarillo, turquesa, azul marino y negro"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-1",
+      "store_slug": "fantasia-sales-inc-401",
+      "status": "published",
+      "storage_path": "fantasia-sales-inc-401-official-1.webp",
+      "source_page_url": "https://fantasia-sales.com/",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/f755e53cf8a3c73e99a6f3d54a69d021_grande.jpg?v=1642275609",
+      "source_label": "Fantasia Sales INC website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 600,
+      "height": 600,
+      "mime_type": "image/webp",
+      "sha256": "3f133f6a6751def411fff8cbb13511343b92615e40b91b9739e81ae654d1f4dd",
+      "caption": {
+        "en": "Blue disposable face mask",
+        "es": "Mascarilla desechable azul"
+      },
+      "alt": {
+        "en": "Blue three-layer disposable face mask with ear loops on a light background",
+        "es": "Mascarilla desechable azul de tres capas con elásticos para las orejas sobre un fondo claro"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-2",
+      "store_slug": "fantasia-sales-inc-401",
+      "status": "published",
+      "storage_path": "fantasia-sales-inc-401-official-2.webp",
+      "source_page_url": "https://fantasia-sales.com/products/10-pack-kn95-folding-dust-mask-respirator",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/20200430_122624_1200x1200.jpg?v=1588443413",
+      "source_label": "Fantasia Sales INC website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 710,
+      "height": 1200,
+      "mime_type": "image/webp",
+      "sha256": "3c0772becc563106564c628ca3b401ed676fc9c54b033685e8692118df1babc4",
+      "caption": {
+        "en": "White folded face mask",
+        "es": "Mascarilla blanca plegable"
+      },
+      "alt": {
+        "en": "White folded face mask with ear loops worn on a mannequin head against a light background",
+        "es": "Mascarilla blanca plegable con tiras para las orejas puesta en una cabeza de maniquí sobre un fondo claro"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-1",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-1.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/116-POP-TOP-web-banner.jpg?v=1766017181&width=1860",
+      "source_label": "The Supply Joint website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 557,
+      "mime_type": "image/webp",
+      "sha256": "925acc90f625650daf7f1bd3bef38a21a8a202bc1e73b8652ea61f64d9f06b09",
+      "caption": {
+        "en": "Plastic tubes with flip-top caps",
+        "es": "Tubos de plástico con tapas abatibles"
+      },
+      "alt": {
+        "en": "Clear and black plastic pre-roll tubes with flip-top caps on a white background with gray hexagon pattern",
+        "es": "Tubos de plástico para preroll en transparente y negro con tapas abatibles sobre fondo blanco con patrón de hexágonos grises"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-2",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-2.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/jars_tubes_2x_b3819b11-8a08-4645-9809-ea794b988a5e.png?v=1679764664&width=2820",
+      "source_label": "The Supply Joint website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 557,
+      "mime_type": "image/webp",
+      "sha256": "28cbbb0c9c847a5059e08e5c9df195004e10a5a5908b0b065dad0c7efb997960",
+      "caption": {
+        "en": "Glass jars and assorted caps",
+        "es": "Frascos de vidrio y tapas surtidas"
+      },
+      "alt": {
+        "en": "Assortment of clear glass jars with black and white caps and a gold textured cap, shown in exploded view on a beige background",
+        "es": "Surtido de frascos de vidrio transparente con tapas negras y blancas y una tapa dorada texturizada, en vista desarmada sobre fondo beige"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-3",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-3.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/Chubby-Gorilla-web-banner2_5752c5d4-a32d-4203-8c57-d866114c286a.jpg?v=1753317602&width=1860",
+      "source_label": "The Supply Joint website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 557,
+      "mime_type": "image/webp",
+      "sha256": "a53e26a31342ec58ce17a4dd91b02cca0a7be88177dc4b704c68faf2509c95bd",
+      "caption": {
+        "en": "Glass jars and vials",
+        "es": "Frascos y viales de vidrio"
+      },
+      "alt": {
+        "en": "Five clear glass jars and vials with black and white screw-top lids on a tan honeycomb-patterned background",
+        "es": "Cinco frascos y viales de vidrio transparente con tapas de rosca negras y blancas sobre un fondo beige con patrón de panal"
       }
     }
   ]

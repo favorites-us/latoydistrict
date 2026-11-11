@@ -1,0 +1,44 @@
+[
+  {
+    "route": "/",
+    "width": 375,
+    "viewport": 375,
+    "document": 375,
+    "overflow": false
+  },
+  {
+    "route": "/stores/american-silk-inc-340",
+    "width": 375,
+    "viewport": 375,
+    "document": 375,
+    "overflow": false
+  },
+  {
+    "route": "/guide/visiting",
+    "width": 375,
+    "viewport": 375,
+    "document": 375,
+    "overflow": false
+  },
+  {
+    "route": "/",
+    "width": 1280,
+    "viewport": 1280,
+    "document": 1280,
+    "overflow": false
+  },
+  {
+    "route": "/stores/american-silk-inc-340",
+    "width": 1280,
+    "viewport": 1280,
+    "document": 1280,
+    "overflow": false
+  },
+  {
+    "route": "/guide/visiting",
+    "width": 1280,
+    "viewport": 1280,
+    "document": 1280,
+    "overflow": false
+  }
+]

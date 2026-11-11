@@ -1,10 +1,24 @@
 import "server-only";
 import { del, get, put } from "@vercel/blob";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+import { photos } from "@/lib/photos";
 
 // All files belong to this site's private store. Never expose storage URLs or
 // credentials. Suppression reads must bypass the CDN, including cached misses.
 export const privateFiles = {
   async read(path: string): Promise<Buffer | null> {
+    if (process.env.NODE_ENV === "development" && !process.env.BLOB_READ_WRITE_TOKEN) {
+      // Limit local preview reads to manifest photos and their suppression blocks.
+      // Other private data and all writes continue to require Blob storage.
+      if (photos.some(photo => path === photo.storage_path || path === `photo-blocks/${photo.id}.json`)) {
+        try { return await readFile(join(process.cwd(), ".local-photos", path)); }
+        catch (error) {
+          if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
+          throw error;
+        }
+      }
+    }
     const result = await get(path, { access: "private", useCache: false, abortSignal: AbortSignal.timeout(12000) });
     if (!result) return null;
     if (result.statusCode !== 200 || !result.stream) throw new Error("private_read_failed");

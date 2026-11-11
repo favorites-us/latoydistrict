@@ -1,0 +1,47 @@
+[codex] Starting Codex task thread.
+[codex] Thread ready (01a1cbac-96b5-7ff1-8863-41a4af47c9e7).
+[codex] Turn started (01a1cbac-9933-7e91-843c-435a05b2efda).
+[codex] Assistant message captured: I’ll inspect the working-tree diff and trace the photo, localization, analytics, and mobile l...
+[codex] Running command: /bin/zsh -lc "pwd; rg --files -g AGENTS.md -g '"'!node_modules'"' -g '"'!artifacts'"'"
+[codex] Command failed: /bin/zsh -lc "pwd; rg --files -g AGENTS.md -g '"'!node_modules'"' -g '"'!artifacts'"'" (exit 1)
+[codex] Running command: /bin/zsh -lc 'git diff -- web/components web/lib/server/private-files.ts web/app/layout.tsx w...
+[codex] Command completed: /bin/zsh -lc 'git diff -- web/components web/lib/server/private-files.ts web/app/layout.tsx w... (exit 0)
+[codex] Running command: /bin/zsh -lc "sed -n '580,730p' web/app/globals.css; cat web/lib/photos.ts web/app/api/store-...
+[codex] Command completed: /bin/zsh -lc "sed -n '580,730p' web/app/globals.css; cat web/lib/photos.ts web/app/api/store-... (exit 0)
+[codex] Running command: /bin/zsh -lc 'git diff -- web/data/photos.json web/app/layout.tsx web/components/pages/GuideP...
+[codex] Running command: /bin/zsh -lc 'git diff -- web/components/DirectoryBrowser.tsx web/components/SiteChrome.tsx w...
+[codex] Command completed: /bin/zsh -lc 'git diff -- web/components/DirectoryBrowser.tsx web/components/SiteChrome.tsx w... (exit 0)
+[codex] Command completed: /bin/zsh -lc 'git diff -- web/data/photos.json web/app/layout.tsx web/components/pages/GuideP... (exit 0)
+[codex] Running command: /bin/zsh -lc "cat web/components/StorePhoto.tsx web/lib/photos.ts 'web/app/api/store-photos/[...
+[codex] Command completed: /bin/zsh -lc "cat web/components/StorePhoto.tsx web/lib/photos.ts 'web/app/api/store-photos/[... (exit 0)
+[codex] Running command: /bin/zsh -lc "git diff -- web/components/StorePhoto.tsx HANDOFF.md; cat web/lib/jsonld.ts web...
+[codex] Command failed: /bin/zsh -lc "git diff -- web/components/StorePhoto.tsx HANDOFF.md; cat web/lib/jsonld.ts web... (exit 2)
+[codex] Assistant message captured: The photo cards have lost their source/removal link, and the new manifest publishes a source ...
+[codex] Running command: /bin/zsh -lc "cat web/lib/analytics.ts web/app/layout.tsx docs/operations/photos.md; rg -n 'g...
+[codex] Command completed: /bin/zsh -lc "cat web/lib/analytics.ts web/app/layout.tsx docs/operations/photos.md; rg -n 'g... (exit 0)
+[codex] Searching:
+[codex] Running command: /bin/zsh -lc "rg -n 'caballoon|California Balloon|permission|prohibit' artifacts/redesign-202...
+[codex] Command completed: /bin/zsh -lc "rg -n 'caballoon|California Balloon|permission|prohibit' artifacts/redesign-202... (exit 0)
+[codex] Assistant message captured: { "verdict": "needs-attention", "summary": "Do not ship yet: raw search queries can enter GA,...
+[codex] Turn completed.
+# Codex Adversarial Review
+
+Target: working tree diff
+Verdict: needs-attention
+
+Do not ship yet: raw search queries can enter GA, a previously excluded photo source is enabled, and compact photos lose attribution/removal access.
+
+Findings:
+- [high] Raw search text now leaks through analytics URLs (web/components/DirectoryBrowser.tsx:34-36)
+  Every search edit writes free text into ?q=. Reloading that URL or submitting the new header search invokes the unchanged GA configuration with the full URL. GA defaults page_location to document.location, so raw queries—including any personal information entered—bypass the has_query-only event safeguard. History-based measurement can also collect intermediate edits. See [GA configuration](https://developers.google.com/analytics/devguides/collection/ga4/reference/config).
+  Recommendation: Keep free-text queries out of URLs, or sanitize analytics locations and referrers before initialization and every navigation, including automatic search/history measurement. Verify collected requests contain no raw query.
+- [high] Publishing a source explicitly excluded for copying restrictions (web/data/photos.json:196-205)
+  California Balloon House is marked published with unconfirmed rights. docs/decisions/2026-10-30-buyer-redesign.md explicitly excludes its assets because its terms restrict reproduction without permission; docs/operations/photos.md requires rejecting such sources. No permission or reassessment is recorded here. The new entry makes these bytes eligible for publication despite that documented exclusion.
+  Recommendation: Remove this entry from publication eligibility until permission or a documented source-specific reassessment resolves the exclusion; enforce the exclusion in collection and publication checks.
+- [medium] Compact photos lose source, rights, and removal navigation (web/components/StorePhoto.tsx:20)
+  The !compact condition removes the entire caption from every directory and featured photo. Previously these images included a catalog-price caveat and a localized Source & rights link to the removal section. Existing American Silk catalog images now appear without that warning, and rights holders viewing cards have no explicit route to attribution or removal.
+  Recommendation: Restore a localized source/removal link and the applicable catalog caveat on compact photos. Ensure the card overlay and pointer-events rules leave that link accessible by pointer and keyboard.
+
+Next steps:
+- Resolve the three findings and verify EN/ES attribution links and sanitized GA requests.
+- Run browser checks for keyboard access and mobile fixed-bar overlap; this review inspected code without executing runtime tests.

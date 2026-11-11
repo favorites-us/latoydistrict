@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Phone, Globe2, MapPin } from "lucide-react";
+import CategoryVisual from "@/components/CategoryVisual";
+import { Phone, Globe2, MapPin, Mail, Clock, Calendar, Info } from "lucide-react";
 import SaveStoreButton from "@/components/SaveStoreButton";
 import QuoteDraft from "@/components/QuoteDraft";
-import StorePhoto from "@/components/StorePhoto";
+import StoreGallery from "@/components/StoreGallery";
 import { photosForStore } from "@/lib/photos";
 import JsonLd from "@/components/JsonLd";
 import StoreCard from "@/components/StoreCard";
@@ -11,7 +12,7 @@ import StoreViewEvent from "@/components/StoreViewEvent";
 import StoreContactLink from "@/components/StoreContactLink";
 import { NearestParking } from "@/components/ParkingLots";
 import { Header, Footer } from "@/components/SiteChrome";
-import { BLOCK_LABELS, fullAddress, stores, type Store, type OnlineSource } from "@/lib/stores";
+import { BLOCK_LABELS, fullAddress, stores, type Store, type OnlineFact, type OnlineSource } from "@/lib/stores";
 import { storeJsonLd } from "@/lib/jsonld";
 import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
 import { buyerQuestions } from "@/lib/content/buyer-questions";
@@ -29,6 +30,11 @@ function SourceNote({ source, locale, slug }: { source?: OnlineSource; locale: L
       : <a href={href} target="_blank" rel="nofollow noopener noreferrer">{source.label} ↗</a>}
     {" · "}{t(locale, "source_checked")} <time dateTime={source.checked_at}>{source.checked_at}</time>
   </p>;
+}
+
+function FactSources({ facts, locale, slug }: { facts: OnlineFact[]; locale: Locale; slug: string }) {
+  const sources = facts.flatMap(fact => [fact.source, ...(fact.additional_sources ?? [])]);
+  return <details className="src-disclosure"><summary>{locale === "es" ? "Fuentes" : "Sources"} ({sources.length})</summary>{facts.map(fact => <div key={fact.id}><p>{fact.text[locale]}</p><SourceNote source={fact.source} locale={locale} slug={slug} />{fact.additional_sources?.map((source, index) => <SourceNote key={index} source={source} locale={locale} slug={slug} />)}</div>)}</details>;
 }
 
 const FIELD_SOURCE_LABELS: Record<string, DictKey> = {
@@ -103,9 +109,11 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
             {" / "}
             <Link href={`${localePath(locale, "/") || "/"}?street=${store.block}#directory`}>{BLOCK_LABELS[store.block]}</Link>
           </nav>
-          <div className="store-heading">
+          {gallery.length > 0 && <StoreGallery photos={gallery} locale={locale} category={store.category[0] || "general"} />}
+          <div className={`store-heading ${gallery.length ? "" : "no-photos"}`}>
+            {!gallery.length && <div className="heading-icon"><CategoryVisual category={store.category[0] || "general"} locale={locale} /></div>}
             <div>
-              <h1>{store.name}</h1>
+              <h1>{store.name}</h1>{store.verified_at && <span className="badge brand" >✓ {t(locale, "verified_note")} — <time dateTime={store.verified_at}>{store.verified_at}</time></span>}
               <p className="store-descriptor">
                 {descriptor}
                 {store.field_sources?.wholesale_retail?.type === "business" ? (
@@ -119,28 +127,14 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
             </div>
             <SaveStoreButton slug={store.slug} name={store.name} locale={locale} />
           </div>
-          {store.verified_at ? (
-            <p className="note ok">✓ {t(locale, "verified_note")} — {store.verified_at}</p>
-          ) : null}
           <div className="store-detail-layout">
             <div className="store-main-column">
-              {gallery.length > 0 && (
-                <section id="photos" aria-label={es ? "Imágenes del catálogo" : "Catalog images"}>
-                  <StorePhoto photo={gallery[0]} locale={locale} />
-                  {gallery.length > 1 && (
-                    <details className="src-disclosure">
-                      <summary>{es ? "Más imágenes del catálogo" : "More catalog images"} ({gallery.length - 1})</summary>
-                      {gallery.slice(1).map((photo) => <StorePhoto key={photo.id} photo={photo} locale={locale} />)}
-                    </details>
-                  )}
-                </section>
-              )}
 
               <section className="fact-card" aria-labelledby="facts-heading">
                 <h2 id="facts-heading" className="card-heading">{t(locale, "store_details_h2")}</h2>
                 <dl className="fact-list">
                   <div className="fact-row">
-                    <dt>{t(locale, "field_address")}</dt>
+                    <dt><MapPin size={18} /><span className="sr-only">{t(locale, "field_address")}</span></dt>
                     <dd>
                       {fullAddress(store)}
                       {" · "}
@@ -151,7 +145,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                   </div>
                   {store.phone ? (
                     <div className="fact-row">
-                      <dt>{t(locale, "field_phone")}</dt>
+                      <dt><Phone size={18} /><span className="sr-only">{t(locale, "field_phone")}</span></dt>
                       <dd>
                         <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone">{store.phone}</StoreContactLink>
                       </dd>
@@ -159,7 +153,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                   ) : null}
                   {store.contact_email ? (
                     <div className="fact-row">
-                      <dt>{t(locale, "field_email")}</dt>
+                      <dt><Mail size={18} /><span className="sr-only">{t(locale, "field_email")}</span></dt>
                       <dd>
                         <StoreContactLink href={`mailto:${store.contact_email}`} slug={store.slug} method="email">{store.contact_email}</StoreContactLink>
                       </dd>
@@ -167,7 +161,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                   ) : null}
                   {links.length > 0 ? (
                     <div className="fact-row">
-                      <dt>{t(locale, "field_links")}</dt>
+                      <dt><Globe2 size={18} /><span className="sr-only">{t(locale, "field_links")}</span></dt>
                       <dd>
                         {links.map((l, i) => (
                           <span key={l.href}>
@@ -178,34 +172,32 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                       </dd>
                     </div>
                   ) : null}
-                  {store.hours || store.field_sources?.hours ? (
-                    <div className="fact-row">
-                      <dt>{t(locale, "field_hours")}</dt>
-                      <dd>{store.hours ?? t(locale, "hours_unconfirmed")}</dd>
+                  <div className="fact-row">
+                      <dt><Clock size={18} /><span className="sr-only">{t(locale, "field_hours")}</span></dt>
+                      <dd><span className="hours-status">{store.hours ? (es ? "Horario publicado" : "Published hours") : t(locale, "hours_unconfirmed")}</span>{store.hours && <p>{store.hours}</p>}</dd>
                     </div>
-                  ) : null}
                   {store.moq ? (
                     <div className="fact-row">
-                      <dt>{t(locale, "field_moq")}</dt>
+                      <dt className="visible-fact-label">{t(locale, "field_moq")}</dt>
                       <dd>{store.moq}</dd>
                     </div>
                   ) : null}
                   {store.payment?.length ? (
                     <div className="fact-row">
-                      <dt>{t(locale, "field_payment")}</dt>
+                      <dt className="visible-fact-label">{t(locale, "field_payment")}</dt>
                       <dd>{store.payment.join(", ")}</dd>
                     </div>
                   ) : null}
                   {store.languages?.length ? (
                     <div className="fact-row">
-                      <dt>{t(locale, "field_languages")}</dt>
+                      <dt className="visible-fact-label">{t(locale, "field_languages")}</dt>
                       <dd>{store.languages.map((language) => es && language === "Spanish" ? "Español" : language).join(", ")}</dd>
                     </div>
                   ) : null}
                   {store.since ? (
                     <div className="fact-row">
-                      <dt>{t(locale, "since")}</dt>
-                      <dd>{store.since.slice(0, 4)}</dd>
+                      <dt><Calendar size={18} /><span className="sr-only">{t(locale, "since")}</span></dt>
+                      <dd>{t(locale, "since")} {store.since.slice(0, 4)}</dd>
                     </div>
                   ) : null}
                 </dl>
@@ -244,34 +236,31 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                   <ul className="carry-facts">
                     {carryFacts.map((fact) => (
                       <li key={fact.id}>
-                        <p>{fact.text[locale]}</p>
-                        <SourceNote source={fact.source} locale={locale} slug={store.slug} />
-                        {fact.additional_sources?.map((source) => (
-                          <SourceNote key={source.url} source={source} locale={locale} slug={store.slug} />
-                        ))}
+                        <details className="fact-detail"><summary>{fact.kind === "minimum_order" ? (es ? "Pedido mínimo" : "Minimum order") : fact.kind === "services" ? (es ? "Servicios" : "Services") : fact.kind === "products" ? (es ? "Productos" : "Products") : fact.kind === "manufacturer_listing" ? (es ? "Listado del fabricante" : "Manufacturer listing") : (es ? "Condiciones de compra" : "Buying terms")}</summary><p>{fact.text[locale]}</p></details>
+
                       </li>
                     ))}
                   </ul>
                 ) : (
                   <p className="unknown-line">{t(locale, "carry_registration_note")}</p>
                 )}
+                {carryFacts.length > 0 && <FactSources facts={carryFacts} locale={locale} slug={store.slug} />}
               </section>
 
               {buyFacts.length > 0 ? (
                 <section className="buying-details" aria-labelledby="buying-heading">
                   <h2 id="buying-heading" className="card-heading">{t(locale, "buying_h2")}</h2>
+                  <div className="fact-highlights">{buyFacts.filter(fact => fact.minimum_order_value).map(fact => <span className="badge" key={fact.id}>{es ? "Pedido mínimo" : "Minimum order"}: ${fact.minimum_order_value!.amount.toLocaleString(locale)}</span>)}{store.field_sources?.hours && !store.hours && <span className="badge">{es ? "Horario sin confirmar" : "Hours unconfirmed"}</span>}</div>
                   <p>{t(locale, "online_note")}</p>
                   <ul>
                     {buyFacts.map((fact) => (
                       <li key={fact.id}>
-                        <p>{fact.text[locale]}</p>
-                        <SourceNote source={fact.source} locale={locale} slug={store.slug} />
-                        {fact.additional_sources?.map((source) => (
-                          <SourceNote key={source.url} source={source} locale={locale} slug={store.slug} />
-                        ))}
+                        <details className="fact-detail"><summary>{fact.kind === "minimum_order" ? (es ? "Pedido mínimo" : "Minimum order") : fact.kind === "services" ? (es ? "Servicios" : "Services") : fact.kind === "products" ? (es ? "Productos" : "Products") : fact.kind === "manufacturer_listing" ? (es ? "Listado del fabricante" : "Manufacturer listing") : (es ? "Condiciones de compra" : "Buying terms")}</summary><p>{fact.text[locale]}</p></details>
+
                       </li>
                     ))}
                   </ul>
+                  <FactSources facts={buyFacts} locale={locale} slug={store.slug} />
                 </section>
               ) : null}
 
@@ -308,7 +297,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
                 <h2 className="card-heading">{es ? "Prepare su compra" : "Plan your purchase"}</h2>
                 <p>{es ? "Confirme los productos y condiciones directamente con el negocio." : "Confirm items and buying terms directly with the business."}</p>
                 <div className="store-contact-buttons">
-                  {store.phone && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={16} />{es ? "Llamar al negocio" : "Call the business"}</StoreContactLink>}
+                  {store.phone && store.field_sources?.phone?.type === "business" && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={16} />{es ? "Llamar al negocio" : "Call the business"}</StoreContactLink>}
                   {httpUrl(store.links?.website) && <StoreContactLink href={httpUrl(store.links?.website)!} slug={store.slug} method="website" external><Globe2 size={16} />{es ? "Sitio del negocio" : "Business website"}</StoreContactLink>}
                   <QuoteDraft name={store.name} slug={store.slug} locale={locale} />
                   <a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="nofollow noopener noreferrer"><MapPin size={16} />{es ? "Ver dirección en Maps" : "Open address in Maps"}</a>
@@ -332,6 +321,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
           ) : null}
         </div>
       </main>
+      <div className="store-sticky-actions" role="group" aria-label={es ? "Acciones del negocio" : "Business actions"}>{store.phone && store.field_sources?.phone?.type === "business" && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={18} />{es ? "Llamar" : "Call"}</StoreContactLink>}{!store.phone && <span className="action-unavailable"><Phone size={18} />{es ? "Sin teléfono" : "No phone"}</span>}<a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="nofollow noopener noreferrer"><MapPin size={18} />{es ? "Cómo llegar" : "Directions"}</a>{httpUrl(store.links?.website) ? <StoreContactLink href={httpUrl(store.links?.website)!} slug={store.slug} method="website" external><Globe2 size={18} />{es ? "Sitio web" : "Website"}</StoreContactLink> : <span className="action-unavailable"><Globe2 size={18} />{es ? "Sin sitio web" : "No website"}</span>}<SaveStoreButton slug={store.slug} name={store.name} locale={locale} /></div>
       <Footer locale={locale} />
     </>
   );

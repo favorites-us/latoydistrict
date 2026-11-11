@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Bookmark, Boxes, Globe2, Menu, X } from "lucide-react";
+import { Bookmark, Boxes, Globe2, Menu, X, Search } from "lucide-react";
 import { t, localePath, type Locale } from "@/lib/i18n";
 import { useBuyer } from "./BuyerProvider";
 import { Button, buttonVariants } from "./ui/button";
@@ -24,6 +24,7 @@ export function Header({ locale, altPath }: { locale: Locale; altPath: string })
           <Button className="mobile-menu-button min-[1025px]:hidden" variant="ghost" size="icon" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? (es ? "Cerrar menú" : "Close menu") : (es ? "Abrir menú" : "Open menu")} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
         </div>
       </div>
+      {altPath !== "/" && <form className="header-search container" action={`${p("/") || "/"}#directory`}><Search size={18} aria-hidden="true" /><input name="q" type="search" aria-label={es ? "Buscar proveedores" : "Search suppliers"} placeholder={es ? "¿Qué está buscando?" : "What are you looking for?"} /><button aria-label={es ? "Buscar" : "Search"}><Search size={18} /></button></form>}
       {open && <nav id="mobile-menu" className="mobile-nav" aria-label={es ? "Navegación móvil" : "Mobile navigation"} onKeyDown={(event) => { if (event.key === "Escape") setOpen(false); }}>{[["/", t(locale, "nav_directory")], ["/guide/visiting", t(locale, "nav_visiting")], ["/guide/wholesale-basics", t(locale, "nav_wholesale")], ["/guide/buying-checklist", t(locale, "nav_buyers")]].map(([path, label]) => <Link key={path} href={p(path)} onClick={() => setOpen(false)}>{label}</Link>)}</nav>}
     </header>
   </>;

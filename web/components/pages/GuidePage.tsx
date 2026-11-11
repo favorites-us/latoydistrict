@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DistrictVisual from "@/components/DistrictVisual";
 import JsonLd from "@/components/JsonLd";
 import BuyerWorksheet from "@/components/BuyerWorksheet";
 import { ParkingLotList } from "@/components/ParkingLots";
@@ -28,13 +29,14 @@ export default function GuidePage({
               {" / "}
               {t(locale, "guides_h2")}
             </nav>
+            <DistrictVisual locale={locale} />
             <h1>{guide.title}</h1>
             <p className="lede">{guide.description}</p>
             <p className="source-note">{t(locale, "guide_reviewed")} <time dateTime={guide.reviewed_at}>{guide.reviewed_at}</time></p>
             {guide.worksheet ? <p><a href="#worksheet-heading">{t(locale, "worksheet_jump")}</a></p> : null}
             {guide.sections.map((sec) => (
-              <section key={sec.h}>
-                <h2>{sec.h}</h2>
+              <details className="guide-accordion" key={sec.h}>
+                <summary><h2>{sec.h}</h2></summary>
                 {sec.ps.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
@@ -55,13 +57,13 @@ export default function GuidePage({
                   {" · "}{t(locale, "source_checked")} <time dateTime={source.checked_at}>{source.checked_at}</time>
                 </p>)}
                 {sec.widget === "parking" ? <ParkingLotList locale={locale} /> : null}
-              </section>
+              </details>
             ))}
             {guide.faq ? <section aria-labelledby="faq-heading">
               <h2 id="faq-heading">{t(locale, "guide_faq")}</h2>
-              {guide.faq.map((item) => <div key={item.q}>
-                <h3>{item.q}</h3><p>{item.a}</p>
-              </div>)}
+              {guide.faq.map((item) => <details className="guide-accordion" key={item.q}>
+                <summary><h3>{item.q}</h3></summary><p>{item.a}</p>
+              </details>)}
             </section> : null}
             {!guide.worksheet ? <p className="guide-next"><Link href={localePath(locale, "/guide/buying-checklist")}>{t(locale, "worksheet_link")}</Link></p> : null}
           </div>

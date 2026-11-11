@@ -1,0 +1,1 @@
+{"type":"object","properties":{"usable":{"type":"boolean"},"kind":{"type":"string","enum":["product","storefront","interior","banner_with_text","logo","people","other"]},"quality":{"type":"integer"},"alt_en":{"type":"string"},"alt_es":{"type":"string"},"reason":{"type":"string"}},"required":["usable","kind","quality","alt_en","alt_es","reason"],"additionalProperties":false}

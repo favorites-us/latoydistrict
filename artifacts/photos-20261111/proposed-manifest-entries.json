@@ -1,0 +1,508 @@
+{
+  "photos": [
+    {
+      "id": "americas-favors-405-official-20261111-1",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-20261111-1.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/files/Untitled_design_11.png?v=1653360736&width=1500",
+      "source_label": "Americas Favors official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 720,
+      "height": 405,
+      "mime_type": "image/webp",
+      "sha256": "3b97d000c3bfd4214653391ee9c47ccac6fe2131c06b3021ce310d82c2b661a8",
+      "caption": {
+        "en": "Image from the official website of Americas Favors. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Americas Favors. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Americas Favors",
+        "es": "Imagen publicada en el sitio web oficial de Americas Favors"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-2",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-20261111-2.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_9147.jpg?v=1596763491",
+      "source_label": "Americas Favors official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 800,
+      "mime_type": "image/webp",
+      "sha256": "2918d8fa099ea9a4a120051675edbe419da17c1fe5a2d735177befeec8894b4a",
+      "caption": {
+        "en": "Image from the official website of Americas Favors. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Americas Favors. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Americas Favors",
+        "es": "Imagen publicada en el sitio web oficial de Americas Favors"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-3",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-20261111-3.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/ScreenShot2020-04-03at6.31.33PM.png?v=1585963921",
+      "source_label": "Americas Favors official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 922,
+      "mime_type": "image/webp",
+      "sha256": "a94505bdf9f5011815a7d2c6c6b920f634f92bd4348b351dfb45ae19536a8fed",
+      "caption": {
+        "en": "Image from the official website of Americas Favors. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Americas Favors. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Americas Favors",
+        "es": "Imagen publicada en el sitio web oficial de Americas Favors"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-4",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-20261111-4.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_8684.jpg?v=1571609724",
+      "source_label": "Americas Favors official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 800,
+      "mime_type": "image/webp",
+      "sha256": "126e15ee3ba1c284307ad65fe1acd36391a5d2b2c2c7ab0aa43f628686e4a6a4",
+      "caption": {
+        "en": "Image from the official website of Americas Favors. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Americas Favors. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Americas Favors",
+        "es": "Imagen publicada en el sitio web oficial de Americas Favors"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-5",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-20261111-5.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_6727__41898.1489455010.1280.1280.jpg?v=1571609719",
+      "source_label": "Americas Favors official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 800,
+      "mime_type": "image/webp",
+      "sha256": "7802b02a9c4df99ea7ea16bf7acb99c0259b1e6801391187b71255f97f898aa4",
+      "caption": {
+        "en": "Image from the official website of Americas Favors. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Americas Favors. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Americas Favors",
+        "es": "Imagen publicada en el sitio web oficial de Americas Favors"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-6",
+      "store_slug": "americas-favors-405",
+      "status": "published",
+      "storage_path": "americas-favors-405-official-20261111-6.webp",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/Foam_Flowers3.jpg?v=1571609659",
+      "source_label": "Americas Favors official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1191,
+      "height": 1200,
+      "mime_type": "image/webp",
+      "sha256": "7c7354f38dedd7cbab8f60dc3e98422d13d4579288e7412b5bb72d5627361dcd",
+      "caption": {
+        "en": "Image from the official website of Americas Favors. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Americas Favors. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Americas Favors",
+        "es": "Imagen publicada en el sitio web oficial de Americas Favors"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-1",
+      "store_slug": "california-balloon-house-447",
+      "status": "published",
+      "storage_path": "california-balloon-house-447-official-20261111-1.webp",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/gradbanner1.jpg?v=1713374998&width=620",
+      "source_label": "California Balloon House official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 620,
+      "height": 559,
+      "mime_type": "image/webp",
+      "sha256": "5fe9dbb780099d9405db1f0834fb01f1eb655889cce3b34b6f1e33b11d20e8af",
+      "caption": {
+        "en": "Image from the official website of California Balloon House. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de California Balloon House. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of California Balloon House",
+        "es": "Imagen publicada en el sitio web oficial de California Balloon House"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-2",
+      "store_slug": "california-balloon-house-447",
+      "status": "published",
+      "storage_path": "california-balloon-house-447-official-20261111-2.webp",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/gradbanner1.jpg?v=1713374998&width=800",
+      "source_label": "California Balloon House official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 800,
+      "height": 721,
+      "mime_type": "image/webp",
+      "sha256": "75b3ae551e42f2197aa35c0462b05b4978d36b961d9cbe5f8c84ac1955d33444",
+      "caption": {
+        "en": "Image from the official website of California Balloon House. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de California Balloon House. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of California Balloon House",
+        "es": "Imagen publicada en el sitio web oficial de California Balloon House"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-3",
+      "store_slug": "california-balloon-house-447",
+      "status": "published",
+      "storage_path": "california-balloon-house-447-official-20261111-3.webp",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/newarrivals.jpg?v=1715709834&width=1240",
+      "source_label": "California Balloon House official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 1136,
+      "mime_type": "image/webp",
+      "sha256": "f4ba439297449aede62b9f92b6daa95f1bf99be22416dcf5cb51e44149e30ee0",
+      "caption": {
+        "en": "Image from the official website of California Balloon House. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de California Balloon House. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of California Balloon House",
+        "es": "Imagen publicada en el sitio web oficial de California Balloon House"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-4",
+      "store_slug": "california-balloon-house-447",
+      "status": "published",
+      "storage_path": "california-balloon-house-447-official-20261111-4.webp",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/newarrivals.jpg?v=1715709834&width=2172",
+      "source_label": "California Balloon House official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 1136,
+      "mime_type": "image/webp",
+      "sha256": "cc216557e360456a0ebb5001301140d7f1e46f943402597b5124349d9fe3c7bf",
+      "caption": {
+        "en": "Image from the official website of California Balloon House. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de California Balloon House. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of California Balloon House",
+        "es": "Imagen publicada en el sitio web oficial de California Balloon House"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-5",
+      "store_slug": "california-balloon-house-447",
+      "status": "published",
+      "storage_path": "california-balloon-house-447-official-20261111-5.webp",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/34665Spider-Man.jpg?v=1716920116&width=1240",
+      "source_label": "California Balloon House official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 1110,
+      "mime_type": "image/webp",
+      "sha256": "d26a05748c1029bedf98b289cfc2f95813651f37af72c4565230a330e8634fa3",
+      "caption": {
+        "en": "Image from the official website of California Balloon House. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de California Balloon House. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of California Balloon House",
+        "es": "Imagen publicada en el sitio web oficial de California Balloon House"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-6",
+      "store_slug": "california-balloon-house-447",
+      "status": "published",
+      "storage_path": "california-balloon-house-447-official-20261111-6.webp",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/34665Spider-Man.jpg?v=1716920116&width=2594",
+      "source_label": "California Balloon House official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 1110,
+      "mime_type": "image/webp",
+      "sha256": "7cf9cbc63a7b113e603341cd987ed3e6f572c8bd12c0d01c515b8fa85e27b6b4",
+      "caption": {
+        "en": "Image from the official website of California Balloon House. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de California Balloon House. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of California Balloon House",
+        "es": "Imagen publicada en el sitio web oficial de California Balloon House"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-20261111-1",
+      "store_slug": "fantasia-sales-inc-401",
+      "status": "published",
+      "storage_path": "fantasia-sales-inc-401-official-20261111-1.webp",
+      "source_page_url": "https://fantasia-sales.com/",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/f755e53cf8a3c73e99a6f3d54a69d021_grande.jpg?v=1642275609",
+      "source_label": "Fantasia Sales INC official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 600,
+      "height": 600,
+      "mime_type": "image/webp",
+      "sha256": "3f133f6a6751def411fff8cbb13511343b92615e40b91b9739e81ae654d1f4dd",
+      "caption": {
+        "en": "Image from the official website of Fantasia Sales INC. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Fantasia Sales INC. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Fantasia Sales INC",
+        "es": "Imagen publicada en el sitio web oficial de Fantasia Sales INC"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-20261111-2",
+      "store_slug": "fantasia-sales-inc-401",
+      "status": "published",
+      "storage_path": "fantasia-sales-inc-401-official-20261111-2.webp",
+      "source_page_url": "https://fantasia-sales.com/products/10-pack-kn95-folding-dust-mask-respirator",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/20200430_122624_1200x1200.jpg?v=1588443413",
+      "source_label": "Fantasia Sales INC official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 710,
+      "height": 1200,
+      "mime_type": "image/webp",
+      "sha256": "3c0772becc563106564c628ca3b401ed676fc9c54b033685e8692118df1babc4",
+      "caption": {
+        "en": "Image from the official website of Fantasia Sales INC. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Fantasia Sales INC. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Fantasia Sales INC",
+        "es": "Imagen publicada en el sitio web oficial de Fantasia Sales INC"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-20261111-3",
+      "store_slug": "fantasia-sales-inc-401",
+      "status": "published",
+      "storage_path": "fantasia-sales-inc-401-official-20261111-3.webp",
+      "source_page_url": "https://fantasia-sales.com/products/10-pack-kn95-folding-dust-mask-respirator",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/ConversionChart_1_1200x1200.jpg?v=1588443413",
+      "source_label": "Fantasia Sales INC official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 989,
+      "height": 864,
+      "mime_type": "image/webp",
+      "sha256": "78fc4220af0f2470e97019e76fb46e94cb687bdd626e8c601143ab99cf155881",
+      "caption": {
+        "en": "Image from the official website of Fantasia Sales INC. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de Fantasia Sales INC. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of Fantasia Sales INC",
+        "es": "Imagen publicada en el sitio web oficial de Fantasia Sales INC"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-1",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-20261111-1.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/TSJ_New_Blank-01.png?v=1747857200",
+      "source_label": "The Supply Joint official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 801,
+      "mime_type": "image/webp",
+      "sha256": "e504f6018c1f49ba40ae26c8509cdf5bb0e7945cb74d38743cb5d7f95f46edb4",
+      "caption": {
+        "en": "Image from the official website of The Supply Joint. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de The Supply Joint. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of The Supply Joint",
+        "es": "Imagen publicada en el sitio web oficial de The Supply Joint"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-2",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-20261111-2.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/116-POP-TOP-web-banner.jpg?v=1766017181&width=1860",
+      "source_label": "The Supply Joint official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 557,
+      "mime_type": "image/webp",
+      "sha256": "925acc90f625650daf7f1bd3bef38a21a8a202bc1e73b8652ea61f64d9f06b09",
+      "caption": {
+        "en": "Image from the official website of The Supply Joint. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de The Supply Joint. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of The Supply Joint",
+        "es": "Imagen publicada en el sitio web oficial de The Supply Joint"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-3",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-20261111-3.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/jars_tubes_2x_b3819b11-8a08-4645-9809-ea794b988a5e.png?v=1679764664&width=2820",
+      "source_label": "The Supply Joint official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 557,
+      "mime_type": "image/webp",
+      "sha256": "28cbbb0c9c847a5059e08e5c9df195004e10a5a5908b0b065dad0c7efb997960",
+      "caption": {
+        "en": "Image from the official website of The Supply Joint. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de The Supply Joint. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of The Supply Joint",
+        "es": "Imagen publicada en el sitio web oficial de The Supply Joint"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-4",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-20261111-4.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/Chubby-Gorilla-web-banner2_5752c5d4-a32d-4203-8c57-d866114c286a.jpg?v=1753317602&width=1860",
+      "source_label": "The Supply Joint official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 557,
+      "mime_type": "image/webp",
+      "sha256": "a53e26a31342ec58ce17a4dd91b02cca0a7be88177dc4b704c68faf2509c95bd",
+      "caption": {
+        "en": "Image from the official website of The Supply Joint. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de The Supply Joint. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of The Supply Joint",
+        "es": "Imagen publicada en el sitio web oficial de The Supply Joint"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-5",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-20261111-5.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/ikrusher_web_banner_copy.webp?v=1746662915&width=1860",
+      "source_label": "The Supply Joint official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 1200,
+      "height": 557,
+      "mime_type": "image/webp",
+      "sha256": "71db6cc1f9b856eb5711f0d2933e60a1f047978fe481ec41c602c234ce3bbdcc",
+      "caption": {
+        "en": "Image from the official website of The Supply Joint. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de The Supply Joint. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of The Supply Joint",
+        "es": "Imagen publicada en el sitio web oficial de The Supply Joint"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-6",
+      "store_slug": "the-supply-joint-325",
+      "status": "published",
+      "storage_path": "the-supply-joint-325-official-20261111-6.webp",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/products/astro-mod-vape-battery-the-supply-joint-1.webp?crop=center&height=840&v=1738441818&width=840",
+      "source_label": "The Supply Joint official website",
+      "retrieved_at": "2026-11-11",
+      "rights_status": "not_confirmed",
+      "publication_basis": "official_site_opt_out_2026_11_11",
+      "width": 840,
+      "height": 840,
+      "mime_type": "image/webp",
+      "sha256": "c06171880301abd77b0dbd932485c735fd5887af07ea7aaedd741a5b96dad0ea",
+      "caption": {
+        "en": "Image from the official website of The Supply Joint. Confirm current products and availability with the business.",
+        "es": "Imagen del sitio web oficial de The Supply Joint. Confirme los productos actuales y la disponibilidad con el negocio."
+      },
+      "alt": {
+        "en": "Image featured on the official website of The Supply Joint",
+        "es": "Imagen publicada en el sitio web oficial de The Supply Joint"
+      }
+    }
+  ]
+}

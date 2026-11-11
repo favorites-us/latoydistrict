@@ -1,0 +1,2685 @@
+{
+  "started_at": "2026-11-11T17:18:56.280Z",
+  "user_agent": "Mozilla/5.0 (compatible; directory-bot)",
+  "stores": [
+    {
+      "slug": "americas-favors-405",
+      "site": "https://americasfavors.com/",
+      "count": 6,
+      "pages": [
+        "https://americasfavors.com/",
+        "https://americasfavors.com/collections/wedding-favors",
+        "https://americasfavors.com/collections/baby-shower-favors"
+      ],
+      "failures": [],
+      "rejected": [
+        {
+          "url": "https://americasfavors.com/cdn/shop/products/IMG_9147.jpg?v=1596763491&width=533",
+          "reason": "too small, thin, or unsupported format",
+          "width": 533,
+          "height": 355
+        },
+        {
+          "url": "https://americasfavors.com/cdn/shop/products/ScreenShot2020-04-03at6.31.33PM.png?v=1585963921&width=533",
+          "reason": "too small, thin, or unsupported format",
+          "width": 533,
+          "height": 410
+        },
+        {
+          "url": "https://americasfavors.com/cdn/shop/products/IMG_8684.jpg?v=1571609724&width=533",
+          "reason": "too small, thin, or unsupported format",
+          "width": 533,
+          "height": 355
+        },
+        {
+          "url": "https://americasfavors.com/cdn/shop/products/IMG_6727__41898.1489455010.1280.1280.jpg?v=1571609719&width=533",
+          "reason": "too small, thin, or unsupported format",
+          "width": 533,
+          "height": 355
+        }
+      ]
+    },
+    {
+      "slug": "casa-manga-218",
+      "site": "https://www.casamanga.com/",
+      "count": 0,
+      "pages": [
+        "https://www.casamanga.com/",
+        "https://www.casamanga.com/collections",
+        "https://www.casamanga.com/collections/all-products-in-stock-111"
+      ],
+      "failures": [],
+      "rejected": [
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Alien-Stage-Anakt-Arts-High-School-Mini-Figural-Keychain-with-Charms-Blind-Box_60x60@2x.jpg?v=1786655438",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Alien-Stage-Anakt-Arts-High-School-Mini-Figural-Keychain-with-Charms-Blind-Box_60x60.jpg?v=1786655438",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Dragon-Ball-Z-Grandista-Broly-Figure_60x60@2x.jpg?v=1791319231",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Dragon-Ball-Z-Grandista-Broly-Figure_60x60.jpg?v=1791319231",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/GOODS-04852708_1_60x60@2x.jpg?v=1789707515",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 80
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/GOODS-04852708_1_60x60.jpg?v=1789707515",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 40
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/71929_01_69c0435a-2891-4dee-8c70-8096f4101a26_60x60@2x.jpg?v=1789681001",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/71929_01_69c0435a-2891-4dee-8c70-8096f4101a26_60x60.jpg?v=1789681001",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Son-Goku-The-Kind-Hearted-Saiyan-Dragon-Ball-Z-AMASHII-NATIONS-SH-Figuarts_60x60@2x.jpg?v=1781739922",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Son-Goku-The-Kind-Hearted-Saiyan-Dragon-Ball-Z-AMASHII-NATIONS-SH-Figuarts_60x60.jpg?v=1781739922",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Jotaro-Kujo-Stardust-Crusaders-JoJo_s-Bizarre-Adventure-Stardust-Crusaders-Masterlise-Ichibansho-Figure-B_60x60@2x.jpg?v=1754082702",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Jotaro-Kujo-Stardust-Crusaders-JoJo_s-Bizarre-Adventure-Stardust-Crusaders-Masterlise-Ichibansho-Figure-B_60x60.jpg?v=1754082702",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/FuglerSpongeBogKeychain_60x60@2x.jpg?v=1779926701",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/FuglerSpongeBogKeychain_60x60.jpg?v=1779926701",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Miffy-Hair-Claw-Clips-Yellow_60x60@2x.jpg?v=1755721460",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Miffy-Hair-Claw-Clips-Yellow_60x60.jpg?v=1755721460",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/MonchichiLipBalmKeychain_60x60@2x.jpg?v=1779925917",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/MonchichiLipBalmKeychain_60x60.jpg?v=1779925917",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/AMU-SHP3831_00_60x60@2x.jpg?v=1789710410",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/AMU-SHP3831_00_60x60.jpg?v=1789710410",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Sugar-Cube-Filled-with-Snowflake-Sequins-Squishy_77add496-3a0f-454f-9ee1-eceaf7dc85ce_60x60@2x.jpg?v=1788563607",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Sugar-Cube-Filled-with-Snowflake-Sequins-Squishy_77add496-3a0f-454f-9ee1-eceaf7dc85ce_60x60.jpg?v=1788563607",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Hatsune-Miku-Noodle-Stopper-Figure-Sakura-Miku-2026_60x60@2x.jpg?v=1781736083",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Hatsune-Miku-Noodle-Stopper-Figure-Sakura-Miku-2026_60x60.jpg?v=1781736083",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Miffy_Yellow_Crown_Fuzzy_Claw_Clips_60x60@2x.jpg?v=1755725877",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Miffy_Yellow_Crown_Fuzzy_Claw_Clips_60x60.jpg?v=1755725877",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Pokemon-3pk-Pens-with-Rubber-Character-Clip_60x60@2x.jpg?v=1788552253",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Pokemon-3pk-Pens-with-Rubber-Character-Clip_60x60.jpg?v=1788552253",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Parade-Mofusand-Pajama-Cat-BIG-Plush-Set_60x60@2x.jpg?v=1780094618",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Parade-Mofusand-Pajama-Cat-BIG-Plush-Set_60x60.jpg?v=1780094618",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/MonchichiLipBalmKeychainRed_60x60@2x.jpg?v=1779926018",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/MonchichiLipBalmKeychainRed_60x60.jpg?v=1779926018",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Chainsaw-Man-The-Movie-Reze-Arc-Reze-High-Premium-Figure_60x60@2x.jpg?v=1777586082",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/Chainsaw-Man-The-Movie-Reze-Arc-Reze-High-Premium-Figure_60x60.jpg?v=1777586082",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/NARUTOSETOF6_60x60@2x.jpg?v=1779868931",
+          "reason": "too small, thin, or unsupported format",
+          "width": 120,
+          "height": 120
+        },
+        {
+          "url": "https://www.casamanga.com/cdn/shop/files/NARUTOSETOF6_60x60.jpg?v=1779868931",
+          "reason": "too small, thin, or unsupported format",
+          "width": 60,
+          "height": 60
+        }
+      ]
+    },
+    {
+      "slug": "m-and-m-toys-241",
+      "site": "http://www.mnmtoysinc.com/",
+      "count": 0,
+      "pages": [],
+      "failures": [
+        {
+          "stage": "page",
+          "url": "http://www.mnmtoysinc.com/",
+          "error": "fetch failed",
+          "cause": "getaddrinfo ENOTFOUND www.mnmtoysinc.com"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "slug": "american-silk-inc-340",
+      "site": "https://www.americansilkinc.com/",
+      "count": 0,
+      "pages": [
+        "https://www.americansilkinc.com/",
+        "https://www.americansilkinc.com/catalog"
+      ],
+      "failures": [
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/b26c9d_4beb4cc1b8f84afcb8f367692444db59~mv2.jpg"
+        },
+        {
+          "stage": "image",
+          "url": "https://static.wixstatic.com/media/b26c9d_fcb6ae46995a4bec980b693383bcef4d~mv2.jpg/v1/fill/w_131,h_87,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/b26c9d_fcb6ae46995a4bec980b693383bcef4d~mv2.jpg",
+          "error": "robots.txt HTTP 403; skipped conservatively"
+        },
+        {
+          "stage": "image",
+          "url": "https://static.wixstatic.com/media/b26c9d_b0dffaa1cf6a425fbeda8786d787ee62~mv2.jpg/v1/fill/w_130,h_87,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/b26c9d_b0dffaa1cf6a425fbeda8786d787ee62~mv2.jpg",
+          "error": "robots.txt HTTP 403; skipped conservatively"
+        },
+        {
+          "stage": "image",
+          "url": "https://static.wixstatic.com/media/7739ce57736842b685f8b7e3c8d07300.jpg/v1/fill/w_575,h_575,q_90,enc_avif,quality_auto/7739ce57736842b685f8b7e3c8d07300.jpg",
+          "error": "robots.txt HTTP 403; skipped conservatively"
+        },
+        {
+          "stage": "image",
+          "url": "https://static.wixstatic.com/media/127dad64fff74f2a85fd29fee5de6179.jpg/v1/fill/w_575,h_575,q_90,enc_avif,quality_auto/127dad64fff74f2a85fd29fee5de6179.jpg",
+          "error": "robots.txt HTTP 403; skipped conservatively"
+        },
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/%E8%8A%B1%E6%9D%9F.jpg",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/%E8%8A%B1%E6%9D%9F.jpg"
+        },
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/%E8%8A%B1%E7%9B%92.jpg",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/%E8%8A%B1%E7%9B%92.jpg"
+        },
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/%E6%8F%92%E8%8A%B1.jpg",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/%E6%8F%92%E8%8A%B1.jpg"
+        },
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/e1aa082f7c0747168d9cf43e77046142.png",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/e1aa082f7c0747168d9cf43e77046142.png"
+        },
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/11062b_1f7ed8bc7b004201970df69f9eeda689~mv2.png"
+        },
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/11062b_283a2164806c4d4fb90048b444dec715~mv2.png",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/11062b_283a2164806c4d4fb90048b444dec715~mv2.png"
+        },
+        {
+          "stage": "image",
+          "url": "https://www.americansilkinc.com/quality_auto/11062b_66167d61316d4665841f3397360d54a9~mv2.png",
+          "error": "HTTP 404: https://www.americansilkinc.com/quality_auto/11062b_66167d61316d4665841f3397360d54a9~mv2.png"
+        },
+        {
+          "stage": "image",
+          "url": "https://static.wixstatic.com/media/0a6d3a_755ecefbd8d64cf499a1d76d924ce59f~mv2.jpg/v1/fill/w_980,h_1268,q_90,enc_avif,quality_auto/0a6d3a_755ecefbd8d64cf499a1d76d924ce59f~mv2.jpg",
+          "error": "robots.txt HTTP 403; skipped conservatively"
+        },
+        {
+          "stage": "image",
+          "url": "https://static.wixstatic.com/media/0a6d3a_2e446d48a70c4c50a88dee9ca6b39e7f~mv2.jpg/v1/fill/w_980,h_1268,q_90,enc_avif,quality_auto/0a6d3a_2e446d48a70c4c50a88dee9ca6b39e7f~mv2.jpg",
+          "error": "robots.txt HTTP 403; skipped conservatively"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "slug": "california-balloon-house-447",
+      "site": "https://caballoonhouse.com/",
+      "count": 6,
+      "pages": [
+        "https://caballoonhouse.com/",
+        "https://caballoonhouse.com/collections/all",
+        "https://caballoonhouse.com/collections/latex-balloons"
+      ],
+      "failures": [],
+      "rejected": [
+        {
+          "url": "https://caballoonhouse.com/cdn/shop/files/AST_1a5d09d7-6ff6-4bac-99c9-918f638a160a.jpg?v=1713211416&width=470",
+          "reason": "too small, thin, or unsupported format",
+          "width": 470,
+          "height": 470
+        }
+      ]
+    },
+    {
+      "slug": "cap-and-hat-import-inc-322",
+      "site": "https://www.capandhatimport.com/",
+      "count": 0,
+      "pages": [],
+      "failures": [
+        {
+          "stage": "page",
+          "url": "https://www.capandhatimport.com/",
+          "error": "fetch failed",
+          "cause": "getaddrinfo ENOTFOUND www.capandhatimport.com"
+        }
+      ],
+      "rejected": []
+    },
+    {
+      "slug": "fantasia-sales-inc-401",
+      "site": "https://fantasia-sales.com/",
+      "count": 3,
+      "pages": [
+        "https://fantasia-sales.com/",
+        "https://fantasia-sales.com/collections/all",
+        "https://fantasia-sales.com/products/10-pack-kn95-folding-dust-mask-respirator"
+      ],
+      "failures": [
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/20200430_122624_%7Bwidth%7Dx.jpg?v=1588443413",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/20200430_122624_%7Bwidth%7Dx.jpg?v=1588443413"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/f755e53cf8a3c73e99a6f3d54a69d021_%7Bwidth%7Dx.jpg?v=1642275609",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/f755e53cf8a3c73e99a6f3d54a69d021_%7Bwidth%7Dx.jpg?v=1642275609"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/41TBQvBjHjL._AC_%7Bwidth%7Dx.jpg?v=1602610014",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/41TBQvBjHjL._AC_%7Bwidth%7Dx.jpg?v=1602610014"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/41YO37J_2BubL._AC_%7Bwidth%7Dx.jpg?v=1602610021",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/41YO37J_2BubL._AC_%7Bwidth%7Dx.jpg?v=1602610021"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/51ZP5_2BEi6-L._AC_%7Bwidth%7Dx.jpg?v=1602610026",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/51ZP5_2BEi6-L._AC_%7Bwidth%7Dx.jpg?v=1602610026"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/81ZbxLonCdL._AC_SL1500_%7Bwidth%7Dx.jpg?v=1602610045",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/81ZbxLonCdL._AC_SL1500_%7Bwidth%7Dx.jpg?v=1602610045"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/31GSSagrN1L._AC_%7Bwidth%7Dx.jpg?v=1602610066",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/31GSSagrN1L._AC_%7Bwidth%7Dx.jpg?v=1602610066"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/81z6QO6Pm2L._AC_SL1400_%7Bwidth%7Dx.jpg?v=1602610072",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/81z6QO6Pm2L._AC_SL1400_%7Bwidth%7Dx.jpg?v=1602610072"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/71evc5mfk5L._AC_SL1400_%7Bwidth%7Dx.jpg?v=1602610085",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/71evc5mfk5L._AC_SL1400_%7Bwidth%7Dx.jpg?v=1602610085"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/41kmCgCRHJL._AC_%7Bwidth%7Dx.jpg?v=1602610092",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/41kmCgCRHJL._AC_%7Bwidth%7Dx.jpg?v=1602610092"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/41zIaMAmx7L._AC_%7Bwidth%7Dx.jpg?v=1602610099",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/41zIaMAmx7L._AC_%7Bwidth%7Dx.jpg?v=1602610099"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/51c2B-tRAoL._AC_%7Bwidth%7Dx.jpg?v=1602610105",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/51c2B-tRAoL._AC_%7Bwidth%7Dx.jpg?v=1602610105"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/41_2Bwyvm-b2L._AC_%7Bwidth%7Dx.jpg?v=1602610111",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/41_2Bwyvm-b2L._AC_%7Bwidth%7Dx.jpg?v=1602610111"
+        },
+        {
+          "stage": "image",
+          "url": "https://fantasia-sales.com/cdn/shop/products/ConversionChart_1_%7Bwidth%7Dx.jpg?v=1588443413",
+          "error": "HTTP 404: https://fantasia-sales.com/cdn/shop/products/ConversionChart_1_%7Bwidth%7Dx.jpg?v=1588443413"
+        }
+      ],
+      "rejected": [
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/20200430_122624_grande.jpg?v=1588443413",
+          "reason": "too small, thin, or unsupported format",
+          "width": 355,
+          "height": 600
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/41TBQvBjHjL._AC_grande.jpg?v=1602610014",
+          "reason": "too small, thin, or unsupported format",
+          "width": 500,
+          "height": 489
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/41YO37J_2BubL._AC_grande.jpg?v=1602610021",
+          "reason": "too small, thin, or unsupported format",
+          "width": 500,
+          "height": 482
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/51ZP5_2BEi6-L._AC_grande.jpg?v=1602610026",
+          "reason": "too small, thin, or unsupported format",
+          "width": 481,
+          "height": 388
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/81ZbxLonCdL._AC_SL1500_grande.jpg?v=1602610045",
+          "reason": "too small, thin, or unsupported format",
+          "width": 181,
+          "height": 600
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/31GSSagrN1L._AC_grande.jpg?v=1602610066",
+          "reason": "too small, thin, or unsupported format",
+          "width": 406,
+          "height": 458
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/81z6QO6Pm2L._AC_SL1400_grande.jpg?v=1602610072",
+          "reason": "too small, thin, or unsupported format",
+          "width": 576,
+          "height": 600
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/71evc5mfk5L._AC_SL1400_grande.jpg?v=1602610085",
+          "reason": "too small, thin, or unsupported format",
+          "width": 594,
+          "height": 600
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/41kmCgCRHJL._AC_grande.jpg?v=1602610092",
+          "reason": "too small, thin, or unsupported format",
+          "width": 436,
+          "height": 387
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/41zIaMAmx7L._AC_grande.jpg?v=1602610099",
+          "reason": "too small, thin, or unsupported format",
+          "width": 500,
+          "height": 377
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/51c2B-tRAoL._AC_grande.jpg?v=1602610105",
+          "reason": "too small, thin, or unsupported format",
+          "width": 500,
+          "height": 412
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/41_2Bwyvm-b2L._AC_grande.jpg?v=1602610111",
+          "reason": "too small, thin, or unsupported format",
+          "width": 500,
+          "height": 417
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/20200430_122624_compact.jpg?v=1588443413",
+          "reason": "too small, thin, or unsupported format",
+          "width": 95,
+          "height": 160
+        },
+        {
+          "url": "https://fantasia-sales.com/cdn/shop/products/ConversionChart_1_compact.jpg?v=1588443413",
+          "reason": "too small, thin, or unsupported format",
+          "width": 160,
+          "height": 140
+        }
+      ]
+    },
+    {
+      "slug": "the-supply-joint-325",
+      "site": "https://thesupplyjoint.com/",
+      "count": 6,
+      "pages": [
+        "https://thesupplyjoint.com/",
+        "https://thesupplyjoint.com/collections/jars",
+        "https://thesupplyjoint.com/collections/glass-jars"
+      ],
+      "failures": [],
+      "rejected": [
+        {
+          "url": "https://thesupplyjoint.com/cdn/shop/files/116-POP-TOP-web-banner.jpg?v=1766017181&width=480",
+          "reason": "too small, thin, or unsupported format",
+          "width": 480,
+          "height": 223
+        },
+        {
+          "url": "https://thesupplyjoint.com/cdn/shop/files/jars_tubes_2x_b3819b11-8a08-4645-9809-ea794b988a5e.png?v=1679764664&width=480",
+          "reason": "too small, thin, or unsupported format",
+          "width": 480,
+          "height": 223
+        },
+        {
+          "url": "https://thesupplyjoint.com/cdn/shop/files/Chubby-Gorilla-web-banner2_5752c5d4-a32d-4203-8c57-d866114c286a.jpg?v=1753317602&width=480",
+          "reason": "too small, thin, or unsupported format",
+          "width": 480,
+          "height": 223
+        },
+        {
+          "url": "https://thesupplyjoint.com/cdn/shop/files/ikrusher_web_banner_copy.webp?v=1746662915&width=480",
+          "reason": "too small, thin, or unsupported format",
+          "width": 480,
+          "height": 223
+        }
+      ]
+    },
+    {
+      "slug": "tom-s-model-501",
+      "site": "https://toms-model.myshopify.com/",
+      "count": 0,
+      "pages": [],
+      "failures": [
+        {
+          "stage": "page",
+          "url": "https://toms-model.myshopify.com/",
+          "error": "robots.txt disallows /"
+        }
+      ],
+      "rejected": []
+    }
+  ],
+  "candidates": [
+    {
+      "id": "americas-favors-405-official-20261111-1",
+      "store_slug": "americas-favors-405",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/files/Untitled_design_11.png?v=1653360736&width=1500",
+      "discovered_image_url": "https://americasfavors.com/cdn/shop/files/Untitled_design_11.png?v=1653360736&width=1500",
+      "kind": "img-srcset",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 720,
+      "height": 405,
+      "mime_type": "image/png",
+      "sha256": "1d1f5a0441b6b30e3a8b5a9039a166e2a5c686ba3206e323f6824119006c7e8b",
+      "raw_path": "raw/americas-favors-405/americas-favors-405-official-20261111-1.png",
+      "web": {
+        "path": "web/americas-favors-405/americas-favors-405-official-20261111-1.webp",
+        "width": 720,
+        "height": 405,
+        "mime_type": "image/webp",
+        "sha256": "3b97d000c3bfd4214653391ee9c47ccac6fe2131c06b3021ce310d82c2b661a8"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-2",
+      "store_slug": "americas-favors-405",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_9147.jpg?v=1596763491",
+      "discovered_image_url": "https://americasfavors.com/cdn/shop/products/IMG_9147.jpg?v=1596763491",
+      "kind": "img-srcset",
+      "source_alt": "Acrylic Clear Cake Stand with Lids (12 pieces)",
+      "retrieved_at": "2026-11-11",
+      "width": 3456,
+      "height": 2304,
+      "mime_type": "image/jpeg",
+      "sha256": "892ed95edc78e034e64ccf43f7f3c130efdd50b584ac81b3c75a21b241de5872",
+      "raw_path": "raw/americas-favors-405/americas-favors-405-official-20261111-2.jpg",
+      "web": {
+        "path": "web/americas-favors-405/americas-favors-405-official-20261111-2.webp",
+        "width": 1200,
+        "height": 800,
+        "mime_type": "image/webp",
+        "sha256": "2918d8fa099ea9a4a120051675edbe419da17c1fe5a2d735177befeec8894b4a"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-3",
+      "store_slug": "americas-favors-405",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/ScreenShot2020-04-03at6.31.33PM.png?v=1585963921",
+      "discovered_image_url": "https://americasfavors.com/cdn/shop/products/ScreenShot2020-04-03at6.31.33PM.png?v=1585963921",
+      "kind": "img-srcset",
+      "source_alt": "Custom Wood Name Sign",
+      "retrieved_at": "2026-11-11",
+      "width": 2038,
+      "height": 1566,
+      "mime_type": "image/png",
+      "sha256": "67f9403b1ce88c03d8dbd4ef4c2c9d907c97560d3d5ad66e335d8d43f5e53ba6",
+      "raw_path": "raw/americas-favors-405/americas-favors-405-official-20261111-3.png",
+      "web": {
+        "path": "web/americas-favors-405/americas-favors-405-official-20261111-3.webp",
+        "width": 1200,
+        "height": 922,
+        "mime_type": "image/webp",
+        "sha256": "a94505bdf9f5011815a7d2c6c6b920f634f92bd4348b351dfb45ae19536a8fed"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-4",
+      "store_slug": "americas-favors-405",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_8684.jpg?v=1571609724",
+      "discovered_image_url": "https://americasfavors.com/cdn/shop/products/IMG_8684.jpg?v=1571609724",
+      "kind": "img-srcset",
+      "source_alt": "Gold Party Favor Crowns",
+      "retrieved_at": "2026-11-11",
+      "width": 3456,
+      "height": 2304,
+      "mime_type": "image/jpeg",
+      "sha256": "6eaa936c1edda59698ae380f48cd9aa57c3a527e002e57f15bf7d61377293186",
+      "raw_path": "raw/americas-favors-405/americas-favors-405-official-20261111-4.jpg",
+      "web": {
+        "path": "web/americas-favors-405/americas-favors-405-official-20261111-4.webp",
+        "width": 1200,
+        "height": 800,
+        "mime_type": "image/webp",
+        "sha256": "126e15ee3ba1c284307ad65fe1acd36391a5d2b2c2c7ab0aa43f628686e4a6a4"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-5",
+      "store_slug": "americas-favors-405",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/IMG_6727__41898.1489455010.1280.1280.jpg?v=1571609719",
+      "discovered_image_url": "https://americasfavors.com/cdn/shop/products/IMG_6727__41898.1489455010.1280.1280.jpg?v=1571609719",
+      "kind": "img-srcset",
+      "source_alt": "Customized Ribbon 1/4\" & 3/8\"",
+      "retrieved_at": "2026-11-11",
+      "width": 1280,
+      "height": 853,
+      "mime_type": "image/jpeg",
+      "sha256": "7c98b85cf1c1c810305ead8fc7ba4582a122153ccf87a5e5988470d395a0d092",
+      "raw_path": "raw/americas-favors-405/americas-favors-405-official-20261111-5.jpg",
+      "web": {
+        "path": "web/americas-favors-405/americas-favors-405-official-20261111-5.webp",
+        "width": 1200,
+        "height": 800,
+        "mime_type": "image/webp",
+        "sha256": "7802b02a9c4df99ea7ea16bf7acb99c0259b1e6801391187b71255f97f898aa4"
+      }
+    },
+    {
+      "id": "americas-favors-405-official-20261111-6",
+      "store_slug": "americas-favors-405",
+      "source_page_url": "https://americasfavors.com/",
+      "source_image_url": "https://americasfavors.com/cdn/shop/products/Foam_Flowers3.jpg?v=1571609659",
+      "discovered_image_url": "https://americasfavors.com/cdn/shop/products/Foam_Flowers3.jpg?v=1571609659",
+      "kind": "img-srcset",
+      "source_alt": "10\", 14\" & 18\" Rose Foam Flowers (Multiple Colors) (1 piece)",
+      "retrieved_at": "2026-11-11",
+      "width": 2137,
+      "height": 2154,
+      "mime_type": "image/jpeg",
+      "sha256": "19687e95e79b886046b27751e9985388006b31b3291ff996528671207074c1c1",
+      "raw_path": "raw/americas-favors-405/americas-favors-405-official-20261111-6.jpg",
+      "web": {
+        "path": "web/americas-favors-405/americas-favors-405-official-20261111-6.webp",
+        "width": 1191,
+        "height": 1200,
+        "mime_type": "image/webp",
+        "sha256": "7c7354f38dedd7cbab8f60dc3e98422d13d4579288e7412b5bb72d5627361dcd"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-1",
+      "store_slug": "california-balloon-house-447",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/gradbanner1.jpg?v=1713374998&width=620",
+      "discovered_image_url": "https://caballoonhouse.com/cdn/shop/files/gradbanner1.jpg?v=1713374998&width=620",
+      "kind": "img-srcset",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 620,
+      "height": 559,
+      "mime_type": "image/jpeg",
+      "sha256": "abdc6e700956cb758f42f3c5f6480566a37f961847169c302a31e70e27599274",
+      "raw_path": "raw/california-balloon-house-447/california-balloon-house-447-official-20261111-1.jpg",
+      "web": {
+        "path": "web/california-balloon-house-447/california-balloon-house-447-official-20261111-1.webp",
+        "width": 620,
+        "height": 559,
+        "mime_type": "image/webp",
+        "sha256": "5fe9dbb780099d9405db1f0834fb01f1eb655889cce3b34b6f1e33b11d20e8af"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-2",
+      "store_slug": "california-balloon-house-447",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/gradbanner1.jpg?v=1713374998&width=800",
+      "discovered_image_url": "https://caballoonhouse.com/cdn/shop/files/gradbanner1.jpg?v=1713374998&width=800",
+      "kind": "img",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 800,
+      "height": 721,
+      "mime_type": "image/jpeg",
+      "sha256": "2e5bad303570d643a7df7192f43b7bbba8985640cde329e8c5faaa5b57ae3a09",
+      "raw_path": "raw/california-balloon-house-447/california-balloon-house-447-official-20261111-2.jpg",
+      "web": {
+        "path": "web/california-balloon-house-447/california-balloon-house-447-official-20261111-2.webp",
+        "width": 800,
+        "height": 721,
+        "mime_type": "image/webp",
+        "sha256": "75b3ae551e42f2197aa35c0462b05b4978d36b961d9cbe5f8c84ac1955d33444"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-3",
+      "store_slug": "california-balloon-house-447",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/newarrivals.jpg?v=1715709834&width=1240",
+      "discovered_image_url": "https://caballoonhouse.com/cdn/shop/files/newarrivals.jpg?v=1715709834&width=1240",
+      "kind": "img-srcset",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 1240,
+      "height": 1174,
+      "mime_type": "image/jpeg",
+      "sha256": "ab58c6a2e53f8f311606eb86a0a4a4449c913c5f8470a713ffa7ee7ba1408f35",
+      "raw_path": "raw/california-balloon-house-447/california-balloon-house-447-official-20261111-3.jpg",
+      "web": {
+        "path": "web/california-balloon-house-447/california-balloon-house-447-official-20261111-3.webp",
+        "width": 1200,
+        "height": 1136,
+        "mime_type": "image/webp",
+        "sha256": "f4ba439297449aede62b9f92b6daa95f1bf99be22416dcf5cb51e44149e30ee0"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-4",
+      "store_slug": "california-balloon-house-447",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/newarrivals.jpg?v=1715709834&width=2172",
+      "discovered_image_url": "https://caballoonhouse.com/cdn/shop/files/newarrivals.jpg?v=1715709834&width=2172",
+      "kind": "img",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 2172,
+      "height": 2056,
+      "mime_type": "image/jpeg",
+      "sha256": "2ac8dc0a5503c968d0ff67d8c565832cf8c030a594432de46bb7c7f4db9f68c5",
+      "raw_path": "raw/california-balloon-house-447/california-balloon-house-447-official-20261111-4.jpg",
+      "web": {
+        "path": "web/california-balloon-house-447/california-balloon-house-447-official-20261111-4.webp",
+        "width": 1200,
+        "height": 1136,
+        "mime_type": "image/webp",
+        "sha256": "cc216557e360456a0ebb5001301140d7f1e46f943402597b5124349d9fe3c7bf"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-5",
+      "store_slug": "california-balloon-house-447",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/34665Spider-Man.jpg?v=1716920116&width=1240",
+      "discovered_image_url": "https://caballoonhouse.com/cdn/shop/files/34665Spider-Man.jpg?v=1716920116&width=1240",
+      "kind": "img-srcset",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 1240,
+      "height": 1147,
+      "mime_type": "image/jpeg",
+      "sha256": "7145e7b1444d1aa6fe15fa32dc353b3a07de9f34518c14560a32c1c12cd39d5d",
+      "raw_path": "raw/california-balloon-house-447/california-balloon-house-447-official-20261111-5.jpg",
+      "web": {
+        "path": "web/california-balloon-house-447/california-balloon-house-447-official-20261111-5.webp",
+        "width": 1200,
+        "height": 1110,
+        "mime_type": "image/webp",
+        "sha256": "d26a05748c1029bedf98b289cfc2f95813651f37af72c4565230a330e8634fa3"
+      }
+    },
+    {
+      "id": "california-balloon-house-447-official-20261111-6",
+      "store_slug": "california-balloon-house-447",
+      "source_page_url": "https://caballoonhouse.com/",
+      "source_image_url": "https://caballoonhouse.com/cdn/shop/files/34665Spider-Man.jpg?v=1716920116&width=2594",
+      "discovered_image_url": "https://caballoonhouse.com/cdn/shop/files/34665Spider-Man.jpg?v=1716920116&width=2594",
+      "kind": "img",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 2594,
+      "height": 2400,
+      "mime_type": "image/jpeg",
+      "sha256": "a307666fb2959e0bdca99e18ac1529a89c503092bf5a110a60d83a6875430687",
+      "raw_path": "raw/california-balloon-house-447/california-balloon-house-447-official-20261111-6.jpg",
+      "web": {
+        "path": "web/california-balloon-house-447/california-balloon-house-447-official-20261111-6.webp",
+        "width": 1200,
+        "height": 1110,
+        "mime_type": "image/webp",
+        "sha256": "7cf9cbc63a7b113e603341cd987ed3e6f572c8bd12c0d01c515b8fa85e27b6b4"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-20261111-1",
+      "store_slug": "fantasia-sales-inc-401",
+      "source_page_url": "https://fantasia-sales.com/",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/f755e53cf8a3c73e99a6f3d54a69d021_grande.jpg?v=1642275609",
+      "discovered_image_url": "https://fantasia-sales.com/cdn/shop/products/f755e53cf8a3c73e99a6f3d54a69d021_grande.jpg?v=1642275609",
+      "kind": "img",
+      "source_alt": "50 Pack Non-Sterile Surgical Style Disposable Dust Mask",
+      "retrieved_at": "2026-11-11",
+      "width": 600,
+      "height": 600,
+      "mime_type": "image/jpeg",
+      "sha256": "b650567f2c395f0cf6da30c62e23b38e7e0a797e74ea65a49274ce4ac5853565",
+      "raw_path": "raw/fantasia-sales-inc-401/fantasia-sales-inc-401-official-20261111-1.jpg",
+      "web": {
+        "path": "web/fantasia-sales-inc-401/fantasia-sales-inc-401-official-20261111-1.webp",
+        "width": 600,
+        "height": 600,
+        "mime_type": "image/webp",
+        "sha256": "3f133f6a6751def411fff8cbb13511343b92615e40b91b9739e81ae654d1f4dd"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-20261111-2",
+      "store_slug": "fantasia-sales-inc-401",
+      "source_page_url": "https://fantasia-sales.com/products/10-pack-kn95-folding-dust-mask-respirator",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/20200430_122624_1200x1200.jpg?v=1588443413",
+      "discovered_image_url": "http://fantasia-sales.com/cdn/shop/products/20200430_122624_1200x1200.jpg?v=1588443413",
+      "kind": "social",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 710,
+      "height": 1200,
+      "mime_type": "image/jpeg",
+      "sha256": "0dce4a8d6780db852e45a6e56ef8bceb89d7bf1fa67123895ac548b8a411aa93",
+      "raw_path": "raw/fantasia-sales-inc-401/fantasia-sales-inc-401-official-20261111-2.jpg",
+      "web": {
+        "path": "web/fantasia-sales-inc-401/fantasia-sales-inc-401-official-20261111-2.webp",
+        "width": 710,
+        "height": 1200,
+        "mime_type": "image/webp",
+        "sha256": "3c0772becc563106564c628ca3b401ed676fc9c54b033685e8692118df1babc4"
+      }
+    },
+    {
+      "id": "fantasia-sales-inc-401-official-20261111-3",
+      "store_slug": "fantasia-sales-inc-401",
+      "source_page_url": "https://fantasia-sales.com/products/10-pack-kn95-folding-dust-mask-respirator",
+      "source_image_url": "https://fantasia-sales.com/cdn/shop/products/ConversionChart_1_1200x1200.jpg?v=1588443413",
+      "discovered_image_url": "http://fantasia-sales.com/cdn/shop/products/ConversionChart_1_1200x1200.jpg?v=1588443413",
+      "kind": "social",
+      "source_alt": "",
+      "retrieved_at": "2026-11-11",
+      "width": 989,
+      "height": 864,
+      "mime_type": "image/jpeg",
+      "sha256": "110250427163ad03f3600db8a033ef7526766fdcc9104055c5f881a20677dc5f",
+      "raw_path": "raw/fantasia-sales-inc-401/fantasia-sales-inc-401-official-20261111-3.jpg",
+      "web": {
+        "path": "web/fantasia-sales-inc-401/fantasia-sales-inc-401-official-20261111-3.webp",
+        "width": 989,
+        "height": 864,
+        "mime_type": "image/webp",
+        "sha256": "78fc4220af0f2470e97019e76fb46e94cb687bdd626e8c601143ab99cf155881"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-1",
+      "store_slug": "the-supply-joint-325",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/TSJ_New_Blank-01.png?v=1747857200",
+      "discovered_image_url": "https://thesupplyjoint.com/cdn/shop/files/TSJ_New_Blank-01.png?v=1747857200",
+      "kind": "img",
+      "source_alt": "The Supply Joint ",
+      "retrieved_at": "2026-11-11",
+      "width": 1250,
+      "height": 834,
+      "mime_type": "image/png",
+      "sha256": "51b7565a52773a7cc34f4cc2730a8831725f416cdc5dfdb92e3cf11c6b4ed4b4",
+      "raw_path": "raw/the-supply-joint-325/the-supply-joint-325-official-20261111-1.png",
+      "web": {
+        "path": "web/the-supply-joint-325/the-supply-joint-325-official-20261111-1.webp",
+        "width": 1200,
+        "height": 801,
+        "mime_type": "image/webp",
+        "sha256": "e504f6018c1f49ba40ae26c8509cdf5bb0e7945cb74d38743cb5d7f95f46edb4"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-2",
+      "store_slug": "the-supply-joint-325",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/116-POP-TOP-web-banner.jpg?v=1766017181&width=1860",
+      "discovered_image_url": "https://thesupplyjoint.com/cdn/shop/files/116-POP-TOP-web-banner.jpg?v=1766017181&width=1860",
+      "kind": "img-srcset",
+      "source_alt": "The Best Price Around",
+      "retrieved_at": "2026-11-11",
+      "width": 1860,
+      "height": 864,
+      "mime_type": "image/jpeg",
+      "sha256": "aa3bb8d862e6a4ff18eae48968afe12ab94cac3c886f6aed6f7971b8d4858b5e",
+      "raw_path": "raw/the-supply-joint-325/the-supply-joint-325-official-20261111-2.jpg",
+      "web": {
+        "path": "web/the-supply-joint-325/the-supply-joint-325-official-20261111-2.webp",
+        "width": 1200,
+        "height": 557,
+        "mime_type": "image/webp",
+        "sha256": "925acc90f625650daf7f1bd3bef38a21a8a202bc1e73b8652ea61f64d9f06b09"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-3",
+      "store_slug": "the-supply-joint-325",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/jars_tubes_2x_b3819b11-8a08-4645-9809-ea794b988a5e.png?v=1679764664&width=2820",
+      "discovered_image_url": "https://thesupplyjoint.com/cdn/shop/files/jars_tubes_2x_b3819b11-8a08-4645-9809-ea794b988a5e.png?v=1679764664&width=2820",
+      "kind": "img-srcset",
+      "source_alt": "jars_tubes_2x_b3819b11-8a08-4645-9809-ea794b988a5e - The Supply Joint ",
+      "retrieved_at": "2026-11-11",
+      "width": 2820,
+      "height": 1309,
+      "mime_type": "image/png",
+      "sha256": "6f8bec36eb0f69e88da6ede7b609c8d97044a4b2b366abee6ea8ad2099030485",
+      "raw_path": "raw/the-supply-joint-325/the-supply-joint-325-official-20261111-3.png",
+      "web": {
+        "path": "web/the-supply-joint-325/the-supply-joint-325-official-20261111-3.webp",
+        "width": 1200,
+        "height": 557,
+        "mime_type": "image/webp",
+        "sha256": "28cbbb0c9c847a5059e08e5c9df195004e10a5a5908b0b065dad0c7efb997960"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-4",
+      "store_slug": "the-supply-joint-325",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/Chubby-Gorilla-web-banner2_5752c5d4-a32d-4203-8c57-d866114c286a.jpg?v=1753317602&width=1860",
+      "discovered_image_url": "https://thesupplyjoint.com/cdn/shop/files/Chubby-Gorilla-web-banner2_5752c5d4-a32d-4203-8c57-d866114c286a.jpg?v=1753317602&width=1860",
+      "kind": "img-srcset",
+      "source_alt": "Chubby Gorilla Packaging",
+      "retrieved_at": "2026-11-11",
+      "width": 1860,
+      "height": 864,
+      "mime_type": "image/jpeg",
+      "sha256": "f4075e8ee2ba8984c38d2416c66fd7389b9bd4c39d6daf4856ec923e8011ded9",
+      "raw_path": "raw/the-supply-joint-325/the-supply-joint-325-official-20261111-4.jpg",
+      "web": {
+        "path": "web/the-supply-joint-325/the-supply-joint-325-official-20261111-4.webp",
+        "width": 1200,
+        "height": 557,
+        "mime_type": "image/webp",
+        "sha256": "a53e26a31342ec58ce17a4dd91b02cca0a7be88177dc4b704c68faf2509c95bd"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-5",
+      "store_slug": "the-supply-joint-325",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/files/ikrusher_web_banner_copy.webp?v=1746662915&width=1860",
+      "discovered_image_url": "https://thesupplyjoint.com/cdn/shop/files/ikrusher_web_banner_copy.webp?v=1746662915&width=1860",
+      "kind": "img-srcset",
+      "source_alt": "iKrusher Vapes",
+      "retrieved_at": "2026-11-11",
+      "width": 1860,
+      "height": 864,
+      "mime_type": "image/jpeg",
+      "sha256": "57f7cbb6a8988e579c7703b19ccc59fc3a7148b960a408c3e75d75f72c7ae840",
+      "raw_path": "raw/the-supply-joint-325/the-supply-joint-325-official-20261111-5.jpg",
+      "web": {
+        "path": "web/the-supply-joint-325/the-supply-joint-325-official-20261111-5.webp",
+        "width": 1200,
+        "height": 557,
+        "mime_type": "image/webp",
+        "sha256": "71db6cc1f9b856eb5711f0d2933e60a1f047978fe481ec41c602c234ce3bbdcc"
+      }
+    },
+    {
+      "id": "the-supply-joint-325-official-20261111-6",
+      "store_slug": "the-supply-joint-325",
+      "source_page_url": "https://thesupplyjoint.com/",
+      "source_image_url": "https://thesupplyjoint.com/cdn/shop/products/astro-mod-vape-battery-the-supply-joint-1.webp?crop=center&height=840&v=1738441818&width=840",
+      "discovered_image_url": "https://thesupplyjoint.com/cdn/shop/products/astro-mod-vape-battery-the-supply-joint-1.webp?crop=center&height=840&v=1738441818&width=840",
+      "kind": "img-srcset",
+      "source_alt": "Astro Mod Vape Battery - The Supply Joint ",
+      "retrieved_at": "2026-11-11",
+      "width": 840,
+      "height": 840,
+      "mime_type": "image/jpeg",
+      "sha256": "bd52e32b01bf106f6df932cacce5e511d569fc6bf03945b81fd4c40296a27fde",
+      "raw_path": "raw/the-supply-joint-325/the-supply-joint-325-official-20261111-6.jpg",
+      "web": {
+        "path": "web/the-supply-joint-325/the-supply-joint-325-official-20261111-6.webp",
+        "width": 840,
+        "height": 840,
+        "mime_type": "image/webp",
+        "sha256": "c06171880301abd77b0dbd932485c735fd5887af07ea7aaedd741a5b96dad0ea"
+      }
+    }
+  ],
+  "robots": [
+    {
+      "origin": "https://americasfavors.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": true,
+          "pattern": "/"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/admin"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/orders"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/account/login"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/account/login"
+        },
+        {
+          "allow": false,
+          "pattern": "/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/18249283"
+        },
+        {
+          "allow": false,
+          "pattern": "/cdn/wpm/*.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/services"
+        },
+        {
+          "allow": false,
+          "pattern": "/sf_*"
+        },
+        {
+          "allow": false,
+          "pattern": "/.well-known/shopify/monorail"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls=*&ls=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls%3*ls%3*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*oseid=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_theme_id=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_script_id=*"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.casamanga.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": true,
+          "pattern": "/"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/admin"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/orders"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/account/login"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/account/login"
+        },
+        {
+          "allow": false,
+          "pattern": "/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/11663628"
+        },
+        {
+          "allow": false,
+          "pattern": "/cdn/wpm/*.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/services"
+        },
+        {
+          "allow": false,
+          "pattern": "/sf_*"
+        },
+        {
+          "allow": false,
+          "pattern": "/.well-known/shopify/monorail"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls=*&ls=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls%3*ls%3*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*oseid=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_theme_id=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_script_id=*"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.americansilkinc.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": true,
+          "pattern": "/"
+        },
+        {
+          "allow": false,
+          "pattern": "*?lightbox="
+        }
+      ]
+    },
+    {
+      "origin": "https://caballoonhouse.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": true,
+          "pattern": "/"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/admin"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/orders"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/account/login"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/account/login"
+        },
+        {
+          "allow": false,
+          "pattern": "/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/85327151407"
+        },
+        {
+          "allow": false,
+          "pattern": "/cdn/wpm/*.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/services"
+        },
+        {
+          "allow": false,
+          "pattern": "/sf_*"
+        },
+        {
+          "allow": false,
+          "pattern": "/.well-known/shopify/monorail"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls=*&ls=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls%3*ls%3*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*oseid=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_theme_id=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_script_id=*"
+        }
+      ]
+    },
+    {
+      "origin": "https://fantasia-sales.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": true,
+          "pattern": "/"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/admin"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/orders"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/account/login"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/account/login"
+        },
+        {
+          "allow": false,
+          "pattern": "/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/2488074297"
+        },
+        {
+          "allow": false,
+          "pattern": "/cdn/wpm/*.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/services"
+        },
+        {
+          "allow": false,
+          "pattern": "/sf_*"
+        },
+        {
+          "allow": false,
+          "pattern": "/.well-known/shopify/monorail"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls=*&ls=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls%3*ls%3*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*oseid=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_theme_id=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_script_id=*"
+        }
+      ]
+    },
+    {
+      "origin": "http://fantasia-sales.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": true,
+          "pattern": "/"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/admin"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/orders"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/account/login"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/account/login"
+        },
+        {
+          "allow": false,
+          "pattern": "/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/2488074297"
+        },
+        {
+          "allow": false,
+          "pattern": "/cdn/wpm/*.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/services"
+        },
+        {
+          "allow": false,
+          "pattern": "/sf_*"
+        },
+        {
+          "allow": false,
+          "pattern": "/.well-known/shopify/monorail"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls=*&ls=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls%3*ls%3*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*oseid=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_theme_id=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_script_id=*"
+        }
+      ]
+    },
+    {
+      "origin": "https://thesupplyjoint.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": true,
+          "pattern": "/"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/products/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/collections/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/pages/checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/blogs/*checkout"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*account"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/blogs/*checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/admin"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart/"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkout"
+        },
+        {
+          "allow": false,
+          "pattern": "/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/checkouts/"
+        },
+        {
+          "allow": false,
+          "pattern": "/orders"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/orders"
+        },
+        {
+          "allow": true,
+          "pattern": "/account/login"
+        },
+        {
+          "allow": true,
+          "pattern": "/*/account/login"
+        },
+        {
+          "allow": false,
+          "pattern": "/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/account"
+        },
+        {
+          "allow": false,
+          "pattern": "/63204098300"
+        },
+        {
+          "allow": false,
+          "pattern": "/cdn/wpm/*.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/services"
+        },
+        {
+          "allow": false,
+          "pattern": "/sf_*"
+        },
+        {
+          "allow": false,
+          "pattern": "/.well-known/shopify/monorail"
+        },
+        {
+          "allow": false,
+          "pattern": "/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/cart.js"
+        },
+        {
+          "allow": false,
+          "pattern": "/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/recommendations/products"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*sort_by*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/collections/*filter*&*filter*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*+*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2B*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*/blogs/*%2b*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls=*&ls=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*ls%3*ls%3*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*oseid=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_theme_id=*"
+        },
+        {
+          "allow": false,
+          "pattern": "/*?*preview_script_id=*"
+        }
+      ]
+    },
+    {
+      "origin": "https://toms-model.myshopify.com",
+      "status": 200,
+      "rules": [
+        {
+          "allow": false,
+          "pattern": "/"
+        }
+      ]
+    }
+  ],
+  "finished_at": "2026-11-11T17:19:30.623Z"
+}

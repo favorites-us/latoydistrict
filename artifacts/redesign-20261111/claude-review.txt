@@ -1,0 +1,124 @@
+# Review: Next.js directory redesign
+
+## High
+
+**1. On English pages, the header search submits to the current page and never reaches the directory** (`web/components/SiteChrome.tsx:27`)
+
+- The form uses `action={`${p("/")}#directory`}`.
+- Elsewhere the codebase guards against `localePath(locale, "/")` returning an empty string. See `StorePage.tsx`: `${localePath(locale, "/") || "/"}?street=…`.
+- With an empty string, the action is just `#directory`.
+- **Failure scenario:** on `/stores/foo` (English), a user types "balloons" and submits. The browser loads `/stores/foo?q=balloons#directory`. The user stays on the store page and no search runs. Spanish pages likely work because `p("/")` there is `/es`.
+- **Fix:** use the same `|| "/"` fallback.
+
+**2. The mobile filter sheet renders half off-screen** (`web/app/globals.css:547`, with `components/ui/dialog.tsx:17`)
+
+- `DialogContent` uses Tailwind v4 `left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2`.
+- In Tailwind v4, those classes set the CSS `translate` property, not `transform`.
+- `.filter-sheet { top:auto; bottom:0; left:0; transform:none }` therefore does not cancel the -50%/-50% translate.
+- **Failure scenario:** at ≤640px, opening "Filters" pins the sheet to `bottom:0; left:0`, then shifts it 50% left and 50% up. Part of the filters and the "Show results" button are pushed off-screen.
+- **Fix:** add `translate: none` (or `translate-none`).
+
+**3. Body text does not print when guide sections are collapsed into `<details>`** (`web/components/pages/GuidePage.tsx:38-39`, `~64-66`; `StorePage.tsx:239`, `~260`)
+
+- The site has dedicated print styles for guides and the worksheet.
+- Closed `<details>` content is not rendered in print.
+- **Failure scenario:** a buyer prints `/guide/buying-checklist` or `/guide/visiting`. Only the section titles and FAQ questions print, not the body text, answers, parking list or sources.
+- The same applies to carry and buying facts on store pages.
+
+## Medium
+
+**4. Guide section headings are no longer headings** (`GuidePage.tsx:38-39`)
+
+- `<section><h2>` became `<details><summary>`, and FAQ `<h3>` became `<summary>`.
+- **Failure scenario:** screen-reader users lose heading navigation. The page outline becomes just the h1 plus "FAQ" (WCAG 1.3.1).
+- **Fix:** keep the heading inside the summary: `<summary><h2>…</h2></summary>`.
+
+**5. Directory results now sit under the wrong heading** (`DirectoryBrowser.tsx:48`, `HomePage.tsx:22`)
+
+- `<h2>{t(locale,"directory_h2")}</h2>` was removed.
+- The only preceding h2 is now "Featured with photos".
+- **Failure scenario:** every directory card's `<h3>` is announced as belonging to the featured section. The directory has no heading to jump to.
+
+**6. Several store fact labels are now visible only to screen readers** (`StorePage.tsx:181`, `~187`, `~193`)
+
+- MOQ, payment and languages all use the same `<Info>` icon. Their labels are `sr-only`.
+- **Failure scenario:** a sighted user sees three rows with identical icons, such as "100 units", "Cash, Check" and "English, Español", with no way to tell which is which (WCAG 1.3.1 / 2.4.6).
+
+**7. The verification date is now only in a `title` tooltip** (`StorePage.tsx:116`)
+
+- The old code rendered "✓ Verified — {date}" as visible text.
+- `title` is not reachable on touch devices or by keyboard, and is not reliably announced.
+- **Result:** the verification date is effectively lost for most users.
+
+**8. Card call buttons now appear for unverified phone numbers** (`StoreCard.tsx:18`)
+
+- The old code required `store.field_sources?.phone?.type === "business"` before showing a call CTA.
+- The new code shows a tap-to-call button for any `store.phone`, including registration-sourced numbers.
+- **Failure scenario:** buyers get prominent call buttons for numbers the site previously chose not to promote.
+- The same applies to the sticky "Call" action on store pages (`StorePage.tsx:324`).
+
+**9. Featured photos have no attribution or removal path** (`StorePhoto.tsx:20`)
+
+- Compact mode now renders no figcaption at all. Previously it showed "Catalog. Confirm prices." and a "Source & rights" link.
+- **Failure scenario:** the homepage featured carousel shows third-party photos whose reuse permission is unconfirmed. There is no source, disclaimer or removal link anywhere on that page.
+
+**10. The sticky directory toolbar covers much of a mobile screen** (`globals.css:574`, `DirectoryBrowser.tsx:44-50`)
+
+- The sticky toolbar holds the search, chips, results bar, sort select and active-filter pills (44px each, wrapping).
+- Below the 60px sticky header, that can take up more than 250px of a roughly 568px-tall viewport.
+- **Failure scenario:** tabbing through result rows puts focused links under the toolbar (WCAG 2.4.11), and little content is visible.
+
+**11. The mobile hero heading can overflow on narrow phones** (`globals.css:647`)
+
+- `.directory-hero h1 { white-space: nowrap }` applies at 24px.
+- "LA Toy District suppliers" is about 300–330px wide, but a 320px viewport with 16px gutters leaves 288px.
+- **Failure scenario:** horizontal overflow or scrolling at 320px (WCAG 1.4.10 reflow).
+
+**12. Geist may never apply** (`layout.tsx:26`)
+
+- The `--font-geist` variable is defined only on `<body>`.
+- `@theme inline` resolves `--font-sans: var(--font-geist), Arial, sans-serif` at `html`, where the variable is undefined. That makes the value invalid there, so Tailwind preflight falls back to `ui-sans-serif`/system fonts. The `Arial` fallback in the list never takes effect.
+- Unless a body rule re-declares `font-family`, Geist is never applied. *Medium confidence: this depends on whether `globals.css` sets `font-family` on body.*
+- **Fix:** put `geist.variable` on `<html>`.
+
+**13. The font source points at an internal, unversioned Next.js file** (`layout.tsx:8`)
+
+- `src: "../node_modules/next/dist/next-devtools/server/font/geist-latin.woff2"` is a private devtools asset.
+- **Failure scenario:** a Next patch or minor upgrade moves or removes the file, or a workspace hoists `next` to the repo root. In either case `next build` fails on the missing font.
+- **Fix:** vendor the file (e.g. under `app/fonts/`) or use the `geist` package.
+
+## Low
+
+**14. The photo area of featured cards is not clickable** (`globals.css:672` + `StoreCard.tsx:14`)
+
+- `.featured-card .store-card-body` is `position:absolute`, so it becomes the containing block for `.store-row-link::after`.
+- The stretched-link overlay therefore covers only the text strip.
+- **Result:** tapping the photo, which is most of the card, does nothing.
+
+**15. `aria-label` is set on generic `<div>`s with no role** (`DirectoryBrowser.tsx:45` category chips, `StorePage.tsx:324` sticky actions)
+
+- Assistive technology ignores these labels.
+- **Fix:** add `role="group"` (or use `<nav>`/`<section>`).
+
+**16. Images are invisible without JavaScript** (`StorePhoto.tsx:19`)
+
+- The server renders photos with the `photo-loading` class (`opacity:0`).
+- **Result:** without JavaScript, or with slow hydration, photos stay invisible.
+
+**17. Fact sources are no longer tied to the facts they support** (`StorePage.tsx:247`)
+
+- `FactSources` collects all sources into one disclosure without the fact text.
+- **Result:** users can no longer tell which source supports which carry or buying claim.
+
+**18. Spanish hero headline drops "Toy District"** (`HomePage.tsx:19`)
+
+- English is "LA Toy District suppliers", but Spanish is "Proveedores de LA".
+- **Result:** the Spanish headline drops the district name.
+
+## Security
+
+**`lib/server/private-files.ts` dev fallback: no finding.**
+
+- It is gated on `NODE_ENV === "development"`, which is inlined as `"production"` in `next build`.
+- Reads are restricted to exact matches of manifest `storage_path` or `photo-blocks/${photo.id}.json`, so no request-controlled path reaches `join`.
+- I found no production reachability and no traversal.
