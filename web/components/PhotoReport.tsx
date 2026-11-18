@@ -31,6 +31,6 @@ export default function PhotoReport({ photo, locale, onRemoved }: { photo: Store
       <Button disabled={state === "busy"} type="submit">{state === "busy" ? (es ? "Procesando…" : "Processing…") : (es ? "Solicitar eliminación" : "Request removal")}</Button>
       {state === "err" && <p role="alert" className="text-sm text-red-700">{es ? "No se pudo procesar la solicitud. Use el correo de abajo." : "The request could not be processed. Please use the email below."}</p>}
     </form>}
-    <p className="mt-5 break-words text-xs"><a className="text-primary underline" href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Photo removal: ${photo.id}`)}`}>hello@toydistrictlosangeles.com</a></p>
+    <p className="mt-5 break-words text-xs"><a className="text-primary underline" href={`mailto:favorites.app@gmail.com?subject=${encodeURIComponent(`Photo removal: ${photo.id}`)}`}>favorites.app@gmail.com</a></p>
   </DialogContent></Dialog>;
 }

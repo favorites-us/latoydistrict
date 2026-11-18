@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import { SITE_URL, stores } from "@/lib/stores";
 import { BuyerProvider } from "@/components/BuyerProvider";
 import "./globals.css";
-import { analyticsConfigScript } from "@/lib/analytics-config";
+import { googleInitScript } from "@/lib/analytics-config";
 
 const geist = localFont({ src: "./fonts/geist-latin.woff2", weight: "100 900", variable: "--font-geist", display: "swap" });
 
@@ -25,6 +25,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={geist.variable}>
       <body>
+        <Script id="google-init" strategy="beforeInteractive">
+          {googleInitScript(GA_ID)}
+        </Script>
         <BuyerProvider knownSlugs={stores.map((store) => store.slug)}>{children}</BuyerProvider>
         <Script
           id="adsbygoogle-init"
@@ -34,12 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
         />
         {GA_ID ? (
-          <>
-            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-            <Script id="ga4" strategy="beforeInteractive">
-              {analyticsConfigScript(GA_ID)}
-            </Script>
-          </>
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         ) : null}
       </body>
     </html>

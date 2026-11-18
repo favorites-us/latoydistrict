@@ -285,7 +285,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
               <aside className="claim-banner">
                 <h2 className="card-heading">{t(locale, "claim_banner_title")}</h2>
                 <p>{t(locale, "claim_banner_body")}</p>
-                <a href={`mailto:hello@toydistrictlosangeles.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
+                <a href={`mailto:favorites.app@gmail.com?subject=${encodeURIComponent(`Listing: ${store.name}`)}`}>
                   {t(locale, "claim_banner_cta")} ↗
                 </a>
               </aside>

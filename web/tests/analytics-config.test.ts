@@ -1,7 +1,70 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { runInNewContext } from "node:vm";
-import { analyticsConfigScript } from "../lib/analytics-config";
+import { analyticsConfigScript, googleInitScript, googlePrivacySettings } from "../lib/analytics-config";
+
+const restrictedSettings = {
+  restricted_data_processing: true,
+  allow_google_signals: false,
+  allow_ad_personalization_signals: false,
+};
+
+test("Google privacy decision requires an explicit true GPC signal", () => {
+  assert.deepEqual(googlePrivacySettings(true), {
+    requestNonPersonalizedAds: 1,
+    gtag: restrictedSettings,
+  });
+  for (const value of [undefined, null, false, 0, 1, "true", "false"]) {
+    assert.equal(googlePrivacySettings(value), null);
+  }
+});
+
+function initializeGoogle(globalPrivacyControl: unknown, id?: string) {
+  const queuedAd = { slot: "existing-slot" };
+  const adsbygoogle = [queuedAd] as unknown[] & { requestNonPersonalizedAds?: number };
+  const window = {
+    location: { href: "https://example.com/?cat=toys" },
+    dataLayer: [] as IArguments[],
+    adsbygoogle,
+    addEventListener: () => {},
+  };
+  // Browser globals share the window object, so GA's gtag declaration and the
+  // privacy bootstrap use the same function and queue.
+  runInNewContext(googleInitScript(id), Object.assign(window, {
+    window, navigator: { globalPrivacyControl }, history: {},
+    document: { referrer: "" }, URL, Date,
+  }));
+  assert.equal(window.adsbygoogle, adsbygoogle);
+  assert.equal(window.adsbygoogle[0], queuedAd);
+  return window;
+}
+
+test("GPC configures AdSense and queues restrictions before GA's first config", () => {
+  const window = initializeGoogle(true, "G-TEST");
+  assert.equal(window.adsbygoogle.requestNonPersonalizedAds, 1);
+  const commands = window.dataLayer.map(args => Array.from(args));
+  assert.equal(commands[0][0], "set");
+  assert.deepEqual(JSON.parse(JSON.stringify(commands[0][1])), restrictedSettings);
+  assert.ok(commands.findIndex(args => args[0] === "config") > 0);
+});
+
+test("GPC applies to AdSense without a configured GA ID", () => {
+  const window = initializeGoogle(true);
+  assert.equal(window.adsbygoogle.requestNonPersonalizedAds, 1);
+  assert.equal(window.dataLayer.length, 1);
+  assert.equal(window.dataLayer[0][0], "set");
+});
+
+test("absent or false GPC leaves Google defaults unchanged", () => {
+  for (const value of [undefined, false, "true", 1]) {
+    for (const id of [undefined, "G-TEST"]) {
+      const window = initializeGoogle(value, id);
+      assert.equal(window.adsbygoogle.requestNonPersonalizedAds, undefined);
+      assert.ok(!JSON.stringify(window.dataLayer).includes("restricted_data_processing"));
+      assert.equal(window.dataLayer.some(args => args[0] === "config"), !!id);
+    }
+  }
+});
 
 test("GA URLs omit free text at initialization and before history measurement", () => {
   const location = { href: "https://example.com/?q=private%40example.com&cat=toys" };

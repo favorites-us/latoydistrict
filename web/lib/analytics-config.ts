@@ -1,3 +1,33 @@
+// Only the explicit browser opt-out signal changes Google's default behavior.
+export function googlePrivacySettings(globalPrivacyControl: unknown) {
+  return globalPrivacyControl === true ? {
+    requestNonPersonalizedAds: 1,
+    gtag: {
+      restricted_data_processing: true,
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+    },
+  } : null;
+}
+
+// One beforeInteractive script applies privacy settings before GA configuration
+// and before either afterInteractive Google library can execute. AdSense must
+// receive the opt-out even when Analytics is not configured.
+export function googleInitScript(id?: string): string {
+  return `
+(function(){
+  var settings = typeof navigator !== 'undefined' && navigator.globalPrivacyControl === true
+    ? ${JSON.stringify(googlePrivacySettings(true))} : ${JSON.stringify(googlePrivacySettings(false))};
+  if (!settings) return;
+  (window.adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds = settings.requestNonPersonalizedAds;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+  window.gtag('set', settings.gtag);
+})();
+${id ? analyticsConfigScript(id) : ""}
+`;
+}
+
 // Explicit URL overrides keep free-text searches out of GA's default URL fields.
 // Update before history listeners run so enhanced measurement sees clean URLs too.
 export function analyticsConfigScript(id: string): string {
