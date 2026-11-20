@@ -20,7 +20,7 @@ export function Header({ locale, altPath }: { locale: Locale; altPath: string })
         <nav className="desktop-nav" aria-label={es ? "Navegación principal" : "Main navigation"}><Link href={p("/#directory")}>{t(locale, "nav_directory")}</Link><Link href={p("/guide/visiting")}>{es ? "Planear visita" : "Plan your visit"}</Link><Link href={p("/guide/buying-checklist")}>{es ? "Guía de compra" : "Buying guide"}</Link></nav>
         <div className="header-actions">
           <Link href={p("/saved")} aria-label={`${es ? "Mi lista" : "Saved suppliers"}: ${saved.length}`} className={buttonVariants({ variant: "outline", size: "sm" })}><Bookmark /><span className="saved-label">{es ? "Mi lista" : "Saved"}</span><span className="count-pill">{saved.length}</span></Link>
-          <Link href={localePath(other, altPath)} className="language-link" rel="alternate" hrefLang={other} aria-label={es ? "Read in English" : "Leer en español"}><Globe2 size={16} /><span>{es ? "EN" : "ES"}</span></Link>
+          <Link href={localePath(other, altPath)} className="language-link" rel={altPath.startsWith("/stores/") ? undefined : "alternate"} hrefLang={altPath.startsWith("/stores/") ? undefined : other} aria-label={es ? "Read in English" : "Leer en español"}><Globe2 size={16} /><span>{es ? "EN" : "ES"}</span></Link>
           <Button className="mobile-menu-button min-[1025px]:hidden" variant="ghost" size="icon" aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? (es ? "Cerrar menú" : "Close menu") : (es ? "Abrir menú" : "Open menu")} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button>
         </div>
       </div>

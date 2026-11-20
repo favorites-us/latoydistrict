@@ -1,3 +1,4 @@
+import { GUIDE_CONTENT_DATE } from "./content-dates";
 import { fullAddress, SITE_URL, type Store } from "./stores";
 
 export function storeJsonLd(store: Store) {
@@ -56,5 +57,27 @@ export function faqJsonLd(faq: { q: string; a: string }[]) {
       name: f.q,
       acceptedAnswer: { "@type": "Answer", text: f.a },
     })),
+  };
+}
+
+export function breadcrumbJsonLd(locale: import("./i18n").Locale, path: string, name: string) {
+  const home = locale === "es" ? "/es" : "/";
+  const page = locale === "es" ? `/es${path}` : path;
+  return {
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: locale === "es" ? "Inicio" : "Home", item: `${SITE_URL}${home}` },
+      { "@type": "ListItem", position: 2, name, item: `${SITE_URL}${page}` },
+    ],
+  };
+}
+
+export function articleJsonLd(guide: import("./content/guides").Guide, locale: import("./i18n").Locale, path: string) {
+  const organization = { "@type": "Organization", name: "LA Toy District", url: SITE_URL };
+  return {
+    "@context": "https://schema.org", "@type": "Article",
+    headline: guide.title, description: guide.description, inLanguage: locale,
+    dateModified: GUIDE_CONTENT_DATE, author: organization, publisher: organization,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${locale === "es" ? `/es${path}` : path}` },
   };
 }

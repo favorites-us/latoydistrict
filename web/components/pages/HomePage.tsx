@@ -21,6 +21,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       </div>
     </section>
     {featured.length > 0 && <section className="featured-section container"><div className="section-intro"><h2>{es ? "Destacados con fotos" : "Featured with photos"}</h2><p>{es ? "Explore fotos publicadas de los proveedores." : "Explore suppliers with published photos."}</p></div><div className="featured-carousel">{featured.map(store => <StoreCard key={store.slug} store={store} locale={locale} featured />)}</div></section>}
+    <p className="container"><Link href={p("/guide/wholesale-toys-los-angeles")}>{t(locale, "guide_toys_title")}</Link></p>
     <section id="directory" className="directory-section"><div className="container"><DirectoryBrowser stores={stores} locale={locale} /></div></section>
 
 

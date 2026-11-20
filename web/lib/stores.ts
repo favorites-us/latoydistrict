@@ -1,3 +1,4 @@
+import { normalizeDisplayName } from "./display-name";
 import raw from "../data/stores.json";
 
 export type Category =
@@ -81,7 +82,10 @@ export interface Store {
   status: "open" | "unverified" | "closed";
 }
 
-export const stores: Store[] = (raw as { stores: Store[] }).stores;
+export const stores: Store[] = (raw as { stores: Store[] }).stores.map((store) => ({
+  ...store, name: normalizeDisplayName(store.name),
+  name_es: store.name_es ? normalizeDisplayName(store.name_es) : null,
+}));
 
 export const storeBySlug = new Map(stores.map((s) => [s.slug, s]));
 

@@ -13,7 +13,7 @@ import StoreContactLink from "@/components/StoreContactLink";
 import { NearestParking } from "@/components/ParkingLots";
 import { Header, Footer } from "@/components/SiteChrome";
 import { BLOCK_LABELS, fullAddress, stores, type Store, type OnlineFact, type OnlineSource } from "@/lib/stores";
-import { storeJsonLd } from "@/lib/jsonld";
+import { storeJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
 import { buyerQuestions } from "@/lib/content/buyer-questions";
 
@@ -102,6 +102,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
       <Header locale={locale} altPath={`/stores/${store.slug}`} />
       <main id="main-content" lang={locale}>
         <JsonLd data={storeJsonLd(store)} />
+        <JsonLd data={breadcrumbJsonLd(locale, `/stores/${store.slug}`, store.name)} />
         <StoreViewEvent slug={store.slug} />
         <div className="container store-page">
           <nav className="breadcrumb">

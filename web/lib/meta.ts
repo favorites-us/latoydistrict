@@ -13,3 +13,12 @@ export function altMeta(enPath: string, locale: Locale, title: string, descripti
     },
   };
 }
+
+// Store translations remain accessible, but are excluded from indexing/hreflang.
+export function storeMeta(enPath: string, locale: Locale, title: string, description: string): Metadata {
+  return {
+    title, description,
+    alternates: { canonical: locale === "en" ? enPath : `/es${enPath}` },
+    ...(locale === "es" ? { robots: { index: false, follow: true } } : {}),
+  };
+}

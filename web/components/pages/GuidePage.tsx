@@ -5,7 +5,7 @@ import BuyerWorksheet from "@/components/BuyerWorksheet";
 import { ParkingLotList } from "@/components/ParkingLots";
 import { Header, Footer } from "@/components/SiteChrome";
 import type { Guide } from "@/lib/content/guides";
-import { faqJsonLd } from "@/lib/jsonld";
+import { faqJsonLd, articleJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { localePath, t, type Locale } from "@/lib/i18n";
 
 export default function GuidePage({
@@ -21,13 +21,15 @@ export default function GuidePage({
     <>
       <Header locale={locale} altPath={path} />
       <main id="main-content" lang={locale} className={guide.worksheet ? "worksheet-page" : undefined}>
+        <JsonLd data={articleJsonLd(guide, locale, path)} />
+        <JsonLd data={breadcrumbJsonLd(locale, path, guide.title)} />
         {guide.faq ? <JsonLd data={faqJsonLd(guide.faq)} /> : null}
         <article className="container prose">
           <div className="guide-copy">
             <nav className="breadcrumb">
               <Link href={localePath(locale, "/") || "/"}>{t(locale, "breadcrumb_home")}</Link>
               {" / "}
-              {t(locale, "guides_h2")}
+              {guide.title}
             </nav>
             <DistrictVisual locale={locale} />
             <h1>{guide.title}</h1>
@@ -65,6 +67,7 @@ export default function GuidePage({
                 <summary><h3>{item.q}</h3></summary><p>{item.a}</p>
               </details>)}
             </section> : null}
+            {path !== "/guide/wholesale-toys-los-angeles" ? <p className="guide-next"><Link href={localePath(locale, "/guide/wholesale-toys-los-angeles")}>{t(locale, "guide_toys_title")}</Link></p> : null}
             {!guide.worksheet ? <p className="guide-next"><Link href={localePath(locale, "/guide/buying-checklist")}>{t(locale, "worksheet_link")}</Link></p> : null}
           </div>
           {guide.worksheet ? <BuyerWorksheet locale={locale} /> : null}

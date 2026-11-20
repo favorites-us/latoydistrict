@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import StorePage from "@/components/pages/StorePage";
 import { fullAddress, storeBySlug, stores } from "@/lib/stores";
-import { altMeta } from "@/lib/meta";
+import { storeMeta } from "@/lib/meta";
 
 export const dynamicParams = false;
 
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const store = storeBySlug.get(slug);
   if (!store) return {};
-  return altMeta(
+  return storeMeta(
     `/stores/${slug}`,
     "en",
     `${store.name} — Toy District, Los Angeles`,

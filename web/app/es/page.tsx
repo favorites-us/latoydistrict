@@ -3,12 +3,14 @@ import HomePage from "@/components/pages/HomePage";
 import { altMeta } from "@/lib/meta";
 import { t } from "@/lib/i18n";
 
-export const metadata: Metadata = altMeta(
+const homeMeta = altMeta(
   "/",
   "es",
-  "Directorio del Toy District de Los Ángeles — Juguetes al por mayor en DTLA",
+  "Toy District de Los Ángeles: directorio de mayoristas",
   t("es", "tagline"),
 );
+
+export const metadata: Metadata = { ...homeMeta, title: { absolute: "Toy District de Los Ángeles: directorio de mayoristas" } };
 
 export default function Page() {
   return <HomePage locale="es" />;
