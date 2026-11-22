@@ -1,4 +1,4 @@
-import { GUIDE_CONTENT_DATE } from "./content-dates";
+import { DEFAULT_OG_IMAGE } from "./meta";
 import { BLOCK_LABELS, fullAddress, SITE_URL, type Store } from "./stores";
 
 export function storeJsonLd(store: Store) {
@@ -31,7 +31,7 @@ export function storeJsonLd(store: Store) {
     ...(store.phone && store.field_sources?.phone?.type !== "directory" ? { telephone: store.phone } : {}),
     ...(() => {
       const l = store.links ?? {};
-      const sameAs = [l.website, l.facebook, l.instagram, l.yelp, ...(l.other ?? [])]
+      const sameAs = [l.website, l.facebook, l.instagram]
         .filter((u): u is string => typeof u === "string" && /^https?:\/\//i.test(u));
       return sameAs.length ? { sameAs } : {};
     })(),
@@ -42,7 +42,9 @@ export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "LA Toy District Directory",
+    name: "LA Toy District",
+    alternateName: "LA Toy District Directory",
+    publisher: { "@type": "Organization", name: "LA Toy District", url: SITE_URL },
     url: SITE_URL,
     inLanguage: ["en", "es"],
   };
@@ -77,7 +79,9 @@ export function articleJsonLd(guide: import("./content/guides").Guide, locale: i
   return {
     "@context": "https://schema.org", "@type": "Article",
     headline: guide.title, description: guide.description, inLanguage: locale,
-    dateModified: GUIDE_CONTENT_DATE, author: organization, publisher: organization,
+    image: DEFAULT_OG_IMAGE,
+    ...(guide.published_at ? { datePublished: guide.published_at } : {}),
+    dateModified: guide.updated_at ?? guide.reviewed_at, author: organization, publisher: organization,
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${locale === "es" ? `/es${path}` : path}` },
   };
 }

@@ -18,7 +18,7 @@ import { storeJsonLd, storeBreadcrumbJsonLd } from "@/lib/jsonld";
 import { catLabel, localePath, t, formatText, type DictKey, type Locale } from "@/lib/i18n";
 import { buyerQuestions } from "@/lib/content/buyer-questions";
 
-import { httpUrl } from "@/lib/urls";
+import { httpUrl, directoryLinkLabel } from "@/lib/urls";
 
 function SourceNote({ source, locale, slug }: { source?: OnlineSource; locale: Locale; slug?: string }) {
   if (!source) return null;
@@ -64,10 +64,10 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
   addLink("Facebook", store.links?.facebook);
   addLink("Instagram", store.links?.instagram);
   addLink("WhatsApp", store.links?.whatsapp);
-  addLink("Yelp", store.links?.yelp);
+  if (store.links?.yelp) addLink(directoryLinkLabel(store.links.yelp, locale) || "", store.links.yelp);
   for (const raw of store.links?.other ?? []) {
     const href = httpUrl(raw);
-    if (href) links.push({ label: new URL(href).hostname.replace(/^www\./, ""), href });
+    if (href) links.push({ label: directoryLinkLabel(href, locale)!, href });
   }
 
   const carryFacts = store.online_facts?.filter((f) => f.kind === "products" || f.kind === "manufacturer_listing") ?? [];

@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
-import type { Locale } from "./i18n";
+import { localePath, type Locale } from "./i18n";
+import { SITE_URL } from "./stores";
+
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/opengraph-image`;
+
+export function socialMeta(enPath: string, locale: Locale, title: string, description: string): Metadata {
+  const image = enPath.startsWith("/stores/") ? `${SITE_URL}${enPath}/opengraph-image` : DEFAULT_OG_IMAGE;
+  return {
+    openGraph: { title, description, url: `${SITE_URL}${localePath(locale, enPath)}`, siteName: "LA Toy District", locale: locale === "es" ? "es_US" : "en_US", type: enPath.startsWith("/guide/") ? "article" : "website", images: [{ url: image, width: 1200, height: 630, alt: title }] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
+  };
+}
 
 // hreflang alternates for a page identified by its EN path. ES slugs mirror EN.
 export function altMeta(enPath: string, locale: Locale, title: string, description: string): Metadata {
@@ -7,6 +18,7 @@ export function altMeta(enPath: string, locale: Locale, title: string, descripti
   return {
     title,
     description,
+    ...socialMeta(enPath, locale, title, description),
     alternates: {
       canonical: locale === "en" ? enPath : esPath,
       languages: { en: enPath, es: esPath, "x-default": enPath },
@@ -18,6 +30,7 @@ export function altMeta(enPath: string, locale: Locale, title: string, descripti
 export function storeMeta(enPath: string, locale: Locale, title: string, description: string): Metadata {
   return {
     title, description,
+    ...socialMeta(enPath, locale, title, description),
     alternates: { canonical: locale === "en" ? enPath : `/es${enPath}` },
     ...(locale === "es" ? { robots: { index: false, follow: true } } : {}),
   };

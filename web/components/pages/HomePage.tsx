@@ -9,7 +9,7 @@ import JsonLd from "@/components/JsonLd";
 import { Header, Footer } from "@/components/SiteChrome";
 import { stores } from "@/lib/stores";
 import { websiteJsonLd } from "@/lib/jsonld";
-import { t, localePath, type Locale } from "@/lib/i18n";
+import { t, formatText, localePath, type Locale } from "@/lib/i18n";
 export default function HomePage({ locale }: { locale: Locale }) {
   const p = (path: string) => localePath(locale, path);
   const es = locale === "es";
@@ -18,11 +18,11 @@ export default function HomePage({ locale }: { locale: Locale }) {
     <section className="directory-hero container" aria-labelledby="directory-title">
       <div className="hero-copy">
         <h1 id="directory-title">{es ? "Proveedores de LA Toy District" : "LA Toy District suppliers"}</h1>
-        <p className="hero-description">{es ? "Juguetes, regalos y fiestas al por mayor." : "Wholesale toys, gifts and party supplies."}</p>
+        <p className="hero-description">{formatText(locale, "home_lede", { count: stores.filter(s => s.status !== "closed").length })}</p>
       </div>
     </section>
-    {featured.length > 0 && <section className="featured-section container"><div className="section-intro"><h2>{es ? "Destacados con fotos" : "Featured with photos"}</h2><p>{es ? "Explore fotos publicadas de los proveedores." : "Explore suppliers with published photos."}</p></div><div className="featured-carousel">{featured.map(store => <StoreCard key={store.slug} store={store} locale={locale} featured />)}</div></section>}
-    <p className="container"><Link href={p("/guide/wholesale-toys-los-angeles")}>{t(locale, "guide_toys_title")}</Link></p>
+    {featured.length > 0 && <section className="featured-section container"><div className="section-intro"><h2>{es ? "Destacados con fotos" : "Featured with photos"}</h2><p>{es ? "Explore fotos publicadas de los proveedores." : "Explore suppliers with published photos."}</p></div><div className="featured-carousel">{featured.map((store, index) => <StoreCard key={store.slug} store={store} locale={locale} featured priority={index === 0} />)}</div></section>}
+    <p className="container home-guide-link"><Link href={p("/guide/wholesale-toys-los-angeles")}>{t(locale, "guide_toys_title")} <span aria-hidden="true">→</span></Link></p>
     <section id="directory" className="directory-section"><div className="container"><DirectoryBrowser stores={stores} locale={locale} /></div></section>
 
 

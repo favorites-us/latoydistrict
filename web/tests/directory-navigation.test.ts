@@ -54,7 +54,7 @@ test('sitemap includes only English navigation pages with stable dates, correct 
   for (const [path, priority] of [['/stores', .8], ...streetGroups(stores).map(g => [`/street/${g.block}`, .7])] as [string, number][]) {
     const entry = entries.find(e => e.url === `${SITE_URL}${path}`)!;
     assert.equal(entry.priority, priority);
-    assert.equal(entry.lastModified, '2026-11-21');
+    assert.equal(entry.lastModified, '2026-11-22');
     assert.equal(entry.alternates, undefined);
   }
   assert.ok(!entries.some(e => /\/es\/(stores|street)(\/|$)/.test(e.url)));
@@ -84,7 +84,7 @@ test('store descriptions fit 155 characters, omit unsupported claims, and titles
   assert.doesNotMatch(storeDescription(small, 'en'), /since/);
   assert.match(storeDescription({ ...small, phone: '123' }, 'en'), /Phone listed/);
   assert.match(storeDescription({ ...small, since: '2001-01-01' }, 'en'), /since 2001/);
-  const fact = { id: 'test', kind: 'buying' as const, text: { en: 'Terms', es: 'Condiciones' }, scope: 'business', source: { type: 'directory' as const, label: 'Directory', url: 'https://example.com', checked_at: '2026-11-21' } };
+  const fact = { id: 'test', kind: 'buying' as const, text: { en: 'Terms', es: 'Condiciones' }, scope: 'business', source: { type: 'directory' as const, label: 'Directory', url: 'https://example.com', checked_at: '2026-11-22' } };
   assert.doesNotMatch(storeDescription({ ...small, online_facts: [fact] }, 'en'), /Published buying/);
   assert.match(storeDescription({ ...small, online_facts: [{ ...fact, source: { ...fact.source, type: 'business' } }] }, 'en'), /Published buying information with sources/);
   assert.ok(storeDescription({ ...small, name: 'A'.repeat(200) }, 'es').length <= 155);

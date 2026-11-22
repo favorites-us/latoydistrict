@@ -18,5 +18,9 @@ export function streetContent(block: Block, locale: Locale) {
 }
 export function streetMetadata(block: Block, locale: Locale) {
   const content = streetContent(block, locale);
-  return storeMeta(`/street/${block}`, locale, formatText(locale, 'street_meta_title', { street: BLOCK_LABELS[block] }), `${content.intro} ${content.range} ${content.categories}`.trim());
+  const categories = content.categories.split(' · ');
+  const base = `${content.intro} ${content.range}`.trim();
+  while (categories.length && `${base} ${categories.join(' · ')}`.length > 155) categories.pop();
+  const description = `${base} ${categories.join(' · ')}`.trim();
+  return storeMeta(`/street/${block}`, locale, formatText(locale, 'street_meta_title', { street: BLOCK_LABELS[block] }), description);
 }

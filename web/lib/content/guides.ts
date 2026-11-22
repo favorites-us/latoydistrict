@@ -11,6 +11,8 @@ export interface GuideLink { label: string; href: string }
 export interface GuideSource extends GuideLink { checked_at: string }
 export interface GuideSection {
   h: string;
+  headingHref?: string;
+  groups?: GuideSection[];
   ps: string[];
   bullets?: string[];
   links?: GuideLink[];
@@ -21,6 +23,8 @@ export interface Guide {
   title: string;
   description: string;
   reviewed_at: string;
+  published_at?: string;
+  updated_at?: string;
   sections: GuideSection[];
   faq?: { q: string; a: string }[];
   worksheet?: boolean;
@@ -44,6 +48,7 @@ export const visiting: Record<Locale, Guide> = {
     title: "Visiting the LA Toy District: hours, parking & pickup",
     description: "Check store hours, purchasing arrangements, parking and pickup before a buying trip to Downtown Los Angeles.",
     reviewed_at: parkingCheckedAt,
+    updated_at: "2026-11-19",
     sections: [
       {
         h: "Start with the exact store address",
@@ -86,6 +91,7 @@ export const visiting: Record<Locale, Guide> = {
     title: "Visitar el Toy District: horarios, estacionamiento y recogida",
     description: "Confirme horarios, condiciones de compra, estacionamiento y recogida antes de visitar el centro de Los Ángeles.",
     reviewed_at: parkingCheckedAt,
+    updated_at: "2026-11-19",
     sections: [
       {
         h: "Empiece con la dirección exacta",
@@ -129,7 +135,7 @@ export const visiting: Record<Locale, Guide> = {
 export const wholesaleBasics: Record<Locale, Guide> = {
   en: {
     title: "Buying wholesale in California: seller’s permits, resale certificates & minimums",
-    description: "Buying wholesale in California: distinguish a seller’s permit from a resale certificate, and confirm account approval, order minimums and payment terms.", reviewed_at,
+    description: "Buying wholesale in California: distinguish a seller’s permit from a resale certificate, and confirm account approval, order minimums and payment terms.", reviewed_at, updated_at: "2026-11-19",
     sections: [
       { h: "Ask which buying channel applies", ps: ["Check whether the merchant offers retail, wholesale or both, and whether an account must be approved before you can order or visit. An online shop does not by itself confirm walk-in purchasing."], links: [checklistLink("en")] },
       { h: "Keep resale documents separate from account approval", ps: ["CDTFA explains that a seller’s permit copy is not a substitute for a resale certificate. Its guidance describes the information required for sales for resale and how sellers handle those records.", "A merchant’s account approval, eligibility for its prices and the tax treatment of a purchase are separate questions. Use CDTFA guidance for your circumstances, including purchases for your own use or by an out-of-state business. Confirm the merchant’s document requirements before ordering."], sources: [resale] },
@@ -139,7 +145,7 @@ export const wholesaleBasics: Record<Locale, Guide> = {
   },
   es: {
     title: "Comprar al por mayor en California: seller’s permit, resale certificate y mínimos",
-    description: "Comprar al por mayor en California: distinga seller’s permit y resale certificate y confirme aprobación de cuenta, pedidos mínimos y formas de pago.", reviewed_at,
+    description: "Comprar al por mayor en California: distinga seller’s permit y resale certificate y confirme aprobación de cuenta, pedidos mínimos y formas de pago.", reviewed_at, updated_at: "2026-11-19",
     sections: [
       { h: "Pregunte qué canal de compra corresponde", ps: ["Confirme si el negocio vende al menudeo, al mayoreo o ambos y si debe aprobar una cuenta antes de comprar o visitar. Una tienda en línea no confirma por sí sola la compra en persona."], links: [checklistLink("es")] },
       { h: "Distinga los documentos de reventa de la aprobación de cuenta", ps: ["CDTFA explica que una copia del seller’s permit no sustituye un resale certificate. Su guía describe la información necesaria para las ventas para reventa y cómo los vendedores conservan esos registros.", "La aprobación de una cuenta, el acceso a ciertos precios y el tratamiento fiscal de una compra son preguntas distintas. Consulte la guía de CDTFA para su situación, incluidas compras para uso propio o realizadas por negocios de otro estado. Confirme los documentos que pide el negocio antes de ordenar."], sources: [resale] },

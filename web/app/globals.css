@@ -730,3 +730,18 @@ body:has(.store-sticky-actions) main { padding-bottom: calc(76px + env(safe-area
 @media (min-width: 700px) {
   .business-rows li { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, .7fr); gap: 20px; align-items: center; }
 }
+
+/* Navigation affordances match the green links and category pill controls. */
+.street-links { gap: 8px; }
+.street-links a { padding: 6px 12px; border: 1px solid var(--line); border-radius: 24px; color: var(--brand-dark); background: var(--surface); font-size: .875rem; }
+.street-links a:hover, .street-links a:focus-visible { border-color: var(--brand); background: var(--tint-8); }
+.navigation-links a, .navigation-page .breadcrumb a, .business-rows a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; }
+.navigation-page .breadcrumb a { display: inline-flex; align-items: center; min-height: 44px; }
+.directory-results .load-more button, .directory-index-link a { width: min(100%, 320px); min-height: 44px; }
+.directory-index-link a { justify-content: center; padding: 10px 12px; border: 1px solid var(--brand); border-radius: var(--radius); color: var(--brand); font-weight: 600; font-size: .875rem; }
+.directory-index-link a:hover, .directory-index-link a:focus-visible { background: var(--tint-8); }
+.directory-hero .hero-description { font-size: .875rem; line-height: 1.4; margin: 0; }
+.guide-group { min-width: 0; overflow-wrap: anywhere; }
+.guide-group h3 a, .guide-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.home-guide-link { margin-block: 4px 0; }
+.home-guide-link a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: var(--brand); font-weight: 600; font-size: .9375rem; text-decoration: underline; text-underline-offset: 3px; }

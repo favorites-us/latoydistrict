@@ -6,6 +6,8 @@ export type Locale = "en" | "es";
 
 const dict = {
   en: {
+    home_lede: "{count} registered toy, party, gift and general merchandise businesses between 3rd and 5th St in Downtown LA.",
+    directory_link: "Directory listing ({host})",
     all_businesses: "All businesses A–Z",
     index_title: "All Toy District businesses A–Z",
     index_description: "Browse {count} Toy District business listings by name, address and category, or explore each street.",
@@ -36,8 +38,8 @@ const dict = {
     nav_buyers: "Purchase Checklist",
     home_h1: "The Toy District, Los Angeles",
     home_sub: "Explore business listings between 3rd & 5th St and Los Angeles & San Pedro St, Downtown LA. Start with the map and published buying information, then confirm details with each business.",
-    where_h2: "Where is the Toy District?",
-    where_p: "This directory covers the area between E 3rd St, E 5th St, S Los Angeles St and S San Pedro St in Downtown Los Angeles, including Wall St, Winston St and Boyd St. Listings originate from business registrations; confirm the exact address, suite and current operation before visiting.",
+    where_h2: "What and where is the Toy District?",
+    where_p: "The Toy District is a wholesale and retail shopping area in Downtown Los Angeles. This directory covers the area between E 3rd St, E 5th St, S Los Angeles St and S San Pedro St in Downtown Los Angeles, including Wall St, Winston St and Boyd St. Listings originate from business registrations; confirm the exact address, suite and current operation before visiting.",
     directory_h2: "Store directory",
     search_placeholder: "Search by name or street…",
     filter_all: "All categories",
@@ -132,6 +134,8 @@ const dict = {
     claim_banner_cta: "Email the directory",
   },
   es: {
+    home_lede: "{count} negocios registrados de juguetes, fiestas, regalos y mercancía general entre 3rd y 5th St, centro de LA.",
+    directory_link: "Ficha en directorio ({host})",
     all_businesses: "Todos los negocios A–Z",
     index_title: "Todos los negocios del Toy District de la A a la Z",
     index_description: "Explore {count} fichas de negocios del Toy District por nombre, dirección y categoría, o por calle.",
@@ -162,8 +166,8 @@ const dict = {
     nav_buyers: "Lista de compra",
     home_h1: "El Toy District de Los Ángeles",
     home_sub: "Explore fichas de negocios entre 3rd y 5th St y entre Los Angeles y San Pedro St, en el centro de LA. Empiece con el mapa y la información de compra publicada y confirme los detalles con cada negocio.",
-    where_h2: "¿Dónde está el Toy District?",
-    where_p: "Este directorio cubre el área entre E 3rd St, E 5th St, S Los Angeles St y S San Pedro St, incluidas Wall St, Winston St y Boyd St. Las fichas parten de registros comerciales; confirme la dirección, el local y si el negocio sigue operando antes de visitar.",
+    where_h2: "¿Qué es y dónde está el Toy District?",
+    where_p: "El Toy District es una zona comercial de mayoreo y menudeo en el centro de Los Ángeles. Este directorio cubre el área entre E 3rd St, E 5th St, S Los Angeles St y S San Pedro St, incluidas Wall St, Winston St y Boyd St. Las fichas parten de registros comerciales; confirme la dirección, el local y si el negocio sigue operando antes de visitar.",
     directory_h2: "Directorio de tiendas",
     search_placeholder: "Buscar por nombre o calle…",
     filter_all: "Todas las categorías",

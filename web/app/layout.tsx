@@ -1,3 +1,4 @@
+import { socialMeta } from "@/lib/meta";
 import type { Metadata } from "next";
 import Script from "next/script";
 import localFont from "next/font/local";
@@ -9,6 +10,7 @@ import { googleInitScript } from "@/lib/analytics-config";
 const geist = localFont({ src: "./fonts/geist-latin.woff2", weight: "100 900", variable: "--font-geist", display: "swap" });
 
 export const metadata: Metadata = {
+  ...socialMeta("/", "en", "LA Toy District", "Explore toy, party and gift business listings in Downtown LA."),
   metadataBase: new URL(SITE_URL),
   title: {
     default: "LA Toy District Directory — Wholesale Toys in Downtown Los Angeles",

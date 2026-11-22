@@ -4,6 +4,9 @@ import { fileURLToPath } from "node:url";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [{ source: "/:path*", has: [{ type: "host", value: "www.toydistrictlosangeles.com" }], destination: "https://toydistrictlosangeles.com/:path*", permanent: true }];
+  },
   // no remote images in v0; keeps the site deployable anywhere
   images: { unoptimized: true },
   // This app is the web/ subdir of the repo; pin the tracing root here so the

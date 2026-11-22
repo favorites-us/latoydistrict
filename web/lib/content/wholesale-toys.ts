@@ -1,7 +1,7 @@
 import { stores, BLOCK_LABELS } from "../stores";
 import { CATEGORIES } from "../buyer-tools";
 import { catLabel, t, type Locale } from "../i18n";
-import { GUIDE_CONTENT_DATE } from "../content-dates";
+import { streetGroups } from "../directory-navigation";
 import { buyerGuides, type Guide, type GuideSection } from "./guides";
 
 // Evaluated from committed data when these static guide routes are built.
@@ -16,12 +16,12 @@ export const streetCounts = Object.entries(BLOCK_LABELS).map(([block, label]) =>
 
 function guide(locale: Locale): Guide {
   const es = locale === "es";
-  const published: GuideSection[] = listedStores.flatMap((store) => {
-    const facts = store.online_facts?.filter((fact) => fact.source.type === "business" &&
-      ["buying", "minimum_order", "services"].includes(fact.kind)) ?? [];
+  const toyStores = listedStores.filter(store => store.category.includes("toys"));
+  const published: GuideSection[] = toyStores.flatMap((store) => {
+    const facts = store.online_facts?.filter((fact) => (fact.source.type === "business" && ["products", "buying", "minimum_order", "services"].includes(fact.kind)) || (fact.source.type === "manufacturer" && fact.kind === "manufacturer_listing")) ?? [];
     if (!facts.length) return [];
     const sources = new Map(facts.flatMap((fact) => [fact.source, ...(fact.additional_sources ?? [])])
-      .map((source) => [source.url, { label: source.label, href: source.url, checked_at: source.checked_at }]));
+      .map((source) => [`${source.url}|${source.checked_at}|${source.label}`, { label: source.label, href: source.url, checked_at: source.checked_at }]));
     return [{ h: store.name, ps: facts.map((fact) => fact.text[locale]),
       links: [{ label: es ? `Ver ficha: ${store.name}` : `View listing: ${store.name}`, href: `/stores/${store.slug}` }],
       sources: [...sources.values()] }];
@@ -31,13 +31,20 @@ function guide(locale: Locale): Guide {
     description: es
       ? "Explore las fichas del Toy District por categoría y calle, consulte condiciones de compra publicadas y prepare sus preguntas, documentos y recogida."
       : "Find Toy District business listings by category and street, review published buying terms, and plan your wholesale toy store visit, documents and pickup.",
-    reviewed_at: GUIDE_CONTENT_DATE,
+    reviewed_at: "2026-11-22",
+    published_at: "2026-11-19",
+    updated_at: "2026-11-22",
     sections: [
+      { h: es ? "Fichas de juguetes en el Toy District" : "Toy listings in the Toy District",
+        ps: [es ? `${toyStores.length} fichas de juguetes: la clasificación proviene de registros comerciales y no confirma inventario ni condiciones de mayoreo.` : `${toyStores.length} toy listings: classification comes from business registration data and does not confirm inventory or wholesale terms.`],
+        groups: streetGroups(toyStores, locale).map(({ block, stores }) => ({ h: BLOCK_LABELS[block], headingHref: `/street/${block}`, ps: [], links: stores.map(store => ({ label: `${store.name} — ${store.address.line1}${store.address.unit ? ` #${store.address.unit}` : ""}`, href: `/stores/${store.slug}` })) })) },
+      { h: es ? "Proveedores de juguetes con información publicada de productos o compra" : "Toy suppliers with published product or buying information",
+        ps: [es ? "Consulte las fuentes y confirme productos y condiciones directamente con cada negocio." : "Review the sources and confirm products and terms directly with each business."], groups: published },
       { h: es ? "Dónde buscar en el Toy District" : "Where to look in the Toy District",
         ps: [t(locale, "where_p"), es
           ? "Use estas calles para planear sus paradas. Las cifras cuentan fichas del directorio, no tiendas confirmadas como abiertas ni distribuidores autorizados. Confirme la ubicación y las condiciones de compra antes de ir."
           : "Use these streets to plan your stops. Counts represent directory listings, not confirmed open stores or authorized distributors. Confirm the location and buying terms before visiting."],
-        links: streetCounts.map(({ block, label, count }) => ({ label: `${label}: ${count}`, href: `/?street=${block}#directory` })) },
+        links: streetCounts.map(({ block, label, count }) => ({ label: `${label}: ${count}`, href: `/street/${block}` })) },
       { h: es ? "Fichas por categoría" : "Business listings by category",
         ps: [es
           ? `${listedStores.length} fichas no están marcadas como cerradas. Las categorías pueden coincidir; una ficha puede aparecer en más de una. La clasificación no confirma inventario ni venta al mayoreo.`
@@ -45,12 +52,8 @@ function guide(locale: Locale): Guide {
         links: categoryCounts.filter(({ count }) => count > 0).map(({ category, count }) => ({
           label: `${catLabel(locale, category)}: ${count}`, href: `/?cat=${category}#directory`,
         })) },
-      { h: es ? "Información de compra publicada" : "Published buying information",
-        ps: [es
-          ? "Estas fichas incluyen información de sitios de negocios con fuentes y fechas de consulta. No todas son tiendas de juguetes. Revise cada surtido y confirme mínimos, pago, existencias y recogida directamente; no suponga que las condiciones son iguales en todo el distrito."
-          : "These listings include business-website information with sources and dates checked. They are not all toy stores. Review each product range and confirm minimums, payment, stock and pickup directly; do not assume terms are shared across the district."],
-        links: [{ label: es ? "Filtrar por información de compra" : "Filter by buying information", href: "/?info=1#directory" }] },
-      ...published,
+      { h: es ? "Otros negocios del Toy District con condiciones de compra publicadas" : "Other Toy District merchants with published buying terms",
+        ps: [], links: listedStores.filter(store => !store.category.includes("toys") && store.online_facts?.some(fact => fact.source.type === "business" && ["buying", "minimum_order", "services"].includes(fact.kind))).map(store => ({ label: store.name, href: `/stores/${store.slug}` })) },
       { h: es ? "Prepare su pedido y visita" : "Prepare your order and visit",
         ps: [es
           ? "Pregunte por unidades por caja, mínimos, formas de pago y documentos. Confirme el horario del día de su visita, el estacionamiento y cómo recogerá el pedido."

@@ -28,7 +28,7 @@ test("sitemap dates are stable and Spanish stores are excluded without losing tr
   for (const store of stores) {
     const entry = entries.find((entry) => entry.url === `${SITE_URL}/stores/${store.slug}`)!;
     assert.ok(entry); assert.equal(entry.alternates, undefined);
-    assert.equal(entry.lastModified, store.verified_at && store.verified_at > "2026-11-21" ? store.verified_at : "2026-11-21");
+    assert.equal(entry.lastModified, store.verified_at && store.verified_at > "2026-11-22" ? store.verified_at : "2026-11-22");
   }
   for (const path of ["/", "/guide/visiting", "/guide/wholesale-basics", "/guide/buying-checklist", "/guide/wholesale-toys-los-angeles", "/photos", "/about", "/privacy", "/contact", ...Object.keys(buyerGuides).map(slug => `/guide/for/${slug}`)]) {
     for (const locale of ["en", "es"] as const) {
@@ -71,9 +71,9 @@ test("landing guide counts match directory filters and published claims retain c
   for (const { block, count } of streetCounts) assert.equal(count, filterStores(stores, { ...emptyFilters, block }).length);
   for (const locale of ["en", "es"] as const) {
     const guide = wholesaleToys[locale];
-    for (const store of listedStores) for (const fact of store.online_facts ?? []) {
-      if (fact.source.type !== "business" || !["buying", "minimum_order", "services"].includes(fact.kind)) continue;
-      const section = guide.sections.find(section => section.h === store.name)!;
+    for (const store of listedStores.filter(s => s.category.includes("toys"))) for (const fact of store.online_facts ?? []) {
+      if (!(fact.source.type === "business" && ["products", "buying", "minimum_order", "services"].includes(fact.kind)) && !(fact.source.type === "manufacturer" && fact.kind === "manufacturer_listing")) continue;
+      const section = guide.sections.flatMap(section => section.groups ?? []).find(section => section.h === store.name)!;
       assert.ok(section.ps.includes(fact.text[locale]));
       assert.ok(section.sources?.some(source => source.href === fact.source.url && source.checked_at === fact.source.checked_at));
     }
