@@ -28,10 +28,11 @@ const ADSENSE_CLIENT = "ca-pub-9659602470766254";
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={geist.variable} suppressHydrationWarning>
+      <head>
+        {/* Plain inline script: runs while the document is parsed, before first paint. */}
+        <script dangerouslySetInnerHTML={{ __html: htmlLangScript }} />
+      </head>
       <body>
-        <Script id="html-lang" strategy="beforeInteractive">
-          {htmlLangScript}
-        </Script>
         <HtmlLang />
         <Script id="google-init" strategy="beforeInteractive">
           {googleInitScript(GA_ID)}
