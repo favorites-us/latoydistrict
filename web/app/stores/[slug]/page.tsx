@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import StorePage from "@/components/pages/StorePage";
 import { storeBySlug, stores } from "@/lib/stores";
-import { storeMeta, storeTitle, storeDescription } from "@/lib/meta";
+import { storePageMeta } from "@/lib/meta";
 
 export const dynamicParams = false;
 
@@ -14,12 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const store = storeBySlug.get(slug);
   if (!store) return {};
-  return storeMeta(
-    `/stores/${slug}`,
-    "en",
-    storeTitle(store, "en"),
-    storeDescription(store, "en"),
-  );
+  return storePageMeta(store, "en");
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {

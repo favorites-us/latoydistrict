@@ -82,12 +82,22 @@ const Update = z.discriminatedUnion("field", Object.entries(fieldTypes).map(([fi
   if (update.value === null && update.previous === null) ctx.addIssue({ code: z.ZodIssueCode.custom, message: "An empty value cannot fill an empty field" });
   if (update.change_type !== expected) ctx.addIssue({ code: z.ZodIssueCode.custom, message: "Incorrect change_type" });
 });
+// Local quality decisions are not online sources and never create field_sources.
+// They may suppress/reclassify inherited links, normalize a suffix, or flag scope.
+const correctionTypes = {
+  "links.yelp": httpUrl.nullable(), "links.other": z.array(httpUrl).nullable(),
+  "address.line1": text, duplicate_of: text, listing_scope: z.literal("non_merchant"),
+};
+const Correction = z.discriminatedUnion("field", Object.entries(correctionTypes).map(([field, schema]) => z.object({
+  field: z.literal(field), value: schema, previous: schema.nullable(),
+  reason: text, evidence: text, reviewed_at: date,
+}).strict()));
 const ReviewSchema = z.object({
   version: z.literal(1),
   entries: z.array(z.object({
     id: text, identity: Identity, decision: z.literal("approved"), reviewer: text,
     business_domains: z.array(z.string().regex(/^(?:[a-z0-9-]+\.)+[a-z]{2,}$/)),
-    identity_evidence: text, updates: z.array(Update), facts: z.array(OnlineFactSchema),
+    identity_evidence: text, corrections: z.array(Correction).optional(), updates: z.array(Update), facts: z.array(OnlineFactSchema),
   }).strict()),
 }).strict();
 
@@ -95,11 +105,11 @@ const normalize = (value) => String(value ?? "").toLowerCase().replace(/\s+/g, "
 export function identityOf(store) {
   return { name: store.name, line1: store.address.line1, unit: store.address.unit, zip: store.address.zip };
 }
-function matchEntry(byId, entry) {
+function matchEntry(byId, entry, correction) {
   const store = byId.get(entry.id);
   if (!store) throw new Error(`Reviewed store missing from input: ${entry.id}. Reconcile the ID before rebuilding.`);
   const current = identityOf(store);
-  if (Object.keys(current).some((key) => normalize(current[key]) !== normalize(entry.identity[key]))) {
+  if (Object.keys(current).some((key) => normalize(current[key]) !== normalize(entry.identity[key]) && !(key === "line1" && correction && equal(correction.previous, entry.identity.line1) && equal(correction.value, current.line1)))) {
     throw new Error(`Identity mismatch: ${entry.id}. Name, address, suite and ZIP must match.`);
   }
   return store;
@@ -108,11 +118,12 @@ function unique(values, description) {
   if (new Set(values).size !== values.length) throw new Error(`Duplicate ${description}`);
 }
 
-export function assertBaselineInventory(current, baseline) {
+export function assertBaselineInventory(current, baseline, reviewInput = { version: 1, entries: [] }) {
+  const reviews = ReviewSchema.parse(reviewInput);
   unique(current.map((s) => s.id), "current store ID");
   if (current.length !== baseline.length) throw new Error("Directory inventory changed; reconcile and refresh the baseline before applying contacts.");
   const byId = new Map(current.map((s) => [s.id, s]));
-  for (const store of baseline) matchEntry(byId, { id: store.id, identity: identityOf(store) });
+  for (const store of baseline) matchEntry(byId, { id: store.id, identity: identityOf(store) }, reviews.entries.find(e => e.id === store.id)?.corrections?.find(c => c.field === "address.line1"));
 }
 
 export function applyReviewedData(input, legacyInput, reviewInput) {
@@ -126,14 +137,14 @@ export function applyReviewedData(input, legacyInput, reviewInput) {
   const reviewById = new Map(reviews.entries.map((s) => [s.id, s]));
   // One-time migration of existing enrichment. This does not mark it verified.
   for (const entry of legacy.entries) {
-    const store = matchEntry(byId, entry);
+    const store = matchEntry(byId, entry, reviewById.get(entry.id)?.corrections?.find(c => c.field === "address.line1"));
     const { coordinates, links: inheritedLinks, sources: inheritedSources, ...values } = entry.values;
     // Registry rebuilds leave contacts blank. If another input provides a
     // different contact, never silently hide that conflict behind the baseline.
     const contacts = ["phone", "hours", "wechat", "languages", "payment", "moq", "resale_cert_required", "verified_at"];
     const checkInherited = (field, current, inherited) => {
       if (current == null || inherited == null || equal(current, inherited)) return;
-      const approved = reviewById.get(entry.id)?.updates.find((update) => update.field === field);
+      const approved = reviewById.get(entry.id)?.updates.find((update) => update.field === field) || reviewById.get(entry.id)?.corrections?.find(c => c.field === field);
       if (!approved || !equal(current, approved.value)) {
         throw new Error(`Unexpected current value: ${entry.id}.${field}. Review the conflict with inherited data.`);
       }
@@ -148,7 +159,7 @@ export function applyReviewedData(input, legacyInput, reviewInput) {
     }
   }
   for (const entry of reviews.entries) {
-    const store = matchEntry(byId, entry);
+    const store = matchEntry(byId, entry, reviewById.get(entry.id)?.corrections?.find(c => c.field === "address.line1"));
     unique(entry.updates.map((u) => u.field), `updated field for ${entry.id}`);
     unique(entry.facts.map((f) => f.id), `fact ID for ${entry.id}`);
     const evidenceSources = [...entry.updates, ...entry.facts].map((item) => item.source)
@@ -174,18 +185,45 @@ export function applyReviewedData(input, legacyInput, reviewInput) {
       else store[update.field] = structuredClone(update.value);
       store.field_sources = { ...(store.field_sources || {}), [update.field]: structuredClone(update.source) };
     }
-    store.online_facts = structuredClone(entry.facts);
+    const corrections = entry.corrections || [];
+    unique([...entry.updates, ...corrections].map(c => c.field), `corrected field for ${entry.id}`);
+    const originalLinks = [store.links?.yelp, ...(store.links?.other || []), ...corrections.flatMap(c => c.field === "links.yelp" ? [c.previous] : c.field === "links.other" ? c.previous || [] : [])].filter(Boolean);
+    for (const correction of corrections) {
+      const [parent, child] = correction.field.split(".");
+      const current = child ? store[parent]?.[child] : store[parent];
+      if (!equal(current, correction.previous) && !equal(current, correction.value)) throw new Error(`Unexpected current value: ${entry.id}.${correction.field}`);
+      if (correction.field.startsWith("links.")) {
+        const urls = correction.value === null ? [] : Array.isArray(correction.value) ? correction.value : [correction.value];
+        if (urls.some(url => !originalLinks.includes(url))) throw new Error("Local corrections cannot introduce new external links");
+      }
+      if (correction.field === "address.line1" && correction.value !== correction.previous?.replace(/\bStreets$/i, "St")) throw new Error("Local address correction must only normalize the Streets suffix");
+      if (child) {
+        store[parent] ||= {};
+        if (correction.value === null) delete store[parent][child];
+        else store[parent][child] = structuredClone(correction.value);
+        if (parent === "links" && !Object.keys(store.links).length) delete store.links;
+      } else store[parent] = correction.value;
+    }
+    if (entry.updates.length || entry.facts.length || !entry.corrections) store.online_facts = structuredClone(entry.facts);
     if (entry.updates.length || entry.facts.length) store.sources = [...new Set([...store.sources, "web"])];
     // verified_at is intentionally untouched: an online check is not a visit.
+  }
+  for (const store of stores.filter(s => s.duplicate_of)) {
+    const target = stores.find(s => s.slug === store.duplicate_of);
+    const digits = value => String(value || "").replace(/\D/g, "").replace(/^1(?=\d{10}$)/, "");
+    if (!target || target === store || target.duplicate_of || !digits(store.phone) || digits(store.phone) !== digits(target.phone) || ["line1", "unit", "zip"].some(k => normalize(store.address[k]) !== normalize(target.address[k]))) {
+      throw new Error(`Duplicate target must be canonical and match address and phone: ${store.id}`);
+    }
   }
   return stores;
 }
 
 const read = (name) => JSON.parse(fs.readFileSync(new URL(`./data/${name}`, import.meta.url), "utf8"));
+export const readReviews = () => read("reviewed-stores.json");
 export function readBaselineStores() {
   const baseline = read("enrichment-baseline.json");
   if (baseline.version !== 1 || !Array.isArray(baseline.stores)) throw new Error("Invalid directory baseline");
-  if (baseline.stores.some((s) => s.online_facts || s.field_sources || s.contact_email)) {
+  if (baseline.stores.some((s) => s.online_facts || s.field_sources || s.contact_email || s.duplicate_of || s.listing_scope)) {
     throw new Error("Baseline must not contain generated review fields");
   }
   return baseline.stores;
@@ -199,5 +237,5 @@ export function loadReviewedData(stores) {
       coordinates: { lat: store.address.lat, lng: store.address.lng },
     },
   }));
-  return applyReviewedData(stores, { version: 1, note: "Inherited enrichment; not newly verified", entries }, read("reviewed-stores.json"));
+  return applyReviewedData(stores, { version: 1, note: "Inherited enrichment; not newly verified", entries }, readReviews());
 }

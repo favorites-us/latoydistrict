@@ -38,6 +38,8 @@ export const StoreSchema = z.object({
   confidence: z.enum(["high", "medium", "low"]),
   since: z.string().nullable(),
   verified_at: z.string().nullable(),
+  duplicate_of: z.string().min(1).optional(),
+  listing_scope: z.literal("non_merchant").optional(),
   status: z.enum(["open", "unverified", "closed"]),
   contact_email: z.string().email().optional(),
   field_sources: z.record(SourceSchema).optional(),

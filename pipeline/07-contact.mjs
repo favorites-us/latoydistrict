@@ -3,11 +3,11 @@
 // Raw contacts.json is a research queue, never an instruction to publish.
 import fs from "node:fs";
 import { z } from "zod";
-import { loadReviewedData, readBaselineStores, assertBaselineInventory } from "./reviewed-data.mjs";
+import { loadReviewedData, readBaselineStores, assertBaselineInventory, readReviews } from "./reviewed-data.mjs";
 import { StoreSchema } from "./store-schema.mjs";
 const file = new URL("../web/data/stores.json", import.meta.url);
 const baseline = readBaselineStores();
-if (fs.existsSync(file)) assertBaselineInventory(JSON.parse(fs.readFileSync(file, "utf8")).stores, baseline);
+if (fs.existsSync(file)) assertBaselineInventory(JSON.parse(fs.readFileSync(file, "utf8")).stores, baseline, readReviews());
 const stores = z.array(StoreSchema).parse(loadReviewedData(baseline));
 console.log(`Reviewed directory: ${stores.length} stores`);
 if (process.argv.includes("--dry")) console.log("Dry run: stores.json not written");

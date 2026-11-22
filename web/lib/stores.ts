@@ -40,6 +40,8 @@ export interface OnlineFact {
 }
 
 export interface Store {
+  duplicate_of?: string;
+  listing_scope?: "non_merchant";
   id: string;
   slug: string;
   name: string;
@@ -82,10 +84,13 @@ export interface Store {
   status: "open" | "unverified" | "closed";
 }
 
-export const stores: Store[] = (raw as { stores: Store[] }).stores.map((store) => ({
+export const inventoryStores: Store[] = (raw as { stores: Store[] }).stores.map((store) => ({
   ...store, name: normalizeDisplayName(store.name),
   name_es: store.name_es ? normalizeDisplayName(store.name_es) : null,
 }));
+
+// Retain inventory in generated data, but never publish duplicate entities.
+export const stores = inventoryStores.filter(store => !store.duplicate_of);
 
 export const storeBySlug = new Map(stores.map((s) => [s.slug, s]));
 

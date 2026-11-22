@@ -34,6 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries("/privacy", 0.2, INFO_CONTENT_DATE),
     entries("/contact", 0.3, INFO_CONTENT_DATE),
     ...Object.keys(buyerGuides).map((b) => entries(`/guide/for/${b}`, 0.8)),
-    ...stores.map((s) => ({ url: `${SITE_URL}/stores/${s.slug}`, priority: 0.6, lastModified: s.verified_at && s.verified_at > STORE_CONTENT_DATE ? s.verified_at : STORE_CONTENT_DATE })),
+    ...stores.filter(s => s.listing_scope !== "non_merchant").map((s) => ({ url: `${SITE_URL}/stores/${s.slug}`, priority: 0.6, lastModified: s.verified_at && s.verified_at > STORE_CONTENT_DATE ? s.verified_at : STORE_CONTENT_DATE })),
   ].flat();
 }

@@ -28,7 +28,7 @@ export const emptyFilters: DirectoryFilters = { query: "", category: "", block: 
 export function filterStores(stores: Store[], filters: DirectoryFilters): Store[] {
   const words = normalize(filters.query.trim()).split(/\s+/).filter(Boolean);
   return stores.filter((store) => {
-    if (store.status === "closed") return false;
+    if (store.status === "closed" || store.duplicate_of) return false;
     if (filters.category && !store.category.some((cat) => cat === filters.category)) return false;
     if (filters.block && store.block !== filters.block) return false;
     if (filters.info && !hasBuyingInfo(store)) return false;

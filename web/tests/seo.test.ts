@@ -25,7 +25,7 @@ test("sitemap dates are stable and Spanish stores are excluded without losing tr
   assert.equal(new Set(entries.map((entry) => entry.url)).size, entries.length);
   assert.ok(entries.every((entry) => /^\d{4}-\d{2}-\d{2}$/.test(String(entry.lastModified))));
   assert.ok(!entries.some((entry) => entry.url.includes("/es/stores/")));
-  for (const store of stores) {
+  for (const store of stores.filter(s => s.listing_scope !== "non_merchant")) {
     const entry = entries.find((entry) => entry.url === `${SITE_URL}/stores/${store.slug}`)!;
     assert.ok(entry); assert.equal(entry.alternates, undefined);
     assert.equal(entry.lastModified, store.verified_at && store.verified_at > "2026-11-22" ? store.verified_at : "2026-11-22");

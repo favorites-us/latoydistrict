@@ -181,3 +181,84 @@ test("a registry rebuild with empty contact fields preserves legacy and reviewed
   assert.equal(output.length, expected.size);
   for (const s of output) assert.deepEqual(s, expected.get(s.id));
 });
+
+test("local quality corrections retain inventory, are repeatable, and accept only the reviewed address change", () => {
+  const baseline = readBaselineStores();
+  const reviews = JSON.parse(fs.readFileSync(new URL('./data/reviewed-stores.json', import.meta.url)));
+  const output = z.array(StoreSchema).parse(loadReviewedData(baseline));
+  assert.equal(output.length, baseline.length);
+  assert.deepEqual(loadReviewedData(output), output);
+  assert.doesNotThrow(() => assertBaselineInventory(output, baseline, reviews));
+  const bad = structuredClone(output);
+  bad.find(s => s.slug === 'toystop-259').address.unit = 'OTHER';
+  assert.throws(() => assertBaselineInventory(bad, baseline, reviews), /Identity mismatch/);
+  const scopes = output.filter(s => s.listing_scope === 'non_merchant').map(s => s.slug).sort();
+  assert.deepEqual(scopes, ['2449-hyperion-llc-231', '300-s-los-angeles-st-partnership-lp-300', 'investment-consultants-llc-326', 'little-tokyo-service-center-community-development-corporatio', 'mumford-brewing-co-llc-416', 'worldwide-aeros-corp-442', 'vain-media-llc-420'].sort());
+  assert.equal(output.find(s => s.slug === 'california-balloon-house-c-447').duplicate_of, 'california-balloon-house-447');
+  assert.equal(output.find(s => s.slug === 'toystop-259').address.line1, '259 Winston St');
+  assert.ok(!output.some(s => /\bStreets\b/i.test(s.address.line1)));
+  for (const s of output) {
+    const original = baseline.find(b => b.id === s.id);
+    const reviewEntry = reviews.entries.find(e => e.id === s.id);
+    if (reviewEntry?.corrections && !reviewEntry.updates.length && !reviewEntry.facts.length) {
+      assert.equal(s.phone, original.phone);
+      assert.equal(s.field_sources, undefined);
+      assert.equal(s.online_facts, undefined);
+      assert.deepEqual(s.sources, original.sources);
+    }
+  }
+});
+
+test("local correction schema rejects new facts, conflicting previous values, invalid scope and unsafe duplicate targets", () => {
+  const baseline = readBaselineStores();
+  const reviews = JSON.parse(fs.readFileSync(new URL('./data/reviewed-stores.json', import.meta.url)));
+  const apply = input => applyReviewedData(baseline, empty, input);
+  for (const field of ['phone', 'hours', 'links.website']) {
+    const bad = structuredClone(reviews);
+    bad.entries.find(e => e.corrections).corrections[0].field = field;
+    assert.throws(() => apply(bad));
+  }
+  for (const value of ['missing', 'california-balloon-house-c-447', 'toystop-259']) {
+    const bad = structuredClone(reviews);
+    bad.entries.find(e => e.id === 'california-balloon-house-c-447').corrections[0].value = value;
+    assert.throws(() => apply(bad), /Duplicate target/);
+  }
+  const invalidScope = structuredClone(reviews);
+  invalidScope.entries.find(e => e.id === '2449-hyperion-llc-231').corrections[0].value = 'merchant';
+  assert.throws(() => apply(invalidScope));
+  const conflict = structuredClone(reviews);
+  conflict.entries.find(e => e.id === 'toystop-259').corrections[0].previous = '999 Winston St';
+  assert.throws(() => apply(conflict), /Unexpected current value/);
+  const url = structuredClone(reviews);
+  url.entries.find(e => e.id === 'jt-distributors-inc-326').corrections.find(c => c.field === 'links.other').value = ['https://invented.example.com'];
+  assert.throws(() => apply(url), /cannot introduce/);
+});
+
+test("quality overlay changes exactly the intended record fields and removing it restores previous output", () => {
+  const baseline = readBaselineStores();
+  const reviews = JSON.parse(fs.readFileSync(new URL('./data/reviewed-stores.json', import.meta.url)));
+  const beforeReviews = structuredClone(reviews);
+  beforeReviews.entries = beforeReviews.entries.filter(e => !e.corrections || e.updates.length || e.facts.length).map(({ corrections, ...e }) => e);
+  const before = applyReviewedData(baseline, empty, beforeReviews);
+  const after = applyReviewedData(baseline, empty, reviews);
+  const expected = {
+    'flowers-and-beyond-international-inc-334': ['links'], 'toystop-259': ['address'], 'van-thai-inc-400': ['links'],
+    '2449-hyperion-llc-231': ['listing_scope'], '300-s-los-angeles-st-partnership-lp-300': ['listing_scope'],
+    'california-balloon-house-c-447': ['duplicate_of'], 'happy-trading-inc-500': ['links'],
+    'investment-consultants-llc-326': ['listing_scope'], 'jt-distributors-inc-326': ['links'],
+    'little-tokyo-service-center-community-development-corporatio': ['listing_scope'], 'mega-party-inc-215': ['links'],
+    'mumford-brewing-co-llc-416': ['links', 'listing_scope'], 'vain-media-llc-420': ['listing_scope'],
+    'worldwide-aeros-corp-442': ['links', 'listing_scope'], 'golden-lite-wholesale-and-import-inc-321': ['links'],
+  };
+  const changed = {};
+  for (let i = 0; i < before.length; i++) {
+    const fields = [...new Set([...Object.keys(before[i]), ...Object.keys(after[i])])].filter(k => JSON.stringify(before[i][k]) !== JSON.stringify(after[i][k])).sort();
+    if (fields.length) changed[before[i].slug] = fields;
+  }
+  assert.deepEqual(changed, expected);
+  assert.deepEqual(applyReviewedData(baseline, empty, beforeReviews), before);
+  for (const slug of ['flowers-and-beyond-international-inc-334', 'jt-distributors-inc-326', 'golden-lite-wholesale-and-import-inc-321']) {
+    const old = before.find(s => s.slug === slug), current = after.find(s => s.slug === slug);
+    assert.equal(current.links.yelp, undefined); assert.deepEqual(current.links.other, [old.links.yelp]);
+  }
+});

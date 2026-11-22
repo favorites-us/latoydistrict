@@ -63,3 +63,10 @@ export function storeDescription(store: Store, locale: Locale): string {
   if (location.length <= 155) return location;
   return `${location.slice(0, 154).replace(/\s+\S*$/, '').replace(/[.,;:]$/, '')}…`;
 }
+
+export function storePageMeta(store: Store, locale: Locale): Metadata {
+  return {
+    ...storeMeta(`/stores/${store.slug}`, locale, storeTitle(store, locale), storeDescription(store, locale)),
+    ...(store.listing_scope === "non_merchant" ? { robots: { index: false, follow: true } } : {}),
+  };
+}

@@ -690,6 +690,429 @@
         }
       ],
       "business_domains": []
+    },
+    {
+      "id": "flowers-and-beyond-international-inc-334",
+      "identity": {
+        "name": "Flowers & Beyond International INC",
+        "line1": "334 E 4th St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record flowers-and-beyond-international-inc-334; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.yelp",
+          "value": null,
+          "previous": "https://www.yellowpages.com/los-angeles-ca/mip/flowers-beyond-intl-inc-9610295?lid=9610295",
+          "reason": "Move inherited specific business-profile URL from Yelp to other links; host is not yelp.com. No new fact or verification.",
+          "evidence": "pipeline/data/enrichment-baseline.json: https://www.yellowpages.com/los-angeles-ca/mip/flowers-beyond-intl-inc-9610295?lid=9610295",
+          "reviewed_at": "2026-11-22"
+        },
+        {
+          "field": "links.other",
+          "value": [
+            "https://www.yellowpages.com/los-angeles-ca/mip/flowers-beyond-intl-inc-9610295?lid=9610295"
+          ],
+          "previous": null,
+          "reason": "Move inherited specific business-profile URL from Yelp to other links; host is not yelp.com. No new fact or verification.",
+          "evidence": "Same existing URL retained; no contact information added.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "van-thai-inc-400",
+      "identity": {
+        "name": "Van Thai INC",
+        "line1": "400 S San Pedro St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record van-thai-inc-400; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.other",
+          "value": null,
+          "previous": [
+            "https://www.yellowpages.com/little-armenia-los-angeles-ca/thai-restaurants"
+          ],
+          "reason": "Remove inherited category/search URL; it is not a specific business profile.",
+          "evidence": "pipeline/data/enrichment-baseline.json: inherited URL https://www.yellowpages.com/little-armenia-los-angeles-ca/thai-restaurants; reviewed URL structure only, no network request.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "happy-trading-inc-500",
+      "identity": {
+        "name": "Happy Trading INC",
+        "line1": "500 S Los Angeles St",
+        "unit": "70",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record happy-trading-inc-500; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.yelp",
+          "value": null,
+          "previous": "https://www.yellowpages.com/south-park-los-angeles-ca/giftware-wholesalers-manufacturers",
+          "reason": "Remove inherited category/search URL; it is not a specific business profile.",
+          "evidence": "pipeline/data/enrichment-baseline.json: inherited URL https://www.yellowpages.com/south-park-los-angeles-ca/giftware-wholesalers-manufacturers; reviewed URL structure only, no network request.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "jt-distributors-inc-326",
+      "identity": {
+        "name": "Jt Distributors INC",
+        "line1": "326 E 3rd St",
+        "unit": "E",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record jt-distributors-inc-326; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.yelp",
+          "value": null,
+          "previous": "https://www.allbiz.com/business/jt-distributors_2f-213-680-2002",
+          "reason": "Move inherited specific business-profile URL from Yelp to other links; host is not yelp.com. No new fact or verification.",
+          "evidence": "pipeline/data/enrichment-baseline.json: https://www.allbiz.com/business/jt-distributors_2f-213-680-2002",
+          "reviewed_at": "2026-11-22"
+        },
+        {
+          "field": "links.other",
+          "value": [
+            "https://www.allbiz.com/business/jt-distributors_2f-213-680-2002"
+          ],
+          "previous": null,
+          "reason": "Move inherited specific business-profile URL from Yelp to other links; host is not yelp.com. No new fact or verification.",
+          "evidence": "Same existing URL retained; no contact information added.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "mega-party-inc-215",
+      "identity": {
+        "name": "Mega Party INC",
+        "line1": "215 Boyd St Suite #A & B",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record mega-party-inc-215; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.yelp",
+          "value": null,
+          "previous": "https://www.yellowpages.com/los-angeles-ca/dulcerias",
+          "reason": "Remove inherited category/search URL; it is not a specific business profile.",
+          "evidence": "pipeline/data/enrichment-baseline.json: inherited URL https://www.yellowpages.com/los-angeles-ca/dulcerias; reviewed URL structure only, no network request.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "mumford-brewing-co-llc-416",
+      "identity": {
+        "name": "Mumford Brewing CO LLC",
+        "line1": "416 Boyd St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record mumford-brewing-co-llc-416; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.yelp",
+          "value": null,
+          "previous": "https://www.yellowpages.com/los-angeles-ca/brew-pubs",
+          "reason": "Remove inherited category/search URL; it is not a specific business profile.",
+          "evidence": "pipeline/data/enrichment-baseline.json: inherited URL https://www.yellowpages.com/los-angeles-ca/brew-pubs; reviewed URL structure only, no network request.",
+          "reviewed_at": "2026-11-22"
+        },
+        {
+          "field": "listing_scope",
+          "value": "non_merchant",
+          "previous": null,
+          "reason": "Registered entity name indicates brewing, not toy-district merchandise sales; not verified.",
+          "evidence": "Existing registered entity name: Mumford Brewing CO LLC. User-directed directory scope classification; no claim of current operations.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "worldwide-aeros-corp-442",
+      "identity": {
+        "name": "Worldwide Aeros CORP",
+        "line1": "442 E 3rd St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record worldwide-aeros-corp-442; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.yelp",
+          "value": null,
+          "previous": "https://www.ffls.com/ffl/995037107k02937/worldwide-aeros-corp",
+          "reason": "Remove inherited firearms-license directory URL; it does not establish a merchandise-seller profile for this listing.",
+          "evidence": "pipeline/data/enrichment-baseline.json: inherited URL https://www.ffls.com/ffl/995037107k02937/worldwide-aeros-corp; reviewed URL structure only, no network request.",
+          "reviewed_at": "2026-11-22"
+        },
+        {
+          "field": "listing_scope",
+          "value": "non_merchant",
+          "previous": null,
+          "reason": "Registered entity name does not identify merchandise sales; merchant activity not verified.",
+          "evidence": "Existing registered entity name: Worldwide Aeros CORP. User-directed directory scope classification; no claim of current operations.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "golden-lite-wholesale-and-import-inc-321",
+      "identity": {
+        "name": "Golden Lite Wholesale & Import INC",
+        "line1": "321 Wall St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record golden-lite-wholesale-and-import-inc-321; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "links.yelp",
+          "value": null,
+          "previous": "https://www.yellowpages.com/los-angeles-ca/mip/golden-lite-wholesale-474956653",
+          "reason": "Move inherited specific business-profile URL from Yelp to other links; host is not yelp.com. No new fact or verification.",
+          "evidence": "pipeline/data/enrichment-baseline.json: https://www.yellowpages.com/los-angeles-ca/mip/golden-lite-wholesale-474956653",
+          "reviewed_at": "2026-11-22"
+        },
+        {
+          "field": "links.other",
+          "value": [
+            "https://www.yellowpages.com/los-angeles-ca/mip/golden-lite-wholesale-474956653"
+          ],
+          "previous": null,
+          "reason": "Move inherited specific business-profile URL from Yelp to other links; host is not yelp.com. No new fact or verification.",
+          "evidence": "Same existing URL retained; no contact information added.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "california-balloon-house-c-447",
+      "identity": {
+        "name": "California Balloon House /C",
+        "line1": "447 Wall St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record california-balloon-house-c-447; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "duplicate_of",
+          "value": "california-balloon-house-447",
+          "previous": null,
+          "reason": "Duplicate registration listing; retain the record but route visitors to the sourced main listing.",
+          "evidence": "Both baseline rows have 447 Wall St, no unit, ZIP 90013, and phone 2136890087 after punctuation normalization. The main record has the official website and reviewed facts.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "toystop-259",
+      "identity": {
+        "name": "Toystop",
+        "line1": "259 Winston Streets",
+        "unit": "B",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record toystop-259; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "address.line1",
+          "value": "259 Winston St",
+          "previous": "259 Winston Streets",
+          "reason": "Normalize the plural Streets suffix to St; keep number, unit, ZIP and slug unchanged.",
+          "evidence": "Existing baseline address is 259 Winston Streets, unit B; block is winston. This is a suffix correction, not a newly researched address.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "2449-hyperion-llc-231",
+      "identity": {
+        "name": "2449 Hyperion LLC",
+        "line1": "231 E 3rd St",
+        "unit": "G106",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record 2449-hyperion-llc-231; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "listing_scope",
+          "value": "non_merchant",
+          "previous": null,
+          "reason": "Registered entity name is an address-style LLC name, not a merchandise-seller name; merchant activity not verified.",
+          "evidence": "Existing registered entity name: 2449 Hyperion LLC. User-directed directory scope classification; no claim of current operations.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "300-s-los-angeles-st-partnership-lp-300",
+      "identity": {
+        "name": "300 S Los Angeles St Partnership Lp",
+        "line1": "300 S Los Angeles St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record 300-s-los-angeles-st-partnership-lp-300; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "listing_scope",
+          "value": "non_merchant",
+          "previous": null,
+          "reason": "Registered entity name indicates a property-address partnership, not a merchandise seller; not verified.",
+          "evidence": "Existing registered entity name: 300 S Los Angeles St Partnership Lp. User-directed directory scope classification; no claim of current operations.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "investment-consultants-llc-326",
+      "identity": {
+        "name": "Investment Consultants, LLC",
+        "line1": "326 Boyd St",
+        "unit": null,
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record investment-consultants-llc-326; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "listing_scope",
+          "value": "non_merchant",
+          "previous": null,
+          "reason": "Registered entity name indicates investment consulting, not merchandise sales; not verified.",
+          "evidence": "Existing registered entity name: Investment Consultants, LLC. User-directed directory scope classification; no claim of current operations.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "little-tokyo-service-center-community-development-corporatio",
+      "identity": {
+        "name": "Little Tokyo Service Center Community Development Corporation",
+        "line1": "231 E 3rd St",
+        "unit": "G106",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record little-tokyo-service-center-community-development-corporatio; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "listing_scope",
+          "value": "non_merchant",
+          "previous": null,
+          "reason": "Registered entity name indicates a service center and community development organization, not merchandise sales; not verified.",
+          "evidence": "Existing registered entity name: Little Tokyo Service Center Community Development Corporation. User-directed directory scope classification; no claim of current operations.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
+    },
+    {
+      "id": "vain-media-llc-420",
+      "identity": {
+        "name": "Vain Media LLC",
+        "line1": "420 S San Pedro St",
+        "unit": "219",
+        "zip": "90013"
+      },
+      "decision": "approved",
+      "reviewer": "Codex: authorized offline data-quality review, 2026-11-22",
+      "business_domains": [],
+      "identity_evidence": "Existing baseline record vain-media-llc-420; name, address, unit and ZIP retained. No online verification.",
+      "updates": [],
+      "facts": [],
+      "corrections": [
+        {
+          "field": "listing_scope",
+          "value": "non_merchant",
+          "previous": null,
+          "reason": "Registered entity name indicates media, not merchandise sales; not verified.",
+          "evidence": "Existing registered entity name: Vain Media LLC. User-directed directory scope classification; no claim of current operations.",
+          "reviewed_at": "2026-11-22"
+        }
+      ]
     }
   ]
 }

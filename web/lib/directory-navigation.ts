@@ -2,7 +2,7 @@ import { BLOCK_LABELS, type Block, type Store } from './stores';
 import { normalizeDisplayName } from './display-name';
 import type { Locale } from './i18n';
 
-export const activeStores = (items: readonly Store[]) => items.filter(s => s.status !== 'closed');
+export const activeStores = (items: readonly Store[]) => items.filter(s => s.status !== 'closed' && !s.duplicate_of);
 export const displayName = (s: Store, locale: Locale) => normalizeDisplayName(locale === 'es' ? s.name_es || s.name : s.name);
 export function groupStores(items: readonly Store[], locale: Locale) {
   const collator = new Intl.Collator(locale, { sensitivity: 'base' });

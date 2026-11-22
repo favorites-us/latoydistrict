@@ -413,7 +413,9 @@
       "phone": "(213) 687-8809",
       "hours": null,
       "links": {
-        "yelp": "https://www.yellowpages.com/los-angeles-ca/mip/flowers-beyond-intl-inc-9610295?lid=9610295"
+        "other": [
+          "https://www.yellowpages.com/los-angeles-ca/mip/flowers-beyond-intl-inc-9610295?lid=9610295"
+        ]
       },
       "wechat": null,
       "languages": null,
@@ -1373,7 +1375,7 @@
       "name": "Toystop",
       "name_es": null,
       "address": {
-        "line1": "259 Winston Streets",
+        "line1": "259 Winston St",
         "unit": "B",
         "zip": "90013",
         "lat": 34.045911008617,
@@ -1460,11 +1462,6 @@
       "place_id": null,
       "phone": "(213) 620-1732",
       "hours": null,
-      "links": {
-        "other": [
-          "https://www.yellowpages.com/little-armenia-los-angeles-ca/thai-restaurants"
-        ]
-      },
       "wechat": null,
       "languages": null,
       "payment": null,
@@ -1672,6 +1669,7 @@
       "confidence": "medium",
       "since": "1998-07-16",
       "verified_at": null,
+      "listing_scope": "non_merchant",
       "status": "unverified"
     },
     {
@@ -1744,6 +1742,7 @@
       "confidence": "medium",
       "since": "1997-04-29",
       "verified_at": null,
+      "listing_scope": "non_merchant",
       "status": "unverified"
     },
     {
@@ -2904,6 +2903,7 @@
       "confidence": "medium",
       "since": "2005-01-03",
       "verified_at": null,
+      "duplicate_of": "california-balloon-house-447",
       "status": "unverified"
     },
     {
@@ -4145,9 +4145,6 @@
       "place_id": null,
       "phone": "(213) 622-0895",
       "hours": null,
-      "links": {
-        "yelp": "https://www.yellowpages.com/south-park-los-angeles-ca/giftware-wholesalers-manufacturers"
-      },
       "wechat": null,
       "languages": null,
       "payment": null,
@@ -4384,6 +4381,7 @@
       "confidence": "medium",
       "since": "1994-12-16",
       "verified_at": null,
+      "listing_scope": "non_merchant",
       "status": "unverified"
     },
     {
@@ -4451,7 +4449,9 @@
       "phone": "(213) 680-2002",
       "hours": null,
       "links": {
-        "yelp": "https://www.allbiz.com/business/jt-distributors_2f-213-680-2002"
+        "other": [
+          "https://www.allbiz.com/business/jt-distributors_2f-213-680-2002"
+        ]
       },
       "wechat": null,
       "languages": null,
@@ -5016,6 +5016,7 @@
       "confidence": "medium",
       "since": "1994-01-01",
       "verified_at": null,
+      "listing_scope": "non_merchant",
       "status": "unverified"
     },
     {
@@ -5399,9 +5400,6 @@
       "place_id": null,
       "phone": "(213) 620-0420",
       "hours": null,
-      "links": {
-        "yelp": "https://www.yellowpages.com/los-angeles-ca/dulcerias"
-      },
       "wechat": null,
       "languages": null,
       "payment": null,
@@ -5697,9 +5695,6 @@
       "place_id": null,
       "phone": "(213) 346-9970",
       "hours": null,
-      "links": {
-        "yelp": "https://www.yellowpages.com/los-angeles-ca/brew-pubs"
-      },
       "wechat": null,
       "languages": null,
       "payment": null,
@@ -5720,6 +5715,7 @@
       "confidence": "medium",
       "since": "2011-08-17",
       "verified_at": null,
+      "listing_scope": "non_merchant",
       "status": "unverified"
     },
     {
@@ -6935,6 +6931,7 @@
       "confidence": "medium",
       "since": "2010-06-25",
       "verified_at": null,
+      "listing_scope": "non_merchant",
       "status": "unverified"
     },
     {
@@ -7066,9 +7063,6 @@
       "place_id": null,
       "phone": "(626) 372-0961",
       "hours": null,
-      "links": {
-        "yelp": "https://www.ffls.com/ffl/995037107k02937/worldwide-aeros-corp"
-      },
       "wechat": null,
       "languages": null,
       "payment": null,
@@ -7089,6 +7083,7 @@
       "confidence": "medium",
       "since": "1996-04-01",
       "verified_at": null,
+      "listing_scope": "non_merchant",
       "status": "unverified"
     },
     {
@@ -7365,7 +7360,9 @@
       "phone": "(213) 488-9395",
       "hours": null,
       "links": {
-        "yelp": "https://www.yellowpages.com/los-angeles-ca/mip/golden-lite-wholesale-474956653"
+        "other": [
+          "https://www.yellowpages.com/los-angeles-ca/mip/golden-lite-wholesale-474956653"
+        ]
       },
       "wechat": null,
       "languages": null,
