@@ -8,7 +8,7 @@ import { CategoryIcon } from "./CategoryVisual";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "./ui/dialog";
 import { Button, buttonVariants } from "./ui/button";
 import { BLOCK_LABELS, type Store } from "@/lib/stores";
-import { catLabel, localePath, t, type Locale } from "@/lib/i18n";
+import { catLabel, localePath, t, formatText, type Locale } from "@/lib/i18n";
 import { CATEGORIES, emptyFilters, filterStores, hasBuyingInfo, type DirectoryFilters } from "@/lib/buyer-tools";
 import { useBuyer } from "./BuyerProvider";
 import { track } from "@/lib/analytics";
@@ -54,6 +54,7 @@ export default function DirectoryBrowser({ stores, locale }: { stores: Store[]; 
       {view === "map" && <div className="map-wrap"><DistrictMap stores={mapStores} locale={locale} /></div>}
       {filtered.length ? <div className="supplier-list">{filtered.slice(0, limit).map((store) => <StoreCard key={store.slug} store={store} locale={locale} />)}</div> : <div className="empty-results"><Search size={30} /><h3>{es ? "No encontramos coincidencias" : "No matching suppliers"}</h3><p>{es ? "Pruebe otro producto o quite un filtro." : "Try a different product or remove a filter."}</p><Button variant="outline" onClick={() => update(emptyFilters)}>{es ? "Ver todos los negocios" : "Show all businesses"}</Button></div>}
       {filtered.length > limit && <div className="load-more"><Button variant="outline" onClick={() => setLimit(limit + 24)}>{es ? "Mostrar más proveedores" : "Show more suppliers"}<span className="text-muted-foreground">({Math.min(24, filtered.length - limit)})</span></Button><p>{Math.min(limit, filtered.length)} / {filtered.length}</p></div>}
+      <p className="directory-index-link"><a href={localePath(locale, "/stores")}>{formatText(locale, "browse_all", { count: stores.filter(s => s.status !== "closed").length })}</a></p>
     </div><aside className="buyer-sidebar"><div className="trip-card"><Bookmark size={25} /><h2>{es ? "Arme su lista de visita" : "Build your buying trip"}</h2><p>{es ? "Guarde proveedores, compare sus datos y lleve una lista impresa." : "Save suppliers, compare their details and bring a printed list along."}</p><Link href={localePath(locale, "/saved")} className={buttonVariants()}>{es ? "Ver mi lista" : "View saved suppliers"}<span className="count-pill inverted">{saved.length}</span></Link><small>{es ? "Sin cuenta. Guardado en este navegador." : "No account needed. Saved in this browser."}</small></div><div className="sidebar-note"><BookOpen size={20} /><h3>{es ? "¿Primera compra al por mayor?" : "New to wholesale buying?"}</h3><p>{es ? "Los mínimos y requisitos varían. Prepare las preguntas adecuadas." : "Minimums and account requirements vary. Go in with the right questions."}</p><Link href={localePath(locale, "/guide/wholesale-basics")}>{es ? "Lea la guía de compra" : "Read the buying guide"}</Link></div></aside></div>
   </>;
 }

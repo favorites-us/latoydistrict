@@ -1,3 +1,4 @@
+import StreetLinks from "@/components/StreetLinks";
 import Link from "next/link";
 import StoreCard from "@/components/StoreCard";
 import { photoForStore } from "@/lib/photos";
@@ -26,6 +27,6 @@ export default function HomePage({ locale }: { locale: Locale }) {
 
 
     <section className="planning-section container"><div className="section-intro"><h2>{es ? "Prepare su visita" : "Before you visit"}</h2><p>{es ? "Prepare sus preguntas, documentos y recogida antes de llegar." : "Know what to ask, what to bring and how you’ll collect your order."}</p></div><div className="guide-cards">{[{ path: "/guide/visiting", icon: MapPin, title: t(locale, "guide_visiting_title"), detail: es ? "Llegar, estacionarse y recoger su pedido." : "Getting there, parking and collecting your order." }, { path: "/guide/wholesale-basics", icon: Store, title: t(locale, "guide_wholesale_title"), detail: es ? "Qué confirmar antes de su primera compra." : "What to confirm before your first purchase." }, { path: "/guide/buying-checklist", icon: ClipboardList, title: t(locale, "guide_buyers_title"), detail: es ? "Preguntas útiles y una hoja para imprimir." : "Useful questions and a worksheet to take along." }].map(({ path, icon: Icon, title, detail }) => <Link key={path} className="guide-card" href={p(path)}><Icon className="guide-icon" /><h3>{title}</h3><p>{detail}</p><ArrowUpRight className="guide-arrow" /></Link>)}</div></section>
-    <section className="district-context container"><div><h2>{t(locale, "where_h2")}</h2><p>{t(locale, "where_p")}</p></div><LeadForm locale={locale} /></section>
+    <section className="district-context container"><div><h2>{t(locale, "where_h2")}</h2><p>{t(locale, "where_p")}</p><StreetLinks locale={locale} /></div><LeadForm locale={locale} /></section>
   </main><Footer locale={locale} /></>;
 }

@@ -22,3 +22,31 @@ export function storeMeta(enPath: string, locale: Locale, title: string, descrip
     ...(locale === "es" ? { robots: { index: false, follow: true } } : {}),
   };
 }
+
+import { fullAddress, type Store } from './stores';
+import { catLabel } from './i18n';
+
+export function storeTitle(store: Store, locale: Locale): string {
+  return `${store.name} — ${store.address.line1}, ${locale === 'es' ? 'Los Ángeles' : 'Los Angeles'}`;
+}
+
+/** Prefer complete factual sentences; optional claims are the first to go. */
+export function storeDescription(store: Store, locale: Locale): string {
+  const es = locale === 'es';
+  const category = store.category.map(c => catLabel(locale, c)).join(', ');
+  const year = store.since?.match(/^\d{4}/)?.[0];
+  const address = fullAddress(store).replace('Los Angeles', es ? 'Los Ángeles' : 'Los Angeles');
+  const location = es ? `${store.name}, ${address}, en el Toy District de LA.` : `${store.name}, ${address}, in LA's Toy District.`;
+  const registration = es ? `Ficha de ${category}; registro comercial de la Ciudad de LA${year ? ` desde ${year}` : ''}.` : `${category} listing; City of LA business registration${year ? ` since ${year}` : ''}.`;
+  const sentences = [location, registration];
+  if (store.online_facts?.some(f => f.source.type === 'business')) sentences.push(es ? 'Información de compra publicada con fuentes.' : 'Published buying information with sources.');
+  if (store.phone) sentences.push(es ? 'Teléfono publicado.' : 'Phone listed.');
+  while (sentences.length > 2 && sentences.join(' ').length > 155) sentences.pop();
+  if (sentences.join(' ').length <= 155) return sentences.join(' ');
+  // Long names/addresses leave too little room for the registration sentence.
+  // Keep the full location and category when they fit, then location alone.
+  const short = `${location} ${es ? `Ficha de ${category}.` : `${category} listing.`}`;
+  if (short.length <= 155) return short;
+  if (location.length <= 155) return location;
+  return `${location.slice(0, 154).replace(/\s+\S*$/, '').replace(/[.,;:]$/, '')}…`;
+}

@@ -1,8 +1,9 @@
+import { streetGroups } from "@/lib/directory-navigation";
 import type { MetadataRoute } from "next";
 import { SITE_URL, stores } from "@/lib/stores";
 import { buyerGuides } from "@/lib/content/guides";
 
-import { GUIDE_CONTENT_DATE, STORE_CONTENT_DATE, INFO_CONTENT_DATE, HOME_CONTENT_DATE, PHOTOS_CONTENT_DATE } from "@/lib/content-dates";
+import { INDEX_CONTENT_DATE, STREET_CONTENT_DATE, GUIDE_CONTENT_DATE, STORE_CONTENT_DATE, INFO_CONTENT_DATE, HOME_CONTENT_DATE, PHOTOS_CONTENT_DATE } from "@/lib/content-dates";
 
 // One indexable page => two <url> entries (EN + ES), each carrying the full hreflang
 // cluster (en, es, x-default) so both language versions are explicitly listed
@@ -22,6 +23,8 @@ function entries(enPath: string, priority: number, lastModified = GUIDE_CONTENT_
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     entries("/", 1, HOME_CONTENT_DATE),
+    { url: `${SITE_URL}/stores`, priority: 0.8, lastModified: INDEX_CONTENT_DATE },
+    ...streetGroups(stores).map(({ block }) => ({ url: `${SITE_URL}/street/${block}`, priority: 0.7, lastModified: STREET_CONTENT_DATE })),
     entries("/guide/visiting", 0.9),
     entries("/guide/wholesale-toys-los-angeles", 0.9),
     entries("/guide/wholesale-basics", 0.8),
@@ -31,6 +34,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries("/privacy", 0.2, INFO_CONTENT_DATE),
     entries("/contact", 0.3, INFO_CONTENT_DATE),
     ...Object.keys(buyerGuides).map((b) => entries(`/guide/for/${b}`, 0.8)),
-    ...stores.map((s) => ({ url: `${SITE_URL}/stores/${s.slug}`, priority: 0.6, lastModified: s.verified_at || STORE_CONTENT_DATE })),
+    ...stores.map((s) => ({ url: `${SITE_URL}/stores/${s.slug}`, priority: 0.6, lastModified: s.verified_at && s.verified_at > STORE_CONTENT_DATE ? s.verified_at : STORE_CONTENT_DATE })),
   ].flat();
 }

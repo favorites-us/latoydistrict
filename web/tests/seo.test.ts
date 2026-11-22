@@ -28,7 +28,7 @@ test("sitemap dates are stable and Spanish stores are excluded without losing tr
   for (const store of stores) {
     const entry = entries.find((entry) => entry.url === `${SITE_URL}/stores/${store.slug}`)!;
     assert.ok(entry); assert.equal(entry.alternates, undefined);
-    if (store.verified_at) assert.equal(entry.lastModified, store.verified_at);
+    assert.equal(entry.lastModified, store.verified_at && store.verified_at > "2026-11-21" ? store.verified_at : "2026-11-21");
   }
   for (const path of ["/", "/guide/visiting", "/guide/wholesale-basics", "/guide/buying-checklist", "/guide/wholesale-toys-los-angeles", "/photos", "/about", "/privacy", "/contact", ...Object.keys(buyerGuides).map(slug => `/guide/for/${slug}`)]) {
     for (const locale of ["en", "es"] as const) {

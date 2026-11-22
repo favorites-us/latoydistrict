@@ -6,6 +6,25 @@ export type Locale = "en" | "es";
 
 const dict = {
   en: {
+    all_businesses: "All businesses A–Z",
+    index_title: "All Toy District businesses A–Z",
+    index_description: "Browse {count} Toy District business listings by name, address and category, or explore each street.",
+    index_intro: "{count} business listings.",
+    registration_caveat: "Listings originate from business registrations; confirm the exact address, suite and current operation before visiting.",
+    browse_all: "Browse all {count} businesses A–Z",
+    browse_streets: "Browse by street",
+    street_title: "{street} businesses in the LA Toy District",
+    street_meta_title: "{street} businesses — Toy District directory",
+    street_intro: "{count} business listings on {street}.",
+    street_range: "Listed street numbers range from {low} to {high}.",
+    street_map: "View this street on the map",
+    other_streets: "Other streets",
+    all_on_street: "All businesses on {street}",
+    nearby_businesses: "Nearby businesses",
+    parking_near_street: "Parking near {street}",
+    parking_origin: "Approximate walks from {address}.",
+    jump_letters: "Jump to a letter",
+
     site_name: "LA Toy District Directory",
     tagline: "Explore registered businesses in Downtown LA’s Toy District, with addresses, a map and buying guides.",
     nav_directory: "Directory",
@@ -113,6 +132,25 @@ const dict = {
     claim_banner_cta: "Email the directory",
   },
   es: {
+    all_businesses: "Todos los negocios A–Z",
+    index_title: "Todos los negocios del Toy District de la A a la Z",
+    index_description: "Explore {count} fichas de negocios del Toy District por nombre, dirección y categoría, o por calle.",
+    index_intro: "{count} fichas de negocios.",
+    registration_caveat: "Las fichas parten de registros comerciales; confirme la dirección, el local y si el negocio sigue operando antes de visitar.",
+    browse_all: "Ver los {count} negocios de la A a la Z",
+    browse_streets: "Explorar por calle",
+    street_title: "Negocios de {street} en el Toy District de Los Ángeles",
+    street_meta_title: "Negocios de {street} — Directorio del Toy District",
+    street_intro: "{count} fichas de negocios en {street}.",
+    street_range: "Los números de las direcciones van del {low} al {high}.",
+    street_map: "Ver esta calle en el mapa",
+    other_streets: "Otras calles",
+    all_on_street: "Todos los negocios de {street}",
+    nearby_businesses: "Negocios cercanos",
+    parking_near_street: "Estacionamiento cerca de {street}",
+    parking_origin: "Caminatas aproximadas desde {address}.",
+    jump_letters: "Ir a una letra",
+
     site_name: "Directorio del Toy District de Los Ángeles",
     tagline: "Explore negocios registrados del Toy District en el centro de Los Ángeles, con direcciones, mapa y guías de compra.",
     nav_directory: "Directorio",
@@ -233,4 +271,8 @@ export function catLabel(locale: Locale, cat: string): string {
 
 export function localePath(locale: Locale, path: string): string {
   return locale === "es" ? `/es${path === "/" ? "" : path}` || "/es" : path;
+}
+
+export function formatText(locale: Locale, key: DictKey, values: Record<string, string | number>): string {
+  return t(locale, key).replace(/\{(\w+)\}/g, (match, key) => String(values[key] ?? match));
 }

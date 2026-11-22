@@ -1,5 +1,5 @@
 import { GUIDE_CONTENT_DATE } from "./content-dates";
-import { fullAddress, SITE_URL, type Store } from "./stores";
+import { BLOCK_LABELS, fullAddress, SITE_URL, type Store } from "./stores";
 
 export function storeJsonLd(store: Store) {
   return {
@@ -80,4 +80,10 @@ export function articleJsonLd(guide: import("./content/guides").Guide, locale: i
     dateModified: GUIDE_CONTENT_DATE, author: organization, publisher: organization,
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}${locale === "es" ? `/es${path}` : path}` },
   };
+}
+
+export function storeBreadcrumbJsonLd(store: Store, locale: import("./i18n").Locale) {
+  const breadcrumb = breadcrumbJsonLd(locale, `/street/${store.block}`, BLOCK_LABELS[store.block]);
+  breadcrumb.itemListElement.push({ "@type": "ListItem", position: 3, name: store.name, item: `${SITE_URL}${locale === "es" ? "/es" : ""}/stores/${store.slug}` });
+  return breadcrumb;
 }

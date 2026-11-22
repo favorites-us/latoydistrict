@@ -712,3 +712,21 @@ body:has(.store-sticky-actions) main { padding-bottom: calc(76px + env(safe-area
 /* 320px reflow: let the search field shrink beside the Filters button */
 .directory-search-row > * { min-width: 0; }
 .directory-search { min-width: 0; flex: 1 1 auto; }
+
+/* Crawlable A–Z and street navigation: compact, wrapping, usable without JS. */
+.navigation-page { padding-block: 28px 56px; }
+.navigation-page h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); margin-block: 20px; }
+.navigation-page h2 { font-size: 1.4rem; margin-block: 24px 12px; }
+.navigation-page p { margin-block: 12px; }
+.navigation-page, .business-rows li { overflow-wrap: anywhere; min-width: 0; }
+.street-links, .letter-links, .navigation-links { display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 0; list-style: none; margin-block: 16px; }
+.street-links a, .letter-links a, .navigation-links a, .directory-index-link a { display: inline-flex; align-items: center; min-height: 44px; gap: 6px; }
+.letter-links a { min-width: 44px; justify-content: center; border: 1px solid var(--line); background: var(--surface); }
+.business-rows { padding: 0; list-style: none; }
+.business-rows li { display: grid; padding-block: 10px; border-bottom: 1px solid var(--line); }
+.business-rows a { display: flex; align-items: center; min-height: 44px; font-weight: 600; }
+.business-category { color: var(--muted); font-size: .875rem; }
+.directory-index-link { text-align: center; margin-block: 12px; }
+@media (min-width: 700px) {
+  .business-rows li { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, .7fr); gap: 20px; align-items: center; }
+}

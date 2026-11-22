@@ -1,3 +1,4 @@
+import { nearestStores } from "@/lib/directory-navigation";
 import Link from "next/link";
 import CategoryVisual from "@/components/CategoryVisual";
 import { Phone, Globe2, MapPin, Mail, Clock, Calendar, Info } from "lucide-react";
@@ -13,8 +14,8 @@ import StoreContactLink from "@/components/StoreContactLink";
 import { NearestParking } from "@/components/ParkingLots";
 import { Header, Footer } from "@/components/SiteChrome";
 import { BLOCK_LABELS, fullAddress, stores, type Store, type OnlineFact, type OnlineSource } from "@/lib/stores";
-import { storeJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
-import { catLabel, localePath, t, type DictKey, type Locale } from "@/lib/i18n";
+import { storeJsonLd, storeBreadcrumbJsonLd } from "@/lib/jsonld";
+import { catLabel, localePath, t, formatText, type DictKey, type Locale } from "@/lib/i18n";
 import { buyerQuestions } from "@/lib/content/buyer-questions";
 
 import { httpUrl } from "@/lib/urls";
@@ -46,7 +47,7 @@ const FIELD_SOURCE_LABELS: Record<string, DictKey> = {
 };
 
 export default function StorePage({ store, locale }: { store: Store; locale: Locale }) {
-  const nearby = stores.filter((s) => s.block === store.block && s.slug !== store.slug).slice(0, 6);
+  const nearby = nearestStores(store, stores);
   const mapsQuery = encodeURIComponent(fullAddress(store));
   const questions = buyerQuestions[store.slug]?.[locale];
   const gallery = photosForStore(store.slug);
@@ -102,13 +103,13 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
       <Header locale={locale} altPath={`/stores/${store.slug}`} />
       <main id="main-content" lang={locale}>
         <JsonLd data={storeJsonLd(store)} />
-        <JsonLd data={breadcrumbJsonLd(locale, `/stores/${store.slug}`, store.name)} />
+        <JsonLd data={storeBreadcrumbJsonLd(store, locale)} />
         <StoreViewEvent slug={store.slug} />
         <div className="container store-page">
           <nav className="breadcrumb">
             <Link href={localePath(locale, "/") || "/"}>{t(locale, "breadcrumb_home")}</Link>
             {" / "}
-            <Link href={`${localePath(locale, "/") || "/"}?street=${store.block}#directory`}>{BLOCK_LABELS[store.block]}</Link>
+            <Link href={localePath(locale, `/street/${store.block}`)}>{BLOCK_LABELS[store.block]}</Link>
           </nav>
           {gallery.length > 0 && <StoreGallery photos={gallery} locale={locale} category={store.category[0] || "general"} />}
           <div className={`store-heading ${gallery.length ? "" : "no-photos"}`}>
@@ -311,7 +312,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
           {nearby.length > 0 ? (
             <>
               <h2 className="nearby-heading">
-                {t(locale, "nearby_h2")} {BLOCK_LABELS[store.block]}
+                {t(locale, "nearby_businesses")}
               </h2>
               <div className="store-grid">
                 {nearby.map((s) => (
@@ -320,6 +321,7 @@ export default function StorePage({ store, locale }: { store: Store; locale: Loc
               </div>
             </>
           ) : null}
+          <nav className="navigation-links"><a href={localePath(locale, `/street/${store.block}`)}>{formatText(locale, "all_on_street", { street: BLOCK_LABELS[store.block] })}</a><a href={localePath(locale, "/stores")}>{t(locale, "all_businesses")}</a></nav>
         </div>
       </main>
       <div className="store-sticky-actions" role="group" aria-label={es ? "Acciones del negocio" : "Business actions"}>{store.phone && store.field_sources?.phone?.type === "business" && <StoreContactLink href={`tel:${store.phone.replace(/[^+\d]/g, "")}`} slug={store.slug} method="phone"><Phone size={18} />{es ? "Llamar" : "Call"}</StoreContactLink>}{!store.phone && <span className="action-unavailable"><Phone size={18} />{es ? "Sin teléfono" : "No phone"}</span>}<a href={`https://www.google.com/maps/search/?api=1&query=${mapsQuery}`} target="_blank" rel="nofollow noopener noreferrer"><MapPin size={18} />{es ? "Cómo llegar" : "Directions"}</a>{httpUrl(store.links?.website) ? <StoreContactLink href={httpUrl(store.links?.website)!} slug={store.slug} method="website" external><Globe2 size={18} />{es ? "Sitio web" : "Website"}</StoreContactLink> : <span className="action-unavailable"><Globe2 size={18} />{es ? "Sin sitio web" : "No website"}</span>}<SaveStoreButton slug={store.slug} name={store.name} locale={locale} /></div>
