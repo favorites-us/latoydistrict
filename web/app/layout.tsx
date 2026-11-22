@@ -6,6 +6,8 @@ import { SITE_URL, stores } from "@/lib/stores";
 import { BuyerProvider } from "@/components/BuyerProvider";
 import "./globals.css";
 import { googleInitScript } from "@/lib/analytics-config";
+import { htmlLangScript } from "@/lib/html-lang";
+import { HtmlLang } from "@/components/HtmlLang";
 
 const geist = localFont({ src: "./fonts/geist-latin.woff2", weight: "100 900", variable: "--font-geist", display: "swap" });
 
@@ -25,8 +27,12 @@ const ADSENSE_CLIENT = "ca-pub-9659602470766254";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={geist.variable}>
+    <html lang="en" className={geist.variable} suppressHydrationWarning>
       <body>
+        <Script id="html-lang" strategy="beforeInteractive">
+          {htmlLangScript}
+        </Script>
+        <HtmlLang />
         <Script id="google-init" strategy="beforeInteractive">
           {googleInitScript(GA_ID)}
         </Script>
